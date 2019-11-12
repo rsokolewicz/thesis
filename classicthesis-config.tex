@@ -63,10 +63,41 @@
 % Setup, finetuning, and useful commands
 % ********************************************************************
 % \providecommand{\mLyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
-% \newcommand{\ie}{i.\,e.}
-% \newcommand{\Ie}{I.\,e.}
-% \newcommand{\eg}{e.\,g.}
-% \newcommand{\Eg}{E.\,g.}
+\newcommand{\s}{\sum\limits}
+\newcommand{\p}{\prod\limits}
+\newcommand{\pa}{\partial}
+\newcommand{\il}{\int\limits}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\e}{\end{equation}}
+\newcommand{\beml}{\begin{subequations}}
+\newcommand{\eml}{\end{subequations}}
+\newcommand{\beq}{\begin{eqnarray}}
+\newcommand{\eq}{\end{eqnarray}}
+\newcommand{\ba}{\begin{array}}
+\newcommand{\ea}{\end{array}}
+\newcommand{\bpm}{\begin{pmatrix}}
+\newcommand{\epm}{\end{pmatrix}}
+\newcommand{\bc}{\begin{cases}}
+\newcommand{\ec}{\end{cases}}
+\newcommand{\lt}{\left}
+\newcommand{\rt}{\right}
+\newcommand{\n}{\nonumber}
+\newcommand{\la}{\langle}
+\newcommand{\ra}{\rangle}
+\newcommand{\ep}{\varepsilon}
+\newcommand{\dd}{\displaystyle}
+\newcommand{\bs}{\mathbf}
+\newcommand{\bb}{\boldsymbol}
+\newcommand{\h}{^\dagger}
+\newcommand{\0}{^{\phantom{\dagger}}}
+\newcommand{\one}{\openone}
+\newcommand{\uvec}[1]{\hat{\bb{#1}}}
+\newcommand{\para}{\parallel}
+%\newcommand{\d}{\!d\mkern-1.5mu}
+
+\renewcommand{\log}{\mathop{\mathrm{ln}}\nolimits}
+
+
 % ****************************************************************************************************
 
 
@@ -81,22 +112,23 @@
 %\PassOptionsToPackage{spanish,es-lcroman}{babel}
     \usepackage{babel}
 
-\usepackage{csquotes}
-\PassOptionsToPackage{%
-  %backend=biber,bibencoding=utf8, %instead of bibtex
-  backend=bibtex8,bibencoding=ascii,%
-  language=auto,%
-  style=phys,%
-  articletitle=false,biblabel=brackets,%
-  chaptertitle=false,pageranges=false,%,%
-  %style=authoryear-comp, % Author 1999, 2010
-  %bibstyle=authoryear,dashed=false, % dashed: substitute rep. author with ---
-%   sorting=nyt, % name, year, title
-  maxbibnames=25, % default: 3, et al.
-  %backref=true,%
-  natbib=true % natbib compatibility mode (\citep and \citet still work)
-}{biblatex}
-    \usepackage{biblatex}
+% \usepackage{csquotes}
+% \PassOptionsToPackage{%
+%   backend=biber,bibencoding=utf8, %instead of bibtex
+%   % backend=bibtex8,bibencoding=ascii,%
+%   language=auto,%
+%   % style=phys,%
+%   articletitle=false,biblabel=brackets,%
+%   chaptertitle=false,pageranges=false,%,%
+%   %style=authoryear-comp, % Author 1999, 2010
+%   %bibstyle=authoryear,dashed=false, % dashed: substitute rep. author with ---
+% %   sorting=nyt, % name, year, title
+%   maxbibnames=25, % default: 3, et al.
+%   %backref=true,%
+%   natbib=true % natbib compatibility mode (\citep and \citet still work)
+% }{biblatex}
+
+\usepackage{biblatex}
 
 \PassOptionsToPackage{fleqn}{amsmath}       % math environments and more by the AMS
   \usepackage{amsmath}
@@ -115,6 +147,20 @@
   %\def\bflabel#1{{#1\hfill}}
   \def\bflabel#1{{\acsfont{#1}\hfill}}
   \def\aclabelfont#1{\acsfont{#1}}
+\usepackage{mathtools}%enhanced math capabilities
+\usepackage{bm}
+% \usepackage{dsfont}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{pifont}
+\usepackage{textcomp}
+% \usepackage{gensymb}
+\usepackage{accents}
+% \usepackage{upgreek}
+\usepackage{array}
+\usepackage{color}
+
+\usepackage{hyperref}
 % ****************************************************************************************************
 %\usepackage{pgfplots} % External TikZ/PGF support (thanks to Andreas Nautsch)
 %\usetikzlibrary{external}
@@ -160,6 +206,16 @@
 
 
 
+\DeclareMathOperator{\var}{var}
+\DeclareMathOperator{\tr}{Tr}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\im}{Im}
+\DeclareMathOperator{\re}{Re}
+\DeclareMathOperator{\ctg}{cotan}
+\DeclareMathOperator{\arcsh}{arcsinh}
+\DeclareMathOperator{\rot}{rot}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\dv}{div}
 
 % ****************************************************************************************************
 % 6. Last calls before the bar closes
