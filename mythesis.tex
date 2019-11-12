@@ -1,0 +1,247 @@
+% **************************************************************************************************************
+% A Classic Thesis Style
+% An Homage to The Elements of Typographic Style
+%
+% Copyright (C) 2018 André Miede and Ivo Pletikosić
+%
+% If you like the style then I would appreciate a postcard. My address
+% can be found in the file ClassicThesis.pdf. A collection of the
+% postcards I received so far is available online at
+% http://postcards.miede.de
+%
+% License:
+% This program is free software; you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation; either version 2 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program; see the file COPYING.  If not, write to
+% the Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+% Boston, MA 02111-1307, USA.
+%
+% PLEASE SEE ALSO THE AUTHORS' NOTE REGARDING THIS LICENSE
+% IN THE DOCUMENTATION (ClassicThesis.pdf --> Chapter 1 / Chapter01.tex)
+% **************************************************************************************************************
+% \RequirePackage{silence} % :-\
+%     \WarningFilter{scrreprt}{Usage of package `titlesec'}
+%     %\WarningFilter{scrreprt}{Activating an ugly workaround}
+%     \WarningFilter{titlesec}{Non standard sectioning command detected}
+\documentclass[ twoside,openright,titlepage,numbers=noenddot,%1headlines,
+                headinclude,footinclude,cleardoublepage=empty,abstract=off,
+                BCOR=5mm,paper=a4,fontsize=10pt
+                ]{scrreprt}
+
+%********************************************************************
+% Note: Make all your adjustments in here
+%*******************************************************
+\input{classicthesis-config}
+
+%********************************************************************
+% Bibliographies
+%*******************************************************
+\addbibresource{biblioThesis.bib}
+% \addbibresource[label=ownpubs]{KR_Publications.bib}
+
+%********************************************************************
+% Hyphenation
+%*******************************************************
+%\hyphenation{put special hyphenation here}
+
+
+%******************************************
+% Additional packages
+% ********************************
+\usepackage{amscd}
+\usepackage{tikz}
+\usepackage{appendix}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Package that can be loaded in order to prevent warning about fonts that cannot be found
+% \usepackage{textcomp}
+% TODO: Check what this package actually does..., especially with numbers (cf. the term ``oldstyle figures'')! And also with caligraphic letters, cf. missing Lucida
+
+% \usepackage{adjustbox}
+% Package to rotate figures
+\usepackage[figuresright]{rotating}
+
+% \usepackage{showlabels}
+
+
+% Changing the mathcal back to normal...!
+\DeclareMathAlphabet{\mathcal}{OMS}{lucida}{m}{n}
+
+\DeclareGraphicsExtensions{.pdf,.jpg}
+
+
+% Done: Turn of this bad boxes command!!!
+% Command to visualize bad boxes
+% \overfullrule=5pt
+
+
+%********************************************************************
+% Fix page size
+%*******************************************************
+\setlength{\paperwidth}{170mm}%
+\setlength{\paperheight}{240mm}%
+\setlength{\pdfpagewidth}{\paperwidth}
+\setlength{\pdfpageheight}{\paperheight}
+\recalctypearea
+\setlength{\textheight}{520.69843pt}
+\setlength{\footskip}{38.89987pt}
+\setlength{\textwidth}{355pt}
+\addtolength{\evensidemargin}{-4.81221pt}
+
+
+% ********************************************************************
+% GO!GO!GO! MOVE IT!
+%*******************************************************
+\begin{document}
+\frenchspacing
+\raggedbottom
+\selectlanguage{american} % american ngerman
+%\renewcommand*{\bibname}{new name}
+%\setbibpreamble{}
+\pagenumbering{roman}
+\pagestyle{plain}
+
+% ***********************************
+% HACK (KR) to have a bit of space in the contents section
+% ************************
+% Done: Think about additional spacing in TOC.
+\addtocontents{toc}{\protect\vspace{\beforebibskip}}%
+
+
+% *******************************************
+% List of things that still have to be done
+%
+% Dismissed: Change all references to section to chapter.
+% Done: Fix all multiply-defined labels
+% Done: Replace all single dashes by double in the bibliography
+% Done: Change Griffiths QM book reference to Prentice Hall version, 2004 or so.
+% Not needed: Put labels D(irac) and TW(arping) upright?
+% Done: Replace (f)ocuss by (f)ocus everywhere.
+% Done: Look at centering of figures. Use \centering instead of begin/end{center}
+% Done: Uniform reference to subfigures: (a), (b) etc.!
+% Done: Fix problems in bibliography: position of ``edition'' and ``note''
+%       https://tex.stackexchange.com/questions/138913/how-to-move-the-field-note-at-the-end-of-the-reference/139010
+%       edition: give number or write out in full.
+% Done: Fix Kwant [Ref. 121] and MMA [Ref. 312] references. Including versions!
+% Done: Add link to DOI to all of my own publications. Add copyright tagline if required.
+% Done: Check all chapters for the word ``paper''
+% Done: Eliminate ``modulus'' -> absolute value
+% Done: Gray vs grey (DONE), cancel(l)ed (DONE), referred (DONE), neighbo(u)r (DONE), colo(u)r (DONE), zero(e)s (DONE), sizeable vs sizable (DONE)
+% Done: Check ocuss
+% Done: Think about use of parallel. Does it necessarily mean in the same direction? In chap 3 it does, in 5/6 it does not. Fixed. Used ``point in the same direction'' when required.
+% Done: Differentiate -> take the derivative. 
+% Done: Monte Carlo versus Monte-Carlo
+% Done: Check combination ``, that''
+% Done: n-p in title: kill emph. Keep emph in TOC and marking on top of page
+% Done: Turn package showlabels off.
+% Done: Include motto/opdracht? ``Voor mijn ouders?''
+% Done: Adapt colors of links before sending the thesis to the printer. There is a switch in classicthesis-config.tex, where the hypersetup is performed
+%
+% Done: Check spelling of all chapters, cv and acknowledgements. aspell! Done chapters 1, 2, 3, 4, 5 and 6, summary, samenvatting
+% Done: Check journal abbreviations in reference list
+%
+% ********************************
+
+
+%********************************************************************
+% Frontmatter
+%*******************************************************
+\include{FrontBackmatter/titlepage3}
+% \include{FrontBackmatter/Titlepage}
+% \include{FrontBackmatter/Titleback}
+% \cleardoublepage\include{FrontBackmatter/Dedication}
+%\cleardoublepage\include{FrontBackmatter/Foreword}
+% \cleardoublepage\include{FrontBackmatter/Abstract}
+% \cleardoublepage\include{FrontBackmatter/Publications}
+% \cleardoublepage\include{FrontBackmatter/Acknowledgments}
+\include{FrontBackmatter/dedication}
+\cleardoublepage
+\include{FrontBackmatter/Contents}
+%*******************************************************
+% Mainmatter
+%*******************************************************
+\cleardoublepage
+\pagestyle{scrheadings}
+\pagenumbering{arabic}
+%\setcounter{page}{90}
+% use \cleardoublepage here to avoid problems with pdfbookmark
+\cleardoublepage
+
+\addtocontents{toc}{\protect\vspace{\beforebibskip}}%
+
+% \include{Chapters/Chapter01}
+\cleardoublepage
+\addtocontents{toc}{\protect\vspace{\beforebibskip}}%
+
+% \include{Chapters/Chapter02}
+\cleardoublepage
+\addtocontents{toc}{\protect\vspace{\beforebibskip}}%
+
+% % \addtocontents{toc}{\protect\clearpage} % <--- just debug stuff, ignore
+% \include{Chapters/Chapter03}
+\cleardoublepage
+\addtocontents{toc}{\protect\vspace{\beforebibskip}}%
+
+\include{Chapters/chapter4}
+\cleardoublepage
+\addtocontents{toc}{\protect\vspace{\beforebibskip}}%
+
+\include{Chapters/chapter5}
+\cleardoublepage
+\addtocontents{toc}{\protect\vspace{\beforebibskip}}%
+
+\include{Chapters/chapter6}
+\cleardoublepage
+% % \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
+
+\include{Chapters/conclusion}
+% % %\include{multiToC} % <--- just debug stuff, ignore for your documents
+% ********************************************************************
+% Backmatter
+%*******************************************************
+% \appendix
+%\renewcommand{\thechapter}{\alph{chapter}}
+% \cleardoublepage
+% \part{Appendix}
+% \include{Chapters/Chapter0A}
+%********************************************************************
+% Other Stuff in the Back
+%*******************************************************
+
+
+\sloppy % Allow more space between words, to avoid bad boxes and hyphenating names
+\cleardoublepage\include{FrontBackmatter/Bibliography}
+\fussy % Restore normal line breaking habits
+
+\cleardoublepage\include{FrontBackmatter/summary}
+\cleardoublepage\include{FrontBackmatter/samenvatting}
+
+\sloppy % Allow more space between words, to avoid bad boxes and hyphenating names
+\cleardoublepage\include{FrontBackmatter/publicationList}
+\fussy % Restore normal line breaking habits
+
+\cleardoublepage\include{FrontBackmatter/acknowledge}
+\cleardoublepage\include{FrontBackmatter/cv}
+
+\cleardoublepage
+
+% \cleardoublepage\include{FrontBackmatter/Bibliography}
+% \cleardoublepage\include{FrontBackmatter/Declaration}
+% \cleardoublepage\include{FrontBackmatter/Colophon}
+% ********************************************************************
+% Game Over: Restore, Restart, or Quit?
+%*******************************************************
+\end{document}
+% ********************************************************************
+
