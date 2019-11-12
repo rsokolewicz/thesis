@@ -119,39 +119,6 @@
 \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
 
-% *******************************************
-% List of things that still have to be done
-%
-% Dismissed: Change all references to section to chapter.
-% Done: Fix all multiply-defined labels
-% Done: Replace all single dashes by double in the bibliography
-% Done: Change Griffiths QM book reference to Prentice Hall version, 2004 or so.
-% Not needed: Put labels D(irac) and TW(arping) upright?
-% Done: Replace (f)ocuss by (f)ocus everywhere.
-% Done: Look at centering of figures. Use \centering instead of begin/end{center}
-% Done: Uniform reference to subfigures: (a), (b) etc.!
-% Done: Fix problems in bibliography: position of ``edition'' and ``note''
-%       https://tex.stackexchange.com/questions/138913/how-to-move-the-field-note-at-the-end-of-the-reference/139010
-%       edition: give number or write out in full.
-% Done: Fix Kwant [Ref. 121] and MMA [Ref. 312] references. Including versions!
-% Done: Add link to DOI to all of my own publications. Add copyright tagline if required.
-% Done: Check all chapters for the word ``paper''
-% Done: Eliminate ``modulus'' -> absolute value
-% Done: Gray vs grey (DONE), cancel(l)ed (DONE), referred (DONE), neighbo(u)r (DONE), colo(u)r (DONE), zero(e)s (DONE), sizeable vs sizable (DONE)
-% Done: Check ocuss
-% Done: Think about use of parallel. Does it necessarily mean in the same direction? In chap 3 it does, in 5/6 it does not. Fixed. Used ``point in the same direction'' when required.
-% Done: Differentiate -> take the derivative. 
-% Done: Monte Carlo versus Monte-Carlo
-% Done: Check combination ``, that''
-% Done: n-p in title: kill emph. Keep emph in TOC and marking on top of page
-% Done: Turn package showlabels off.
-% Done: Include motto/opdracht? ``Voor mijn ouders?''
-% Done: Adapt colors of links before sending the thesis to the printer. There is a switch in classicthesis-config.tex, where the hypersetup is performed
-%
-% Done: Check spelling of all chapters, cv and acknowledgements. aspell! Done chapters 1, 2, 3, 4, 5 and 6, summary, samenvatting
-% Done: Check journal abbreviations in reference list
-%
-% ********************************
 
 
 %********************************************************************
@@ -164,7 +131,7 @@
 %\cleardoublepage\include{FrontBackmatter/Foreword}
 % \cleardoublepage\include{FrontBackmatter/Abstract}
 % \cleardoublepage\include{FrontBackmatter/Publications}
-% \cleardoublepage\include{FrontBackmatter/Acknowledgments}
+
 \include{FrontBackmatter/dedication}
 \cleardoublepage
 \include{FrontBackmatter/Contents}
@@ -231,7 +198,7 @@
 \cleardoublepage\include{FrontBackmatter/publicationList}
 \fussy % Restore normal line breaking habits
 
-\cleardoublepage\include{FrontBackmatter/acknowledge}
+\cleardoublepage\include{FrontBackmatter/Acknowledgments.tex}
 \cleardoublepage\include{FrontBackmatter/cv}
 
 \cleardoublepage
