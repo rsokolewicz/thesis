@@ -1,12 +1,14 @@
 %************************************************
 \chapter{Diffusive Spin-orbit torques in a two-dimensional Dirac ferromagnet}\label{ch:introduction}
 %************************************************
-\begin{abstract}
 We investigate spin-orbit torques on magnetization in an insulating ferromagnetic (FM) layer that is brought into a close proximity to a topological insulator (TI). In addition to the well-known field-like spin-orbit torque, we identify an anisotropic anti-damping-like spin-orbit torque that originates in a diffusive motion of conduction electrons. This diffusive torque is vanishing in the limit of zero momentum (i.\,e. for spatially homogeneous electric field or current), but may, nevertheless, have a strong impact on spin-torque resonance at finite frequency provided external field is neither parallel nor perpendicular to the TI surface. The required electric field configuration can be created by a grated top gate.
-\end{abstract}
+
+\vfill
+blabla
+\clearpage
 
 % \maketitle
-
+\section{introduction}
 It is widely known that spin-orbit interaction provides an efficient way to couple electronic and magnetic degrees of freedom. It is, therefore, no wonder that the largest torque on magnetization, which is also referred to as the spin-orbit torque, emerges in magnetic systems with strong spin-orbit interaction \cite{miron_current-driven_2010,haney_current_2013} as has been long anticipated \cite{dyakonov_current-induced_1971}. 
 
 The spin-orbit coupling may be enhanced by confinement potentials in effectively two-dimensional systems consisting of conducting and magnetic layers. The in-plane current may efficiently drive domain walls or switch magnetic orientation in such structures with the help of spin-orbit torque \cite{awschalom2009trend,manchon_theory_2008,garate_influence_2009,manchon2009theory}, which is present even for uniform magnetization, or with the help of spin-transfer torque, which requires the presence of magnetization gradient (due to e.\,g. domain wall) \cite{slonczewski_current-driven_1996,berger_emission_1996,ralph_spin_2008,stiles_anatomy_2002}. 
@@ -32,16 +34,6 @@ Diffusive anti-damping spin-orbit torque, that we are going to study, can be rel
 \end{figure}
 %%%%%%%%%
 
-%%%%%%%%%%%%
-%%% figure test
-%%%%%%%%%%%%
-\begin{figure}
-\centering
-\centerline{\hspace*{1cm}\includegraphics[width=0.8\linewidth]{{gfx/example_1.jpg}}}
-\caption{Proposed experimental setup. Non-homogeneous in-plane electric field components are created by an $ac$ top-gate voltage $V_{\mathrm{top}}$ that  induce a strong diffusive spin-orbit torque (\ref{diffSOT}) of the damping-like symmetry. An effective magnetic field $\bb{H}$ is directed at the angle $\chi$ with respect to $\hat{\bb{z}}$.}
-\label{fig:setup}
-\end{figure}
-%%%%%%%%%
 
 Microscopic theory of current-induced magnetization dynamics in TI/FM heterostructures has been so far limited to some particular cases: (i) specific direction of magnetization and (ii) the limit of vanishing exchange interaction between FM angular momenta and the spins of conduction electrons.  In particular, an analytic estimate of spin-transfer and spin-orbit torques in TI/FM bilayer has been given in Ref.~\cite{sakai_spin_2014} for magnetization perpendicular to the TI surface. An attempt to generalize these results to arbitrary magnetization direction has been undertaken more recently in Ref.~\cite{ndiaye_dirac_2017}.  The non-local transport on a surface of the TI has been first discussed in Ref.~\cite{burkov_spin_2010}. The results of this work has been later applied to TI/FM systems \cite{taguchi_spin-charge_2015,shintani_spin_2016} in a perturbative approach with respect to a weak s--d-type exchange. The non-local behavior of non-equilibrium out-of-plane spin polarization in TI/FM systems, which gives rise to diffusive spin-orbit torques, have been, however, overlooked in all these publications. 
 
@@ -81,8 +73,9 @@ We find, however, that for a general direction of $\bb{m}$, the spin density $s_
 \e
 where $D$ is a diffusion coefficient for conduction electrons at the TI surface and $\bb{E}= \bb{E}_{\bb{q},\omega}\exp\lt(-i\omega t+i\bb{q}\cdot\bb{r}\rt)$. Note that the diffusive torque is non-linear with respect to $\bb{m}$ and, from the point of view of the time reversal symmetry, is analogous to anti-damping torque. The denominator $i\omega -Dq^2$ in Eq.~(\ref{diffSOT}) reflects diffusive (Brownian) motion of conduction electrons that defines the time-delayed diffusive torque on magnetization $\bb{T}^\textrm{SOT}_\textrm{diff}$.  
 
-It is interesting to note that the torque of Eq.~(\ref{diffSOT}) has an anti-damping symmetry (when expressed through electric current rather than electric field). Moreover, the torque formally diverges as $1/q$ in the $dc$ limit $\omega=0$. This singularity is well-known in the theory of disordered systems \cite{maleev1975corrections,m*aleev1976corrections,altshuler1985electron} and originates in the diffusive (Brownian) motion of conduction electrons in a disorder potential.  The $dc$ limit singularity in Eq.~(\ref{diffSOT}) is, in fact, regularized by the dephasing length of conduction electrons on the surface of the TI. The length is strongly temperature and material dependent and, at low temperatures, can reach hundreds of microns. Thus, the result of Eq.~(\ref{diffSOT}) also predicts large anti-damping spin-orbit torque in the dc-limit that originates in a mechanism which is specific for the TI interface. 
- 
+It is interesting to note that the torque of Eq.~(\ref{diffSOT}) has an anti-damping symmetry (when expressed through electric current rather than electric field). Moreover, the torque formally diverges as $1/q$ in the $dc$ limit $\omega=0$. This singularity is well-known in the theory of disordered systems \cite{maleev1975corrections,maleev1976corrections,altshuler1985electron} and originates in the diffusive (Brownian) motion of conduction electrons in a disorder potential.  The $dc$ limit singularity in Eq.~(\ref{diffSOT}) is, in fact, regularized by the dephasing length of conduction electrons on the surface of the TI. The length is strongly temperature and material dependent and, at low temperatures, can reach hundreds of microns. Thus, the result of Eq.~(\ref{diffSOT}) also predicts large anti-damping spin-orbit torque in the dc-limit that originates in a mechanism which is specific for the TI interface. 
+
+\section{model}
 In order to derive the result of Eq.~(\ref{diffSOT}) and the expressions for Gilbert damping we shall adopt a particular relaxation model for both spin and orbital angular momenta of conduction electrons. For the model of Eq.~(\ref{TImodel}) those are provided by scattering on disorder potential. We choose the latter 
 to be the white-noise Gaussian disorder potential that is fully characterized by a single dimensionless parameter $\alpha\ll 1$,
 \be
@@ -153,7 +146,7 @@ where the summation of the repeating index $\beta=0,x,y,z$ is assumed. Full expr
 %%%
 \begin{figure}[t]
 \centering
-\includegraphics[]{fig2}
+\includegraphics[]{articles/dirac_fm/fig2}
 \caption{Diagrams considered in the calculation of $\hat{K}$: (a) non-crossing diagram, (b) $X$ diagram, (c-d) $\Psi$ diagrams. Green areas indicate the ladder summation (e) for the vertex correction in the non-crossing approximation \cite{ivanEPL}.}
 \label{fig:diagrams}
 \end{figure}
@@ -222,7 +215,7 @@ Resonant magnetization dynamics defined by Eq.~(\ref{equation}) is illustrated i
 %%%%%%%%%%%%
 \begin{figure}
 \centering
-\centerline{\hspace*{1cm}\includegraphics[width=1.0\linewidth]{{gfx/Chapter01/fig3}}}
+\centerline{\hspace*{1cm}\includegraphics[width=1.0\linewidth]{{articles/dirac_fm/fig3}}}
 \caption{The projection $m_\textrm{H}(t)$ as simulated from Eq.~(\ref{equation}) for $f_0=0.1\, \omega_0$.  Top panel illustrates the behavior at different frequencies for $\alpha_\textrm{G}=0.005$. Lower panel illustrates the resonant behavior at different values of $\alpha_\textrm{G}$. Dashed horizontal line corresponds to $m_\textrm{H}=1/\sqrt{2}$. Dots indicate the asymptotic solution for $\alpha_\textrm{G}=0$ as given by Eq.~(\ref{asymptot}).}
 \label{fig:dynamics}
 \end{figure}

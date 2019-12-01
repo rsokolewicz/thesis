@@ -112,7 +112,7 @@
 %\PassOptionsToPackage{spanish,es-lcroman}{babel}
     \usepackage{babel}
 
-% \usepackage{csquotes}
+\usepackage{csquotes}
 % \PassOptionsToPackage{%
 %   backend=biber,bibencoding=utf8, %instead of bibtex
 %   % backend=bibtex8,bibencoding=ascii,%
@@ -137,28 +137,26 @@
 % General useful packages
 % ********************************************************************
 \usepackage{graphicx} %
-\usepackage{scrhack} % fix warnings when using KOMA with listings package
-\usepackage{xspace} % to get the spacing after macros right
-\PassOptionsToPackage{printonlyused,smaller}{acronym}
-  \usepackage{acronym} % nice macros for handling all acronyms in the thesis
-  %\renewcommand{\bflabel}[1]{{#1}\hfill} % fix the list of acronyms --> no longer working
-  %\renewcommand*{\acsfont}[1]{\textsc{#1}}
-  %\renewcommand*{\aclabelfont}[1]{\acsfont{#1}}
-  %\def\bflabel#1{{#1\hfill}}
-  \def\bflabel#1{{\acsfont{#1}\hfill}}
-  \def\aclabelfont#1{\acsfont{#1}}
+% \usepackage{scrhack} % fix warnings when using KOMA with listings package
+% \usepackage{xspace} % to get the spacing after macros right
+% \PassOptionsToPackage{printonlyused,smaller}{acronym}
+%   \usepackage{acronym} % nice macros for handling all acronyms in the thesis
+%   %\renewcommand{\bflabel}[1]{{#1}\hfill} % fix the list of acronyms --> no longer working
+%   %\renewcommand*{\acsfont}[1]{\textsc{#1}}
+%   %\renewcommand*{\aclabelfont}[1]{\acsfont{#1}}
+%   %\def\bflabel#1{{#1\hfill}}
+%   \def\bflabel#1{{\acsfont{#1}\hfill}}
+%   \def\aclabelfont#1{\acsfont{#1}}
 \usepackage{mathtools}%enhanced math capabilities
 \usepackage{bm}
-% \usepackage{dsfont}
-\usepackage{graphicx}
-\usepackage{subfigure}
+% % \usepackage{dsfont}
 \usepackage{pifont}
-\usepackage{textcomp}
-% \usepackage{gensymb}
-\usepackage{accents}
-% \usepackage{upgreek}
-\usepackage{array}
-\usepackage{color}
+% \usepackage{textcomp}
+% % \usepackage{gensymb}
+% \usepackage{accents}
+% % \usepackage{upgreek}
+% \usepackage{array}
+% \usepackage{color}
 
 \usepackage{hyperref}
 % ****************************************************************************************************
@@ -171,37 +169,37 @@
 % ****************************************************************************************************
 % 4. Setup floats: tables, (sub)figures, and captions
 % ****************************************************************************************************
-\usepackage{tabularx} % better tables
-  \setlength{\extrarowheight}{3pt} % increase table row height
-\newcommand{\tableheadline}[1]{\multicolumn{1}{l}{\spacedlowsmallcaps{#1}}}
-\newcommand{\myfloatalign}{\centering} % to be used with each float for alignment
-\usepackage{subfig}
+% \usepackage{tabularx} % better tables
+%   \setlength{\extrarowheight}{3pt} % increase table row height
+% \newcommand{\tableheadline}[1]{\multicolumn{1}{l}{\spacedlowsmallcaps{#1}}}
+% \newcommand{\myfloatalign}{\centering} % to be used with each float for alignment
+% \usepackage{subfig}
 % ****************************************************************************************************
 
 
 % ****************************************************************************************************
 % 5. Setup code listings
 % ****************************************************************************************************
-\usepackage{listings}
-%\lstset{emph={trueIndex,root},emphstyle=\color{BlueViolet}}%\underbar} % for special keywords
-\lstset{language=[LaTeX]Tex,%C++,
-  morekeywords={PassOptionsToPackage,selectlanguage},
-  keywordstyle=\color{RoyalBlue},%\bfseries,
-  basicstyle=\small\ttfamily,
-  %identifierstyle=\color{NavyBlue},
-  commentstyle=\color{Green}\ttfamily,
-  stringstyle=\rmfamily,
-  numbers=none,%left,%
-  numberstyle=\scriptsize,%\tiny
-  stepnumber=5,
-  numbersep=8pt,
-  showstringspaces=false,
-  breaklines=true,
-  %frameround=ftff,
-  %frame=single,
-  belowcaptionskip=.75\baselineskip
-  %frame=L
-}
+% \usepackage{listings}
+% %\lstset{emph={trueIndex,root},emphstyle=\color{BlueViolet}}%\underbar} % for special keywords
+% \lstset{language=[LaTeX]Tex,%C++,
+%   morekeywords={PassOptionsToPackage,selectlanguage},
+%   keywordstyle=\color{RoyalBlue},%\bfseries,
+%   basicstyle=\small\ttfamily,
+%   %identifierstyle=\color{NavyBlue},
+%   commentstyle=\color{Green}\ttfamily,
+%   stringstyle=\rmfamily,
+%   numbers=none,%left,%
+%   numberstyle=\scriptsize,%\tiny
+%   stepnumber=5,
+%   numbersep=8pt,
+%   showstringspaces=false,
+%   breaklines=true,
+%   %frameround=ftff,
+%   %frame=single,
+%   belowcaptionskip=.75\baselineskip
+%   %frame=L
+% }
 % ****************************************************************************************************
 
 

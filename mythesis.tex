@@ -28,10 +28,10 @@
 % PLEASE SEE ALSO THE AUTHORS' NOTE REGARDING THIS LICENSE
 % IN THE DOCUMENTATION (ClassicThesis.pdf --> Chapter 1 / Chapter01.tex)
 % **************************************************************************************************************
-% \RequirePackage{silence} % :-\
-%     \WarningFilter{scrreprt}{Usage of package `titlesec'}
-%     %\WarningFilter{scrreprt}{Activating an ugly workaround}
-%     \WarningFilter{titlesec}{Non standard sectioning command detected}
+\RequirePackage{silence} % :-\
+    \WarningFilter{scrreprt}{Usage of package `titlesec'}
+    \WarningFilter{scrreprt}{Activating an ugly workaround}
+    \WarningFilter{titlesec}{Non standard sectioning command detected}
 \documentclass[ twoside,openright,titlepage,numbers=noenddot,%1headlines,
                 headinclude,footinclude,cleardoublepage=empty,abstract=off,
                 BCOR=5mm,paper=a4,fontsize=10pt
@@ -45,7 +45,7 @@
 %********************************************************************
 % Bibliographies
 %*******************************************************
-\addbibresource{biblioThesis.bib}
+\addbibresource{Bibliography.bib}
 % \addbibresource[label=ownpubs]{KR_Publications.bib}
 
 %********************************************************************
@@ -65,8 +65,7 @@
 \usepackage{amssymb}
 
 % Package that can be loaded in order to prevent warning about fonts that cannot be found
-% \usepackage{textcomp}
-% TODO: Check what this package actually does..., especially with numbers (cf. the term ``oldstyle figures'')! And also with caligraphic letters, cf. missing Lucida
+\usepackage{textcomp}
 
 % \usepackage{adjustbox}
 % Package to rotate figures
@@ -74,16 +73,9 @@
 
 % \usepackage{showlabels}
 
-
 % Changing the mathcal back to normal...!
 \DeclareMathAlphabet{\mathcal}{OMS}{lucida}{m}{n}
-
 \DeclareGraphicsExtensions{.pdf,.jpg}
-
-
-% Done: Turn of this bad boxes command!!!
-% Command to visualize bad boxes
-% \overfullrule=5pt
 
 
 %********************************************************************
@@ -115,13 +107,10 @@
 % ***********************************
 % HACK (KR) to have a bit of space in the contents section
 % ************************
-% Done: Think about additional spacing in TOC.
 \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
 
-
-
-%********************************************************************
+%*******************************************************
 % Frontmatter
 %*******************************************************
 \include{FrontBackmatter/titlepage3}
@@ -132,9 +121,10 @@
 % \cleardoublepage\include{FrontBackmatter/Abstract}
 % \cleardoublepage\include{FrontBackmatter/Publications}
 
-\include{FrontBackmatter/dedication}
-\cleardoublepage
+% \include{FrontBackmatter/dedication}
+% \cleardoublepage
 \include{FrontBackmatter/Contents}
+
 %*******************************************************
 % Mainmatter
 %*******************************************************
