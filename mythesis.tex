@@ -113,17 +113,17 @@
 %*******************************************************
 % Frontmatter
 %*******************************************************
-\include{FrontBackmatter/titlepage3}
+% \include{FrontBackmatter/titlepage3}
 % \include{FrontBackmatter/Titlepage}
 % \include{FrontBackmatter/Titleback}
-% \cleardoublepage\include{FrontBackmatter/Dedication}
+\cleardoublepage\include{FrontBackmatter/Dedication}
 %\cleardoublepage\include{FrontBackmatter/Foreword}
 % \cleardoublepage\include{FrontBackmatter/Abstract}
 % \cleardoublepage\include{FrontBackmatter/Publications}
 
 % \include{FrontBackmatter/dedication}
-% \cleardoublepage
-\include{FrontBackmatter/Contents}
+\cleardoublepage
+% \include{FrontBackmatter/Contents}
 
 %*******************************************************
 % Mainmatter
@@ -136,19 +136,22 @@
 \cleardoublepage
 
 \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
-
-\include{Chapters/Chapter01}
+\include{Chapters/Introduction}
 \cleardoublepage
 \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
-\include{Chapters/Chapter02}
-\cleardoublepage
-\addtocontents{toc}{\protect\vspace{\beforebibskip}}%
+% \include{Chapters/Chapter01}
+% \cleardoublepage
+% \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
+
+% \include{Chapters/Chapter02}
+% \cleardoublepage
+% \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
 % \addtocontents{toc}{\protect\clearpage} % <--- just debug stuff, ignore
-\include{Chapters/Chapter03}
-\cleardoublepage
-\addtocontents{toc}{\protect\vspace{\beforebibskip}}%
+% \include{Chapters/Chapter03}
+% \cleardoublepage
+% \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
 % \include{Chapters/chapter4}
 % \cleardoublepage
