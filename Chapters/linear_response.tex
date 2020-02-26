@@ -1,0 +1,34 @@
+%************************************************
+\chapter{Linear Response}\label{ch:linearesponse}
+%************************************************
+\section{Linear Response Theory}
+The main results derived in 
+The $dc$ linear-response formulas that we use are given by:
+\begin{align}
+    \bb{s}^\pm_\alpha = \int\frac{\mathrm{d}^2\bb{p}}{(2\pi)^2}\,\tr \langle G_{\bb{p}}^\text{R} \hat{{\chi}}_\alpha G_{\bb{p}}^\text{A} \hat{s}_\beta\rangle ,
+\end{align}
+where $G_{\bb{p}}^\text{R(A)}$ are retarded and advanced Green function in momentum-space, $\hat{s}^+ = \sigma_\beta$, $\hat{s}_\beta^-=\sigma_\beta\Sigma_z \Lambda_z$ are the operators corresponding to the spin-polarization $\bb{s}^+$ and staggered spin-polarization $\bb{s}^-$, $\hat{\chi}_\alpha$ is the perturbation that the spin-density is in response to, and the angular brackets $\langle\cdots\rangle$ denote disorder-averaging which will be explained below. The response to electric current density $\bb{j}$ is defined by $\hat{\chi}_\beta = (e v /\sigma_{xx})\, \Sigma_\beta$, where $\sigma_{xx}$ is the longitudinal conductivity (measured in units of e$^2$/h) as defined in Eq.~(\ref{intro:eq:long_cond}). Response to magnetization $\partial_t m_\beta$ and $\partial_t n_\beta$, is defined through $\hat{\chi}_\beta = \Delta \sigma_\beta$ and $\hat{\chi}_\beta = \Delta \sigma_\beta \Sigma_z\Lambda_z$. 
+
+Our formula for linear-response is defined for zero temperature and we neglect contributions originating from the Fermi-sea (the so-called Streda contribution).  In most samples it is inevitable to have a certain degree of disorder. It is therefore important to take into account disorder in our calculations. As mentioned in the Main Text, we model disorder as an average ensemble of impurities with short-range on-site potential. In order to quantify the effect of disorder, two important steps must be performed. Firstly, we replace the clean Green functions in the linear response formula, with disordered ones. Secondly we replace one of the vertices with one that is corrected with disorder-averaging.
+
+In order to replace the bare Green function with a disordered one, one needs to include a self-energy. This self-energy gives rise to the finite momentum-life-time of the electron and restores translational invariance.  In low concentration of impurities (which we refer to as the clean metal limit, i.e. $\alpha\rightarrow0$) and neglecting contributions from rare-scattering events (such as multiple scattering off the same impurity), one can use the Born approximation
+
+\begin{equation}
+\Sigma^\text{R(A)} = 2\pi\alpha \int \frac{\mathrm{d}\bb{p}}{(2\pi)^2}\,G^\text{R(A)}_{\vec{p},\varepsilon},
+\end{equation}
+
+whose imaginary part is given by $\im \Sigma^\text{R(A)} = \pi\alpha/4\,(\varepsilon + \Delta \bb{l}\cdot\bb{\sigma}\Sigma_z\Lambda_z)$. The real-part of the self-energy leads to a small spectrum-shift that we do not consider. 
+
+For the second step in disorder averaging, we need to replace one of the vertex functions with one that is corrected for disorder in the ladder approximation (as illustrated in Figure~\ref{fig:diagrams}-b). We call this new vertex function the vertex-corrected function. 
+By denoting $\hat{\chi}^{\text{vc}}$ as the vertex-corrected function of $\hat{\chi}$ and $\hat{\chi}^i$ as the function containing $i$ disorder-lines, the ladder approximation is given by:
+\begin{align}
+    \hat{\chi}^\text{vc}
+      &=           
+        \hat{\chi}+\hat{\chi}^1+\hat{\chi}^2+\cdots,
+        \label{intro:eq:ladder}
+\end{align}
+where $\hat{\chi}^i$ is given by:
+\begin{align}
+    \hat{\chi}^\text{i} = 2\pi\alpha_d\int\frac{\mathrm{d}^2\bb{p}}{(2\pi)^2} G_{\bb{p}}^\text{R}\hat{\chi}^\text{i-1}G_{\bb{p}}^\text{A}
+    \label{intro:eq:onedisorderline}
+\end{align}

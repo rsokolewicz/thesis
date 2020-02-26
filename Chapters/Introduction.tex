@@ -2,21 +2,23 @@
 \chapter{Introduction}\label{ch:introduction}
 %************************************************
 \section{What is spintronics all about?}
-Today's electronics 
+Today's electronics revolves around the control of the electron's charge. By moving these charges around in electronic circuits, complex calculations can be made in mobile phones, computers,... As technology makes new advancements every year, we see that the size of electronic circuits gets smaller and smaller. A popular ``law'' used to show this advancement is named after Moore. It roughy states that the number of transistors that can be put unto a single chip doubles every two years. Where in the early 70s a single computer chip could host up to a few thousands of transistors, today the number approaches fifty billion.  
+
+Another commercial area where spintronics could make a leapthrough is storage devices. Until a few years ago a magnetic hard-drive was the best storage medium. 
 
 \section{Spintronics in ferromagnets}
 Spintronics is an emerging field in which the electrical control of spin-currents spin currents
 and magnetization is studied. It is believed that spintronic devices could potentially lead to
 more efficient data storage and faster reading/writing speeds than in conventional electronics. One
 of the goals in this field is to discover how to efficiently convert charge into spin
-currents in devices without any magnetic contacts. A key concept is the spin torque induced by an
-electrical current, which can be used to the reverse the direction of magnetization direction and
+currents in devices without any magnetic contacts. A key concept here is called the spin torque that is induced by an electrical current, which can be used to the reverse the direction of magnetization direction and
 to drive magnetic domain walls. We distinguish two types of current induced current-induced spin
-torque: spin-transfer torque (STT) [1–4] and spin-orbit torque (SOT) [5–8]. STTs generally vanish in
+torque: spin-transfer torque and spin-orbit torque. Spin-transfer torques generally vanish in
 uniform magnets and are therefore proportional to gradients in magnetization. These torques arise
-from the transfer of spin angular momentum from a spin-current spin current to the spin degree of
-freedom of a ferromagnetic region. The SOT, on the other hand, is in general proportional to
-magnetization and is mediated by spin-orbit interactions.
+from the transfer of spin angular momentum from a spin-current to the spin degree of
+freedom of a ferromagnetic region. 
+On the other hand, the spin-orbit torque is in general proportional to
+magnetization (and can therefore be found in uniform magnets) and is mediated by spin-orbit interactions.
 
 This last type of torque was first found in systems with a heavy metal layer [9], where the spin Hall
 effect (SHE) [10–13] plays an important role [? ]. Due to its the strong thickness dependence, the SOT
@@ -74,17 +76,6 @@ parameters are important. In 2017 a model was proposed that is based on spin
 diffusion. Although this model does take the effect of disorder into account, it requires
 electrons to diffuse into neighboring layers. 
 
-Here we present a simple model that includes disorder and does not depend on the
-existence of diffusive electrons. The model consists of localized magnetic
-moments and conducting electrons on a honeycomb lattice, that interact with each other
-through the s—d interaction. By calculating the spin-polarization of the conducting
-electrons in response to an electric field, we can derive coupled Landau-
-Lifshitz type equations that describe the dynamics of the (antiferro)magnetic order in the
-system under the influence of electric currents. The coefficients found in these equations
-are derived using a non-equilibrium quantum field theory framework and are directly
-related to material properties such as the chemical potential and s—d energy. We illustrate
-the use of our model by studying the driving of magnetic domain walls by means of an
-electric current.
 %%%
 \section{linear response formula}
 The $dc$ linear-response formulas that we use are given by:
@@ -118,7 +109,9 @@ where $\hat{\chi}^i$ is given by:
 \end{align}
 
 \section{s--d model}
-An attractive model that qualitatively describes magnetization dynamics, driven by electric currents is the s--d model. The model consists of two systems: a lattice with a magnetic subsystem and conducting electrons. A phenomenological parameter called the $\Delta_\text{sd}$ energy, couples the magnetic subsystem with the spin of the conducting electrons, which allows the transfer of spin angular momentum from one to the other. This simple model is enough to describe a whole range of phenomena, ranging from the Kondo effect to ... 
+An attractive model that qualitatively describes magnetization dynamics, driven by electric currents is the s--d model. The model consists of two systems: a lattice with localized magnetic moments and a tight-binding model describing the conducting electrons. A phenomenological parameter denoted $\Delta_\text{sd}$, couples the two systems. 
+
+, which allows the transfer of spin angular momentum from one to the other. This simple model is enough to describe a whole range of phenomena, ranging from the Kondo effect to ... 
 We are interested in out-of-equilibrium effects in antiferromagnetic materials due to electric current. One attractive option is a honeycomb lattice, such as graphene, as the Fermi-surface close to the $\bb{K}'$ and $\bb{K}$ points are isotropic, making the analysis easy. We can naturally choose the sublattice to have opposing spins, giving rise to antiferromagnetic order. The minimal model that allows us manipulation of the magnetic order by electric current requires two ingredients: spin-orbit interaction for conducting electrons and an s--d-like interaction between conducting and localized electrons. The s--d-like interaction allows transfer of angular momentum between conducting and localized electrons. However, one also requires dissipation of angular momentum, that occurs during scattering of conducting electrons off of impurities. 
 
 The minimal Hamiltonian that fulfills the above discussion is given by 
