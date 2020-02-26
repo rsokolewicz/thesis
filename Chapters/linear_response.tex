@@ -5,12 +5,15 @@
 The main results derived in this thesis are obtain from linear response theory. Let us briefly consider a Hamiltonian $H$ subject to a small perturbation $\delta H$. We are interested in the effect of $\delta H$ on an observable $O$. To linear order in $\delta H$ this is captured by the Kubo formula:
 \begin{equation}
 	\bar{O} = \frac{i}{h} \int \mathrm{d}\varepsilon\, f(\varepsilon-\mu) \tr\big(G^\text{R}...\big),
+	\label{eq:kubo1}
 \end{equation}
 where $G^\text{R(A)}_{\bb{p}',\omega'}$ are the retarded(advanced) Green functions with momentum $\bb{p}'$ and frequency $\omega'$. This linear response formula is evaluated in momentum and frequency space, however in some cases it is more convenient to work in the position and time space and we will use the Kubo-Greenwood formula:
 \begin{equation}
 	...
 \end{equation}
-In transport theory the most common example of linear response is the calculation of conductivity tensor, whose components are calculated as the a velocity-velocity response.
+In transport theory a common example of linear response is the calculation of the conductivity tensor, whose components are calculated as the a velocity-velocity response. It is interesting to note that one can obtain conductivity from current-current correlation. This is a consequence of the fluctuation-dissipation theorem. 
+
+Before discussing details on how we treat disorder-potentials, let us first derive Eq.~\ref{eq:kubo1}. 
 The $dc$ linear-response formulas that we use are given by:
 \begin{align}
     \bb{s}^\pm_\alpha = \int\frac{\mathrm{d}^2\bb{p}}{(2\pi)^2}\,\tr \langle G_{\bb{p}}^\text{R} \hat{{\chi}}_\alpha G_{\bb{p}}^\text{A} \hat{s}_\beta\rangle ,
