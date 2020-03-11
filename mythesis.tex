@@ -113,17 +113,15 @@
 %*******************************************************
 % Frontmatter
 %*******************************************************
-% \include{FrontBackmatter/titlepage3}
-% \include{FrontBackmatter/Titlepage}
-% \include{FrontBackmatter/Titleback}
+\include{FrontBackmatter/titlepage3}
 \cleardoublepage\include{FrontBackmatter/Dedication}
 %\cleardoublepage\include{FrontBackmatter/Foreword}
 % \cleardoublepage\include{FrontBackmatter/Abstract}
 % \cleardoublepage\include{FrontBackmatter/Publications}
 
-% \include{FrontBackmatter/dedication}
+\include{FrontBackmatter/dedication}
 \cleardoublepage
-% \include{FrontBackmatter/Contents}
+\include{FrontBackmatter/Contents}
 
 %*******************************************************
 % Mainmatter
@@ -136,30 +134,30 @@
 \cleardoublepage
 
 \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
-% \include{Chapters/Introduction}
-% \cleardoublepage
-% \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
+\include{Chapters/Introduction}
+\cleardoublepage
+\addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
 \include{Chapters/linear_response}
 \cleardoublepage
 \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
-% \include{Chapters/Chapter01}
-% \cleardoublepage
-% \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
+\include{Chapters/Chapter01}
+\cleardoublepage
+\addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
-% \include{Chapters/Chapter02}
-% \cleardoublepage
-% \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
+\include{Chapters/Chapter02}
+\cleardoublepage
+\addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
 % \addtocontents{toc}{\protect\clearpage} % <--- just debug stuff, ignore
-% \include{Chapters/Chapter03}
-% \cleardoublepage
-% \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
+\include{Chapters/Chapter03}
+\cleardoublepage
+\addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
-% \include{Chapters/chapter4}
-% \cleardoublepage
-% \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
+\include{Chapters/chapter4}
+\cleardoublepage
+\addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
 % \include{Chapters/chapter5}
 % \cleardoublepage
@@ -174,11 +172,15 @@
 % ********************************************************************
 % Backmatter
 %*******************************************************
-% \appendix
-%\renewcommand{\thechapter}{\alph{chapter}}
-% \cleardoublepage
-% \part{Appendix}
-% \include{Chapters/Chapter0A}
+\appendix
+\renewcommand{\thechapter}{\alph{chapter}}
+\cleardoublepage
+\part{Appendix}
+\include{Chapters/Chapter0A}
+\include{Chapters/Chapter0B}
+\include{Chapters/Chapter0C}
+\include{Chapters/Chapter0D}
+
 %********************************************************************
 % Other Stuff in the Back
 %*******************************************************
@@ -201,8 +203,8 @@
 \cleardoublepage
 
 % \cleardoublepage\include{FrontBackmatter/Bibliography}
-% \cleardoublepage\include{FrontBackmatter/Declaration}
-% \cleardoublepage\include{FrontBackmatter/Colophon}
+
+\cleardoublepage\include{FrontBackmatter/Colophon}
 % ********************************************************************
 % Game Over: Restore, Restart, or Quit?
 %*******************************************************
