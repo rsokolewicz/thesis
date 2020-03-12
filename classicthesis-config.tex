@@ -57,7 +57,7 @@
 \newcommand{\myUni}{Radboud University\xspace}
 \newcommand{\myLocation}{Nijmegen\xspace}
 \newcommand{\myTime}{April 2019\xspace}
-\newcommand{\myVersion}{\xspace}
+\newcommand{\myVersion}{0.1}
 
 % ********************************************************************
 % Setup, finetuning, and useful commands
@@ -113,22 +113,36 @@
     \usepackage{babel}
 
 \usepackage{csquotes}
+
 % \PassOptionsToPackage{%
-%   backend=biber,bibencoding=utf8, %instead of bibtex
-%   % backend=bibtex8,bibencoding=ascii,%
+%   %backend=biber,bibencoding=utf8, %instead of bibtex
+%   backend=bibtex8,bibencoding=ascii,%
 %   language=auto,%
-%   % style=phys,%
-%   articletitle=false,biblabel=brackets,%
-%   chaptertitle=false,pageranges=false,%,%
+%   style=numeric-comp,%
 %   %style=authoryear-comp, % Author 1999, 2010
 %   %bibstyle=authoryear,dashed=false, % dashed: substitute rep. author with ---
-% %   sorting=nyt, % name, year, title
-%   maxbibnames=25, % default: 3, et al.
+%   sorting=nyt, % name, year, title
+%   maxbibnames=10, % default: 3, et al.
 %   %backref=true,%
 %   natbib=true % natbib compatibility mode (\citep and \citet still work)
 % }{biblatex}
+%     \usepackage{biblatex}
 
-\usepackage{biblatex}
+\PassOptionsToPackage{%
+  %backend=biber,bibencoding=utf8, %instead of bibtex
+  backend=bibtex8,bibencoding=ascii,%
+  language=auto,%
+  style=phys,%
+  articletitle=false,biblabel=brackets,%
+  chaptertitle=false,pageranges=false,%,%
+  %style=authoryear-comp, % Author 1999, 2010
+  %bibstyle=authoryear,dashed=false, % dashed: substitute rep. author with ---
+%   sorting=nyt, % name, year, title
+  maxbibnames=25, % default: 3, et al.
+  %backref=true,%
+  natbib=true % natbib compatibility mode (\citep and \citet still work)
+}{biblatex}
+    \usepackage{biblatex}
 
 \PassOptionsToPackage{fleqn}{amsmath}       % math environments and more by the AMS
   \usepackage{amsmath}

@@ -44,32 +44,37 @@
   <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>mythesis.bcf</file>
+      <file>mythesis.aux</file>
+      <file>mythesis-blx.bib</file>
     </provides>
     <requires type="dynamic">
       <file>mythesis.bbl</file>
     </requires>
     <requires type="static">
-      <file>blx-dm.def</file>
       <file>blx-compat.def</file>
-      <file>biblatex.def</file>
-      <file>standard.bbx</file>
+      <file>biblatex_legacy.def</file>
+      <file>blx-natbib.def</file>
+      <file>phys.bbx</file>
+      <file>numeric-comp.bbx</file>
       <file>numeric.bbx</file>
-      <file>numeric.cbx</file>
+      <file>standard.bbx</file>
+      <file>phys.cbx</file>
+      <file>numeric-comp.cbx</file>
       <file>biblatex.cfg</file>
-      <file>english.lbx</file>
       <file>american.lbx</file>
-      <file>dutch.lbx</file>
+      <file>english.lbx</file>
     </requires>
   </internal>
   <external package="biblatex" priority="5" active="1">
-    <generic>biber</generic>
+    <generic>bibtex</generic>
     <cmdline>
-      <binary>biber</binary>
+      <binary>bibtex8</binary>
+      <option>--wolfgang</option>
+      <option>--min_crossrefs 2</option>
       <infile>mythesis</infile>
     </cmdline>
     <input>
-      <file>mythesis.bcf</file>
+      <file>mythesis.aux</file>
     </input>
     <output>
       <file>mythesis.bbl</file>
@@ -78,10 +83,14 @@
       <file>mythesis.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>mythesis.bcf</file>
+      <file>mythesis.aux</file>
+      <file>mythesis-blx.bib</file>
     </requires>
     <requires type="editable">
-      <file>biblioThesis.bib</file>
+      <file>Bibliography.bib</file>
+    </requires>
+    <requires type="static">
+      <file>biblatex.bst</file>
     </requires>
   </external>
 </requests>
