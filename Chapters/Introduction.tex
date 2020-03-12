@@ -82,6 +82,20 @@ Our model consists of two parts. The first part are the conducting electrons who
 
 In order to compute a spin-torque, all we need to do is compute the spin-density of the conducting electrons, which is done using linear response theory. 
 
+\section{Dynamics}
+The misalignment between the spin of the conducting electrons and the direction of the magnetic moment of localized electrons induces a spin-torque that enter the equations of motion of the magnetization vector. In order to see this let us first consider the total energy $H$ of the magnetic system
+\begin{equation}
+    H_M = \int \mathrm{d}\bb{r}\, \Delta_\text{sd} \bb{n}\cdot\bb{s}
+\end{equation}
+The equations of motion can be derived by either writing the magnetic moments as quantum spins $\hat{S}$ and use Heisenberg's equation of motion $\partial_t \hat{S} = i\hbar[H, \hat{S}], by poisson brackets $\{H,S\}_p$ or by calculating the effect field. We easily obtain
+\begin{equation}
+    \partial_t \bb{n} = \Delta_\text{sd}\bb{n}\times\bb{s}.
+\end{equation}
+In this thesis we focus on spin-densities that are in response to currents and to time-derivatives of magnetization. One example would be
+\begin{equation}
+    \partial_t \bb{n} = \beta \bb{n}\times \hat{\bb{z}}\times\bb{j} + \beta \bb{n}\times\bb{n}\times \hat{\bb{z}}\times{j} + \alpha \bb{n}\times \partial_t \bb{n}
+\end{equation}
+It is convenient to decompose current-induced torques in terms that are even under time-reversal (proportional to $\beta$) and in terms that are odd (proportional to $\beta'$), which are often called field-like and damping-like torques. The field-like torques are observed as a simple precession of $\bb{n}$ around $\bb{j}$, whereas the damping-like torques are dissipative and can orient $\bb{n}$ either parallel or anti-parallel to $\bb{j}$. 
 \section{linear response formula}
 The $dc$ linear-response formulas that we use are given by:
 \begin{align}
