@@ -216,137 +216,137 @@ where $\rho_{aa}=1/\sigma_{aa}$ is the corresponding resistivity tensor componen
 
 The results of Eq.~(\ref{chap03:conductivity}) and all subsequent results of our paper are technically obtained from linear response Kubo formulas evaluated in the diffusive approximation (ladder diagram summation). The details of these calculations can be found in Appendixes~\ref{chap03:sec:appb}, \ref{chap03:sec:appc}, and \ref{chap03:sec:appd}. 
 
-\section{Spin-orbit torque}\label{chap03:sec:sot}
+% \section{Spin-orbit torque}\label{chap03:sec:sot}
 
-Before proceeding with the microscopic analysis of Gilbert damping we shall discuss the effects of spin-orbit induced anisotropy for spin-orbit torques in the model of Eq.~(\ref{chap03:eff}). Since this anisotropy appears to be weak in the metal regime, we shall touch on it only briefly. 
+% Before proceeding with the microscopic analysis of Gilbert damping we shall discuss the effects of spin-orbit induced anisotropy for spin-orbit torques in the model of Eq.~(\ref{chap03:eff}). Since this anisotropy appears to be weak in the metal regime, we shall touch on it only briefly. 
 
-As was already mentioned, the spin-orbit torques originate in the response of nonequilibrium spin polarizations $\delta\bb{s}^\pm$ to electric current. Technically, we compute first the response of $\delta\bb{s}^\pm$ to electric field and, then, express the electric field in terms of 2D electric current density $\bb{j}$ using the conductivity tensor of Eq.~(\ref{chap03:conductivity}).
+% As was already mentioned, the spin-orbit torques originate in the response of nonequilibrium spin polarizations $\delta\bb{s}^\pm$ to electric current. Technically, we compute first the response of $\delta\bb{s}^\pm$ to electric field and, then, express the electric field in terms of 2D electric current density $\bb{j}$ using the conductivity tensor of Eq.~(\ref{chap03:conductivity}).
 
-A straightforward computation of such a response gives $\delta\bb{s}^-=0$ (see Appendixes~\ref{chap03:sec:appb} and \ref{chap03:sec:appc} for more detail) and 
-\begin{align}
-\label{chap03:sp}
-\delta\bb{s}^+= \,&a(n_z^2)\;\hat{\bb{z}}\times \bb{j} + b(n_z^2)\, \bb{n}_\parallel\times(\bb{n}_\parallel\times \lt(\hat{\bb{z}}\times \bb{j}\rt)) \n\\
-&+ c(n_z^2)\, \bb{n}_\parallel \times(\bb{n}_\perp\times \lt(\hat{\bb{z}}\times \bb{j}\rt)),
-\end{align}
-where the coefficients $a$, $b$ and $c$ do generally depend on $n_z^2=1-n_x^2-n_y^2$ and are shown in Fig.~\ref{chap03:fig:abc}. 
-It is appropriate to recall here that the computation of the responses from the model of Eq.~(\ref{chap03:eff}) refers to the case when $\bb{m}=0$. The symmetry form of Eq.~(\ref{chap03:sp}) in this case has been also established recently from numerical simulations \cite{Sumit2019-}.
+% A straightforward computation of such a response gives $\delta\bb{s}^-=0$ (see Appendixes~\ref{chap03:sec:appb} and \ref{chap03:sec:appc} for more detail) and 
+% \begin{align}
+% \label{chap03:sp}
+% \delta\bb{s}^+= \,&a(n_z^2)\;\hat{\bb{z}}\times \bb{j} + b(n_z^2)\, \bb{n}_\parallel\times(\bb{n}_\parallel\times \lt(\hat{\bb{z}}\times \bb{j}\rt)) \n\\
+% &+ c(n_z^2)\, \bb{n}_\parallel \times(\bb{n}_\perp\times \lt(\hat{\bb{z}}\times \bb{j}\rt)),
+% \end{align}
+% where the coefficients $a$, $b$ and $c$ do generally depend on $n_z^2=1-n_x^2-n_y^2$ and are shown in Fig.~\ref{chap03:fig:abc}. 
+% It is appropriate to recall here that the computation of the responses from the model of Eq.~(\ref{chap03:eff}) refers to the case when $\bb{m}=0$. The symmetry form of Eq.~(\ref{chap03:sp}) in this case has been also established recently from numerical simulations \cite{Sumit2019-}.
 
-Importantly, the first term in the right-hand side of Eq.~(\ref{chap03:sp}) represents the well-known Rashba-Edelstein effect \cite{Edelstein1990}, while the other two terms represent higher harmonics of the same field-like effect that arise due to spin-rotation symmetry breaking. Anti-damping like torques (that are even under time-reversal) are vanishing in the model due to the valley symmetry constraint. This symmetry reads $\Lambda_x H[\bb{n}] \Lambda_x = H[-\bb{n}]$, from which it follows that the response of $\delta\bb{s}^+$ to charge current must be an even function of $\bb{n}$. 
+% Importantly, the first term in the right-hand side of Eq.~(\ref{chap03:sp}) represents the well-known Rashba-Edelstein effect \cite{Edelstein1990}, while the other two terms represent higher harmonics of the same field-like effect that arise due to spin-rotation symmetry breaking. Anti-damping like torques (that are even under time-reversal) are vanishing in the model due to the valley symmetry constraint. This symmetry reads $\Lambda_x H[\bb{n}] \Lambda_x = H[-\bb{n}]$, from which it follows that the response of $\delta\bb{s}^+$ to charge current must be an even function of $\bb{n}$. 
 
-The behavior of the coefficients $a$, $b$ and $c$ as a function of $n_z$ is illustrated in Fig.~\ref{chap03:fig:abc} for two different choices of the Fermi energy. For in-plane N\'eel vector orientations ($n_z=0$) we find 
-\beml
-\label{chap03:SOT}
-\begin{align}
-&a=a_0 \frac{1+3\delta^2}{1+2\bar{\lambda}^2\delta^2+\delta^4-2\delta^6},\\
-&b=2\, a\,\delta^2\,\frac{1-2\bar{\lambda}^2-4\delta^2+\delta^4}{1+2\delta^2-3\delta^4},\\
-&c=-2\, a\,\delta^2\,\frac{1+2\bar{\lambda}^2\delta^2-2\delta^2-3\delta^4-4\delta^6}{1+4\delta^2+5\delta^4+6\delta^6},
-\end{align}
-\eml
-where
-\be
-a_0=\frac{\mathcal{A}J}{e\hslash v}\,\frac{\lambda}{\ep_F}, \qquad \bar{\lambda}=\frac{\lambda}{\ep_F},\qquad\delta=\frac{\Delta}{\ep_F}.
-\e
-In the metal regime, $\ep_F\gg \lambda+\Delta$, the results of Eqs.~(\ref{chap03:SOT}) are reduced to 
-\be
-\label{chap03:SOTlargeE}
-a=\frac{\mathcal{A}J}{e\hslash v}\,\frac{\lambda}{\ep_F}, \qquad b=-c=2\,\frac{\mathcal{A}J}{e\hslash v}\,\frac{\lambda}{\ep_F}
-\lt(\frac{\Delta}{\ep_F}\rt)^2.
-\e
-One can, therefore, see that the high harmonics terms (proportional to $b$ and $c$) become irrelevant in the metal regime.  
+% The behavior of the coefficients $a$, $b$ and $c$ as a function of $n_z$ is illustrated in Fig.~\ref{chap03:fig:abc} for two different choices of the Fermi energy. For in-plane N\'eel vector orientations ($n_z=0$) we find 
+% \beml
+% \label{chap03:SOT}
+% \begin{align}
+% &a=a_0 \frac{1+3\delta^2}{1+2\bar{\lambda}^2\delta^2+\delta^4-2\delta^6},\\
+% &b=2\, a\,\delta^2\,\frac{1-2\bar{\lambda}^2-4\delta^2+\delta^4}{1+2\delta^2-3\delta^4},\\
+% &c=-2\, a\,\delta^2\,\frac{1+2\bar{\lambda}^2\delta^2-2\delta^2-3\delta^4-4\delta^6}{1+4\delta^2+5\delta^4+6\delta^6},
+% \end{align}
+% \eml
+% where
+% \be
+% a_0=\frac{\mathcal{A}J}{e\hslash v}\,\frac{\lambda}{\ep_F}, \qquad \bar{\lambda}=\frac{\lambda}{\ep_F},\qquad\delta=\frac{\Delta}{\ep_F}.
+% \e
+% In the metal regime, $\ep_F\gg \lambda+\Delta$, the results of Eqs.~(\ref{chap03:SOT}) are reduced to 
+% \be
+% \label{chap03:SOTlargeE}
+% a=\frac{\mathcal{A}J}{e\hslash v}\,\frac{\lambda}{\ep_F}, \qquad b=-c=2\,\frac{\mathcal{A}J}{e\hslash v}\,\frac{\lambda}{\ep_F}
+% \lt(\frac{\Delta}{\ep_F}\rt)^2.
+% \e
+% One can, therefore, see that the high harmonics terms (proportional to $b$ and $c$) become irrelevant in the metal regime.  
 
-Vanishing response of the staggered polarization, $\delta\bb{s}^-=0$, for the model of Eq.~(\ref{chap03:eff}) is a simple consequence of the sublattice symmetry. As shown below the presence of a finite, though small, $\bb{m}$ breaks such a symmetry and leads to a finite $\delta\bb{s}^-$. Taking into account a linear in $\bb{m}$ term in the Hamiltonian is also necessary to obtain finite mixed Gilbert damping tensors $\hat{\alpha}_{nm}$ and $\hat{\alpha}_{mn}$ in Eq.~(\ref{chap03:response}).   
+% Vanishing response of the staggered polarization, $\delta\bb{s}^-=0$, for the model of Eq.~(\ref{chap03:eff}) is a simple consequence of the sublattice symmetry. As shown below the presence of a finite, though small, $\bb{m}$ breaks such a symmetry and leads to a finite $\delta\bb{s}^-$. Taking into account a linear in $\bb{m}$ term in the Hamiltonian is also necessary to obtain finite mixed Gilbert damping tensors $\hat{\alpha}_{nm}$ and $\hat{\alpha}_{mn}$ in Eq.~(\ref{chap03:response}).   
 
-%%%%%%%%%%%%
-%%% figure 3: 
-%%%%%%%%%%%%
-\begin{figure}
-\centering
-\centerline{\includegraphics[width=\columnwidth]{{articles/misha_paper/fig3.pdf}}}
-\caption{The coefficients $a$, $b$, and $c$ in Eq.~(\ref{chap03:sp}) as a function of the direction of the N\'eel vector, $n_z=\cos\theta$, for two different Fermi energies: $\ep_F=4\Delta$ (left panel) and  $\ep_F=16\Delta$ (right panel). We use $\lambda=1.5\Delta$.  For $n_z=0$ the results correspond to Eqs.~(\ref{chap03:SOT}). 
-}
-\label{chap03:fig:abc}
-\end{figure}
-%%%%%%%%%
+% %%%%%%%%%%%%
+% %%% figure 3: 
+% %%%%%%%%%%%%
+% \begin{figure}
+% \centering
+% \centerline{\includegraphics[width=\columnwidth]{{articles/misha_paper/fig3.pdf}}}
+% \caption{The coefficients $a$, $b$, and $c$ in Eq.~(\ref{chap03:sp}) as a function of the direction of the N\'eel vector, $n_z=\cos\theta$, for two different Fermi energies: $\ep_F=4\Delta$ (left panel) and  $\ep_F=16\Delta$ (right panel). We use $\lambda=1.5\Delta$.  For $n_z=0$ the results correspond to Eqs.~(\ref{chap03:SOT}). 
+% }
+% \label{chap03:fig:abc}
+% \end{figure}
+% %%%%%%%%%
 
-A low-energy model that takes into account finite magnetization vector reads (see also Appendix~\ref{chap03:sec:appd})
-\be
-\label{chap03:full}
-H=H^\textrm{eff}-\Delta\,\bb{m}\cdot\bb{\sigma},
-\e
-where $H^\textrm{eff}$ is given by Eq.~(\ref{chap03:eff}). The conductivity tensor does not acquire a linear in $\bb{m}$ terms in the leading order with respect to the large metal parameter $\ep_F\tau/\hslash$, because the anomalous Hall effect remains subleading with respet to the metal parameter. Similarly, the result of Eq.~(\ref{chap03:sp}) is not affected by the linear in $\bb{m}$ corrections. 
+% A low-energy model that takes into account finite magnetization vector reads (see also Appendix~\ref{chap03:sec:appd})
+% \be
+% \label{chap03:full}
+% H=H^\textrm{eff}-\Delta\,\bb{m}\cdot\bb{\sigma},
+% \e
+% where $H^\textrm{eff}$ is given by Eq.~(\ref{chap03:eff}). The conductivity tensor does not acquire a linear in $\bb{m}$ terms in the leading order with respect to the large metal parameter $\ep_F\tau/\hslash$, because the anomalous Hall effect remains subleading with respet to the metal parameter. Similarly, the result of Eq.~(\ref{chap03:sp}) is not affected by the linear in $\bb{m}$ corrections. 
 
-However, the direct computation of the staggered polarization response (in the linear order with respect to $\bb{m}$) gives rise to a finite result. In the limit of large Fermi energy $\ep_F\gg \lambda+\Delta$, we find 
-\begin{align}
-&\delta\bb{s}^-= \frac{\mathcal{A}J}{e\hslash v}\,\frac{\lambda}{\ep_F}
-\lt(\frac{\Delta}{\ep_F}\rt)^2\,
-\Big[2\,\bb{n}_{\perp} \!\times\!(\bb{m}_{\perp} \!\times\! (\hat{\bb{z}}\!\times\!\bb{j}))
-\\
-&+2\,\bb{m}_{\parallel} \!\times\!(\bb{n}_{\perp} \!\times\! (\hat{\bb{z}}\!\times\!\bb{j})) -3\,\bb{n}_{\parallel}\!\times\! (\bb{m}_{\perp}\! \times\! (\hat{\bb{z}}\!\times\!\bb{j}))\n \Big],
-\label{chap03:stagg}
-\end{align}
-where the overall strength of the effect is again of the order of the coefficients $b$ and $c$. This makes the effects of nonequilibrium staggered polarization (including the celebrated N\'eel spin-orbit torque) irrelevant in the metal regime. Indeed, staggered polarization can hardly be induced by electrons with wavelengths that strongly exceed the distance between $A$ and $B$ sublattices.  
+% However, the direct computation of the staggered polarization response (in the linear order with respect to $\bb{m}$) gives rise to a finite result. In the limit of large Fermi energy $\ep_F\gg \lambda+\Delta$, we find 
+% \begin{align}
+% &\delta\bb{s}^-= \frac{\mathcal{A}J}{e\hslash v}\,\frac{\lambda}{\ep_F}
+% \lt(\frac{\Delta}{\ep_F}\rt)^2\,
+% \Big[2\,\bb{n}_{\perp} \!\times\!(\bb{m}_{\perp} \!\times\! (\hat{\bb{z}}\!\times\!\bb{j}))
+% \\
+% &+2\,\bb{m}_{\parallel} \!\times\!(\bb{n}_{\perp} \!\times\! (\hat{\bb{z}}\!\times\!\bb{j})) -3\,\bb{n}_{\parallel}\!\times\! (\bb{m}_{\perp}\! \times\! (\hat{\bb{z}}\!\times\!\bb{j}))\n \Big],
+% \label{chap03:stagg}
+% \end{align}
+% where the overall strength of the effect is again of the order of the coefficients $b$ and $c$. This makes the effects of nonequilibrium staggered polarization (including the celebrated N\'eel spin-orbit torque) irrelevant in the metal regime. Indeed, staggered polarization can hardly be induced by electrons with wavelengths that strongly exceed the distance between $A$ and $B$ sublattices.  
 
-The results of Eqs.~(\ref{chap03:sp}), (\ref{chap03:SOT}) clearly suggest that the only torques surviving in the large energy limit are those related to non-equilibrium polarization $\delta\bb{s}_+=a_0 \,\hat{\bb{z}}\times\bb{j}$, which is nothing but the standard Rashba-Edelstein effect \cite{Edelstein1990}. These torques have a form $\bb{T}_n= a_0 \,\bb{n}\times(\hat{\bb{z}}\times\bb{j})$ in the right-hand side of Eq.~(\ref{chap03:ndot}) and $\bb{T}_m= a_0 \,\bb{m}\times(\hat{\bb{z}}\times\bb{j})$ in the right-hand side of Eq.~(\ref{chap03:mdot}). The anisotropy of torques is, however, irrelevant in this limit.  
+% The results of Eqs.~(\ref{chap03:sp}), (\ref{chap03:SOT}) clearly suggest that the only torques surviving in the large energy limit are those related to non-equilibrium polarization $\delta\bb{s}_+=a_0 \,\hat{\bb{z}}\times\bb{j}$, which is nothing but the standard Rashba-Edelstein effect \cite{Edelstein1990}. These torques have a form $\bb{T}_n= a_0 \,\bb{n}\times(\hat{\bb{z}}\times\bb{j})$ in the right-hand side of Eq.~(\ref{chap03:ndot}) and $\bb{T}_m= a_0 \,\bb{m}\times(\hat{\bb{z}}\times\bb{j})$ in the right-hand side of Eq.~(\ref{chap03:mdot}). The anisotropy of torques is, however, irrelevant in this limit.  
 
-\section{Gilbert damping}\label{chap03:sec:gd}
+% \section{Gilbert damping}\label{chap03:sec:gd}
 
-Surprisingly, the situation is different when we consider Gilbert damping terms. In this case we find that the giant anisotropy of Gilbert damping persists to arbitrarily large Fermi energy as soon as spin orbit energy $\lambda$ exceeds $\hslash/\tau$. The latter condition ensures that the scattering between spin-split subbands is suppressed. 
+% Surprisingly, the situation is different when we consider Gilbert damping terms. In this case we find that the giant anisotropy of Gilbert damping persists to arbitrarily large Fermi energy as soon as spin orbit energy $\lambda$ exceeds $\hslash/\tau$. The latter condition ensures that the scattering between spin-split subbands is suppressed. 
 
-The direct computation of the Gilbert damping tensors for $\lambda\gg \hslash/\tau$ gives
-\beml
-\label{chap03:gilbert}
-\begin{align}
-&\delta\bb{s}^+= \alpha_m^\parallel\,\dot{\bb{m}}_\parallel + \gamma \bb{\Gamma}_{mm}+ \gamma\bb{\Gamma}_{mn},\\
-&\delta\bb{s}^-= \alpha_n^\perp\,\dot{\bb{n}}_\perp +\gamma \bb{\Gamma}_{nm}+\gamma \bb{\Gamma}_{nn},
-\end{align}
-\eml
-where the terms $\Gamma_{ab}$ contain various vector forms. 
+% The direct computation of the Gilbert damping tensors for $\lambda\gg \hslash/\tau$ gives
+% \beml
+% \label{chap03:gilbert}
+% \begin{align}
+% &\delta\bb{s}^+= \alpha_m^\parallel\,\dot{\bb{m}}_\parallel + \gamma \bb{\Gamma}_{mm}+ \gamma\bb{\Gamma}_{mn},\\
+% &\delta\bb{s}^-= \alpha_n^\perp\,\dot{\bb{n}}_\perp +\gamma \bb{\Gamma}_{nm}+\gamma \bb{\Gamma}_{nn},
+% \end{align}
+% \eml
+% where the terms $\Gamma_{ab}$ contain various vector forms. 
 
-Far in the metal regime, $\ep_F\gg \lambda+\Delta$, we find
-\beml
-\label{chap03:coeffGD}
-\begin{align}
-&\alpha_m^\parallel= 2\,\frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J^2 S}{\pi\hslash^2v^2}\; \lt[1-\frac{\Delta^2}{\ep_F^2}(2+n^2_z) + \dots\rt],\\
-&\alpha_n^\perp = \frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J^2 S}{\pi\hslash^2v^2} \,\lt[\lt(\frac{\lambda}{\ep_F}\rt)^2+\dots\rt],\\
-&\gamma= 2\,\frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J^2 S}{\pi\hslash^2v^2}\,\lt[\lt(\frac{\Delta}{\ep_\textrm{F}}\rt)^2+\dots\rt],
-\end{align}
-\eml
-while the vectors forms $\Gamma_{ab}$ can be written as
-\beml
-\begin{align}
-\bb{\Gamma}_{mm}=&\,
-\bb{n}\!\times\!(\bb{n}\!\times\!\dot{\bb{m}}) + \bb{n}_\parallel\!\times\!(\bb{n}_\parallel\!\times\!\dot{\bb{m}}_\parallel) \n\\ 
-&- 2 \bb{n}_\parallel\!\times\!(\bb{n}_\parallel\!\times\!\dot{\bb{m}}_\perp),\\
-\bb{\Gamma}_{mn}=&\,
-\bb{n}\!\times\!(\bb{m}_\parallel\!\times\!\dot{\bb{n}}_\perp) 
-- \bb{m}_\perp\!\times\!(\bb{n}_\parallel\!\times\!\dot{\bb{n}}_\perp)\n\\
-&+\bb{n}_\perp\!\times\!(\bb{m}_\perp\!\times\!\dot{\bb{n}}_\parallel) 
-- \bb{n}_\parallel\!\times\!(\bb{m}_\parallel\!\times\!\dot{\bb{n}}_\parallel)\n\\
-&- 3\bb{m}_\perp\!\times\!(\bb{n}_\perp\!\times\!\dot{\bb{n}}_\parallel),\\
-\bb{\Gamma}_{nm}=&\,2\bb{n}_\parallel\!\times\!(\bb{m}_\parallel\!\times\!\dot{\bb{m}}_\perp)+ 
-2\bb{m}_\parallel\!\times\!(\bb{n}_\perp\!\times\!\dot{\bb{m}}_\parallel)\n\\
-&-\bb{n}_\perp\!\times\!(\bb{m}_\perp\!\times\!\dot{\bb{m}})+2 \bb{m}_\perp\!\times\!(\bb{n}\!\times\!\dot{\bb{m}})\n\\
-&+ \bb{m}_\parallel\!\times\!(\bb{n}\!\times\!\dot{\bb{m}}_\perp) 
-- \bb{m}_\perp\!\times\!(\bb{n}_\perp\!\times\!\dot{\bb{m}}_\parallel),\\
-\bb{\Gamma}_{nn}=&\,-\bb{m}\times(\bb{n}\times\dot{\bb{n}}_\parallel).
-\end{align}
-\eml
-Thus, we see from Eqs.~(\ref{chap03:coeffGD}) that the coefficients $\alpha_n^{\perp}$ and $\gamma$ are vanishingly small in the metal regime. Moreover, in the limit $\ep_F\gg \Delta$ the only non-vanishing contributions to Gilbert dampings are given by the first terms on the right-hand sides of Eqs.~(\ref{chap03:gilbert}) that are manifestly anisotropic.
+% Far in the metal regime, $\ep_F\gg \lambda+\Delta$, we find
+% \beml
+% \label{chap03:coeffGD}
+% \begin{align}
+% &\alpha_m^\parallel= 2\,\frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J^2 S}{\pi\hslash^2v^2}\; \lt[1-\frac{\Delta^2}{\ep_F^2}(2+n^2_z) + \dots\rt],\\
+% &\alpha_n^\perp = \frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J^2 S}{\pi\hslash^2v^2} \,\lt[\lt(\frac{\lambda}{\ep_F}\rt)^2+\dots\rt],\\
+% &\gamma= 2\,\frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J^2 S}{\pi\hslash^2v^2}\,\lt[\lt(\frac{\Delta}{\ep_\textrm{F}}\rt)^2+\dots\rt],
+% \end{align}
+% \eml
+% while the vectors forms $\Gamma_{ab}$ can be written as
+% \beml
+% \begin{align}
+% \bb{\Gamma}_{mm}=&\,
+% \bb{n}\!\times\!(\bb{n}\!\times\!\dot{\bb{m}}) + \bb{n}_\parallel\!\times\!(\bb{n}_\parallel\!\times\!\dot{\bb{m}}_\parallel) \n\\ 
+% &- 2 \bb{n}_\parallel\!\times\!(\bb{n}_\parallel\!\times\!\dot{\bb{m}}_\perp),\\
+% \bb{\Gamma}_{mn}=&\,
+% \bb{n}\!\times\!(\bb{m}_\parallel\!\times\!\dot{\bb{n}}_\perp) 
+% - \bb{m}_\perp\!\times\!(\bb{n}_\parallel\!\times\!\dot{\bb{n}}_\perp)\n\\
+% &+\bb{n}_\perp\!\times\!(\bb{m}_\perp\!\times\!\dot{\bb{n}}_\parallel) 
+% - \bb{n}_\parallel\!\times\!(\bb{m}_\parallel\!\times\!\dot{\bb{n}}_\parallel)\n\\
+% &- 3\bb{m}_\perp\!\times\!(\bb{n}_\perp\!\times\!\dot{\bb{n}}_\parallel),\\
+% \bb{\Gamma}_{nm}=&\,2\bb{n}_\parallel\!\times\!(\bb{m}_\parallel\!\times\!\dot{\bb{m}}_\perp)+ 
+% 2\bb{m}_\parallel\!\times\!(\bb{n}_\perp\!\times\!\dot{\bb{m}}_\parallel)\n\\
+% &-\bb{n}_\perp\!\times\!(\bb{m}_\perp\!\times\!\dot{\bb{m}})+2 \bb{m}_\perp\!\times\!(\bb{n}\!\times\!\dot{\bb{m}})\n\\
+% &+ \bb{m}_\parallel\!\times\!(\bb{n}\!\times\!\dot{\bb{m}}_\perp) 
+% - \bb{m}_\perp\!\times\!(\bb{n}_\perp\!\times\!\dot{\bb{m}}_\parallel),\\
+% \bb{\Gamma}_{nn}=&\,-\bb{m}\times(\bb{n}\times\dot{\bb{n}}_\parallel).
+% \end{align}
+% \eml
+% Thus, we see from Eqs.~(\ref{chap03:coeffGD}) that the coefficients $\alpha_n^{\perp}$ and $\gamma$ are vanishingly small in the metal regime. Moreover, in the limit $\ep_F\gg \Delta$ the only non-vanishing contributions to Gilbert dampings are given by the first terms on the right-hand sides of Eqs.~(\ref{chap03:gilbert}) that are manifestly anisotropic.
 
-%The forms entering $\bb{\Gamma}_{mm}$, $\bb{\Gamma}_{mn}$, $\bb{\Gamma}_{nm}$, and $\bb{\Gamma}_{nn}$ are obtained, respectively, from the analysis of the tensors $\hat{\alpha}_m$, $\hat{\alpha}_{nm}$, $\hat{\alpha}_{mn}$, and $\hat{\alpha}_n$ with the help of the first order perturbation theory in $\bb{m}$.
+% %The forms entering $\bb{\Gamma}_{mm}$, $\bb{\Gamma}_{mn}$, $\bb{\Gamma}_{nm}$, and $\bb{\Gamma}_{nn}$ are obtained, respectively, from the analysis of the tensors $\hat{\alpha}_m$, $\hat{\alpha}_{nm}$, $\hat{\alpha}_{mn}$, and $\hat{\alpha}_n$ with the help of the first order perturbation theory in $\bb{m}$.
 
-The onset of spin-orbit interactions therefore makes Gilbert dampings ultimately anisotropic, also in the deep metal regime. This is in contrast to conductivity and spin-orbit torques that are quickly becoming isotropic in the metal limit. 
-For $\ep_F\gg \lambda+\Delta$, we find the well known Landau-Lifshitz-Gilbert equations
-\begin{align}
-&\dot{\bb{n}} = -\Omega\, \bb{n}\!\times\!\bb{m} +\bb{H}\!\times\!\bb{n}+\bar{\alpha}^\parallel_m\,\bb{n}\!\times\!\dot{\bb{m}}_\parallel+\alpha_n^\perp\,\bb{m}\!\times\! \dot{\bb{n}}_\perp,\n\\
-&\dot{\bb{m}} =\bb{H}\times\bb{m}+\alpha_n^\perp\,\bb{n} \times \dot{\bb{n}}_\perp
-+\bar{\alpha}_m^\parallel \bb{m} \times \dot{\bb{m}}_\parallel,
-\label{chap03:AFMEOM3}
-\end{align}
-where we again omit terms that originate e.\,g. from magnetic anisotropy of the AFM. 
-Eqs. (\ref{chap03:AFMEOM3}) are clearly different from Eqs.~(\ref{chap03:AFMEOM2}) derived on the basis of symmetry analysis in the absence of spin-orbit interaction. 
+% The onset of spin-orbit interactions therefore makes Gilbert dampings ultimately anisotropic, also in the deep metal regime. This is in contrast to conductivity and spin-orbit torques that are quickly becoming isotropic in the metal limit. 
+% For $\ep_F\gg \lambda+\Delta$, we find the well known Landau-Lifshitz-Gilbert equations
+% \begin{align}
+% &\dot{\bb{n}} = -\Omega\, \bb{n}\!\times\!\bb{m} +\bb{H}\!\times\!\bb{n}+\bar{\alpha}^\parallel_m\,\bb{n}\!\times\!\dot{\bb{m}}_\parallel+\alpha_n^\perp\,\bb{m}\!\times\! \dot{\bb{n}}_\perp,\n\\
+% &\dot{\bb{m}} =\bb{H}\times\bb{m}+\alpha_n^\perp\,\bb{n} \times \dot{\bb{n}}_\perp
+% +\bar{\alpha}_m^\parallel \bb{m} \times \dot{\bb{m}}_\parallel,
+% \label{chap03:AFMEOM3}
+% \end{align}
+% where we again omit terms that originate e.\,g. from magnetic anisotropy of the AFM. 
+% Eqs. (\ref{chap03:AFMEOM3}) are clearly different from Eqs.~(\ref{chap03:AFMEOM2}) derived on the basis of symmetry analysis in the absence of spin-orbit interaction. 
 
-The very pronounced, highly anisotropic Gilbert damping terms in the Landau-Lifshitz-Gilbert equations of Eqs.~(\ref{chap03:AFMEOM3}) represent the main result of our paper. The phenomenon of the giant Gilbert damping anisotropy in the 2D AFM clearly calls for a qualitative understanding that we provide in Sec.~\ref{chap03:sec:qual}.
+% The very pronounced, highly anisotropic Gilbert damping terms in the Landau-Lifshitz-Gilbert equations of Eqs.~(\ref{chap03:AFMEOM3}) represent the main result of our paper. The phenomenon of the giant Gilbert damping anisotropy in the 2D AFM clearly calls for a qualitative understanding that we provide in Sec.~\ref{chap03:sec:qual}.
 
 % \section{Qualitative consideration}\label{chap03:sec:qual}
 
