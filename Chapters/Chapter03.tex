@@ -104,117 +104,117 @@ The vector $\bb{s}^+$ is proportional to average polarization of conduction elec
 \end{figure}
 %%%%%%%%%
 
-The nonequilibrium contributions $\delta\bb{s}^{\pm}$ originate from various forces applied to conduction electrons. One natural example is the electric field that not only induces an electric current in the sample but also contributes to $\delta\bb{s}^{\pm}$. The electric field can be further related to electric current by the resistivity tensor. The response of spin densities to electric current defines the so-called spin-orbit torques in Eqs.~(\ref{chap03:AFMEOM}) that we also compute.
+% The nonequilibrium contributions $\delta\bb{s}^{\pm}$ originate from various forces applied to conduction electrons. One natural example is the electric field that not only induces an electric current in the sample but also contributes to $\delta\bb{s}^{\pm}$. The electric field can be further related to electric current by the resistivity tensor. The response of spin densities to electric current defines the so-called spin-orbit torques in Eqs.~(\ref{chap03:AFMEOM}) that we also compute.
 
-Similarly, the response of $\delta\bb{s}^{\pm}$ to the time derivatives $\dot{\bb{n}}$ and $\dot{\bb{m}}$ describe various types of Gilbert damping induced by conduction electrons. Quite generally, such a response can be written in the form of a tensor
-\be
-\label{chap03:response}
-\bpm 
-\delta \bb{s}^{+}\\
-\delta \bb{s}^{-}
-\epm=
-\bpm 
-\hat{\alpha}_m & \hat{\alpha}_{mn}\\
-\hat{\alpha}_{nm} & \hat{\alpha}_n
-\epm
-\bpm 
-\dot{\bb{m}}\\
-\dot{\bb{n}}
-\epm,
-\e
-where all tensor components may themselves depend on the vectors $\bb{n}$ and $\bb{m}$. 
+% Similarly, the response of $\delta\bb{s}^{\pm}$ to the time derivatives $\dot{\bb{n}}$ and $\dot{\bb{m}}$ describe various types of Gilbert damping induced by conduction electrons. Quite generally, such a response can be written in the form of a tensor
+% \be
+% \label{chap03:response}
+% \bpm 
+% \delta \bb{s}^{+}\\
+% \delta \bb{s}^{-}
+% \epm=
+% \bpm 
+% \hat{\alpha}_m & \hat{\alpha}_{mn}\\
+% \hat{\alpha}_{nm} & \hat{\alpha}_n
+% \epm
+% \bpm 
+% \dot{\bb{m}}\\
+% \dot{\bb{n}}
+% \epm,
+% \e
+% where all tensor components may themselves depend on the vectors $\bb{n}$ and $\bb{m}$. 
 
-Gilbert dampings, in their original meaning, correspond to the contributions to $\delta\bb{s}^{\pm}$ that are symmetric under the time reversion. 
-The terms that change sign should, more appropriately, be referred to as effective spin renormalizations. Both types of terms are, however, obtained from the microscopic analysis of the Gilbert damping tensors in Eq.~(\ref{chap03:response}) similarly to the case of ferromagnets \cite{AdoSTTGD2019}.
+% Gilbert dampings, in their original meaning, correspond to the contributions to $\delta\bb{s}^{\pm}$ that are symmetric under the time reversion. 
+% The terms that change sign should, more appropriately, be referred to as effective spin renormalizations. Both types of terms are, however, obtained from the microscopic analysis of the Gilbert damping tensors in Eq.~(\ref{chap03:response}) similarly to the case of ferromagnets \cite{AdoSTTGD2019}.
 
-Time reversion, mentioned above, applies exclusively to the Heisenberg model, while keeping the tight-binding model (a bath) non-reversed. In other words we do not reverse the electron scattering time $\tau$. Such a definition helps to identify the dissipative (even with respect to the time reversion) contributions to $\delta\bb{s}^{\pm}$ that describe Gilbert dampings. These contributions must, however, change sign under the transformation $\tau \to -\tau$, because spin densities $\bb{s}^\pm$ are always odd with respect to complete time reversion (the one which also includes that of the electron bath). We will see below, indeed, that all Gilbert dampings are proportional to the scattering time $\tau$ in the same way as the longitudinal conductivity does.  
+% Time reversion, mentioned above, applies exclusively to the Heisenberg model, while keeping the tight-binding model (a bath) non-reversed. In other words we do not reverse the electron scattering time $\tau$. Such a definition helps to identify the dissipative (even with respect to the time reversion) contributions to $\delta\bb{s}^{\pm}$ that describe Gilbert dampings. These contributions must, however, change sign under the transformation $\tau \to -\tau$, because spin densities $\bb{s}^\pm$ are always odd with respect to complete time reversion (the one which also includes that of the electron bath). We will see below, indeed, that all Gilbert dampings are proportional to the scattering time $\tau$ in the same way as the longitudinal conductivity does.  
 
-Before we proceed with the microscopic analysis of $\delta\bb{s}^{\pm}$ for a particular model, it is instructive to draw some general consequences for Eqs.~(\ref{chap03:AFMEOM}) based on symmetry arguments in the case of collinear AFM with sublattice symmetry and spin-rotational invariance (i.\,e. for vanishing spin-orbit interaction).  
+% Before we proceed with the microscopic analysis of $\delta\bb{s}^{\pm}$ for a particular model, it is instructive to draw some general consequences for Eqs.~(\ref{chap03:AFMEOM}) based on symmetry arguments in the case of collinear AFM with sublattice symmetry and spin-rotational invariance (i.\,e. for vanishing spin-orbit interaction).  
 
-Assuming that deviations from the AFM ground state remain small we shall limit ourselves to the linear order in $\bb{m}$ in Eq.~(\ref{chap03:even}) and to the quadratic order in $\bb{m}$ in Eq.~(\ref{chap03:staggered}).  Thus, we shall retain terms up to linear order in $\bb{m}$ in the tensors $\hat{\alpha}_{m}$, $\hat{\alpha}_{nm}$, and $\hat{\alpha}_{mn}$ and terms up to quadratic order in $\bb{m}$ in $\hat{\alpha}_n$. 
+% Assuming that deviations from the AFM ground state remain small we shall limit ourselves to the linear order in $\bb{m}$ in Eq.~(\ref{chap03:even}) and to the quadratic order in $\bb{m}$ in Eq.~(\ref{chap03:staggered}).  Thus, we shall retain terms up to linear order in $\bb{m}$ in the tensors $\hat{\alpha}_{m}$, $\hat{\alpha}_{nm}$, and $\hat{\alpha}_{mn}$ and terms up to quadratic order in $\bb{m}$ in $\hat{\alpha}_n$. 
 
-Mixing tensors $\hat{\alpha}_{mn}$ and $\hat{\alpha}_{nm}$ must be odd in $\bb{m}$, which implies, for our precision, a linear in $\bb{m}$ approximation. As a result, the sublattice symmetry (the symmetry with respect to renaming $A$ and $B$) prescribes that the mixing tensors must also be linear in $\bb{n}$. In the absence of spin-orbit coupling we are also restricted by spin-rotation invariance that (together with the sublattice and time-reversion symmetries) dictates the following form of the Gilbert damping contributions to the non-equilibrium spin densities
-\beml
-\label{chap03:gen}
-\begin{align}
-\label{chap03:even}
-\delta \bb{s}^{+} & = \alpha_m \dot{\bb{m}}  \!+\! \alpha'_m \bb{n}  \!\times\! (\bb{n} \!\times\! \dot{\bb{m}}) \!+\!\alpha_{mn}\bb{m}  \!\times\!  (\bb{n}  \!\times\!  \dot{\bb{n}}),\\
-\delta \bb{s}^{-} &= \alpha_n \dot{\bb{n}} \!+\! \alpha'_n \bb{m}  \!\times\! (\bb{m} \!\times\! \dot{\bb{n}}) + \alpha_{nm} \bb{n}\!\times\!(\bb{m}\!\times\! \dot{\bb{m}}),
-\label{chap03:staggered}
-\end{align}
-\eml
-where all coefficients are assumed to be constants.  
+% Mixing tensors $\hat{\alpha}_{mn}$ and $\hat{\alpha}_{nm}$ must be odd in $\bb{m}$, which implies, for our precision, a linear in $\bb{m}$ approximation. As a result, the sublattice symmetry (the symmetry with respect to renaming $A$ and $B$) prescribes that the mixing tensors must also be linear in $\bb{n}$. In the absence of spin-orbit coupling we are also restricted by spin-rotation invariance that (together with the sublattice and time-reversion symmetries) dictates the following form of the Gilbert damping contributions to the non-equilibrium spin densities
+% \beml
+% \label{chap03:gen}
+% \begin{align}
+% \label{chap03:even}
+% \delta \bb{s}^{+} & = \alpha_m \dot{\bb{m}}  \!+\! \alpha'_m \bb{n}  \!\times\! (\bb{n} \!\times\! \dot{\bb{m}}) \!+\!\alpha_{mn}\bb{m}  \!\times\!  (\bb{n}  \!\times\!  \dot{\bb{n}}),\\
+% \delta \bb{s}^{-} &= \alpha_n \dot{\bb{n}} \!+\! \alpha'_n \bb{m}  \!\times\! (\bb{m} \!\times\! \dot{\bb{n}}) + \alpha_{nm} \bb{n}\!\times\!(\bb{m}\!\times\! \dot{\bb{m}}),
+% \label{chap03:staggered}
+% \end{align}
+% \eml
+% where all coefficients are assumed to be constants.  
 
-It is easy to see that the vector forms $\bb{n}\times(\bb{m}\times\dot{\bb{n}})$ and $\bb{m}\times(\bb{n}\times \dot{\bb{m}})$, which could have respectively entered the spin densities $\delta\bb{s}^+$ and $\delta\bb{s}^-$, do not contribute to Eqs.~(\ref{chap03:AFMEOM}) in the precision explained above.  
-Substitution of Eqs.~(\ref{chap03:gen}) into Eqs.~(\ref{chap03:AFMEOM}) gives 
-\beml
-\label{chap03:AFMEOM2}
-\begin{align}
-\label{chap03:ndot2}
-&\dot{\bb{n}} = -\Omega\, \bb{n}\!\times\!\bb{m} +\bb{H}\!\times\!\bb{n}+\bar{\alpha}_m\,\bb{n}\!\times\!\dot{\bb{m}}+\alpha_n\,\bb{m}\!\times\! \dot{\bb{n}},\\
-\label{chap03:mdot2}
-&\dot{\bb{m}} =\bb{H}\times\bb{m}+\alpha_n\,\bb{n} \times \dot{\bb{n}}\n\\
-&\;+\bar{\alpha}_m \bb{m} \times \dot{\bb{m}} +\gamma (\bb{n}\times\bb{m})(\bb{n}\cdot\dot{\bb{m}}) - \alpha_n'm^2\bb{n}\times\dot{\bb{n}} ,
-\end{align}
-\eml
-where $\bar{\alpha}_m=\alpha_m\!-\!\alpha'_m$ and $\gamma=\alpha_{mn}\!+\!\alpha_{nm}\!+\!\alpha'_m\!-\!\alpha'_n$. Discarding the three last terms in Eq.~(\ref{chap03:mdot2}), which are all of the second order in $\bb{m}$, we indeed arrive at a set of Gilbert damping terms that is  widely used in the AFM literature \cite{Kamra2018,PhysRevMaterials.1.061401,Yuan_2019}. 
+% It is easy to see that the vector forms $\bb{n}\times(\bb{m}\times\dot{\bb{n}})$ and $\bb{m}\times(\bb{n}\times \dot{\bb{m}})$, which could have respectively entered the spin densities $\delta\bb{s}^+$ and $\delta\bb{s}^-$, do not contribute to Eqs.~(\ref{chap03:AFMEOM}) in the precision explained above.  
+% Substitution of Eqs.~(\ref{chap03:gen}) into Eqs.~(\ref{chap03:AFMEOM}) gives 
+% \beml
+% \label{chap03:AFMEOM2}
+% \begin{align}
+% \label{chap03:ndot2}
+% &\dot{\bb{n}} = -\Omega\, \bb{n}\!\times\!\bb{m} +\bb{H}\!\times\!\bb{n}+\bar{\alpha}_m\,\bb{n}\!\times\!\dot{\bb{m}}+\alpha_n\,\bb{m}\!\times\! \dot{\bb{n}},\\
+% \label{chap03:mdot2}
+% &\dot{\bb{m}} =\bb{H}\times\bb{m}+\alpha_n\,\bb{n} \times \dot{\bb{n}}\n\\
+% &\;+\bar{\alpha}_m \bb{m} \times \dot{\bb{m}} +\gamma (\bb{n}\times\bb{m})(\bb{n}\cdot\dot{\bb{m}}) - \alpha_n'm^2\bb{n}\times\dot{\bb{n}} ,
+% \end{align}
+% \eml
+% where $\bar{\alpha}_m=\alpha_m\!-\!\alpha'_m$ and $\gamma=\alpha_{mn}\!+\!\alpha_{nm}\!+\!\alpha'_m\!-\!\alpha'_n$. Discarding the three last terms in Eq.~(\ref{chap03:mdot2}), which are all of the second order in $\bb{m}$, we indeed arrive at a set of Gilbert damping terms that is  widely used in the AFM literature \cite{Kamra2018,PhysRevMaterials.1.061401,Yuan_2019}. 
 
-The symmetry consideration behind Eqs.~(\ref{chap03:AFMEOM2}) has essentially relied upon the spin-rotation invariance. This also implies $\alpha_n=0$ as has been pointed out in the introductory section. The coefficient $\alpha_m$ can, in turn, be finite and large, even in the absence of spin-orbit interaction. As we will show below, the presence of spin-orbit interaction does not only provide us with a finite $\alpha_n$ but also drastically change the symmetry structure of Eqs.~(\ref{chap03:AFMEOM2}). We will demonstrate that the onset of spin-orbit interaction strongly affects the coupling of the localized spin subsystem to the electron bath (described by the tight-binding model) resulting in a strong reduction in the ability of conduction electrons to flip spins in certain directions and, therefore, to impose a friction on magnetization dynamics. 
+% The symmetry consideration behind Eqs.~(\ref{chap03:AFMEOM2}) has essentially relied upon the spin-rotation invariance. This also implies $\alpha_n=0$ as has been pointed out in the introductory section. The coefficient $\alpha_m$ can, in turn, be finite and large, even in the absence of spin-orbit interaction. As we will show below, the presence of spin-orbit interaction does not only provide us with a finite $\alpha_n$ but also drastically change the symmetry structure of Eqs.~(\ref{chap03:AFMEOM2}). We will demonstrate that the onset of spin-orbit interaction strongly affects the coupling of the localized spin subsystem to the electron bath (described by the tight-binding model) resulting in a strong reduction in the ability of conduction electrons to flip spins in certain directions and, therefore, to impose a friction on magnetization dynamics. 
 
-In the following, we turn to the microscopic analysis of the conductivity (Sec.~\ref{chap03:sec:cond}), spin-orbit torques (Sec.~\ref{chap03:sec:sot}) and Gilbert dampings (Sec.~\ref{chap03:sec:gd}) in a particular model of Rashba honeycomb AFM that has been put forward recently by some of the authors \cite{Sumit2019-}. Rashba spin-orbit interaction breaks spin-rotational invariance of the model by singling out the direction $\hat{\bb{z}}$ perpendicular to the 2D plane. We, therefore, investigate how such spin-rotation breaking manifests itself in the anisotropy of the abovementioned quantities.  
+% In the following, we turn to the microscopic analysis of the conductivity (Sec.~\ref{chap03:sec:cond}), spin-orbit torques (Sec.~\ref{chap03:sec:sot}) and Gilbert dampings (Sec.~\ref{chap03:sec:gd}) in a particular model of Rashba honeycomb AFM that has been put forward recently by some of the authors \cite{Sumit2019-}. Rashba spin-orbit interaction breaks spin-rotational invariance of the model by singling out the direction $\hat{\bb{z}}$ perpendicular to the 2D plane. We, therefore, investigate how such spin-rotation breaking manifests itself in the anisotropy of the abovementioned quantities.  
 
-\section{Microscopic model}
+% \section{Microscopic model}
 
-For the sake of a microscopic analysis we adopt a sublattice symmetric $s$-$d$-like model of a 2D honeycomb antiferromagnet with Rashba spin-orbit coupling, that was introduced in Ref.~\cite{Sumit2019-}. The energy dispersion of this model is illustrated schematically in Fig.~\ref{chap03:fig:spectrum}.  
-The low energy model for conduction electrons responsible for the dispersion in Fig.~\ref{chap03:fig:spectrum}, is described by an effective Hamiltonian (see Appendix ~\ref{chap03:sec:appa}) that in a valley-symmetric representation reads
-\be
-\label{chap03:eff}
-H^\textrm{eff}= v\, \bb{p}\cdot\bb{\Sigma}+\tfrac{1}{2}\lambda\lt[\bb{\sigma}\times\bb{\Sigma}\rt]_{\hat{z}} - \Delta\,\bb{n}\cdot\bb{\sigma}\,\Sigma_z\Lambda_z + V(\bb{r}).
-\e
-Here $\bb{\Sigma}$, $\bb{\Lambda}$, and $\bb{\sigma}$ are the vectors of Pauli matrices in sublattice, valley and spin space, respectively, $v$ is the characteristic Fermi velocity, while $\lambda$ and $\Delta=JS$ are the energy scales characterizing the strength of Rashba spin-orbit coupling and $s$-$d$-like exchange energy, correspondingly. 
+% For the sake of a microscopic analysis we adopt a sublattice symmetric $s$-$d$-like model of a 2D honeycomb antiferromagnet with Rashba spin-orbit coupling, that was introduced in Ref.~\cite{Sumit2019-}. The energy dispersion of this model is illustrated schematically in Fig.~\ref{chap03:fig:spectrum}.  
+% The low energy model for conduction electrons responsible for the dispersion in Fig.~\ref{chap03:fig:spectrum}, is described by an effective Hamiltonian (see Appendix ~\ref{chap03:sec:appa}) that in a valley-symmetric representation reads
+% \be
+% \label{chap03:eff}
+% H^\textrm{eff}= v\, \bb{p}\cdot\bb{\Sigma}+\tfrac{1}{2}\lambda\lt[\bb{\sigma}\times\bb{\Sigma}\rt]_{\hat{z}} - \Delta\,\bb{n}\cdot\bb{\sigma}\,\Sigma_z\Lambda_z + V(\bb{r}).
+% \e
+% Here $\bb{\Sigma}$, $\bb{\Lambda}$, and $\bb{\sigma}$ are the vectors of Pauli matrices in sublattice, valley and spin space, respectively, $v$ is the characteristic Fermi velocity, while $\lambda$ and $\Delta=JS$ are the energy scales characterizing the strength of Rashba spin-orbit coupling and $s$-$d$-like exchange energy, correspondingly. 
 
-The term $V(\bb{r})$ stands for a scalar Gaussian white-noise disorder potential, which is proportional to the unit matrix in sublattice, valley and spin space. The potential has a zero mean value $\la V(\bb{r}) \ra=0$ and is fully characterized by the pair correlator,
-\be
-\lt\la V(\bb{r}) V(\bb{r}') \rt\ra = 2\pi (\hslash v)^2 \alpha_\textrm{d}\;\delta(\bb{r}-\bb{r}'),
-\e
-where the angular brackets denote the averaging over disorder realizations. The dimensionless parameter $\alpha_\textrm{d}\ll 1$ quantifies the disorder strength. 
+% The term $V(\bb{r})$ stands for a scalar Gaussian white-noise disorder potential, which is proportional to the unit matrix in sublattice, valley and spin space. The potential has a zero mean value $\la V(\bb{r}) \ra=0$ and is fully characterized by the pair correlator,
+% \be
+% \lt\la V(\bb{r}) V(\bb{r}') \rt\ra = 2\pi (\hslash v)^2 \alpha_\textrm{d}\;\delta(\bb{r}-\bb{r}'),
+% \e
+% where the angular brackets denote the averaging over disorder realizations. The dimensionless parameter $\alpha_\textrm{d}\ll 1$ quantifies the disorder strength. 
 
-The disorder potential is responsible for a momentum relaxation of conduction electrons. Exchange interaction and spin-orbit scattering (or the scattering on a non-collinear configurations with $\bb{m}\neq 0$) enable coupling between localized angular momenta and kinetic momenta of electrons. Together these mechanisms form a channel to dissipate angular momentum of localized spins into the lattice. Thus, our model provides us with a microscopic framework to study dissipative quantities such as Gilbert dampings, anti-damping spin-orbit torques and conductivity that we compute below. We also note that the computation of spin-relaxation time can be directly related to our analysis of Gilbert damping \cite{Hankiewicz2007,Manchon2017}. 
+% The disorder potential is responsible for a momentum relaxation of conduction electrons. Exchange interaction and spin-orbit scattering (or the scattering on a non-collinear configurations with $\bb{m}\neq 0$) enable coupling between localized angular momenta and kinetic momenta of electrons. Together these mechanisms form a channel to dissipate angular momentum of localized spins into the lattice. Thus, our model provides us with a microscopic framework to study dissipative quantities such as Gilbert dampings, anti-damping spin-orbit torques and conductivity that we compute below. We also note that the computation of spin-relaxation time can be directly related to our analysis of Gilbert damping \cite{Hankiewicz2007,Manchon2017}. 
 
-The spectrum of the model (\ref{chap03:eff}) with $V(\bb{r})=0$ consists of two electron and two hole branches for each of the valleys as illustrated in Fig.~\ref{chap03:fig:spectrum},
-\beml
-\label{chap03:spectrum}
-\begin{align}
-\label{chap03:spectrume}
-\epsilon^e_{\pm,\varsigma}(p)&=\sqrt{v^2p^2+\Delta^2\pm \varsigma\lambda\Delta n_z+\lambda^2/4} \mp \lambda/2,\\
-\epsilon^h_{\pm,\varsigma}(p)&=-\sqrt{v^2p^2+\Delta^2\mp \varsigma\lambda\Delta n_z+\lambda^2/4} \pm \lambda/2,
-\end{align}
-\eml
-where $\varsigma=\pm$ is the valley index. All spectral branches are manifestly isotropic with respect to the direction of the electron momentum $\bb{p}$ irrespective of the N\'eel vector orientation (as far as $\bb{m}=0$). 
+% The spectrum of the model (\ref{chap03:eff}) with $V(\bb{r})=0$ consists of two electron and two hole branches for each of the valleys as illustrated in Fig.~\ref{chap03:fig:spectrum},
+% \beml
+% \label{chap03:spectrum}
+% \begin{align}
+% \label{chap03:spectrume}
+% \epsilon^e_{\pm,\varsigma}(p)&=\sqrt{v^2p^2+\Delta^2\pm \varsigma\lambda\Delta n_z+\lambda^2/4} \mp \lambda/2,\\
+% \epsilon^h_{\pm,\varsigma}(p)&=-\sqrt{v^2p^2+\Delta^2\mp \varsigma\lambda\Delta n_z+\lambda^2/4} \pm \lambda/2,
+% \end{align}
+% \eml
+% where $\varsigma=\pm$ is the valley index. All spectral branches are manifestly isotropic with respect to the direction of the electron momentum $\bb{p}$ irrespective of the N\'eel vector orientation (as far as $\bb{m}=0$). 
 
-In order to limit the complexity of our microscopic analysis we restrict ourselves to the metallic regime that corresponds to the Fermi energy $\ep_F > \Delta+\lambda$ above the minimum of the top electron branches, $\epsilon^e_{+,\varsigma}(p)$, as shown schematically in Fig.~\ref{chap03:fig:spectrum}. Note that the Fermi energy $\ep_F$ is counted in the model from the center of the AFM gap. 
-We also focus on the limit of weak disorder $\ep_F \tau/\hslash\gg 1$ where $\tau = \hslash/(\pi\alpha_\textrm{d}\ep_F)$ stands for the electron scattering time. Also, in order to describe spin-orbit induced anisotropy we find it convenient to decompose the N\'eel vector (as well as the magnetization vector) to the in-plane and perpendicular-to-the-plane components as $\bb{n}= \bb{n}_\parallel+\bb{n}_\perp$, where $\bb{n}_\perp=n_z\hat{\bb{z}}$. 
+% In order to limit the complexity of our microscopic analysis we restrict ourselves to the metallic regime that corresponds to the Fermi energy $\ep_F > \Delta+\lambda$ above the minimum of the top electron branches, $\epsilon^e_{+,\varsigma}(p)$, as shown schematically in Fig.~\ref{chap03:fig:spectrum}. Note that the Fermi energy $\ep_F$ is counted in the model from the center of the AFM gap. 
+% We also focus on the limit of weak disorder $\ep_F \tau/\hslash\gg 1$ where $\tau = \hslash/(\pi\alpha_\textrm{d}\ep_F)$ stands for the electron scattering time. Also, in order to describe spin-orbit induced anisotropy we find it convenient to decompose the N\'eel vector (as well as the magnetization vector) to the in-plane and perpendicular-to-the-plane components as $\bb{n}= \bb{n}_\parallel+\bb{n}_\perp$, where $\bb{n}_\perp=n_z\hat{\bb{z}}$. 
 
-\section{Conductivity}\label{chap03:sec:cond}
-The electric conductivity in the metallic regime is dominated by electron diffusion. Despite the fact that the Fermi surface (line) is isotropic and does not depend on the direction of $\bb{n}_\parallel$, the conductivity appears to be weakly anisotropic with respect to in-plane rotations of the N\'eel vector due to the onset of spin-orbit interaction. 
-In particular, for $n_z=0$ we find the diagonal conductivity components
-\beml
-\label{chap03:conductivity}
-\begin{align}
-\label{chap03:chap3:eq:long_cond}
-&\sigma_{xx}= \frac{4e^2}{h}\,\frac{\ep_F \tau}{\hslash}\,\frac{\ep_F^2-\Delta^2}{\ep_F^2+3\Delta^2},\\
-&\sigma_{yy}= \sigma_{xx}+\frac{4e^2}{h}\,\frac{\ep_F \tau}{\hslash}\, \frac{\ep_F^2}{\ep_F^2+\Delta^2}
-\frac{\lambda^2\Delta^2}{\ep_F^4+\ep_F^2\Delta^2+2\Delta^4},
-\end{align}
-\eml
-where the principal axes correspond to choosing $\hat{\bm{x}}$ direction along $\bb{n}_\parallel$ (see Fig.~\ref{chap03:fig:lattice}). In the deep metal regime, and for a general direction of $\bb{n}$, this anisotropy is evidently small
-\be
-\label{chap03:ani}
-\frac{\rho_{xx}-\rho_{yy}}{\rho_{xx}+\rho_{yy}}=\frac{\lambda^2\Delta^2}{\ep_F^4}(1-n_z^2), \quad \ep_F\gg \lambda+\Delta,
-\e
-where $\rho_{aa}=1/\sigma_{aa}$ is the corresponding resistivity tensor component. We note that the anomalous Hall conductivity is identically vanishing in the model of Eq.~(\ref{chap03:eff}). 
+% \section{Conductivity}\label{chap03:sec:cond}
+% The electric conductivity in the metallic regime is dominated by electron diffusion. Despite the fact that the Fermi surface (line) is isotropic and does not depend on the direction of $\bb{n}_\parallel$, the conductivity appears to be weakly anisotropic with respect to in-plane rotations of the N\'eel vector due to the onset of spin-orbit interaction. 
+% In particular, for $n_z=0$ we find the diagonal conductivity components
+% \beml
+% \label{chap03:conductivity}
+% \begin{align}
+% \label{chap03:chap3:eq:long_cond}
+% &\sigma_{xx}= \frac{4e^2}{h}\,\frac{\ep_F \tau}{\hslash}\,\frac{\ep_F^2-\Delta^2}{\ep_F^2+3\Delta^2},\\
+% &\sigma_{yy}= \sigma_{xx}+\frac{4e^2}{h}\,\frac{\ep_F \tau}{\hslash}\, \frac{\ep_F^2}{\ep_F^2+\Delta^2}
+% \frac{\lambda^2\Delta^2}{\ep_F^4+\ep_F^2\Delta^2+2\Delta^4},
+% \end{align}
+% \eml
+% where the principal axes correspond to choosing $\hat{\bm{x}}$ direction along $\bb{n}_\parallel$ (see Fig.~\ref{chap03:fig:lattice}). In the deep metal regime, and for a general direction of $\bb{n}$, this anisotropy is evidently small
+% \be
+% \label{chap03:ani}
+% \frac{\rho_{xx}-\rho_{yy}}{\rho_{xx}+\rho_{yy}}=\frac{\lambda^2\Delta^2}{\ep_F^4}(1-n_z^2), \quad \ep_F\gg \lambda+\Delta,
+% \e
+% where $\rho_{aa}=1/\sigma_{aa}$ is the corresponding resistivity tensor component. We note that the anomalous Hall conductivity is identically vanishing in the model of Eq.~(\ref{chap03:eff}). 
 
-The results of Eq.~(\ref{chap03:conductivity}) and all subsequent results of our paper are technically obtained from linear response Kubo formulas evaluated in the diffusive approximation (ladder diagram summation). The details of these calculations can be found in Appendixes~\ref{chap03:sec:appb}, \ref{chap03:sec:appc}, and \ref{chap03:sec:appd}. 
+% The results of Eq.~(\ref{chap03:conductivity}) and all subsequent results of our paper are technically obtained from linear response Kubo formulas evaluated in the diffusive approximation (ladder diagram summation). The details of these calculations can be found in Appendixes~\ref{chap03:sec:appb}, \ref{chap03:sec:appc}, and \ref{chap03:sec:appd}. 
 
 % \section{Spin-orbit torque}\label{chap03:sec:sot}
 
