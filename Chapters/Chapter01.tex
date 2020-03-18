@@ -108,12 +108,12 @@ of which $\sigma_{\alpha\beta}$ are the components of the two dimensional conduc
 
 In the linear response theory of Eq.~(\ref{spol}) one needs to compute the tensor in Eq.~(\ref{Kubo}) for a constant direction $\bb{m}$ and for $\bb{A}=0$. In usual systems (conducting ferromagnets) the response of $\bb{s}$ in the direction of $\bb{m}$ is always diffusive. This response, however, plays no role in the torque since $\bb{T}\propto \bb{m}\times \bb{s}$. The situation at the TI surface is, however, special. Here, the in-plane components of magnetization $m_x, m_y$ play no role in Eq.~(\ref{TImodel}), since those are simply equivalent to a constant in-plane vector potential for conduction electrons and, therefore, can be excluded by a gauge transform (shift of the Dirac cone). Consequently, all observable quantities in the model (including all components of the tensor $\hat{K}$) may only depend on the field $\Delta_z=\Delta_\textrm{sd} m_z$. As the result, the diffusive response occurs exclusively in $s_z$ component of spin polarization and can easily enter the expression for the torque.
 
-The conductivity tensor in the model of Eqs.~(\ref{TImodel},\ref{disorder}) has been analyzed in detail in Ref.~\cite{ivanEPL} in the limit $\omega=\bb{q}=0$ (and for $\alpha\ll 1$) with the result $\sigma_{xx}=\sigma_{yy}=\sigma_0$ and $\sigma_{xy}=-\sigma_{yx}=\sigma_\textrm{H}$, where  
+The conductivity tensor in the model of Eqs.~(\ref{TImodel},\ref{disorder}) has been analyzed in detail in Ref.~\cite{ivan} in the limit $\omega=\bb{q}=0$ (and for $\alpha\ll 1$) with the result $\sigma_{xx}=\sigma_{yy}=\sigma_0$ and $\sigma_{xy}=-\sigma_{yx}=\sigma_\textrm{H}$, where  
 \be
 \label{cond}
 \sigma_0= \frac{\ep^2-\Delta_z^2}{\pi\alpha\,(\ep^2+3\Delta_z^2)},\qquad \sigma_\textrm{H}= \frac{8 \ep \Delta_z^3}{(\ep^2+3\Delta_z^2)^2}.
 \e
-Since the anomalous Hall conductivity $\sigma_\textrm{H} \propto \alpha\, \sigma_0$ is sub-leading with respect to $\sigma_0$, it has to be computed beyond the Born approximation (see Refs.~\cite{ivanEPL,ivanPRL,ivanPRB}). 
+Since the anomalous Hall conductivity $\sigma_\textrm{H} \propto \alpha\, \sigma_0$ is sub-leading with respect to $\sigma_0$, it has to be computed beyond the Born approximation (see Refs.~\cite{ivan,ivanPRL,ivanPRB}). 
 
 Here we generalize the analysis to calculate the tensor $\hat{K}$ for finite $\omega$ and $\bb{q}$ assuming $\alpha\ll 1$, $\omega\tau_\textrm{tr}\ll 1$, and $\omega \propto Dq^2$, where $D=\hslash v^2  \sigma_0/\ep$ is the diffusion coefficient and $\tau_\textrm{tr}=\hslash\ep\sigma_0/(\ep^2+\Delta_z^2)$ is the transport scattering time for the problem. In real samples $\tau_\textrm{tr}=0.01 - 1$\,ps \cite{kong_rapid_2011,kamboj_probing_2017,huang_enhancement_2017,xiang_transport_2014}.
 
@@ -128,11 +128,11 @@ where the complex parameters $\ep^\textrm{R}=\ep(1+i\pi \alpha/2)$ and  $\Delta^
 \label{Sigma}
 \Sigma^{\mathrm{R}}(\ep)  = 2\pi \alpha\,v^2\!\! \int\!\frac{d^2\bb{p}}{(2\pi)^2}G^\mathrm{R}_{\bb{p},\ep}, 
 \e
-that gives rise to  $\im \Sigma^{\mathrm{R}}= - \pi \alpha (\ep -\Delta_z \sigma_z)/2$  (strictly speaking, the RG analysis \cite{ivanEPL} has to be applied). In the Green's function of Eq.~(\ref{green}) we shift the momentum $\bb{p}$ such that there is no direct dependence on the in-plane magnetization components $m_x$ and $m_y$. 
+that gives rise to  $\im \Sigma^{\mathrm{R}}= - \pi \alpha (\ep -\Delta_z \sigma_z)/2$  (strictly speaking, the RG analysis \cite{ivan} has to be applied). In the Green's function of Eq.~(\ref{green}) we shift the momentum $\bb{p}$ such that there is no direct dependence on the in-plane magnetization components $m_x$ and $m_y$. 
 
 The next step in disorder-averaging requires the computation of vertex corrections. This means we need to replace the spin operator $\sigma_\alpha$ with a vertex corrected spin operator $\sigma_\alpha^\text{vc}$ in the ladder approximation as depicted in Fig.~\ref{fig:diagrams}(e). The crossed diagrams in Fig.~\ref{fig:diagrams}(b-d) give a contribution to the components of $\hat{K}$ of the order $\mathcal{O}(\alpha^0)$. The
 only components that are modified to this order are those
-corresponding to the Hall conductivity (i.e. $\sigma_{xy}$ and $\sigma_{yx}$). Details of this calculation can be found Ref.~\cite{ivanEPL}.
+corresponding to the Hall conductivity (i.e. $\sigma_{xy}$ and $\sigma_{yx}$). Details of this calculation can be found Ref.~\cite{ivan}.
 %
 
 The dressing of $\sigma_\alpha$ with a single disorder line is denoted by $\sigma_\alpha^{1\times\text{dr}}$ and is conveniently represented in the matrix form by introducing a matrix $\hat{M}$ with $16$ components $M_{\alpha\beta}$ for $\alpha,\beta=0,x,y,z$ (with $\sigma_0=1$)
@@ -147,7 +147,7 @@ where the summation of the repeating index $\beta=0,x,y,z$ is assumed. Full expr
 \begin{figure}[t]
 \centering
 \includegraphics[]{articles/dirac_fm/fig2}
-\caption{Diagrams considered in the calculation of $\hat{K}$: (a) non-crossing diagram, (b) $X$ diagram, (c-d) $\Psi$ diagrams. Green areas indicate the ladder summation (e) for the vertex correction in the non-crossing approximation \protect\cite{ivanEPL}.}
+\caption{Diagrams considered in the calculation of $\hat{K}$: (a) non-crossing diagram, (b) $X$ diagram, (c-d) $\Psi$ diagrams. Green areas indicate the ladder summation (e) for the vertex correction in the non-crossing approximation \protect\cite{ivan}.}
 \label{fig:diagrams}
 \end{figure}
 
