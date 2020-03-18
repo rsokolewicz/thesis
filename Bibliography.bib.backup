@@ -1,3 +1,6 @@
+% Encoding: windows-1252
+
+
 @article{qi_topological_2008,
   title = {Topological field theory of time-reversal invariant insulators},
   volume = {78},
@@ -2988,6 +2991,24 @@ Transport and optical measurements are used to demonstrate the switching of doma
 	Bdsk-Url-1 = {https://link.aps.org/doi/10.1103/PhysRevB.91.041121},
 	Bdsk-Url-2 = {https://doi.org/10.1103/PhysRevB.91.041121}}
 
+@article{burkov_spin_2010,
+	Abstract = {We derive diffusion equations, which describe spin-charge coupled transport on the helical metal surface of a three-dimensional topological insulator. The main feature of these equations is a large magnitude of the spin-charge coupling, which leads to interesting and observable effects. In particular, we predict a new magnetoresistance effect, which manifests in a non-Ohmic correction to a voltage drop between a ferromagnetic spin-polarized electrode and a nonmagnetic electrode, placed on top of the helical metal. This correction is proportional to the cross product of the spin polarization of the ferromagnetic electrode and the charge current between the two electrodes. We also demonstrate tunability of this effect by applying a gate voltage, which makes it possible to operate the proposed device as a transistor.},
+	Author = {Burkov, A. A. and Hawthorn, D. G.},
+	Doi = {10.1103/PhysRevLett.105.066802},
+	File = {APS Snapshot:/home/rsokolewicz/Zotero/storage/XZV8E9Z9/PhysRevLett.105.html:text/html},
+	Journal = {Physical Review Letters},
+	
+	Number = {6},
+	Pages = {066802},
+	Title = {Spin and {Charge} {Transport} on the {Surface} of a {Topological} {Insulator}},
+	Url = {https://link.aps.org/doi/10.1103/PhysRevLett.105.066802},
+	Urldate = {2018-02-01},
+	Volume = {105},
+	Year = {2010},
+	Bdsk-Url-1 = {https://link.aps.org/doi/10.1103/PhysRevLett.105.066802},
+	Bdsk-Url-2 = {https://doi.org/10.1103/PhysRevLett.105.066802}}
+
+
 @article{ueda_topological_2012,
 	Abstract = {We discuss a current dynamics on the surface of a three-dimensional topological insulator induced by magnetization precession of an attached ferromagnet. It is found that the magnetization dynamics generates a direct charge current when the precession axis is within the surface plane. This rectification effect is due to a quantum anomaly and is topologically protected. The robustness of the rectification effect against first-varying exchange field and impurities is confirmed by explicit calculation.},
 	Author = {Ueda, Hiroaki T. and Takeuchi, Akihito and Tatara, Gen and Yokoyama, Takehito},
@@ -3040,6 +3061,24 @@ Transport and optical measurements are used to demonstrate the switching of doma
 	Bdsk-Url-1 = {https://link.aps.org/doi/10.1103/PhysRevB.92.201406},
 	Bdsk-Url-2 = {https://doi.org/10.1103/PhysRevB.92.201406}}
 
+@article{ivanEPL,
+	Author = {Ado, I. A. and Dmitriev, I. A. and Ostrovsky, P. M. and Titov, M.},
+	Doi = {10.1209/0295-5075/111/37004},
+	File = {untitled - pdf:/.mozilla/firefox/s6puzc7s.default-1496144780566/zotero/storage/FVMU8V4T/pdf.pdf:application/pdf},
+	Issn = {0295-5075, 1286-4854},
+	Journal = {EPL (Europhysics Letters)},
+	
+	Number = {3},
+	Pages = {37004},
+	Timestamp = {2017-07-19T12:38:30Z},
+	Title = {Anomalous {{Hall}} Effect with Massive {{Dirac}} Fermions},
+	Url = {http://stacks.iop.org/0295-5075/111/i=3/a=37004?key=crossref.6edd7b77239a9fff3e8eb98fed2419e9},
+	Urldate = {2017-07-19},
+	Volume = {111},
+	Year = {2015},
+	Bdsk-Url-1 = {http://stacks.iop.org/0295-5075/111/i=3/a=37004?key=crossref.6edd7b77239a9fff3e8eb98fed2419e9},
+	Bdsk-Url-2 = {https://doi.org/10.1209/0295-5075/111/37004}}
+	
 @article{ivanPRL,
   title = {Anomalous Hall Effect in a 2D Rashba Ferromagnet},
   author = {Ado, I. A. and Dmitriev, I. A. and Ostrovsky, P. M. and Titov, M.},
@@ -4584,6 +4623,21 @@ Transport and optical measurements are used to demonstrate the switching of doma
   url = {https://doi.org/10.1063/1.4862467}
 }
 
+@article{Zelezny2014,
+  title = {Relativistic {N}\'eel-Order fields induced by electrical current in antiferromagnets},
+  author = {{\v Z}elezn{\'y}, J. and others},
+  journal = {Phys. Rev. Lett.},
+  volume = {113},
+  issue = {15},
+  pages = {157201},
+  numpages = {5},
+  year = {2014},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.113.157201},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.113.157201}
+}
+
 @article{Wadley2016,
   author = {Wadley, P. and others},
   title = {Electrical switching of an antiferromagnet},
@@ -4664,6 +4718,48 @@ Transport and optical measurements are used to demonstrate the switching of doma
   journal = {J. Phys. D}
 }
 
+@article{Bhattacharjee2018,
+  title = {N\'eel spin-orbit torque driven antiferromagnetic resonance in {M}n$_2${A}u probed by time-domain {TH}z spectroscopy},
+  author = {Bhattacharjee, N. and others},
+  journal = {Phys. Rev. Lett.},
+  volume = {120},
+  issue = {23},
+  pages = {237201},
+  numpages = {5},
+  year = {2018},
+  month = {Jun},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.120.237201},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.120.237201}
+}
+
+@article{Gomonay2016AFM,
+  title = {High antiferromagnetic domain wall velocity induced by {N}\'eel spin-orbit torques},
+  author = {Gomonay, O. and Jungwirth, T. and Sinova, J.},
+  journal = {Phys. Rev. Lett.},
+  volume = {117},
+  issue = {1},
+  pages = {017202},
+  numpages = {5},
+  year = {2016},
+  month = {Jun},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.117.017202},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.117.017202}
+}
+
+@article {Olejnik2018,
+  author = {Olejn{\'\i}k, K. and others},
+  title = {Terahertz electrical writing speed in an antiferromagnetic memory},
+  volume = {4},
+  number = {3},
+  year = {2018},
+  doi = {10.1126/sciadv.aar3566},
+  publisher = {American Association for the Advancement of Science},
+  url = {https://advances.sciencemag.org/content/4/3/eaar3566},
+  journal = {Sci. Adv.}
+}
+
 @article{Jungwirth2018,
   author = {Jungwirth, T. and Sinova, J. and Manchon, A. and Marti, X. and Wunderlich, J. and Felser, C.},
   title = {The multiple directions of antiferromagnetic spintronics},
@@ -4675,6 +4771,34 @@ Transport and optical measurements are used to demonstrate the switching of doma
   pages = {200--203},
   doi = {10.1038/s41567-018-0063-6},
   url = {https://doi.org/10.1038/s41567-018-0063-6}
+}
+
+@article{Baltz2018,
+  title = {Antiferromagnetic spintronics},
+  author = {Baltz, V. and Manchon, A. and Tsoi, M. and Moriyama, T. and Ono, T. and Tserkovnyak, Y.},
+  journal = {Rev. Mod. Phys.},
+  volume = {90},
+  issue = {1},
+  pages = {015005},
+  numpages = {57},
+  year = {2018},
+  month = {Feb},
+  publisher = {American Physical Society},
+  doi = {10.1103/RevModPhys.90.015005},
+  url = {https://link.aps.org/doi/10.1103/RevModPhys.90.015005}
+}
+
+@article{Hoffman2018,
+  title = {Perspectives of antiferromagnetic spintronics},
+  journal = {Phys. Lett. A},
+  volume = {382},
+  number = {13},
+  pages = {865--871},
+  year = {2018},
+  issn = {0375-9601},
+  doi = {https://doi.org/10.1016/j.physleta.2018.01.008},
+  url = {http://www.sciencedirect.com/science/article/pii/S0375960118300343},
+  author = {Jungfleisch, M.~B. and Zhang, W. and Hoffmann, A.}
 }
 
 @article{Brataas2012,
@@ -4705,6 +4829,66 @@ Transport and optical measurements are used to demonstrate the switching of doma
   url = {https://link.aps.org/doi/10.1103/PhysRevB.88.085423}
 }
 
+@article{2014MokrousovSOT,
+  title = {Spin-orbit torques in {C}o/{P}t(111) and {M}n/{W}(001) magnetic bilayers from first principles},
+  author = {Freimuth, F. and Bl\"ugel, S. and Mokrousov, Y.},
+  journal = {Phys. Rev. B},
+  volume = {90},
+  issue = {17},
+  pages = {174423},
+  numpages = {10},
+  year = {2014},
+  month = {Nov},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.90.174423},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.90.174423}
+}
+
+@article{Ghosh2017,
+  title = {Spin-orbit torque in two-dimensional antiferromagnetic topological insulators},
+  author = {Ghosh, S. and Manchon, A.},
+  journal = {Phys. Rev. B},
+  volume = {95},
+  issue = {3},
+  pages = {035422},
+  numpages = {7},
+  year = {2017},
+  month = {Jan},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.95.035422},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.95.035422}
+}
+
+@article{SmejkalAFM_2017,
+  title = {Electric control of {D}irac quasiparticles by spin-orbit torque in an antiferromagnet},
+  author = {\v{S}mejkal, L. and \v{Z}elezn\'y, J. and Sinova, J. and Jungwirth, T.},
+  journal = {Phys. Rev. Lett.},
+  volume = {118},
+  issue = {10},
+  pages = {106402},
+  numpages = {5},
+  year = {2017},
+  month = {Mar},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.118.106402},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.118.106402}
+}
+
+@article{Zhou2018,
+  title = {Strong orientation-dependent spin-orbit torque in thin films of the antiferromagnet ${\mathrm{Mn}}_{2}\mathrm{Au}$},
+  author = {Zhou, X.~F. and others},
+  journal = {Phys. Rev. Applied},
+  volume = {9},
+  issue = {5},
+  pages = {054028},
+  numpages = {10},
+  year = {2018},
+  month = {May},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevApplied.9.054028},
+  url = {https://link.aps.org/doi/10.1103/PhysRevApplied.9.054028}
+}
+
 @article{Manchon2018,
   title = {Current-induced spin-orbit torques in ferromagnetic and antiferromagnetic systems},
   author = {Manchon, A. and \v{Z}elezn\'y, J. and Miron, I. M. and Jungwirth, T. and Sinova, J. and Thiaville, A. and Garello, K. and Gambardella, P.},
@@ -4720,6 +4904,33 @@ Transport and optical measurements are used to demonstrate the switching of doma
   url = {https://link.aps.org/doi/10.1103/RevModPhys.91.035004}
 }
 
+@article{Moriyama2018,
+  title = {Spin-orbit-torque memory operation of synthetic antiferromagnets},
+  author = {Moriyama, T. and Zhou, W. and Seki, T. and Takanashi, K. and Ono, T.},
+  journal = {Phys. Rev. Lett.},
+  volume = {121},
+  issue = {16},
+  pages = {167202},
+  numpages = {5},
+  year = {2018},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.121.167202},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.121.167202}
+}
+
+@article{Li2019,
+  author = {Li, Y. and Edmonds, K.~W. and Liu, X. and Zheng, H. and Wang, K.},
+  title = {Manipulation of magnetization by spin-orbit torque},
+  journal = {Adv. Quantum Technol.},
+  volume = {2},
+  number = {1-2},
+  pages = {1800052},
+  doi = {10.1002/qute.201800052},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/qute.201800052},
+  year = {2019}
+}
+
 @article{Chen2019,
   title = {Electric field control of {N}\'eel spin-orbit torque in an antiferromagnet},
   author = {Chen, X. and others},
@@ -4730,6 +4941,33 @@ Transport and optical measurements are used to demonstrate the switching of doma
   year = {2019},
   doi = {10.1038/s41563-019-0424-2},
   url = {https://doi.org/10.1038/s41563-019-0424-2}
+}
+
+@article{Zhou2019,
+  title = {From fieldlike torque to antidamping torque in antiferromagnetic ${\mathrm{Mn}}_{2}\mathrm{Au}$},
+  author = {Zhou, X.~F. and others},
+  journal = {Phys. Rev. Applied},
+  volume = {11},
+  issue = {5},
+  pages = {054030},
+  numpages = {7},
+  year = {2019},
+  month = {May},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevApplied.11.054030},
+  url = {https://link.aps.org/doi/10.1103/PhysRevApplied.11.054030}
+}
+
+@article {Zhou2019a,
+  author = {Zhou, J. and others},
+  title = {Large spin-orbit torque efficiency enhanced by magnetic structure of collinear antiferromagnet IrMn},
+  volume = {5},
+  number = {5},
+  year = {2019},
+  doi = {10.1126/sciadv.aau6696},
+  publisher = {American Association for the Advancement of Science},
+  url = {https://advances.sciencemag.org/content/5/5/eaau6696},
+  journal = {Sci. Adv.}
 }
 
 @article{Bodnar2018,
@@ -4803,6 +5041,21 @@ Transport and optical measurements are used to demonstrate the switching of doma
   journal = {EPL}
 }
 
+@article{Hals2011,
+  title = {Phenomenology of current-induced dynamics in antiferromagnets},
+  author = {Hals, K.~M.~D. and Tserkovnyak, Y. and Brataas, A.},
+  journal = {Phys. Rev. Lett.},
+  volume = {106},
+  issue = {10},
+  pages = {107206},
+  numpages = {4},
+  year = {2011},
+  month = {Mar},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.106.107206},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.106.107206}
+}
+
 @article{Tserkovnyak2005,
   title = {Nonlocal magnetization dynamics in ferromagnetic heterostructures},
   author = {Tserkovnyak, Y. and Brataas, A. and Bauer, G.~E.~W. and Halperin, B.~I.},
@@ -4817,6 +5070,23 @@ Transport and optical measurements are used to demonstrate the switching of doma
   doi = {10.1103/RevModPhys.77.1375},
   url = {https://link.aps.org/doi/10.1103/RevModPhys.77.1375}
 }
+
+@article{AdoSTTGD2019,
+  title = {Anisotropy of spin-transfer torques and Gilbert damping induced by Rashba coupling},
+  author = {Ado, I. A. and Ostrovsky, P. M. and Titov, M.},
+  journal = {Phys. Rev. B},
+  volume = {101},
+  issue = {8},
+  pages = {085405},
+  numpages = {18},
+  year = {2020},
+  month = {Feb},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.101.085405},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.101.085405}
+}
+
+
 
 @article{Sumit2019,
   title = {Spin-orbit torques in a {R}ashba honeycomb antiferromagnet},
@@ -4848,6 +5118,72 @@ Transport and optical measurements are used to demonstrate the switching of doma
   journal = {J. Phys.: Condens. Matter},
 }
 
+@article{Edelstein1990,
+  title={Spin polarization of conduction electrons induced by electric current in two-dimensional asymmetric electron systems},
+  author={Edelstein, V.~M},
+  journal={Solid State Commun.},
+  volume={73},
+  number={3},
+  pages={233--235},
+  year={1990},
+  publisher={Elsevier},
+  url = {http://www.sciencedirect.com/science/article/pii/003810989090963C}
+}
+
+@article{ado2016crossing,
+  title = {Anomalous {H}all effect in a 2{D} {R}ashba ferromagnet},
+  author = {Ado, I.~A. and Dmitriev, I.~A. and Ostrovsky, P.~M. and Titov, M.},
+  journal = {Phys. Rev. Lett.},
+  volume = {117},
+  issue = {4},
+  pages = {046601},
+  numpages = {5},
+  year = {2016},
+  month = {Jul},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.117.046601},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.117.046601}
+}
+
+
+
+
+
+
+
+
+
+
+
+%---------------------------
+@article{Zelezny2017,
+  title = {Spin-orbit torques in locally and globally noncentrosymmetric crystals: {A}ntiferromagnets and ferromagnets},
+  author = {\v{Z}elezn\'y, J. and Gao, H. and Manchon, Aur\'elien and Freimuth, Frank and Mokrousov, Yuriy and Zemen, J. and Ma\v{s}ek, J. and Sinova, Jairo and Jungwirth, T.},
+  journal = {Phys. Rev. B},
+  volume = {95},
+  issue = {1},
+  pages = {014403},
+  numpages = {18},
+  year = {2017},
+  month = {Jan},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.95.014403},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.95.014403}
+}
+
+@article{Bader2010,
+  author = {Bader, S.~D. and Parkin, S.~S.~P.},
+  title = {Spintronics},
+  journal = {Annu. Rev. Condens. Matter Phys.},
+  volume = {1},
+  number = {1},
+  pages = {71--88},
+  year = {2010},
+  doi = {10.1146/annurev-conmatphys-070909-104123},
+  url = {https://doi.org/10.1146/annurev-conmatphys-070909-104123},
+  eprint = {https://doi.org/10.1146/annurev-conmatphys-070909-104123}
+}
+
 @article{Sinova2012,
   author = {Sinova, J. and \v{Z}uti\'c, I.},
   title = {New moves of the spintronics tango},
@@ -4859,6 +5195,19 @@ Transport and optical measurements are used to demonstrate the switching of doma
   publisher = {Nature Publishing Group, a division of Macmillan Publishers Limited. All Rights Reserved.},
   doi = {10.1038/nmat3304},
   url = {https://doi.org/10.1038/nmat3304}
+}
+
+@article{Bhatti2017,
+  title = {Spintronics based random access memory: a review},
+  journal = {Mater. Today},
+  volume = {20},
+  number = {9},
+  pages = {530--548},
+  year = {2017},
+  issn = {1369-7021},
+  doi = {https://doi.org/10.1016/j.mattod.2017.07.007},
+  url = {http://www.sciencedirect.com/science/article/pii/S1369702117304285},
+  author = {Bhatti, S. and Sbiaa, R. and Hirohata, A. and Ohno, H. and Fukami, S. and Piramanayagam, S.~N.}
 }
 
 @article{Kent2015,
@@ -4916,6 +5265,21 @@ Transport and optical measurements are used to demonstrate the switching of doma
   journal = {{EPL}}
 }
 
+@article{Tshitoyan2015,
+  title = {Electrical manipulation of ferromagnetic NiFe by antiferromagnetic IrMn},
+  author = {Tshitoyan, V. and Ciccarelli, C. and Mihai, A. P. and Ali, M. and Irvine, A. C. and Moore, T. A. and Jungwirth, T. and Ferguson, A. J.},
+  journal = {Phys. Rev. B},
+  volume = {92},
+  issue = {21},
+  pages = {214406},
+  numpages = {11},
+  year = {2015},
+  month = {Dec},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.92.214406},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.92.214406}
+}
+
 @article{SLONCZEWSKI1996,
 title = "Current-driven excitation of magnetic multilayers",
 journal = "Journal of Magnetism and Magnetic Materials",
@@ -4928,6 +5292,20 @@ doi = "https://doi.org/10.1016/0304-8853(96)00062-5",
 url = "http://www.sciencedirect.com/science/article/pii/0304885396000625",
 author = "J.C. Slonczewski",
 abstract = "A new mechanism is proposed for exciting the magnetic state of a ferromagnet. Assuming ballistic conditions and using WKB wave functions, we predict that a transfer of vectorial spin accompanies an electric current flowing perpendicular to two parallel magnetic films connected by a normal metallic spacer. This spin transfer drives motions of the two magnetization vectors within their instantaneously common plane. Consequent new mesoscopic precession and switching phenomena with potential applications are predicted."
+}
+
+@article{Groth2014,
+  doi = {10.1088/1367-2630/16/6/063065},
+  url = {https://doi.org/10.1088%2F1367-2630%2F16%2F6%2F063065},
+  year = {2014},
+  month = {Jun},
+  publisher = {{IOP} Publishing},
+  volume = {16},
+  number = {6},
+  pages = {063065},
+  author = {Groth, C.~W. and Wimmer, M. and Akhmerov, A.~R. and Waintal, X.},
+  title = {Kwant: a software package for quantum transport},
+  journal = {New J. Phys.}
 }
 
 @article{Nakada1996,
@@ -4958,6 +5336,21 @@ abstract = "A new mechanism is proposed for exciting the magnetic state of a fer
   publisher = {American Physical Society},
   doi = {10.1103/PhysRevB.59.8271},
   url = {https://link.aps.org/doi/10.1103/PhysRevB.59.8271}
+}
+
+@article{Faerbu1995,
+  title = {Electrically driven Bose-Einstein condensation of magnons in antiferromagnets},
+  author = {Fj\ae{}rbu, Eirik L\o{}haugen and Rohling, Niklas and Brataas, Arne},
+  journal = {Phys. Rev. B},
+  volume = {95},
+  issue = {14},
+  pages = {144408},
+  numpages = {12},
+  year = {2017},
+  month = {Apr},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.95.144408},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.95.144408}
 }
 
 @article{Cheng2016,
@@ -5009,6 +5402,36 @@ abstract = "A new mechanism is proposed for exciting the magnetic state of a fer
   url = {https://link.aps.org/doi/10.1103/PhysRevLett.97.216803}
 }
 
+@article{Kane2005,
+  title = {${Z}_{2}$ topological order and the quantum spin {H}all effect},
+  author = {Kane, C.~L. and Mele, E.~J.},
+  journal = {Phys. Rev. Lett.},
+  volume = {95},
+  issue = {14},
+  pages = {146802},
+  numpages = {4},
+  year = {2005},
+  month = {Sep},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.95.146802},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.95.146802}
+}
+
+@article{Qiao2012,
+  title = {Microscopic theory of quantum anomalous {H}all effect in graphene},
+  author = {Qiao, Z. and Jiang, H. and Li, X. and Yao, Y. and Niu, Q.},
+  journal = {Phys. Rev. B},
+  volume = {85},
+  issue = {11},
+  pages = {115439},
+  numpages = {10},
+  year = {2012},
+  month = {Mar},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.85.115439},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.85.115439}
+}
+
 @article{Nikolic2005,
   title = {Nonequilibrium spin {H}all accumulation in ballistic semiconductor nanostructures},
   author = {Nikoli\'{c}, B.~K. and Souma, S. and Z\^arbo, L.~P. and Sinova, J.},
@@ -5024,6 +5447,50 @@ abstract = "A new mechanism is proposed for exciting the magnetic state of a fer
   url = {https://link.aps.org/doi/10.1103/PhysRevLett.95.046601}
 }
 
+@article{ManchonJPCM2017,
+	doi = {10.1088/1361-648x/aa521d},
+	url = {https://doi.org/10.1088%2F1361-648x%2Faa521d},
+	year = 2017,
+	month = {feb},
+	publisher = {{IOP} Publishing},
+	volume = {29},
+	number = {10},
+	pages = {104002},
+	author = {Aurelien Manchon},
+	title = {Spin diffusion and torques in disordered antiferromagnets},
+	journal = {Journal of Physics: Condensed Matter},
+}
+
+@article{Ghosh2019,
+  title = {Nonequilibrium spin density and spin-orbit torque in a three-dimensional topological insulator/antiferromagnet heterostructure},
+  author = {Ghosh, S. and Manchon, A.},
+  journal = {Phys. Rev. B},
+  volume = {100},
+  issue = {1},
+  pages = {014412},
+  numpages = {9},
+  year = {2019},
+  month = {Jul},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.100.014412},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.100.014412}
+}
+
+@article{Watanabe2018,
+  title = {Symmetry analysis of current-induced switching of antiferromagnets},
+  author = {Watanabe, Hikaru and Yanase, Youichi},
+  journal = {Phys. Rev. B},
+  volume = {98},
+  issue = {22},
+  pages = {220412},
+  numpages = {7},
+  year = {2018},
+  month = {Dec},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.98.220412},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.98.220412}
+}
+
 @article{Heinrich2003,
   title = {Role of dynamic exchange coupling in magnetic relaxations of metallic multilayer films (invited)},
   author = {Heinrich, B. and Woltersdorf,G.  and Urban,R.  and Simanek,E. },
@@ -5035,6 +5502,21 @@ abstract = "A new mechanism is proposed for exciting the magnetic state of a fer
   doi = {10.1063/1.1543852},
   URL = {https://doi.org/10.1063/1.1543852 },
   eprint = {https://doi.org/10.1063/1.1543852}
+}
+
+@article{Barker2016,
+  title = {Static and Dynamical Properties of Antiferromagnetic Skyrmions in the Presence of Applied Current and Temperature},
+  author = {Barker, Joseph and Tretiakov, Oleg A.},
+  journal = {Phys. Rev. Lett.},
+  volume = {116},
+  issue = {14},
+  pages = {147203},
+  numpages = {5},
+  year = {2016},
+  month = {Apr},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.116.147203},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.116.147203}
 }
 
 @article{Zhang2016,
@@ -5056,6 +5538,36 @@ abstract = "A new mechanism is proposed for exciting the magnetic state of a fer
 	Year = {2016},
 	Bdsk-Url-1 = {https://doi.org/10.1038/srep24795}}
 
+@article{Shiino2016,
+  title = {Antiferromagnetic Domain Wall Motion Driven by Spin-Orbit Torques},
+  author = {Shiino, Takayuki and Oh, Se-Hyeok and Haney, Paul M. and Lee, Seo-Won and Go, Gyungchoon and Park, Byong-Guk and Lee, Kyung-Jin},
+  journal = {Phys. Rev. Lett.},
+  volume = {117},
+  issue = {8},
+  pages = {087203},
+  numpages = {6},
+  year = {2016},
+  month = {Aug},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.117.087203},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.117.087203}
+}
+
+@article{Akosa2018,
+  title = {Theory of the Topological Spin Hall Effect in Antiferromagnetic Skyrmions: Impact on Current-Induced Motion},
+  author = {Akosa, C. A. and Tretiakov, O. A. and Tatara, G. and Manchon, A.},
+  journal = {Phys. Rev. Lett.},
+  volume = {121},
+  issue = {9},
+  pages = {097204},
+  numpages = {5},
+  year = {2018},
+  month = {Aug},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.121.097204},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.121.097204}
+}
+
 @article{Tomasello2017,
 	doi = {10.1088/1361-6463/aa7a98},
 	url = {https://doi.org/10.1088%2F1361-6463%2Faa7a98},
@@ -5070,6 +5582,22 @@ abstract = "A new mechanism is proposed for exciting the magnetic state of a fer
 	journal = {Journal of Physics D: Applied Physics},
 }
 
+@article{AdoSOT2017,
+  title = {Microscopic theory of spin-orbit torques in two dimensions},
+  author = {Ado, I. A. and Tretiakov, Oleg A. and Titov, M.},
+  journal = {Phys. Rev. B},
+  volume = {95},
+  issue = {9},
+  pages = {094401},
+  numpages = {12},
+  year = {2017},
+  month = {Mar},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.95.094401},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.95.094401}
+}
+
+%some shitty microscopics for torques in AFM
 @article{Yamane-AFM-STT-2016,
   title = {Spin-transfer torques in antiferromagnetic textures: Efficiency and quantification method},
   author = {Yamane, Yuta and Ieda, Jun'ichi and Sinova, Jairo},
@@ -5453,6 +5981,38 @@ https://doi.org/10.1063/1.1448794
 }
 
 %crossing 2
+@article{2016AdoPRL,
+  title = {Anomalous Hall Effect in a 2D Rashba Ferromagnet},
+  author = {Ado, I. A. and Dmitriev, I. A. and Ostrovsky, P. M. and Titov, M.},
+  journal = {Phys. Rev. Lett.},
+  volume = {117},
+  issue = {4},
+  pages = {046601},
+  numpages = {5},
+  year = {2016},
+  month = {Jul},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.117.046601},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.117.046601}
+}
+
+%crossing 2.5
+@article{Ado2017PRBcrossing,
+  title = {Sensitivity of the anomalous Hall effect to disorder correlations},
+  author = {Ado, I. A. and Dmitriev, I. A. and Ostrovsky, P. M. and Titov, M.},
+  journal = {Phys. Rev. B},
+  volume = {96},
+  issue = {23},
+  pages = {235148},
+  numpages = {13},
+  year = {2017},
+  month = {Dec},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.96.235148},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.96.235148}
+}
+
+%crossing 3
 @article{2016MilletariSHE,
   title = {Quantum diagrammatic theory of the extrinsic spin Hall effect in graphene},
   author = {Milletar\`{\i}, Mirco and Ferreira, Aires},
@@ -5497,6 +6057,22 @@ https://doi.org/10.1063/1.1448794
 }
 
 %STT diagrams 2
+@article{Sakai2014,
+  title = {Spin torques and charge transport on the surface of topological insulator},
+  author = {Sakai, Akio and Kohno, Hiroshi},
+  journal = {Phys. Rev. B},
+  volume = {89},
+  issue = {16},
+  pages = {165307},
+  numpages = {21},
+  year = {2014},
+  month = {Apr},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.89.165307},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.89.165307}
+}
+
+%Macdonald's STT
 @article{Garate2009STT,
   title = {Nonadiabatic spin-transfer torque in real materials},
   author = {Garate, Ion and Gilmore, K. and Stiles, M. D. and MacDonald, A. H.},
@@ -5512,6 +6088,22 @@ https://doi.org/10.1063/1.1448794
   url = {https://link.aps.org/doi/10.1103/PhysRevB.79.104416}
 }
 
+@article{GarateSOT2009,
+  title = {Influence of a transport current on magnetic anisotropy in gyrotropic ferromagnets},
+  author = {Garate, Ion and MacDonald, A. H.},
+  journal = {Phys. Rev. B},
+  volume = {80},
+  issue = {13},
+  pages = {134403},
+  numpages = {11},
+  year = {2009},
+  month = {Oct},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.80.134403},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.80.134403}
+}
+
+%Macdonald's GD (only second part; I will not cite the first)
 @article{Garate2009GD,
   title = {Gilbert damping in conducting ferromagnets. II. Model tests of the torque-correlation formula},
   author = {Garate, Ion and MacDonald, Allan},
@@ -5528,6 +6120,36 @@ https://doi.org/10.1063/1.1448794
 }
 
 %Duine's infernal collection of 10^10 torques
+@article{Duine2012,
+  title = {Current-induced torques in textured Rashba ferromagnets},
+  author = {van der Bijl, E. and Duine, R. A.},
+  journal = {Phys. Rev. B},
+  volume = {86},
+  issue = {9},
+  pages = {094406},
+  numpages = {9},
+  year = {2012},
+  month = {Sep},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.86.094406},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.86.094406}
+}
+
+@article{deGroot1995,
+  title = {Half-Metallic Antiferromagnets},
+  author = {van Leuken, H. and de Groot, R. A.},
+  journal = {Phys. Rev. Lett.},
+  volume = {74},
+  issue = {7},
+  pages = {1171--1173},
+  numpages = {0},
+  year = {1995},
+  month = {Feb},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.74.1171},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.74.1171}
+}
+
 @article{Gong2018,
 	author = {Gong, Shi-Jing and Gong, Cheng and Sun, Yu-Yun and Tong, Wen-Yi and Duan, Chun-Gang and Chu, Jun-Hao and Zhang, Xiang},
 	title = {Electrically induced 2D half-metallic antiferromagnets and spin field effect transistors},
@@ -5541,6 +6163,21 @@ https://doi.org/10.1063/1.1448794
 	URL = {https://www.pnas.org/content/115/34/8511},
 	eprint = {https://www.pnas.org/content/115/34/8511.full.pdf},
 	journal = {Proceedings of the National Academy of Sciences}
+}
+
+@article{Kurt2014,
+  title = {Cubic ${\mathrm{Mn}}_{2}\mathrm{Ga}$ Thin Films: Crossing the Spin Gap with Ruthenium},
+  author = {Kurt, H. and Rode, K. and Stamenov, P. and Venkatesan, M. and Lau, Y.-C. and Fonda, E. and Coey, J. M. D.},
+  journal = {Phys. Rev. Lett.},
+  volume = {112},
+  issue = {2},
+  pages = {027201},
+  numpages = {5},
+  year = {2014},
+  month = {Jan},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevLett.112.027201},
+  url = {https://link.aps.org/doi/10.1103/PhysRevLett.112.027201}
 }
 
 @article{Coey2016,
@@ -5569,6 +6206,21 @@ URL = {https://doi.org/10.1063/1.4962812},
 eprint = {https://doi.org/10.1063/1.4962812}
 }
 
+@article{Roschewsky2017,
+  title = {Spin-orbit torque switching of ultralarge-thickness ferrimagnetic GdFeCo},
+  author = {Roschewsky, Niklas and Lambert, Charles-Henri and Salahuddin, Sayeef},
+  journal = {Phys. Rev. B},
+  volume = {96},
+  issue = {6},
+  pages = {064406},
+  numpages = {5},
+  year = {2017},
+  month = {Aug},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.96.064406},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.96.064406}
+}
+
 @article{KimFERRISOT018,
 	Author = {Kim, JongHyuk and Lee, DongJoon and Lee, Kyung-Jin and Ju, Byeong-Kwon and Koo, Hyun Cheol and Min, Byoung-Chul and Lee, OukJae},
 	Da = {2018/04/16},
@@ -5586,6 +6238,23 @@ eprint = {https://doi.org/10.1063/1.4962812}
 	Volume = {8},
 	Year = {2018},
 	Bdsk-Url-1 = {https://doi.org/10.1038/s41598-018-24480-2}}
+
+@article{ManchonPRB2008,
+  title = {Theory of nonequilibrium intrinsic spin torque in a single nanomagnet},
+  author = {Manchon, A. and Zhang, S.},
+  journal = {Phys. Rev. B},
+  volume = {78},
+  issue = {21},
+  pages = {212405},
+  numpages = {4},
+  year = {2008},
+  month = {Dec},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.78.212405},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.78.212405}
+}
+
+%%%%%%%%%%%%%%%
 
 @article{ezawa_photoinduced_2013,
   title = {Photoinduced Topological Phase Transition and a Single Dirac-Cone State in Silicene},
@@ -5877,6 +6546,20 @@ archivePrefix = {arXiv},
        adsurl = {https://ui.adsabs.harvard.edu/abs/2019arXiv190701045S},
       adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
+@article{PhysRevB.79.064404,
+  title = {Gilbert damping in conducting ferromagnets. II. Model tests of the torque-correlation formula},
+  author = {Garate, Ion and MacDonald, Allan},
+  journal = {Phys. Rev. B},
+  volume = {79},
+  issue = {6},
+  pages = {064404},
+  numpages = {9},
+  year = {2009},
+  month = {Feb},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevB.79.064404},
+  url = {https://link.aps.org/doi/10.1103/PhysRevB.79.064404}
+}
 @article{Heinrich,
 author = {Heinrich,B.  and Woltersdorf,G.  and Urban,R.  and Simanek,E. },
 title = {Role of dynamic exchange coupling in magnetic relaxations of metallic multilayer films (invited)},
@@ -5954,6 +6637,21 @@ eprint = {
 	pages = {587--593}
 }
 
+@article{van_der_bijl_current-induced_2012,
+	title = {Current-induced torques in textured {Rashba} ferromagnets},
+	volume = {86},
+	url = {https://link.aps.org/doi/10.1103/PhysRevB.86.094406},
+	doi = {10.1103/PhysRevB.86.094406},
+	abstract = {In systems with small spin-orbit coupling, current-induced torques on the magnetization require inhomogeneous magnetization textures. For large spin-orbit coupling, such torques exist even without gradients in the magnetization direction. Here, we consider current-induced torques in ferromagnetic metals with both Rashba spin-orbit coupling and inhomogeneous magnetization. We first phenomenologically construct all torques that are allowed by the symmetries of the system, to first order in magnetization-direction gradients and electric field. Second, we use a Boltzmann approach to calculate the spin torques that arise to second order in the spin-orbit coupling. We apply our results to current-driven domain walls and find that the domain-wall mobility is strongly affected by torques that result from the interplay between spin-orbit coupling and inhomogeneity of the magnetization texture.},
+	number = {9},
+	urldate = {2019-11-20},
+	journal = {Physical Review B},
+	author = {van der Bijl, E. and Duine, R. A.},
+	month = sep,
+	year = {2012},
+	pages = {094406}
+}
+
 @book{datta_electronic_1995, place={Cambridge}, series={Cambridge Studies in Semiconductor Physics and Microelectronic Engineering}, title={Electronic Transport in Mesoscopic Systems}, DOI={10.1017/CBO9780511805776}, publisher={Cambridge University Press}, author={Datta, Supriyo}, year={1995}, collection={Cambridge Studies in Semiconductor Physics and Microelectronic Engineering}}
 
 @article{ado_anisotropy_2019,
@@ -5989,6 +6687,21 @@ eprint = {
 }
 
 @article{ezawa_photoinduced_2013,
+	title = {Photoinduced {Topological} {Phase} {Transition} and a {Single} {Dirac}-{Cone} {State} in {Silicene}},
+	volume = {110},
+	url = {https://link.aps.org/doi/10.1103/PhysRevLett.110.026603},
+	doi = {10.1103/PhysRevLett.110.026603},
+	abstract = {Silicene (a monolayer of silicon atoms) is a two-dimensional topological insulator (TI) that undergoes a topological phase transition to a band insulator under external electric field Ez. We investigate a photoinduced topological phase transition from a TI to another TI by changing its topological class by irradiating circular polarized light at fixed Ez. The band structure is modified by photon dressing with a new dispersion, where the topological property is altered. By increasing the intensity of light at Ez=0, a photoinduced quantum Hall insulator is realized. Its edge modes are anisotropic chiral, in which the velocities of up and down spins are different. At Ez{\textgreater}Ecr with a certain critical field Ecr, a photoinduced spin-polarized quantum Hall insulator emerges. This is a new state of matter, possessing one Chern number and one-half spin-Chern numbers. We newly discover a single Dirac-cone state along a phase boundary. A distinctive hallmark of the state is that one of the two Dirac valleys is closed and the other open.},
+	number = {2},
+	urldate = {2019-11-20},
+	journal = {Physical Review Letters},
+	author = {Ezawa, Motohiko},
+	month = jan,
+	year = {2013},
+	pages = {026603}
+}
+
+@article{ezawa_photoinduced_2013-1,
 	title = {Photoinduced {Topological} {Phase} {Transition} and a {Single} {Dirac}-{Cone} {State} in {Silicene}},
 	volume = {110},
 	url = {https://link.aps.org/doi/10.1103/PhysRevLett.110.026603},
@@ -6067,6 +6780,22 @@ eprint = {
 }
 
 @article{akosa_theory_2018,
+	title = {Theory of the {Topological} {Spin} {Hall} {Effect} in {Antiferromagnetic} {Skyrmions}: {Impact} on {Current}-{Induced} {Motion}},
+	volume = {121},
+	shorttitle = {Theory of the {Topological} {Spin} {Hall} {Effect} in {Antiferromagnetic} {Skyrmions}},
+	url = {https://link.aps.org/doi/10.1103/PhysRevLett.121.097204},
+	doi = {10.1103/PhysRevLett.121.097204},
+	abstract = {We demonstrate that the nontrivial magnetic texture of antiferromagnetic Skyrmions (AFM Sks) promotes a nonvanishing topological spin Hall effect (TSHE) on the flowing electrons. This effect results in a substantial enhancement of the nonadiabatic torque and, hence, improves the Skyrmion mobility. This nonadiabatic torque increases when decreasing the Skyrmion size, and, therefore, scaling down results in a much higher torque efficiency. In clean AFM Sks, we find a significant boost of the TSHE close to the van Hove singularity. Interestingly, this effect is enhanced away from the band gap in the presence of nonmagnetic interstitial defects. Furthermore, unlike their ferromagnetic counterpart, the TSHE in AFM Sks increases with an increase in the disorder strength, thus opening promising avenues for materials engineering of this effect.},
+	number = {9},
+	urldate = {2019-11-20},
+	journal = {Physical Review Letters},
+	author = {Akosa, C. A. and Tretiakov, O. A. and Tatara, G. and Manchon, A.},
+	month = aug,
+	year = {2018},
+	pages = {097204}
+}
+
+@article{akosa_theory_2018-1,
 	title = {Theory of the {Topological} {Spin} {Hall} {Effect} in {Antiferromagnetic} {Skyrmions}: {Impact} on {Current}-{Induced} {Motion}},
 	volume = {121},
 	shorttitle = {Theory of the {Topological} {Spin} {Hall} {Effect} in {Antiferromagnetic} {Skyrmions}},
@@ -6177,6 +6906,21 @@ eprint = {
 }
 
 @article{ghosh_nonequilibrium_2019,
+	title = {Nonequilibrium spin density and spin-orbit torque in a three-dimensional topological insulator/antiferromagnet heterostructure},
+	volume = {100},
+	url = {https://link.aps.org/doi/10.1103/PhysRevB.100.014412},
+	doi = {10.1103/PhysRevB.100.014412},
+	abstract = {We study the behavior of nonequilibrium spin density and spin-orbit torque in a topological insulator/antiferromagnet heterostructure. Unlike ferromagnetic heterostructures where the Dirac cone is gapped due to time-reversal symmetry breaking, here the Dirac cone is preserved. We demonstrate the existence of a staggered spin density corresponding to a dampinglike torque which is quite robust against scalar impurities when the transport energy is such that the transport is confined to the topological insulator surface. We show the contribution to the nonequilibrium spin density due to both surface and bulk topological insulator bands. Finally, we show that the torques in topological insulator/antiferromagnet heterostructures exhibit an angular dependence that is consistent with the standard spin-orbit torque obtained in Rashba system with some additional structure arising from the interfacial coupling.},
+	number = {1},
+	urldate = {2019-11-20},
+	journal = {Physical Review B},
+	author = {Ghosh, S. and Manchon, A.},
+	month = jul,
+	year = {2019},
+	pages = {014412}
+}
+
+@article{ghosh_nonequilibrium_2019-1,
 	title = {Nonequilibrium spin density and spin-orbit torque in a three-dimensional topological insulator/antiferromagnet heterostructure},
 	volume = {100},
 	url = {https://link.aps.org/doi/10.1103/PhysRevB.100.014412},
@@ -6366,7 +7110,43 @@ eprint = {
 	pages = {1--7}
 }
 
+@article{bodnar_writing_2018-1,
+	title = {Writing and reading antiferromagnetic {Mn} 2 {Au} by {N{\'e}el} spin-orbit torques and large anisotropic magnetoresistance},
+	volume = {9},
+	copyright = {2018 The Author(s)},
+	issn = {2041-1723},
+	url = {https://www.nature.com/articles/s41467-017-02780-x},
+	doi = {10.1038/s41467-017-02780-x},
+	abstract = {The zero net moment of antiferromagnets makes them insensitive to magnetic fields and enables ultrafast dynamics promising for novel spintronics. Here the authors achieved pulse current induced N{\'e}el vector switching in Mn2Au(001) epitaxial thin films, which is associated with a large magnetoresistive effect allowing simple read-out.},
+	number = {1},
+	urldate = {2019-11-20},
+	journal = {Nature Communications},
+	author = {Bodnar, S. Yu and {\v S}mejkal, L. and Turek, I. and Jungwirth, T. and Gomonay, O. and Sinova, J. and Sapozhnik, A. A. and Elmers, H.-J. and Kl{\"a}ui, M. and Jourdan, M.},
+	month = jan,
+	year = {2018},
+	pages = {1--7}
+}
+
 @article{zhou_large_2019,
+	title = {Large spin-orbit torque efficiency enhanced by magnetic structure of collinear antiferromagnet {IrMn}},
+	volume = {5},
+	copyright = {Copyright {\textcopyright} 2019 The Authors, some rights reserved; exclusive licensee American Association for the Advancement of Science. No claim to original U.S. Government Works. Distributed under a Creative Commons Attribution NonCommercial License 4.0 (CC BY-NC).. This is an open-access article distributed under the terms of the Creative Commons Attribution-NonCommercial license, which permits use, distribution, and reproduction in any medium, so long as the resultant use is not for commercial advantage and provided the original work is properly cited.},
+	issn = {2375-2548},
+	url = {https://advances.sciencemag.org/content/5/5/eaau6696},
+	doi = {10.1126/sciadv.aau6696},
+	abstract = {Spin-orbit torque (SOT) offers promising approaches to developing energy-efficient memory devices by electric switching of magnetization. Compared to other SOT materials, metallic antiferromagnet (AFM) potentially allows the control of SOT through its magnetic structure. Here, combining the results from neutron diffraction and spin-torque ferromagnetic resonance experiments, we show that the magnetic structure of epitaxially grown L10-IrMn (a collinear AFM) is distinct from the widely presumed bulk one. It consists of twin domains, with the spin axes orienting toward [111] and [-111], respectively. This unconventional magnetic structure is responsible for much larger SOT efficiencies up to 0.60 {\textpm} 0.04, compared to 0.083 {\textpm} 0.002 for the polycrystalline IrMn. Furthermore, we reveal that this magnetic structure induces a large isotropic bulk contribution and a comparable anisotropic interfacial contribution to the SOT efficiency. Our findings shed light on the critical roles of bulk and interfacial antiferromagnetism to SOT generated by metallic AFM.
+Collinear IrMn offers new opportunities for future magnetic memory design as it can be an effective source of spin-orbit torque.
+Collinear IrMn offers new opportunities for future magnetic memory design as it can be an effective source of spin-orbit torque.},
+	number = {5},
+	urldate = {2019-11-20},
+	journal = {Science Advances},
+	author = {Zhou, Jing and Wang, Xiao and Liu, Yaohua and Yu, Jihang and Fu, Huixia and Liu, Liang and Chen, Shaohai and Deng, Jinyu and Lin, Weinan and Shu, Xinyu and  others},
+	month = may,
+	year = {2019},
+	pages = {eaau6696}
+}
+
+@article{zhou_large_2019-1,
 	title = {Large spin-orbit torque efficiency enhanced by magnetic structure of collinear antiferromagnet {IrMn}},
 	volume = {5},
 	copyright = {Copyright {\textcopyright} 2019 The Authors, some rights reserved; exclusive licensee American Association for the Advancement of Science. No claim to original U.S. Government Works. Distributed under a Creative Commons Attribution NonCommercial License 4.0 (CC BY-NC).. This is an open-access article distributed under the terms of the Creative Commons Attribution-NonCommercial license, which permits use, distribution, and reproduction in any medium, so long as the resultant use is not for commercial advantage and provided the original work is properly cited.},
@@ -6434,6 +7214,21 @@ Collinear IrMn offers new opportunities for future magnetic memory design as it 
 }
 
 @article{moriyama_spin-orbit-torque_2018,
+	title = {Spin-{Orbit}-{Torque} {Memory} {Operation} of {Synthetic} {Antiferromagnets}},
+	volume = {121},
+	url = {https://link.aps.org/doi/10.1103/PhysRevLett.121.167202},
+	doi = {10.1103/PhysRevLett.121.167202},
+	abstract = {In this Letter, we show the demonstration of a sequential antiferromagnetic memory operation with a spin-orbit-torque write, by the spin Hall effect, and a resistive read in the CoGd synthetic antiferromagnetic bits, in which we reveal the distinct differences in the spin-orbit-torque and field-induced switching mechanisms of the antiferromagnetic moment, or the N{\'e}el vector. In addition to the comprehensive spin torque memory operation, our thorough investigations also highlight the high immunity to a field disturbance as well as a memristive behavior of the antiferromagnetic bits.},
+	number = {16},
+	urldate = {2019-11-20},
+	journal = {Physical Review Letters},
+	author = {Moriyama, Takahiro and Zhou, Weinan and Seki, Takeshi and Takanashi, Koki and Ono, Teruo},
+	month = oct,
+	year = {2018},
+	pages = {167202}
+}
+
+@article{moriyama_spin-orbit-torque_2018-1,
 	title = {Spin-{Orbit}-{Torque} {Memory} {Operation} of {Synthetic} {Antiferromagnets}},
 	volume = {121},
 	url = {https://link.aps.org/doi/10.1103/PhysRevLett.121.167202},
@@ -6558,6 +7353,21 @@ Collinear IrMn offers new opportunities for future magnetic memory design as it 
 	pages = {157201}
 }
 
+@article{hals_phenomenology_2013,
+	title = {Phenomenology of current-induced spin-orbit torques},
+	volume = {88},
+	url = {https://link.aps.org/doi/10.1103/PhysRevB.88.085423},
+	doi = {10.1103/PhysRevB.88.085423},
+	abstract = {Currents induce magnetization torques via spin-transfer when the spin angular momentum is conserved or via relativistic spin-orbit coupling. Beyond simple models, the relationship between material properties and spin-orbit torques is not known. Here, we present a novel phenomenology of current-induced torques that is valid for any strength of intrinsic spin-orbit coupling. In Pt{\textbar}Co{\textbar}AlOx, we demonstrate that the domain walls move in response to a novel relativistic dissipative torque that is dependent on the domain wall structure and that can be controlled via the Dzyaloshinskii-Moriya interaction. Unlike the nonrelativistic spin-transfer torque, the new torque can, together with the spin-Hall effect in the Pt layer, move domain walls by means of electric currents parallel to the walls.},
+	number = {8},
+	urldate = {2019-11-20},
+	journal = {Physical Review B},
+	author = {Hals, Kjetil M. D. and Brataas, Arne},
+	month = aug,
+	year = {2013},
+	pages = {085423}
+}
+
 @article{brataas_current-induced_2012,
 	title = {Current-induced torques in magnetic materials},
 	volume = {11},
@@ -6659,6 +7469,70 @@ We demonstrate terahertz electrical writing speed in an antiferromagnetic memory
 }
 
 @article{baltz_antiferromagnetic_2018,
+	title = {Antiferromagnetic spintronics},
+	volume = {90},
+	url = {https://link.aps.org/doi/10.1103/RevModPhys.90.015005},
+	doi = {10.1103/RevModPhys.90.015005},
+	abstract = {Antiferromagnetic materials could represent the future of spintronic applications thanks to the numerous interesting features they combine: they are robust against perturbation due to magnetic fields, produce no stray fields, display ultrafast dynamics, and are capable of generating large magnetotransport effects. Intense research efforts over the past decade have been invested in unraveling spin transport properties in antiferromagnetic materials. Whether spin transport can be used to drive the antiferromagnetic order and how subsequent variations can be detected are some of the thrilling challenges currently being addressed. Antiferromagnetic spintronics started out with studies on spin transfer and has undergone a definite revival in the last few years with the publication of pioneering articles on the use of spin-orbit interactions in antiferromagnets. This paradigm shift offers possibilities for radically new concepts for spin manipulation in electronics. Central to these endeavors are the need for predictive models, relevant disruptive materials, and new experimental designs. This paper reviews the most prominent spintronic effects described based on theoretical and experimental analysis of antiferromagnetic materials. It also details some of the remaining bottlenecks and suggests possible avenues for future research. This review covers both spin-transfer-related effects, such as spin-transfer torque, spin penetration length, domain-wall motion, and {\textquotedblleft}magnetization{\textquotedblright} dynamics, and spin-orbit related phenomena, such as (tunnel) anisotropic magnetoresistance, spin Hall, and inverse spin galvanic effects. Effects related to spin caloritronics, such as the spin Seebeck effect, are linked to the transport of magnons in antiferromagnets. The propagation of spin waves and spin superfluids in antiferromagnets is also covered.},
+	number = {1},
+	urldate = {2019-11-20},
+	journal = {Reviews of Modern Physics},
+	author = {Baltz, V. and Manchon, A. and Tsoi, M. and Moriyama, T. and Ono, T. and Tserkovnyak, Y.},
+	month = feb,
+	year = {2018},
+	pages = {015005}
+}
+
+@article{gomonay_high_2016-1,
+	title = {High {Antiferromagnetic} {Domain} {Wall} {Velocity} {Induced} by {N}{\textbackslash}'eel {Spin}-{Orbit} {Torques}},
+	volume = {117},
+	url = {https://link.aps.org/doi/10.1103/PhysRevLett.117.017202},
+	doi = {10.1103/PhysRevLett.117.017202},
+	abstract = {We demonstrate the possibility to drive an antiferromagnetic domain wall at high velocities by fieldlike N{\'e}el spin-orbit torques. Such torques arise from current-induced local fields that alternate their orientation on each sublattice of the antiferromagnet and whose orientation depends primarily on the current direction, giving them their fieldlike character. The domain wall velocities that can be achieved by this mechanism are 2 orders of magnitude greater than the ones in ferromagnets. This arises from the efficiency of the staggered spin-orbit fields to couple to the order parameter and from the exchange-enhanced phenomena in antiferromagnetic texture dynamics, which leads to a low domain wall effective mass and the absence of a Walker breakdown limit. In addition, because of its nature, the staggered spin-orbit field can lift the degeneracy between two 180{\textdegree} rotated states in a collinear antiferromagnet, and it provides a force that can move such walls and control the switching of the states.},
+	number = {1},
+	urldate = {2019-11-20},
+	journal = {Physical Review Letters},
+	author = {Gomonay, O. and Jungwirth, T. and Sinova, J.},
+	month = jun,
+	year = {2016},
+	pages = {017202}
+}
+
+@article{jungfleisch_perspectives_2018-1,
+	title = {Perspectives of antiferromagnetic spintronics},
+	volume = {382},
+	issn = {0375-9601},
+	url = {http://www.sciencedirect.com/science/article/pii/S0375960118300343},
+	doi = {10.1016/j.physleta.2018.01.008},
+	abstract = {Antiferromagnets are promising for future spintronic applications owing to their advantageous properties: They are magnetically ordered, but neighboring magnetic moments point in opposite directions, which results in zero net magnetization. This means antiferromagnets produce no stray fields and are insensitive to external magnetic field perturbations. Furthermore, they show intrinsic high frequency dynamics, exhibit considerable spin{\textendash}orbit and magneto-transport effects. Over the past decade, it has been realized that antiferromagnets have more to offer than just being utilized as passive components in exchange bias applications. This development resulted in a paradigm shift, which opens the pathway to novel concepts using antiferromagnets for spin-based technologies and applications. This article gives a broad perspective on antiferromagnetic spintronics. In particular, the manipulation and detection of antiferromagnetic states by spintronics effects, as well as spin transport and dynamics in antiferromagnetic materials will be discussed. We will also outline current challenges and future research directions in this emerging field.},
+	number = {13},
+	urldate = {2019-11-20},
+	journal = {Physics Letters A},
+	author = {Jungfleisch, Matthias B. and Zhang, Wei and Hoffmann, Axel},
+	month = apr,
+	year = {2018},
+	keywords = {Antiferromagnets, Magnons, Spin dynamics, Spin Hall effect, Spintronics},
+	pages = {865--871}
+}
+
+@article{jungwirth_multiple_2018-1,
+	title = {The multiple directions of antiferromagnetic spintronics},
+	volume = {14},
+	copyright = {2018 The Publisher},
+	issn = {1745-2481},
+	url = {https://www.nature.com/articles/s41567-018-0063-6},
+	doi = {10.1038/s41567-018-0063-6},
+	abstract = {New developments in spintronics based on antiferromagnetic materials show promise for improved fundamental understanding and applications in technology.},
+	number = {3},
+	urldate = {2019-11-20},
+	journal = {Nature Physics},
+	author = {Jungwirth, T. and Sinova, J. and Manchon, A. and Marti, X. and Wunderlich, J. and Felser, C.},
+	month = mar,
+	year = {2018},
+	pages = {200--203}
+}
+
+@article{baltz_antiferromagnetic_2018-1,
 	title = {Antiferromagnetic spintronics},
 	volume = {90},
 	url = {https://link.aps.org/doi/10.1103/RevModPhys.90.015005},
@@ -6856,3 +7730,18 @@ Transport and optical measurements are used to demonstrate the switching of doma
 	pages = {385001}
 }
 
+@article{pandey_doping_2017-1,
+	title = {Doping an antiferromagnetic insulator: {A} route to an antiferromagnetic metallic phase},
+	volume = {117},
+	issn = {0295-5075, 1286-4854},
+	shorttitle = {Doping an antiferromagnetic insulator},
+	url = {http://stacks.iop.org/0295-5075/117/i=5/a=57003?key=crossref.054430cc7f0e0138b01ffb2d182b1731},
+	doi = {10.1209/0295-5075/117/57003},
+	number = {5},
+	urldate = {2019-11-20},
+	journal = {EPL (Europhysics Letters)},
+	author = {Pandey, S. K. and Mahadevan, Priya and Sarma, D. D.},
+	month = mar,
+	year = {2017},
+	pages = {57003}
+}
