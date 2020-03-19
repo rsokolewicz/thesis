@@ -38,7 +38,7 @@ In equilibrium we have the fluctuation-dissipation theorem $   G^\text{K}_{\ep_\
     &-f_{\ep_+}\bb{\sigma}G^\text{R}_{\ep_+,\bb{p}_+} V_{\omega,\bb{q}}G^\text{R}_{\ep_-,\bb{p}_-}\nonumber\\
     &+f_{\ep_-}\bb{\sigma}G^\text{A}_{\ep_+,\bb{p}_+} V_{\omega,\bb{q}}G^\text{A}_{\ep_-,\bb{p}_-}\rangle,
 \end{align}
-where the angular brackets stands for impurity averaging. The latter amounts to the replacement of the Green's functions with the corresponding impurity averaged Greens functions (in Born approximation) and to the replacement of one of the spin operators with the corresponding vertex corrected operator (in the non-crossing approximation). The corrections beyond the non-crossing approximation are important for those tensor components that lack leading-order contribution \cite{ivan}. To keep our notations more compact we ignore here the fact that the Green's functions before disorder averaging lack translational invariance, i.\,e. depend on both Wigner coordinates: momentum and coordinate. 
+where the angular brackets stands for impurity averaging. The latter amounts to the replacement of the Green's functions with the corresponding impurity averaged Greens functions (in Born approximation) and to the replacement of one of the spin operators with the corresponding vertex corrected operator (in the non-crossing approximation). The corrections beyond the non-crossing approximation are important for those tensor components that lack leading-order contribution \cite{ivanEPL}. To keep our notations more compact we ignore here the fact that the Green's functions before disorder averaging lack translational invariance, i.\,e. depend on both Wigner coordinates: momentum and coordinate. 
 
 In the limit of small frequency, i.e. $\hslash\omega\ll\ep$, we obtain $s_\alpha = s^\text{I}_\alpha+s^\text{II}_\alpha$,
 \begin{align}
@@ -92,7 +92,7 @@ Eqs.~(\ref{chap1:eq:skubo},\ref{chap1:eq:skuboB}) correspond to Eqs.~(\ref{spol}
 %with $M_{\alpha\beta}=v^2\int\!d^2\bb{p}\tr\left[\sigma_\alpha G^\text{R}_{\ep+\omega,\bb{p}+\bb{q}}\sigma_\beta G^\text{A}_{\ep,\bb{p}}\right]/(2\pi)^2$. 
 %The ladder summation is conveniently represented in the matrix form by introducing a matrix $\hat{M}$ with $16$ components $M_{\alpha\beta}$ for $\alpha,\beta=0,x,y,z$ ($\sigma_0=1$). 
 %
-%The crossed diagrams in Fig.~\ref{fig:diagrams} (b-d) give a contribution to the components of $\hat{K}$ of the order $\mathcal{O}(\alpha^0)$. The only components that are modified to this order are those corresponding to the Hall conductivity (i.e. $\alpha,\beta=1,2$ and vice versa). Details of this calculation can be found in Ref. \cite{ivan}. 
+%The crossed diagrams in Fig.~\ref{fig:diagrams} (b-d) give a contribution to the components of $\hat{K}$ of the order $\mathcal{O}(\alpha^0)$. The only components that are modified to this order are those corresponding to the Hall conductivity (i.e. $\alpha,\beta=1,2$ and vice versa). Details of this calculation can be found in Ref. \cite{ivanEPL}. 
 %
 % In our calculation the terms of the order of $\alpha \ln p_\textrm{cutoff}/\ep$ (where $p_\textrm{cutoff}$ is the ultraviolet momentum cut-off), is, therefore, disregarded with respect to $1$. This approximation is legitimate since we assume that all model parameters $\epsilon$, $\Delta_\textrm{sd}$ and $\alpha$ are first renormalized such that $p_\textrm{cutoff} \approx \ep$.
 %
@@ -718,7 +718,7 @@ which gives the result of Eq.~(\ref{asymptot}) of the main text.
 %   {Physical Review B}\ }\textbf {\bibinfo {volume} {96}} (\bibinfo {year}
 %   {2017}),\ 10.1103/PhysRevB.96.014408}\BibitemShut {NoStop}%
 % \bibitem [{\citenamefont {Burkov}\ and\ \citenamefont
-%   {Hawthorn}(2010)}]{burkov_spin_2010-1}%
+%   {Hawthorn}(2010)}]{burkov_spin_2010}%
 %   \BibitemOpen
 %   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~A.}\ \bibnamefont
 %   {Burkov}}\ and\ \bibinfo {author} {\bibfnamefont {D.~G.}\ \bibnamefont

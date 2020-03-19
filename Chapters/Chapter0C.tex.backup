@@ -31,7 +31,7 @@ and the other one with respect to the time derivative of magnetization vector. T
 \delta\bb{s}^-=\hat{S}^\textrm{SOT}_-\bb{j}+\hat{S}^\textrm{GD}_{nm}\dot{\bb{m}}+\hat{S}^\textrm{GD}_n \dot{\bb{n}},
 \end{align}
 \eml
-where we define the response tensors $\hat{S}^\textrm{SOT}_\pm$ that are describing spin-orbit torques (both field-like and anti-damping) and various $\hat{S}^\textrm{GD}$ tensors that are describing various contributions to Gilbert dampings (and to effective spin renormalizations) \cite{ado_anisotropy_2019}.
+where we define the response tensors $\hat{S}^\textrm{SOT}_\pm$ that are describing spin-orbit torques (both field-like and anti-damping) and various $\hat{S}^\textrm{GD}$ tensors that are describing various contributions to Gilbert dampings (and to effective spin renormalizations) \cite{AdoSTTGD2019}.
 
 In order to compute the linear response tensors in Eqs.~(\ref{chap03:tensors}) we apply the standard Kubo formula
 \be
