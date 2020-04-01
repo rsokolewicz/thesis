@@ -7,6 +7,9 @@
 *.acn
 *.acr
 *.alg
+*.bcf
+*.xml
+*.backup
 *.bbl
 *.blg
 *.dvi
@@ -21,3 +24,6 @@
 *.mtc1
 *.out
 *.synctex.gz
+*.pdf
+mythesis.pdf
+*bibtex_*

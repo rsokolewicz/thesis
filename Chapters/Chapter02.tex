@@ -3,7 +3,7 @@
 %************************************************
 Recent experiments on switching antiferromagnetic domains by electric current pulses have attracted a lot of attention to spin-orbit torques in antiferromagnets. In this work, we employ the tight-binding model solver, kwant,  to compute spin-orbit torques in a two-dimensional antiferromagnet on a honeycomb lattice with strong spin-orbit interaction of Rashba type. Our model combines spin-orbit interaction, local $s$-$d$-like exchange, and scattering of conduction electrons on on-site disorder potential to provide a microscopic mechanism for angular momentum relaxation. We consider two versions of the model: one with preserved and one with broken sublattice symmetry. A non-equilibrium staggered polarization, that is responsible for the so-called N\'eel spin-orbit torque, is shown to vanish identically in the symmetric model but may become finite if sublattice symmetry is broken. Similarly, anti-damping spin-orbit torques vanish in the symmetric model but become finite and anisotropic in a model with broken sublattice symmetry. As expected, anti-damping torques also reveal a sizable dependence on impurity concentration. Our numerical analysis also confirms symmetry classification of spin-orbit torques and strong torque anisotropy due to in-plane confinement of electron momenta. 
 \vfill
-bla bla
+Parts of this Chapter are published in Phys. Rev. \textbf{B} 100, 214403 (2019).
 \clearpage
 % \maketitle
 
@@ -28,7 +28,7 @@ While most of the above studies have focused on the existence and influence of t
 \centering
 \centerline{\includegraphics[width=\columnwidth]{{articles/sumit_paper/fig1.pdf}}}
 \caption{
-Left panel (a): a two-dimensional honeycomb lattice hosting anti-parallel localized magnetic moments $\bb{S}^\textrm{A}$ and $\bb{S}^\textrm{B}$ that induce opposite exchange potentials on A and B sublattice. The vector $\bb{d}_{ij}$ is directed from an A-site $i$ to one of the three nearest-neighbor B-sites $j$. Right panel (b): Fermi surfaces (strongly enlarged) in quasi-momentum space for the Fermi energy $E=0.3\,w$, couplings $\lambda = 0.05\,w$, $\Delta=JS=0.1\,w$, and $\theta=\pi/2$. Solid (orange) and dashed (green) lines indicate $K$ and $K'$ valleys. 
+Left panel (a): a two-dimensional honeycomb lattice hosting anti-parallel localized magnetic moments $\bb{S}^\textrm{A}$ and $\bb{S}^\textrm{B}$ that induce opposite exchange potentials on A and B sublattice. The vector $\bb{d}_{ij}$ is directed from an A-site $i$ to one of the three nearest-neighbor B-sites $j$. Right panel (b): Fermi surfaces (strongly enlarged) in quasi-momentum space for the Fermi energy $E=0.3\,t_h$, couplings $\lambda = 0.05\,t_h$, $\Delta_\text{sd}=JS=0.1\,t_h$, and $\theta=\pi/2$. Solid (orange) and dashed (green) lines indicate $K$ and $K'$ valleys. 
 }
 \label{chap02:fig:lattice}
 \end{figure}
@@ -47,7 +47,7 @@ where the first term describes the nearest-neighbor hopping,
 \label{chap02:hop}
 H_{\textrm{tb}}=-w \s_{\la i, j \ra} \s_{\sigma} c\h_{i\sigma} c\0_{j\sigma},
 \e
-with the hopping energy $w$. The operators $c\h_{i\sigma}$ ($c\0_{i\sigma}$) are the standard creation (annihilation) operators for a fermion on the lattice site $i$ with the spin index $\sigma$. 
+with the hopping energy $t_h$. The operators $c\h_{i\sigma}$ ($c\0_{i\sigma}$) are the standard creation (annihilation) operators for a fermion on the lattice site $i$ with the spin index $\sigma$. 
 
 The term $H_\textrm{R}$ describes spin-orbit interaction of Rashba type that is responsible for spin-orbit torque on magnetization. This spin-orbit interaction is represented by the term
 \be
@@ -66,7 +66,7 @@ Finally, the $s$-$d$-like exchange interaction between localized magnetic moment
 \label{chap02:ex}
 H_\mathrm{sd}=-J \s_{i} \s_{\sigma\sigma'}\bb{S}_i\cdot \bb{\sigma}_{\sigma\sigma'}c^\dagger_{i\sigma}c\0_{i\sigma'},
 \e
-with the coupling strength $J$ taken here to be the same on $A$ and $B$ sublattices. The term (\ref{chap02:ex}) couples the tight-binding model for conduction electrons to a  classical Heisenberg model for localized angular momenta $\bb{S}_i$ with antiferromagnetic ground state. The localized momenta $\bb{S}_i$ are assumed to have large absolute value $|\bb{S}_i|=S\gg 1$. The characteristic $s$-$d$ exchange energy is given by $\Delta = J S$.  For conductivity and non-equilibrium spin density computations we assume the single-domain antiferromagnetic order, that is characterized by the unit N\'eel vector $\bb{\ell} = (\bb{S}^\textrm{A}-\bb{S}^\textrm{B})/2S$. 
+with the coupling strength $J$ taken here to be the same on $A$ and $B$ sublattices. The term (\ref{chap02:ex}) couples the tight-binding model for conduction electrons to a  classical Heisenberg model for localized angular momenta $\bb{S}_i$ with antiferromagnetic ground state. The localized momenta $\bb{S}_i$ are assumed to have large absolute value $|\bb{S}_i|=S\gg 1$. The characteristic $s$-$d$ exchange energy is given by $\Delta_\text{sd} = J S$.  For conductivity and non-equilibrium spin density computations we assume the single-domain antiferromagnetic order, that is characterized by the unit N\'eel vector $\bb{\ell} = (\bb{S}^\textrm{A}-\bb{S}^\textrm{B})/2S$. 
 
 Equal exchange couplings on both sublattices in Eq.~(\ref{chap02:ex}) and Rashba spin-orbit interaction of Eq.~(\ref{chap02:rashba}) ensure sublattice symmetry that greatly simplifies the results. In what follows we refer to the model as the symmetric model. At the end of the paper we also consider a more complex version of the model, where the sublattice symmetry is broken by a strong asymmetry of $s$-$d$ couplings on $A$ and $B$ sublattices.
  
@@ -81,7 +81,7 @@ Due to the rather high symmetry of the model of Eqs.~(\ref{chap02:ham})-(\ref{ch
 \centering
 \centerline{\includegraphics[width=\columnwidth]{{articles/sumit_paper/fig2.pdf}}}
 \caption{
-The band structure cross-section at $k_y=0$ for the model of Eq.~(\ref{chap02:ham}) versus $k_x$ counted with respect to the high-symmetry points $\bb{K}$ and $\bb{K}'$ for different orientations of the N\'eel vector, $\ell_z=\cos\theta$. Horizontal lines correspond to the Fermi energies $E = 0.0\,w$, $0.05\,w$, and $0.3\,w$ for which we perform the numerical analysis. For zero energy (band center), the system is insulating for $\theta>\pi/4$; for $\theta < \pi/4$ the Fermi energy crosses the conduction band in $K$ valley and the valence band in $K'$ valley. For $E=0.05\,w$ all extended states belong to the conduction band in $K$ valley that gives rise to 100\% valley-polarization. For $E=0.3\,w$ both valleys contain two Fermi surfaces. The plots correspond to the parameters $\lambda = 0.05\,w$ and $\Delta=0.1\,w$.
+The band structure cross-section at $k_y=0$ for the model of Eq.~(\ref{chap02:ham}) versus $k_x$ counted with respect to the high-symmetry points $\bb{K}$ and $\bb{K}'$ for different orientations of the N\'eel vector, $\ell_z=\cos\theta$. Horizontal lines correspond to the Fermi energies $E = 0.0\,t_h$, $0.05\,t_h$, and $0.3\,t_h$ for which we perform the numerical analysis. For zero energy (band center), the system is insulating for $\theta>\pi/4$; for $\theta < \pi/4$ the Fermi energy crosses the conduction band in $K$ valley and the valence band in $K'$ valley. For $E=0.05\,t_h$ all extended states belong to the conduction band in $K$ valley that gives rise to 100\% valley-polarization. For $E=0.3\,t_h$ both valleys contain two Fermi surfaces. The plots correspond to the parameters $\lambda = 0.05\,t_h$ and $\Delta_\text{sd}=0.1\,t_h$.
 }
 \label{chap02:fig:spectrum}
 \end{figure}
@@ -92,7 +92,7 @@ From the microscopic point of view all spin-orbit torques (as well as spin-trans
 \label{chap02:MODEL}
 H=H_0+\s_{i}\s_{\sigma\sigma'}V_i\,c^\dagger_{i\sigma}c\0_{i\sigma'},
 \e
-where $V_i$ are random on-site potentials on randomly selected sites. For numerical simulations we take $V_i = \pm V_\textrm{d}$ (with a random sign) on random lattice sites in the scattering region (the sample) as illustrated in Fig.~\ref{chap02:fig:sample}. In various simulations we chose $V_\textrm{d} =0.2\,w$ and $V_\textrm{d} =0.5\,w$ and place impurities on 30\%, 40\% and 50\% of the lattice sites in the sample. Each point is obtained by averaging over 30 -- 80 disorder realizations. 
+where $V_i$ are random on-site potentials on randomly selected sites. For numerical simulations we take $V_i = \pm V_\textrm{d}$ (with a random sign) on random lattice sites in the scattering region (the sample) as illustrated in Fig.~\ref{chap02:fig:sample}. In various simulations we chose $V_\textrm{d} =0.2\,t_h$ and $V_\textrm{d} =0.5\,t_h$ and place impurities on 30\%, 40\% and 50\% of the lattice sites in the sample. Each point is obtained by averaging over 30 -- 80 disorder realizations. 
 
 %%%%%%%%%%%%
 %%% figure 3: sample
@@ -155,14 +155,14 @@ where the angular brackets stand for averaging over disorder realizations, while
 \begin{figure}
 \centering
 \centerline{\includegraphics[width=\columnwidth]{{articles/sumit_paper/fig4.pdf}}}
-\caption{Averaged two-terminal conductivity $L\la G\ra/W$ for the symmetric coupling model computed from Eq.~(\ref{chap02:Landauer}) as the function of the sample length $L$ for several values of the Fermi energy $E$, impurity strength $V_d$ and impurity concentration $n_\textrm{imp}$. Each point corresponds to averaging over 30 disorder realizations. The curves correspond to $\Delta=0.1\,w$, $\lambda=0.05\,w$ and $\theta=\pi/4$ and are fitted using Eq.~(\ref{chap02:fit}).  Similar behavior is observed for various angles $\theta$.}
+\caption{Averaged two-terminal conductivity $L\la G\ra/W$ for the symmetric coupling model computed from Eq.~(\ref{chap02:Landauer}) as the function of the sample length $L$ for several values of the Fermi energy $E$, impurity strength $V_d$ and impurity concentration $n_\textrm{imp}$. Each point corresponds to averaging over 30 disorder realizations. The curves correspond to $\Delta_\text{sd}=0.1\,t_h$, $\lambda=0.05\,t_h$ and $\theta=\pi/4$ and are fitted using Eq.~(\ref{chap02:fit}).  Similar behavior is observed for various angles $\theta$.}
 \label{chap02:fig:conductance}
 \end{figure}
 %%%%%%%%%
 
-The straightforward numerical analysis using kwant package \cite{groth_kwant:_2014} provides us with the two terminal conductivity, $L \la G\ra /W$, that is plotted in Fig.~\ref{chap02:fig:conductance} for the metal regime ($E=0.3\,w$, left panel) and for the half-metal regime ($E=0.05\,w$, right panel). The metal regime refers here to the Fermi energies that correspond to two Fermi surfaces per valley, while the half-metal regime corresponds to a single Fermi surface. Similar plots are generated for various polar angles $\theta$ of the N\'eel vector. Both the 2D conductivity $\sigma$ and the mean free path $\ell_0$ are, then, extracted from the fitting formula of Eq.~(\ref{chap02:fit}) and plotted in Fig.~\ref{chap02:fig:mfp} as the function of $\ell_z=\cos\theta$. The estimate of $\ell_0$ is necessary to ensure that our sample size is at least of the order of the mean free path to avoid non-universal finite-size effects in our data.  
+The straightforward numerical analysis using kwant package \cite{groth_kwant:_2014} provides us with the two terminal conductivity, $L \la G\ra /W$, that is plotted in Fig.~\ref{chap02:fig:conductance} for the metal regime ($E=0.3\,t_h$, left panel) and for the half-metal regime ($E=0.05\,t_h$, right panel). The metal regime refers here to the Fermi energies that correspond to two Fermi surfaces per valley, while the half-metal regime corresponds to a single Fermi surface. Similar plots are generated for various polar angles $\theta$ of the N\'eel vector. Both the 2D conductivity $\sigma$ and the mean free path $\ell_0$ are, then, extracted from the fitting formula of Eq.~(\ref{chap02:fit}) and plotted in Fig.~\ref{chap02:fig:mfp} as the function of $\ell_z=\cos\theta$. The estimate of $\ell_0$ is necessary to ensure that our sample size is at least of the order of the mean free path to avoid non-universal finite-size effects in our data.  
 
-One can see from Fig.~\ref{chap02:fig:mfp} that both the mean free path $\ell_0$ and the conductivity $\sigma$ are nearly constant in the metal regime. Their dependence on the N\'eel vector orientation is weak, which is consistent with the fact that such a dependence must disappear in the limit $E\gg \Delta$. In the half-metal regime, however, the conductivity is strongly dependent on both disorder concentration and the N\'eel vector angle $\theta$. We will see below, that despite rather strong angular dependence of the conductivity, one of the field-like spin-orbit torques remains $\theta$-independent in the half-metal regime. 
+One can see from Fig.~\ref{chap02:fig:mfp} that both the mean free path $\ell_0$ and the conductivity $\sigma$ are nearly constant in the metal regime. Their dependence on the N\'eel vector orientation is weak, which is consistent with the fact that such a dependence must disappear in the limit $E\gg \Delta_\text{sd}$. In the half-metal regime, however, the conductivity is strongly dependent on both disorder concentration and the N\'eel vector angle $\theta$. We will see below, that despite rather strong angular dependence of the conductivity, one of the field-like spin-orbit torques remains $\theta$-independent in the half-metal regime. 
 
 For $E=0$, the system exhibits metal-insulator transition as the function of the N\'eel vector orientation (see the second panel of Fig.~\ref{chap02:fig:conductance}). This choice of the Fermi energy leads, however, to vanishing spin-orbit torques as discussed below. 
 
@@ -213,7 +213,7 @@ For the sake of illustration let us outline the derivation of magnetization dyna
 \e
 where dot stands for the time derivative of $\bb{S}_i$ and $\bb{H}_i=-\delta F/ \delta\, \hslash\bb{S}_i$ is an effective field (in frequency units) on a site $i$  that is defined by the free energy $F$ of the classical Heisenberg model for localized spins. The angular brackets denote the thermodynamic expectation value of conduction electron spin operator on the same site $i$. 
 
-For a collinear antiferromagnet we shall distinguish two sublattices $A$ and $B$ that are characterized by opposite directions of the localized momenta $\bb{S}_i^\textrm{A}=-\bb{S}_i^\textrm{B}$ in the antiferromagnetic ground state. It is assumed, that these directions remain to be almost opposite even for out-of-equilibrium conditions. It is also natural to assume that, as far as the magnet is far from a phase transition, the classical fields $\bb{S}_i^\textrm{A}$ and $\bb{S}_i^\textrm{B}$ remain smooth on atomic scales. Below we consider a single domain antiferromagnet, which is characterized by two time-dependent unit vectors $\bb{n}^\textrm{A,B}=\bb{S}^\textrm{A,B}/S$. 
+For a collinear antiferromagnet we shall distinguish two sublattices $A$ and $B$ that are characterized by opposite directions of the localized momenta $\bb{S}_i^\textrm{A}=-\bb{S}_i^\textrm{B}$ in the antiferromagnetic ground state. It is assumed, that these directions remain to be almost opposite even for out-of-equilibrium conditions. It is also natural to assume that, as far as the magnet is far from a phase transition, the classical fields $\bb{S}_i^\textrm{A}$ and $\bb{S}_i^\textrm{B}$ remain smooth on atomic scales. Below we consider a single domain antiferromagnet, which is characterized by two time-dependent unit vectors $\bb{m}^\textrm{A,B}=\bb{S}^\textrm{A,B}/S$. 
 
 It is also convenient to define smooth conduction electron spin densities on each of the two sublattices
 \be
@@ -223,15 +223,15 @@ where $\mathcal{A}$ is the area of the unit cell (which naturally includes one A
 \beml
 \label{chap02:EOMAFM}
 \begin{align}
-\dot{\bb{n}}^\textrm{A} &= \bb{H}^\textrm{A}\times \bb{n}^\textrm{A}+ (J\mathcal{A}/\hslash)\, \bb{n}^\textrm{A}\times \bb{s}^\textrm{A},\\
-\dot{\bb{n}}^\textrm{B}&= \bb{H}^\textrm{B}\times \bb{n}^\textrm{B}+ (J\mathcal{A}/\hslash)\, \bb{n}^\textrm{B}\times \bb{s}^\textrm{B},
+\dot{\bb{m}}^\textrm{A} &= \bb{H}^\textrm{A}\times \bb{m}^\textrm{A}+ (J\mathcal{A}/\hslash)\, \bb{m}^\textrm{A}\times \bb{s}^\textrm{A},\\
+\dot{\bb{m}}^\textrm{B}&= \bb{H}^\textrm{B}\times \bb{m}^\textrm{B}+ (J\mathcal{A}/\hslash)\, \bb{m}^\textrm{B}\times \bb{s}^\textrm{B},
 \end{align}
 \eml
-where $|\bb{n}^\textrm{A,B}|=1$, and the notations $\bb{H}^\textrm{A,B}$ refer to the effective fields on the sublattices $A$ and $B$. 
+where $|\bb{m}^\textrm{A,B}|=1$, and the notations $\bb{H}^\textrm{A,B}$ refer to the effective fields on the sublattices $A$ and $B$. 
 
 Antiferromagnet dynamics is usually formulated as the coupled dynamics of the N\'eel and magnetization vectors,
 \be
-\bb{\ell}=\lt(\bb{n}^\textrm{A}-\bb{n}^\textrm{B}\rt)/2,\qquad \bb{m}= \lt(\bb{n}^\textrm{A}+\bb{n}^\textrm{B}\rt)/2,
+\bb{\ell}=\lt(\bb{m}^\textrm{A}-\bb{m}^\textrm{B}\rt)/2,\qquad \bb{m}= \lt(\bb{m}^\textrm{A}+\bb{m}^\textrm{B}\rt)/2,
 \e
 that remain mutually perpendicular $\bb{\ell}\cdot \bb{m}=0$ and yield the constraint $\ell^2+m^2=1$. Naturally, the amplitude of the magnetization vector remain to be small, $m\ll \ell \approx 1$.
 
@@ -251,7 +251,7 @@ where $\bb{s}_\pm=(\bb{s}_A\pm\bb{s}_B)/2$. The right-hand sides of Eqs.~(\ref{c
 \e
 where $\delta \bb{s}_\pm$ refers to the non-equilibrium spin density contribution that is proportional to $\delta\mu$. 
 
-Note that, generally, the average spin $\bb{s}_i$ has a non-local functional dependence on the time-dependent classical field $\bb{S}_j$ at preceding moments of time  and at different lattice sites $j\neq i$. The degree of non-locality is defined by relaxation processes. The quicker the relaxation the more local the functional dependence. In particular, non-dissipative contributions to spin-orbit torques (the so-called field-like contributions) are local in time on the time scales of the order of $s$-$d$ exchange  $\tau_\textrm{sd}=\hslash/\Delta$, where $\Delta=J S$. In contrast, the dissipative contributions (such as anti-damping torques) are defined by transport scattering time $\tau_\textrm{tr}$. The latter time scale may be both larger and smaller than $\tau_\textrm{sd}$ giving rise to different regimes of magnetization dynamics. For the sake of numerical analysis we consider, however, a situation when these two time scales are of the same order.
+Note that, generally, the average spin $\bb{s}_i$ has a non-local functional dependence on the time-dependent classical field $\bb{S}_j$ at preceding moments of time  and at different lattice sites $j\neq i$. The degree of non-locality is defined by relaxation processes. The quicker the relaxation the more local the functional dependence. In particular, non-dissipative contributions to spin-orbit torques (the so-called field-like contributions) are local in time on the time scales of the order of $s$-$d$ exchange  $\tau_\textrm{sd}=\hslash/\Delta_\text{sd}$, where $\Delta_\text{sd}=J S$. In contrast, the dissipative contributions (such as anti-damping torques) are defined by transport scattering time $\tau_\textrm{tr}$. The latter time scale may be both larger and smaller than $\tau_\textrm{sd}$ giving rise to different regimes of magnetization dynamics. For the sake of numerical analysis we consider, however, a situation when these two time scales are of the same order.
 
 \section{Symmetry consideration} 
 
@@ -262,11 +262,11 @@ Symmetry properties of spin-orbit torques and conductivity tensor can be underst
 as it is usually done for graphene. In the valley symmetric approximation we obtain the effective model
 \be
 \label{chap02:low}
-H^\textrm{eff}_0= v\, \bb{p}\cdot\bb{\Sigma}+\alpha_\textrm{R}\lt[\bb{\sigma}\times\bb{\Sigma}\rt]_{\hat{z}} - \Delta\,\bb{\ell}\cdot\bb{\sigma}\,\Sigma_z\Lambda_z,
+H^\textrm{eff}_0= v\, \bb{p}\cdot\bb{\Sigma}+\alpha_\textrm{R}\lt[\bb{\sigma}\times\bb{\Sigma}\rt]_{\hat{z}} - \Delta_\text{sd}\,\bb{\ell}\cdot\bb{\sigma}\,\Sigma_z\Lambda_z,
 \e
 where $\bb{\Sigma}$, $\bb{\Lambda}$, and $\bb{\sigma}$ are the vectors of Pauli matrices in sublattice, valley and spin space, respectively, and 
 \be
-v= \frac{3}{2} wa/\hslash, \qquad \alpha_\textrm{R}= \frac{3}{2} \lambda , \qquad \Delta=JS.
+v= \frac{3}{2} wa/\hslash, \qquad \alpha_\textrm{R}= \frac{3}{2} \lambda , \qquad \Delta_\text{sd}=JS.
 \e
 Even though the model of Eq.~(\ref{chap02:ham}) is characterized by the point group $C_\textrm{3v}$, the effective low-energy model of Eq.~(\ref{chap02:low}) has a higher symmetry 
 of the group $C_{\infty\textrm{v}}$. This is reflected by the fact that the Fermi-surfaces (for energies we are interested in) remain entirely isotropic irrespective of the N\'eel vector orientation as shown in Fig.~\ref{chap02:fig:lattice}. Moreover, the exact sublattice symmetry of the model, $\Lambda_x H^\textrm{eff}_0[-\bb{\ell}] \Lambda_x =H^\textrm{eff}_0[\bb{\ell}]$, ensures vanishing non-equilibrium staggered spin polarization $\delta \bb{s}_-=0$ irrespective of both the voltage bias and the N\'eel vector orientation. This property is indeed confirmed by the numerical analysis. 
@@ -300,7 +300,7 @@ The exact sublattice symmetry of the symmetric coupling model of Eqs.~(\ref{chap
 \begin{figure}
 \centering
 \centerline{\includegraphics[width=\columnwidth]{{articles/sumit_paper/fig6.pdf}}}
-\caption{Non-equilibrium spin density $\delta\bb{s}_+$ for the symmetric coupling model of Eqs.~(\ref{chap02:ham})-(\ref{chap02:MODEL}) with $V_\textrm{d}=0.5\,w$ as the function of the N\'eel-vector orientation for different values of the Fermi energy. Each data point foe each direction of the N\'eel vector corresponds to averaging over 30 impurity configurations. Spin densities are normalized to the scale $\Delta\lambda j/evw^2$, where $j=I/W$ is the charge current density through the sample. Fluctuations at $\theta=\pi/4$ and $\theta=3\pi/4$ in the top panel and at $\theta=\pi/2$ in the middle panel are due to diverging mean free path for Fermi energy touching the bottom of the conduction band. The staggered spin density $\delta\bb{s}_-$ fluctuates around zero (not-shown). For $E/w=0$, the spin-density $\delta\bb{s}_+$ also fluctuates around zero as shown in the upper panel.}
+\caption{Non-equilibrium spin density $\delta\bb{s}_+$ for the symmetric coupling model of Eqs.~(\ref{chap02:ham})-(\ref{chap02:MODEL}) with $V_\textrm{d}=0.5\,t_h$ as the function of the N\'eel-vector orientation for different values of the Fermi energy. Each data point foe each direction of the N\'eel vector corresponds to averaging over 30 impurity configurations. Spin densities are normalized to the scale $\Delta_\text{sd}\lambda j/evw^2$, where $j=I/W$ is the charge current density through the sample. Fluctuations at $\theta=\pi/4$ and $\theta=3\pi/4$ in the top panel and at $\theta=\pi/2$ in the middle panel are due to diverging mean free path for Fermi energy touching the bottom of the conduction band. The staggered spin density $\delta\bb{s}_-$ fluctuates around zero (not-shown). For $E/w=0$, the spin-density $\delta\bb{s}_+$ also fluctuates around zero as shown in the upper panel.}
 \label{chap02:fig:density}
 \end{figure}
 %%%%%%%%%
@@ -320,17 +320,17 @@ Despite these general findings we still observe that the results for non-equilib
 \begin{figure}
 \centering
 \centerline{\includegraphics[width=\columnwidth]{{articles/sumit_paper/fig7.pdf}}}
-\caption{The results of fitting simulation data for the symmetric coupling model with $L=2W=750\,a$ (partly shown in Fig.~\ref{chap02:fig:density}) with the ansatz of Eq.~(\ref{chap02:result1}). The data is obtained for $V_\textrm{d}=0.5\,w$. The data have been collected for 200 different orientations of the N\'eel vector for each impurity concentration.}
+\caption{The results of fitting simulation data for the symmetric coupling model with $L=2W=750\,a$ (partly shown in Fig.~\ref{chap02:fig:density}) with the ansatz of Eq.~(\ref{chap02:result1}). The data is obtained for $V_\textrm{d}=0.5\,t_h$. The data have been collected for 200 different orientations of the N\'eel vector for each impurity concentration.}
 \label{chap02:fig:decomposition}
 \end{figure}
 %%%%%%%%%
 
 \subsection{Metal regime}
 
-The metal regime is characterized by two Fermi surfaces for each of the two valleys. This regime is represented in our simulations by the choice $E=0.3\,w$. In this case we also find $A'_I=C=0$ within our numerical accuracy. Thus, the metal regime in the symmetric model is represented by the only contribution to the non-equilibrium spin-density
+The metal regime is characterized by two Fermi surfaces for each of the two valleys. This regime is represented in our simulations by the choice $E=0.3\,t_h$. In this case we also find $A'_I=C=0$ within our numerical accuracy. Thus, the metal regime in the symmetric model is represented by the only contribution to the non-equilibrium spin-density
 \be
 \label{chap02:s_SOT}
-\delta\bb{s}_+= \frac{\Delta\lambda}{2\pi evw^2} a_I\,\hat{\bb{z}}\times \bb{j}, 
+\delta\bb{s}_+= \frac{\Delta_\text{sd}\lambda}{2\pi evw^2} a_I\,\hat{\bb{z}}\times \bb{j}, 
 \e
 with a constant dimensionless coefficient $a_I$. This coefficient retains almost the same value for three different impurity concentrations as 
 shown in the left panel of Fig.~\ref{chap02:fig:decomposition}. Thus, the non-equilibrium spin density in the metal regime is simply proportional to the Rashba field. The non-equilibrium spin density of Eq.~(\ref{chap02:s_SOT}) is readily recognized as the inverse spin-galvanic effect of Edelstein \cite{edelstein_spin_1990} that is widely known in ferromagnet materials with Rashba coupling \cite{manchon_theory_2008, garate_influence_2009}. 
@@ -341,18 +341,18 @@ Consequently, the spin orbit torques in the metal regime of the symmetric model 
 \bb{T}^\ell_+=a_I \eta\;\bb{\ell} \times\lt[\hat{\bb{z}}\times\bb{j}\rt],\quad
 \bb{T}^m_+=a_I \eta\;\bb{m} \!\times\!\lt[\hat{\bb{z}}\times\bb{j}\rt], 
 \e
-where $\eta=J\mathcal{A}\Delta\lambda /evh w^2$. 
+where $\eta=J\mathcal{A}\Delta_\text{sd}\lambda /evh w^2$. 
 
 This results of Eqs.~(\ref{chap02:s_SOT}), (\ref{chap02:metal_SOT}) are remarkably similar to those found analytically in the metal regime of a Rashba ferromagnet model with white-noise disorder \cite{ado_microscopic_2017,ado_anisotropy_2019}. The latter is also characterized by identically vanishing anti-damping spin-orbit torques and by a completely isotropic field-like torque of the same symmetry. Even though, analytical results have been obtained for a ferromagnet with a weak white-noise disorder, the same drastic simplification of the spin-orbit torque takes place for a symmetric honeycomb antiferromagnet with rather strong point-like disorder as demonstrated above. Such a simplification is, however, limited to the metal regime. 
  
 \subsection{Half-metal regime} 
  
-The half-metal regime is represented by the Fermi energy $E=0.05\,w$ that corresponds to the presence of a single Fermi surface in one of the valleys. The conductivity in this regime acquires strong dependence on $\theta$. In particular, for $\ell_z^2<1/2$, the system is poorly conducting as one can see already in the second panel of Fig.~\ref{chap02:fig:mfp}. Remarkably, we still find that the coefficient $A_I$ in Eq.~(\ref{chap02:symmetry}) is entirely independent of $\theta$ and anti-damping like torques are vanishing identically, $B_{\parallel,\perp}=0$. The coefficients $A'_I$ and $C$ are, however, finite and acquire some dependence on $\ell_z^2$.   
+The half-metal regime is represented by the Fermi energy $E=0.05\,t_h$ that corresponds to the presence of a single Fermi surface in one of the valleys. The conductivity in this regime acquires strong dependence on $\theta$. In particular, for $\ell_z^2<1/2$, the system is poorly conducting as one can see already in the second panel of Fig.~\ref{chap02:fig:mfp}. Remarkably, we still find that the coefficient $A_I$ in Eq.~(\ref{chap02:symmetry}) is entirely independent of $\theta$ and anti-damping like torques are vanishing identically, $B_{\parallel,\perp}=0$. The coefficients $A'_I$ and $C$ are, however, finite and acquire some dependence on $\ell_z^2$.   
 
 Thus, our numerical data in half-metal regime corresponds to the spin density
 \begin{align}
 \label{chap02:result1}
-\delta\bb{s}_+= \frac{\Delta\lambda}{2\pi evw^2}
+\delta\bb{s}_+= \frac{\Delta_\text{sd}\lambda}{2\pi evw^2}
 \Big(\,&a_I\,\hat{\bb{z}}\times \bb{j} + a'_I(\ell_z^2)\,\bb{\ell}_\parallel\times \lt[\bb{\ell}_\parallel\times \lt[\hat{\bb{z}}\times\bb{j}\rt]\rt]\n\\
 &+c(\ell_z^2)\,\bb{\ell}_\parallel\times \lt[\bb{\ell}_\perp\times \lt[\hat{\bb{z}}\times\bb{j}\rt]\rt]\Big),
 \end{align}
@@ -374,7 +374,7 @@ a'_I(\ell_z^2)\, \bb{m}\!\times\!\lt[\bb{\ell}_\parallel\!\times\! \lt[\bb{\ell}
 \label{chap02:torque_Tminus}
 \end{align}
 \eml
-where $\eta=J\mathcal{A}\Delta\lambda /evh w^2$ is the same as in Eq.~(\ref{chap02:metal_SOT}). 
+where $\eta=J\mathcal{A}\Delta_\text{sd}\lambda /evh w^2$ is the same as in Eq.~(\ref{chap02:metal_SOT}). 
 
 Note, that the function $a'_I(\ell_z^2)$ in Eq.~(\ref{chap02:torque_Tplus}) for $\bb{T}^\ell_+$ can be absorbed into the redefinition of the coefficients $a_I$ and $c$.  Indeed, with the help of a straightforward vector algebra one can re-write Eq.~(\ref{chap02:torque_Tplus}) as
 \be
@@ -402,21 +402,21 @@ that is represented by $s$-$d$ coupling on $A$ sublattice only. Such a coupling 
 
 It is worth mentioning that the asymmetric model is unlikely to represent an antiferromagnet. Since conduction electron spins contribute to polarization only on a single sublattice, the model is much more likely to correspond to a ferrimagnet or a ferromagnet.  Rare-earth/transition metal ferrimagnets (such as FeCoGd) at a compensation point seem to be the most obvious examples \cite{jungfleisch_perspectives_2018}. The conduction electrons in these compounds couple mostly with localized d-orbitals rather than with f-orbitals and give rise to an asymmetric exchange coupling that can be mimicked by Eq.~(\ref{chap02:ex2}). 
 
-In order to compute non-equilibrium spin-densities we repeat the analysis of the previous sections for the coupling of Eq.~(\ref{chap02:ex2}) that we refer to below as the asymmetric model. The band-structure of the asymmetric model is illustrated in Fig.~\ref{chap02:fig:BSas}. Similarly to the symmetric model we distinguish metal and half-metal regimes that are represented now by $E=0.3\,w$ and $E=0.1\,w$, correspondingly. 
+In order to compute non-equilibrium spin-densities we repeat the analysis of the previous sections for the coupling of Eq.~(\ref{chap02:ex2}) that we refer to below as the asymmetric model. The band-structure of the asymmetric model is illustrated in Fig.~\ref{chap02:fig:BSas}. Similarly to the symmetric model we distinguish metal and half-metal regimes that are represented now by $E=0.3\,t_h$ and $E=0.1\,t_h$, correspondingly. 
 
-The metal regime is characterized by two Fermi surfaces per valley, while the half-metal regime is characterized by a single Fermi surface per valley. The Fermi surfaces are illustrated in Fig.~\ref{chap02:fig:FSas} for $\theta=-\phi=\pi/4$, where $\theta$ and $\phi$ are now the polar and azimuthal angles of the unit vector $\bb{n}^\textrm{A}=(\cos\phi\sin\theta,\sin\phi\sin\theta,\cos\theta)^\top$, correspondingly. 
+The metal regime is characterized by two Fermi surfaces per valley, while the half-metal regime is characterized by a single Fermi surface per valley. The Fermi surfaces are illustrated in Fig.~\ref{chap02:fig:FSas} for $\theta=-\phi=\pi/4$, where $\theta$ and $\phi$ are now the polar and azimuthal angles of the unit vector $\bb{m}^\textrm{A}=(\cos\phi\sin\theta,\sin\phi\sin\theta,\cos\theta)^\top$, correspondingly. 
 
-For numerical simulations we choose $\Delta= J S=0.1\,w$, $\lambda=0.05\,w$, and $V_\textrm{d}=0.5\,w$ as for the symmetric model. 
+For numerical simulations we choose $\Delta_\text{sd}= J S=0.1\,t_h$, $\lambda=0.05\,t_h$, and $V_\textrm{d}=0.5\,t_h$ as for the symmetric model. 
 
 Similarly to Eq.~(\ref{chap02:low}) the low energy sector of the asymmetric model is represented by the following effective Hamiltonian
 \be
 \label{chap02:low2}
-H^\textrm{as}_0= v\, \bb{p}\cdot\bb{\Sigma}+\alpha_\textrm{R}\lt[\bb{\sigma}\times\bb{\Sigma}\rt]_{\hat{z}} - \frac{\Delta}{2}\,\bb{n}^\textrm{A}\!\cdot\bb{\sigma}\,\lt(1+\Sigma_z\Lambda_z\rt),
+H^\textrm{as}_0= v\, \bb{p}\cdot\bb{\Sigma}+\alpha_\textrm{R}\lt[\bb{\sigma}\times\bb{\Sigma}\rt]_{\hat{z}} - \frac{\Delta_\text{sd}}{2}\,\bb{m}^\textrm{A}\!\cdot\bb{\sigma}\,\lt(1+\Sigma_z\Lambda_z\rt),
 \e 
 that clearly lacks the sublattice symmetry. Interestingly, we observe from numerical simulations that the staggered non-equilibrium polarization $\delta \bb{s}_-$ is still vanishing in the metal regime, while it becomes finite in the half-metal regime. It has to be noted, however, that the separation to staggered and non-staggered polarization is largely irrelevant for the asymmetric model, since the latter is characterized by the only vector torque 
 \be
 \label{chap02:TA}
-\bb{T}^\textrm{A}= \frac{J\mathcal{A}}{\hslash} \bb{n}^\textrm{A}\times\delta\bb{s}^\textrm{A}= \frac{J\mathcal{A}}{\hslash} \lt(\bb{\ell}+\bb{m}\rt)\times\lt(\delta\bb{s}_++\delta\bb{s}_-\rt),
+\bb{T}^\textrm{A}= \frac{J\mathcal{A}}{\hslash} \bb{m}^\textrm{A}\times\delta\bb{s}^\textrm{A}= \frac{J\mathcal{A}}{\hslash} \lt(\bb{\ell}+\bb{m}\rt)\times\lt(\delta\bb{s}_++\delta\bb{s}_-\rt),
 \e
 that is defined exclusively by the spin density on the sublattice A. 
 
@@ -449,27 +449,27 @@ We would like to remind that the equations of motion of Eq.~(\ref{chap02:AFMEOM2
 \begin{figure}
 \centering
 \centerline{\includegraphics[width=\columnwidth]{{articles/sumit_paper/fig9.pdf}}}
-\caption{The Fermi surfaces for the asymmetric model for the metal regime $E=0.3\,w$ (right panel) and the half-metal regime $E=0.1\,w$ (left panel). The Fermi surfaces are not round due to tridiagonal wrapping originating in $C_{3v}$ point-group symmetry of the crystal and due to in-plane component $\bb{n}^\textrm{A}_\parallel$ that affects the spectrum. The plots correspond to the choice $\theta=-\phi=\pi/4$. The momentum $\bb{k}$ is measured with respect to $\bb{K}$ point (solid lines) and $\bb{K}'$ point (dashed lines).}
+\caption{The Fermi surfaces for the asymmetric model for the metal regime $E=0.3\,t_h$ (right panel) and the half-metal regime $E=0.1\,t_h$ (left panel). The Fermi surfaces are not round due to tridiagonal wrapping originating in $C_{3v}$ point-group symmetry of the crystal and due to in-plane component $\bb{m}^\textrm{A}_\parallel$ that affects the spectrum. The plots correspond to the choice $\theta=-\phi=\pi/4$. The momentum $\bb{k}$ is measured with respect to $\bb{K}$ point (solid lines) and $\bb{K}'$ point (dashed lines).}
 \label{chap02:fig:FSas}
 \end{figure}
 %%%%%%%%%
 
-As one can readily see from Fig.~\ref{chap02:fig:FSas}, the Fermi surfaces in the asymmetric model are not entirely round and reveal some tri-diagonal wrapping even for energies that are close to zero, $E\ll w$. The Fermi surfaces are also shifted with respect to the points $\bb{K}$ and $\bb{K}'$ and deformed depending on the azimuthal angle $\phi$ characterizing in-plane orientation of the vector $\bb{n}^\textrm{A}$. We find, however, that despite these effects the non-equilibrium spin-density $\delta\bb{s}^\textrm{A}$ can be very well decomposed using the symmetry analysis of the group $C_{\infty v}$ in analogy to Eq.~(\ref{chap02:symmetry}) for the symmetric coupling model. 
+As one can readily see from Fig.~\ref{chap02:fig:FSas}, the Fermi surfaces in the asymmetric model are not entirely round and reveal some tri-diagonal wrapping even for energies that are close to zero, $E\ll t_h$. The Fermi surfaces are also shifted with respect to the points $\bb{K}$ and $\bb{K}'$ and deformed depending on the azimuthal angle $\phi$ characterizing in-plane orientation of the vector $\bb{m}^\textrm{A}$. We find, however, that despite these effects the non-equilibrium spin-density $\delta\bb{s}^\textrm{A}$ can be very well decomposed using the symmetry analysis of the group $C_{\infty v}$ in analogy to Eq.~(\ref{chap02:symmetry}) for the symmetric coupling model. 
 
-To do that we represent the vector $\bb{n}^\textrm{A}=\bb{n}_\parallel^\textrm{A}+\bb{n}_\perp^\textrm{A}$ as the sum of in-plane and perpendicular-to-the-plane components and decompose the numerical data with respect to the transformations: $\bb{n}_\perp^\textrm{A}\to -\bb{n}_\perp^\textrm{A}$ and $\bb{n}_\parallel^\textrm{A}=-\bb{n}_\parallel^\textrm{A}$. As the result, the non-equilibrium spin density (as the function of the vector components) is readily decomposed into the sum of four contributions,  
+To do that we represent the vector $\bb{m}^\textrm{A}=\bb{m}_\parallel^\textrm{A}+\bb{m}_\perp^\textrm{A}$ as the sum of in-plane and perpendicular-to-the-plane components and decompose the numerical data with respect to the transformations: $\bb{m}_\perp^\textrm{A}\to -\bb{m}_\perp^\textrm{A}$ and $\bb{m}_\parallel^\textrm{A}=-\bb{m}_\parallel^\textrm{A}$. As the result, the non-equilibrium spin density (as the function of the vector components) is readily decomposed into the sum of four contributions,  
 \be
 \label{chap02:dec}
-\delta\bb{s}^\textrm{A}[\bb{n}^\textrm{A}_\perp,\bb{n}^\textrm{A}_\parallel]= \delta\bb{s}_{++}+ \delta\bb{s}_{+-}+\delta\bb{s}_{-+}+\delta\bb{s}_{--},
+\delta\bb{s}^\textrm{A}[\bb{m}^\textrm{A}_\perp,\bb{m}^\textrm{A}_\parallel]= \delta\bb{s}_{++}+ \delta\bb{s}_{+-}+\delta\bb{s}_{-+}+\delta\bb{s}_{--},
 \e
 which are expressed as
 \begin{align}
 \delta\bb{s}_{\zeta\kappa}=
-&\frac{1}{4}\Big(\delta\bb{s}^\textrm{A}[\bb{n}^\textrm{A}_\perp,\bb{n}^\textrm{A}_\parallel]+\zeta\, \delta\bb{s}^\textrm{A}[-\bb{n}^\textrm{A}_\perp,\bb{n}^\textrm{A}_\parallel]\n\\
-&+\kappa\, \delta\bb{s}^\textrm{A}[\bb{n}^\textrm{A}_\perp,-\bb{n}^\textrm{A}_\parallel]+\zeta\kappa\, \delta\bb{s}^\textrm{A}[-\bb{n}^\textrm{A}_\perp,-\bb{n}^\textrm{A}_\parallel]\Big), 
+&\frac{1}{4}\Big(\delta\bb{s}^\textrm{A}[\bb{m}^\textrm{A}_\perp,\bb{m}^\textrm{A}_\parallel]+\zeta\, \delta\bb{s}^\textrm{A}[-\bb{m}^\textrm{A}_\perp,\bb{m}^\textrm{A}_\parallel]\n\\
+&+\kappa\, \delta\bb{s}^\textrm{A}[\bb{m}^\textrm{A}_\perp,-\bb{m}^\textrm{A}_\parallel]+\zeta\kappa\, \delta\bb{s}^\textrm{A}[-\bb{m}^\textrm{A}_\perp,-\bb{m}^\textrm{A}_\parallel]\Big), 
 \end{align}
 where $\zeta$ and $\kappa$ take on the values $\pm 1$. 
 
-The bare results for non-equilibrium spin density $\delta\bb{s}^\textrm{A}$ (with a subtracted background component along $\bb{n}^\textrm{A}$) and the results for the contributions $\delta\bb{s}_{\zeta\kappa}$ are shown in Fig.~\ref{chap02:fig:density_as} for the metal regime, $E=0.3\,w$. Similar results are obtained for the half-metal regime, $E=0.1\,w$. 
+The bare results for non-equilibrium spin density $\delta\bb{s}^\textrm{A}$ (with a subtracted background component along $\bb{m}^\textrm{A}$) and the results for the contributions $\delta\bb{s}_{\zeta\kappa}$ are shown in Fig.~\ref{chap02:fig:density_as} for the metal regime, $E=0.3\,t_h$. Similar results are obtained for the half-metal regime, $E=0.1\,t_h$. 
  
 %%%%%%%%%%%%
 %%% figure 10: Density decomposition for asymmetric model
@@ -477,19 +477,19 @@ The bare results for non-equilibrium spin density $\delta\bb{s}^\textrm{A}$ (wit
 \begin{figure}
 \centering
 \centerline{\includegraphics[width=\columnwidth]{{articles/sumit_paper/fig10.pdf}}}
-\caption{Top panels show non-equilibrium spin density, $\delta\bb{s}^\textrm{A}$, for the asymmetric coupling model with subtracted background component along $\bb{n}^\textrm{A}$ in the units of $\Delta\lambda j/evw^2$. The other panels represent the results of the spin-density decomposition of Eq.~(\ref{chap02:dec}). The results presented correspond to the ansatz of Eq.~(\ref{chap02:sA}). The data for density plots have been collected for 200 different orientations of the N\'eel vector for each impurity concentration. Each data point corresponds to averaging over at least 80 impurity configurations.}
+\caption{Top panels show non-equilibrium spin density, $\delta\bb{s}^\textrm{A}$, for the asymmetric coupling model with subtracted background component along $\bb{m}^\textrm{A}$ in the units of $\Delta_\text{sd}\lambda j/evt_h^2$. The other panels represent the results of the spin-density decomposition of Eq.~(\ref{chap02:dec}). The results presented correspond to the ansatz of Eq.~(\ref{chap02:sA}). The data for density plots have been collected for 200 different orientations of the N\'eel vector for each impurity concentration. Each data point corresponds to averaging over at least 80 impurity configurations.}
 \label{chap02:fig:density_as}
 \end{figure}
 %%%%%%%%%
  
-We find that our numerical results for the non-equilibrium spin density $\delta\bb{s}^\textrm{A}$ (with subtracted background along $\bb{n}^\textrm{A}$ that does not enter the torque $\bb{T}^\textrm{A}$) are perfectly decomposed as a sum of five different vector forms in both metal and half-metal regimes,
+We find that our numerical results for the non-equilibrium spin density $\delta\bb{s}^\textrm{A}$ (with subtracted background along $\bb{m}^\textrm{A}$ that does not enter the torque $\bb{T}^\textrm{A}$) are perfectly decomposed as a sum of five different vector forms in both metal and half-metal regimes,
 \begin{align}
-\delta\bb{s}^\textrm{A}&\,= A_I(n_z^2)\,\hat{\bb{z}}\times \bb{I} + A'_I(n_z^2)\,\bb{n}^\textrm{A}_\parallel\times \lt[\bb{n}^\textrm{A}_\parallel\times \lt[\hat{\bb{z}}\times \bb{I}\rt]\rt]\n\\
-&+ B_\perp(n_z^2)\,\bb{n}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{I}\rt]+B_\parallel(n_z^2)\,\bb{n}^\textrm{A}_\parallel\times \lt[\hat{\bb{z}}\times \bb{I}\rt]\n\\
-&+C(n_z^2)\,\bb{n}^\textrm{A}_\parallel\times \lt[\bb{n}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{I}\rt]\rt],
+\delta\bb{s}^\textrm{A}&\,= A_I(n_z^2)\,\hat{\bb{z}}\times \bb{I} + A'_I(n_z^2)\,\bb{m}^\textrm{A}_\parallel\times \lt[\bb{m}^\textrm{A}_\parallel\times \lt[\hat{\bb{z}}\times \bb{I}\rt]\rt]\n\\
+&+ B_\perp(n_z^2)\,\bb{m}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{I}\rt]+B_\parallel(n_z^2)\,\bb{m}^\textrm{A}_\parallel\times \lt[\hat{\bb{z}}\times \bb{I}\rt]\n\\
+&+C(n_z^2)\,\bb{m}^\textrm{A}_\parallel\times \lt[\bb{m}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{I}\rt]\rt],
 \label{chap02:sA}
 \end{align}
-where all coefficients are generally even functions of the component $n_z= n_z^\textrm{A}=\cos\theta$. Note that the first two vector forms are of the same symmetry with respect to both reflections $\bb{n}^\textrm{A}_\perp\to - \bb{n}^\textrm{A}_\perp$ and $\bb{n}^\textrm{A}_\parallel\to - \bb{n}^\textrm{A}_\parallel$.
+where all coefficients are generally even functions of the component $n_z= n_z^\textrm{A}=\cos\theta$. Note that the first two vector forms are of the same symmetry with respect to both reflections $\bb{m}^\textrm{A}_\perp\to - \bb{m}^\textrm{A}_\perp$ and $\bb{m}^\textrm{A}_\parallel\to - \bb{m}^\textrm{A}_\parallel$.
 
 %%%%%%%%%%%%
 %%% figure 11: Results for asymmetric model
@@ -505,21 +505,21 @@ Remarkably, our numerical data again corresponds to a constant coefficient $A_I(
 
 The spin orbit torque $\bb{T}^A$, which is obtained by substituting the result of Eq.~(\ref{sA}) to Eq.~(\ref{TA}), can be represented as the sum of only four vector forms 
 \begin{align}
-\bb{T}^\textrm{A}= \eta \Big(&a_I(n_z^2)\,\bb{n}^\textrm{A}\times\lt[\hat{\bb{z}}\times \bb{j}\rt] \n\\
-&+ b_\perp(n_z^2)\,\bb{n}^\textrm{A}\times\lt[\bb{n}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\n\\
-&+b_\parallel(n_z^2)\,\bb{n}^\textrm{A}\times\lt[\bb{n}^\textrm{A}_\parallel\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\n\\
-&+c(n_z^2)\,\bb{n}^\textrm{A}\times\lt[\bb{n}^\textrm{A}_\parallel\times \lt[\bb{n}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\rt]\Big),
+\bb{T}^\textrm{A}= \eta \Big(&a_I(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\hat{\bb{z}}\times \bb{j}\rt] \n\\
+&+ b_\perp(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\n\\
+&+b_\parallel(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\parallel\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\n\\
+&+c(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\parallel\times \lt[\bb{m}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\rt]\Big),
 \label{TAresult}
 \end{align}
-where we again introduce $\eta=J\mathcal{A}\Delta\lambda /evh t^2$, $\bb{j}=\bb{I}/W$ and the dimensionless coefficients $a_I$, $b_\perp$, $b_\parallel$, and $c$ that all appear to be non-trivial functions of $n_z^2=\cos^2\theta$ as shown in Fig.~\ref{fig:result_as}. Note that the function $A'_I(n_z^2)$ in Eq.~(\ref{sA}) for spin density contributes to both $a_I$ and $c$ coefficients in Eq.~(\ref{TAresult}) in the direct analogy to Eqs.~(\ref{torque_Tplus_MOD}) and (\ref{renorm}). 
+where we again introduce $\eta=J\mathcal{A}\Delta_\text{sd}\lambda /evh t^2$, $\bb{j}=\bb{I}/W$ and the dimensionless coefficients $a_I$, $b_\perp$, $b_\parallel$, and $c$ that all appear to be non-trivial functions of $n_z^2=\cos^2\theta$ as shown in Fig.~\ref{fig:result_as}. Note that the function $A'_I(n_z^2)$ in Eq.~(\ref{sA}) for spin density contributes to both $a_I$ and $c$ coefficients in Eq.~(\ref{TAresult}) in the direct analogy to Eqs.~(\ref{torque_Tplus_MOD}) and (\ref{renorm}). 
 
-Thus, the spin-orbit torque $\bb{T}^\textrm{A}$ is parameterized by $4$ dimensionless functions. These functions are shown in Fig.~\ref{fig:result_as} illustrating the main result of our numerical simulations for the asymmetric coupling model. In sharp contrast to the symmetric model we observe that the anti-damping torques are no longer vanishing. We also find that $b_\perp(n_z^2) \approx b_\parallel(n_z^2)$ in the half-metal regime. The major field-like torque $\bb{n}^\textrm{A}\times\lt[\hat{\bb{z}}\times\bb{j}\rt]$, which originates in the Edelstein effect, acquires a weak dependence on $\theta$ due to the impact of the coefficient $A'_I(n_z^2)$. 
+Thus, the spin-orbit torque $\bb{T}^\textrm{A}$ is parameterized by $4$ dimensionless functions. These functions are shown in Fig.~\ref{fig:result_as} illustrating the main result of our numerical simulations for the asymmetric coupling model. In sharp contrast to the symmetric model we observe that the anti-damping torques are no longer vanishing. We also find that $b_\perp(n_z^2) \approx b_\parallel(n_z^2)$ in the half-metal regime. The major field-like torque $\bb{m}^\textrm{A}\times\lt[\hat{\bb{z}}\times\bb{j}\rt]$, which originates in the Edelstein effect, acquires a weak dependence on $\theta$ due to the impact of the coefficient $A'_I(n_z^2)$. 
 
 As it is expected we observe that anti-damping torques, which are proportional to $b_{\perp,\parallel}$, depend strongly on disorder concentration, while the field-like torques do not. Moreover, while anti-damping torques are suppressed by disorder in the metal regime, the opposite is true in the half-metal regime. 
 
-Similarly to the symmetric model, the field-like torques are smaller in the metal regime than they are in half-metal regime. One can speculate, however, that anti-damping-like torques play a leading role in the metal regime of the asymmetric coupling model for sufficiently clean samples. We also see that anti-damping torques reveal rather strong anisotropy. In the metal regime they take on maximal values for in-plane orientations of the vector $\bb{n}^\textrm{A}$. 
+Similarly to the symmetric model, the field-like torques are smaller in the metal regime than they are in half-metal regime. One can speculate, however, that anti-damping-like torques play a leading role in the metal regime of the asymmetric coupling model for sufficiently clean samples. We also see that anti-damping torques reveal rather strong anisotropy. In the metal regime they take on maximal values for in-plane orientations of the vector $\bb{m}^\textrm{A}$. 
  
-It is also worth stressing that our results for asymmetric coupling model are the same for both ferromagnetic and antiferromagnetic order, since the spin-orbit torques are insensitive to the direction of the field $\bb{n}^\textrm{B}$.  
+It is also worth stressing that our results for asymmetric coupling model are the same for both ferromagnetic and antiferromagnetic order, since the spin-orbit torques are insensitive to the direction of the field $\bb{m}^\textrm{B}$.  
 
 As have been already mentioned one can expect the asymmetric model to capture also the physics of layered ferrimagnets such as GdFeCo or Pt/GdFeCo \cite{jungfleisch_perspectives_2018, kim_spin-orbit_2018}. The magnetization switching by means of spin-orbit torques in these materials has recently become a subject of intense studies 
 \cite{roschewsky_spin-orbit_2016, roschewsky_spin-orbit_2017, kim_spin-orbit_2018}.  In particular, the contribution from both field-like and anti-damping-like torques have been identified in GdFeCo films with perperndicular magnetocrystalline anisotropy in both transition-metal and rare-earth-metal rich configurations \cite{roschewsky_spin-orbit_2016, roschewsky_spin-orbit_2017}. 
@@ -534,21 +534,21 @@ Motivated by recent experiments on the N\'eel vector switching we investigate mi
 
 % The spin orbit torque $\bb{T}^A$, which is obtained by substituting the result of Eq.~(\ref{chap02:sA}) to Eq.~(\ref{chap02:TA}), can be represented as the sum of only four vector forms 
 % \begin{align}
-% \bb{T}^\textrm{A}= \eta \Big(&a_I(n_z^2)\,\bb{n}^\textrm{A}\times\lt[\hat{\bb{z}}\times \bb{j}\rt] \n\\
-% &+ b_\perp(n_z^2)\,\bb{n}^\textrm{A}\times\lt[\bb{n}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\n\\
-% &+b_\parallel(n_z^2)\,\bb{n}^\textrm{A}\times\lt[\bb{n}^\textrm{A}_\parallel\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\n\\
-% &+c(n_z^2)\,\bb{n}^\textrm{A}\times\lt[\bb{n}^\textrm{A}_\parallel\times \lt[\bb{n}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\rt]\Big),
+% \bb{T}^\textrm{A}= \eta \Big(&a_I(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\hat{\bb{z}}\times \bb{j}\rt] \n\\
+% &+ b_\perp(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\n\\
+% &+b_\parallel(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\parallel\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\n\\
+% &+c(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\parallel\times \lt[\bb{m}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\rt]\Big),
 % \label{chap02:TAresult}
 % \end{align}
-% where we again introduce $\eta=J\mathcal{A}\Delta\lambda /evh w^2$, $\bb{j}=\bb{I}/W$ and the dimensionless coefficients $a_I$, $b_\perp$, $b_\parallel$, and $c$ that all appear to be non-trivial functions of $n_z^2=\cos^2\theta$ as shown in Fig.~\ref{chap02:fig:result_as}. Note that the function $A'_I(n_z^2)$ in Eq.~(\ref{chap02:sA}) for spin density contributes to both $a_I$ and $c$ coefficients in Eq.~(\ref{chap02:TAresult}) in the direct analogy to Eqs.~(\ref{chap02:torque_Tplus_MOD}) and (\ref{chap02:renorm}). 
+% where we again introduce $\eta=J\mathcal{A}\Delta_\text{sd}\lambda /evh w^2$, $\bb{j}=\bb{I}/W$ and the dimensionless coefficients $a_I$, $b_\perp$, $b_\parallel$, and $c$ that all appear to be non-trivial functions of $n_z^2=\cos^2\theta$ as shown in Fig.~\ref{chap02:fig:result_as}. Note that the function $A'_I(n_z^2)$ in Eq.~(\ref{chap02:sA}) for spin density contributes to both $a_I$ and $c$ coefficients in Eq.~(\ref{chap02:TAresult}) in the direct analogy to Eqs.~(\ref{chap02:torque_Tplus_MOD}) and (\ref{chap02:renorm}). 
 
-% Thus, the spin-orbit torque $\bb{T}^\textrm{A}$ is parameterized by $4$ dimensionless functions. These functions are shown in Fig.~\ref{chap02:fig:result_as} illustrating the main result of our numerical simulations for the asymmetric coupling model. In sharp contrast to the symmetric model we observe that the anti-damping torques are no longer vanishing. We also find that $b_\perp(n_z^2) \approx b_\parallel(n_z^2)$ in the half-metal regime. The major field-like torque $\bb{n}^\textrm{A}\times\lt[\hat{\bb{z}}\times\bb{j}\rt]$, which originates in the Edelstein effect, acquires a weak dependence on $\theta$ due to the impact of the coefficient $A'_I(n_z^2)$. 
+% Thus, the spin-orbit torque $\bb{T}^\textrm{A}$ is parameterized by $4$ dimensionless functions. These functions are shown in Fig.~\ref{chap02:fig:result_as} illustrating the main result of our numerical simulations for the asymmetric coupling model. In sharp contrast to the symmetric model we observe that the anti-damping torques are no longer vanishing. We also find that $b_\perp(n_z^2) \approx b_\parallel(n_z^2)$ in the half-metal regime. The major field-like torque $\bb{m}^\textrm{A}\times\lt[\hat{\bb{z}}\times\bb{j}\rt]$, which originates in the Edelstein effect, acquires a weak dependence on $\theta$ due to the impact of the coefficient $A'_I(n_z^2)$. 
 
 % As it is expected we observe that anti-damping torques, which are proportional to $b_{\perp,\parallel}$, depend strongly on disorder concentration, while the field-like torques do not. Moreover, while anti-damping torques are suppressed by disorder in the metal regime, the opposite is true in the half-metal regime. 
 
-% Similarly to the symmetric model, the field-like torques are smaller in the metal regime than they are in half-metal regime. One can speculate, however, that anti-damping-like torques play a leading role in the metal regime of the asymmetric coupling model for sufficiently clean samples. We also see that anti-damping torques reveal rather strong anisotropy. In the metal regime they take on maximal values for in-plane orientations of the vector $\bb{n}^\textrm{A}$. 
+% Similarly to the symmetric model, the field-like torques are smaller in the metal regime than they are in half-metal regime. One can speculate, however, that anti-damping-like torques play a leading role in the metal regime of the asymmetric coupling model for sufficiently clean samples. We also see that anti-damping torques reveal rather strong anisotropy. In the metal regime they take on maximal values for in-plane orientations of the vector $\bb{m}^\textrm{A}$. 
  
-% It is also worth stressing that our results for asymmetric coupling model are the same for both ferromagnetic and antiferromagnetic order, since the spin-orbit torques are insensitive to the direction of the field $\bb{n}^\textrm{B}$.  
+% It is also worth stressing that our results for asymmetric coupling model are the same for both ferromagnetic and antiferromagnetic order, since the spin-orbit torques are insensitive to the direction of the field $\bb{m}^\textrm{B}$.  
 
 % As have been already mentioned one can expect the asymmetric model to capture also the physics of layered ferrimagnets such as GdFeCo or Pt/GdFeCo \cite{jungfleisch_perspectives_2018, kim_spin-orbit_2018}. The magnetization switching by means of spin-orbit torques in these materials has recently become a subject of intense studies \cite{roschewsky_spin-orbit_2016, roschewsky_spin-orbit_2017, kim_spin-orbit_2018}.  In particular, the contribution from both field-like and anti-damping-like torques have been identified in GdFeCo films with perpendicular magnetocrystalline anisotropy in both transition-metal and rare-earth-metal rich configurations \cite{roschewsky_spin-orbit_2016, roschewsky_spin-orbit_2017}. These experimental results are, at least, qualitatively in line with our findings. 
 
@@ -558,7 +558,7 @@ Motivated by recent experiments on the N\'eel vector switching we investigate mi
 % \begin{figure}[t]
 % \centering
 % \centerline{\includegraphics[width=\columnwidth]{{articles/sumit_paper/fig12}}}
-% \caption{Time evolution of the in-plane N\'eel vector $\bb{n}_\parallel(t)$ in the symmetric model (top panel) and asymmetric model (bottom panel) induced by a sequence of current pulses alternating between $-\hat{\bb{x}}$ and $\hat{\bb{y}}$ directions (gray areas). The results are obtained from Eqs.~(\ref{chap02:EOMAFM10}) for  the parameters $\alpha=0.005$, $\hslash\eta j/J_\textrm{ex}=0.05$, $E/w=0.3$ and $n_\textrm{imp}=0.3$.}
+% \caption{Time evolution of the in-plane N\'eel vector $\bb{m}_\parallel(t)$ in the symmetric model (top panel) and asymmetric model (bottom panel) induced by a sequence of current pulses alternating between $-\hat{\bb{x}}$ and $\hat{\bb{y}}$ directions (gray areas). The results are obtained from Eqs.~(\ref{chap02:EOMAFM10}) for  the parameters $\alpha=0.005$, $\hslash\eta j/J_\textrm{ex}=0.05$, $E/w=0.3$ and $n_\textrm{imp}=0.3$.}
 % \label{chap02:fig:switching}
 % \end{figure}
 
@@ -566,17 +566,17 @@ Motivated by recent experiments on the N\'eel vector switching we investigate mi
 
 % It is instructive to apply our results for the symmetric and asymmetric model to describe antiferromagnetic switching. As was mentioned in the introduction both field-like staggered torque and anti-damping-like non-staggered torque can be important for the N\'eel vector switching. In the symmetric model we only find field-like non-staggered torques that cannot induce AFM switching for realistic values of the current intensity. In the asymmetric model we find both field-like and anti-damping-like torques that act on a single sub-lattice. Although, strictly speaking, these do not entail a staggered torque, i.\,e. the N\'eel torque, one can nevertheless expect switching to occur. 
 
-% In order to model AFM magnetization dynamics we adopt the equations of motion (\ref{chap02:AFMEOM}) for the unit vectors $\bb{n}^\textrm{A}$ and $\bb{n}^\textrm{B}$  with Gilbert damping terms included,
+% In order to model AFM magnetization dynamics we adopt the equations of motion (\ref{chap02:AFMEOM}) for the unit vectors $\bb{m}^\textrm{A}$ and $\bb{m}^\textrm{B}$  with Gilbert damping terms included,
 % \beml
 % \label{chap02:EOMAFM10}
 % \begin{align}
-% \dot{\bb{n}}^\textrm{A} &= \frac{J_\textrm{ex}}{2\hslash}\bb{n}^\textrm{B}\times \bb{n}^\textrm{A}+ \frac{J\mathcal{A}}{\hslash}\, \bb{n}^\textrm{A}\times \bb{s}^\textrm{A} +\alpha\, \bb{n}^\textrm{A}\times \dot{\bb{n}}^\textrm{A},\\
-% \dot{\bb{n}}^\textrm{B}&= \frac{J_\textrm{ex}}{2\hslash} \bb{n}^\textrm{A}\times \bb{n}^\textrm{B}+ \frac{J\mathcal{A}}{\hslash}\, \bb{n}^\textrm{B}\times \bb{s}^\textrm{B}+\alpha\, \bb{n}^\textrm{B}\times \dot{\bb{n}}^\textrm{B},
+% \dot{\bb{m}}^\textrm{A} &= \frac{J_\textrm{ex}}{2\hslash}\bb{m}^\textrm{B}\times \bb{m}^\textrm{A}+ \frac{J\mathcal{A}}{\hslash}\, \bb{m}^\textrm{A}\times \bb{s}^\textrm{A} +\alpha\, \bb{m}^\textrm{A}\times \dot{\bb{m}}^\textrm{A},\\
+% \dot{\bb{m}}^\textrm{B}&= \frac{J_\textrm{ex}}{2\hslash} \bb{m}^\textrm{A}\times \bb{m}^\textrm{B}+ \frac{J\mathcal{A}}{\hslash}\, \bb{m}^\textrm{B}\times \bb{s}^\textrm{B}+\alpha\, \bb{m}^\textrm{B}\times \dot{\bb{m}}^\textrm{B},
 % \end{align}
 % \eml
 % where we take $\alpha=0.005$ for the strength of the Gilbert damping.  
 
-% In Fig.~\ref{chap02:fig:switching} we illustrate the AFM dynamics induced by short current pulses of the density $j=0.05\,J_\textrm{ex}/\eta\hslash$, which are applied in alternating directions $-\hat{\bb{x}}$ and $\hat{\bb{y}}$. The parameters of spin-orbit torques are derived for the Fermi energy $E =0.3\,w$ (in the metal regime) and for the impurity concentration $n_\textrm{imp}=0.3$ which corresponds to placing impurities on $30\%$ of lattice sites.   
+% In Fig.~\ref{chap02:fig:switching} we illustrate the AFM dynamics induced by short current pulses of the density $j=0.05\,J_\textrm{ex}/\eta\hslash$, which are applied in alternating directions $-\hat{\bb{x}}$ and $\hat{\bb{y}}$. The parameters of spin-orbit torques are derived for the Fermi energy $E =0.3\,t_h$ (in the metal regime) and for the impurity concentration $n_\textrm{imp}=0.3$ which corresponds to placing impurities on $30\%$ of lattice sites.   
 
 % The spin-orbit torques in the symmetric model are obtained by substituting $\bb{s}^\textrm{A}=\bb{s}^\textrm{B} = \delta\bb{s}_+$ in Eqs.~(\ref{chap02:EOMAFM10}), where $\delta\bb{s}_+ \propto \hat{\bb{z}}\times\bb{j}$ is given by Eq.~(\ref{chap02:s_SOT}). The spin-orbit torques in the asymmetric model correspond to $\bb{s}^\textrm{B}=0$ and $\bb{s}^\textrm{A}$ taken from Eq.~(\ref{chap02:sA}).
  

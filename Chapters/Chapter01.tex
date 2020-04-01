@@ -4,7 +4,7 @@
 In this chapter the spin-orbit torques on magnetization are investigated that occur when an insulating ferromagnetic (FM) layer is brought into close proximity to a topological insulator (TI). In addition to the well-known field-like spin-orbit torque, an anisotropic anti-damping-like spin-orbit torque is identified that originates in the diffusive motion of conduction electrons. This diffusive torque vanished for a spatially homogeneous electric field or current, but may have a strong impact on spin-torque resonance at finite frequency provided that the external field is neither parallel nor perpendicular to the TI surface. The required electric field configuration to observe this effect can be created by a grated top gate.
 
 \vfill
-This chapter is published in Phys. Rev. \textbf{B} 99, 214444 (2019) 
+Parts of this chapter are published in Phys. Rev. \textbf{B} 99, 214444 (2019) 
 \clearpage
 
 % \maketitle
@@ -40,38 +40,38 @@ Microscopic theory of current-induced magnetization dynamics in TI/FM heterostru
 To describe magnetization dynamics at a TI/FM interface we employ an effective two-dimensional Dirac model for conduction electrons 
 \be
 \label{TImodel}
-\mathcal{H}= v\,\lt[(\bb{p}-e\bb{A})\times \bb{\sigma}\rt]_z - \Delta_\textrm{sd}\, \bb{n}\cdot \bb{\sigma} +V(\bb{r}),
+\mathcal{H}= v\,\lt[(\bb{p}-e\bb{A})\times \bb{\sigma}\rt]_z - \Delta_\textrm{sd}\, \bb{m}\cdot \bb{\sigma} +V(\bb{r}),
 \e
 where $\bb{A}$ stands for the vector potential, $e=-|e|$ is the electron charge, $z$ is the direction perpendicular to the TI surface, $v$ is the effective velocity of Dirac electrons, and $V(\bb{r})$ is a disorder potential that models the main relaxation mechanism of the conduction electrons momentum. The energy $\Delta_{\textrm{sd}}=J_\textrm{sd} S$ is characterizing the local exchange interaction $\mathcal{H}_\textrm{ex}=-J_\textrm{sd} \sum_n  \bb{S}_n \cdot c\h_n \bb{\sigma}c\0_n$ between localized classical magnetic moments $\bb{S}_n$ on FM lattice (with conserved absolute value $S=|\bb{S}_n|$ per unit cell area $\mathcal{A}$) and the electron spin-density  (represented by the vector operator $\bb{\sigma} = (\sigma_x,\sigma_y,\sigma_z)$ on the TI surface) \cite{sdmodel}. Here $\sigma_\alpha$ stand for Pauli matrices and $J_\textrm{sd}$ quantifies the s--d-type exchange interaction strength.  
 
-Classical equation of motion for the unit magnetization vector $\bb{n}=\bb{S}/S$ is determined by the s-d like exchange interaction $\mathcal{H}_\textrm{ex}$ as
+Classical equation of motion for the unit magnetization vector $\bb{m}=\bb{S}/S$ is determined by the s-d like exchange interaction $\mathcal{H}_\textrm{ex}$ as
 \be
 \label{Eom}
-\pa \bb{n}/\pa t = \gamma\, \bb{H} \times\bb{n}+\bb{T},\quad
-\bb{T}=(J_\textrm{sd}\mathcal{A}/\hslash) \,\bb{n}\times\bb{s},
+\pa \bb{m}/\pa t = \gamma\, \bb{H} \times\bb{m}+\bb{T},\quad
+\bb{T}=(J_\textrm{sd}\mathcal{A}/\hslash) \,\bb{m}\times\bb{s},
 \e
 where $\hslash=h/2\pi$ is the Planck constant and $\gamma$ is a gyromagnetic ratio for the FM spin. The effective field $\bb{H}$ represents the combined contribution of external magnetic field and the field produced by neighboring magnetic moments in the FM (e.\,g. due to direct exchange), while the term $\bb{T}$ represents the effect of the conduction electron spin density $\bb{s}(\bb{r},t)= \la c\h_n \bb{\sigma} c\0_n\ra$  on the TI surface. 
 
-To quantify the leading contributions to $\bb{T}$ we microscopically compute: i) a linear response of $\bb{s}$ to the in-plane electric field $\bb{E}(\bb{r},t)= \bb{E}_{\bb{q},\omega}\exp\lt(-i\omega t+i\bb{q}\cdot\bb{r}\rt)$; and ii) a linear response of $\bb{s}$  to the time derivative $\pa \bb{n}/\pa t$. The former response defines the spin-orbit torque, while the latter one does the Gilbert damping. 
+To quantify the leading contributions to $\bb{T}$ we microscopically compute: i) a linear response of $\bb{s}$ to the in-plane electric field $\bb{E}(\bb{r},t)= \bb{E}_{\bb{q},\omega}\exp\lt(-i\omega t+i\bb{q}\cdot\bb{r}\rt)$; and ii) a linear response of $\bb{s}$  to the time derivative $\pa \bb{m}/\pa t$. The former response defines the spin-orbit torque, while the latter one does the Gilbert damping. 
  
 Before we proceed with the analysis we shall note that the velocity operator $\bb{v} = v\,(\bb{\sigma}\times \hat{\bb{z}})$ in the model of Eq.~(\ref{TImodel})  is directly related to the spin operator $\bb{\sigma}$. As the result, the response of the in-plane spin density $\bb{s}_\parallel=(s_{x}, s_{y})$ to electric field $\bb{E}=-\pa\bb{A}/\pa t$ is defined by the conductivity tensor \cite{ndiaye_dirac_2017,Ghosh18}. This also means that the non-equilibrium contribution to $\bb{s}_\parallel$ from the electric current density $\bb{J}$ is given by $\bb{s}_\parallel= (\hat{\bb{z}}\times\bb{J} )/ev$ for any frequency and momentum irrespective of type of scattering for conduction electrons and even beyond the linear response. 
 
 Thus, the response of $\bb{s}_\parallel$ defines an exceptionally universal field-like spin-orbit torque
 \be
 \label{TFL}
-\bb{T}^\textrm{SOT}_\textrm{FL}= (J_\textrm{sd}\mathcal{A}/\hslash e v)\, \bb{n}\times(\hat{\bb{z}}\times\bb{J}),
+\bb{T}^\textrm{SOT}_\textrm{FL}= (J_\textrm{sd}\mathcal{A}/\hslash e v)\, \bb{m}\times(\hat{\bb{z}}\times\bb{J}),
 \e 
 that acts in the same way as in-plane external magnetic field applied perpendicular to the charge current. 
 
-Apart from the universal response of $\bb{s}_\parallel$ there might also exists a non-equilibrium spin polarization $s_z$ perpendicular to the TI surface. This component plays no role in Eq.~(\ref{Eom}) for $\bb{n}= \pm \hat{\bb{z}}$ due to the vector product involved. Also, the $s_z$ component is vanishing by symmetry for $\bb{n}=\bb{n}_\parallel$, where we decompose $\bb{n} =\bb{n}_\parallel+\bb{n}_\perp$ to in-plane and perpendicular-to-the plane components.
+Apart from the universal response of $\bb{s}_\parallel$ there might also exists a non-equilibrium spin polarization $s_z$ perpendicular to the TI surface. This component plays no role in Eq.~(\ref{Eom}) for $\bb{m}= \pm \hat{\bb{z}}$ due to the vector product involved. Also, the $s_z$ component is vanishing by symmetry for $\bb{m}=\bb{m}_\parallel$, where we decompose $\bb{m} =\bb{m}_\parallel+\bb{m}_\perp$ to in-plane and perpendicular-to-the plane components.
 
-We find, however, that for a general direction of $\bb{n}$, the spin density $s_z$ may be strongly affected by the in-plane electric field at a small but finite frequency and a small but finite wave vector. In the leading approximation the result can be cast in the following form 
+We find, however, that for a general direction of $\bb{m}$, the spin density $s_z$ may be strongly affected by the in-plane electric field at a small but finite frequency and a small but finite wave vector. In the leading approximation the result can be cast in the following form 
 \be
 \label{diffSOT}
-\bb{T}^\textrm{SOT}_\textrm{diff} = \eta\, \bb{n}\times\bb{n}_\perp\, \frac{i D\, \bb{q}\cdot \bb{E}}{i\omega -Dq^2},\quad
+\bb{T}^\textrm{SOT}_\textrm{diff} = \eta\, \bb{m}\times\bb{m}_\perp\, \frac{i D\, \bb{q}\cdot \bb{E}}{i\omega -Dq^2},\quad
 \eta=\frac{eJ_\textrm{sd}^2\mathcal{A}S}{2\pi \hslash^3v^2},
 \e
-where $D$ is a diffusion coefficient for conduction electrons at the TI surface and $\bb{E}= \bb{E}_{\bb{q},\omega}\exp\lt(-i\omega t+i\bb{q}\cdot\bb{r}\rt)$. Note that the diffusive torque is non-linear with respect to $\bb{n}$ and, from the point of view of the time reversal symmetry, is analogous to anti-damping torque. The denominator $i\omega -Dq^2$ in Eq.~(\ref{diffSOT}) reflects diffusive (Brownian) motion of conduction electrons that defines the time-delayed diffusive torque on magnetization $\bb{T}^\textrm{SOT}_\textrm{diff}$.  
+where $D$ is a diffusion coefficient for conduction electrons at the TI surface and $\bb{E}= \bb{E}_{\bb{q},\omega}\exp\lt(-i\omega t+i\bb{q}\cdot\bb{r}\rt)$. Note that the diffusive torque is non-linear with respect to $\bb{m}$ and, from the point of view of the time reversal symmetry, is analogous to anti-damping torque. The denominator $i\omega -Dq^2$ in Eq.~(\ref{diffSOT}) reflects diffusive (Brownian) motion of conduction electrons that defines the time-delayed diffusive torque on magnetization $\bb{T}^\textrm{SOT}_\textrm{diff}$.  
 
 It is interesting to note that the torque of Eq.~(\ref{diffSOT}) has an anti-damping symmetry (when expressed through electric current rather than electric field). Moreover, the torque formally diverges as $1/q$ in the $dc$ limit $\omega=0$. This singularity is well-known in the theory of disordered systems \cite{maleev1975corrections,maleev1976corrections,altshuler1985electron} and originates in the diffusive (Brownian) motion of conduction electrons in a disorder potential.  The $dc$ limit singularity in Eq.~(\ref{diffSOT}) is, in fact, regularized by the dephasing length of conduction electrons on the surface of the TI. The length is strongly temperature and material dependent and, at low temperatures, can reach hundreds of microns. Thus, the result of Eq.~(\ref{diffSOT}) also predicts large anti-damping spin-orbit torque in the dc-limit that originates in a mechanism which is specific for the TI interface. 
 
@@ -84,10 +84,10 @@ to be the white-noise Gaussian disorder potential that is fully characterized by
 \e
 where angular brackets stay for the averaging over the ensemble of disordered systems. 
 
-Since both the vector potential $\bb{A}$ and the magnetization $\bb{n}$ couple to spin operators in Eq.~(\ref{TImodel}), the linear response of $\bb{s}$ to $\bb{E}=-\pa\bb{A}/{\pa t}$ and $\pa \bb{n}/\pa t$ is defined in the frequency-momentum domain as 
+Since both the vector potential $\bb{A}$ and the magnetization $\bb{m}$ couple to spin operators in Eq.~(\ref{TImodel}), the linear response of $\bb{s}$ to $\bb{E}=-\pa\bb{A}/{\pa t}$ and $\pa \bb{m}/\pa t$ is defined in the frequency-momentum domain as 
 \be
 \label{spol}
-\bb{s} =(v^2 h)^{-1} \hat{K}(\bb{q},\omega) \lt[e v\,(\bb{E}\times \hat{\bb{z}}) - i \omega\Delta_\textrm{sd}\,\bb{n} \rt].
+\bb{s} =(v^2 h)^{-1} \hat{K}(\bb{q},\omega) \lt[e v\,(\bb{E}\times \hat{\bb{z}}) - i \omega\Delta_\textrm{sd}\,\bb{m} \rt].
 \e
 Here, the dimensionless 9-component tensor $\hat{K}(\bb{q},\omega)$ is given by the Kubo formula 
 \be
@@ -103,10 +103,10 @@ The tensor $\hat{K}$ can be represented by the matrix
 \hat{K}=  
 \bpm \sigma_{xx} & \sigma_{xy} & Q_y \\ \sigma_{yx} & \sigma_{yy} & -Q_x \\ Q_y & -Q_x & \zeta \epm,
 \e
-of which $\sigma_{\alpha\beta}$ are the components of the two dimensional conductivity tensor at the TI surface (all conductivities are expressed in the units of $e^2/h$),  the vector $\bb{Q}$ defines the diffusive spin-orbit torque of Eq.~(\ref{diffSOT}) (its contribution to Gilbert damping is negligible), while $\zeta$ determines the response of $s_z$ to $\pa n_z/\pa t$. The components of $\hat{K}$ correspond to different responses at different limits. When discussing the response to an electric field $\bb{E}_{\bb{q}\omega}$ we are primarily interested in the limit $\omega\ll Dq^2$, whereas the response to time-derivative of magnetization $\bb{n}$ is defined by the limit $q\to 0$. 
+of which $\sigma_{\alpha\beta}$ are the components of the two dimensional conductivity tensor at the TI surface (all conductivities are expressed in the units of $e^2/h$),  the vector $\bb{Q}$ defines the diffusive spin-orbit torque of Eq.~(\ref{diffSOT}) (its contribution to Gilbert damping is negligible), while $\zeta$ determines the response of $s_z$ to $\pa n_z/\pa t$. The components of $\hat{K}$ correspond to different responses at different limits. When discussing the response to an electric field $\bb{E}_{\bb{q}\omega}$ we are primarily interested in the limit $\omega\ll Dq^2$, whereas the response to time-derivative of magnetization $\bb{m}$ is defined by the limit $q\to 0$. 
 
 
-In the linear response theory of Eq.~(\ref{spol}) one needs to compute the tensor in Eq.~(\ref{Kubo}) for a constant direction $\bb{n}$ and for $\bb{A}=0$. In usual systems (conducting ferromagnets) the response of $\bb{s}$ in the direction of $\bb{n}$ is always diffusive. This response, however, plays no role in the torque since $\bb{T}\propto \bb{n}\times \bb{s}$. The situation at the TI surface is, however, special. Here, the in-plane components of magnetization $m_x, m_y$ play no role in Eq.~(\ref{TImodel}), since those are simply equivalent to a constant in-plane vector potential for conduction electrons and, therefore, can be excluded by a gauge transform (shift of the Dirac cone). Consequently, all observable quantities in the model (including all components of the tensor $\hat{K}$) may only depend on the field $\Delta_z=\Delta_\textrm{sd} n_z$. As the result, the diffusive response occurs exclusively in $s_z$ component of spin polarization and can easily enter the expression for the torque.
+In the linear response theory of Eq.~(\ref{spol}) one needs to compute the tensor in Eq.~(\ref{Kubo}) for a constant direction $\bb{m}$ and for $\bb{A}=0$. In usual systems (conducting ferromagnets) the response of $\bb{s}$ in the direction of $\bb{m}$ is always diffusive. This response, however, plays no role in the torque since $\bb{T}\propto \bb{m}\times \bb{s}$. The situation at the TI surface is, however, special. Here, the in-plane components of magnetization $m_x, m_y$ play no role in Eq.~(\ref{TImodel}), since those are simply equivalent to a constant in-plane vector potential for conduction electrons and, therefore, can be excluded by a gauge transform (shift of the Dirac cone). Consequently, all observable quantities in the model (including all components of the tensor $\hat{K}$) may only depend on the field $\Delta_z=\Delta_\textrm{sd} n_z$. As the result, the diffusive response occurs exclusively in $s_z$ component of spin polarization and can easily enter the expression for the torque.
 
 The conductivity tensor in the model of Eqs.~(\ref{TImodel},\ref{disorder}) has been analyzed in detail in Ref.~\cite{ivan} in the limit $\omega=\bb{q}=0$ (and for $\alpha\ll 1$) with the result $\sigma_{xx}=\sigma_{yy}=\sigma_0$ and $\sigma_{xy}=-\sigma_{yx}=\sigma_\textrm{H}$, where  
 \be
@@ -166,41 +166,41 @@ The vector $\bb{q}$ selects a particular direction in space, that makes the cond
 
 Clearly, the components $\sigma_{\alpha\beta}$ define the field-like contribution $\bb{T}^\textrm{SOT}_\textrm{FL}$ that has been already discussed above. It is interesting to note that the conductivity is isotropic $\sigma_{xx}=\sigma_{yy}=\sigma_0$ only if the limit $q= 0$ is taken before the limit $\omega=0$. If the limit $\omega=0$ is taken first, the conductivity remains anisotropic with respect to the direction of $\bb{q}$ even for $q=0$.
 
-The vector $\bb{Q}=(Q_x,Q_y)$ quantifies both the response of $s_z$ to electric field or to $\pa \bb{n}_\parallel/\pa t$ as well as the response of $\bb{s}_\parallel$ to  $\pa n_z/\pa t$. From Eq.~(\ref{Kubo}) we find,
+The vector $\bb{Q}=(Q_x,Q_y)$ quantifies both the response of $s_z$ to electric field or to $\pa \bb{m}_\parallel/\pa t$ as well as the response of $\bb{s}_\parallel$ to  $\pa m_z/\pa t$. From Eq.~(\ref{Kubo}) we find,
 \be
 \label{Qvec}
 \bb{Q}(\omega,\bb{q})=\frac{\Delta_z}{\hslash v}\, \frac{i D \bb{q}}{i\omega-Dq^2}\lt(1+\mathcal{O}(\omega\tau_\textrm{tr})\rt),
 \e
 where we again assumed $\omega\tau_\textrm{tr} \ll 1$. The result of Eq.~(\ref{Qvec}), then, corresponds to an additional diffusive spin-orbit torque of the form Eq.~(\ref{diffSOT}).
 
-Finally, the response of $s_z$ to $\pa n_z/\pa t$ is defined by 
+Finally, the response of $s_z$ to $\pa m_z/\pa t$ is defined by 
 \be
 \label{szz}
 \zeta = \frac{\Delta_z^2}{i\hslash\ep\omega}\lt(1+\mathcal{O}(\omega^2\tau^2_\textrm{tr})\rt),
 \e
-where the limit $q=0$ is taken. Thus, we find from Eq.~(\ref{spol}) that there exists no response of $s_z$ to $\pa n_z/\pa t$. Instead, the quantity $\zeta$ defines the additional spin polarization in $z$-direction $\delta s_z = - \Delta_\textrm{sd}^3n_z^3/(2\pi \hslash^2 v^2\ep)$ that we ignore below. Eqs.~(\ref{Qvec},\ref{szz}) including subleading terms in $\omega\tau_\mathrm{tr}$ are presented in Eq.~(\ref{Qresult}).
+where the limit $q=0$ is taken. Thus, we find from Eq.~(\ref{spol}) that there exists no response of $s_z$ to $\pa m_z/\pa t$. Instead, the quantity $\zeta$ defines the additional spin polarization in $z$-direction $\delta s_z = - \Delta_\textrm{sd}^3m_z^3/(2\pi \hslash^2 v^2\ep)$ that we ignore below. Eqs.~(\ref{Qvec},\ref{szz}) including subleading terms in $\omega\tau_\mathrm{tr}$ are presented in Eq.~(\ref{Qresult}).
 
-We also note, that $\bb{Q}(q=0)=0$, hence there is no term in $s_z$ that is proportional to $\pa\bb{n}/\pa t$. This reflects highly anisotropic nature of the Gilbert damping in the model of Eq.~(\ref{TImodel}).
+We also note, that $\bb{Q}(q=0)=0$, hence there is no term in $s_z$ that is proportional to $\pa\bb{m}/\pa t$. This reflects highly anisotropic nature of the Gilbert damping in the model of Eq.~(\ref{TImodel}).
 
 The remaining parts of the Gilbert damping can be cast in the following form 
 \be
-\bb{T}^\textrm{GD}=\frac{J^2_\textrm{sd} \mathcal{A} S}{\pi\hslash^2 v^2}\,\bb{n}\times
-\Big(\sigma_0\,\frac{\pa \bb{n}_\parallel}{\pa t} + \frac{\sigma_\textrm{H}}{n_z}\, \frac{\pa \bb{n}_\parallel}{\pa t}\times\bb{n}_\perp \Big),
+\bb{T}^\textrm{GD}=\frac{J^2_\textrm{sd} \mathcal{A} S}{\pi\hslash^2 v^2}\,\bb{m}\times
+\Big(\sigma_0\,\frac{\pa \bb{m}_\parallel}{\pa t} + \frac{\sigma_\textrm{H}}{m_z}\, \frac{\pa \bb{m}_\parallel}{\pa t}\times\bb{m}_\perp \Big),
 \label{GD}
 \e
-where the coefficients, $\sigma_0$ and $\sigma_\textrm{H}/n_z$ from Eq.~(\ref{cond}) depend on $n_z^2$, which is yet another source of the Gilbert damping anisotropy.  We note, that even though Eq.~(\ref{GD}) does not contain a term proportional to $\partial n_z/\partial t$, the existing in-plane Gilbert damping is sufficient to relax the magnetization along $\hat{\bb{z}}$ direction. 
+where the coefficients, $\sigma_0$ and $\sigma_\textrm{H}/m_z$ from Eq.~(\ref{cond}) depend on $m_z^2$, which is yet another source of the Gilbert damping anisotropy.  We note, that even though Eq.~(\ref{GD}) does not contain a term proportional to $\partial m_z/\partial t$, the existing in-plane Gilbert damping is sufficient to relax the magnetization along $\hat{\bb{z}}$ direction. 
 
-Despite strongly anisotropic nature of the diffusive torque (the torque is vanishing for purely in-plane or purely perpendicular to the plane magnetization), its strength for a generic direction of magnetization may be quite large. For example, for $\bb{n}$ directed approximately at 45 degrees to the TI surface the ratio of amplitudes of diffusive and field like torques is readily estimated as  
+Despite strongly anisotropic nature of the diffusive torque (the torque is vanishing for purely in-plane or purely perpendicular to the plane magnetization), its strength for a generic direction of magnetization may be quite large. For example, for $\bb{m}$ directed approximately at 45 degrees to the TI surface the ratio of amplitudes of diffusive and field like torques is readily estimated as  
 \be
 \label{estimate}
 \frac{T^\textrm{SOT}_\textrm{diff}}{T^\textrm{SOT}_\textrm{FL}} = \frac{\Delta_\textrm{sd}}{\hslash q v}\,\frac{1}{\sigma_0},
 \e
-where we used the condition $\omega \ll Dq^2$.  Let us assume that a top-gate in Fig.~\ref{fig:setup} induces an ac in-plane electric field with the characteristic period $2\pi q^{-1}\approx 1$\,$\mu$m and a typical FM resonance frequency, $\omega\approx 7$-$12$\,GHz. Then, for realistic materials one can estimate $Dq^2\approx 100$\,GHz, hence $\omega \ll Dq^2$ indeed. For a typical velocity $v=10^6$\,m$/$s one finds  $\hslash q v\approx 4$\,meV. Thus, the ratio $\Delta_\textrm{sd}/\hslash q v$ in Eq.~(\ref{estimate}) may reach three orders of magnitude, while the value of $\sigma_0$ is typically $10$. This estimate suggests that, for a generic direction of $\bb{n}$, the magnitude of diffusive  torque can become three orders of magnitude larger than that of the field-like spin-orbit torque. 
+where we used the condition $\omega \ll Dq^2$.  Let us assume that a top-gate in Fig.~\ref{fig:setup} induces an ac in-plane electric field with the characteristic period $2\pi q^{-1}\approx 1$\,$\mu$m and a typical FM resonance frequency, $\omega\approx 7$-$12$\,GHz. Then, for realistic materials one can estimate $Dq^2\approx 100$\,GHz, hence $\omega \ll Dq^2$ indeed. For a typical velocity $v=10^6$\,m$/$s one finds  $\hslash q v\approx 4$\,meV. Thus, the ratio $\Delta_\textrm{sd}/\hslash q v$ in Eq.~(\ref{estimate}) may reach three orders of magnitude, while the value of $\sigma_0$ is typically $10$. This estimate suggests that, for a generic direction of $\bb{m}$, the magnitude of diffusive  torque can become three orders of magnitude larger than that of the field-like spin-orbit torque. 
 
 The diffusive torque at the TI surface can be most directly probed by the corresponding spin-torque resonance. In this case, one can disregard the effect of the field like torque, so that Eq.~(\ref{Eom}) is simplified to
 \be
 \label{equation}
-\frac{\pa \bb{n}}{\pa t}=\gamma\,\bb{H}\times \bb{n}+f(\bb{r},t)\,\bb{n}\times\bb{n}_\perp+\alpha_\textrm{G}\,\bb{n}\times\frac{\pa \bb{n}_\parallel}{\pa t},
+\frac{\pa \bb{m}}{\pa t}=\gamma\,\bb{H}\times \bb{m}+f(\bb{r},t)\,\bb{m}\times\bb{m}_\perp+\alpha_\textrm{G}\,\bb{m}\times\frac{\pa \bb{m}_\parallel}{\pa t},
 \e
 where $\alpha_\textrm{G}= J_\textrm{sd}^2 \mathcal{A}S \sigma_0/\pi(\hslash v)^2$ is the Gilbert damping amplitude (which is a constant for $\ep \gg \Delta_\textrm{sd}$), while the terms containing $\sigma_\textrm{H}$ are omitted.  The function
 \be
@@ -208,7 +208,7 @@ f(\bb{r},t)=\eta\int\! d^2\bb{r}'\!\!\int_{-\infty}^t\!\!\!\! dt'\, \frac{e^{-(\
 \e
 defines the strength of the diffusive spin-orbit torque (\ref{diffSOT}) in real space and time.
 
-Resonant magnetization dynamics defined by Eq.~(\ref{equation}) is illustrated in Fig.~\ref{fig:dynamics} for $\bb{H}$ directed at the angle $\chi =\pi/4$ with respect to $\hat{\bb{z}}$ and for frequencies that are close to the resonant frequency $\omega_0=\gamma H$. The time evolution of magnetization projection $m_\textrm{H}= \bb{n}\cdot \bb{H}/H$ is induced by the diffusive torque with $f(t)= f_0\,\cos\omega t$ (magnetization at different $\bb{r}$ is simply different by a phase). 
+Resonant magnetization dynamics defined by Eq.~(\ref{equation}) is illustrated in Fig.~\ref{fig:dynamics} for $\bb{H}$ directed at the angle $\chi =\pi/4$ with respect to $\hat{\bb{z}}$ and for frequencies that are close to the resonant frequency $\omega_0=\gamma H$. The time evolution of magnetization projection $m_\textrm{H}= \bb{m}\cdot \bb{H}/H$ is induced by the diffusive torque with $f(t)= f_0\,\cos\omega t$ (magnetization at different $\bb{r}$ is simply different by a phase). 
 
 %%%%%%%%%%%%
 %%% figure 3
@@ -221,7 +221,7 @@ Resonant magnetization dynamics defined by Eq.~(\ref{equation}) is illustrated i
 \end{figure}
 %%%%%%%%%
 
-Resonant dynamics at $\omega=\omega_0$ in Eq.~(\ref{equation}) consists of precession of $\bb{n}$ around the vector $\bb{H}$ such that the azimut (precession) angle is changing linearly with time $\phi(t)=\omega_0 t-\pi/2$  (for $f_0\ll \omega_0$ and $\alpha_\textrm{G}\ll1$). In addition, the projection $m_\textrm{H}$ oscillates between $1$ and $0$ on much larger time scales. Such oscillations are damped by a finite $\alpha_\textrm{G}$ to the limiting value $m_\textrm{H}=1/\sqrt{2}$. 
+Resonant dynamics at $\omega=\omega_0$ in Eq.~(\ref{equation}) consists of precession of $\bb{m}$ around the vector $\bb{H}$ such that the azimut (precession) angle is changing linearly with time $\phi(t)=\omega_0 t-\pi/2$  (for $f_0\ll \omega_0$ and $\alpha_\textrm{G}\ll1$). In addition, the projection $m_\textrm{H}$ oscillates between $1$ and $0$ on much larger time scales. Such oscillations are damped by a finite $\alpha_\textrm{G}$ to the limiting value $m_\textrm{H}=1/\sqrt{2}$. 
 
 In the limit of vanishing Gilbert damping, $\alpha_\textrm{G}=0$, one simply finds the result 
 \be
