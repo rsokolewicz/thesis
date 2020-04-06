@@ -233,7 +233,7 @@ Antiferromagnet dynamics is usually formulated as the coupled dynamics of the N\
 \be
 \bb{n}=\lt(\bb{m}^\textrm{A}-\bb{m}^\textrm{B}\rt)/2,\qquad \bb{m}= \lt(\bb{m}^\textrm{A}+\bb{m}^\textrm{B}\rt)/2,
 \e
-that remain mutually perpendicular $\bb{n}\cdot \bb{m}=0$ and yield the constraint $\ell^2+m^2=1$. Naturally, the amplitude of the magnetization vector remain to be small, $m\ll \ell \approx 1$.
+that remain mutually perpendicular $\bb{n}\cdot \bb{m}=0$ and yield the constraint $n^2+m^2=1$. Naturally, the amplitude of the magnetization vector remain to be small, $m\ll n \approx 1$.
 
 For an ``isotropic'' antiferromagnet, one finds the effective field \cite{gomonay_spintronics_2014} $\bb{H}^\textrm{A}+\bb{H}^\textrm{B}= J_\textrm{ex}\bb{m}/\hslash+2\bb{H}$, where $\bb{H}$ is an external magnetic field in frequency units and $J_\textrm{ex}$ is a direct antiferromagnetic exchange energy that is one of the largest energies in the problem. In turn, the combination $\bb{H}^\textrm{A}-\bb{H}^\textrm{B}$ is proportional to magnetic anisotropy that we choose not to take into account as mentioned above.  
 
@@ -280,7 +280,7 @@ The symmetry of the point group $C_{\infty\textrm{v}}$ (see also the symmetry an
 &+ C(n_z^2)\,\bb{n}_\parallel\times \lt[\bb{n}_\perp\times \lt[\hat{\bb{z}}\times \bb{I}\rt]\rt],
 \label{chap02:symmetry}
 \end{align}
-where we decompose the N\'eel vector $\bb{n}=\bb{n}_\parallel+\bb{n}_\perp$ into in-plane $\bb{n}_\parallel$ and perpendicular-to-the-plane $\bb{n}_\perp$ components. We parameterize $\bb{n}=(\cos\phi\sin\theta,\sin\phi\sin\theta,\cos\theta)^\top$, where $\theta$ is a polar angle and $\phi$ is an azimuthal angle. Consequently, we have $\bb{n}_\parallel=(\cos\phi\sin\theta,\sin\phi\sin\theta,0)^\top$ and $\bb{n}_\perp=(0,0,\cos\theta)^\top$.
+where we decompose the N\'eel vector $\bb{n}=\bb{n}_\parallel+\bb{n}_\perp$ into in-plane $\bb{n}_\parallel$ and perpendicular-to-the-plane $\bb{n}_\perp$ components. We parameterize $\bb{n}=(\cos\phi\sin\theta, \sin\phi\sin\theta, \cos\theta)^\top$, where $\theta$ is a polar angle and $\phi$ is an azimuthal angle. Consequently, we have $\bb{n}_\parallel=(\cos\phi\sin\theta,\sin\phi\sin\theta,0)^\top$ and $\bb{n}_\perp=(0,0,\cos\theta)^\top$.
 
 The decomposition of Eq.~(\ref{chap02:symmetry}) is dictated by the symmetry analysis with respect to two transformations: the N\'eel vector inversion, $\bb{n}\to -\bb{n}$, and the N\'eel vector reflection, $\bb{n}_\perp\to -\bb{n}_\perp$, with respect to the electron 2D plane. 
 
@@ -290,7 +290,7 @@ The first two terms in Eq.~(\ref{chap02:symmetry}) are even with respect to both
 
 The second two terms in Eq.~(\ref{chap02:symmetry}), which are proportional to the coefficients $B_{\parallel,\perp}$, are odd with respect to the N\'eel vector reflection. The first one of them is odd while the second one is even with respect to the N\'eel vector reflection. These terms represent anti-damping spin-orbit torques that change sign under time reversal.
 
-The coefficients in front of different vector forms in Eq.~(\ref{chap02:symmetry}) must remain invariant with respect to both symmetry transformations, but they may still vary as the function of the symmetry invariant $n_z^2$. The coefficients may also depend on $\ell^2$ but such dependence is absent within linear response approximation. Indeed, one shall take $\ell^2=1$ ($m=0$) in all coefficients in front of electric current since electric current is regarded as the only possible source of a deviation from the exact antiferromagnetic order. 
+The coefficients in front of different vector forms in Eq.~(\ref{chap02:symmetry}) must remain invariant with respect to both symmetry transformations, but they may still vary as the function of the symmetry invariant $n_z^2$. The coefficients may also depend on $n^2$ but such dependence is absent within linear response approximation. Indeed, one shall take $n^2=1$ ($m=0$) in all coefficients in front of electric current since electric current is regarded as the only possible source of a deviation from the exact antiferromagnetic order. 
 
 The exact sublattice symmetry of the symmetric coupling model of Eqs.~(\ref{chap02:ham})-(\ref{chap02:MODEL}) does not only ensure the vanishing staggered polarization $\delta\bb{s}_-=0$ but also leads to identically vanishing anti-damping torques $B_\parallel=B_\perp=0$ in all possible regimes. This is indeed confirmed by our numerical analysis for the symmetric coupling model as we describe below. 
 
@@ -300,7 +300,7 @@ The exact sublattice symmetry of the symmetric coupling model of Eqs.~(\ref{chap
 \begin{figure}
 \centering
 \centerline{\includegraphics[width=\columnwidth]{{articles/sumit_paper/fig6.pdf}}}
-\caption{Non-equilibrium spin density $\delta\bb{s}_+$ for the symmetric coupling model of Eqs.~(\ref{chap02:ham})-(\ref{chap02:MODEL}) with $V_\textrm{d}=0.5\,t_h$ as the function of the N\'eel-vector orientation for different values of the Fermi energy. Each data point foe each direction of the N\'eel vector corresponds to averaging over 30 impurity configurations. Spin densities are normalized to the scale $\Delta_\text{sd}\lambda j/evw^2$, where $j=I/W$ is the charge current density through the sample. Fluctuations at $\theta=\pi/4$ and $\theta=3\pi/4$ in the top panel and at $\theta=\pi/2$ in the middle panel are due to diverging mean free path for Fermi energy touching the bottom of the conduction band. The staggered spin density $\delta\bb{s}_-$ fluctuates around zero (not-shown). For $E/w=0$, the spin-density $\delta\bb{s}_+$ also fluctuates around zero as shown in the upper panel.}
+\caption{Non-equilibrium spin density $\delta\bb{s}_+$ for the symmetric coupling model of Eqs.~(\ref{chap02:ham})-(\ref{chap02:MODEL}) with $V_\textrm{d}=0.5\,t_h$ as the function of the N\'eel-vector orientation for different values of the Fermi energy. Each data point foe each direction of the N\'eel vector corresponds to averaging over 30 impurity configurations. Spin densities are normalized to the scale $\Delta_\text{sd}\lambda j/evt_h^2$, where $j=I/W$ is the charge current density through the sample. Fluctuations at $\theta=\pi/4$ and $\theta=3\pi/4$ in the top panel and at $\theta=\pi/2$ in the middle panel are due to diverging mean free path for Fermi energy touching the bottom of the conduction band. The staggered spin density $\delta\bb{s}_-$ fluctuates around zero (not-shown). For $E/t_h=0$, the spin-density $\delta\bb{s}_+$ also fluctuates around zero as shown in the upper panel.}
 \label{chap02:fig:density}
 \end{figure}
 %%%%%%%%%
@@ -330,7 +330,7 @@ Despite these general findings we still observe that the results for non-equilib
 The metal regime is characterized by two Fermi surfaces for each of the two valleys. This regime is represented in our simulations by the choice $E=0.3\,t_h$. In this case we also find $A'_I=C=0$ within our numerical accuracy. Thus, the metal regime in the symmetric model is represented by the only contribution to the non-equilibrium spin-density
 \be
 \label{chap02:s_SOT}
-\delta\bb{s}_+= \frac{\Delta_\text{sd}\lambda}{2\pi evw^2} a_I\,\hat{\bb{z}}\times \bb{j}, 
+\delta\bb{s}_+= \frac{\Delta_\text{sd}\lambda}{2\pi evt_h^2} a_I\,\hat{\bb{z}}\times \bb{j}, 
 \e
 with a constant dimensionless coefficient $a_I$. This coefficient retains almost the same value for three different impurity concentrations as 
 shown in the left panel of Fig.~\ref{chap02:fig:decomposition}. Thus, the non-equilibrium spin density in the metal regime is simply proportional to the Rashba field. The non-equilibrium spin density of Eq.~(\ref{chap02:s_SOT}) is readily recognized as the inverse spin-galvanic effect of Edelstein \cite{edelstein_spin_1990} that is widely known in ferromagnet materials with Rashba coupling \cite{manchon_theory_2008, garate_influence_2009}. 
@@ -341,7 +341,7 @@ Consequently, the spin orbit torques in the metal regime of the symmetric model 
 \bb{T}^\ell_+=a_I \eta\;\bb{n} \times\lt[\hat{\bb{z}}\times\bb{j}\rt],\quad
 \bb{T}^m_+=a_I \eta\;\bb{m} \!\times\!\lt[\hat{\bb{z}}\times\bb{j}\rt], 
 \e
-where $\eta=J\mathcal{A}\Delta_\text{sd}\lambda /evh w^2$. 
+where $\eta=J\mathcal{A}\Delta_\text{sd}\lambda /evh t_h^2$. 
 
 This results of Eqs.~(\ref{chap02:s_SOT}), (\ref{chap02:metal_SOT}) are remarkably similar to those found analytically in the metal regime of a Rashba ferromagnet model with white-noise disorder \cite{ado_microscopic_2017,ado_anisotropy_2019}. The latter is also characterized by identically vanishing anti-damping spin-orbit torques and by a completely isotropic field-like torque of the same symmetry. Even though, analytical results have been obtained for a ferromagnet with a weak white-noise disorder, the same drastic simplification of the spin-orbit torque takes place for a symmetric honeycomb antiferromagnet with rather strong point-like disorder as demonstrated above. Such a simplification is, however, limited to the metal regime. 
  
@@ -352,7 +352,7 @@ The half-metal regime is represented by the Fermi energy $E=0.05\,t_h$ that corr
 Thus, our numerical data in half-metal regime corresponds to the spin density
 \begin{align}
 \label{chap02:result1}
-\delta\bb{s}_+= \frac{\Delta_\text{sd}\lambda}{2\pi evw^2}
+\delta\bb{s}_+= \frac{\Delta_\text{sd}\lambda}{2\pi evt_h^2}
 \Big(\,&a_I\,\hat{\bb{z}}\times \bb{j} + a'_I(n_z^2)\,\bb{n}_\parallel\times \lt[\bb{n}_\parallel\times \lt[\hat{\bb{z}}\times\bb{j}\rt]\rt]\n\\
 &+c(n_z^2)\,\bb{n}_\parallel\times \lt[\bb{n}_\perp\times \lt[\hat{\bb{z}}\times\bb{j}\rt]\rt]\Big),
 \end{align}
@@ -374,7 +374,7 @@ a'_I(n_z^2)\, \bb{m}\!\times\!\lt[\bb{n}_\parallel\!\times\! \lt[\bb{n}_\paralle
 \label{chap02:torque_Tminus}
 \end{align}
 \eml
-where $\eta=J\mathcal{A}\Delta_\text{sd}\lambda /evh w^2$ is the same as in Eq.~(\ref{chap02:metal_SOT}). 
+where $\eta=J\mathcal{A}\Delta_\text{sd}\lambda /evh t_h^2$ is the same as in Eq.~(\ref{chap02:metal_SOT}). 
 
 Note, that the function $a'_I(n_z^2)$ in Eq.~(\ref{chap02:torque_Tplus}) for $\bb{T}^\ell_+$ can be absorbed into the redefinition of the coefficients $a_I$ and $c$.  Indeed, with the help of a straightforward vector algebra one can re-write Eq.~(\ref{chap02:torque_Tplus}) as
 \be
@@ -511,7 +511,7 @@ The spin orbit torque $\bb{T}^A$, which is obtained by substituting the result o
 &+c(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\parallel\times \lt[\bb{m}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\rt]\Big),
 \label{TAresult}
 \end{align}
-where we again introduce $\eta=J\mathcal{A}\Delta_\text{sd}\lambda /evh t^2$, $\bb{j}=\bb{I}/W$ and the dimensionless coefficients $a_I$, $b_\perp$, $b_\parallel$, and $c$ that all appear to be non-trivial functions of $n_z^2=\cos^2\theta$ as shown in Fig.~\ref{fig:result_as}. Note that the function $A'_I(n_z^2)$ in Eq.~(\ref{sA}) for spin density contributes to both $a_I$ and $c$ coefficients in Eq.~(\ref{TAresult}) in the direct analogy to Eqs.~(\ref{torque_Tplus_MOD}) and (\ref{renorm}). 
+where we again introduce $\eta=J\mathcal{A}\Delta_\text{sd}\lambda /evh t_h^2$, $\bb{j}=\bb{I}/W$ and the dimensionless coefficients $a_I$, $b_\perp$, $b_\parallel$, and $c$ that all appear to be non-trivial functions of $n_z^2=\cos^2\theta$ as shown in Fig.~\ref{fig:result_as}. Note that the function $A'_I(n_z^2)$ in Eq.~(\ref{sA}) for spin density contributes to both $a_I$ and $c$ coefficients in Eq.~(\ref{TAresult}) in the direct analogy to Eqs.~(\ref{torque_Tplus_MOD}) and (\ref{renorm}). 
 
 Thus, the spin-orbit torque $\bb{T}^\textrm{A}$ is parameterized by $4$ dimensionless functions. These functions are shown in Fig.~\ref{fig:result_as} illustrating the main result of our numerical simulations for the asymmetric coupling model. In sharp contrast to the symmetric model we observe that the anti-damping torques are no longer vanishing. We also find that $b_\perp(n_z^2) \approx b_\parallel(n_z^2)$ in the half-metal regime. The major field-like torque $\bb{m}^\textrm{A}\times\lt[\hat{\bb{z}}\times\bb{j}\rt]$, which originates in the Edelstein effect, acquires a weak dependence on $\theta$ due to the impact of the coefficient $A'_I(n_z^2)$. 
 

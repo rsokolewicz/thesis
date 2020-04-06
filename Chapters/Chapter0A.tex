@@ -16,7 +16,7 @@ where R, A and K denote retarded, advanced and Keldysh Green functions respectiv
 \end{multline}
 with $\mathcal{G}^{(0)}$ equilibrium Green functions. The Wigner-transform of a function $F(\bb{x}_1,t_1;\bb{x}_2,t_2)$ is given by
   \begin{multline}
-    F(\bb{x}_1,t_1;\bb{x}_2,t_2)=\int\frac{d^2\bb{p}}{(2\pi\hslash)^2}\int \frac{d\ep}{2\pi\hslash}\,e^{-i\ep(t_1-t_2)/\hslash}\\e^{i\bb{p}\cdot(\bb{x}_1-\bb{x}_2)/\hslash}F(\ep,\bb{p},R,T)
+    F(\bb{x}_1,t_1;\bb{x}_2,t_2)=\int\frac{d^2\bb{p}}{(2\pi\hslash)^2}\int \frac{d\ep}{2\pi\hslash}\,e^{-i\ep(t_1-t_2)/\hslash}e^{i\bb{p}\cdot(\bb{x}_1-\bb{x}_2)/\hslash}F(\ep,\bb{p},R,T)
    \end{multline}
 with energy $\ep$, momentum $\bb{p}$, time $T=\frac{t_1+t_2}{2}$ and position $\bb{R}=\frac{\bb{x}_1+\bb{x}_2}{2}$. In equilibrium the Green functions $\mathcal{G}^{(0)}$ do not depend on $\bb{R}$ and $T$, so that the momentum-frequency representation of Eq.~(\ref{chap1:eq:s2}) becomes 
    $\delta\mathcal{G}(\ep,\omega,\bb{p},\bb{q})= \mathcal{G}^{(0)}_{\ep_+,\bb{p}_+} V_{\omega,\bb{q}}\mathcal{G}^{{(0)}}_{\ep_-,\bb{q}_-}$, 
@@ -28,26 +28,26 @@ The spin density $\bb{s}_{\omega,\bb{q}}$ is given by
 \end{equation}
 where,
 \begin{multline}
-    \delta G^<(\ep,\omega,\bb{p},\bb{q}) = 1/2 (\delta G^\text{K}(\ep,\omega,\bb{p},\bb{q})\\-
-    \delta G^\text{R}(\ep,\omega,\bb{p},\bb{q})+\delta G^\text{A}(\ep,\omega,\bb{p},\bb{q}).  
+    \delta G^<(\ep,\omega,\bb{p},\bb{q}) = 1/2 \big(\delta G^\text{K}(\ep,\omega,\bb{p},\bb{q})-
+    \delta G^\text{R}(\ep,\omega,\bb{p},\bb{q})+\delta G^\text{A}(\ep,\omega,\bb{p},\bb{q})\big).  
 \end{multline}
 In equilibrium we have the fluctuation-dissipation theorem $   G^\text{K}_{\ep_\pm,\bb{p}_\pm} = (1-2f_{\ep_\pm})(G^\text{R}_{\ep_\pm,\bb{p}_\pm}-G^\text{A}_{\ep_\pm,\bb{p}_\pm}) $ with $f_{\ep_\pm}$ the Fermi distribution, so that the spin density now becomes
 \begin{align}
-    \bb{s}_{\omega,\bb{q}} &= {i\hslash} \int\!\frac{d\ep}{2\pi\hslash}\int\!\frac{d^2\bb{p}}{(2\pi\hslash)^2}\tr\langle\nonumber\\
-    & -(f_{\ep_+}-f_{\ep_-})\bb{\sigma}G^\text{R}_{\ep_+,\bb{p}_+} V_{\omega,\bb{q}}G^\text{A}_{\ep_-,\bb{p}_-}\nonumber\\
-    &-f_{\ep_+}\bb{\sigma}G^\text{R}_{\ep_+,\bb{p}_+} V_{\omega,\bb{q}}G^\text{R}_{\ep_-,\bb{p}_-}\nonumber\\
-    &+f_{\ep_-}\bb{\sigma}G^\text{A}_{\ep_+,\bb{p}_+} V_{\omega,\bb{q}}G^\text{A}_{\ep_-,\bb{p}_-}\rangle,
+    \bb{s}_{\omega,\bb{q}} = {i\hslash} \int\!\frac{d\ep}{2\pi\hslash}\int\!\frac{d^2\bb{p}}{(2\pi\hslash)^2}\tr\langle\nonumber
+     -(f_{\ep_+}-f_{\ep_-})\bb{\sigma}G^\text{R}_{\ep_+,\bb{p}_+} V_{\omega,\bb{q}}G^\text{A}_{\ep_-,\bb{p}_-}\nonumber
+    -f_{\ep_+}\bb{\sigma}G^\text{R}_{\ep_+,\bb{p}_+} V_{\omega,\bb{q}}G^\text{R}_{\ep_-,\bb{p}_-}\nonumber
+    +f_{\ep_-}\bb{\sigma}G^\text{A}_{\ep_+,\bb{p}_+} V_{\omega,\bb{q}}G^\text{A}_{\ep_-,\bb{p}_-}\rangle,
 \end{align}
 where the angular brackets stands for impurity averaging. The latter amounts to the replacement of the Green's functions with the corresponding impurity averaged Greens functions (in Born approximation) and to the replacement of one of the spin operators with the corresponding vertex corrected operator (in the non-crossing approximation). The corrections beyond the non-crossing approximation are important for those tensor components that lack leading-order contribution \cite{ivan}. To keep our notations more compact we ignore here the fact that the Green's functions before disorder averaging lack translational invariance, i.\,e. depend on both Wigner coordinates: momentum and coordinate. 
 
 In the limit of small frequency, i.e. $\hslash\omega\ll\ep$, we obtain $s_\alpha = s^\text{I}_\alpha+s^\text{II}_\alpha$,
 \begin{align}
     s^\text{I}_\alpha&=\frac{i\omega}{2\hslash}\int\frac{d\ep}{2\pi}\int \frac{d^2\bb{p}}{(2\pi)^2}\Big(-\frac{\partial f}{\partial \ep}\Big)\times\nonumber\\
-    &\tr\big\langle
-    2\sigma_\alpha G^\text{R}_{\ep_+,\bb{p}_+} V_{\omega,\bb{q}} G^\text{A}_{\ep_-,\bb{p}_-}-\sigma_\alpha G^\text{A}_{\ep_+,\bb{p}_+} V_{\omega,\bb{q}} G^\text{A}_{\ep_-,\bb{p}_-} \nonumber\\
-    &\hspace{3.2cm}-\sigma_\alpha G^\text{R}_{\ep_+,\bb{p}_+} V_{\omega,\bb{q}} G^\text{R}_{\ep_-,\bb{p}_-}\big\rangle,\\
-    s^\text{II}_\alpha&=\frac{i}{\hslash}\int\frac{d\ep}{2\pi}\int \frac{d^2\bb{p}}{(2\pi)^2} f_\ep\times\nonumber\\
-     &\tr \big\langle\sigma_\alpha
+    \tr\big\langle
+    2\sigma_\alpha G^\text{R}_{\ep_+,\bb{p}_+} V_{\omega,\bb{q}} G^\text{A}_{\ep_-,\bb{p}_-}-\sigma_\alpha G^\text{A}_{\ep_+,\bb{p}_+} V_{\omega,\bb{q}} G^\text{A}_{\ep_-,\bb{p}_-} \nonumber
+    -\sigma_\alpha G^\text{R}_{\ep_+,\bb{p}_+} V_{\omega,\bb{q}} G^\text{R}_{\ep_-,\bb{p}_-}\big\rangle,\\
+    s^\text{II}_\alpha&=\frac{i}{\hslash}\int\frac{d\ep}{2\pi}\int \frac{d^2\bb{p}}{(2\pi)^2} f_\ep
+     \tr \big\langle\sigma_\alpha
     G^\text{A}_{\ep_+,\bb{p}_+} V_{\omega,\bb{q}} G^\text{A}_{\ep_-,\bb{p}_-}-
     \sigma_\alpha G^\text{R}_{\ep_+,\bb{p}_+} V_{\omega,\bb{q}} G^\text{R}_{\ep_-,\bb{p}_-}\big\rangle,
 \end{align}
@@ -106,52 +106,53 @@ Eqs.~(\ref{chap1:eq:skubo},\ref{chap1:eq:skuboB}) correspond to Eqs.~(\ref{spol}
 %
 %Thus, in the non-crossing approximation (illustrated in Fig.~\ref{fig:diagrams} (a)), one simply finds $\hat{K}= \hat{M}[1-\pi\alpha \hat{M}]^{-1}$. Dressed spin-spin correlators are defined by the components $ \hat{K}_{\alpha\beta}$ with $\alpha,\beta=x,y,z$. 
 
-We shall compute the matrix $\hat{M}$ to the second order in powers of $\omega$ and  $q$. The result is represented as 
+We shall compute the matrix $\hat{M}$ to the second order in powers of $\omega$ and  $q$. 
+%The result is represented as 
 
-\beml
-\label{chap1:eq:M}
-\begin{align}
-M &=M_0+M_\omega+M_{\omega^2}+M_{q\omega}+M_{q^2},\\
-M_0 &= 
-\frac{1}{\pi\alpha(\ep^2+\Delta_z^2)} 
-\bpm
-\ep^2& 0 & 0 & -\ep \Delta_z \\
- 0 & (\ep ^2-\Delta_z^2)/2 & \pi\alpha \ep \Delta_z & 0 \\
- 0 & -\pi \alpha \ep \Delta_z & (\ep ^2-\Delta_z^2)/2 & 0 \\
--\ep \Delta_z & 0 & 0 & \Delta_z^2 
-\epm,\\
-M_\omega & =\frac{i\omega \ep}{\lt[\pi  \alpha  (\ep^2+\Delta_z^2)\rt]^2} 
-\bpm
-\ep^2 & 0 & 0 &-\ep\Delta_z\\
-0 & (\ep ^2-\Delta_z^2)/2 & \pi \alpha (\ep^2-\Delta_z^2)\Delta_z/2\ep& 0 \\
- 0 &- \pi \alpha (\ep^2-\Delta_z^2)\Delta_z/2\ep& (\ep ^2-\Delta_z^2)/2  & 0 \\
--\ep\Delta_z& 0 & 0 & \Delta_z^2  
-\epm,\\
-M_{\omega^2} & =\frac{(i\omega \ep)^2}{\lt[\pi  \alpha  (\ep^2+\Delta_z^2)\rt]^3}
-\bpm
-\ep^2 & 0 & 0 &-\ep\Delta_z\\
-0 & (\ep ^2-\Delta_z^2)/2 & \pi \alpha (\ep^2-\Delta_z^2)\Delta_z/2\ep& 0 \\
- 0 & -\pi \alpha (\ep^2-\Delta_z^2)\Delta_z/2\ep& (\ep ^2-\Delta_z^2)/2  & 0 \\
--\ep\Delta_z& 0 & 0 & \Delta_z^2  
-\epm,\\
-M_{q\omega} & =\frac{v(\ep^2-\Delta_z^2)}{\lt[\pi \alpha \left(\ep^2+\Delta_z^2\right)\rt]^2}\left(\frac{-i}{2}+ \frac{\ep\omega}{\lt[\pi\alpha(\ep^2+\Delta_z^2)\rt]}\right) 
-\bpm
- 0 & \ep  q_x& \ep  q_y& 0 \\
- \ep  q_x & 0 & 0 & -\Delta_z q_x\\
- \ep  q_y & 0 & 0 & -\Delta_z q_y\\
- 0 & -\Delta_z q_x & -\Delta_z q_y & 0 
-\epm,\\
-M_{q^2} & =\frac{v^2 (\ep^2-\Delta_z^2)}{2\lt[\pi\alpha(\ep^2+\Delta_z^2)\rt]^3} 
-\bpm
-\ep^2q^2& 0 & 0 & -\ep\Delta_z q^2 \\
- 0 & -(\ep^2-\Delta_z^2) (3q_x^2-q_y^2)/4 & - (\ep^2-\Delta_z^2) q_xq_y/2 & 0 \\
- 0 & - (\ep^2-\Delta_z^2) q_xq_y/2 & -(\ep^2-\Delta_z^2) (3q_y^2-q_x^2)/4 & 0 \\
--\ep \Delta_z q^2  & 0 & 0 & \Delta_z^2q^2
-\epm,
-\end{align}
-\eml
+% \beml
+% \label{chap1:eq:M}
+% \begin{align}
+% M &=M_0+M_\omega+M_{\omega^2}+M_{q\omega}+M_{q^2},\\
+% M_0 &= 
+% \frac{1}{\pi\alpha(\ep^2+\Delta_z^2)} 
+% \bpm
+% \ep^2& 0 & 0 & -\ep \Delta_z \\
+%  0 & (\ep ^2-\Delta_z^2)/2 & \pi\alpha \ep \Delta_z & 0 \\
+%  0 & -\pi \alpha \ep \Delta_z & (\ep ^2-\Delta_z^2)/2 & 0 \\
+% -\ep \Delta_z & 0 & 0 & \Delta_z^2 
+% \epm,\\
+% M_\omega & =\frac{i\omega \ep}{\lt[\pi  \alpha  (\ep^2+\Delta_z^2)\rt]^2} 
+% \bpm
+% \ep^2 & 0 & 0 &-\ep\Delta_z\\
+% 0 & (\ep ^2-\Delta_z^2)/2 & \pi \alpha (\ep^2-\Delta_z^2)\Delta_z/2\ep& 0 \\
+%  0 &- \pi \alpha (\ep^2-\Delta_z^2)\Delta_z/2\ep& (\ep ^2-\Delta_z^2)/2  & 0 \\
+% -\ep\Delta_z& 0 & 0 & \Delta_z^2  
+% \epm,\\
+% M_{\omega^2} & =\frac{(i\omega \ep)^2}{\lt[\pi  \alpha  (\ep^2+\Delta_z^2)\rt]^3}
+% \bpm
+% \ep^2 & 0 & 0 &-\ep\Delta_z\\
+% 0 & (\ep ^2-\Delta_z^2)/2 & \pi \alpha (\ep^2-\Delta_z^2)\Delta_z/2\ep& 0 \\
+%  0 & -\pi \alpha (\ep^2-\Delta_z^2)\Delta_z/2\ep& (\ep ^2-\Delta_z^2)/2  & 0 \\
+% -\ep\Delta_z& 0 & 0 & \Delta_z^2  
+% \epm,\\
+% M_{q\omega} & =\frac{v(\ep^2-\Delta_z^2)}{\lt[\pi \alpha \left(\ep^2+\Delta_z^2\right)\rt]^2}\left(\frac{-i}{2}+ \frac{\ep\omega}{\lt[\pi\alpha(\ep^2+\Delta_z^2)\rt]}\right) 
+% \bpm
+%  0 & \ep  q_x& \ep  q_y& 0 \\
+%  \ep  q_x & 0 & 0 & -\Delta_z q_x\\
+%  \ep  q_y & 0 & 0 & -\Delta_z q_y\\
+%  0 & -\Delta_z q_x & -\Delta_z q_y & 0 
+% \epm,\\
+% M_{q^2} & =\frac{v^2 (\ep^2-\Delta_z^2)}{2\lt[\pi\alpha(\ep^2+\Delta_z^2)\rt]^3} 
+% \bpm
+% \ep^2q^2& 0 & 0 & -\ep\Delta_z q^2 \\
+%  0 & -(\ep^2-\Delta_z^2) (3q_x^2-q_y^2)/4 & - (\ep^2-\Delta_z^2) q_xq_y/2 & 0 \\
+%  0 & - (\ep^2-\Delta_z^2) q_xq_y/2 & -(\ep^2-\Delta_z^2) (3q_y^2-q_x^2)/4 & 0 \\
+% -\ep \Delta_z q^2  & 0 & 0 & \Delta_z^2q^2
+% \epm,
+% \end{align}
+% \eml
 
-from which the components of $\hat{K}$ are obtained. 
+% from which the components of $\hat{K}$ are obtained. 
 %Using the result for $M$ we, then, compute the tensor $\hat{K}$ as
 %\begin{equation}
 %\hat{K}_{}=
@@ -176,11 +177,11 @@ The components of the conductivity tensor $\hat{\sigma}$ at finite $\omega$ and 
 \beml
 \label{chap1:eq:sconductivity}
 \begin{align}
-  \sigma_{xx} &= \sigma_0+\frac{Dq^2}{i\omega-Dq^2}\left(\frac{q_y^2}{q^2} \sigma_0\right.\nonumber\\
-  & \left.-i\omega \tau_\text{tr}\left(\frac{2}{\pi\alpha}\frac{\varepsilon^2+2\Delta_z^2}{\varepsilon^2+\Delta_z^2}+\frac{3}{\pi\alpha}\frac{q_{x}^2-q_{y}^2}{2q^2}\right)\right)\\
+  \sigma_{xx} &= \sigma_0+\frac{Dq^2}{i\omega-Dq^2}\left(\frac{q_y^2}{q^2} \sigma_0
+  -i\omega \tau_\text{tr}\left(\frac{2}{\pi\alpha}\frac{\varepsilon^2+2\Delta_z^2}{\varepsilon^2+\Delta_z^2}+\frac{3}{\pi\alpha}\frac{q_{x}^2-q_{y}^2}{2q^2}\right)\right)\\
   %
-  \sigma_{yy} &=  \sigma_0+\frac{Dq^2}{i\omega-Dq^2}\left(\frac{q_x^2}{q^2} \sigma_0\right.\nonumber\\
-    &\left.-i\omega \tau_\text{tr}\left(\frac{2}{\pi\alpha}\frac{\varepsilon^2+2\Delta_z^2}{\varepsilon^2+\Delta_z^2}-\frac{3}{\pi\alpha}\frac{q_{x}^2-q_{y}^2}{2q^2}\right)\right)\\
+  \sigma_{yy} &=  \sigma_0+\frac{Dq^2}{i\omega-Dq^2}\left(\frac{q_x^2}{q^2} \sigma_0
+    -i\omega \tau_\text{tr}\left(\frac{2}{\pi\alpha}\frac{\varepsilon^2+2\Delta_z^2}{\varepsilon^2+\Delta_z^2}-\frac{3}{\pi\alpha}\frac{q_{x}^2-q_{y}^2}{2q^2}\right)\right)\\
     %
     \sigma_{xy} &= \sigma_\textrm{H}+\frac{Dq^2}{i\omega-Dq^2}\left(-\frac{q_xq_y}{q^2} \sigma_0-i\omega\tau_\text{tr}\frac{3}{\pi\alpha}\frac{q_xq_y}{q^2}\right)\\
     %
@@ -284,8 +285,7 @@ In the regime of $\alpha_\textrm{G}\ll f_0 \ll \ll \omega_0$ we can find the asy
 \begin{align}
 \partial_t \theta &= \sin \chi  \sin \phi  f(\bb{r},t) \big(\sin \chi  \sin \theta \cos \phi -\cos \chi  \cos \theta \big)\\
 \partial_t \phi &=\omega_0+f(r,t) 
-  \cos\theta\big(\cos ^2\chi  \cos ^2\phi-\sin^2\phi \nonumber\\
-  &-\frac{1}{2}\sin\chi(\cot\theta-\sin\theta) \big).
+  \cos\theta\big(\cos ^2\chi  \cos ^2\phi-\sin^2\phi -\frac{1}{2}\sin\chi(\cot\theta-\sin\theta) \big).
 \end{align}
 We take $f(\bb{r},t)=f_0\cos\omega t$ and assume that $f_0\ll\omega_0$, so that we find $\phi = \omega_0 t-\phi_0$. It is convenient to choose $\phi_0=\pi/2$ so that
 \begin{align}
