@@ -194,8 +194,7 @@ Equilibrium spin density, $\bb{s}_0$, corresponds to the limit of zero bias (or 
 
 Non-equilibrium contribution, $\delta\bb{s}$, describes the effects induced e.\,g. by a bias voltage, $V_\textrm{bias}$, such as the spin-orbit torques on magnetization. In the linear response we obtain, in the spirit of Eq.~(\ref{chap02:Landauer}), the formula
 \begin{align}
-\frac{\delta\bb{s}(\bb{r})}{\delta\mu} =  \frac{1}{4h} \sum_{\alpha}  &\lt[\Psi^{R\;\dagger}_{\alpha,E}(\bb{r}) \bb{\sigma}_{\sigma\sigma'} \Psi^{R}_{\alpha,E}(\bb{r}) \rt. \n\\
-&\; \lt. - \Psi^{L\;\dagger}_{\alpha,E}(\bb{r}) \bb{\sigma}_{\sigma\sigma'} \Psi^{L}_{\alpha,E}(\bb{r}) \rt],
+\frac{\delta\bb{s}(\bb{r})}{\delta\mu} =  \frac{1}{4h} \sum_{\alpha}  \lt[\Psi^{R\;\dagger}_{\alpha,E}(\bb{r}) \bb{\sigma}_{\sigma\sigma'} \Psi^{R}_{\alpha,E}(\bb{r}) \rt.  \lt. - \Psi^{L\;\dagger}_{\alpha,E}(\bb{r}) \bb{\sigma}_{\sigma\sigma'} \Psi^{L}_{\alpha,E}(\bb{r}) \rt],
 \label{chap02:noneq}
 \end{align}
 where $\delta\mu=eV_\textrm{bias}$ and the scattering states are taken at the Fermi energy.  Similarly to Eq.~(\ref{chap02:Landauer}), we assume here that the quantities $\Psi^{A\;\dagger}_{\alpha,E} \,\bb{\sigma}\, \Psi^{A}_{\alpha,E}$  have negligible energy dependence within the interval $\delta\mu$ around the Fermi energy. 
@@ -350,12 +349,12 @@ This results of Eqs.~(\ref{chap02:s_SOT}), (\ref{chap02:metal_SOT}) are remarkab
 The half-metal regime is represented by the Fermi energy $E=0.05\,t_h$ that corresponds to the presence of a single Fermi surface in one of the valleys. The conductivity in this regime acquires strong dependence on $\theta$. In particular, for $n_z^2<1/2$, the system is poorly conducting as one can see already in the second panel of Fig.~\ref{chap02:fig:mfp}. Remarkably, we still find that the coefficient $A_I$ in Eq.~(\ref{chap02:symmetry}) is entirely independent of $\theta$ and anti-damping like torques are vanishing identically, $B_{\parallel,\perp}=0$. The coefficients $A'_I$ and $C$ are, however, finite and acquire some dependence on $n_z^2$.   
 
 Thus, our numerical data in half-metal regime corresponds to the spin density
-\begin{align}
+\begin{multline}
 \label{chap02:result1}
 \delta\bb{s}_+= \frac{\Delta_\text{sd}\lambda}{2\pi evt_h^2}
-\Big(\,&a_I\,\hat{\bb{z}}\times \bb{j} + a'_I(n_z^2)\,\bb{n}_\parallel\times \lt[\bb{n}_\parallel\times \lt[\hat{\bb{z}}\times\bb{j}\rt]\rt]\n\\
-&+c(n_z^2)\,\bb{n}_\parallel\times \lt[\bb{n}_\perp\times \lt[\hat{\bb{z}}\times\bb{j}\rt]\rt]\Big),
-\end{align}
+\Big(\,&a_I\,\hat{\bb{z}}\times \bb{j} + a'_I(n_z^2)\,\bb{n}_\parallel\times \lt[\bb{n}_\parallel\times \lt[\hat{\bb{z}}\times\bb{j}\rt]\rt]\\
++c(n_z^2)\,\bb{n}_\parallel\times \lt[\bb{n}_\perp\times \lt[\hat{\bb{z}}\times\bb{j}\rt]\rt]\Big),
+\end{multline}
 where we also introduced the dimensionless functions $a'_I(n_z^2)$ and $c(n_z^2)$ that are shown in the middle and in the right panel of Fig.~\ref{chap02:fig:decomposition} for different impurity concentrations. 
 
 The last two terms in Eq.~(\ref{chap02:result1}) represent high-harmonics field-like torques that are finite only in the half-metal regime. On symmetry grounds one should generally expect the field-like torques to be largely insensitive to disorder. Even though, the disorder dependence of $a_I$ and $a'_I$ coefficients is indeed negligible, the one of the function $c(n_z^2)$ is still rather strong for $n_z^2<1/2$. One should, however, remember that the coefficient $c$ is standing in front of the vector form that is vanishing for both $n_z=0$ and $n_z=\pm 1$, so the fit accuracy near these points is poor. Moreover, the case of almost in-plane N\'eel vector, $n_z^2\ll 1/2$, corresponds to the poorly conducting sample whose conductance is dominated by the variable range hopping processes due to strong disorder. Thus, we attribute this seemingly strong dependence of $c$ on disorder concentration to the mechanism of conduction. Still, the value of $c$ is found to be about 5 times larger than that of $a_I$ and about 10 times larger than that of $a'_I$, which makes the high-harmonic $c$-torque relevant in the half-metal regime. We note that the non-equilibrium spin density, which is proportional to $c(n_z^2)$, is directed perpendicular to the electron plane.  
@@ -366,11 +365,11 @@ Overall, the half-metal regime is characterized by the torques
 \begin{align}
 \bb{T}^\ell_+=\eta \Big(\,&a_I\bb{n} \!\times\!\lt[\hat{\bb{z}}\!\times\!\bb{j}\rt] + 
 a'_I(n_z^2)\, \bb{n}\!\times\!\lt[\bb{n}_\parallel\!\times\! \lt[\bb{n}_\parallel\!\times\! \lt[\hat{\bb{z}}\!\times\! \bb{j}\rt]\rt]\rt]\n\\
-&+c(n_z^2)\, \bb{n}\!\times\!\lt[\bb{n}_\parallel\!\times\! \lt[\bb{n}_\perp\!\times\! \lt[\hat{\bb{z}}\!\times\! \bb{j}\rt]\rt]\rt]\Big),
+&\hspace{2cm}+c(n_z^2)\, \bb{n}\!\times\!\lt[\bb{n}_\parallel\!\times\! \lt[\bb{n}_\perp\!\times\! \lt[\hat{\bb{z}}\!\times\! \bb{j}\rt]\rt]\rt]\Big),
 \label{chap02:torque_Tplus}\\
 \bb{T}^m_+=\eta \Big(\,&a_I\bb{m} \!\times\!\lt[\hat{\bb{z}}\!\times\!\bb{j}\rt] + 
 a'_I(n_z^2)\, \bb{m}\!\times\!\lt[\bb{n}_\parallel\!\times\! \lt[\bb{n}_\parallel\!\times\! \lt[\hat{\bb{z}}\!\times\! \bb{j}\rt]\rt]\rt]\n\\
-&+c(n_z^2)\, \bb{m}\!\times\!\lt[\bb{n}_\parallel\!\times\! \lt[\bb{n}_\perp\!\times\! \lt[\hat{\bb{z}}\!\times\! \bb{j}\rt]\rt]\rt]\Big),
+&\hspace{2cm}+c(n_z^2)\, \bb{m}\!\times\!\lt[\bb{n}_\parallel\!\times\! \lt[\bb{n}_\perp\!\times\! \lt[\hat{\bb{z}}\!\times\! \bb{j}\rt]\rt]\rt]\Big),
 \label{chap02:torque_Tminus}
 \end{align}
 \eml
@@ -464,8 +463,8 @@ To do that we represent the vector $\bb{m}^\textrm{A}=\bb{m}_\parallel^\textrm{A
 which are expressed as
 \begin{align}
 \delta\bb{s}_{\zeta\kappa}=
-&\frac{1}{4}\Big(\delta\bb{s}^\textrm{A}[\bb{m}^\textrm{A}_\perp,\bb{m}^\textrm{A}_\parallel]+\zeta\, \delta\bb{s}^\textrm{A}[-\bb{m}^\textrm{A}_\perp,\bb{m}^\textrm{A}_\parallel]\n\\
-&+\kappa\, \delta\bb{s}^\textrm{A}[\bb{m}^\textrm{A}_\perp,-\bb{m}^\textrm{A}_\parallel]+\zeta\kappa\, \delta\bb{s}^\textrm{A}[-\bb{m}^\textrm{A}_\perp,-\bb{m}^\textrm{A}_\parallel]\Big), 
+\frac{1}{4}\Big(\delta\bb{s}^\textrm{A}[\bb{m}^\textrm{A}_\perp,\bb{m}^\textrm{A}_\parallel]+\zeta\, \delta\bb{s}^\textrm{A}[-\bb{m}^\textrm{A}_\perp,\bb{m}^\textrm{A}_\parallel]
++\kappa\, \delta\bb{s}^\textrm{A}[\bb{m}^\textrm{A}_\perp,-\bb{m}^\textrm{A}_\parallel]+\zeta\kappa\, \delta\bb{s}^\textrm{A}[-\bb{m}^\textrm{A}_\perp,-\bb{m}^\textrm{A}_\parallel]\Big), 
 \end{align}
 where $\zeta$ and $\kappa$ take on the values $\pm 1$. 
 
@@ -505,10 +504,10 @@ Remarkably, our numerical data again corresponds to a constant coefficient $A_I(
 
 The spin orbit torque $\bb{T}^A$, which is obtained by substituting the result of Eq.~(\ref{sA}) to Eq.~(\ref{TA}), can be represented as the sum of only four vector forms 
 \begin{align}
-\bb{T}^\textrm{A}= \eta \Big(&a_I(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\hat{\bb{z}}\times \bb{j}\rt] \n\\
-&+ b_\perp(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\n\\
-&+b_\parallel(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\parallel\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\n\\
-&+c(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\parallel\times \lt[\bb{m}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\rt]\Big),
+\bb{T}^\textrm{A}= \eta \Big(&a_I(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\hat{\bb{z}}\times \bb{j}\rt] 
++ b_\perp(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\n\\
+&+b_\parallel(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\parallel\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]
++c(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\parallel\times \lt[\bb{m}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\rt]\Big),
 \label{TAresult}
 \end{align}
 where we again introduce $\eta=J\mathcal{A}\Delta_\text{sd}\lambda /evh t_h^2$, $\bb{j}=\bb{I}/W$ and the dimensionless coefficients $a_I$, $b_\perp$, $b_\parallel$, and $c$ that all appear to be non-trivial functions of $n_z^2=\cos^2\theta$ as shown in Fig.~\ref{fig:result_as}. Note that the function $A'_I(n_z^2)$ in Eq.~(\ref{sA}) for spin density contributes to both $a_I$ and $c$ coefficients in Eq.~(\ref{TAresult}) in the direct analogy to Eqs.~(\ref{torque_Tplus_MOD}) and (\ref{renorm}). 
