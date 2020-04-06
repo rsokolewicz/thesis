@@ -365,11 +365,11 @@ Overall, the half-metal regime is characterized by the torques
 \begin{align}
 \bb{T}^\ell_+=\eta \Big(\,&a_I\bb{n} \!\times\!\lt[\hat{\bb{z}}\!\times\!\bb{j}\rt] + 
 a'_I(n_z^2)\, \bb{n}\!\times\!\lt[\bb{n}_\parallel\!\times\! \lt[\bb{n}_\parallel\!\times\! \lt[\hat{\bb{z}}\!\times\! \bb{j}\rt]\rt]\rt]\n\\
-&\hspace{2cm}+c(n_z^2)\, \bb{n}\!\times\!\lt[\bb{n}_\parallel\!\times\! \lt[\bb{n}_\perp\!\times\! \lt[\hat{\bb{z}}\!\times\! \bb{j}\rt]\rt]\rt]\Big),
+&\hspace{3cm}+c(n_z^2)\, \bb{n}\!\times\!\lt[\bb{n}_\parallel\!\times\! \lt[\bb{n}_\perp\!\times\! \lt[\hat{\bb{z}}\!\times\! \bb{j}\rt]\rt]\rt]\Big),
 \label{chap02:torque_Tplus}\\
 \bb{T}^m_+=\eta \Big(\,&a_I\bb{m} \!\times\!\lt[\hat{\bb{z}}\!\times\!\bb{j}\rt] + 
 a'_I(n_z^2)\, \bb{m}\!\times\!\lt[\bb{n}_\parallel\!\times\! \lt[\bb{n}_\parallel\!\times\! \lt[\hat{\bb{z}}\!\times\! \bb{j}\rt]\rt]\rt]\n\\
-&\hspace{2cm}+c(n_z^2)\, \bb{m}\!\times\!\lt[\bb{n}_\parallel\!\times\! \lt[\bb{n}_\perp\!\times\! \lt[\hat{\bb{z}}\!\times\! \bb{j}\rt]\rt]\rt]\Big),
+&\hspace{3cm}+c(n_z^2)\, \bb{m}\!\times\!\lt[\bb{n}_\parallel\!\times\! \lt[\bb{n}_\perp\!\times\! \lt[\hat{\bb{z}}\!\times\! \bb{j}\rt]\rt]\rt]\Big),
 \label{chap02:torque_Tminus}
 \end{align}
 \eml
@@ -461,11 +461,12 @@ To do that we represent the vector $\bb{m}^\textrm{A}=\bb{m}_\parallel^\textrm{A
 \delta\bb{s}^\textrm{A}[\bb{m}^\textrm{A}_\perp,\bb{m}^\textrm{A}_\parallel]= \delta\bb{s}_{++}+ \delta\bb{s}_{+-}+\delta\bb{s}_{-+}+\delta\bb{s}_{--},
 \e
 which are expressed as
-\begin{align}
+\begin{multline}
 \delta\bb{s}_{\zeta\kappa}=
 \frac{1}{4}\Big(\delta\bb{s}^\textrm{A}[\bb{m}^\textrm{A}_\perp,\bb{m}^\textrm{A}_\parallel]+\zeta\, \delta\bb{s}^\textrm{A}[-\bb{m}^\textrm{A}_\perp,\bb{m}^\textrm{A}_\parallel]
-+\kappa\, \delta\bb{s}^\textrm{A}[\bb{m}^\textrm{A}_\perp,-\bb{m}^\textrm{A}_\parallel]+\zeta\kappa\, \delta\bb{s}^\textrm{A}[-\bb{m}^\textrm{A}_\perp,-\bb{m}^\textrm{A}_\parallel]\Big), 
-\end{align}
++\kappa\, \delta\bb{s}^\textrm{A}[\bb{m}^\textrm{A}_\perp,-\bb{m}^\textrm{A}_\parallel]\\
++\zeta\kappa\, \delta\bb{s}^\textrm{A}[-\bb{m}^\textrm{A}_\perp,-\bb{m}^\textrm{A}_\parallel]\Big), 
+\end{multline}
 where $\zeta$ and $\kappa$ take on the values $\pm 1$. 
 
 The bare results for non-equilibrium spin density $\delta\bb{s}^\textrm{A}$ (with a subtracted background component along $\bb{m}^\textrm{A}$) and the results for the contributions $\delta\bb{s}_{\zeta\kappa}$ are shown in Fig.~\ref{chap02:fig:density_as} for the metal regime, $E=0.3\,t_h$. Similar results are obtained for the half-metal regime, $E=0.1\,t_h$. 
@@ -506,8 +507,8 @@ The spin orbit torque $\bb{T}^A$, which is obtained by substituting the result o
 \begin{align}
 \bb{T}^\textrm{A}= \eta \Big(&a_I(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\hat{\bb{z}}\times \bb{j}\rt] 
 + b_\perp(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\n\\
-&+b_\parallel(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\parallel\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]
-+c(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\parallel\times \lt[\bb{m}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\rt]\Big),
+&+b_\parallel(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\parallel\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\n\\
+&+c(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\parallel\times \lt[\bb{m}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\rt]\Big),
 \label{TAresult}
 \end{align}
 where we again introduce $\eta=J\mathcal{A}\Delta_\text{sd}\lambda /evh t_h^2$, $\bb{j}=\bb{I}/W$ and the dimensionless coefficients $a_I$, $b_\perp$, $b_\parallel$, and $c$ that all appear to be non-trivial functions of $n_z^2=\cos^2\theta$ as shown in Fig.~\ref{fig:result_as}. Note that the function $A'_I(n_z^2)$ in Eq.~(\ref{sA}) for spin density contributes to both $a_I$ and $c$ coefficients in Eq.~(\ref{TAresult}) in the direct analogy to Eqs.~(\ref{torque_Tplus_MOD}) and (\ref{renorm}). 

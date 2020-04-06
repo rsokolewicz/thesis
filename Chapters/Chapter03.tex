@@ -224,11 +224,11 @@ Before proceeding with the microscopic analysis of Gilbert damping we shall disc
 As was already mentioned, the spin-orbit torques originate in the response of nonequilibrium spin polarizations $\delta\bb{s}^\pm$ to electric current. Technically, we compute first the response of $\delta\bb{s}^\pm$ to electric field and, then, express the electric field in terms of 2D electric current density $\bb{j}$ using the conductivity tensor of Eq.~(\ref{chap03:conductivity}).
 
 A straightforward computation of such a response gives $\delta\bb{s}^-=0$ (see Appendixes~\ref{chap03:sec:appb} and \ref{chap03:sec:appc} for more detail) and 
-\begin{align}
+\begin{multline}
 \label{chap03:sp}
-\delta\bb{s}^+= \,&a(n_z^2)\;\hat{\bb{z}}\times \bb{j} + b(n_z^2)\, \bb{n}_\parallel\times(\bb{n}_\parallel\times \lt(\hat{\bb{z}}\times \bb{j}\rt)) \n\\
-&+ c(n_z^2)\, \bb{n}_\parallel \times(\bb{n}_\perp\times \lt(\hat{\bb{z}}\times \bb{j}\rt)),
-\end{align}
+\delta\bb{s}^+= a(n_z^2)\;\hat{\bb{z}}\times \bb{j} + b(n_z^2)\, \bb{n}_\parallel\times(\bb{n}_\parallel\times \lt(\hat{\bb{z}}\times \bb{j}\rt))\\
++ c(n_z^2)\, \bb{n}_\parallel \times(\bb{n}_\perp\times \lt(\hat{\bb{z}}\times \bb{j}\rt)),
+\end{multline}
 where the coefficients $a$, $b$ and $c$ do generally depend on $n_z^2=1-n_x^2-n_y^2$ and are shown in Fig.~\ref{chap03:fig:abc}. 
 It is appropriate to recall here that the computation of the responses from the model of Eq.~(\ref{chap03:eff}) refers to the case when $\bb{m}=0$. The symmetry form of Eq.~(\ref{chap03:sp}) in this case has been also established recently from numerical simulations \cite{sumit2019}.
 
@@ -321,13 +321,14 @@ while the vectors forms $\Gamma_{ab}$ can be written as
 \bb{\Gamma}_{mn}=&\,
 \bb{n}\!\times\!(\bb{m}_\parallel\!\times\!\dot{\bb{n}}_\perp) 
 - \bb{m}_\perp\!\times\!(\bb{n}_\parallel\!\times\!\dot{\bb{n}}_\perp)
-+\bb{n}_\perp\!\times\!(\bb{m}_\perp\!\times\!\dot{\bb{n}}_\parallel) 
-- \bb{n}_\parallel\!\times\!(\bb{m}_\parallel\!\times\!\dot{\bb{n}}_\parallel)\n\\
-&- 3\bb{m}_\perp\!\times\!(\bb{n}_\perp\!\times\!\dot{\bb{n}}_\parallel),\\
++\bb{n}_\perp\!\times\!(\bb{m}_\perp\!\times\!\dot{\bb{n}}_\parallel) \n\\
+&- \bb{n}_\parallel\!\times\!(\bb{m}_\parallel\!\times\!\dot{\bb{n}}_\parallel)
+- 3\bb{m}_\perp\!\times\!(\bb{n}_\perp\!\times\!\dot{\bb{n}}_\parallel),\\
 \bb{\Gamma}_{nm}=&\,2\bb{n}_\parallel\!\times\!(\bb{m}_\parallel\!\times\!\dot{\bb{m}}_\perp)+ 
 2\bb{m}_\parallel\!\times\!(\bb{n}_\perp\!\times\!\dot{\bb{m}}_\parallel)
--\bb{n}_\perp\!\times\!(\bb{m}_\perp\!\times\!\dot{\bb{m}})+2 \bb{m}_\perp\!\times\!(\bb{n}\!\times\!\dot{\bb{m}})\n\\
-&+ \bb{m}_\parallel\!\times\!(\bb{n}\!\times\!\dot{\bb{m}}_\perp) 
+-\bb{n}_\perp\!\times\!(\bb{m}_\perp\!\times\!\dot{\bb{m}})\n\\
+&+2 \bb{m}_\perp\!\times\!(\bb{n}\!\times\!\dot{\bb{m}})
++ \bb{m}_\parallel\!\times\!(\bb{n}\!\times\!\dot{\bb{m}}_\perp) 
 - \bb{m}_\perp\!\times\!(\bb{n}_\perp\!\times\!\dot{\bb{m}}_\parallel),\\
 \bb{\Gamma}_{nn}=&\,-\bb{m}\times(\bb{n}\times\dot{\bb{n}}_\parallel).
 \end{align}
