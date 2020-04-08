@@ -138,41 +138,40 @@
 \cleardoublepage
 \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
-\include{Chapters/linear_response}
+\include{Chapters/}
 \cleardoublepage
 \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
 
 \part{Ferromagnets}
-\include{Chapters/Chapter01}
+\include{Chapters/Introduction2}
+\cleardoublepage
+\addtocontents{toc}{\protect\vspace{\beforebibskip}}%
+
+\include{Chapters/Chapter01} % Diffusive spin-orbit torques in a Dirac ferromagnet
 \cleardoublepage
 \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
 
 \part{Antiferromagnets}
-\include{Chapters/Chapter02}
+\include{Chapters/Introduction3}
 \cleardoublepage
 \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
-% \addtocontents{toc}{\protect\clearpage} % <--- just debug stuff, ignore
-\include{Chapters/Chapter03}
+\include{Chapters/Chapter02} % Numerical approach to calculating Spin-orbit torques
 \cleardoublepage
 \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
-\include{Chapters/chapter4}
+\include{Chapters/Chapter03} % Analytical approach to calculating Spin-orbit torques
 \cleardoublepage
 \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
-% \include{Chapters/chapter5}
-% \cleardoublepage
-% \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
+\include{Chapters/Chapter04} % Highly anisotropic Gilbert Damping
+\cleardoublepage
+\addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
-% \include{Chapters/chapter6}
-% \cleardoublepage
-% % \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
 \include{Chapters/conclusion}
-% % %\include{multiToC} % <--- just debug stuff, ignore for your documents
 % ********************************************************************
 % Backmatter
 %*******************************************************
@@ -180,6 +179,7 @@
 \renewcommand{\thechapter}{\alph{chapter}}
 \cleardoublepage
 \part{Appendix}
+\include{Chapters/linear_response}
 \include{Chapters/Chapter0A}
 \include{Chapters/Chapter0B}
 \include{Chapters/Chapter0C}
