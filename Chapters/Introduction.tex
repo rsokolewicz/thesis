@@ -18,7 +18,7 @@ Electronics all revolve around the control of the charge of electrons. These ele
 
 % After the discovery of the first real two-dimensional crystal --- graphene --- many others were found. 
 
-\section{Spintronics in ferromagnets}
+\subsection{Spintronics in ferromagnets}
 The electronic control of ferromagnetic domains is described by spin-torques. The misalignment of the spins of conducting electrons and the magnetic moment of localized electrons lead to so-called spin-torques. These torques that are induced by electric currents are the key concept in spintronics and can be used to the reverse the direction of magnetization and to drive magnetic domain walls. We distinguish two types of current-induced spin torque: spin-transfer torque and spin-orbit torque. Spin-transfer torques generally vanish in uniform magnets and are proportional to gradients in magnetization. These torques arise from the transfer of spin angular momentum from a spin-current to the spin degree of freedom of a ferromagnetic region.  On the other hand, the spin-orbit torque is in general proportional to magnetization (and can therefore be found in uniform magnets) and is mediated by spin-orbit interactions. 
 
 This last type of torque was first found in systems with a heavy metal layer [9], where the spin Hall
@@ -33,8 +33,7 @@ only spin-orbit interaction, spin and momentum are highly correlated. It is beli
 spin-momentum locking – together with the topological properties of the TI – could lead to even
 greater charge-spin conversion [23]. 
 
-\section{Spintronics in antiferromagnets}
-%%%
+\subsection{Spintronics in antiferromagnets}
 Antiferromagnets (AFMs) have received a great deal of attention due to their high temperature magnetic order in a large variety of materials. The study of
 AFMs have uncovered many interesting properties. For example, the AFM has zero magnetic order, is
 insensitive to external fields and contains no internal stray fields.
@@ -67,7 +66,7 @@ type of torques are responsible for this. The development of predictive and qual
 Unfortunately, the dynamics of magnetization and spin in AFMs is far more complicated
 than in FMs, so that few theoretical models exist for this system.
 
-The first theoretical model describing STTs in AFMs was done constructed in 2006. where
+The first microscopic model describing STTs in AFMs was done constructed in 2006. where
 the researchers numerically studied a one-dimensional spin chain with antiferromagnetic
 order and made first predictions on switching induced by electric currents. Later
 theoretical work consisted of more detailed numerical calculations and solving tight binding
@@ -77,69 +76,9 @@ parameters are important. In 2017 a model was proposed that is based on spin
 diffusion. Although this model does take the effect of disorder into account, it requires
 electrons to diffuse into neighboring layers. 
 
-\section{s--d model}
+\section{Ferromagnetic vs Antiferromagnetic Magnetization-Dynamics}
 Our model consists of two parts. The first part are the conducting electrons who's Hamiltonian is given by a tight-binding model. These conducting electrons can scatter of impurities in the material leading to having a finite momentum life-time. At the same time the spin of the electrons are coupled to its momentum through spin-orbit interactions, making it possible to transfer this angular momentum to the crystal lattice. The second part is the (anti)ferromagnet which we describe using a Heisenberg model in a classical limit, meaning we replace the spin-operators with vectors that are constrained to lie on a unit-sphere. In order to transfer angular momentum between localized and itinerant electrons, We therefore need to introduce a parameter that couples the spin and magnetic moment locally. Such a parameter is similar to what is found in the s--d model, which couples localized $d$ and itinerant $s$ electrons. 
 
-In order to compute a spin-torque, all we need to do is compute the spin-density of the conducting electrons, which is done using linear response theory. 
-
-\section{Ferromagnetic vs Antiferromagnetic Magnetization-Dynamics}
-The dynamics of the magnetization vector in ferromagnets and antiferromagnets are determined by spin-torques. These torques can be divided into two groups: field-like and damping-like. For antiferromagnets each group can be subdivided into two: staggered and non-staggered. In a two-dimensional ferromagnet with spin-orbit of Rashba type, the equations of motion are often written phenomenologically as
-\begin{equation}
-    \partial_t \bb{n} = c_1 \bb{n}\times (\hat{\bb{z}}\times\bb{j}) + c_2 \bb{n}\times\big(\bb{n}\times (\hat{\bb{z}}\times{j})\big) + \alpha \bb{n}\times \partial_t \bb{n},
-\end{equation}
-where the terms proportional to $c_1$ and $c_2$ are torques that are induced by injecting an electric current $\bb{j}$ and the term proportional to $\alpha$ describes the rate of dissipation of angular momentum and is called Gilbert damping. The field-like and damping-like torques can be identified as those that are respectively even and odd under time-reversal (i.e. changing the signs of $\bb{n}$, $\bb{j}$ and $t$). Distinguising between field-like and damping-like torques helps us understand more the dynamics of $\bb{n}$. For example, if the damping-like torques are absent one will only observe a simple precession of the magnetization vector around $\hat{\bb{z}}\times\bb{j}$. Damping-like torques allow for the dissipation of angular momentum so that over time the magnezation vector will be parallel to $\hat{\bb{z}}\times\bb{j}$. The dynamics induced by both field-like and damping-like torques are illustrated in Figure~\ref{fig:dynamics}. Note that we can change the sign of the damping-like torque by changing the direction of the electric current. If this current-induced damping-like torque overcomes the Gilbert damping one can even reverse the magnetization direction. In such a way one can construct a magnetic memory that stores a "0" or a "1" corresponding to two magnetization directions. This type of switching is illustrated in Figure~\ref{fig:switching}. The switching rate is determined by the strength of the damping-like torque which is proportional to Rashba spin-orbit coupling. {\color{blue} [some numbers for various materials. probably all less than 1eV].} It is then no surprise that putting a magnetic layer on top of a heavy metal will enhance its magnetic switching abilities. 
-
-In an antiferromagnet however, the magnetization dynamics is more complicated. The magnetizations on two sublattices are aligned opposite to each other 
-
-
-
-
-
-The misalignment between the spin of the conducting electrons and the direction of the magnetic moment of localized electrons induces a spin-torque that enter the equations of motion of the magnetization vector. In order to see this let us first consider the total energy $H$ of the magnetic system
-\begin{equation}
-    H_M = \int \mathrm{d}\bb{r}\, \Delta_\text{sd} \bb{n}\cdot\bb{s}
-\end{equation}
-The equations of motion can be derived by either writing the magnetic moments as quantum spins $\hat{S}$ and use Heisenberg's equation of motion $\partial_t \hat{S} = i\hbar[H, \hat{S}]$, by poisson brackets $\{H,S\}_{p}$ or by calculating the effect field. We easily obtain
-\begin{equation}
-    \partial_t \bb{n} = \Delta_\text{sd}\bb{n}\times\bb{s}.
-\end{equation}
-In this thesis we focus on spin-densities that are in response to currents and to time-derivatives of magnetization. One example would be
-\begin{equation}
-    \partial_t \bb{n} = \beta \bb{n}\times \hat{\bb{z}}\times\bb{j} + \beta \bb{n}\times\bb{n}\times \hat{\bb{z}}\times{j} + \alpha \bb{n}\times \partial_t \bb{n}
-\end{equation}
-It is convenient to decompose current-induced torques in terms that are even under time-reversal (proportional to $\beta$) and in terms that are odd (proportional to $\beta'$), which are often called field-like and damping-like torques. The field-like torques are observed as a simple precession of $\bb{n}$ around $\bb{j}$, whereas the damping-like torques are dissipative and can orient $\bb{n}$ either parallel or anti-parallel to $\bb{j}$. 
-\section{linear response formula}
-The $dc$ linear-response formulas that we use are given by:
-\begin{align}
-    \bb{s}^\pm_\alpha = \int\frac{\mathrm{d}^2\bb{p}}{(2\pi)^2}\,\tr \langle G_{\bb{p}}^\text{R} \hat{{\chi}}_\alpha G_{\bb{p}}^\text{A} \hat{s}_\beta\rangle ,
-\end{align}
-where $G_{\bb{p}}^\text{R(A)}$ are retarded and advanced Green function in momentum-space, $\hat{s}^+ = \sigma_\beta$, $\hat{s}_\beta^-=\sigma_\beta\Sigma_z \Lambda_z$ are the operators corresponding to the spin-polarization $\bb{s}^+$ and staggered spin-polarization $\bb{s}^-$, $\hat{\chi}_\alpha$ is the perturbation that the spin-density is in response to, and the angular brackets $\langle\cdots\rangle$ denote disorder-averaging which will be explained below. The response to electric current density $\bb{j}$ is defined by $\hat{\chi}_\beta = (e v /\sigma_{xx})\, \Sigma_\beta$, where $\sigma_{xx}$ is the longitudinal conductivity (measured in units of e$^2$/h) as defined in Eq.~(\ref{intro:eq:long_cond}). Response to magnetization $\partial_t m_\beta$ and $\partial_t n_\beta$, is defined through $\hat{\chi}_\beta = \Delta \sigma_\beta$ and $\hat{\chi}_\beta = \Delta \sigma_\beta \Sigma_z\Lambda_z$. 
-
-Our formula for linear-response is defined for zero temperature and we neglect contributions originating from the Fermi-sea (the so-called Streda contribution).  In most samples it is inevitable to have a certain degree of disorder. It is therefore important to take into account disorder in our calculations. As mentioned in the Main Text, we model disorder as an average ensemble of impurities with short-range on-site potential. In order to quantify the effect of disorder, two important steps must be performed. Firstly, we replace the clean Green functions in the linear response formula, with disordered ones. Secondly we replace one of the vertices with one that is corrected with disorder-averaging.
-
-In order to replace the bare Green function with a disordered one, one needs to include a self-energy. This self-energy gives rise to the finite momentum-life-time of the electron and restores translational invariance.  In low concentration of impurities (which we refer to as the clean metal limit, i.e. $\alpha\rightarrow0$) and neglecting contributions from rare-scattering events (such as multiple scattering off the same impurity), one can use the Born approximation
-
-\begin{equation}
-\Sigma^\text{R(A)} = 2\pi\alpha \int \frac{\mathrm{d}\bb{p}}{(2\pi)^2}\,G^\text{R(A)}_{\vec{p},\varepsilon},
-\end{equation}
-
-whose imaginary part is given by $\im \Sigma^\text{R(A)} = \pi\alpha/4\,(\varepsilon + \Delta \bb{l}\cdot\bb{\sigma}\Sigma_z\Lambda_z)$. The real-part of the self-energy leads to a small spectrum-shift that we do not consider. 
-
-For the second step in disorder averaging, we need to replace one of the vertex functions with one that is corrected for disorder in the ladder approximation (as illustrated in Figure~\ref{fig:diagrams}-b). We call this new vertex function the vertex-corrected function. 
-By denoting $\hat{\chi}^{\text{vc}}$ as the vertex-corrected function of $\hat{\chi}$ and $\hat{\chi}^i$ as the function containing $i$ disorder-lines, the ladder approximation is given by:
-\begin{align}
-    \hat{\chi}^\text{vc}
-      &=           
-        \hat{\chi}+\hat{\chi}^1+\hat{\chi}^2+\cdots,
-        \label{intro:eq:ladder}
-\end{align}
-where $\hat{\chi}^i$ is given by:
-\begin{align}
-    \hat{\chi}^\text{i} = 2\pi\alpha_d\int\frac{\mathrm{d}^2\bb{p}}{(2\pi)^2} G_{\bb{p}}^\text{R}\hat{\chi}^\text{i-1}G_{\bb{p}}^\text{A}
-    \label{intro:eq:onedisorderline}
-\end{align}
-
-\section{s--d model}
 An attractive model that qualitatively describes magnetization dynamics, driven by electric currents is the s--d model. The model consists of two systems: a lattice with localized magnetic moments and a tight-binding model describing the conducting electrons. A phenomenological parameter denoted $\Delta_\text{sd}$, couples the two systems. 
 
 , which allows the transfer of spin angular momentum from one to the other. This simple model is enough to describe a whole range of phenomena, ranging from the Kondo effect to ... 
@@ -182,118 +121,31 @@ next we write $\bb{S}^\text{A(B)}=-|S|\bb{n}^\text{A(B)}$, with $|S|$ the total 
 \end{align}
 the external field is absorbed into $\bb{s}^+$. The term $\bb{m}\times\bb{s}^-$ is generally to as Neel torque. Note that contrary to ferromagnets, the dynamics of antiferromagnets contains a term $\bb{l}\times\bb{m}$ that is proportional to the exchange energy. 
 
-
-
-\section{old}
-
-The Heisenberg equation of motion for an operator $\hat{S}_i^\alpha$ is given by $\partial_t \hat{S}=i/\hslash\,[\hat{H},\hat{S}]$. Using Eq.~(\ref{intro:eq:Hm}) we find:
-\begin{multline}
-    \partial_t \hat{\bb{S}}_{k'} =
-        \hat{\bb{S}}_{k'}\times 
-            \big (
-                \sum_{l} J_{\text{ex},k'l} \hat{\bb{S}}_l - K_{k'l} \hat{S}^z_l\,\hat{\bb{z}}-J_{\text{sd},k'l} \hat{c}^\dagger_l\hat{\bb{\sigma}}\hat{c}_l\\
-                -\gamma_0 \bb{H}_\text{ext}
-            \big )
-\end{multline}
-where the gyromagnetic ratio $\gamma_0=2\mu_0$ and we used that spin-operators on different sites $l$ and $m$ commute together with the usual commutator relations for spin-1/2-operators: $[\hat{S}_l^\alpha,\hat{S}_m^\beta] = 2 i \,\delta_{lm} \epsilon_{\alpha\beta\gamma}\hat{S}_l^\gamma$, (where $\epsilon_{ijk}$ is the Levi-Civita symbol and $\alpha,\beta,\gamma$ correspond to vector components $x,y,z$) and  
-\begin{align}
-    [\hat{S}_k^\alpha\hat{S}_l^\alpha,\hat{S}_{k'}^\beta] &= \hat{S}_k^\alpha[\hat{S}_l^\alpha,\hat{S}_{k'}^\beta]+[\hat{S}_k^\alpha,\hat{S}_{k'}^\beta]\hat{S}^\alpha_l\nonumber\\
-    & = 2i\epsilon_{\alpha\beta\gamma}\, (\delta_{lk'}\hat{S}_{k}^\alpha\hat{S}_{k'}^\gamma +\delta_{kk'}\hat{S}_{k'}^\gamma\hat{S}_{l}^\alpha)\nonumber\\
-    &=-2 i \,(\delta_{lk'}(\hat{\bb{S}}_k \times\hat{\bb{S}}_{k'})^\beta -\delta_{kk'}(\hat{\bb{S}}_{k'}\times\hat{\bb{S}}_l)^\beta),
-\end{align}
-(where the first term is equal to the second when summing over $k$ and ${l}$)
-and similarly that $[\hat{S}_k^\alpha H^\alpha,\hat{S}^\beta_{k'}] = 2i \delta_{kk'}(\hat{\bb{S}_k}\times\bb{H})^\beta$. 
-
-We proceed by going from discrete coordinates $k'$ to continuous coordinates $\bb{r}$, so that
-\begin{multline}
-    \partial_t \hat{\bb{S}}_{\bb{r}} =
-        \hat{\bb{S}}_{\bb{r}}\times 
-            \big (
-                J_\text{ex}\sum_{\bb{\delta}}\hat{\bb{S}}_{\bb{r}+\bb{\delta}} - K\hat{S}^z_{\bb{r}}\,\hat{\bb{z}}\\-J_\text{sd} \hat{c}^\dagger_{\bb{r}}\hat{\bb{\sigma}}c_{\bb{r}}
-                -\gamma_0 \bb{H}_\text{ext}
-            \big ),
-\end{multline}
-where we only considered local contributions to anisotropy and s--d energy, i.e. $J_{\text{sd},kl}=J_\text{sd}\delta_{kl}$ and $K_{kl}=K\delta_{kl}$, and that $J_{\text{ex},kl}=J_\text{sd}$ when $k$ and $l$ belong to nearest neighbors and zero elsewhere. 
-
-For an antiferromagnet the sign of the spin alternates for each subsequent site. It is therefore convenient to introduce to two sublattices A and B, where each site belonging to A has nearest neighbors belonging to B and vice versa:
-\begin{multline}
-    \partial_t \hat{\bb{S}}_{\bb{r}}^\text{A} =
-        \hat{\bb{S}}_{\bb{r}}^\text{A}\times 
-            \big (
-                J_\text{ex}N\hat{\bb{S}}_{\bb{r}}^\text{B} - K\hat{S}^{z\text{A}}_{\bb{r}}\,\hat{\bb{z}}\\-J_\text{sd} \hat{c}_{\bb{r}}^{\dagger \text{A}}\bb{\sigma}\hat{c}_{\bb{r}}^{\text{A}}
-                -\gamma_0 \bb{H}_\text{ext}
-            \big ) \label{intro:eq:dsa}
-\end{multline}
-where $N$ is coordination number of the crystal (3 for honeycomb lattice). Next, we replace the operators $\hat{\bb{S}}^\text{A(B)}$ with their mean-field associated vectors $\bb{S}^\text{A(B)}  =|\bb{S}|\bb{n}^\text{A(B)}$, where $\bb{n}$ is a unit-vector describing the localized spins. Similarly, $\bb{s}^{\text{A(B)}}=\mathcal{A}^{-1}\langle \hat{c}^{\text{A(B)}\dagger}\bb{\sigma}\hat{c}^\text{A(B)}\rangle$ is the expectation value of the conducting electron spin-polarization-density and $\mathcal{A}$ is the area of the unit cell. The equations of motion that we consider then reads:
-\begin{align}
-    \partial_t \bb{n}^\text{A} &=
-        \bb{{n}}^\text{A}\times 
-            \big (
-                J\bb{{n}}^\text{B} - K' n_z^{\text{A}}\,\hat{\bb{z}}-\Delta_\text{sd} \bb{s}^\text{A}
-                -\gamma_0 \bb{H}_\text{ext}
-            \big )\nonumber\\
-    \partial_t \bb{n}^\text{B} &=
-\bb{{n}}^\text{B}\times 
-    \big (
-        J\bb{{n}}^\text{A} - K'n_z^{\text{B}}\,\hat{\bb{z}}-\Delta_\text{sd} \bb{s}^\text{B}
-        -\gamma_0 \bb{H}_\text{ext}
-    \big )%
-    \label{intro:eq:dsab}
-\end{align}
-where $J=NSJ_\text{ex}$, $K'=SK$, $\Delta_\text{sd}=\mathcal{A}J_\text{sd}$. In the following we just write $J$ and $K$ for brevity. 
-
-We finish this section by writing the final equations of motion on the average magnetization $\bb{m}=1/2(\bb{n}^\text{A}+\bb{n}^\text{B})$ and antiferromagnetic order (Neel) $\bb{l}=1/2(\bb{n}^\text{A}-\bb{n}^\text{B})$ 
-\begin{align}
-    \partial_t \bb{l} = & 2J \bb{l}\times\bb{m} - K  (\bb{l}\times \bb{m_z}+\bb{m}\times\bb{l_z}) \nonumber\\
-     & \quad-\Delta_\text{sd} (\bb{l}\times\bb{s}^++\bb{m}\times \bb{s}^-) -\gamma_0\bb{l}\times\bb{H}_\text{ext}\label{intro:eq:dl3}\\
-    \partial_t \bb{m} = & \phantom{2J \bb{l}\times\bb{m}} -K (\bb{l} \times \bb{l_z}+\bb{m}\times\bb{m_z} )  \nonumber\\
-    & \quad-\Delta_\text{sd}(\bb{l}\times\bb{s}^-+\bb{m}\times\bb{s}^+) -\gamma_0\bb{m}\times\bb{H}_\text{ext},\label{intro:eq:dm3}
-\end{align}
-which shows a characteristic of antiferromagnets: the equation of motion on $\bb{l}$ contains a (field-like) torque that is proportional to $J$ (which in general is much stronger than $K'$ or $\Delta_\text{sd}$.) that is absent in ferromagnets. 
-\section{other}
-\begin{align}
-    \dot{\bb{n}}^\text{A} &= -\big(\bb{n}^\text{A}\times(J_\text{ex}\bb{n}^\text{B}+\bb{s}^\text{A}-\bb{h})\big)\\
-    \dot{\bb{n}}^\text{B} &= -\big(\bb{n}^\text{B}\times(J_\text{ex}\bb{n}^\text{A}+\bb{s}^\text{B}-\bb{h})\big)
-\end{align}
-\begin{align}
-\underbrace{
-\begin{array}{cc}
-    \dot{\bb{s}}^\text{A} &= \alpha\, \bb{s}^\text{A}\times (\dot{\bb{s}}^\text{A}-\dot{\bb{s}}^\text{B})\\
-        \dot{\bb{s}}^\text{B} &= \alpha\, \bb{s}^\text{B}\times (\dot{\bb{s}}^\text{B}-\dot{\bb{s}}^\text{A})
-\end{array}
-}_{\text{isotropic2}}
-\end{align}
-\begin{align}
-    \hat{H}
-        = \sum_{{\{i,j\}}}\, -t \hat{c}_i^\dagger\hat{c}_j\\
-        -\lambda c_{i,\sigma}^\dagger {\sigma}_{\sigma\sigma'}\hat{c}_j\Big)+\sum_i \hslash\gamma_0\bb{H}_\text{ext}\cdot\hat{\bb{S}}_i-\Delta_\text{sd}\hat{\bb{S}}_i\cdot\hat{c}_i^\dagger\bb{\sigma}\hat{c}_i
-    \label{intro:eq:Hm2}
-\end{align}
-
-\section{Tight-binding to low energy hamiltonian}
-We start with the tight-binding hamiltonian:
-\begin{multline}
-    H = \sum_{\langle ij\rangle_\text{n.n}} - t\, \hat{c}^\dagger_i\hat{c}_j^{\vphantom{\dagger}} + \lambda_R \, \hat{c}^\dagger_i (\bb{\sigma}\times\bb{d}_{ij})_z\hat{c}_j^{\vphantom{\dagger}}\\+\sum_{i\in A} \Delta_\text{sd}^A \hat{c}^\dagger_i \bb{l}\cdot\bb{\sigma}\hat{c}_j^{\vphantom{\dagger}}
-    -\sum_{i\in B} \Delta_\text{sd}^B \hat{c}^\dagger_i \bb{l}\cdot\bb{\sigma}\hat{c}_j^{\vphantom{\dagger}}
-\end{multline}
-where we introduced a short-hand notation for the creation operators $\hat{c}^\dagger = (\hat{c}^\dagger_\uparrow\,\hat{c}^\dagger_\downarrow)^\top$. Here we introduced the hopping energy $t$, Rashba-coupling $\lambda_R$ and sub-lattice dependent s--d couplings $\Delta_\text{sd}^\text{A(B)}$ and the Pauli matrices $\bb{\sigma}$ act on spin-space.
-The honeycomb lattice can be constructed using a unit cell with two atoms at positions $a (-\sqrt{3}/2,-1/2)$ and  $(-\sqrt{3}/2, 1/2)$. The lattice is spanned with the vectors $a(\sqrt{3},0)$ and $a(\sqrt{3}/2,3/2)$. Introducing the Fourier decomposition
+In order to compute a spin-torque, all we need to do is compute the spin-density of the conducting electrons, which is done using linear response theory. 
+The dynamics of the magnetization vector in ferromagnets and antiferromagnets are determined by spin-torques. These torques can be divided into two groups: field-like and damping-like. For antiferromagnets each group can be subdivided into two: staggered and non-staggered. In a two-dimensional ferromagnet with spin-orbit of Rashba type, the equations of motion are often written phenomenologically as
 \begin{equation}
-    \hat{c}_j = \frac{1}{(2\pi)^2}\sum_{\bb{k}}\hat{c}_{\bb{k}} \exp[i \bb{d}_j \cdot \bb{k}]
+    \partial_t \bb{n} = c_1 \bb{n}\times (\hat{\bb{z}}\times\bb{j}) + c_2 \bb{n}\times\big(\bb{n}\times (\hat{\bb{z}}\times{j})\big) + \alpha \bb{n}\times \partial_t \bb{n},
 \end{equation}
-We find:
+where the terms proportional to $c_1$ and $c_2$ are torques that are induced by injecting an electric current $\bb{j}$ and the term proportional to $\alpha$ describes the rate of dissipation of angular momentum and is called Gilbert damping. The field-like and damping-like torques can be identified as those that are respectively even and odd under time-reversal (i.e. changing the signs of $\bb{n}$, $\bb{j}$ and $t$). Distinguising between field-like and damping-like torques helps us understand more the dynamics of $\bb{n}$. For example, if the damping-like torques are absent one will only observe a simple precession of the magnetization vector around $\hat{\bb{z}}\times\bb{j}$. Damping-like torques allow for the dissipation of angular momentum so that over time the magnezation vector will be parallel to $\hat{\bb{z}}\times\bb{j}$. The dynamics induced by both field-like and damping-like torques are illustrated in Figure~\ref{fig:dynamics}. Note that we can change the sign of the damping-like torque by changing the direction of the electric current. If this current-induced damping-like torque overcomes the Gilbert damping one can even reverse the magnetization direction. In such a way one can construct a magnetic memory that stores a "0" or a "1" corresponding to two magnetization directions. This type of switching is illustrated in Figure~\ref{fig:switching}. The switching rate is determined by the strength of the damping-like torque which is proportional to Rashba spin-orbit coupling. {\color{blue} [some numbers for various materials. probably all less than 1eV].} It is then no surprise that putting a magnetic layer on top of a heavy metal will enhance its magnetic switching abilities. 
+
+In an antiferromagnet however, the magnetization dynamics is more complicated. The magnetizations on two sublattices are aligned opposite to each other 
+
+
+
+
+
+The misalignment between the spin of the conducting electrons and the direction of the magnetic moment of localized electrons induces a spin-torque that enter the equations of motion of the magnetization vector. In order to see this let us first consider the total energy $H$ of the magnetic system
 \begin{equation}
-    H = \begin{pmatrix}
-    H_\text{AA} & H_\text{AB}\\
-    H_\text{BA} & H_\text{BB}
-    \end{pmatrix}
+    H_M = \int \mathrm{d}\bb{r}\, \Delta_\text{sd} \bb{n}\cdot\bb{s}
 \end{equation}
-where each subblock is given by:
-\begin{align}
-    H_\text{AB} &= \sum_{\vec{d}_{ij}} \exp[i \bb{d}_{ij}\cdot\bb{k}](-t \sigma_0 +i \lambda_R (\bb{\sigma}\times\bb{d}_{ij})_z)\\
-    H_\text{AA} &= \Delta_\text{sd} \bb{l}\cdot\bb{\sigma},\quad H_\text{BB} = -\Delta_\text{sd}\bb{l}\cdot\bb{\sigma}\,\quad H_\text{BA} = H_\text{AB}^\dagger
-\end{align}
-with $\bb{d}_{ij} = a (\sqrt{3}/2, 1/2), a(-\sqrt{3}/2, 1/2), a(0, -1)$. The full expressions are given by:
-\begin{align}
-    H_\text{AB} = -i \sqrt{3} \lambda  \sigma_y \sin \left(\frac{\sqrt{3} \text{kx}}{2}\right) \sin \left(\frac{\text{ky}}{2}\right)-\sqrt{3} \lambda  \sigma_y \sin \left(\frac{\sqrt{3} \text{kx}}{2}\right) \cos \left(\frac{\text{ky}}{2}\right)-(2 \sigma_0+i \lambda  \sigma_y) \cos \left(\frac{\sqrt{3} \text{kx}}{2}\right) \left(\cos \left(\frac{\text{ky}}{2}\right)+i \sin \left(\frac{\text{ky}}{2}\right)\right)-i \lambda  \sigma (1) \sin ^2\left(\frac{\text{ky}}{2}\right)+\lambda  \sigma (1) \sin (\text{ky})-(\sigma (0)-i \lambda  \sigma (1)) \cos ^2\left(\frac{\text{ky}}{2}\right)+\sigma (0) \sin ^2\left(\frac{\text{ky}}{2}\right)+i \sigma (0) \sin (\text{ky})
-\end{align}
+The equations of motion can be derived by either writing the magnetic moments as quantum spins $\hat{S}$ and use Heisenberg's equation of motion $\partial_t \hat{S} = i\hbar[H, \hat{S}]$, by poisson brackets $\{H,S\}_{p}$ or by calculating the effect field. We easily obtain
+\begin{equation}
+    \partial_t \bb{n} = \Delta_\text{sd}\bb{n}\times\bb{s}.
+\end{equation}
+In this thesis we focus on spin-densities that are in response to currents and to time-derivatives of magnetization. One example would be
+\begin{equation}
+    \partial_t \bb{n} = \beta \bb{n}\times \hat{\bb{z}}\times\bb{j} + \beta \bb{n}\times\bb{n}\times \hat{\bb{z}}\times{j} + \alpha \bb{n}\times \partial_t \bb{n}
+\end{equation}
+It is convenient to decompose current-induced torques in terms that are even under time-reversal (proportional to $\beta$) and in terms that are odd (proportional to $\beta'$), which are often called field-like and damping-like torques. The field-like torques are observed as a simple precession of $\bb{n}$ around $\bb{j}$, whereas the damping-like torques are dissipative and can orient $\bb{n}$ either parallel or anti-parallel to $\bb{j}$. 
+
+
