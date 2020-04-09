@@ -25,9 +25,13 @@ Despite a lack of clarity concerning the microscopic mechanisms of the N\'eel ve
 \section{Antiferromagnetic resonance}
 One of the characteristics of an antiferromagnets is that its antiferromagnetic resonance frequency (i.e. when subjected to an oscillating external magnetic field) is proportional to $\sqrt{K}$, as given by the formula:
 \begin{equation}
-    \omega = \gamma_0 H_\text{ext} \pm \sqrt{2K(J+K)}
+    \omega = \gamma_0 H_\text{ext} \pm \sqrt{K(J+K)}
 \end{equation}
-as first derived by Kittel \footnote{C. Kittel, Phys. Rev. \textbf{82}, 565 (1951).}. The original derivation made use of quadrupolar contributions to $H_\text{M}$, but for two dimensional systems, a Hamiltonian such as in Eq.~(\ref{intro:eq:Hm}) is sufficient as we will demonstrate. In this section we do not consider $\Delta_\text{sd}$. In order to find the resonant frequencies in the system that is subjected to an oscillating field in the $z$ direction: $\bb{H}_\text{ext} = H_0 \cos \omega t\,\hat{\bb{z}}$, we first linearize the equations of motion by expanding $\bb{l}$ close to $\hat{\bb{z}}$ and assume $\bb{m}$ to be small. Components such as $l_x m_y$ can be then disregarded and we assume $\bb{l}$ and $\bb{m}$ to be proportional to $\exp i \omega t$. A nice basis to work in is $\{{l}_+,{m}_+,{l}_-,{m}_- \}$, (where ${l}_\pm = l_x\pm i l_y$ and ${m}_\pm = m_x\pm i m_y$) so that one finds the following matrix equation:
+as first derived by Kittel \cite{kittel}. The original derivation made use of quadrupolar contributions to $H_\text{M}$, but for two dimensional systems, a Hamiltonian such as in Eq.~(\ref{intro:eq:Hm}) is sufficient as we will demonstrate. In this section we do not consider $\Delta_\text{sd}$. In order to find the resonant frequencies in the system that is subjected to an oscillating field in the $z$ direction: $\bb{H}_\text{ext} = H_0 \cos \omega t\,\hat{\bb{z}}$, we first linearize the equations of motion by expanding $\bb{n}$ close to $\hat{\bb{z}}$ and assume $\bb{m}$ to be small. To be more explicit
+\begin{equation}
+	\bb{n} \rightarrow \bb{z} + \delta \bb{n}_\parallel,\quad \bb{m} \rightarrow \delta \bb{m}_\parallel.
+\end{equation}
+Note that to first order the staggered and non-staggered magnetizations are still orthogonal to each-other: $\bb{n}\cdot\bb{m}=1+\mathcal{O}(\delta n^2+\delta m^2).Components such as $\delta n_x \delta m_y$ can be then disregarded and we assume $\bb{n}$ and $\bb{m}$ to be proportional to $\exp i \omega t$. A nice basis to work in is $\{{n}_+,{m}_+,{n}_-,{m}_- \}$, (where ${n}_\pm = \delta n_x\pm i \delta n_y$ and ${m}_\pm = \delta m_x\pm i \delta m_y$) so that one finds the following matrix equation:
 \begin{equation}
     \begin{pmatrix}
     \omega_0 & -(J+K) & 0 & 0 \\
@@ -36,114 +40,35 @@ as first derived by Kittel \footnote{C. Kittel, Phys. Rev. \textbf{82}, 565 (195
     0 & 0 & K & -\omega_0
     \end{pmatrix}
     \begin{pmatrix}
-    l_{+}\\
-    m_{+}\\
-    l_{+}\\
-    m_{-}
+    \delta l_{+}\\
+    \delta m_{+}\\
+    \delta l_{+}\\
+    \delta m_{-}
     \end{pmatrix}
     =\omega 
     \begin{pmatrix}
-    l_{+}\\
-    m_{+}\\
-    l_{+}\\
-    m_{-}
+    \delta l_{+}\\
+    \delta m_{+}\\
+    \delta l_{+}\\
+    \delta m_{-}
     \end{pmatrix}
 \end{equation}
 and four corresponding frequencies $\omega_{\eta',\eta''}$  
 \begin{align}
     \omega_{\eta',\eta''} = \eta' \gamma_0 H_\text{ext} +\eta'' \sqrt{K(J+K)}, \quad \eta',\eta''=\pm1
 \end{align}
-which remarkably exists even in zero field. 
-
-\section{equations of motion on \textbf{n}}
-Next we look at the equations of motion on $\bb{l}$ and $\bb{m}$ when conducting electrons are present in the system. In the literature (e.g. \footnote{V. Baltz, Rev. Mod. Phys. \textbf{90}, 015005 (2018)}) we often find the following equation (sometimes called sigma model):
-\begin{align}
-    \partial_t^2 \bb{l}\times\bb{l} &= \gamma\mu_0[2(\bb{l}\cdot\bb{H})\partial_t \bb{l}-(\bb{l}\times\partial_t\bb{H})\times\bb{l}]\nonumber\\
-    &\quad+(\gamma\mu_0)^2(\bb{l}\cdot\bb{H})\bb{l}\times\bb{H}+\gamma\mu_0\alpha(H_E/2)\bb{l}\times\partial_t\bb{l}.
-\end{align}
-which we can derive from Eqs.~(\ref{intro:eq:dsab}) when $K=0$. This I will briefly show here. By multiplying Eq.~(\ref{intro:eq:dl}) with $\bb{l}$ from the left we find an expression for $\bb{m}$:
+which remarkably exists even in absence of an external magnetic field. The constant $K$ can be derived directly for a particular model from the Grand potential describing the conducting electrons. The Grand potential is given by
 \begin{equation}
-     -2J\bb{m} =\bb{l}\times(\partial_t\bb{l}) + \Delta_\text{sd} \bb{l}\times(\bb{l}\times\bb{s}^+),
+    \Omega = - \sum_{\tau=\pm}\frac{1}{\beta} \int \mathrm{d}\varepsilon\,g(\varepsilon) \nu_\tau(\varepsilon),
+    \label{b1}
 \end{equation}
-where the term $\Delta_\text{sd}\,\bb{l}\times(\bb{m}\times\bb{s}^-)$ is dropped (both $\bb{m}$ and $\bb{s}^-$ are small). Then from Eq~(\ref{intro:eq:dm}) we find
-\begin{multline}
-    \bb{l}\times(\partial_t^2\bb{l})=
-    2J\Delta_\text{sd}\,\bb{l}\times\bb{s}^--\Delta_\text{sd} \,\bb{s}^+\times(\bb{l}\times (\partial_t\bb{l}))\\
-    +\Delta_\text{sd}^2\,\bb{l}\cdot\bb{s}^+\,\bb{l}\times\bb{s}^+-\Delta_\text{sd}\,\partial_t(\bb{l}\times(\bb{l}\times\bb{s}^+)
-\end{multline}
-Next, we write
+where the the density of states $\nu$ and the function $g(\varepsilon)$ are given by
 \begin{align}
-    \bb{s}^+ &= - (\alpha/\Delta_\text{sd})\,\partial_t \bb{m}+(\gamma/\Delta_\text{sd})\bb{H} \\ 
-    \bb{s}^- &= - (\alpha/\Delta_\text{sd})\,\partial_t \bb{l}+(\gamma/\Delta_\text{sd})\bb{H}
+    \nu_\tau(\varepsilon) = & \frac{1}{\pi} \tr \int \frac{\mathrm{d}^2p}{(2\pi\hbar)^2}\,\im G^\text{R}_{\bb{p}}\\
+    g(\varepsilon) = & \log \big(1+\exp[\beta(\mu-\varepsilon)]\big).
+    \label{eq:nu}
 \end{align}
-and after back-substitution, we find (the same as before, but need to double check)
-\begin{multline}
-    \bb{l}\times(\partial_t\bb{l}) = 
-\end{multline}
-Next we include $K$. 
-\begin{multline}
-    \bb{l}\times(\partial_t\bb{l}) = (Kl_z^2-2J)\bb{m}+K(l_zm_z\bb{l}-\bb{m_z})+\Delta\,\bb{l}\times(\bb{l}\times\bb{s}^+)
-    \label{intro:eq:l2}
-\end{multline}
-taking the $z$ component lets us exclude $m_z$ and in turn $\bb{m}$:
-\begin{align}
-    (K(2l_z^2-1)-2J)m_z &= -(\bb{l}\times\dot{\bb{l}})_z+\Delta_\text{sd} (\bb{l}\times(\bb{l}\times\bb{s}^+))_z\label{intro:eq:l3}\\
-    (Kl_z^2-2J)\bb{m} &= -\bb{l}\times\dot{\bb{l}}+\Delta_\text{sd}\bb{l}\times(\bb{l}\times\bb{s}^+)\nonumber\\
-    &-\frac{K}{2J} (-\bb{l}\times\dot{\bb{l}}+\Delta_\text{sd}\bb{l}\times(\bb{l}\times\bb{s}^+))_z\nonumber\\
-    &\hspace{2cm}\bb{l}\times(\bb{l}\times\hat{\bb{z}})\label{intro:eq:l4}
-\end{align}
-Then by taking the time-derivative of Eq.~(\ref{intro:eq:l2}) and using Eqs.~(\ref{intro:eq:dm}), (\ref{intro:eq:l3}) and (\ref{intro:eq:l4}) we find:
-\begin{align}
-\bb{l}\times\ddot{\bb{l}} =& \left( 1-\frac{Kl_z^2}{2J} \right) \left(
-    \Delta_\text{sd}^2 \bb{l}\cdot\bb{s}^+\bb{l}\times\bb{s}^+-\Delta_\text{sd}(\bb{l}\times\dot{\bb{l}})\times\bb{s}^+-2J\Delta_\text{sd}\bb{l}\times\bb{s}^-
-    +\Delta_\text{sd}\partial_t (\bb{l}\times(\bb{l}\times\bb{s}^+))
-    \right)\nonumber\\
-    &  +\frac{K}{2J}\Big(-4J^2 \bb{l}\times\bb{l_z}-\Delta_{\text{sd}}\left(\bb{l}\times\dot{\bb{l}}-\Delta_\text{sd}\bb{l}\times(\bb{l}\times\bb{s}^+)\right)_z (\bb{l}\cdot\bb{s}^+\bb{l}\times\hat{\bb{z}}-1/\Delta_{\text{sd}}\,(\dot{l_z}\bb{l}+l_z\dot{\bb{l}}))
-    \nonumber\\
-    & \hspace{6cm}+\Delta_\text{sd}\left((\bb{l}\times\dot{\bb{l}})\times\bb{s}^++\Delta_\text{sd}\bb{l}\cdot\bb{s}^+\bb{l}\times\bb{s}^+\right)_z \bb{l}\times(\bb{l}\times{\hat{\bb{z}}})
-    \Big)
-\end{align}
-so we find a renormalization (first line) and in addition some non-trivial terms. Misha B. found the following form of the spin-orbit torque in honeycomb-lattice: 
-\begin{align}
-    \bb{s}^+ = c_1 \hat{\bb{z}}\times\bb{E}+c_2 \bb{l}\times\bb{E},\quad \bb{s}^-=0 \end{align},
-
-indicating that the Neel torque $-2J\bb{l}\times\bb{s}^-$ vanishes. There is a claim that $\bb{s}^+$ cannot drive $\bb{l}$ (only field-like stuff) and if that is true our model predicts only trivial dynamics.
-\section{comparison 2nd order DE vs two 1st order DEs}
-It is not yet clear which form of the equation of motion is better. Suppose for now that $K=0$, $\bb{s}^-=0$ and no external magnetic field, so that we can throw away the term $\mathcal{O}((\bb{s}^+)^2)$. We have then the 2nd order differential equation
-\begin{align}
-    \bb{l}\times\ddot{\bb{l}}  = \Delta_\text{sd}\big(
-    -(\bb{l}\times\dot{\bb{l}})\times\bb{s}^+ +\partial_t (\bb{l}\times(\bb{l}\times\bb{s}^+))
-    \big)
-\end{align}
-or the coupled 1st order ones:
-\begin{align}
-    \dot{\bb{l}}  = & 2J \bb{l}\times\bb{m}  
-     -\Delta_\text{sd} \bb{l}\times\bb{s}^+ \\
-    \dot {\bb{m}} = & -\Delta_\text{sd}\bb{m}\times\bb{s}^+ ,
-\end{align}
-\section{spin-wave/magnon dispersion with currents}
-First we derive the linear-in-$k$ dispersion relation for spin-waves in antiferromagnets in absence of electric currents, next we see what happens in presence of currents. 
-\begin{align}
-    H_\text{M} =& -\frac{J_\text{AA}}{2}\sum_{\substack{i\in A \\ \{j\}_\text{nn}}} S_i^\text{A} \cdot S_\text{j}^A -\frac{J_\text{BB}}{2}\sum_{\substack{i\in B \\ \{j\}_\text{nn}}} S_i^\text{B} \cdot S_\text{j}^B \nonumber\\
-    & + \frac{J_\text{AB}}{2}\sum_{\substack{i\in A \\ \{j\}_\text{nn}}} S_i^\text{A} \cdot S_\text{j}^B
-    - J_K \sum_{i\in\text{A}} (S^\text{A}_i)^2_z \nonumber\\
-    &- J_K \sum_{i\in\text{A}}(S^\text{B}_i)_z^2 + J_\text{sd}\sum_{i\in \text{A}}\bb{n}_i^\text{A}\cdot \bb{S}^\text{A}_i\nonumber\\
-    &+ J_\text{sd}\sum_{i\in \text{B}}\bb{n}_i^\text{B}\cdot \bb{S}^\text{B}_i
-\end{align}
-Assuming the magnetization profiles on sublattices A and B can be approximation as smooth functions of position $\bb{r}$, we can write this as
-\begin{align}
-    H_\text{M} =& \int \mathrm{d}V \Big(4J_\text{AA} (\nabla \bb{S}^\text{A})^2+4J_\text{BB}(\nabla \bb{S}^\text{B})^2)+\nonumber\\
-    & \frac{4}{a^2} J_\text{AB}\bb{S}^\text{A}\cdot\bb{S}^\text{B}-8J_\text{AB}(\nabla\bb{S}^\text{A})\cdot(\nabla\bb{S}^\text{B})\nonumber\\
-    &- 2\frac{J_k}{a^2} ((S_z^\text{A})^2+(S_z^\text{B})^2)+\frac{2J_\text{sd}}{a^2}(\bb{n}^\text{A}\cdot\bb{S}^\text{A}+\bb{n}^\text{B}\cdot\bb{S}^\text{B})\Big),
-\end{align}
-where $\bb{S}^\text{A(B)}$ are functions of $\bb{r}$. (this should also be done for honeycomb lattice)
-
-In terms of $\bb{s}^\pm$, $\bb{l}$ and $\bb{m}$ this can be written as
-\begin{align}
-    H_\text{M} =& \int \mathrm{d}V \,(J(\nabla\bb{m})^2-(\nabla\bb{l})^2)+K(l_z^2+m_z^2)+J'\bb{l}\cdot\bb{m}\nonumber\\
-    & \quad + J_\text{sd} (\bb{l}\cdot\bb{s}^-+\bb{m}\cdot\bb{s}^-)
-\end{align}
-and eqs. of motion
+Here $\beta$ is the inverse temperature and $\mu$ is the chemical potential. By evaluating the integral and expanding around the energy minimum in powers of magnetization, one can obtain the anisotropy constant $K$. This will be done explicitly in Chapter~\ref{chap:?}.
 
 \vfill
 \clearpage
