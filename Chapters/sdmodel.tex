@@ -48,31 +48,19 @@ With these considerations we find the following equations of motion of magnetiza
 \end{align}
 and the following for an antiferromagnet
 \begin{align}
-\hslash \partial_t \bb{n} =& -2J_\text{ex}\, \bb{n}\!\times\!\bb{m} + K \big(\bb{m}\!\times\!\bb{n}_\perp+\bb{n}\times\bb{m}_\perp\big) 
+\hslash \partial_t \bb{n} =& -2J_\text{ex}\, \bb{n}\!\times\!\bb{m} \nonumber\\
+    & + K \big(\bb{m}\!\times\!\bb{n}_\perp+\bb{n}\times\bb{m}_\perp\big) 
 	+ \Delta_\text{sd} \big(\bb{m}\times\bb{s}^-+\bb{n}\times\bb{s}^+) -\hslash\gamma_0\bb{n}\times\bb{H}_\text{ext},\\
 \hslash \partial_t \bb{m} =&K  \big(\bb{n}\!\times\!\bb{n}_\perp+\bb{m}\times\bb{m}_\perp\big) 
 	+ \Delta_\text{sd} \big(\bb{m}\times\bb{s}^++\bb{n}\times\bb{s}^-)-\hslash\gamma_0\bb{m}\times\bb{H}_\text{ext}
 \end{align}
 
-The same equations of motion can be obtained by first using Heisenberg's equations of motion $i \partial_t \hat{S}_\alpha = [H,\hat{S}_\alpha]$ (where $\alpha=x,y,z$) and the commutation relations for spin-operators $[\hat{S}_x, \hat{S}_y]=i\hat{S}_z$ on Eq~(\ref{intro:eq:Hm}), and then taking the classical limit $\hat{\bb{S}}\rightarrow \bb{S}$. 
+The same equations of motion can be obtained by first using Heisenberg's equations of motion $i \hslash\partial_t \hat{S}_\alpha = [H,\hat{S}_\alpha]$ (where $\alpha=x,y,z$) and the commutation relations for spin-operators $[\hat{S}_x, \hat{S}_y]=i\hat{S}_z$ on Eq~(\ref{intro:eq:Hm}), and then taking the classical limit $\hat{\bb{S}}\rightarrow \bb{S}$. 
 
-As is common practice, the magnetization in the ferromagnet is expressed in terms of a unit vector $\bb{m} = -\bb{S}/|\bb{S}|$ and for an antiferromagnet we introduce the magnetization $\bb{m}$ and staggered magnetization $\bb{n}$ as
-\begin{align}
- 	\bb{m}&=-1/2(\bb{S}^\text{A}/|\bb{S}^\text{A}|+\bb{S}^\text{B}/|\bb{S}^\text{B}|)\\
-    \bb{n}&=-1/2(\bb{S}^\text{A}/|\bb{S}^\text{A}|-\bb{S}^\text{B}/|\bb{S}^\text{B}|).
-\end{align} 
 Note that the minus in front of the definitions of $\bb{n}$ and $\bb{m}$ are there because for electrons their magnetic moment is directed in opposite direction of their spin angular moment. Furthermore, although we use the same notation $\bb{m}$ for the magnetization in a ferro and anti-ferromagnet, it is only a unit-vector in the former case and not the latter. 
 
-The equations of motion for an antiferromagnet are often expressed in terms of 
-next we write $\bb{S}^\text{A(B)}=-|S|\bb{n}^\text{A(B)}$, with $|S|$ the total localized spin and unit vector $\bb{n}$ pointing in the magnetization direction. From now on we set $\hslash=1$ for convenience. Furthermore we introduce new quantities: average magnetization $\bb{m}=1/2(\bb{n}^\text{A}+\bb{n}^\text{B})$ and staggered magnetization (Neel vector) $\bb{l}=1/2(\bb{n}^\text{A}-\bb{n}^\text{B})$, and similarly average(staggered) spin-density $\bb{s}^\pm=\bb{s}^\text{A}\pm\bb{s}^\text{B}$, so that equations of motion on $\bb{m}$ and $\bb{l}$ read:
-\begin{align}
-    \partial_t \bb{m} &= -\Delta_\text{sd}(\bb{m}\times\bb{s}^++\bb{l}\times\bb{s}^-)\label{intro:eq:dm}\\
-        \partial_t \bb{l} &=-2J_\text{ex}\bb{l}\times\bb{m} -\Delta_\text{sd}(\bb{m}\times\bb{s}^-+\bb{l}\times\bb{s}^+),\label{intro:eq:dl}
-\end{align}
-the external field is absorbed into $\bb{s}^+$. The term $\bb{m}\times\bb{s}^-$ is generally to as Neel torque. Note that contrary to ferromagnets, the dynamics of antiferromagnets contains a term $\bb{l}\times\bb{m}$ that is proportional to the exchange energy. 
-
-In order to compute a spin-torque, all we need to do is compute the spin-density of the conducting electrons, which is done using linear response theory. 
-The dynamics of the magnetization vector in ferromagnets and antiferromagnets are determined by spin-torques. These torques can be divided into two groups: field-like and damping-like. For antiferromagnets each group can be subdivided into two: staggered and non-staggered. In a two-dimensional ferromagnet with spin-orbit of Rashba type, the equations of motion are often written phenomenologically as
+The dynamics of the magnetization vector in ferromagnets and antiferromagnets are determined by spin-torques. In order to compute a spin-torque, all we need to do is compute the spin-density of the conducting electrons, which is done using linear response theory (see the next section).  
+ These torques can be divided into two groups: field-like and damping-like. For antiferromagnets each group can be further subdivided into two: staggered and non-staggered. In a two-dimensional ferromagnet with spin-orbit of Rashba type, the equations of motion are often written phenomenologically as
 \begin{equation}
     \partial_t \bb{n} = c_1 \bb{n}\times (\hat{\bb{z}}\times\bb{j}) + c_2 \bb{n}\times\big(\bb{n}\times (\hat{\bb{z}}\times{j})\big) + \alpha \bb{n}\times \partial_t \bb{n},
 \end{equation}
