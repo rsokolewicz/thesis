@@ -36,25 +36,31 @@ where we introduced the spin polarization density $\bb{s} = \mathcal{A}^{-1}\lan
 \end{multline}
 where we introduced the spin polarization density $\bb{s}^\text{A(B)} = \mathcal{A}^{-1}\langle \hat{c}^\dagger \bb{\sigma}\hat{c}\rangle$ (with unit cell area $\mathcal{A}$). 
 
-The equations of motion is given by $\partial_t \bb{S}_i = \{E,\bb{S}_i\}_p$, where $\{\cdots\}_p$ is the Poisson bracket. For angular momenta we simply have $\{\hslash \bb{S}_i,\hslash \bb{S}_j\}_p=\hslash \bb{S}_i\times\bb{S}_j$. With these considerations we find the following equations of motion for a ferromagnet
+The equations of motion is given by $\partial_t \bb{S}_i = \{E,\bb{S}_i\}_p$, where $\{\cdots\}_p$ is the Poisson bracket. For angular momenta we simply have $\{\hslash \bb{S}_i,\hslash \bb{S}_j\}_p=\hslash \bb{S}_i\times\bb{S}_j$. As is common practice, the magnetization in the ferromagnet is expressed in terms of a unit vector $\bb{m} = -\bb{S}/|\bb{S}|$ and for an antiferromagnet we introduce the magnetization $\bb{m}$ and staggered magnetization $\bb{n}$ as
 \begin{align}
-	\hslash \partial_t \bb{S} &= \bb{S}\times\big(-\hslash\gamma_0\bb{H}_\text{ext}-KS_z+\Delta_\text{sd}\bb{s}\big)
+ 	\bb{m}&=-1/2(\bb{S}^\text{A}/|\bb{S}^\text{A}|+\bb{S}^\text{B}/|\bb{S}^\text{B}|)\\
+    \bb{n}&=-1/2(\bb{S}^\text{A}/|\bb{S}^\text{A}|-\bb{S}^\text{B}/|\bb{S}^\text{B}|).
+\end{align} 
+With these considerations we find the following equations of motion of magnetization for a ferromagnet
+\begin{align}
+	\hslash \partial_t \bb{m} &= \bb{m}\times\big(-\hslash\gamma_0\bb{H}_\text{ext}-Km_z+\Delta_\text{sd}\bb{m}\big)
 	\label{intro:eq:S1}
 \end{align}
 and the following for an antiferromagnet
 \begin{align}
-   \hslash \partial_t \bb{S}^\text{A} &= \bb{S}^\text{A}\times\big( -\hslash\gamma_0\bb{H}_\text{ext}-KS^A_z-J_\text{ex}\bb{S}^\text{B}+J_\text{sd}\bb{s}^\text{A}\big)\\
-      \hslash \partial_t \bb{S}^\text{B} &= \bb{S}^\text{B}\times\big( -\hslash\gamma_0\bb{H}_\text{ext}-KS^B_z-J_\text{ex}\bb{S}^\text{A}+J_\text{sd}\bb{s}^\text{B}\big).
-      \label{intro:eq:S2}
+\hslash \partial_t \bb{n} =& -2J_\text{ex}\, \bb{n}\!\times\!\bb{m} + K \big(\bb{m}\!\times\!\bb{n}_\perp+\bb{n}\times\bb{m}_\perp\big) 
+	+ \Delta_\text{sd} \big(\bb{m}\times\bb{s}^-+\bb{n}\times\bb{s}^+) -\hslash\gamma_0\bb{n}\times\bb{H}_\text{ext},\\
+\hslash \partial_t \bb{m} =&K  \big(\bb{n}\!\times\!\bb{n}_\perp+\bb{m}\times\bb{m}_\perp\big) 
+	+ \Delta_\text{sd} \big(\bb{m}\times\bb{s}^++\bb{n}\times\bb{s}^-)-\hslash\gamma_0\bb{m}\times\bb{H}_\text{ext}
 \end{align}
 
 The same equations of motion can be obtained by first using Heisenberg's equations of motion $i \partial_t \hat{S}_\alpha = [H,\hat{S}_\alpha]$ (where $\alpha=x,y,z$) and the commutation relations for spin-operators $[\hat{S}_x, \hat{S}_y]=i\hat{S}_z$ on Eq~(\ref{intro:eq:Hm}), and then taking the classical limit $\hat{\bb{S}}\rightarrow \bb{S}$. 
 
 As is common practice, the magnetization in the ferromagnet is expressed in terms of a unit vector $\bb{m} = -\bb{S}/|\bb{S}|$ and for an antiferromagnet we introduce the magnetization $\bb{m}$ and staggered magnetization $\bb{n}$ as
 \begin{align}
- 	\bb{n}=-1/2(\bb{S}^\text{A}/|\bb{S}^\text{A}|-\bb{S}^\text{B}/|\bb{S}^\text{B}|)
- 	\bb{m}=-1/2(\bb{S}^\text{A}/|\bb{S}^\text{A}|+\bb{S}^\text{B}/|\bb{S}^\text{B}|).
- \end{align} 
+ 	\bb{m}&=-1/2(\bb{S}^\text{A}/|\bb{S}^\text{A}|+\bb{S}^\text{B}/|\bb{S}^\text{B}|)\\
+    \bb{n}&=-1/2(\bb{S}^\text{A}/|\bb{S}^\text{A}|-\bb{S}^\text{B}/|\bb{S}^\text{B}|).
+\end{align} 
 Note that the minus in front of the definitions of $\bb{n}$ and $\bb{m}$ are there because for electrons their magnetic moment is directed in opposite direction of their spin angular moment. Furthermore, although we use the same notation $\bb{m}$ for the magnetization in a ferro and anti-ferromagnet, it is only a unit-vector in the former case and not the latter. 
 
 The equations of motion for an antiferromagnet are often expressed in terms of 
