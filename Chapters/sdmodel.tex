@@ -82,14 +82,60 @@ In an antiferromagnet we are more interested in the dynamics of $\bb{n}$. A phen
 \section{Obtaining out-of-equilibrium spin-polarizations}
 The spin-polarizations of the conducting electrons that appear in the equations of motion for the ferromagnet Eq.~(\ref{eq:sd:S1}) and for the antiferromagnet Eqs.~(\ref{eq:sd:neel}) are obtained in linear response to current and time-derivatives of magnetizations. This method is used in Chapters~\ref{ch:diffusive},\ref{ch:baglay}, whereas in Chapter \ref{ch:summit} we develop a numerical method of obtaining spin-orbit torques using a scattering approach that will be explained there. 
 
-In linear response the spin-polarizations are connected to current and time-derivatives of magnetization through tensors of rank two. 
-In order to derive the result of Eq.~(\ref{diffSOT}) and the expressions for Gilbert damping we shall adopt a particular relaxation model for both spin and orbital angular momenta of conduction electrons. For the model of Eq.~(\ref{TImodel}) those are provided by scattering on disorder potential. We choose the latter 
-to be the white-noise Gaussian disorder potential that is fully characterized by a single dimensionless parameter $\alpha\ll 1$,
+We can write the linear response of a spin-polarization $s_\alpha$ to a perturbation $H'$ as
+\begin{equation}
+  s_\alpha = \sum_{\beta}\lef(\hat{K}_{\alpha\beta}\partial_t H'\label{sd:eq:kubo1}
+\end{equation}
+where the components of the tensor $\hat{K}$ are given by the Kubo formula 
+\begin{equation}
+\hat{K}_{\alpha}=\int\!\frac{d^2\bb{p}}{(2\pi)^2}\tr \langle \hat{s}_\alpha G^\text{R}_{\bb{p}} \frac{\partial H'}{\partial t} G^\text{A}_{\bb{p}}\rangle,
+\label{sd:eq:kubo2}
+\end{equation}
+with momentum $\bb{p}$, retarded (advanced) Green's functions $G^\text{R(A)}_\bb{p}$ and operator trace $\tr$. The angular brackets $\langle\dots\rangle$ denote averaging over disorder samples. Eq.~(\ref{sd:eq:kubo1}) with Eq.~(\ref{sd:eq:kubo1}) inserted is called the Kubo formula and is often at the basis of linear response theory. It is in fact one expression of the more general fluctuation-dissipation theorem \ref{Kubo_1966}. This theorem equates the response of a system to an external force or perturbation to the fluctuations of the system in absence of that force or perturbation. In other words, the left hand side of Eq.~(sd:eq:kubo1) denotes an out-of-equilibrium quantity which is related to a correlator on the right hand side that is evaluated in equilibrium. 
+
+The perturbations, or forces, that we consider are electric fields that drive electrons and changes in magnetization direction. By expressing the electric field in terms of current through the conductivity tensor (which is again obtained through a Kubo formula), we obtain the out-of-equilibrium spin-polarization produces by an electric current. This in turn defines the current-induced spin-orbit torque. The second response, describes how the electrons' spin respond to a change in the electronic spectrum (by varying the magnetization) and gives rise to spin-renormalizations and Gilbert damping. 
+
+As mentioned in the introduction of this section we model the relaxation of both spin and orbital angular momentum of conduction electrons through the scattering of impurities. For convenience we choose a white-noise Gaussian disorder potential that is fully characterized by a single dimensionless parameter $\alpha\ll 1$,
 \be
 \label{disorder}
 \la V(\bb{r})\ra =0,\quad \la V(\bb{r}) V(\bb{r}') \ra = 2\pi \alpha\, (\hslash v)^2\,\delta(\bb{r}-\bb{r}'),
 \e
-where angular brackets stay for the averaging over the ensemble of disordered systems. 
+where angular brackets stand for the averaging over an ensemble of disordered systems. 
+
+In order to incorporate the effect of disorder, two important steps must be performed. Firstly, we replace the clean Green functions in the linear response formula, with disordered ones. Secondly we replace one of the vertices with one that is corrected with disorder-averaging.
+
+In order to replace the bare Green function with a disordered one, one needs to include a self-energy. This self-energy gives rise to the finite momentum-life-time of the electron and restores translational invariance.  In low concentration of impurities (which we refer to as the clean metal limit, i.e. $\alpha\rightarrow0$) and neglecting contributions from rare-scattering events (such as multiple scattering off the same impurity), one can use the Born approximation
+
+\begin{equation}
+\im \Sigma^\text{R(A)} = 2\pi\alpha \im \int \frac{\mathrm{d}\bb{p}}{(2\pi)^2}\,G^\text{R(A)}_{\vec{p},\varepsilon}.
+\end{equation}
+
+The real-part of the self-energy leads to a small spectrum-shift that we do not consider. 
+
+For the second step in disorder averaging, we need to replace one of the vertex functions with one that is corrected for disorder in the ladder approximation (as illustrated in Figure~\ref{fig:diagrams}-b). We call this new vertex function the vertex-corrected function. 
+By denoting $\hat{s}^{\text{vc}}$ as the vertex-corrected function of $\hat{s}$ and $\hat{s}^{(i)}$ as the function containing $i$ disorder-lines, the ladder approximation is given by:
+\begin{align}
+    \hat{s}^\text{vc}
+      &=           
+        \hat{s}+\hat{s}^{(1)}+\hat{s}^{(2)}+\cdots,
+        \label{eq:ladder}
+\end{align}
+where $\hat{s}^{(i})$ is given by:
+\begin{align}
+    \hat{\chi}^\text{i} = 2\pi\alpha_d\int\frac{\mathrm{d}^2\bb{p}}{(2\pi)^2} G_{\bb{p}}^\text{R}\hat{s}^{(i-1)}G_{\bb{p}}^\text{A}
+    \label{eq:onedisorderline}
+\end{align}
+
+\begin{figure}
+    \centering
+    \includegraphics{app5.pdf}
+    \caption{Diagrammatic illustration. a) Born-approximation. b) Ladder-approximation. c) Disorder-averaged polarization bubble. d) Perturbative expansion of the disorder-averaged polarization bubble. }
+    \label{fig:diagrams}
+\end{figure}
+This vertex-correction is important as a single scattering event already modifies the spin-polarization. For example we will see in Chapter~\ref{ch:diffusive} that vertex-corrections lead to an unnusual and novel torque that we call a diffusive spin-orbit torque. Another example is found in Chapter~\ref{baglay} where disorder averaging can lead to an increase in Gilbert Damping by a factor of a million. 
+
+Diagrams other than those appearing in the ladder approximation%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%
 
 The main building block of our analysis is the averaged Green's function in the first Born approximation
 \be
