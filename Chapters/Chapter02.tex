@@ -123,7 +123,7 @@ that yields the unitarity constraint $S\h S=1$. The constraint is ensured by the
 The results of Eqs.~(\ref{scP1})-(\ref{scP2}) are routinely used to express, e.\,g. the time-averaged electric current flowing through the sample as
 \be
 \label{Icurrent}
-I= e \int \frac{dE}{2\pi \hbar} \lt(f_R(E)-f_L(E)\rt) \s_{\alpha\beta} \lt|t_{\alpha\beta}(E)\rt|^2,
+I= e \int \frac{dE}{2\pi \hslash} \lt(f_R(E)-f_L(E)\rt) \s_{\alpha\beta} \lt|t_{\alpha\beta}(E)\rt|^2,
 \e
 where $f_L$ and $f_R$ stand for electron distribution functions in the left and right leads, respectively, and $e=-|e|$ is the electron charge. The expression for electric current leads to the celebrated \cite{datta_1995} Landauer-B\"uttiker formula for the conductance 
 \be
@@ -172,7 +172,7 @@ For $E=0$, the system exhibits metal-insulator transition as the function of the
 The package kwant \cite{Groth2014} does not only provide the elements of the scattering matrix $S(E)$ in Eq.~(\ref{scattering}), but also gives access to the solutions $\Psi^{L,R}_{\alpha,E}(\bb{r})$ inside the sample. Such solutions can, therefore, be used to obtain a local expectation value of the electron spin (we refer here to the dimensionless spin defined by the operator $\bb{\sigma}/2$) as
 \be
 \label{sdensity}
-\bb{s}(\bb{r})= \frac{1}{2}\int \frac{dE}{2\pi \hbar} \s_\text{A} f_A(E)  \sum_{\alpha}  \Psi^{A\;\dagger}_{\alpha,E} \bb{\sigma}_{\sigma\sigma'} \Psi^{A}_{\alpha,E}, 
+\bb{s}(\bb{r})= \frac{1}{2}\int \frac{dE}{2\pi \hslash} \s_\text{A} f_A(E)  \sum_{\alpha}  \Psi^{A\;\dagger}_{\alpha,E} \bb{\sigma}_{\sigma\sigma'} \Psi^{A}_{\alpha,E}, 
  \e
 where $\alpha=(n,\sigma,\nu)$ and the index $A=L,R$ numerates the leads. 
 
@@ -199,9 +199,9 @@ The problem of magnetization dynamics can be formulated with the help of a Heise
 For the sake of illustration let us outline the derivation of magnetization dynamics for a Heisenberg model of an ``isotropic'' antiferromagnet. The local interaction of Eq.~(\ref{ex}) dictates the equation of motion of localized momenta of the form
 \be
 \label{EOM}
-\dot{\bb{S}}_i = \bb{H}_i\times \bb{S}_i+ \frac{J}{\hbar}\, \bb{S}_i\times \s_{\sigma\sigma'} \lt\la c\h_{i\sigma}\bb{\sigma}_{\sigma\sigma'} c\0_{i\sigma'} \rt\ra,
+\dot{\bb{S}}_i = \bb{H}_i\times \bb{S}_i+ \frac{J}{\hslash}\, \bb{S}_i\times \s_{\sigma\sigma'} \lt\la c\h_{i\sigma}\bb{\sigma}_{\sigma\sigma'} c\0_{i\sigma'} \rt\ra,
 \e
-where dot stands for the time derivative of $\bb{S}_i$ and $\bb{H}_i=-\delta F/ \delta\, \hbar\bb{S}_i$ is an effective field (in frequency units) on a site $i$  that is defined by the free energy $F$ of the classical Heisenberg model for localized spins. The angular brackets denote the thermodynamic expectation value of conduction electron spin operator on the same site $i$. 
+where dot stands for the time derivative of $\bb{S}_i$ and $\bb{H}_i=-\delta F/ \delta\, \hslash\bb{S}_i$ is an effective field (in frequency units) on a site $i$  that is defined by the free energy $F$ of the classical Heisenberg model for localized spins. The angular brackets denote the thermodynamic expectation value of conduction electron spin operator on the same site $i$. 
 
 For a collinear antiferromagnet we shall distinguish two sublattices $A$ and $B$ that are characterized by opposite directions of the localized momenta $\bb{S}_i^\text{A}=-\bb{S}_i^\text{B}$ in the antiferromagnetic ground state. It is assumed, that these directions remain to be almost opposite even for out-of-equilibrium conditions. It is also natural to assume that, as far as the magnet is far from a phase transition, the classical fields $\bb{S}_i^\text{A}$ and $\bb{S}_i^\text{B}$ remain smooth on atomic scales. Below we consider a single domain antiferromagnet, which is characterized by two time-dependent unit vectors $\bb{n}^\text{A,B}=\bb{S}^\text{A,B}/S$. 
 
@@ -213,8 +213,8 @@ where $\mathcal{A}$ is the area of the unit cell (which naturally includes one A
 \beml
 \label{EOMAFM}
 \begin{align}
-\dot{\bb{n}}^\text{A} &= \bb{H}^\text{A}\times \bb{n}^\text{A}+ (J\mathcal{A}/\hbar)\, \bb{n}^\text{A}\times \bb{s}^\text{A},\\
-\dot{\bb{n}}^\text{B}&= \bb{H}^\text{B}\times \bb{n}^\text{B}+ (J\mathcal{A}/\hbar)\, \bb{n}^\text{B}\times \bb{s}^\text{B},
+\dot{\bb{n}}^\text{A} &= \bb{H}^\text{A}\times \bb{n}^\text{A}+ (J\mathcal{A}/\hslash)\, \bb{n}^\text{A}\times \bb{s}^\text{A},\\
+\dot{\bb{n}}^\text{B}&= \bb{H}^\text{B}\times \bb{n}^\text{B}+ (J\mathcal{A}/\hslash)\, \bb{n}^\text{B}\times \bb{s}^\text{B},
 \end{align}
 \eml
 where $|\bb{n}^\text{A,B}|=1$, and the notations $\bb{H}^\text{A,B}$ refer to the effective fields on the sublattices $A$ and $B$. 
@@ -225,23 +225,23 @@ Antiferromagnet dynamics is usually formulated as the coupled dynamics of the N\
 \e
 that remain mutually perpendicular $\bb{\ell}\cdot \bb{m}=0$ and yield the constraint $\ell^2+m^2=1$. Naturally, the amplitude of the magnetization vector remain to be small, $m\ll \ell \approx 1$.
 
-For an ``isotropic'' antiferromagnet, one finds the effective field \cite{Gomonay2014} $\bb{H}^\text{A}+\bb{H}^\text{B}= J_\text{ex}\bb{m}/\hbar+2\bb{H}$, where $\bb{H}$ is an external magnetic field in frequency units and $J_\text{ex}$ is a direct antiferromagnetic exchange energy that is one of the largest energies in the problem. In turn, the combination $\bb{H}^\text{A}-\bb{H}^\text{B}$ is proportional to magnetic anisotropy that we choose not to take into account as mentioned above.  
+For an ``isotropic'' antiferromagnet, one finds the effective field \cite{Gomonay2014} $\bb{H}^\text{A}+\bb{H}^\text{B}= J_\text{ex}\bb{m}/\hslash+2\bb{H}$, where $\bb{H}$ is an external magnetic field in frequency units and $J_\text{ex}$ is a direct antiferromagnetic exchange energy that is one of the largest energies in the problem. In turn, the combination $\bb{H}^\text{A}-\bb{H}^\text{B}$ is proportional to magnetic anisotropy that we choose not to take into account as mentioned above.  
 
 Equations (\ref{EOMAFM}) can, therefore, be rewritten as
 \begin{align}
-&\dot{\bb{\ell}} = -\frac{J_\text{ex}}{2\hbar} \bb{\ell}\times\bb{m} +\bb{H}\times\bb{\ell}+\frac{J\mathcal{A}}{\hbar}\lt(\bb{\ell}\times\bb{s}_++\bb{m}\times\bb{s}_-\rt),\n\\
-&\dot{\bb{m}} = \bb{H}\times\bb{m}+\frac{J\mathcal{A}}{\hbar}\lt(\bb{m}\times\bb{s}_++\bb{\ell}\times\bb{s}_-\rt),
+&\dot{\bb{\ell}} = -\frac{J_\text{ex}}{2\hslash} \bb{\ell}\times\bb{m} +\bb{H}\times\bb{\ell}+\frac{J\mathcal{A}}{\hslash}\lt(\bb{\ell}\times\bb{s}_++\bb{m}\times\bb{s}_-\rt),\n\\
+&\dot{\bb{m}} = \bb{H}\times\bb{m}+\frac{J\mathcal{A}}{\hslash}\lt(\bb{m}\times\bb{s}_++\bb{\ell}\times\bb{s}_-\rt),
 \label{AFMEOM}
 \end{align}
 where $\bb{s}_\pm=(\bb{s}_A\pm\bb{s}_B)/2$. The right-hand sides of Eqs.~(\ref{AFMEOM}) contain the quantities that can be called generalized torques. Here we are only interested in specific contributions to generalized torques that are induced by the chemical potential difference $\delta\mu=eV_\text{bias}$ between left and right leads. Such contributions define four spin-orbit torques  
 \be
 \label{SOT_def}
-\bb{T}^\ell_\pm=(J\mathcal{A}/\hbar)\bb{\ell}\times\delta\bb{s}_\pm, \quad 
-\bb{T}^m_\pm=(J\mathcal{A}/\hbar)\bb{m}\times\delta\bb{s}_\pm,
+\bb{T}^\ell_\pm=(J\mathcal{A}/\hslash)\bb{\ell}\times\delta\bb{s}_\pm, \quad 
+\bb{T}^m_\pm=(J\mathcal{A}/\hslash)\bb{m}\times\delta\bb{s}_\pm,
 \e
 where $\delta \bb{s}_\pm$ refers to the non-equilibrium spin density contribution that is proportional to $\delta\mu$. 
 
-Note that, generally, the average spin $\bb{s}_i$ has a non-local functional dependence on the time-dependent classical field $\bb{S}_j$ at preceding moments of time  and at different lattice sites $j\neq i$. The degree of non-locality is defined by relaxation processes. The quicker the relaxation the more local the functional dependence. In particular, non-dissipative contributions to spin-orbit torques (the so-called field-like contributions) are local in time on the time scales of the order of $s$-$d$ exchange  $\tau_\text{sd}=\hbar/\Delta$, where $\Delta=J S$. In contrast, the dissipative contributions (such as anti-damping torques) are defined by transport scattering time $\tau_\text{tr}$. The latter time scale may be both larger and smaller than $\tau_\text{sd}$ giving rise to different regimes of magnetization dynamics. For the sake of numerical analysis we consider, however, a situation when these two time scales are of the same order.
+Note that, generally, the average spin $\bb{s}_i$ has a non-local functional dependence on the time-dependent classical field $\bb{S}_j$ at preceding moments of time  and at different lattice sites $j\neq i$. The degree of non-locality is defined by relaxation processes. The quicker the relaxation the more local the functional dependence. In particular, non-dissipative contributions to spin-orbit torques (the so-called field-like contributions) are local in time on the time scales of the order of $s$-$d$ exchange  $\tau_\text{sd}=\hslash/\Delta$, where $\Delta=J S$. In contrast, the dissipative contributions (such as anti-damping torques) are defined by transport scattering time $\tau_\text{tr}$. The latter time scale may be both larger and smaller than $\tau_\text{sd}$ giving rise to different regimes of magnetization dynamics. For the sake of numerical analysis we consider, however, a situation when these two time scales are of the same order.
 
 \section{Symmetry consideration} 
 
@@ -256,7 +256,7 @@ H^\text{eff}_0= v\, \bb{p}\cdot\bb{\Sigma}+\alpha_\text{R}\lt[\bb{\sigma}\times\
 \e
 where $\bb{\Sigma}$, $\bb{\Lambda}$, and $\bb{\sigma}$ are the vectors of Pauli matrices in sublattice, valley and spin space, respectively, and 
 \be
-v= \frac{3}{2} wa/\hbar, \qquad \alpha_\text{R}= \frac{3}{2} \lambda , \qquad \Delta=JS.
+v= \frac{3}{2} wa/\hslash, \qquad \alpha_\text{R}= \frac{3}{2} \lambda , \qquad \Delta=JS.
 \e
 Even though the model of Eq.~(\ref{ham}) is characterized by the point group $C_\text{3v}$, the effective low-energy model of Eq.~(\ref{low}) has a higher symmetry 
 of the group $C_{\infty\text{v}}$. This is reflected by the fact that the Fermi-surfaces (for energies we are interested in) remain entirely isotropic irrespective of the N\'eel vector orientation as shown in Fig.~\ref{fig:lattice}. Moreover, the exact sublattice symmetry of the model, $\Lambda_x H^\text{eff}_0[-\bb{\ell}] \Lambda_x =H^\text{eff}_0[\bb{\ell}]$, ensures vanishing non-equilibrium staggered spin polarization $\delta \bb{s}_-=0$ irrespective of both the voltage bias and the N\'eel vector orientation. This property is indeed confirmed by the numerical analysis. 
@@ -406,7 +406,7 @@ H^\text{as}_0= v\, \bb{p}\cdot\bb{\Sigma}+\alpha_\text{R}\lt[\bb{\sigma}\times\b
 that clearly lacks the sublattice symmetry. Interestingly, we observe from numerical simulations that the staggered non-equilibrium polarization $\delta \bb{s}_-$ is still vanishing in the metal regime, while it becomes finite in the half-metal regime. It has to be noted, however, that the separation to staggered and non-staggered polarization is largely irrelevant for the asymmetric model, since the latter is characterized by the only vector torque 
 \be
 \label{TA}
-\bb{T}^\text{A}= \frac{J\mathcal{A}}{\hbar} \bb{n}^\text{A}\times\delta\bb{s}^\text{A}= \frac{J\mathcal{A}}{\hbar} \lt(\bb{\ell}+\bb{m}\rt)\times\lt(\delta\bb{s}_++\delta\bb{s}_-\rt),
+\bb{T}^\text{A}= \frac{J\mathcal{A}}{\hslash} \bb{n}^\text{A}\times\delta\bb{s}^\text{A}= \frac{J\mathcal{A}}{\hslash} \lt(\bb{\ell}+\bb{m}\rt)\times\lt(\delta\bb{s}_++\delta\bb{s}_-\rt),
 \e
 that is defined exclusively by the spin density on the sublattice A. 
 
@@ -425,7 +425,7 @@ Indeed, for an ``isotropic'' antiferromagnet we find, in complete analogy with E
 \beml
 \label{AFMEOM2}
 \begin{align}
-&\dot{\bb{\ell}} = -(J_\text{ex}/2\hbar)\, \bb{\ell}\times\bb{m} +\bb{H}\times\bb{\ell}+\bb{T}^\text{A},\\
+&\dot{\bb{\ell}} = -(J_\text{ex}/2\hslash)\, \bb{\ell}\times\bb{m} +\bb{H}\times\bb{\ell}+\bb{T}^\text{A},\\
 &\dot{\bb{m}} = \bb{H}\times\bb{m}+\bb{T}^\text{A},
 \end{align}
 \eml
@@ -517,12 +517,12 @@ As have been already mentioned one can expect the asymmetric model to capture al
 %%%%
 % figure 12
 %
-\begin{figure}[t]
-\centering
-\centerline{\includegraphics[width=\columnwidth]{{gfx/Chapter02/fig12}}}
-\caption{Time evolution of the in-plane N\'eel vector $\bb{n}_\parallel(t)$ in the symmetric model (top panel) and asymmetric model (bottom panel) induced by a sequence of current pulses alternating between $-\hat{\bb{x}}$ and $\hat{\bb{y}}$ directions (gray areas). The results are obtained from Eqs.~(\ref{EOMAFM10}) for  the parameters $\alpha=0.005$, $\hbar\eta j/J_\text{ex}=0.05$, $E/w=0.3$ and $n_\text{imp}=0.3$.}
-\label{fig:switching}
-\end{figure}
+% \begin{figure}[t]
+% \centering
+% \centerline{\includegraphics[width=\columnwidth]{{gfx/Chapter02/fig12}}}
+% \caption{Time evolution of the in-plane N\'eel vector $\bb{n}_\parallel(t)$ in the symmetric model (top panel) and asymmetric model (bottom panel) induced by a sequence of current pulses alternating between $-\hat{\bb{x}}$ and $\hat{\bb{y}}$ directions (gray areas). The results are obtained from Eqs.~(\ref{EOMAFM10}) for  the parameters $\alpha=0.005$, $\hslash\eta j/J_\text{ex}=0.05$, $E/w=0.3$ and $n_\text{imp}=0.3$.}
+% \label{fig:switching}
+% \end{figure}
 
 \section{Antiferromagnetic dynamics}
 
@@ -532,13 +532,13 @@ In order to model AFM magnetization dynamics we adopt the equations of motion (\
 \beml
 \label{EOMAFM10}
 \begin{align}
-\dot{\bb{n}}^\text{A} &= \frac{J_\text{ex}}{2\hbar}\bb{n}^\text{B}\times \bb{n}^\text{A}+ \frac{J\mathcal{A}}{\hbar}\, \bb{n}^\text{A}\times \bb{s}^\text{A} +\alpha\, \bb{n}^\text{A}\times \dot{\bb{n}}^\text{A},\\
-\dot{\bb{n}}^\text{B}&= \frac{J_\text{ex}}{2\hbar} \bb{n}^\text{A}\times \bb{n}^\text{B}+ \frac{J\mathcal{A}}{\hbar}\, \bb{n}^\text{B}\times \bb{s}^\text{B}+\alpha\, \bb{n}^\text{B}\times \dot{\bb{n}}^\text{B},
+\dot{\bb{n}}^\text{A} &= \frac{J_\text{ex}}{2\hslash}\bb{n}^\text{B}\times \bb{n}^\text{A}+ \frac{J\mathcal{A}}{\hslash}\, \bb{n}^\text{A}\times \bb{s}^\text{A} +\alpha\, \bb{n}^\text{A}\times \dot{\bb{n}}^\text{A},\\
+\dot{\bb{n}}^\text{B}&= \frac{J_\text{ex}}{2\hslash} \bb{n}^\text{A}\times \bb{n}^\text{B}+ \frac{J\mathcal{A}}{\hslash}\, \bb{n}^\text{B}\times \bb{s}^\text{B}+\alpha\, \bb{n}^\text{B}\times \dot{\bb{n}}^\text{B},
 \end{align}
 \eml
 where we take $\alpha=0.005$ for the strength of the Gilbert damping.  
 
-In Fig.~\ref{fig:switching} we illustrate the AFM dynamics induced by short current pulses of the density $j=0.05\,J_\text{ex}/\eta\hbar$, which are applied in alternating directions $-\hat{\bb{x}}$ and $\hat{\bb{y}}$. The parameters of spin-orbit torques are derived for the Fermi energy $E =0.3\,w$ (in the metal regime) and for the impurity concentration $n_\text{imp}=0.3$ which corresponds to placing impurities on $30\%$ of lattice sites.   
+In Fig.~\ref{fig:switching} we illustrate the AFM dynamics induced by short current pulses of the density $j=0.05\,J_\text{ex}/\eta\hslash$, which are applied in alternating directions $-\hat{\bb{x}}$ and $\hat{\bb{y}}$. The parameters of spin-orbit torques are derived for the Fermi energy $E =0.3\,w$ (in the metal regime) and for the impurity concentration $n_\text{imp}=0.3$ which corresponds to placing impurities on $30\%$ of lattice sites.   
 
 The spin-orbit torques in the symmetric model are obtained by substituting $\bb{s}^\text{A}=\bb{s}^\text{B} = \delta\bb{s}_+$ in Eqs.~(\ref{EOMAFM10}), where $\delta\bb{s}_+ \propto \hat{\bb{z}}\times\bb{j}$ is given by Eq.~(\ref{s_SOT}). The spin-orbit torques in the asymmetric model correspond to $\bb{s}^\text{B}=0$ and $\bb{s}^\text{A}$ taken from Eq.~(\ref{sA}).
  
