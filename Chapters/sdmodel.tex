@@ -84,14 +84,10 @@ The spin-polarizations of the conducting electrons that appear in the equations 
 
 We can write the linear response of a spin-polarization $s_\alpha$ to a perturbation $H'$ as
 \begin{equation}
-  s_\alpha = \sum_{\beta}\hat{K}_{\alpha\beta}\partial_t H'\label{sd:eq:kubo1}
-\end{equation}
-where the components of the tensor $\hat{K}$ are given by the Kubo formula 
-\begin{equation}
-\hat{K}_{\alpha}=\int\!\frac{d^2\bb{p}}{(2\pi)^2}\tr \langle \hat{s}_\alpha G^\text{R}_{\bb{p}} \frac{\partial H'}{\partial t} G^\text{A}_{\bb{p}}\rangle,
+	s_\alpha = v^2\mathcal{A}\int\!\frac{d^2\bb{p}}{(2\pi)^2}\tr \langle \hat{s}_\alpha G^\text{R}_{\bb{p}} \frac{\partial H'}{\partial t} G^\text{A}_{\bb{p}}\rangle,
 \label{sd:eq:kubo2}
 \end{equation}
-with momentum $\bb{p}$, retarded (advanced) Green's functions $G^\text{R(A)}_{\bb{p}}$ and operator trace $\tr$. The angular brackets $\langle\dots\rangle$ denote averaging over disorder samples. Eq.~(\ref{sd:eq:kubo1}) with Eq.~(\ref{sd:eq:kubo1}) inserted is called the Kubo formula and is often at the basis of linear response theory. It is in fact one expression of the more general fluctuation-dissipation theorem \ref{Kubo_1966}. This theorem equates the response of a system to an external force or perturbation to the fluctuations of the system in absence of that force or perturbation. In other words, the left hand side of Eq.~(sd:eq:kubo1) denotes an out-of-equilibrium quantity which is related to a correlator on the right hand side that is evaluated in equilibrium. 
+with momentum $\bb{p}$, Fermi-velocity $v$, unit cell area $\mathcal{A}$, retarded (advanced) Green's functions $G^\text{R(A)}_{\bb{p}}$ and operator trace $\tr$. The angular brackets $\langle\dots\rangle$ denote averaging over disorder samples. Eq.~(\ref{sd:eq:kubo2}) is called the Kubo formula that we derive from a Keldysh framework in Appendix~\ref{app:kubo} and is often at the basis of linear response theory. It is in fact one expression of the more general fluctuation-dissipation theorem \ref{Kubo_1966}. This theorem equates the response of a system to an external force or perturbation to the fluctuations of the system in absence of that force or perturbation. In other words, the left hand side of Eq.~(sd:eq:kubo1) denotes an out-of-equilibrium quantity which is related to a correlator on the right hand side that is evaluated in equilibrium. 
 
 The perturbations, or forces, that we consider are electric fields that drive electrons and changes in magnetization direction. By expressing the electric field in terms of current through the conductivity tensor (which is again obtained through a Kubo formula), we obtain the out-of-equilibrium spin-polarization produces by an electric current. This in turn defines the current-induced spin-orbit torque. The second response, describes how the electrons' spin respond to a change in the electronic spectrum (by varying the magnetization) and gives rise to spin-renormalizations and Gilbert damping. 
 
@@ -117,11 +113,11 @@ By inserting the self energy into a bare Green function we get the disorder-aver
 \end{equation}
 The self-energy determines the poles of the Green's function in the complex energy plane and are equal to the roots of $\det[\varepsilon-H-\Sigma^\text{R(A)}]$. For a given momentum the real part of each pole correspond to a point on a different Fermi surface, while the imaginary part defines the decay of the momentum eigenstates. In other words, the imaginary part gives rise to a finite momentum lifetime. This can be seen by taking the Fourier-transform from energy domain to the time domain where the imaginary part of the poleleads to an exponential decay in time for the Retarded Green's function. To be more explicit, take for example the Fourier transform of a Green's function belonging to a single particle and single orbital 
 \begin{equation}
-	G^\text{R}(\bb{p},t) = \int\!\frac{\mathrm{d}\varepsilon}{2\pi} \frac{\exp(-i \varepsilon t)}{\varepsilon-\varepsilon_{\bb{p}}-i\eta} = \Theta(t)\exp(i\varepsilon)\exp(-\eta t), 
+	G^\text{R}(\bb{p},t) = \int\!\frac{\mathrm{d}\varepsilon}{2\pi} \frac{\exp(-i \varepsilon t)}{\varepsilon-\varepsilon_{\bb{p}}-i\eta} = \Theta(t)\exp(i\varepsilon_{\bb{p}})\exp(-\eta t), 
 \end{equation}
 where $\Theta$ is the Heaviside step function and $\eta$ is the imaginary part of the complex energy pole. The momentum life-time is defined as $\tau = 1/2\eta$ and is equal to the transport time in the Born approximation for isotropic scattering that we consider. The transport-time reflects the time needed to randomize the direction of an electron due to impurity scatterings. Note that in Eq.~(\ref{sd:eq:sigma}) we generally do not explicitly consider the real part of the self-energy as the shift in spectrum can be absorbed into the definition of model parameters. For brevity, we use the same symbols for terms such as fermi energy and s--d energy before and after the Born approximation, but one needs to remember that in the latter case they correspond to renormalized quantities. 
 
-For the second step in disorder averaging, we need to replace one of the vertex functions with one that is corrected for disorder in the ladder approximation (as illustrated in Figure~\ref{fig:diagrams}-b). We call this new vertex function the vertex-corrected function. 
+For the second step in disorder averaging, we need to replace one of the vertex functions with one that is corrected for disorder in the ladder approximation (as illustrated in Figure~\ref{sd:fig:diagrams}-b). We call this new vertex function the vertex-corrected function. 
 By denoting $\hat{s}^{\text{vc}}$ as the vertex-corrected function of $\hat{s}$ and $\hat{s}^{(i)}$ as the function containing $i$ disorder-lines, the ladder approximation is given by:
 \begin{align}
     \hat{s}^\text{vc}
@@ -137,21 +133,24 @@ where $\hat{s}^{(i})$ is given by:
 
 \begin{figure}
     \centering
-    % \includegraphics{app5.pdf}
+    \includegraphics{articles/misha_paper/app5.pdf}
     \caption{Diagrammatic illustration. a) Born-approximation. b) Ladder-approximation. c) Disorder-averaged polarization bubble. d) Perturbative expansion of the disorder-averaged polarization bubble. }
-    \label{fig:diagrams}
+    \label{sd:fig:diagrams}
 \end{figure}
 This vertex-correction is important as a single scattering event already modifies the spin-polarization. For example we will see in Chapter~\ref{ch:diffusive} that vertex-corrections lead to an unnusual and novel torque that we call a diffusive spin-orbit torque. Another example is found in Chapter~\ref{baglay} where disorder averaging can lead to an increase in Gilbert Damping by a factor of a million. 
 
-The infinite sum of Eq.~(\ref{sd:eq:ladder}) can actually be recast into a geometrical sum involving matrices. By choosing an appropriate operator basis, $\{\hat{B}_i\}$, where $i=1,2,\dots,n^2$ with $n$ the dimension of the operator space, the vector of vertex corrected basis elements $\bb{B}^\text{vc}\equiv(\hat{B}_1^\text{vc},\dots,\hat{B}_n^\text{vc})$ can written as
+The infinite sum of Eq.~(\ref{sd:eq:ladder}) can actually be recast into a geometrical sum involving matrices. By choosing an appropriate operator basis, $\{\hat{B}_i\}$, where $i=1,2,\dots,n^2$ with $n\times n$ the dimension of the operator space, the vector of vertex corrected basis elements $\bb{B}^\text{vc}\equiv(\hat{B}_1^\text{vc},\dots,\hat{B}_{{n^2}}^\text{vc})$ can written as
 \begin{equation}
 	\bb{B}^\text{vc} = \bb{B}+\mathcal{F}\bb{B}+\mathcal{F}^2\bb{B}+\mathcal{F}^3+\cdots = \frac{1}{1-\mathcal{F}}\bb{B}.
 \end{equation}
-By choosing the a basis that satisfies the normalization condition $\tr\bb{B}_i\bb{B}_j=N\delta_{ij}$ we find that the response matrix $\mathcal{F}$ has the following form
+By choosing the a basis that satisfies the normalization condition $\tr\bb{B}_i\bb{B}_j=n\delta_{ij}$ we find that the response matrix $\mathcal{F}$ has the following form
 \begin{equation}
-	\mathcal{F}_{ij} = \frac{2}{n}\pi\alpha \int\!\frac{d^2\bb{p}}{(2\pi)^2}\tr \hat{B}_i G^\text{R}_{\bb{p}} \hat{B}_j G^\text{A}_{\bb{p}}.
+	\mathcal{F}_{ij} = \frac{2\pi\alpha}{n} \int\!\frac{d^2\bb{p}}{(2\pi)^2}\tr \hat{B}_i G^\text{R}_{\bb{p}} \hat{B}_j G^\text{A}_{\bb{p}}.
 \end{equation}
-We will see in the remaining chapters that for a Dirac ferromagnet, the operators that we consider only depend on spin-degrees of freedom and therefore the response-matrix has dimension $(2\times2)^2=4\times4$. The Dirac antiferromagnets, however have spin, sublattice and valley degrees of freedom, leading to response-matrices of dimension $(2^3\times2^3)^2=64\times64$. Inverting such a matrix analytically can be a daunting task, but can be simplified dramatically by choosing an appropriate basis and limits. 
+We will see in the remaining chapters that for a Dirac ferromagnet, the operators that we consider only depend on spin-degrees of freedom and therefore the response-matrix has dimension $(2\times2)^2=4\times4$. The Dirac antiferromagnets, however have spin, sublattice and valley degrees of freedom, leading to response-matrices of dimension $(2^3\times2^3)^2=64\times64$. Inverting such a matrix analytically can be a daunting task, but can be simplified dramatically by choosing an appropriate basis and working in certain limits. 
 
-Note that the inversion of $1-\mathcal{F}$ can only be done if none of the eigenvalues of $\mathcal{F}$ is equal to $1$. It appears however that this is never the case, as the self energy expressed in the basis $\{\hat{B}_i\}$ is an eigen function of $\mathcal{F}$ with eigenvalue $1$. In spinless systems this is known for the density-density response, which can be resolved by computing the matrix elements of $\mathcal{F}$ at a finite frequency and momentum %%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%
+Note that the inversion of $1-\mathcal{F}$ can only be done if none of the eigenvalues of $\mathcal{F}$ is equal to $1$. It appears however that this is never the case, as the self energy expressed in the basis $\{\hat{B}_i\}$ is an eigen function of $\mathcal{F}$ with eigenvalue $1$
+\begin{equation}
+	2\pi\alpha\int\!\frac{\mathrm{d}\bb{p}}{(2\pi)^2} G^\text{R}_{\bb{p}}\Sigma^\text{R(A)}G^\text{A}_{\bb{p}} = \Sigma^\text{R(A)}.
+\end{equation}
+In spinless systems we find the same problem in the density-density response which is resolved by working with response functions with finite momentum and frequency. Such a non-local response corresponds to electron diffusion. In Chapter~\ref{ch:diffusive} we will see that for a Dirac ferromagnet this gives rise to a novel type of non-local torque that we call a diffusive spin-torque. In other systems that we studied it appears that the singular eigenvalue in $1-\mathcal{F}$ does not lead to any observable effect. For Rashba ferromagnets it was shown that the divergency appears in the spin-density only in the direction of magnetization. For spin-torque however this plays no role as divergency disappears as the torque is always perpendicular to both the magnetization and spin-density. For the Dirac antiferromagnet that we discuss in Chapter~\ref{ch:baglay} it again appears to play no role on the equations of motion on $\bb{n}$ and $\bb{m}$. It remains an open question what systems, apart from the Dirac ferromagnet, diffusion could play an important role. 
