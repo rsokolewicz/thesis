@@ -23,7 +23,7 @@ A conduction electron mechanism for Gilbert damping in collinear ferromagnet req
 \end{figure}
 %%%%%%%%%
 
-Spin dynamics in a bipartite AFM is described in terms of two mutually orthogonal vector fields, namely the vector $\bb{n}(t)$ that is proportional to the N\'eel vector (difference between sublattice moments) and the vector $\bb{m}(t)$ that is proportional to the net magnetization (sum of sublattice moments) of a sample. Even though the AFM ground state corresponds to $\bb{m}=0$, it is widely understood that no N\'eel dynamics is possible without formation of a small but finite nonequilibrium magnetization $\bb{m}$. It appears, however, that Gilbert damping terms associated with the time dynamics of $\bb{m}(t)$ and $\bb{n}(t)$ are essentially different from a microscopic point of view.   
+The spin dynamics in a bipartite AFM is described in terms of two mutually orthogonal vector fields, $\bb{n}$ and $\bb{m}$. Even though the AFM ground state corresponds to $\bb{m}=0$, it is widely understood that no N\'eel dynamics is possible without formation of a small but finite nonequilibrium magnetization $\bb{m}$. It appears, however, that Gilbert damping terms associated with the time dynamics of $\bb{m}(t)$ and $\bb{n}(t)$ are essentially different from a microscopic point of view.
 
 Indeed, the Gilbert damping that is proportional to $\partial_t\bb{n}$ is characterized by a coefficient $\alpha_n$, which is vanishing in the absence of spin-orbit interaction, much like it is the case in the ferromagnets. This behavior can be traced back to a spin-rotational symmetry of the collinear AFM. Indeed, the absolute value of $\bb{n}$ is conserved up to the order $m^2$. Thus, the dynamics of the N\'eel vector is essentially a rotation that does not change the conduction electron spectrum as far as the spin-rotation invariance is present. Breaking the spin-rotation symmetry by spin-orbit interaction induces, therefore, a finite $\alpha_n$, which is quadratic with respect to spin-orbit interaction strength.
 
@@ -33,44 +33,38 @@ In this Chapter, we uncover the microscopic mechanism of strong and anisotropic 
 
 Below we focus mainly on the AFM in the regime of good metallic behavior, such that the Fermi energy of electrons exceeds by order of magnitude that of an effective $s$-$d$ exchange coupling between electron spins and localized AFM magnetic momenta.  In this case, the transition to the highly anisotropic regime takes place provided the characteristic spin-orbit energy $\lambda$ exceeds the scale $\hslash/\tau$, where $\tau$ is the electron scattering time. Alternatively, one may think of characteristic spin-orbit length becoming smaller than the mean free path of conduction electrons.  We show here that the splitting of 2D Fermi surfaces by spin-orbit interaction leads to a dramatic suppression of electron spin flips in certain directions. This results in a strong anisotropy of both Gilbert damping tensors $\hat{\alpha}_n$ and $\hat{\alpha}_m$, that get some of their principal components vanishing. This extreme anisotropy in the damping leads to essentially undamped N\'eel vector dynamics for certain nonequilibrium modes. 
 
-In particular, we identify a specific undamped mode that corresponds to perpendicular-to-the-plane magnetization $\bb{m} \propto \hat{\bb{z}}$ and in-plane N\'eel vector $\bb{n}(t) \perp \hat{\bb{z}}$. The N\'eel vector corresponding to the mode has a precission around $\bb{m}$ with the frequency $J_\textrm{ex} m/\hslash$, where $J_\textrm{ex}$ is the value of the isotropic AFM exchange.
+In particular, we identify a specific undamped mode that corresponds to perpendicular-to-the-plane magnetization $\bb{m} \propto \hat{\bb{z}}$ and in-plane N\'eel vector $\bb{n}(t) \perp \hat{\bb{z}}$. The N\'eel vector corresponding to the mode has a precession around $\bb{m}$ with the frequency $J_\textrm{ex} m/\hslash$, where $J_\textrm{ex}$ is the value of the isotropic AFM exchange.
 
 The presence of the undamped mode identified here, illustrates how lowering the symmetry of the electronic bath (by spin-orbit interaction) may induce a conservation law in the localized spin subsystem. Based on this microscopic mechanism we provide qualitative arguments in favor of a generality of the giant Gilbert damping anisotropy in a 2D metalic AFM with spin-orbit coupling. Even though the undamped mode cannot be associated with a single spin-wave or a magnon, its presence has a strong impact on the nonequilibrium N\'eel vector dynamics in 2D Rashba AFMs.
 
 Apart from the Gilbert damping our results extend to cover conductivity and spin-orbit torques in the Rashba honeycomb AFM model. We also demonstrate how weak anisotropy of all these quantities emerge with Fermi energies approaching the AFM band gap. 
 
 \section{Phenomenology of AFM dynamics}
+We describe the coupled dynamics of the staggered and non-staggered magnetizations, $\bb{n}$ and $\bb{m}$, using Eqs.~(\ref{eq:sd:neel}) 
+% In this Chapter, we choose to describe the AFM with a classical Heisenberg model for localized spins $\bb{S}^\textrm{X}= S \bb{n}^\textrm{X}$ on two sublattices $X=A,B$. The spins have the same modulus $S$ and antiparallel directions $\bb{n}^\textrm{A}=-\bb{n}^\textrm{B}$ in the ground state. 
 
-In this Chapter, we choose to describe the AFM with a classical Heisenberg model for localized spins $\bb{S}^\textrm{X}= S \bb{n}^\textrm{X}$ on two sublattices $X=A,B$. The spins have the same modulus $S$ and antiparallel directions $\bb{n}^\textrm{A}=-\bb{n}^\textrm{B}$ in the ground state. The AFM Heisenberg model is coupled to an effective tight-binding model of conduction electrons (see Appendix~\ref{chap03:sec:appa}) by means of exchange interaction,
-\be
-\label{chap03:ex}
-H_\mathrm{sd}=-J \s_{i} \s_{\sigma\sigma'}\bb{S}_i\cdot \bb{\sigma}_{\sigma\sigma'}c^\dagger_{i\sigma}c\0_{i\sigma'},
-\e
-where $J$ stands for an $s$-$d$-like exchange energy that is the same on $A$ and $B$ sublattices, the operators $c\h_{i\sigma}$ ($c\0_{i\sigma}$) are the standard creation (annihilation) operators for an electron on the lattice site $i$ with the spin index $\sigma$, and the notation $\bb{\sigma}=(\sigma_x,\sigma_y,\sigma_z)$ represents the three-dimensional vector of Pauli matrices. 
+% The real-time dynamics of AFM is, then, defined by two coupled differential equations (Landau-Lifshitz-Gilbert equations) on the unit vectors $\bb{n}^\textrm{A}$ and $\bb{n}^\textrm{B}$, 
+% \beml
+% \label{chap03:basicEQ}
+% \begin{align}
+% \dot{\bb{n}}^\textrm{A} &= \bb{H}^\textrm{A}\times\bb{n}^\textrm{A}  + (J\mathcal{A}/\hslash)\,\bb{n}^\textrm{A}\times \bb{s}^\textrm{A},\\
+% \dot{\bb{n}}^\textrm{B}&= \bb{H}^\textrm{B}\times\bb{n}^\textrm{B} +(J\mathcal{A}/\hslash)\,\bb{n}^\textrm{B}\times \bb{s}^\textrm{B},
+% \end{align}
+% \eml
+% where dot stands for the time derivative, $\bb{s}^\textrm{X}$ is the spin density of conduction electrons on the sublattice $X$,
+% \be
+% \bb{s}^\textrm{A,B}(\bb{r})= \frac{1}{2} \s_{i\sigma\sigma'} \lt\la c\h_{i\sigma}\bb{\sigma}_{\sigma\sigma'} c\0_{i\sigma'} \rt\ra\;\frac{2}{\mathcal{A}},
+% \e
+% and $\mathcal{A}$ is the area of the unit cell in the AFM. The notations $\bb{H}^\textrm{A,B}$ refer to effective fields on the sublattices $A$ and $B$ that are defined by the Heisenberg model. 
 
-The real-time dynamics of AFM is, then, defined by two coupled differential equations (Landau-Lifshitz-Gilbert equations) on the unit vectors $\bb{n}^\textrm{A}$ and $\bb{n}^\textrm{B}$, 
-\beml
-\label{chap03:basicEQ}
-\begin{align}
-\dot{\bb{n}}^\textrm{A} &= \bb{H}^\textrm{A}\times\bb{n}^\textrm{A}  + (J\mathcal{A}/\hslash)\,\bb{n}^\textrm{A}\times \bb{s}^\textrm{A},\\
-\dot{\bb{n}}^\textrm{B}&= \bb{H}^\textrm{B}\times\bb{n}^\textrm{B} +(J\mathcal{A}/\hslash)\,\bb{n}^\textrm{B}\times \bb{s}^\textrm{B},
-\end{align}
-\eml
-where dot stands for the time derivative, $\bb{s}^\textrm{X}$ is the spin density of conduction electrons on the sublattice $X$,
-\be
-\bb{s}^\textrm{A,B}(\bb{r})= \frac{1}{2} \s_{i\sigma\sigma'} \lt\la c\h_{i\sigma}\bb{\sigma}_{\sigma\sigma'} c\0_{i\sigma'} \rt\ra\;\frac{2}{\mathcal{A}},
-\e
-and $\mathcal{A}$ is the area of the unit cell in the AFM. The notations $\bb{H}^\textrm{A,B}$ refer to effective fields on the sublattices $A$ and $B$ that are defined by the Heisenberg model. 
+% For an isotropic antiferromagnet, one finds an effective field \cite{gomonay_spintronics_2014} $\bb{H}^\textrm{A}+\bb{H}^\textrm{B}= J_\textrm{ex}\bb{m}/\hslash+2\bb{H}$, where $\bb{H}$ is an external magnetic field in frequency units and $J_\textrm{ex}$ is a direct antiferromagnetic exchange energy that is one of the largest energies in the problem. In turn, the combination $\bb{H}^\textrm{A}-\bb{H}^\textrm{B}$ is proportional to magnetic anisotropy that we do not specify in this Chapter.  
 
-For an isotropic antiferromagnet, one finds an effective field \cite{gomonay_spintronics_2014} $\bb{H}^\textrm{A}+\bb{H}^\textrm{B}= J_\textrm{ex}\bb{m}/\hslash+2\bb{H}$, where $\bb{H}$ is an external magnetic field in frequency units and $J_\textrm{ex}$ is a direct antiferromagnetic exchange energy that is one of the largest energies in the problem. In turn, the combination $\bb{H}^\textrm{A}-\bb{H}^\textrm{B}$ is proportional to magnetic anisotropy that we do not specify in this Chapter.  
+% Magnetization dynamics in AFM is conveniently formulated in terms of the N\'eel and magnetization vectors,
+% \be
+% \bb{n}=\lt(\bb{n}^\textrm{A}-\bb{n}^\textrm{B}\rt)/2,\qquad \bb{m}= \lt(\bb{n}^\textrm{A}+\bb{n}^\textrm{B}\rt)/2,
+% \e
+% that remain mutually perpendicular $\bb{n}\cdot \bb{m}=0$ and yield the constraint $n^2+m^2=1$. The dynamics necessarily induces a finite nonequilibrium magnetization vector $\bb{m}$, while the condition $m\ll 1$ remains to be fulfilled.  
 
-Magnetization dynamics in AFM is conveniently formulated in terms of the N\'eel and magnetization vectors,
-\be
-\bb{n}=\lt(\bb{n}^\textrm{A}-\bb{n}^\textrm{B}\rt)/2,\qquad \bb{m}= \lt(\bb{n}^\textrm{A}+\bb{n}^\textrm{B}\rt)/2,
-\e
-that remain mutually perpendicular $\bb{n}\cdot \bb{m}=0$ and yield the constraint $n^2+m^2=1$. The dynamics necessarily induces a finite nonequilibrium magnetization vector $\bb{m}$, while the condition $m\ll 1$ remains to be fulfilled.  
-
-From Eqs.~(\ref{chap03:basicEQ}) we obtain
 \beml
 \label{chap03:AFMEOM}
 \begin{align}
@@ -80,7 +74,14 @@ From Eqs.~(\ref{chap03:basicEQ}) we obtain
 \dot{\bb{m}} &= \bb{H}\times\bb{m}+\bb{m}\times\bb{s}^++\bb{n}\times\bb{s}^-,
 \end{align}
 \eml
-where $\Omega=2J_\textrm{ex}S/\hslash$ and $\bb{s}^{\pm}= J \mathcal{A}\,(\bb{s}^\textrm{A}\pm\bb{s}^\textrm{B})/2\hslash$. In Eqs.~(\ref{chap03:AFMEOM}) we have deliberately skipped terms that are induced by anisotropy of AFM exchange since the latter depend on particularities of the AFM Heisenberg model that we do not discuss here.  
+where $\Omega=2J_\textrm{ex}S/\hslash$ and $\bb{s}^{\pm}= J \mathcal{A}\,(\bb{s}^\textrm{A}\pm\bb{s}^\textrm{B})/2\hslash$. The effects arising from the anisotropy $K$ are dropped for the time being. 
+
+% The AFM Heisenberg model is coupled to an effective tight-binding model of conduction electrons (see Appendix~\ref{chap03:sec:appa}) by means of exchange interaction,
+% \be
+% \label{chap03:ex}
+% H_\mathrm{sd}=-J \s_{i} \s_{\sigma\sigma'}\bb{S}_i\cdot \bb{\sigma}_{\sigma\sigma'}c^\dagger_{i\sigma}c\0_{i\sigma'},
+% \e
+% where $J$ stands for an $s$-$d$-like exchange energy that is the same on $A$ and $B$ sublattices, the operators $c\h_{i\sigma}$ ($c\0_{i\sigma}$) are the standard creation (annihilation) operators for an electron on the lattice site $i$ with the spin index $\sigma$, and the notation $\bb{\sigma}=(\sigma_x,\sigma_y,\sigma_z)$ represents the three-dimensional vector of Pauli matrices. 
 
 The vector $\bb{s}^+$ is proportional to average polarization of conduction electrons, while the vector $\bb{s}^-$ is proportional to the staggered polarization. The quantities $\bb{s}^\pm=\bb{s}_0^\pm+\delta\bb{s}^\pm$ contain equilibrium contributions $\bb{s}_0^\pm$ that characterize various interactions induced by conduction electrons. These contributions do renormalize the parameters of the AFM Heisenberg model and are not the subject of the present Chapter. 
 
@@ -90,7 +91,7 @@ The vector $\bb{s}^+$ is proportional to average polarization of conduction elec
 \begin{figure}
 \centering
 \centerline{\includegraphics[width=\columnwidth]{{articles/misha_paper/fig2.pdf}}}
-\caption{Electronic band structure of the honeycomb AFM model of Eq.~(\ref{chap03:eff}) for different orientations of the N\'eel vector ($n_z=\cos\theta$). Two-dimensional momenta $\bb{p}$ are measured with respect to the wave-vectors $\bm{K}$ and $\bm{K}^\prime$ that specify two nonequivalent valleys. Deviation of the N\'eel vector from the perpendicular-to-the plane configuration ($\theta=0$) lifts the valley degeneracy. We restrict our analysis to the metallic regime with Fermi energies corresponding to two Fermi surfaces per valley (an example is shown by a black dotted line). The energy scale $\Delta$ characterizes the strength of $s$-$d$ exchange interaction.
+\caption{Electronic band structure of the honeycomb AFM model of Eq.~(\ref{chap03:eff}) for different orientations of the N\'eel vector ($n_z=\cos\theta$). Two-dimensional momenta $\bb{p}$ are measured with respect to the wave-vectors $\bm{K}$ and $\bm{K}^\prime$ that specify two nonequivalent valleys. Deviation of the N\'eel vector from the perpendicular-to-the plane configuration ($\theta=0$) lifts the valley degeneracy. We restrict our analysis to the metallic regime with Fermi energies corresponding to two Fermi surfaces per valley (an example is shown by a black dotted line). The energy scale $\Delta_{\text{sd}}$ characterizes the strength of $s$-$d$ exchange interaction.
 }
 \label{chap03:fig:spectrum}
 \end{figure}
@@ -156,34 +157,34 @@ In the following, we turn to the microscopic analysis of the conductivity (Sec.~
 
 \section{Microscopic model}
 
-For the sake of a microscopic analysis we adopt a sublattice symmetric $s$-$d$-like model of a 2D honeycomb antiferromagnet with Rashba spin-orbit coupling, that was introduced in Ref.~\cite{sumit2019}. The energy dispersion of this model is illustrated schematically in Fig.~\ref{chap03:fig:spectrum}.  
+For the sake of a microscopic analysis we adopt a sublattice symmetric $s$-$d$-like model of a 2D honeycomb antiferromagnet with Rashba spin-orbit coupling, that was used in the previous Chapter as well. The energy dispersion of this model is illustrated schematically in Fig.~\ref{chap03:fig:spectrum}.  
 The low energy model for conduction electrons responsible for the dispersion in Fig.~\ref{chap03:fig:spectrum}, is described by an effective Hamiltonian (see Appendix ~\ref{chap03:sec:appa}) that in a valley-symmetric representation reads
 \be
 \label{chap03:eff}
-H^\textrm{eff}= v\, \bb{p}\cdot\bb{\Sigma}+\tfrac{1}{2}\lambda\lt[\bb{\sigma}\times\bb{\Sigma}\rt]_{\hat{z}} - \Delta\,\bb{n}\cdot\bb{\sigma}\,\Sigma_z\Lambda_z + V(\bb{r}).
+H^\textrm{eff}= v\, \bb{p}\cdot\bb{\Sigma}+\tfrac{1}{2}\lambda\lt[\bb{\sigma}\times\bb{\Sigma}\rt]_{\hat{z}} - \Delta_{\text{sd}}\,\bb{n}\cdot\bb{\sigma}\,\Sigma_z\Lambda_z + V(\bb{r}).
 \e
-Here $\bb{\Sigma}$, $\bb{\Lambda}$, and $\bb{\sigma}$ are the vectors of Pauli matrices in sublattice, valley and spin space, respectively, $v$ is the characteristic Fermi velocity, while $\lambda$ and $\Delta=JS$ are the energy scales characterizing the strength of Rashba spin-orbit coupling and $s$-$d$-like exchange energy, correspondingly. 
+Here $\bb{\Sigma}$, $\bb{\Lambda}$, and $\bb{\sigma}$ are the vectors of Pauli matrices in sublattice, valley and spin space, respectively, $v$ is the characteristic Fermi velocity, while $\lambda$ and $\Delta_{\text{sd}}=JS$ are the energy scales characterizing the strength of Rashba spin-orbit coupling and $s$-$d$-like exchange energy, correspondingly. 
 
-The term $V(\bb{r})$ stands for a scalar Gaussian white-noise disorder potential, which is proportional to the unit matrix in sublattice, valley and spin space. The potential has a zero mean value $\la V(\bb{r}) \ra=0$ and is fully characterized by the pair correlator,
-\be
-\lt\la V(\bb{r}) V(\bb{r}') \rt\ra = 2\pi (\hslash v)^2 \alpha_\textrm{d}\;\delta(\bb{r}-\bb{r}'),
-\e
-where the angular brackets denote the averaging over disorder realizations. The dimensionless parameter $\alpha_\textrm{d}\ll 1$ quantifies the disorder strength. 
+% The term $V(\bb{r})$ stands for a scalar Gaussian white-noise disorder potential, which is proportional to the unit matrix in sublattice, valley and spin space. The potential has a zero mean value $\la V(\bb{r}) \ra=0$ and is fully characterized by the pair correlator,
+% \be
+% \lt\la V(\bb{r}) V(\bb{r}') \rt\ra = 2\pi (\hslash v)^2 \alpha_\textrm{d}\;\delta(\bb{r}-\bb{r}'),
+% \e
+% where the angular brackets denote the averaging over disorder realizations. The dimensionless parameter $\alpha_\textrm{d}\ll 1$ quantifies the disorder strength. 
 
-The disorder potential is responsible for a momentum relaxation of conduction electrons. Exchange interaction and spin-orbit scattering (or the scattering on a non-collinear configurations with $\bb{m}\neq 0$) enable coupling between localized angular momenta and kinetic momenta of electrons. Together these mechanisms form a channel to dissipate angular momentum of localized spins into the lattice. Thus, our model provides us with a microscopic framework to study dissipative quantities such as Gilbert dampings, anti-damping spin-orbit torques and conductivity that we compute below. We also note that the computation of spin-relaxation time can be directly related to our analysis of Gilbert damping \cite{Hankiewicz2007,manchon_spin_2017}. 
+The disorder potential is responsible for a momentum relaxation of conduction electrons. Exchange interaction and spin-orbit scattering (or the scattering on a non-collinear configurations with $\bb{m}\neq 0$) enable coupling between localized angular momenta and kinetic momenta of electrons. Together these mechanisms form a channel to dissipate angular momentum of localized spins into the lattice. Thus, our model provides us with a microscopic framework to study dissipative quantities such as Gilbert dampings, anti-damping spin-orbit torques and conductivity that we compute below. We also note that the computation of spin-relaxation time can be directly related to our analysis of Gilbert damping \cite{Hankiewicz2007, manchon_spin_2017}. 
 
 The spectrum of the model (\ref{chap03:eff}) with $V(\bb{r})=0$ consists of two electron and two hole branches for each of the valleys as illustrated in Fig.~\ref{chap03:fig:spectrum},
 \beml
 \label{chap03:spectrum}
 \begin{align}
 \label{chap03:spectrume}
-\epsilon^e_{\pm,\varsigma}(p)&=\sqrt{v^2p^2+\Delta^2\pm \varsigma\lambda\Delta n_z+\lambda^2/4} \mp \lambda/2,\\
-\epsilon^h_{\pm,\varsigma}(p)&=-\sqrt{v^2p^2+\Delta^2\mp \varsigma\lambda\Delta n_z+\lambda^2/4} \pm \lambda/2,
+\epsilon^e_{\pm,\varsigma}(p)&=\sqrt{v^2p^2+\Delta_{\text{sd}}^2\pm \varsigma\lambda\Delta_{\text{sd}} n_z+\lambda^2/4} \mp \lambda/2,\\
+\epsilon^h_{\pm,\varsigma}(p)&=-\sqrt{v^2p^2+\Delta_{\text{sd}}^2\mp \varsigma\lambda\Delta_{\text{sd}} n_z+\lambda^2/4} \pm \lambda/2,
 \end{align}
 \eml
 where $\varsigma=\pm$ is the valley index. All spectral branches are manifestly isotropic with respect to the direction of the electron momentum $\bb{p}$ irrespective of the N\'eel vector orientation (as far as $\bb{m}=0$). 
 
-In order to limit the complexity of our microscopic analysis we restrict ourselves to the metallic regime that corresponds to the Fermi energy $\ep_F > \Delta+\lambda$ above the minimum of the top electron branches, $\epsilon^e_{+,\varsigma}(p)$, as shown schematically in Fig.~\ref{chap03:fig:spectrum}. Note that the Fermi energy $\ep_F$ is counted in the model from the center of the AFM gap. 
+In order to limit the complexity of our microscopic analysis we restrict ourselves to the metallic regime that corresponds to the Fermi energy $\ep_F > \Delta_{\text{sd}}+\lambda$ above the minimum of the top electron branches, $\epsilon^e_{+,\varsigma}(p)$, as shown schematically in Fig.~\ref{chap03:fig:spectrum}. Note that the Fermi energy $\ep_F$ is counted in the model from the center of the AFM gap. 
 We also focus on the limit of weak disorder $\ep_F \tau/\hslash\gg 1$ where $\tau = \hslash/(\pi\alpha_\textrm{d}\ep_F)$ stands for the electron scattering time. Also, in order to describe spin-orbit induced anisotropy we find it convenient to decompose the N\'eel vector (as well as the magnetization vector) to the in-plane and perpendicular-to-the-plane components as $\bb{n}= \bb{n}_\parallel+\bb{n}_\perp$, where $\bb{n}_\perp=n_z\hat{\bb{z}}$. 
 
 \section{Conductivity}\label{chap03:sec:cond}
@@ -193,15 +194,15 @@ In particular, for $n_z=0$ we find the diagonal conductivity components
 \label{chap03:conductivity}
 \begin{align}
 \label{chap03:chap3:eq:long_cond}
-&\sigma_{xx}= \frac{4e^2}{h}\,\frac{\ep_F \tau}{\hslash}\,\frac{\ep_F^2-\Delta^2}{\ep_F^2+3\Delta^2},\\
-&\sigma_{yy}= \sigma_{xx}+\frac{4e^2}{h}\,\frac{\ep_F \tau}{\hslash}\, \frac{\ep_F^2}{\ep_F^2+\Delta^2}
-\frac{\lambda^2\Delta^2}{\ep_F^4+\ep_F^2\Delta^2+2\Delta^4},
+&\sigma_{xx}= \frac{4e^2}{h}\,\frac{\ep_F \tau}{\hslash}\,\frac{\ep_F^2-\Delta_{\text{sd}}^2}{\ep_F^2+3\Delta_{\text{sd}}^2},\\
+&\sigma_{yy}= \sigma_{xx}+\frac{4e^2}{h}\,\frac{\ep_F \tau}{\hslash}\, \frac{\ep_F^2}{\ep_F^2+\Delta_{\text{sd}}^2}
+\frac{\lambda^2\Delta_{\text{sd}}^2}{\ep_F^4+\ep_F^2\Delta_{\text{sd}}^2+2\Delta_{\text{sd}}^4},
 \end{align}
 \eml
 where the principal axes correspond to choosing $\hat{\bm{x}}$ direction along $\bb{n}_\parallel$ (see Fig.~\ref{chap03:fig:lattice}). In the deep metal regime, and for a general direction of $\bb{n}$, this anisotropy is evidently small
 \be
 \label{chap03:ani}
-\frac{\rho_{xx}-\rho_{yy}}{\rho_{xx}+\rho_{yy}}=\frac{\lambda^2\Delta^2}{\ep_F^4}(1-n_z^2), \quad \ep_F\gg \lambda+\Delta,
+\frac{\rho_{xx}-\rho_{yy}}{\rho_{xx}+\rho_{yy}}=\frac{\lambda^2\Delta_{\text{sd}}^2}{\ep_F^4}(1-n_z^2), \quad \ep_F\gg \lambda+\Delta_{\text{sd}},
 \e
 where $\rho_{aa}=1/\sigma_{aa}$ is the corresponding resistivity tensor component. We note that the anomalous Hall conductivity is identically vanishing in the model of Eq.~(\ref{chap03:eff}). 
 
@@ -235,13 +236,13 @@ The behavior of the coefficients $a$, $b$ and $c$ as a function of $n_z$ is illu
 \eml
 where
 \be
-a_0=\frac{\mathcal{A}J}{e\hslash v}\,\frac{\lambda}{\ep_F}, \qquad \bar{\lambda}=\frac{\lambda}{\ep_F},\qquad\delta=\frac{\Delta}{\ep_F}.
+a_0=\frac{\mathcal{A}J}{e\hslash v}\,\frac{\lambda}{\ep_F}, \qquad \bar{\lambda}=\frac{\lambda}{\ep_F},\qquad\delta=\frac{\Delta_{\text{sd}}}{\ep_F}.
 \e
-In the metal regime, $\ep_F\gg \lambda+\Delta$, the results of Eqs.~(\ref{chap03:SOT}) are reduced to 
+In the metal regime, $\ep_F\gg \lambda+\Delta_{\text{sd}}$, the results of Eqs.~(\ref{chap03:SOT}) are reduced to 
 \be
 \label{chap03:SOTlargeE}
 a=\frac{\mathcal{A}J}{e\hslash v}\,\frac{\lambda}{\ep_F}, \qquad b=-c=2\,\frac{\mathcal{A}J}{e\hslash v}\,\frac{\lambda}{\ep_F}
-\lt(\frac{\Delta}{\ep_F}\rt)^2.
+\lt(\frac{\Delta_{\text{sd}}}{\ep_F}\rt)^2.
 \e
 One can, therefore, see that the high harmonics terms (proportional to $b$ and $c$) become irrelevant in the metal regime.  
 
@@ -253,7 +254,7 @@ Vanishing response of the staggered polarization, $\delta\bb{s}^-=0$, for the mo
 \begin{figure}
 \centering
 \centerline{\includegraphics[width=\columnwidth]{{articles/misha_paper/fig3.pdf}}}
-\caption{The coefficients $a$, $b$, and $c$ in Eq.~(\ref{chap03:sp}) as a function of the direction of the N\'eel vector, $n_z=\cos\theta$, for two different Fermi energies: $\ep_F=4\Delta$ (left panel) and  $\ep_F=16\Delta$ (right panel). We use $\lambda=1.5\Delta$.  For $n_z=0$ the results correspond to Eqs.~(\ref{chap03:SOT}). 
+\caption{The coefficients $a$, $b$, and $c$ in Eq.~(\ref{chap03:sp}) as a function of the direction of the N\'eel vector, $n_z=\cos\theta$, for two different Fermi energies: $\ep_F=4\Delta_{\text{sd}}$ (left panel) and  $\ep_F=16\Delta_{\text{sd}}$ (right panel). We use $\lambda=1.5\Delta_{\text{sd}}$.  For $n_z=0$ the results correspond to Eqs.~(\ref{chap03:SOT}). 
 }
 \label{chap03:fig:abc}
 \end{figure}
@@ -262,14 +263,14 @@ Vanishing response of the staggered polarization, $\delta\bb{s}^-=0$, for the mo
 A low-energy model that takes into account finite magnetization vector reads (see also Appendix~\ref{chap03:sec:appd})
 \be
 \label{chap03:full}
-H=H^\textrm{eff}-\Delta\,\bb{m}\cdot\bb{\sigma},
+H=H^\textrm{eff}-\Delta_{\text{sd}}\,\bb{m}\cdot\bb{\sigma},
 \e
 where $H^\textrm{eff}$ is given by Eq.~(\ref{chap03:eff}). The conductivity tensor does not acquire a linear in $\bb{m}$ terms in the leading order with respect to the large metal parameter $\ep_F\tau/\hslash$, because the anomalous Hall effect remains subleading with respet to the metal parameter. Similarly, the result of Eq.~(\ref{chap03:sp}) is not affected by the linear in $\bb{m}$ corrections. 
 
-However, the direct computation of the staggered polarization response (in the linear order with respect to $\bb{m}$) gives rise to a finite result. In the limit of large Fermi energy $\ep_F\gg \lambda+\Delta$, we find 
+However, the direct computation of the staggered polarization response (in the linear order with respect to $\bb{m}$) gives rise to a finite result. In the limit of large Fermi energy $\ep_F\gg \lambda+\Delta_{\text{sd}}$, we find 
 \begin{multline}
 \delta\bb{s}^-= \frac{\mathcal{A}J}{e\hslash v}\,\frac{\lambda}{\ep_F}
-\lt(\frac{\Delta}{\ep_F}\rt)^2\,
+\lt(\frac{\Delta_{\text{sd}}}{\ep_F}\rt)^2\,
 \Big[2\,\bb{n}_{\perp} \!\times\!(\bb{m}_{\perp} \!\times\! (\hat{\bb{z}}\!\times\!\bb{j}))
 \\
 +2\,\bb{m}_{\parallel} \!\times\!(\bb{n}_{\perp} \!\times\! (\hat{\bb{z}}\!\times\!\bb{j})) -3\,\bb{n}_{\parallel}\!\times\! (\bb{m}_{\perp}\! \times\! (\hat{\bb{z}}\!\times\!\bb{j}))\n \Big],
@@ -293,13 +294,13 @@ The direct computation of the Gilbert damping tensors for $\lambda\gg \hslash/\t
 \eml
 where the terms $\Gamma_{ab}$ contain various vector forms. 
 
-Far in the metal regime, $\ep_F\gg \lambda+\Delta$, we find
+Far in the metal regime, $\ep_F\gg \lambda+\Delta_{\text{sd}}$, we find
 \beml
 \label{chap03:coeffGD}
 \begin{align}
-&\alpha_m^\parallel= 2\,\frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J^2 S}{\pi\hslash^2v^2}\; \lt[1-\frac{\Delta^2}{\ep_F^2}(2+n^2_z) + \dots\rt],\\
+&\alpha_m^\parallel= 2\,\frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J^2 S}{\pi\hslash^2v^2}\; \lt[1-\frac{\Delta_{\text{sd}}^2}{\ep_F^2}(2+n^2_z) + \dots\rt],\\
 &\alpha_n^\perp = \frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J^2 S}{\pi\hslash^2v^2} \,\lt[\lt(\frac{\lambda}{\ep_F}\rt)^2+\dots\rt],\\
-&\gamma= 2\,\frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J^2 S}{\pi\hslash^2v^2}\,\lt[\lt(\frac{\Delta}{\ep_\textrm{F}}\rt)^2+\dots\rt],
+&\gamma= 2\,\frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J^2 S}{\pi\hslash^2v^2}\,\lt[\lt(\frac{\Delta_{\text{sd}}}{\ep_\textrm{F}}\rt)^2+\dots\rt],
 \end{align}
 \eml
 while the vectors forms $\Gamma_{ab}$ can be written as
@@ -323,12 +324,12 @@ while the vectors forms $\Gamma_{ab}$ can be written as
 \bb{\Gamma}_{nn}=&\,-\bb{m}\times(\bb{n}\times\dot{\bb{n}}_\parallel).
 \end{align}
 \eml
-Thus, we see from Eqs.~(\ref{chap03:coeffGD}) that the coefficients $\alpha_n^{\perp}$ and $\gamma$ are vanishingly small in the metal regime. Moreover, in the limit $\ep_F\gg \Delta$ the only non-vanishing contributions to Gilbert dampings are given by the first terms on the right-hand sides of Eqs.~(\ref{chap03:gilbert}) that are manifestly anisotropic.
+Thus, we see from Eqs.~(\ref{chap03:coeffGD}) that the coefficients $\alpha_n^{\perp}$ and $\gamma$ are vanishingly small in the metal regime. Moreover, in the limit $\ep_F\gg \Delta_{\text{sd}}$ the only non-vanishing contributions to Gilbert dampings are given by the first terms on the right-hand sides of Eqs.~(\ref{chap03:gilbert}) that are manifestly anisotropic.
 
 %The forms entering $\bb{\Gamma}_{mm}$, $\bb{\Gamma}_{mn}$, $\bb{\Gamma}_{nm}$, and $\bb{\Gamma}_{nn}$ are obtained, respectively, from the analysis of the tensors $\hat{\alpha}_m$, $\hat{\alpha}_{nm}$, $\hat{\alpha}_{mn}$, and $\hat{\alpha}_n$ with the help of the first order perturbation theory in $\bb{m}$.
 
 The onset of spin-orbit interactions therefore makes Gilbert dampings ultimately anisotropic, also in the deep metal regime. This is in contrast to conductivity and spin-orbit torques that are quickly becoming isotropic in the metal limit. 
-For $\ep_F\gg \lambda+\Delta$, we find the well known Landau-Lifshitz-Gilbert equations
+For $\ep_F\gg \lambda+\Delta_{\text{sd}}$, we find the well known Landau-Lifshitz-Gilbert equations
 \begin{align}
 &\dot{\bb{n}} = -\Omega\, \bb{n}\!\times\!\bb{m} +\bb{H}\!\times\!\bb{n}+\bar{\alpha}^\parallel_m\,\bb{n}\!\times\!\dot{\bb{m}}_\parallel+\alpha_n^\perp\,\bb{m}\!\times\! \dot{\bb{n}}_\perp,\n\\
 &\dot{\bb{m}} =\bb{H}\times\bb{m}+\alpha_n^\perp\,\bb{n} \times \dot{\bb{n}}_\perp
@@ -342,18 +343,18 @@ The very pronounced, highly anisotropic Gilbert damping terms in the Landau-Lifs
 
 \section{Qualitative consideration}\label{chap03:sec:qual}
 
-The results of Eqs.~(\ref{chap03:gilbert}), (\ref{chap03:coeffGD}) suggest that the anisotropy of Gilbert damping is most pronounced in the metal limit, $\ep_F\gg \Delta+\lambda$ as far as $\lambda \tau/\hslash \gg 1$. In particular, certain spin density responses are vanishing in this limit. One of them is the response of the average spin density $\delta s_z^+$ to $\dot{m}_z$ that is defined by the tensor component $\alpha^{zz}_m$ in Eq.~(\ref{chap03:response}). The other four vanishing tensor components $\alpha^{xx}_n$, $\alpha^{xy}_n$, $\alpha^{yx}_n$ and $\alpha^{yy}_n$ correspond to the responses of the in-plane staggered spin densities $\delta s_{x}^-$ and $\delta s_{y}^-$ to $\dot{n}_x$ and $\dot{n}_y$.  
+The results of Eqs.~(\ref{chap03:gilbert}), (\ref{chap03:coeffGD}) suggest that the anisotropy of Gilbert damping is most pronounced in the metal limit, $\ep_F\gg \Delta_{\text{sd}}+\lambda$ as far as $\lambda \tau/\hslash \gg 1$. In particular, certain spin density responses are vanishing in this limit. One of them is the response of the average spin density $\delta s_z^+$ to $\dot{m}_z$ that is defined by the tensor component $\alpha^{zz}_m$ in Eq.~(\ref{chap03:response}). The other four vanishing tensor components $\alpha^{xx}_n$, $\alpha^{xy}_n$, $\alpha^{yx}_n$ and $\alpha^{yy}_n$ correspond to the responses of the in-plane staggered spin densities $\delta s_{x}^-$ and $\delta s_{y}^-$ to $\dot{n}_x$ and $\dot{n}_y$.  
 
 It is important to stress that the component $\alpha^{zz}_m$ is not only finite but also quite large in the absence of spin-orbit interaction, i.\,e. for $\lambda=0$. It is, therefore, instructive to understand how the onset of spin-orbit interaction may cancel $\alpha^{zz}_m$ response and lead to the conservation of $z$ projection of magnetization vector.  
 
 Such a qualitative understanding can be achieved by considering the Kubo-Greenwood formula for $\alpha^{zz}_m$ for the model 
-of Eq.~(\ref{chap03:full}) in the limit $\Delta\to 0$ and $\tau\to \infty$, 
+of Eq.~(\ref{chap03:full}) in the limit $\Delta_{\text{sd}}\to 0$ and $\tau\to \infty$, 
 \be
 \label{chap03:Kubo}
 \alpha^{zz}_m \propto \s_{\bb{p}}\!\!\s_{s,s'=\pm} \!|\la \Psi_{\bb{p},s}| \sigma_z |\Psi_{\bb{p},s'}\ra |^2
 \delta(\ep_\textrm{F}-\epsilon^{e}_{p,s})\delta(\ep_\textrm{F}-\epsilon^{e}_{p,s'}),
 \e
-where $\epsilon^e_{p,\pm}=\sqrt{v^2p^2+\lambda^2/4}\mp\lambda/2$ correspond to the two electronic branches of Eq.~(\ref{chap03:spectrume}) that are evidently valley degenerate in the limit $\Delta\to 0$. 
+where $\epsilon^e_{p,\pm}=\sqrt{v^2p^2+\lambda^2/4}\mp\lambda/2$ correspond to the two electronic branches of Eq.~(\ref{chap03:spectrume}) that are evidently valley degenerate in the limit $\Delta_{\text{sd}}\to 0$. 
 
 The states $\Psi_{\bb{p},s}$ are simply the eigenstates of the Hamiltonian $H_0 = v\bb{p}\cdot\bb{\Sigma}+(\lambda/2) \lt[\bb{\sigma}\times\bb{\Sigma}\rt]_z$,
 \be
@@ -388,9 +389,9 @@ Indeed, it can be directly seen from Eqs.~(\ref{chap03:AFMEOM3}) that a nonequil
 
 \section{Conclusions}
 
-In this Chapter, we demonstrate that the presence of sufficiently strong spin-orbit coupling $\lambda\tau/\hslash \gg 1$ results in the ultimate anisotropy of the Gilbert damping tensor in the metal regime, $\ep_F\gg\Delta+\lambda$.  One can trace the phenomenon to the spin-orbit induced splitting of Fermi surfaces that forbids scattering processes that are responsible for the relaxation of certain magnetization and N\'eel vector components. 
+In this Chapter, we demonstrate that the presence of sufficiently strong spin-orbit coupling $\lambda\tau/\hslash \gg 1$ results in the ultimate anisotropy of the Gilbert damping tensor in the metal regime, $\ep_F\gg\Delta_{\text{sd}}+\lambda$.  One can trace the phenomenon to the spin-orbit induced splitting of Fermi surfaces that forbids scattering processes that are responsible for the relaxation of certain magnetization and N\'eel vector components. 
 
-We also demonstrate that a finite in-plane projection $\bb{n}_\parallel$ of the N\'eel vector is responsible for a weak anisotropy of conductivity and spin-orbit torques for Fermi energies approaching the band edge, $\ep_F \sim \Delta+\lambda$. This anisotropy is, however, absent in the metallic regime. 
+We also demonstrate that a finite in-plane projection $\bb{n}_\parallel$ of the N\'eel vector is responsible for a weak anisotropy of conductivity and spin-orbit torques for Fermi energies approaching the band edge, $\ep_F \sim \Delta_{\text{sd}}+\lambda$. This anisotropy is, however, absent in the metallic regime. 
 
 Gilbert damping is, however, in the absence of spin-orbit interaction as it is required by symmetry considerations. Thus, we demonstrate that the onset of Rashba spin-orbit interaction in 2D or layered AFM systems leads to a giant anisotropy of Gilbert damping in the metallic regime. The physics of this phenomenon originates in spin-orbit induced splitting of the electron subbands that destroys a particular decay channel for magnetization and leads to undamped precession of the N\'eel vector. The phenomenon is based on the assumption that other Gilbert damping channels  (e.\,g. due to phonons) remain suppressed in the long magnon wavelength limit that we consider. The predicted giant Gilbert damping anisotropy  may have a profound impact on the N\'eel vector dynamics in a variety of 2D and layered AFM materials. 
 
