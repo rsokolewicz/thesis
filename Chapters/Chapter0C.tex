@@ -32,7 +32,7 @@ and the other one with respect to the time derivative of magnetization vector. T
 \eml
 where we define the response tensors $\hat{S}^\textrm{SOT}_\pm$ that are describing spin-orbit torques (both field-like and anti-damping) and various $\hat{S}^\textrm{GD}$ tensors that are describing various contributions to Gilbert dampings (and to effective spin renormalizations) \cite{ado_anisotropy_2019}.
 
-In order to compute the linear response tensors in Eqs.~(\ref{chap03:tensors}) we apply the standard Kubo formula
+In order to compute the linear response tensors in Eqs.~(\ref{chap03:tensors}) we apply the standard Kubo formula (see Appendix~\ref{kubo})
 \be
 \label{chap03:chap3:eq:kubo}
 \delta\bb{s}^\pm_\alpha = 
@@ -70,9 +70,8 @@ We find that the real part of the self-energy does renormalize the Fermi energy 
 \label{chap03:fig:diagrams}
 \end{figure}
 
-In order to evaluate linear response tensors in the leading order with respect to the metal parameter $\ep\tau \gg 1$ one also needs to sum up the ladder diagrams as shown in Fig.~\ref{chap03:fig:diagrams}b-c.
-
-To do that one defines the vertex corrected operator
+In order to evaluate linear response tensors in the leading order with respect to the metal parameter $\ep\tau \gg 1$ one also needs to sum up the ladder diagrams as shown in Fig.~\ref{chap03:fig:diagrams}b-c. Refering to Chapter~\ref{diagrammatics}, 
+we first need to define the vertex corrected operator
 \be
 \label{chap03:chap3:eq:ladder}
 \hat{F}^\text{vc}= \hat{F}+\hat{F}^{(1)} +\hat{F}^{(2)}+\hat{F}^{(3)}+\cdots,
@@ -82,8 +81,7 @@ where we denote by $\hat{F}^{(i)}$ the operator $\hat{F}$ that is dressed by the
 \label{chap03:chap3:eq:onedisorderline}
 \hat{F}^{(i)} = 2\pi\alpha_d\int\frac{\mathrm{d}^2\bb{p}}{(2\pi)^2} G_{\bb{p}}^\text{R}\hat{F}^{(i-1)}G_{\bb{p}}^\text{A}. 
 \e
-It appears that the summation in Eq.~(\ref{chap03:chap3:eq:ladder}) can be reduced to geometric series in a finite operator space. 
-Indeed, let us define the operator space that is spanned by 16 operators in each of the valleys
+A suitable basis to work in is 
 \be
 B_i=\frac{1}{2}\Lambda_\zeta\Sigma_\alpha \sigma_\beta,\quad i=\{\zeta,\alpha,\beta\},
 \e
@@ -104,7 +102,7 @@ we find
 \e
 where $\tr$ stands for the usual matrix trace in the valley, spin and sublattice spaces.   
 
-It easy to imagine that the matrix inversion in Eq.~(\ref{chap03:sum}) might be a daunting analytical task. We note, however, that the matrix $\mathcal{F}$ is evidently diagonal in the valley space, and it can also become block-diagonal in sublattice and spin spaces by choosing a more convenient basis. 
+We note that the matrix $\mathcal{F}$ is evidently diagonal in the valley space, and it can also become block-diagonal in sublattice and spin spaces by choosing a more convenient basis. 
 
 A particularly useful choice of basis corresponds to in-plane rotation of both spin and sublattice Pauli matrices to the frame associated with the in-plane projection $\bb{n}_\parallel$ of the N\'eel vector. For spin Pauli matrices this transformation is given by
 \be
