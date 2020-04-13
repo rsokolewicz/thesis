@@ -1,6 +1,6 @@
 \chapter{s--d-model}\label{ch:sdmodel}
 \section{Introduction}
-Our model consists of two parts. The first part are the conducting electrons whose Hamiltonian is given by a tight-binding model. These conducting electrons can scatter of impurities in the material leading to having a finite momentum life-time. At the same time the spin of the electrons are coupled to its momentum through spin-orbit interactions, making it possible to transfer this angular momentum to the crystal lattice. The second part is the (anti)ferromagnet which we describe using a Heisenberg model in a classical limit, meaning we replace the spin-operators with vectors. In order to transfer angular momentum between localized and conduction electrons, we therefore need to introduce a parameter that couples the spin and magnetic moment locally. This allows us to directly relate the relaxation of the momentum of conduction electrons to the relaxation of angular momentum of the localized electrons. This momentum relaxation is at the heart of quantum transport theory. This model has much in comparison with the s--d model \cite{zener1951interaction,kasuya1956theory,yosida1957magnetic}, used for example in the Kondo effect \cite{10.1143/PTP.32.37}, where localized $d$ electrons are coupled to conduction $s$ electrons through exchange interaction. In the literature therefore our model is often called s--d, or s--d-like, and the parameter that couples the spins of localized and itenerant electrons is called an s--d-like exchange interaction. 
+Our model consists of two parts. The first part are the conducting electrons whose Hamiltonian is given by a tight-binding model. These conducting electrons can scatter of impurities in the material leading to having a finite momentum life-time. At the same time the spin of the electrons are coupled to its momentum through spin-orbit interactions, making it possible to transfer this angular momentum to the crystal lattice. The second part is the (anti)ferromagnet which we describe using a Heisenberg model in a classical limit, meaning we replace the spin-operators with vectors. In order to transfer angular momentum between localized and conduction electrons, we therefore need to introduce a parameter that couples the spin and magnetic moment locally. This allows us to directly relate the relaxation of the momentum of conduction electrons to the relaxation of angular momentum of the localized electrons. This momentum relaxation is at the heart of quantum transport theory. This model has much in comparison with the s--d model \cite{zener1951interaction,kasuya1956theory,yosida1957magnetic,sdmodel}, used for example in the Kondo effect \cite{10.1143/PTP.32.37}, where localized $d$ electrons are coupled to conduction $s$ electrons through exchange interaction. In the literature therefore our model is often called s--d, or s--d-like, and the parameter that couples the spins of localized and itenerant electrons is called an s--d-like exchange interaction. 
 
 \section{Classical equations of motion on magnetization}
 The Hamiltonian describing the localized and conduction electrons is given by
@@ -125,7 +125,7 @@ By denoting $\hat{s}^{\text{vc}}$ as the vertex-corrected function of $\hat{s}$ 
         \hat{s}+\hat{s}^{(1)}+\hat{s}^{(2)}+\cdots,
         \label{sd:eq:ladder}
 \end{align}
-where $\hat{s}^{(i})$ is given by:
+where $\hat{s}^{(i)}$ is given by:
 \begin{align}
     \hat{\chi}^\text{i} = 2\pi\alpha_d\int\frac{\mathrm{d}^2\bb{p}}{(2\pi)^2} G_{\bb{p}}^\text{R}\hat{s}^{(i-1)}G_{\bb{p}}^\text{A}
     \label{eq:onedisorderline}
@@ -137,7 +137,7 @@ where $\hat{s}^{(i})$ is given by:
     \caption{Diagrammatic illustration. a) Born-approximation. b) Ladder-approximation. c) Disorder-averaged polarization bubble. d) Perturbative expansion of the disorder-averaged polarization bubble. }
     \label{sd:fig:diagrams}
 \end{figure}
-This vertex-correction is important as a single scattering event already modifies the spin-polarization. For example we will see in Chapter~\ref{ch:diffusive} that vertex-corrections lead to an unusual and novel torque that we call a diffusive spin-orbit torque. Another example is found in Chapter~\ref{baglay} where disorder averaging can lead to an increase in Gilbert Damping by a factor of a million. 
+This vertex-correction is important as a single scattering event already modifies the spin-polarization. For example we will see in Chapter~\ref{ch:diffusive} that vertex-corrections lead to an unusual and novel torque that we call a diffusive spin-orbit torque. Another example is found in Chapter~\ref{baglay} where disorder averaging can lead to an increase in Gilbert Damping by many orders of magnitude. 
 
 The infinite sum of Eq.~(\ref{sd:eq:ladder}) can actually be recast into a geometrical sum involving matrices. By choosing an appropriate operator basis, $\{\hat{B}_i\}$, where $i=1,2,\dots,n^2$ with $n\times n$ the dimension of the operator space, the vector of vertex corrected basis elements $\bb{B}^\text{vc}\equiv(\hat{B}_1^\text{vc},\dots,\hat{B}_{{n^2}}^\text{vc})$ can written as
 \begin{equation}
