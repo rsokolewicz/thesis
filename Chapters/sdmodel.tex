@@ -78,6 +78,53 @@ In an antiferromagnet we are more interested in the dynamics of $\bb{n}$. A phen
 \caption{(a) Precession due to field-like torques and (b) relaxation due to damping-like torques. }
 \end{figure}
 
+\section{Antiferromagnetic resonance}
+One of the characteristics of an antiferromagnets is that its antiferromagnetic resonance frequency (i.e. when subjected to an oscillating external magnetic field) is proportional to $\sqrt{K}$, as given by the formula:
+\begin{equation}
+    \omega = \gamma_0 H_\text{ext} \pm \sqrt{K(J+K)}
+\end{equation}
+as first derived by Kittel \cite{PhysRev.82.565, PhysRev.85.329}. The original derivation made use of quadrupolar contributions to $H_\text{M}$, but for two dimensional systems, a Hamiltonian such as in Eq.~(\ref{intro:eq:Hm}) is sufficient as we will demonstrate. In this section we do not consider $\Delta_\text{sd}$. In order to find the resonant frequencies in the system that is subjected to an oscillating field in the $z$ direction: $\bb{H}_\text{ext} = H_0 \cos \omega t\,\hat{\bb{z}}$, we first linearize the equations of motion by expanding $\bb{n}$ close to $\hat{\bb{z}}$ and assume $\bb{m}$ to be small. To be more explicit
+\begin{equation}
+	\bb{n} \rightarrow \bb{z} + \delta \bb{n}_\parallel,\quad \bb{m} \rightarrow \delta \bb{m}_\parallel.
+\end{equation}
+Note that to first order the staggered and non-staggered magnetizations are still orthogonal to each-other: $\bb{n}\cdot\bb{m}=1+\mathcal{O}(\delta n^2+\delta m^2)$. Components such as $\delta n_x \delta m_y$ can be then disregarded and we assume $\bb{n}$ and $\bb{m}$ to be proportional to $\exp i \omega t$. A nice basis to work in is $\{{n}_+,{m}_+,{n}_-,{m}_- \}$, (where ${n}_\pm = \delta n_x\pm i \delta n_y$ and ${m}_\pm = \delta m_x\pm i \delta m_y$) so that one finds the following matrix equation:
+\begin{equation}
+    \begin{pmatrix}
+    \omega_0 & -(J+K) & 0 & 0 \\
+    -K & \omega_0 & 0 & 0 \\
+    0 & 0 & -\omega_0 & J+K \\
+    0 & 0 & K & -\omega_0
+    \end{pmatrix}
+    \begin{pmatrix}
+    \delta l_{+}\\
+    \delta m_{+}\\
+    \delta l_{+}\\
+    \delta m_{-}
+    \end{pmatrix}
+    =\omega 
+    \begin{pmatrix}
+    \delta l_{+}\\
+    \delta m_{+}\\
+    \delta l_{+}\\
+    \delta m_{-}
+    \end{pmatrix}
+\end{equation}
+and four corresponding frequencies $\omega_{\eta',\eta''}$  
+\begin{align}
+    \omega_{\eta',\eta''} = \eta' \gamma_0 H_\text{ext} +\eta'' \sqrt{K(J+K)}, \quad \eta',\eta''=\pm1
+\end{align}
+which remarkably exists even in absence of an external magnetic field. The constant $K$ can be derived directly for a particular model from the Grand potential describing the conducting electrons. The Grand potential is given by
+\begin{equation}
+    \Omega = - \sum_{\tau=\pm}\frac{1}{\beta} \int \mathrm{d}\varepsilon\,g(\varepsilon) \nu_\tau(\varepsilon),
+    \label{b1}
+\end{equation}
+where the the density of states $\nu$ and the function $g(\varepsilon)$ are given by
+\begin{align}
+    \nu_\tau(\varepsilon) = & \frac{1}{\pi} \tr \int \frac{\mathrm{d}^2p}{(2\pi\hslash)^2}\,\im G^\text{R}_{\bb{p}}\\
+    g(\varepsilon) = & \log \big(1+\exp[\beta(\mu-\varepsilon)]\big).
+    \label{eq:nu}
+\end{align}
+Here $\beta$ is the inverse temperature and $\mu$ is the chemical potential. By evaluating the integral and expanding around the energy minimum in powers of magnetization, one can obtain the anisotropy constant $K$. This will be done explicitly in Chapter~\ref{chap:?}.
 
 \section{Obtaining out-of-equilibrium spin-polarizations}
 The spin-polarizations of the conducting electrons that appear in the equations of motion for the ferromagnet Eq.~(\ref{eq:sd:S1}) and for the antiferromagnet Eqs.~(\ref{eq:sd:neel}) are obtained in linear response to current and time-derivatives of magnetizations. This method is used in Chapters~\ref{ch:diffusive},\ref{ch:baglay}, whereas in Chapter \ref{ch:summit} we develop a numerical method of obtaining spin-orbit torques using a scattering approach that will be explained there. 

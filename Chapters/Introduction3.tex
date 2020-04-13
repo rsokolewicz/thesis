@@ -1,5 +1,5 @@
 %************************************************
-\chapter{Introduction} % $\mathbb{ZNR}$
+\chapter{Antiferromagnets} % $\mathbb{ZNR}$
 %************************************************
 \section{Introduction}
 An increasing demand for ever higher performance computation and ever faster big data analytics has sparked recently the interest to antiferromagnetic spintronics \cite{macdonald_antiferromagnetic_2011, gomonay_spintronics_2014, wadley_electrical_2016, jungwirth_antiferromagnetic_2016, baltz_antiferromagnetic_2018, jungwirth_multiple_2018, jungfleisch_perspectives_2018}, i.\,e. to the usage of much more subtle antiferromagnetic order parameter to store and process information. This idea is driven primarily by the expectation that antiferromagnetic materials may naturally allow for up to THz operation frequencies \cite{gomonay_high_2016, olejnik_terahertz_2018, jungwirth_multiple_2018} in sharp contrast to ferromagnets whose current-induced magnetization dynamics is fundamentally limited to GHz frequency range. 
@@ -20,8 +20,6 @@ The proposed phenomenon has been soon observed in non-centrosymmetric crystals s
 
 Despite a lack of clarity concerning the microscopic mechanisms of the N\'eel vector switching, these experiments have been widely regarded as a breakthrough in the emerging field of THz spintronics \cite{bhattacharjee_neel_2018, gomonay_high_2016, olejnik_terahertz_2018, jungwirth_multiple_2018, wadley_electrical_2016, jungwirth_antiferromagnetic_2016, baltz_antiferromagnetic_2018, jungfleisch_perspectives_2018}. It has been suggested that current-induced N\'eel vector dynamics in an AFM is driven primarily by the so-called N\'eel spin-orbit torques \cite{brataas_current-induced_2012, Hals2013, zelezny_relativistic_2014, freimuth_spin-orbit_2014, ghosh_spin-orbit_2017, smejkal_electric_2017, zelezny_spin_2018, zhou_strong_2018, manchon_current-induced_2019, moriyama_spin-orbit-torque_2018, li_manipulation_2019, chen_electric_2019, zhou_fieldlike_2019, zhou_large_2019, bodnar_writing_2018}. The N\'eel spin-orbit torque originates in a non-equilibrium staggered polarization of conduction electrons on AFM sublattices \cite{zelezny_relativistic_2014, smejkal_electric_2017, zelezny_spin_2018, manchon_current-induced_2019}. Characteristic magnitude of the non-equilibrium staggered polarization and its relevance for the experiments with CuMnAs and Mn$_2$Au remain, however, debated. 
 
-\section{Dynamics of Antiferromagnets}
-
 \section{Antiferromagnetic resonance}
 One of the characteristics of an antiferromagnets is that its antiferromagnetic resonance frequency (i.e. when subjected to an oscillating external magnetic field) is proportional to $\sqrt{K}$, as given by the formula:
 \begin{equation}
@@ -31,7 +29,7 @@ as first derived by Kittel \cite{kittel}. The original derivation made use of qu
 \begin{equation}
 	\bb{n} \rightarrow \bb{z} + \delta \bb{n}_\parallel,\quad \bb{m} \rightarrow \delta \bb{m}_\parallel.
 \end{equation}
-Note that to first order the staggered and non-staggered magnetizations are still orthogonal to each-other: $\bb{n}\cdot\bb{m}=1+\mathcal{O}(\delta n^2+\delta m^2)$.Components such as $\delta n_x \delta m_y$ can be then disregarded and we assume $\bb{n}$ and $\bb{m}$ to be proportional to $\exp i \omega t$. A nice basis to work in is $\{{n}_+,{m}_+,{n}_-,{m}_- \}$, (where ${n}_\pm = \delta n_x\pm i \delta n_y$ and ${m}_\pm = \delta m_x\pm i \delta m_y$) so that one finds the following matrix equation:
+Note that to first order the staggered and non-staggered magnetizations are still orthogonal to each-other: $\bb{n}\cdot\bb{m}=1+\mathcal{O}(\delta n^2+\delta m^2)$. Components such as $\delta n_x \delta m_y$ can be then disregarded and we assume $\bb{n}$ and $\bb{m}$ to be proportional to $\exp i \omega t$. A nice basis to work in is $\{{n}_+,{m}_+,{n}_-,{m}_- \}$, (where ${n}_\pm = \delta n_x\pm i \delta n_y$ and ${m}_\pm = \delta m_x\pm i \delta m_y$) so that one finds the following matrix equation:
 \begin{equation}
     \begin{pmatrix}
     \omega_0 & -(J+K) & 0 & 0 \\
