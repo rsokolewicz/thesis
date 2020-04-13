@@ -108,9 +108,18 @@ In order to replace the bare Green function with a disordered one, one needs to 
 
 \begin{equation}
 \im \Sigma^\text{R(A)} = 2\pi\alpha \im \int \frac{\mathrm{d}\bb{p}}{(2\pi)^2}\,G^\text{R(A)}_{\vec{p},\varepsilon}.
+\label{sd:eq:sigma}
 \end{equation}
 
-The real-part of the self-energy leads to a small spectrum-shift that we do not consider. 
+By inserting the self energy into a bare Green function we get the disorder-averaged Green's function
+\begin{equation}
+	G^\text{R(A)}_{\bb{p}} = \frac{1}{\varepsilon-H_{\bb{p}}-\Sigma^\text{R(A)}}.
+\end{equation}
+The self-energy determines the poles of the Green's function in the complex energy plane and are equal to the roots of $\Det[\varepsilon-H-\Sigma^\text{R(A)}]$. For a given momentum the real part of each pole correspond to a point on a different Fermi surface, while the imaginary part defines the decay of the momentum eigenstates. In other words, the imaginary part gives rise to a finite momentum lifetime. This can be seen by taking the Fourier-transform from energy domain to the time domain where the imaginary part of the poleleads to an exponential decay in time for the Retarded Green's function. To be more explicit, take for example the Fourier transform of a Green's function belonging to a single particle and single orbital 
+\begin{equation}
+	G^\text{R}(\bb{p},t) = \int\!\frac{\mathrm{d}\varepsilon}{2\pi} \frac{\exp(-i \varepsilon t)}{\varepsilon-\varepsilon_{\bb{p}}-i\eta} = \Theta(t)\exp(i\varepsilon)\exp(-\eta t), 
+\end{equation}
+where $\Theta$ is the Heaviside step function and $\eta$ is the imaginary part of the complex energy pole. The momentum life-time is defined as $\tau = 1/2\eta$ and is equal to the transport time in the Born approximation for isotropic scattering that we consider. The transport-time reflects the time needed to randomize the direction of an electron due to impurity scatterings. Note that in Eq.~(\ref{sd:eq:sigma}) we generally do not explicitly consider the real part of the self-energy as the shift in spectrum can be absorbed into the definition of model parameters. For brevity, we use the same symbols for terms such as fermi energy and s--d energy before and after the Born approximation, but one needs to remember that in the latter case they correspond to renormalized quantities. 
 
 For the second step in disorder averaging, we need to replace one of the vertex functions with one that is corrected for disorder in the ladder approximation (as illustrated in Figure~\ref{fig:diagrams}-b). We call this new vertex function the vertex-corrected function. 
 By denoting $\hat{s}^{\text{vc}}$ as the vertex-corrected function of $\hat{s}$ and $\hat{s}^{(i)}$ as the function containing $i$ disorder-lines, the ladder approximation is given by:
@@ -118,7 +127,7 @@ By denoting $\hat{s}^{\text{vc}}$ as the vertex-corrected function of $\hat{s}$ 
     \hat{s}^\text{vc}
       &=           
         \hat{s}+\hat{s}^{(1)}+\hat{s}^{(2)}+\cdots,
-        \label{eq:ladder}
+        \label{sd:eq:ladder}
 \end{align}
 where $\hat{s}^{(i})$ is given by:
 \begin{align}
@@ -134,49 +143,15 @@ where $\hat{s}^{(i})$ is given by:
 \end{figure}
 This vertex-correction is important as a single scattering event already modifies the spin-polarization. For example we will see in Chapter~\ref{ch:diffusive} that vertex-corrections lead to an unnusual and novel torque that we call a diffusive spin-orbit torque. Another example is found in Chapter~\ref{baglay} where disorder averaging can lead to an increase in Gilbert Damping by a factor of a million. 
 
-Diagrams other than those appearing in the ladder approximation%%%%%%%%%%%%%%%%%
+The infinite sum of Eq.~(\ref{sd:eq:ladder}) can actually be recast into a geometrical sum involving matrices. By choosing an appropriate operator basis, $\{\hat{B}_i\}$, where $i=1,2,\dots,n^2$ with $n$ the dimension of the operator space, the vector of vertex corrected basis elements $\bb{B}^\text{vc}\equiv(\hat{B}_1^\text{vc},\dots,\hat{B}_n^\text{vc}) can written as
+\begin{equation}
+	\bb{B}^\text{vc} = \bb{B}+\mathcal{F}\bb{B}+\mathcal{F}^2\bb{B}+\mathcal{F}^3+\cdots = \frac{1}{1-\mathcal{F}}\bb{B}.
+\end{equation}
+By choosing the a basis that satisfies the normalization condition $\tr\bb{B}_i\bb{B}_j=N\delta_{ij}$ we find that the response matrix $\mathcal{F}$ has the following form
+\begin{equation}
+	\mathcal{F}_{ij} = \frac{2}{n}\pi\alpha \int\!\frac{d^2\bb{p}}{(2\pi)^2}\tr \hat{B}_i G^\text{R}_{\bb{p}} \hat{B}_j G^\text{A}_{\bb{p}}.
+\end{equation}
+We will see in the remaining chapters that for a Dirac ferromagnet, the operators that we consider only depend on spin-degrees of freedom and therefore the response-matrix has dimension $(2\times2)^2=4\times4$. The Dirac antiferromagnets, however have spin, sublattice and valley degrees of freedom, leading to response-matrices of dimension $(2^3\times2^3)^2=64\times64$. Inverting such a matrix analytically can be a daunting task, but can be simplified dramatically by choosing an appropriate basis and limits. 
+
+Note that the inversion of $1-\mathcal{F}$ can only be done if none of the eigenvalues of $\mathcal{F}$ is equal to $1$. It appears however that this is never the case, as the self energy expressed in the basis $\{\hat{B}_i\}$ is an eigen function of $\mathcal{F}$ with eigenvalue $1$. In spinless systems this is known for the density-density response, which can be resolved by computing the matrix elements of $\mathcal{F}$ at a finite frequency and momentum %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%
-
-The main building block of our analysis is the averaged Green's function in the first Born approximation
-\be
-\label{green}
-G^{\mathrm{R}}_{\bb{p},\ep} = \frac{\ep^\textrm{R} + v(\bb{p}\times \bb{\sigma})_z-\Delta^{\textrm{R}}_z\sigma_z}
-{(\ep^{\textrm{R}})^2-v^2p^2 -(\Delta^{\textrm{R}}_z)^2},
-\e
-where the complex parameters $\ep^\textrm{R}=\ep(1+i\pi \alpha/2)$ and  $\Delta^\textrm{R}_z= \Delta_z(1-i\pi \alpha/2)$ are found from the corresponding self-energy 
-\be
-\label{Sigma}
-\Sigma^{\mathrm{R}}(\ep)  = 2\pi \alpha\,v^2\!\! \int\!\frac{d^2\bb{p}}{(2\pi)^2}G^\mathrm{R}_{\bb{p},\ep}, 
-\e
-that gives rise to  $\im \Sigma^{\mathrm{R}}= - \pi \alpha (\ep -\Delta_z \sigma_z)/2$  (strictly speaking, the RG analysis \cite{ivan} has to be applied). In the Green's function of Eq.~(\ref{green}) we shift the momentum $\bb{p}$ such that there is no direct dependence on the in-plane magnetization components $m_x$ and $m_y$. 
-
-The next step in disorder-averaging requires the computation of vertex corrections. This means we need to replace the spin operator $\sigma_\alpha$ with a vertex corrected spin operator $\sigma_\alpha^\text{vc}$ in the ladder approximation as depicted in Fig.~\ref{fig:diagrams}(e). The crossed diagrams in Fig.~\ref{fig:diagrams}(b-d) give a contribution to the components of $\hat{K}$ of the order $\mathcal{O}(\alpha^0)$. The
-only components that are modified to this order are those
-corresponding to the Hall conductivity (i.e. $\sigma_{xy}$ and $\sigma_{yx}$). Details of this calculation can be found Ref.~\cite{ivan}.
-%
-
-The dressing of $\sigma_\alpha$ with a single disorder line is denoted by $\sigma_\alpha^{1\times\text{dr}}$ and is conveniently represented in the matrix form by introducing a matrix $\hat{M}$ with $16$ components $M_{\alpha\beta}$ for $\alpha,\beta=0,x,y,z$ (with $\sigma_0=1$)
-    \begin{align}
-       \sigma_\alpha^{1\times\text{dr}}  = 2\pi \alpha\, v^2 \int\!\frac{d^2\bb{p}}{(2\pi)^2} G^\text{A}_{\ep+\omega,\bb{p}+\bb{q}}\sigma_\alpha G^\text{R}_{\bb{p}} = \pi\alpha M_{\alpha\beta}\sigma_\beta,
-        \label{chap1:eq:myseries}
-    \end{align}
-where the summation of the repeating index $\beta=0,x,y,z$ is assumed. Full expressions of the components of $\hat{M}$ up to second order in $\omega$ and $q$ are given by Eq.~(\ref{chap1:eq:M}a-f). 
-%%%
-% Fig. 2
-%%%
-\begin{figure}[t]
-\centering
-\includegraphics[]{articles/dirac_fm/fig2}
-\caption{Diagrams considered in the calculation of $\hat{K}$: (a) non-crossing diagram, (b) $X$ diagram, (c-d) $\Psi$ diagrams. Green areas indicate the ladder summation (e) for the vertex correction in the non-crossing approximation \protect\cite{ivan}.}
-\label{fig:diagrams}
-\end{figure}
-
-In our calculation the terms of the order of $\alpha \ln p_\textrm{cutoff}/\ep$ (where $p_\textrm{cutoff}$ is the ultraviolet momentum cut-off) is disregarded with respect to $1$. This approximation is legitimate since we assume that all model parameters $\epsilon$, $\Delta_\textrm{sd}$ and $\alpha$ are first renormalized such that $p_\textrm{cutoff} \approx \ep$.
-
-It is, then, easy to see that the vertex-corrected spin operator is readily obtained from the geometric series of powers of $\pi\alpha \hat{M}$, 
-\begin{align}
-\sigma_\alpha^\text{vc} &= 
-\sigma_\alpha+\pi\alpha \hat{M}_{\alpha\beta}\sigma_\beta+(\pi\alpha)^2 (\hat{M}^2)_{\alpha\beta}\sigma_\beta+\dots\nonumber\\
-&=\left[1-\pi\alpha \hat{M}\right]^{-1}_{\alpha\beta}\sigma_\beta.
-\end{align}
-Thus, in the non-crossing approximation (illustrated in Fig.~\ref{fig:diagrams} (a)), one simply finds $\hat{K}= \hat{M}[1-\pi\alpha \hat{M}]^{-1}$. 
