@@ -1,9 +1,15 @@
 %************************************************
-\chapter{Analytical approach to calculating Spin-orbit torques} \label{ch:baglay}% $\mathbb{ZNR}$
+\chapter{Giant anisotropy of Gilbert damping in a Rashba honeycomb antiferromagnet} \label{ch:baglay}% $\mathbb{ZNR}$
 %************************************************
+Giant Gilbert damping anisotropy is identified as a signature of strong Rashba spin-orbit coupling in a two-dimensional antiferromagnet on a honeycomb lattice. The phenomenon originates in spin-orbit induced splitting of conduction electron subbands that strongly suppresses certain spin-flip processes. As a result, the spin-orbit interaction is shown to support an undamped non-equilibrium dynamical mode that corresponds to an ultrafast in-plane N\'eel vector precession and a constant perpendicular-to-the-plane magnetization. The phenomenon is illustrated on the basis of a two dimensional $s$-$d$ like model. Spin-orbit torques and conductivity are also computed microscopically for this model. Unlike Gilbert damping these quantities are shown to reveal only a weak anisotropy that is limited to the semiconductor regime corresponding to the Fermi energy staying in a close vicinity of antiferromagnetic gap.
 
+\vfill
 Parts of this Chapter were published in Phys. Rev. \textbf{B} 101, 104403 (2020)\clearpage
 
+\section{Introduction}
+The N\'eel vector dynamics in an AFM is strongly affected by an interplay between different types of Gilbert dampings. Unlike in a simple single-domain ferromagnet with a single sublattice, the Gilbert damping in an AFM is generally different on different sublattices and includes spin pumping from one sublattice to another. A proper understanding of Gilbert damping is of key importance for addressing not only the mechanism of spin pumping but also domain wall motion, magnon lifetime, AFM resonance width and many other related phenomena \cite{PhysRevMaterials.1.061401, Kamra2018, Mahfouzi2018a, Yuan_2019, hals_phenomenology_2011}. It is also worth noting that spin pumping between two thin ferromagnetic layers with antiparallel magnetic orientations share many similarities with Gilbert damping in a bipartite AFM \cite{Heinrich2003,Tserkovnyak}. 
+
+A conduction electron mechanism for Gilbert damping in collinear ferromagnet requires some spin-orbit interaction to be present. It is, therefore, commonly assumed that spin-orbit interaction of electrons naturally enhances the Gilbert damping. Contrary to this intuition, we show that Rashba spin-orbit coupling does generally suppress one of the Gilbert damping coefficients and leads to the appearance of undamped non-equilibrium N\'eel vector precession modes in the AFM. 
 
 %%%%%%%%%%%%
 %%% figure 1: lattice
@@ -11,7 +17,7 @@ Parts of this Chapter were published in Phys. Rev. \textbf{B} 101, 104403 (2020)
 \begin{figure}
 \centering
 \centerline{\includegraphics[width=\columnwidth]{{articles/misha_paper/fig1.pdf}}}
-\caption{A model of Rashba honeycomb antiferromagnet with two sublattices, $A$ and $B$, and on-site exchange interaction between localized momenta and conduction electrons (see Eq.~\ref{chap03:ex}). The large blue arrow represents the N\'eel vector vector, $\bm{n}$, that is in general, characterized by non-vanishing in-plane, $\bm{n}_\parallel$, and perpendicular-to-the-plane, $\bm{n}_\perp$, components. We refer to a specific coordinate system with $\hat{\bm{x}}$ axis chosen to be in the direction of $\bm{n}_\parallel$. 
+\caption{A model of Rashba honeycomb antiferromagnet with two sublattices, $A$ and $B$, and on-site exchange interaction between localized moments and conduction electrons (see Eq.~\ref{chap03:ex}). The large blue arrow represents the N\'eel vector vector, $\bm{n}$, that is in general, characterized by non-vanishing in-plane, $\bm{n}_\parallel$, and perpendicular-to-the-plane, $\bm{n}_\perp$, components. We refer to a specific coordinate system with $\hat{\bm{x}}$ axis chosen to be in the direction of $\bm{n}_\parallel$. 
 }
 \label{chap03:fig:lattice}
 \end{figure}
@@ -23,7 +29,7 @@ Indeed, the Gilbert damping that is proportional to $\partial_t\bb{n}$ is charac
 
 In contrast, the Gilbert damping that is proportional to $\partial_t\bb{m}$ originates directly in the conduction electron scattering even in the absence of any spin-orbit interaction. The strength of the damping in a simple symmetric AFM is characterized by a coefficient $\alpha_m$, which is typically much larger than $\alpha_n$. As a rule, the spin-orbit interaction tends to suppress the coefficient $\alpha_m$ by restricting the ways in which electrons can damp their magnetic moments.  The condition $\alpha_m \gg \alpha_n$ has been indeed well documented in a metallic AFM \cite{PhysRevMaterials.1.061401, Mahfouzi2018a}. 
 
-In this paper, we uncover the microscopic mechanism of strong and anisotropic Gilbert damping suppression due to the influence of spin-orbit interaction in a 2D AFM model on a honeycomb lattice. 
+In this Chapter, we uncover the microscopic mechanism of strong and anisotropic Gilbert damping suppression due to the influence of spin-orbit interaction in a 2D AFM model on a honeycomb lattice. 
 
 Below we focus mainly on the AFM in the regime of good metallic behavior, such that the Fermi energy of electrons exceeds by order of magnitude that of an effective $s$-$d$ exchange coupling between electron spins and localized AFM magnetic momenta.  In this case, the transition to the highly anisotropic regime takes place provided the characteristic spin-orbit energy $\lambda$ exceeds the scale $\hslash/\tau$, where $\tau$ is the electron scattering time. Alternatively, one may think of characteristic spin-orbit length becoming smaller than the mean free path of conduction electrons.  We show here that the splitting of 2D Fermi surfaces by spin-orbit interaction leads to a dramatic suppression of electron spin flips in certain directions. This results in a strong anisotropy of both Gilbert damping tensors $\hat{\alpha}_n$ and $\hat{\alpha}_m$, that get some of their principal components vanishing. This extreme anisotropy in the damping leads to essentially undamped N\'eel vector dynamics for certain nonequilibrium modes. 
 
@@ -35,7 +41,7 @@ Apart from the Gilbert damping our results extend to cover conductivity and spin
 
 \section{Phenomenology of AFM dynamics}
 
-In this paper, we choose to describe the AFM with a classical Heisenberg model for localized spins $\bb{S}^\textrm{X}= S \bb{n}^\textrm{X}$ on two sublattices $X=A,B$. The spins have the same modulus $S$ and antiparallel directions $\bb{n}^\textrm{A}=-\bb{n}^\textrm{B}$ in the ground state. The AFM Heisenberg model is coupled to an effective tight-binding model of conduction electrons (see Appendix~\ref{chap03:sec:appa}) by means of exchange interaction,
+In this Chapter, we choose to describe the AFM with a classical Heisenberg model for localized spins $\bb{S}^\textrm{X}= S \bb{n}^\textrm{X}$ on two sublattices $X=A,B$. The spins have the same modulus $S$ and antiparallel directions $\bb{n}^\textrm{A}=-\bb{n}^\textrm{B}$ in the ground state. The AFM Heisenberg model is coupled to an effective tight-binding model of conduction electrons (see Appendix~\ref{chap03:sec:appa}) by means of exchange interaction,
 \be
 \label{chap03:ex}
 H_\mathrm{sd}=-J \s_{i} \s_{\sigma\sigma'}\bb{S}_i\cdot \bb{\sigma}_{\sigma\sigma'}c^\dagger_{i\sigma}c\0_{i\sigma'},
@@ -56,7 +62,7 @@ where dot stands for the time derivative, $\bb{s}^\textrm{X}$ is the spin densit
 \e
 and $\mathcal{A}$ is the area of the unit cell in the AFM. The notations $\bb{H}^\textrm{A,B}$ refer to effective fields on the sublattices $A$ and $B$ that are defined by the Heisenberg model. 
 
-For an isotropic antiferromagnet, one finds an effective field \cite{gomonay_spintronics_2014} $\bb{H}^\textrm{A}+\bb{H}^\textrm{B}= J_\textrm{ex}\bb{m}/\hslash+2\bb{H}$, where $\bb{H}$ is an external magnetic field in frequency units and $J_\textrm{ex}$ is a direct antiferromagnetic exchange energy that is one of the largest energies in the problem. In turn, the combination $\bb{H}^\textrm{A}-\bb{H}^\textrm{B}$ is proportional to magnetic anisotropy that we do not specify in this paper.  
+For an isotropic antiferromagnet, one finds an effective field \cite{gomonay_spintronics_2014} $\bb{H}^\textrm{A}+\bb{H}^\textrm{B}= J_\textrm{ex}\bb{m}/\hslash+2\bb{H}$, where $\bb{H}$ is an external magnetic field in frequency units and $J_\textrm{ex}$ is a direct antiferromagnetic exchange energy that is one of the largest energies in the problem. In turn, the combination $\bb{H}^\textrm{A}-\bb{H}^\textrm{B}$ is proportional to magnetic anisotropy that we do not specify in this Chapter.  
 
 Magnetization dynamics in AFM is conveniently formulated in terms of the N\'eel and magnetization vectors,
 \be
@@ -76,7 +82,7 @@ From Eqs.~(\ref{chap03:basicEQ}) we obtain
 \eml
 where $\Omega=2J_\textrm{ex}S/\hslash$ and $\bb{s}^{\pm}= J \mathcal{A}\,(\bb{s}^\textrm{A}\pm\bb{s}^\textrm{B})/2\hslash$. In Eqs.~(\ref{chap03:AFMEOM}) we have deliberately skipped terms that are induced by anisotropy of AFM exchange since the latter depend on particularities of the AFM Heisenberg model that we do not discuss here.  
 
-The vector $\bb{s}^+$ is proportional to average polarization of conduction electrons, while the vector $\bb{s}^-$ is proportional to the staggered polarization. The quantities $\bb{s}^\pm=\bb{s}_0^\pm+\delta\bb{s}^\pm$ contain equilibrium contributions $\bb{s}_0^\pm$ that characterize various interactions induced by conduction electrons. These contributions do renormalize the parameters of the AFM Heisenberg model and are not the subject of the present paper. 
+The vector $\bb{s}^+$ is proportional to average polarization of conduction electrons, while the vector $\bb{s}^-$ is proportional to the staggered polarization. The quantities $\bb{s}^\pm=\bb{s}_0^\pm+\delta\bb{s}^\pm$ contain equilibrium contributions $\bb{s}_0^\pm$ that characterize various interactions induced by conduction electrons. These contributions do renormalize the parameters of the AFM Heisenberg model and are not the subject of the present Chapter. 
 
 %%%%%%%%%%%%
 %%% figure 2: spectrum
@@ -199,7 +205,7 @@ where the principal axes correspond to choosing $\hat{\bm{x}}$ direction along $
 \e
 where $\rho_{aa}=1/\sigma_{aa}$ is the corresponding resistivity tensor component. We note that the anomalous Hall conductivity is identically vanishing in the model of Eq.~(\ref{chap03:eff}). 
 
-The results of Eq.~(\ref{chap03:conductivity}) and all subsequent results of our paper are technically obtained from linear response Kubo formulas evaluated in the diffusive approximation (ladder diagram summation). The details of these calculations can be found in Appendixes~\ref{chap03:sec:appb}, \ref{chap03:sec:appc}, and \ref{chap03:sec:appd}. 
+The results of Eq.~(\ref{chap03:conductivity}) and all subsequent results of our Chapter are technically obtained from linear response Kubo formulas evaluated in the diffusive approximation (ladder diagram summation). The details of these calculations can be found in Appendixes~\ref{chap03:sec:appb}, \ref{chap03:sec:appc}, and \ref{chap03:sec:appd}. 
 
 \section{Spin-orbit torque}\label{chap03:sec:sot}
 
@@ -332,7 +338,7 @@ For $\ep_F\gg \lambda+\Delta$, we find the well known Landau-Lifshitz-Gilbert eq
 where we again omit terms that originate e.\,g. from magnetic anisotropy of the AFM. 
 Eqs. (\ref{chap03:AFMEOM3}) are clearly different from Eqs.~(\ref{chap03:AFMEOM2}) derived on the basis of symmetry analysis in the absence of spin-orbit interaction. 
 
-The very pronounced, highly anisotropic Gilbert damping terms in the Landau-Lifshitz-Gilbert equations of Eqs.~(\ref{chap03:AFMEOM3}) represent the main result of our paper. The phenomenon of the giant Gilbert damping anisotropy in the 2D AFM clearly calls for a qualitative understanding that we provide in Sec.~\ref{chap03:sec:qual}.
+The very pronounced, highly anisotropic Gilbert damping terms in the Landau-Lifshitz-Gilbert equations of Eqs.~(\ref{chap03:AFMEOM3}) represent the main result of our Chapter. The phenomenon of the giant Gilbert damping anisotropy in the 2D AFM clearly calls for a qualitative understanding that we provide in Sec.~\ref{chap03:sec:qual}.
 
 \section{Qualitative consideration}\label{chap03:sec:qual}
 
@@ -382,7 +388,7 @@ Indeed, it can be directly seen from Eqs.~(\ref{chap03:AFMEOM3}) that a nonequil
 
 \section{Conclusions}
 
-In this paper, we demonstrate that the presence of sufficiently strong spin-orbit coupling $\lambda\tau/\hslash \gg 1$ results in the ultimate anisotropy of the Gilbert damping tensor in the metal regime, $\ep_F\gg\Delta+\lambda$.  One can trace the phenomenon to the spin-orbit induced splitting of Fermi surfaces that forbids scattering processes that are responsible for the relaxation of certain magnetization and N\'eel vector components. 
+In this Chapter, we demonstrate that the presence of sufficiently strong spin-orbit coupling $\lambda\tau/\hslash \gg 1$ results in the ultimate anisotropy of the Gilbert damping tensor in the metal regime, $\ep_F\gg\Delta+\lambda$.  One can trace the phenomenon to the spin-orbit induced splitting of Fermi surfaces that forbids scattering processes that are responsible for the relaxation of certain magnetization and N\'eel vector components. 
 
 We also demonstrate that a finite in-plane projection $\bb{n}_\parallel$ of the N\'eel vector is responsible for a weak anisotropy of conductivity and spin-orbit torques for Fermi energies approaching the band edge, $\ep_F \sim \Delta+\lambda$. This anisotropy is, however, absent in the metallic regime. 
 
