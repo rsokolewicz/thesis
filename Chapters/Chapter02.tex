@@ -227,7 +227,7 @@ The problem of magnetization dynamics can be formulated with the help of a Heise
 % For an ``isotropic'' antiferromagnet, one finds the effective field \cite{gomonay_spintronics_2014} $\bb{H}^\textrm{A}+\bb{H}^\textrm{B}= J_\textrm{ex}\bb{m}/\hslash+2\bb{H}$, where $\bb{H}$ is an external magnetic field in frequency units and $J_\textrm{ex}$ is a direct antiferromagnetic exchange energy that is one of the largest energies in the problem. In turn, the combination $\bb{H}^\textrm{A}-\bb{H}^\textrm{B}$ is proportional to magnetic anisotropy that we choose not to take into account as mentioned above.  
 The classical equations of motion on the staggered and non-staggered magnetizations, $\bb{n}$ and $\bb{m}$, were derived in Chapter~\ref{cd:sd:motion}. Excluding the anisotropy $K$, Eqs~(\ref{eq:sd:neel}) reads
 \begin{align}
-&\dot{\bb{n}} = -\frac{J_\textrm{ex}}{2\hslash} \bb{n}\times\bb{m} +\bb{H}\times\bb{n}+\frac{J\mathcal{A}}{\hslash}\lt(\bb{n}\times\bb{s}_++\bb{m}\times\bb{s}_-\rt),\n\\
+&\dot{\bb{n}} = -2\frac{J_\textrm{ex}}{\hslash} \bb{n}\times\bb{m} +\bb{H}\times\bb{n}+\frac{J\mathcal{A}}{\hslash}\lt(\bb{n}\times\bb{s}_++\bb{m}\times\bb{s}_-\rt),\n\\
 &\dot{\bb{m}} = \bb{H}\times\bb{m}+\frac{J\mathcal{A}}{\hslash}\lt(\bb{m}\times\bb{s}_++\bb{n}\times\bb{s}_-\rt),
 \label{chap02:AFMEOM}
 \end{align}
@@ -423,7 +423,7 @@ Indeed, for an ``isotropic'' antiferromagnet we find, in complete analogy with E
 \beml
 \label{chap02:AFMEOM2}
 \begin{align}
-&\dot{\bb{n}} = -(J_\textrm{ex}/2\hslash)\, \bb{n}\times\bb{m} +\bb{H}\times\bb{n}+\bb{T}^\textrm{A},\\
+&\dot{\bb{n}} = -2(J_\textrm{ex}/\hslash)\, \bb{n}\times\bb{m} +\bb{H}\times\bb{n}+\bb{T}^\textrm{A},\\
 &\dot{\bb{m}} = \bb{H}\times\bb{m}+\bb{T}^\textrm{A},
 \end{align}
 \eml
@@ -534,8 +534,8 @@ In order to model AFM magnetization dynamics we adopt the equations of motion (\
 \beml
 \label{EOMAFM10}
 \begin{align}
-\dot{\bb{n}}^\text{A} &= \frac{J_\text{ex}}{2\hslash}\bb{n}^\text{B}\times \bb{n}^\text{A}+ \frac{J\mathcal{A}}{\hslash}\, \bb{n}^\text{A}\times \bb{s}^\text{A} +\alpha\, \bb{n}^\text{A}\times \dot{\bb{n}}^\text{A},\\
-\dot{\bb{n}}^\text{B}&= \frac{J_\text{ex}}{2\hslash} \bb{n}^\text{A}\times \bb{n}^\text{B}+ \frac{J\mathcal{A}}{\hslash}\, \bb{n}^\text{B}\times \bb{s}^\text{B}+\alpha\, \bb{n}^\text{B}\times \dot{\bb{n}}^\text{B},
+\dot{\bb{n}}^\text{A} &= 2\frac{J_\text{ex}}{\hslash}\bb{n}^\text{B}\times \bb{n}^\text{A}+ \frac{J\mathcal{A}}{\hslash}\, \bb{n}^\text{A}\times \bb{s}^\text{A} +\alpha\, \bb{n}^\text{A}\times \dot{\bb{n}}^\text{A},\\
+\dot{\bb{n}}^\text{B}&= 2\frac{J_\text{ex}}{\hslash} \bb{n}^\text{A}\times \bb{n}^\text{B}+ \frac{J\mathcal{A}}{\hslash}\, \bb{n}^\text{B}\times \bb{s}^\text{B}+\alpha\, \bb{n}^\text{B}\times \dot{\bb{n}}^\text{B},
 \end{align}
 \eml
 where we take $\alpha=0.005$ for the strength of the Gilbert damping.  
