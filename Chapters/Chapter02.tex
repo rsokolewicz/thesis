@@ -2,14 +2,14 @@
 \chapter{Numerical approach to calculating Spin-orbit torques} % $\mathbb{ZNR}$
 %************************************************
 \label{ch:summit}
-Recent experiments on switching antiferromagnetic domains by electric current pulses have attracted a lot of attention to spin-orbit torques in antiferromagnets. In this work, we employ the tight-binding model solver, kwant,  to compute spin-orbit torques in a two-dimensional antiferromagnet on a honeycomb lattice with strong spin-orbit interaction of Rashba type. Our model combines spin-orbit interaction, local $s$-$d$-like exchange, and scattering of conduction electrons on on-site disorder potential to provide a microscopic mechanism for angular momentum relaxation. We consider two versions of the model: one with preserved and one with broken sublattice symmetry. A non-equilibrium staggered polarization, that is responsible for the so-called N\'eel spin-orbit torque, is shown to vanish identically in the symmetric model but may become finite if sublattice symmetry is broken. Similarly, anti-damping spin-orbit torques vanish in the symmetric model but become finite and anisotropic in a model with broken sublattice symmetry. As expected, anti-damping torques also reveal a sizable dependence on impurity concentration. Our numerical analysis also confirms symmetry classification of spin-orbit torques and strong torque anisotropy due to in-plane confinement of electron momenta. 
+Recent experiments on switching antiferromagnetic domains by electric current pulses have attracted a lot of attention to spin-orbit torques in antiferromagnets. In this work, we employ the tight-binding model solver, kwant,  to compute spin-orbit torques in a two-dimensional antiferromagnet on a honeycomb lattice with strong spin-orbit interaction of Rashba type. Our model combines spin-orbit interaction, local $s$--$d$-like exchange, and scattering of conduction electrons on on-site disorder potential to provide a microscopic mechanism for angular momentum relaxation. We consider two versions of the model: one with preserved and one with broken sublattice symmetry. A non-equilibrium staggered polarization, that is responsible for the so-called N\'eel spin-orbit torque, is shown to vanish identically in the symmetric model but may become finite if sublattice symmetry is broken. Similarly, anti-damping spin-orbit torques vanish in the symmetric model but become finite and anisotropic in a model with broken sublattice symmetry. As expected, anti-damping torques also reveal a sizable dependence on impurity concentration. Our numerical analysis also confirms symmetry classification of spin-orbit torques and strong torque anisotropy due to in-plane confinement of electron momenta. 
 \vfill
 Parts of this Chapter are published in Phys. Rev. \textbf{B} 100, 214403 (2019).
 \clearpage
 % \maketitle
 
 \section{Introduction}
-Our study of spin-orbit torques is based on the numerical computation of non-equilibrium spin polarizations for an effective $s$-$d$ type model in a two-dimensional (2D) honeycomb antiferromagnet with Rashba spin-orbit coupling and on-site disorder potential.  Our results stress the importance of anisotropy of both field-like and anti-damping like spin-orbit torques due to 2D confinement of conduction electrons. We also find, surprisingly, that both the staggered field-like and non-staggered anti-damping torques vanish identically in a model with an $s$-$d$ exchange coupling that is the same on two antiferromagnetic sublattices. In contrast, the model with strongly asymmetric $s$-$d$ exchange couplings leads to finite anti-damping torques while the entire notion of staggered torques becomes largely irrelevant in such an asymmetric  model. 
+Our study of spin-orbit torques is based on the numerical computation of non-equilibrium spin polarizations for an effective $s$--$d$ type model in a two-dimensional (2D) honeycomb antiferromagnet with Rashba spin-orbit coupling and on-site disorder potential.  Our results stress the importance of anisotropy of both field-like and anti-damping like spin-orbit torques due to 2D confinement of conduction electrons. We also find, surprisingly, that both the staggered field-like and non-staggered anti-damping torques vanish identically in a model with an $s$--$d$ exchange coupling that is the same on two antiferromagnetic sublattices. In contrast, the model with strongly asymmetric $s$--$d$ exchange couplings leads to finite anti-damping torques while the entire notion of staggered torques becomes largely irrelevant in such an asymmetric  model. 
 
 % %%%%%%%%%%%%
 % %%% figure 1: lattice
@@ -26,7 +26,7 @@ Left panel (a): a two-dimensional honeycomb lattice hosting anti-parallel locali
 
 \section{Model}
 
-In this paper, we develop a numerical framework for the microscopic analysis of spin-orbit torques that is realized with the help of the tight-binding model solver, kwant \cite{groth_kwant:_2014}. Our methodology is illustrated using $s$-$d$ type model for a 2D antiferromagnet on the honeycomb lattice depicted in Fig.~\ref{chap02:fig:lattice}a.  
+In this paper, we develop a numerical framework for the microscopic analysis of spin-orbit torques that is realized with the help of the tight-binding model solver, kwant \cite{groth_kwant:_2014}. Our methodology is illustrated using $s$--$d$ type model for a 2D antiferromagnet on the honeycomb lattice depicted in Fig.~\ref{chap02:fig:lattice}a.  
 To be more specific, we consider the Kane-Mele tight-binding model for conduction electrons \cite{kane_$z_2$_2005, qiao_microscopic_2012} with the Hamiltonian
 \be
 \label{chap02:ham}
@@ -51,16 +51,16 @@ with the unit vector $\hat{\bb{z}}$ directed perpendicular to the 2D crystal pla
 \e
 where $a$ is the length of the bond between $A$ and $B$.
 
-Finally, the $s$-$d$-like exchange interaction between localized magnetic moments $\bb{S}_i$ and spins of conduction electrons is described by the term
+Finally, the $s$--$d$-like exchange interaction between localized magnetic moments $\bb{S}_i$ and spins of conduction electrons is described by the term
 \be
 \label{chap02:ex}
 H_\mathrm{sd}=-J \s_{i} \s_{\sigma\sigma'}\bb{S}_i\cdot \bb{\sigma}_{\sigma\sigma'}c^\dagger_{i\sigma}c\0_{i\sigma'},
 \e
-with the coupling strength $J$ taken here to be the same on $A$ and $B$ sublattices. The term (\ref{chap02:ex}) couples the tight-binding model for conduction electrons to a  classical Heisenberg model for localized angular momenta $\bb{S}_i$ with antiferromagnetic ground state. The localized momenta $\bb{S}_i$ are assumed to have large absolute value $|\bb{S}_i|=S\gg 1$. The characteristic $s$-$d$ exchange energy is given by $\Delta_\text{sd} = J S$.  For conductivity and non-equilibrium spin density computations we assume the single-domain antiferromagnetic order, that is characterized by the unit N\'eel vector $\bb{n} = (\bb{S}^\textrm{A}-\bb{S}^\textrm{B})/2S$. 
+with the coupling strength $J$ taken here to be the same on $A$ and $B$ sublattices. The term (\ref{chap02:ex}) couples the tight-binding model for conduction electrons to a  classical Heisenberg model for localized angular momenta $\bb{S}_i$ with antiferromagnetic ground state. The localized momenta $\bb{S}_i$ are assumed to have large absolute value $|\bb{S}_i|=S\gg 1$. The characteristic $s$--$d$ exchange energy is given by $\Delta_\text{sd} = J S$.  For conductivity and non-equilibrium spin density computations we assume the single-domain antiferromagnetic order, that is characterized by the unit N\'eel vector $\bb{n} = (\bb{S}^\textrm{A}-\bb{S}^\textrm{B})/2S$. 
 
-Equal exchange couplings on both sublattices in Eq.~(\ref{chap02:ex}) and Rashba spin-orbit interaction of Eq.~(\ref{chap02:rashba}) ensure sublattice symmetry that greatly simplifies the results. In what follows we refer to the model as the symmetric model. At the end of the paper we also consider a more complex version of the model, where the sublattice symmetry is broken by a strong asymmetry of $s$-$d$ couplings on $A$ and $B$ sublattices.
+Equal exchange couplings on both sublattices in Eq.~(\ref{chap02:ex}) and Rashba spin-orbit interaction of Eq.~(\ref{chap02:rashba}) ensure sublattice symmetry that greatly simplifies the results. In what follows we refer to the model as the symmetric model. At the end of the Chapter we also consider a more complex version of the model, where the sublattice symmetry is broken by a strong asymmetry of $s$--$d$ couplings on $A$ and $B$ sublattices.
  
-The model of Eq.~(\ref{chap02:ham}) is motivated, in part, by the studies of CuMnAs \cite{smejkal_electric_2017}. A similar model was also used to describe silicene where circularly polarized light induces a staggered $s$-$d$-interaction \cite{ezawa_photoinduced_2013}. The spin-orbit interaction of Eq.~(\ref{chap02:rashba}) breaks $\hat{\bb{z}}\to -\hat{\bb{z}}$ inversion symmetry. Similarly to CuMnAs we also assume that the Fermi energy of conduction electrons stay in a vicinity of the antiferromagnetic gap (or Dirac point). That means that the Fermi surfaces are located near two different pockets of the Brillouin zone -- the so-called $K$ and $K'$ valleys as shown in Fig.~\ref{chap02:fig:lattice}b (see also the caption in Fig.~\ref{chap02:fig:spectrum}). 
+The model of Eq.~(\ref{chap02:ham}) is motivated, in part, by the studies of CuMnAs \cite{smejkal_electric_2017}. A similar model was also used to describe silicene where circularly polarized light induces a staggered $s$--$d$-interaction \cite{ezawa_photoinduced_2013}. The spin-orbit interaction of Eq.~(\ref{chap02:rashba}) breaks $\hat{\bb{z}}\to -\hat{\bb{z}}$ inversion symmetry. Similarly to CuMnAs we also assume that the Fermi energy of conduction electrons stay in a vicinity of the antiferromagnetic gap (or Dirac point). That means that the Fermi surfaces are located near two different pockets of the Brillouin zone -- the so-called $K$ and $K'$ valleys as shown in Fig.~\ref{chap02:fig:lattice}b (see also the caption in Fig.~\ref{chap02:fig:spectrum}). 
 
 Due to the rather high symmetry of the model of Eqs.~(\ref{chap02:ham})-(\ref{chap02:ex}), the Fermi-surfaces remain entirely isotropic with respect to azimuthal (in-plane) direction of the N\'eel vector $\bb{n}$ as illustrated in Fig.~\ref{chap02:fig:lattice}b. Still, the band-structure of the symmetric model depends strongly on the polar angle $\theta$ of the N\'eel vector, $n_z= \cos\theta$, as shown in Fig.~\ref{chap02:fig:spectrum}.
 
@@ -99,7 +99,7 @@ Even though the spin-orbit torques are completely defined by the tight-binding m
 
 \section{Scattering approach}
 
-In this paper we present a numerical analysis of spin-orbit torques using the scattering framework. The framework appeals to the two terminal geometry depicted schematically in Fig.~\ref{chap02:fig:sample}. Left and right leads (reservoirs) are modeled by semi-infinite systems of the width $W$ described by ballistic tight-binding model of Eq.~(\ref{chap02:ham}) with periodic boundary conditions in $y$ direction. For both leads one constructs left and right-going scattering states, $\Psi^{L,\gtrless}_{\alpha,E}(\bb{r}_i)$ and $\Psi^{R,\gtrless}_{\alpha,E}(\bb{r}_i)$, that are the eigenstates of the model of Eq.~(\ref{chap02:ham}) that are normalized to the unit probability current flux through the lead cross-section. 
+In this Chapter we present a numerical analysis of spin-orbit torques using the scattering framework. The framework appeals to the two terminal geometry depicted schematically in Fig.~\ref{chap02:fig:sample}. Left and right leads (reservoirs) are modeled by semi-infinite systems of the width $W$ described by ballistic tight-binding model of Eq.~(\ref{chap02:ham}) with periodic boundary conditions in $y$ direction. For both leads one constructs left and right-going scattering states, $\Psi^{L,\gtrless}_{\alpha,E}(\bb{r}_i)$ and $\Psi^{R,\gtrless}_{\alpha,E}(\bb{r}_i)$, that are the eigenstates of the model of Eq.~(\ref{chap02:ham}) that are normalized to the unit probability current flux through the lead cross-section. 
 
 The scattering states are labeled by (i) the eigenenergy $E$; (ii) the lead index: $L$ for the left lead and $R$ for the right one; (iii) the flux direction: $>$ for the probability current in $x$ direction and $<$ for the probability current in the opposite ($-x$)  direction, and (iv) by a composite index $\alpha=(n,\sigma,\nu)$ that incorporates the channel index $n$ (numerating states with different projections of the wave vector on the transversal direction $y$), the spin projection $\sigma$ and the band index $\nu$ numerating Fermi surfaces. Note that the dimension of the scattering state wave-function is $1/\sqrt{Wv_\alpha}$, where $v_\alpha$ is the $x$-component of the velocity in the channel $\alpha$.  
 
@@ -195,38 +195,37 @@ In numerical simulations we systematically employ Eq.~(\ref{chap02:noneq}) to ex
 
 The problem of magnetization dynamics can be formulated with the help of a Heisenberg model for the localized momenta $\bb{S}_i$ that is coupled to a tight-binding model for conduction electrons by means of the local exchange interaction of Eq.~(\ref{chap02:ex}). Depending on the type of the Heisenberg model we may obtain different equations of motion but the torques on magnetization (originating from electric current or field) and also Gilbert damping terms can be understood from the tight-binding Hamiltonian of Eq.~(\ref{chap02:MODEL}) alone \cite{ado_anisotropy_2019}. 
 
-For the sake of illustration let us outline the derivation of magnetization dynamics for a Heisenberg model of an ``isotropic'' antiferromagnet. The local interaction of Eq.~(\ref{chap02:ex}) dictates the equation of motion of localized momenta of the form
-\be
-\label{chap02:EOM}
-\dot{\bb{S}}_i = \bb{H}_i\times \bb{S}_i+ \frac{J}{\hslash}\, \bb{S}_i\times \s_{\sigma\sigma'} \lt\la c\h_{i\sigma}\bb{\sigma}_{\sigma\sigma'} c\0_{i\sigma'} \rt\ra,
-\e
-where dot stands for the time derivative of $\bb{S}_i$ and $\bb{H}_i=-\delta F/ \delta\, \hslash\bb{S}_i$ is an effective field (in frequency units) on a site $i$  that is defined by the free energy $F$ of the classical Heisenberg model for localized spins. The angular brackets denote the thermodynamic expectation value of conduction electron spin operator on the same site $i$. 
+% For the sake of illustration let us outline the derivation of magnetization dynamics for a Heisenberg model of an ``isotropic'' antiferromagnet. The local interaction of Eq.~(\ref{chap02:ex}) dictates the equation of motion of localized momenta of the form
+% \be
+% \label{chap02:EOM}
+% \dot{\bb{S}}_i = \bb{H}_i\times \bb{S}_i+ \frac{J}{\hslash}\, \bb{S}_i\times \s_{\sigma\sigma'} \lt\la c\h_{i\sigma}\bb{\sigma}_{\sigma\sigma'} c\0_{i\sigma'} \rt\ra,
+% \e
+% where dot stands for the time derivative of $\bb{S}_i$ and $\bb{H}_i=-\delta F/ \delta\, \hslash\bb{S}_i$ is an effective field (in frequency units) on a site $i$  that is defined by the free energy $F$ of the classical Heisenberg model for localized spins. The angular brackets denote the thermodynamic expectation value of conduction electron spin operator on the same site $i$. 
 
-For a collinear antiferromagnet we shall distinguish two sublattices $A$ and $B$ that are characterized by opposite directions of the localized momenta $\bb{S}_i^\textrm{A}=-\bb{S}_i^\textrm{B}$ in the antiferromagnetic ground state. It is assumed, that these directions remain to be almost opposite even for out-of-equilibrium conditions. It is also natural to assume that, as far as the magnet is far from a phase transition, the classical fields $\bb{S}_i^\textrm{A}$ and $\bb{S}_i^\textrm{B}$ remain smooth on atomic scales. Below we consider a single domain antiferromagnet, which is characterized by two time-dependent unit vectors $\bb{m}^\textrm{A,B}=\bb{S}^\textrm{A,B}/S$. 
+% For a collinear antiferromagnet we shall distinguish two sublattices $A$ and $B$ that are characterized by opposite directions of the localized momenta $\bb{S}_i^\textrm{A}=-\bb{S}_i^\textrm{B}$ in the antiferromagnetic ground state. It is assumed, that these directions remain to be almost opposite even for out-of-equilibrium conditions. It is also natural to assume that, as far as the magnet is far from a phase transition, the classical fields $\bb{S}_i^\textrm{A}$ and $\bb{S}_i^\textrm{B}$ remain smooth on atomic scales. Below we consider a single domain antiferromagnet, which is characterized by two time-dependent unit vectors $\bb{m}^\textrm{A,B}=\bb{S}^\textrm{A,B}/S$. 
 
-It is also convenient to define smooth conduction electron spin densities on each of the two sublattices
-\be
-\bb{s}^\textrm{A,B}(\bb{r})= \frac{1}{2} \s_{i\sigma\sigma'} \lt\la c\h_{i\sigma}\bb{\sigma}_{\sigma\sigma'} c\0_{i\sigma'} \rt\ra\;\frac{2}{\mathcal{A}},
-\e
-where $\mathcal{A}$ is the area of the unit cell (which naturally includes one A and one B site). Thus, the equation of motion (\ref{chap02:EOM}) can be written in  continuous approximation as
-\beml
-\label{chap02:EOMAFM}
-\begin{align}
-\dot{\bb{m}}^\textrm{A} &= \bb{H}^\textrm{A}\times \bb{m}^\textrm{A}+ (J\mathcal{A}/\hslash)\, \bb{m}^\textrm{A}\times \bb{s}^\textrm{A},\\
-\dot{\bb{m}}^\textrm{B}&= \bb{H}^\textrm{B}\times \bb{m}^\textrm{B}+ (J\mathcal{A}/\hslash)\, \bb{m}^\textrm{B}\times \bb{s}^\textrm{B},
-\end{align}
-\eml
-where $|\bb{m}^\textrm{A,B}|=1$, and the notations $\bb{H}^\textrm{A,B}$ refer to the effective fields on the sublattices $A$ and $B$. 
+% It is also convenient to define smooth conduction electron spin densities on each of the two sublattices
+% \be
+% \bb{s}^\textrm{A,B}(\bb{r})= \frac{1}{2} \s_{i\sigma\sigma'} \lt\la c\h_{i\sigma}\bb{\sigma}_{\sigma\sigma'} c\0_{i\sigma'} \rt\ra\;\frac{2}{\mathcal{A}},
+% \e
+% where $\mathcal{A}$ is the area of the unit cell (which naturally includes one A and one B site). Thus, the equation of motion (\ref{chap02:EOM}) can be written in  continuous approximation as
+% \beml
+% \label{chap02:EOMAFM}
+% \begin{align}
+% \dot{\bb{m}}^\textrm{A} &= \bb{H}^\textrm{A}\times \bb{m}^\textrm{A}+ (J\mathcal{A}/\hslash)\, \bb{m}^\textrm{A}\times \bb{s}^\textrm{A},\\
+% \dot{\bb{m}}^\textrm{B}&= \bb{H}^\textrm{B}\times \bb{m}^\textrm{B}+ (J\mathcal{A}/\hslash)\, \bb{m}^\textrm{B}\times \bb{s}^\textrm{B},
+% \end{align}
+% \eml
+% where $|\bb{m}^\textrm{A,B}|=1$, and the notations $\bb{H}^\textrm{A,B}$ refer to the effective fields on the sublattices $A$ and $B$. 
 
-Antiferromagnet dynamics is usually formulated as the coupled dynamics of the N\'eel and magnetization vectors,
-\be
-\bb{n}=\lt(\bb{m}^\textrm{A}-\bb{m}^\textrm{B}\rt)/2,\qquad \bb{m}= \lt(\bb{m}^\textrm{A}+\bb{m}^\textrm{B}\rt)/2,
-\e
-that remain mutually perpendicular $\bb{n}\cdot \bb{m}=0$ and yield the constraint $n^2+m^2=1$. Naturally, the amplitude of the magnetization vector remain to be small, $m\ll n \approx 1$.
+% Antiferromagnet dynamics is usually formulated as the coupled dynamics of the N\'eel and magnetization vectors,
+% \be
+% \bb{n}=\lt(\bb{m}^\textrm{A}-\bb{m}^\textrm{B}\rt)/2,\qquad \bb{m}= \lt(\bb{m}^\textrm{A}+\bb{m}^\textrm{B}\rt)/2,
+% \e
+% that remain mutually perpendicular $\bb{n}\cdot \bb{m}=0$ and yield the constraint $n^2+m^2=1$. Naturally, the amplitude of the magnetization vector remain to be small, $m\ll n \approx 1$.
 
-For an ``isotropic'' antiferromagnet, one finds the effective field \cite{gomonay_spintronics_2014} $\bb{H}^\textrm{A}+\bb{H}^\textrm{B}= J_\textrm{ex}\bb{m}/\hslash+2\bb{H}$, where $\bb{H}$ is an external magnetic field in frequency units and $J_\textrm{ex}$ is a direct antiferromagnetic exchange energy that is one of the largest energies in the problem. In turn, the combination $\bb{H}^\textrm{A}-\bb{H}^\textrm{B}$ is proportional to magnetic anisotropy that we choose not to take into account as mentioned above.  
-
-Equations (\ref{chap02:EOMAFM}) can, therefore, be rewritten as
+% For an ``isotropic'' antiferromagnet, one finds the effective field \cite{gomonay_spintronics_2014} $\bb{H}^\textrm{A}+\bb{H}^\textrm{B}= J_\textrm{ex}\bb{m}/\hslash+2\bb{H}$, where $\bb{H}$ is an external magnetic field in frequency units and $J_\textrm{ex}$ is a direct antiferromagnetic exchange energy that is one of the largest energies in the problem. In turn, the combination $\bb{H}^\textrm{A}-\bb{H}^\textrm{B}$ is proportional to magnetic anisotropy that we choose not to take into account as mentioned above.  
+The classical equations of motion on the staggered and non-staggered magnetizations, $\bb{n}$ and $\bb{m}$, were derived in Chapter~\ref{cd:sd:motion}. Excluding the anisotropy $K$, Eqs~(\ref{eq:sd:neel}) reads
 \begin{align}
 &\dot{\bb{n}} = -\frac{J_\textrm{ex}}{2\hslash} \bb{n}\times\bb{m} +\bb{H}\times\bb{n}+\frac{J\mathcal{A}}{\hslash}\lt(\bb{n}\times\bb{s}_++\bb{m}\times\bb{s}_-\rt),\n\\
 &\dot{\bb{m}} = \bb{H}\times\bb{m}+\frac{J\mathcal{A}}{\hslash}\lt(\bb{m}\times\bb{s}_++\bb{n}\times\bb{s}_-\rt),
@@ -240,7 +239,7 @@ where $\bb{s}_\pm=(\bb{s}_A\pm\bb{s}_B)/2$. The right-hand sides of Eqs.~(\ref{c
 \e
 where $\delta \bb{s}_\pm$ refers to the non-equilibrium spin density contribution that is proportional to $\delta\mu$. 
 
-Note that, generally, the average spin $\bb{s}_i$ has a non-local functional dependence on the time-dependent classical field $\bb{S}_j$ at preceding moments of time  and at different lattice sites $j\neq i$. The degree of non-locality is defined by relaxation processes. The quicker the relaxation the more local the functional dependence. In particular, non-dissipative contributions to spin-orbit torques (the so-called field-like contributions) are local in time on the time scales of the order of $s$-$d$ exchange  $\tau_\textrm{sd}=\hslash/\Delta_\text{sd}$, where $\Delta_\text{sd}=J S$. In contrast, the dissipative contributions (such as anti-damping torques) are defined by transport scattering time $\tau_\textrm{tr}$. The latter time scale may be both larger and smaller than $\tau_\textrm{sd}$ giving rise to different regimes of magnetization dynamics. For the sake of numerical analysis we consider, however, a situation when these two time scales are of the same order.
+Note that, generally, the average spin $\bb{s}_i$ has a non-local functional dependence on the time-dependent classical field $\bb{S}_j$ at preceding moments of time  and at different lattice sites $j\neq i$. The degree of non-locality is defined by relaxation processes. The quicker the relaxation the more local the functional dependence. In particular, non-dissipative contributions to spin-orbit torques (the so-called field-like contributions) are local in time on the time scales of the order of $s$--$d$ exchange  $\tau_\textrm{sd}=\hslash/\Delta_\text{sd}$, where $\Delta_\text{sd}=J S$. In contrast, the dissipative contributions (such as anti-damping torques) are defined by transport scattering time $\tau_\textrm{tr}$. The latter time scale may be both larger and smaller than $\tau_\textrm{sd}$ giving rise to different regimes of magnetization dynamics. For the sake of numerical analysis we consider, however, a situation when these two time scales are of the same order.
 
 \section{Symmetry consideration} 
 
@@ -382,12 +381,12 @@ To conclude this section it is worth mentioning that half-metal antiferromagnets
 
 \section{Asymmetric coupling model} 
 
-Relative simplicity of the results of Eqs.~(\ref{chap02:metal_SOT},\ref{chap02:torque_T}) for the symmetric coupling model of Eqs.~(\ref{chap02:ham})-(\ref{chap02:MODEL}) prompted us to look at a model with ultimately asymmetric $s$-$d$ exchange,
+Relative simplicity of the results of Eqs.~(\ref{chap02:metal_SOT},\ref{chap02:torque_T}) for the symmetric coupling model of Eqs.~(\ref{chap02:ham})-(\ref{chap02:MODEL}) prompted us to look at a model with ultimately asymmetric $s$--$d$ exchange,
 \be
 H_\mathrm{sd}=\,-J \s_{i\in A }  \s_{\sigma\sigma'} \bb{\sigma}_{\sigma\sigma'}\bb{S}^\textrm{A}_i\cdot c^\dagger_{i\sigma}c\0_{i\sigma'},
 \label{chap02:ex2}
 \e
-that is represented by $s$-$d$ coupling on $A$ sublattice only. Such a coupling obviously violates the sublattice symmetry and may, in principle, lead to the appearance of non-equilibrium staggered polarization and to anti-damping like spin-orbit torques that are absent in the symmetric coupling model. 
+that is represented by $s$--$d$ coupling on $A$ sublattice only. Such a coupling obviously violates the sublattice symmetry and may, in principle, lead to the appearance of non-equilibrium staggered polarization and to anti-damping like spin-orbit torques that are absent in the symmetric coupling model. 
 
 It is worth mentioning that the asymmetric model is unlikely to represent an antiferromagnet. Since conduction electron spins contribute to polarization only on a single sublattice, the model is much more likely to correspond to a ferrimagnet or a ferromagnet.  Rare-earth/transition metal ferrimagnets (such as FeCoGd) at a compensation point seem to be the most obvious examples \cite{jungfleisch_perspectives_2018}. The conduction electrons in these compounds couple mostly with localized d-orbitals rather than with f-orbitals and give rise to an asymmetric exchange coupling that can be mimicked by Eq.~(\ref{chap02:ex2}). 
 
@@ -493,17 +492,17 @@ where all coefficients are generally even functions of the component $n_z= n_z^\
 
 Remarkably, our numerical data again corresponds to a constant coefficient $A_I(n_z^2)=A_I$ in all regimes considered as it was also the case for the symmetric model.   
 
-The spin orbit torque $\bb{T}^A$, which is obtained by substituting the result of Eq.~(\ref{sA}) to Eq.~(\ref{TA}), can be represented as the sum of only four vector forms 
+The spin orbit torque $\bb{T}^A$, which is obtained by substituting the result of Eq.~(\ref{chap02:sA}) to Eq.~(\ref{chap02:TAresult}), can be represented as the sum of only four vector forms 
 \begin{align}
 \bb{T}^\textrm{A}= \eta \Big(&a_I(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\hat{\bb{z}}\times \bb{j}\rt] 
 + b_\perp(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\n\\
 &+b_\parallel(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\parallel\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\n\\
 &+c(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\parallel\times \lt[\bb{m}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\rt]\Big),
-\label{TAresult}
+\label{chap02:TAresult}
 \end{align}
-where we again introduce $\eta=J\mathcal{A}\Delta_\text{sd}\lambda /evh t_h^2$, $\bb{j}=\bb{I}/W$ and the dimensionless coefficients $a_I$, $b_\perp$, $b_\parallel$, and $c$ that all appear to be non-trivial functions of $n_z^2=\cos^2\theta$ as shown in Fig.~\ref{fig:result_as}. Note that the function $A'_I(n_z^2)$ in Eq.~(\ref{sA}) for spin density contributes to both $a_I$ and $c$ coefficients in Eq.~(\ref{TAresult}) in the direct analogy to Eqs.~(\ref{torque_Tplus_MOD}) and (\ref{renorm}). 
+where we again introduce $\eta=J\mathcal{A}\Delta_\text{sd}\lambda /evh t_h^2$, $\bb{j}=\bb{I}/W$ and the dimensionless coefficients $a_I$, $b_\perp$, $b_\parallel$, and $c$ that all appear to be non-trivial functions of $n_z^2=\cos^2\theta$ as shown in Fig.~\ref{chap02:fig:result_as}. Note that the function $A'_I(n_z^2)$ in Eq.~(\ref{chap02:sA}) for spin density contributes to both $a_I$ and $c$ coefficients in Eq.~(\ref{chap02:TAresult}) in the direct analogy to Eqs.~(\ref{chap02:torque_Tplus_MOD}) and (\ref{chap02:renorm}). 
 
-Thus, the spin-orbit torque $\bb{T}^\textrm{A}$ is parameterized by $4$ dimensionless functions. These functions are shown in Fig.~\ref{fig:result_as} illustrating the main result of our numerical simulations for the asymmetric coupling model. In sharp contrast to the symmetric model we observe that the anti-damping torques are no longer vanishing. We also find that $b_\perp(n_z^2) \approx b_\parallel(n_z^2)$ in the half-metal regime. The major field-like torque $\bb{m}^\textrm{A}\times\lt[\hat{\bb{z}}\times\bb{j}\rt]$, which originates in the Edelstein effect, acquires a weak dependence on $\theta$ due to the impact of the coefficient $A'_I(n_z^2)$. 
+Thus, the spin-orbit torque $\bb{T}^\textrm{A}$ is parameterized by $4$ dimensionless functions. These functions are shown in Fig.~\ref{chap02:fig:result_as} illustrating the main result of our numerical simulations for the asymmetric coupling model. In sharp contrast to the symmetric model we observe that the anti-damping torques are no longer vanishing. We also find that $b_\perp(n_z^2) \approx b_\parallel(n_z^2)$ in the half-metal regime. The major field-like torque $\bb{m}^\textrm{A}\times\lt[\hat{\bb{z}}\times\bb{j}\rt]$, which originates in the Edelstein effect, acquires a weak dependence on $\theta$ due to the impact of the coefficient $A'_I(n_z^2)$. 
 
 As it is expected we observe that anti-damping torques, which are proportional to $b_{\perp,\parallel}$, depend strongly on disorder concentration, while the field-like torques do not. Moreover, while anti-damping torques are suppressed by disorder in the metal regime, the opposite is true in the half-metal regime. 
 
@@ -523,7 +522,7 @@ These experimental results are, at least, qualitatively in line with our finding
 \centerline{\includegraphics[width=\columnwidth]{{gfx/Chapter02/fig12}}}
 \caption{Time evolution of the in-plane N\'eel vector $\bb{n}_\parallel(t)$ in the symmetric model (top panel) and asymmetric model (bottom panel) induced by a 
 sequence of current pulses alternating between $-\hat{\bb{x}}$ and $\hat{\bb{y}}$ directions (gray areas). The results are obtained from Eqs.~(\ref{EOMAFM10}) for
- the parameters $\alpha=0.005$, $\hslash\eta j/J_\text{ex}=0.05$, $E/w=0.3$ and $n_\text{imp}=0.3$.}
+ the parameters $\alpha=0.005$, $\hslash\eta j/J_\text{ex}=0.05$, $E/t_h=0.3$ and $n_\text{imp}=0.3$.}
 \label{fig:switching}
 \end{figure}
 
@@ -531,7 +530,7 @@ sequence of current pulses alternating between $-\hat{\bb{x}}$ and $\hat{\bb{y}}
 
 It is instructive to apply our results for the symmetric and asymmetric model to describe antiferromagnetic switching. As was mentioned in the introduction both field-like staggered torque and anti-damping-like non-staggered torque can be important for the N\'eel vector switching. In the symmetric model we only find field-like non-staggered torques that cannot induce AFM switching for realistic values of the current intensity. In the asymmetric model we find both field-like and anti-damping-like torques that act on a single sub-lattice. Although, strictly speaking, these do not entail a staggered torque, i.\,e. the N\'eel torque, one can nevertheless expect switching to occur. 
 
-In order to model AFM magnetization dynamics we adopt the equations of motion (\ref{AFMEOM}) for the unit vectors $\bb{n}^\text{A}$ and $\bb{n}^\text{B}$  with Gilbert damping terms included,
+In order to model AFM magnetization dynamics we adopt the equations of motion (\ref{chap02:AFMEOM}) for the unit vectors $\bb{n}^\text{A}$ and $\bb{n}^\text{B}$  with Gilbert damping terms included,
 \beml
 \label{EOMAFM10}
 \begin{align}
@@ -541,12 +540,12 @@ In order to model AFM magnetization dynamics we adopt the equations of motion (\
 \eml
 where we take $\alpha=0.005$ for the strength of the Gilbert damping.  
 
-In Fig.~\ref{fig:switching} we illustrate the AFM dynamics induced by short current pulses of the density $j=0.05\,J_\text{ex}/\eta\hslash$, which are applied in alternating directions $-\hat{\bb{x}}$ and $\hat{\bb{y}}$. The parameters of spin-orbit torques are derived for the Fermi energy $E =0.3\,w$ (in the metal regime) and for the impurity concentration $n_\text{imp}=0.3$ which corresponds to placing impurities on $30\%$ of lattice sites.   
+In Fig.~\ref{fig:switching} we illustrate the AFM dynamics induced by short current pulses of the density $j=0.05\,J_\text{ex}/\eta\hslash$, which are applied in alternating directions $-\hat{\bb{x}}$ and $\hat{\bb{y}}$. The parameters of spin-orbit torques are derived for the Fermi energy $E =0.3\,t_h$ (in the metal regime) and for the impurity concentration $n_\text{imp}=0.3$ which corresponds to placing impurities on $30\%$ of lattice sites.   
 
-The spin-orbit torques in the symmetric model are obtained by substituting $\bb{s}^\text{A}=\bb{s}^\text{B} = \delta\bb{s}_+$ in Eqs.~(\ref{EOMAFM10}), where $\delta\bb{s}_+ \propto \hat{\bb{z}}\times\bb{j}$ is given by Eq.~(\ref{s_SOT}). The spin-orbit torques in the asymmetric model correspond to $\bb{s}^\text{B}=0$ and $\bb{s}^\text{A}$ taken from Eq.~(\ref{sA}).
+The spin-orbit torques in the symmetric model are obtained by substituting $\bb{s}^\text{A}=\bb{s}^\text{B} = \delta\bb{s}_+$ in Eqs.~(\ref{EOMAFM10}), where $\delta\bb{s}_+ \propto \hat{\bb{z}}\times\bb{j}$ is given by Eq.~(\ref{chap02:s_SOT}). The spin-orbit torques in the asymmetric model correspond to $\bb{s}^\text{B}=0$ and $\bb{s}^\text{A}$ taken from Eq.~(\ref{chap02:sA}).
  
-It is worth noting that the switching behaviour in the asymmetric model (shown in the bottom panel of Fig.~\ref{fig:switching}) is provided exclusively by the field-like-torques (which are proportional to the $a_I$ and $c$ in Eq.~(\ref{TAresult})). In contrast, anti-damping torques, which are proportional to $b_{\perp,\parallel}$, do not play an important role in this behaviour for the proposed choice of parameters. Nevertheless, if anti-damping torques become essentially enhanced to overcome Gilbert damping they may lead to qualitatively different behaviour. Indeed, for giant anti-damping torques, the spin angular momentum in the asymmetric model is transferred from one sub-lattice to the another. Such a process, however, destroys the N\'eel order and fully magnetizes the sample during the current pulse. Once the electric current is switched off the N\'eel order is restored albeit in a different direction. This type of switching bears some resemblance to all-optical ultra-fast magnetization switching that is observed, for example, in a ferrimagnet GdFeCo \cite{RevModPhys.82.2731}. In the latter case the crystal also enters a transient fully magnetized state during a femtosecond optical pulse and relaxes to a state with opposite magnetization soon after the pulse.  We note however, that a current-induced switching of this type in our AFM model would require unrealistically large charge current intensities due to rather small magnitude of anti-damping torques. 
+It is worth noting that the switching behaviour in the asymmetric model (shown in the bottom panel of Fig.~\ref{fig:switching}) is provided exclusively by the field-like-torques (which are proportional to the $a_I$ and $c$ in Eq.~(\ref{chap02:TAresult})). In contrast, anti-damping torques, which are proportional to $b_{\perp,\parallel}$, do not play an important role in this behaviour for the proposed choice of parameters. Nevertheless, if anti-damping torques become essentially enhanced to overcome Gilbert damping they may lead to qualitatively different behaviour. Indeed, for giant anti-damping torques, the spin angular momentum in the asymmetric model is transferred from one sub-lattice to the another. Such a process, however, destroys the N\'eel order and fully magnetizes the sample during the current pulse. Once the electric current is switched off the N\'eel order is restored albeit in a different direction. This type of switching bears some resemblance to all-optical ultra-fast magnetization switching that is observed, for example, in a ferrimagnet GdFeCo \cite{RevModPhys.82.2731}. In the latter case the crystal also enters a transient fully magnetized state during a femtosecond optical pulse and relaxes to a state with opposite magnetization soon after the pulse.  We note however, that a current-induced switching of this type in our AFM model would require unrealistically large charge current intensities due to rather small magnitude of anti-damping torques. 
 
 \section{Conclusions}
  
-Motivated by recent experiments on the N\'eel vector switching we investigate microscopically the spin-orbit torques in an $s$-$d$-like model of a two-dimensional honeycomb antiferromagnet with Rashba spin-orbit coupling. We investigated the model with preserved and broken sublattice symmetry and distinguished metal and half-metal regimes for each of the model. Spin-orbit interaction in combination with on-site disorder potential and local exchange coupling between conduction and localized spins have been responsible for a microscopic mechanism of the angular momentum relaxation. We find identically vanishing anti-damping and N\'eel spin-orbit torques in the symmetric model in all regimes considered. As the result, the metal regime of the symmetric model is characterized by a particularly simple isotropic field-like spin-orbit torque, while the half-metal regime is characterized by anisotropic spin-orbit torques of the field-like symmetry.  Finite and anisotropic anti-damping torques, that crucially depend on disorder strength, are found in both metal and half-metal regimes of the asymmetric model. We also find non-equilibrium staggered polarization in the half-metal regime of the asymmetric model. This formally leads to a finite value of the N\'eel spin-orbit torque, which is, however, not a quantity of interest in that model. Overall, our results reveal the importance of two-dimensional electron momentum confinement for spin-orbit torque anisotropy. Largest values of spin-orbit torques are also associated with the half-metal regimes of conduction in both models. 
+Motivated by recent experiments on the N\'eel vector switching we investigate microscopically the spin-orbit torques in an $s$--$d$-like model of a two-dimensional honeycomb antiferromagnet with Rashba spin-orbit coupling. We investigated the model with preserved and broken sublattice symmetry and distinguished metal and half-metal regimes for each of the model. Spin-orbit interaction in combination with on-site disorder potential and local exchange coupling between conduction and localized spins have been responsible for a microscopic mechanism of the angular momentum relaxation. We find identically vanishing anti-damping and N\'eel spin-orbit torques in the symmetric model in all regimes considered. As the result, the metal regime of the symmetric model is characterized by a particularly simple isotropic field-like spin-orbit torque, while the half-metal regime is characterized by anisotropic spin-orbit torques of the field-like symmetry.  Finite and anisotropic anti-damping torques, that crucially depend on disorder strength, are found in both metal and half-metal regimes of the asymmetric model. We also find non-equilibrium staggered polarization in the half-metal regime of the asymmetric model. This formally leads to a finite value of the N\'eel spin-orbit torque, which is, however, not a quantity of interest in that model. Overall, our results reveal the importance of two-dimensional electron momentum confinement for spin-orbit torque anisotropy. Largest values of spin-orbit torques are also associated with the half-metal regimes of conduction in both models. 
