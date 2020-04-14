@@ -43,27 +43,20 @@ from which one can immediately see that the modulus of both $\bb{m}$ and $\bb{n}
 
 
 \section{Role of vertex-corrections on the asymptotic behavior of $\alpha_{m,zz}$ and $\alpha_{m,\parallel}$}
-As it turns out, the role of vertex-corrections on the components of the $\alpha_m$ tensor has a profound effect when $\lambda\tau/\hbar\ll1$, but negligible when $\lambda\tau/\hbar\gg1$. We will demonstrate this first quantitatively, before giving a physical picture. 
+It was shown in the previous Chapter that in the limit $\lambda\tau\ll1$ the damping tensor becomes isotropic, while in the opposing limit we find an ultimate anisotropy where $\alpha_{m,zz}$ vanishes completely. In the latter limit, the spin-split bands are completely resolved and certain spin-flip processes become forbidden. A more quantitative discussion on how $\alpha_{m,zz}$ and $\alpha_{m,\parallel}$ however, will be presented here. 
 
-All formulas presented in this section are derived in the limits $\Delta\rightarrow0$ and $n_z\rightarrow 0$. The tensor can be fully characterized by just two numbers $\alpha_{m,\parallel}$ and $\alpha_{m,zz}$,  $\alpha_m=\diag\left(\alpha_{m,\parallel}, \alpha_{m,\parallel}, \alpha_{m,zz}\right)$.
-%or more precisely 
-%\be
-%\alpha_m=\left(\begin{array}{ccc}
-%        n_x^2 \alpha_{m,\parallel} &  n_xn_y  \alpha_{m,\parallel} &0 \\
-%        \ n_xn_y  \alpha_{m,\parallel} &  n_y^2  \alpha_{m,\parallel} & 0 \\
-%        0 & 0 & \alpha_{m,zz}
-%    \end{array}\right)  .
-%\e
-% \section{barber}
-% https://daggers.resurva.com/login
-% \section{Vertex continued}
+It is instructive to illustrate the role of disorder averaging in both limits as it turns out, the role of vertex-corrections on the components of the $\alpha_m$ tensor has a profound effect when $\lambda\tau/\hbar\ll1$, but negligible when $\lambda\tau/\hbar\gg1$. 
+
+In the limit $\Delta_\text{sd}$ we are able to obtain concise and exact analytical formulas, that we present first. In this limit the exchange damping tensor can be fully characterized by just two numbers, $\alpha_m=\diag\left(\alpha_{m,\parallel}, \alpha_{m,\parallel}, \alpha_{m,zz}\right)$.
+
+We will annotate the tensor-components with a superscript $(i)$, that denotes the number of disorder-lines inserted into the diagram. Physically, it means averaging over various disorder ensembles where the electron scatters $i$ number of times. 
 
 Let us first consider the ``bare bubble'' contribution which describes an electron entering and exiting the system without a single scattering event
 \begin{align}
     \alpha_{m,zz}^{(0)} = &\frac{\varepsilon\tau}{\hbar} \frac{1-(\lambda/2\varepsilon)^2}{1+(\lambda\tau)^2},\\
     \alpha_{m,\parallel}^{(0)} = &\frac{\varepsilon\tau}{\hbar}\left(\frac{1}{2}\frac{3+2(\lambda\tau/\hbar)^2}{1+(\lambda\tau/\hbar)^2}-\frac{2}{(4-\lambda/\varepsilon)^2}\right),
 \end{align}
-where the superscript $(i)$ denotes the number of scattering events the results has been averaged over (the bare bubble is averaged over zero disorder realisations). One can immediately see the asymptotic behaviour for large and small values of $\lambda\tau$:
+where one can immediately see the asymptotic behaviour for large and small values of $\lambda\tau$:
 \begin{align}
     \alpha_{m,zz}^{(0)} &= \frac{\epsilon\tau}{\hbar}\begin{cases}
     1  +\mathcal{O}(\lambda/\varepsilon) &\text{ for }\lambda\tau/\hbar\ll1\\
@@ -74,7 +67,7 @@ where the superscript $(i)$ denotes the number of scattering events the results 
     1/2 + \hbar/2(\lambda\tau)^2&\text{ for }\lambda\tau/\hbar\gg1.
     \end{cases}
 \end{align}
-Evidently, the Gilbert damping transitions from fully isotropic to ultimately anisotropic when changing the limits $\lambda\tau\ll1$ to $\lambda\tau\gg1$. 
+Evidently, the exchange damping transitions from fully isotropic to ultimately anisotropic when changing the limits $\lambda\tau\ll1$ to $\lambda\tau\gg1$. 
 Including a small number of scattering events in the calculation we find an interesting modification:
 \begin{align}
     \alpha_{m,zz}^{(i)} &= \frac{\epsilon\tau}{\hbar}\begin{cases}
@@ -86,7 +79,7 @@ Including a small number of scattering events in the calculation we find an inte
     1-(1/2)^{i+1}+\mathcal{O}(\hbar/(\lambda\tau)^2)&\text{ for }\lambda\tau/\hbar\gg1.
     \end{cases}
 \end{align}
-In the large $\lambda\tau$ limit the $zz$ component of the $\alpha_m$ tensor is unchanged by scattering events, whereas the parallel component quickly converges to the value of $\varepsilon\tau$. In the opposite limit, where the components remain isotropic with respect to each other, the components have a profound sensitivity to scattering events. Each scattering event contributes a value of $1\,\varepsilon\tau$ to the damping coefficient. This seemingly divergent behavior is cut by the upper bound $\varepsilon^2\tau/\lambda$. 
+In the large $\lambda\tau$ limit the $zz$ component of the $\alpha_m$ tensor is unchanged by scattering events, whereas the parallel component quickly converges to the value of $\varepsilon\tau$. In the opposite limit, where the components remain isotropic with respect to each other, the components have a profound sensitivity to scattering events. Each scattering event contributes a value of $1\,\varepsilon\tau$ to the damping coefficient. While at a first glance it appears as strong sensitivity to impurities, it in reality reflects a long spin-life time: many scattering events are required to randomize the spin of an electron. 
 
 In a truly diffusive system one should take the limit $i\rightarrow\infty$, in which case the tensor components are given by
 \begin{align}
@@ -102,8 +95,9 @@ We plot the functions of $\alpha_{m,zz(\parallel)}^{(i)}$ for $i=0,1,2$ and $i\r
     \caption{The first three scattering contributions $\alpha_{m,zz}^{(i)}$, $i=0,1,2$ (green, dotted) and the fully vertex corrected $\alpha_{m,zz}^{(\infty)}$ (orange, dashed) as a function of $\lambda \tau$. }
     \label{fig:alpha_plot}
 \end{figure}
+We find that indeed in the limit $\lambda\tau\gg1$ becomes ultimately anisotropic where $\alpha_{m,zz}$ becomes vanishly small. Moreover, we find a subtantial drop of $\alpha_{m,\parallel}$ for increasing values of $\lambda\tau$, that can reach a difference of many orders of magnitude. 
 
-In the overdamped regime ($\lambda\tau\ll1$),  $\Delta$ merely introduces a cutoff whereas in the underdamped regime a small modification.
+We note that a large value for damping corresponds to an overdamped regime, which we will explain in details in the next section. The direct exchange paramater $\Delta$ can be included perturbatively in both overdamped and underdamp regimes. In the overdamped regime,  $\Delta$ merely introduces a cutoff whereas in the underdamped regime a small modification.
 \begin{align}
 \label{eq:alphaparallelzerodelta}
     \alpha_{m,zz}^{(\infty)} &= \frac{\epsilon \tau}{\hbar}\, \frac{2}{(2-n_z^2)\lambda^2\tau^2+2\Delta^2/\varepsilon^2},\\
@@ -122,16 +116,15 @@ that we illustrate in Fig.~\ref{fig:alpha3}.
 % uniform modes
 %
 \section{Uniform modes in collinear ground state}
-When subjecting an AFM to an oscillating magnetic field, the localized spins $\bb{S}^\text{A,B}$ will oscillate as well and by tuning the field's frequency we observe resonance. As shown first by Kittel and Keffer \cite{kittel} the resonance frequency is proportional to the square root of the product of anisotropy and exchange energy. The resonance frequency width however, depends on dissipative 
-The presence of spin-orbit interaction leads to an easy-axis anisotropy whose magnetic energy can be written as The AFM resonance arises due to the presence of anistropy, which comes from spin-orbit interaction and is equal to
+When subjecting an AFM to an oscillating magnetic field, the localized spins will exhibit a precession parallel to the magnetic field direction. By tuning the magnetic field's frequency to an internal harmonic frequency we can observe resonance. As shown first by Kittel and Keffer \cite{PhysRev.82.565, PhysRev.85.329} the resonance frequency is proportional to the square root of the product of anisotropy and exchange energy. The width of the resonance frequency however, as we show below, is linearly proportional to anisotropy and exchange damping. Although exchange damping remains finite, even large, at vanishingly small values of spin-orbit interaction, the anisotropy must vanish. A direct calculation from the grand potential (see Appendix~\ref{app:D}), we find that the Rashba honeycomb lattice exhibits an out-of-plane and easy-axis anisotropy. Close to $\bb{n}=\bb{n}_\perp$ the magnetostatic anisotropy energy is given by
 \begin{equation}
     E = -\frac{K}{2}n_z^2, \quad K= \frac{1}{2\pi\hbar^2v^2}\begin{cases}
     |\Delta^2\lambda| & \text{for } |\lambda/2\Delta| \geq 1 \\
     |\Delta\lambda^2| & \text{for } |\lambda/2\Delta| \leq 1
     \end{cases}.
 \end{equation}
-{\color{blue} Need to check this one more time. Not sure if I used $\lambda$ or $\lambda/2$ to derive this... :(\\}
-This expression is obtained from calculating the grand potential and details are presented in \cite{supplementary}. The transition from $|\lambda/2\Delta|\le1$ to $|\lambda/2\Delta|\ge1$ correspond to the merger of two of the bands as illustrated in Fig.~\ref{fig:bands}. The resonance frequencies and widths are obtained by including the effect of anisotropy in the equations of motion on $\bb{n}$ and $\bb{m}$
+
+The transition from $|\lambda/2\Delta|\le1$ to $|\lambda/2\Delta|\ge1$ correspond to the merger of two of the bands as illustrated in Fig.~\ref{fig:bands}. The resonance frequencies and widths are obtained by including the effect of anisotropy in the equations of motion on $\bb{n}$ and $\bb{m}$
 \beml
 \label{AFMEOM2}
 \begin{align}
