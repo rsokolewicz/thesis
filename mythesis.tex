@@ -48,8 +48,6 @@
 \addbibresource{Bibliography.bib}
 \addbibresource{biblio-2.bib}
 
-% \addbibresource[label=ownpubs]{KR_Publications.bib}
-
 %********************************************************************
 % Hyphenation
 %*******************************************************
@@ -65,7 +63,6 @@
 \usepackage{bm}
 \usepackage{amsmath}
 \usepackage{amssymb}
-% \usepackage{hyperref}
 % Package that can be loaded in order to prevent warning about fonts that cannot be found
 \usepackage{textcomp}
 \usepackage{array}
@@ -105,8 +102,7 @@
 \frenchspacing
 \raggedbottom
 \selectlanguage{american} % american ngerman
-%\renewcommand*{\bibname}{new name}
-%\setbibpreamble{}
+
 \pagenumbering{roman}
 \pagestyle{plain}
 
@@ -121,7 +117,7 @@
 %*******************************************************
 \include{FrontBackmatter/titlepage3}
 \cleardoublepage\include{FrontBackmatter/Dedication}
-%\cleardoublepage\include{FrontBackmatter/Foreword}
+% \cleardoublepage\include{FrontBackmatter/Foreword}
 % \cleardoublepage\include{FrontBackmatter/Abstract}
 % \cleardoublepage\include{FrontBackmatter/Publications}
 
@@ -148,20 +144,9 @@
 \cleardoublepage
 \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
-
-% \part{Ferromagnets}
-% \include{Chapters/Introduction2}
-% \cleardoublepage
-% \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
-
 \include{Chapters/Chapter01} % Diffusive spin-orbit torques in a Dirac ferromagnet
 \cleardoublepage
 \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
-
-% \part{Antiferromagnets}
-% \include{Chapters/Introduction3}
-% \cleardoublepage
-% \addtocontents{toc}{\protect\vspace{\beforebibskip}}%
 
 \include{Chapters/Chapter02} % Numerical approach to calculating Spin-orbit torques
 \cleardoublepage
@@ -177,6 +162,9 @@
 
 
 \include{Chapters/conclusion}
+\cleardoublepage
+\addtocontents{toc}{\protect\vspace{\beforebibskip}}%
+
 % ********************************************************************
 % Backmatter
 %*******************************************************
