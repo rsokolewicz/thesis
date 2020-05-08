@@ -40,7 +40,7 @@ In the limit of zero temperature we can approximate Eq.~(\ref{b1}) as
     {\color{red}\Omega = - \sum_{\tau=\pm}\int_0^\mu \mathrm{d}\varepsilon\,(\mu-\varepsilon)\nu_\tau(\varepsilon)}
     \label{eq:newomega}
 \end{equation}
-and by inserting Eq.~(\ref{eq:nu}) in above's equation we find, 
+and by inserting Eq.~(\ref{eq:nu}) in aboves equation we find, 
 \begin{multline}
     {\color{red}-}\Omega = \sum_{\tau=\pm}\frac{1}{24\pi\hbar^2v^2}\big(4 \mu ^3+4 \epsilon_1^3-3 \epsilon_1^2 (\lambda +2 \mu )+6 \lambda  \mu  \epsilon_1\\+\epsilon_2^2 (3 \lambda +4 \epsilon_2)-6 \mu  \epsilon_2 (\lambda +\epsilon_2)\big)
 \end{multline}

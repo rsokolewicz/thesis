@@ -56,7 +56,7 @@ Let us first consider the ``bare bubble'' contribution which describes an electr
     \alpha_{m,zz}^{(0)} =  & \frac{\varepsilon\tau}{\hbar} \frac{1-(\lambda/2\varepsilon)^2}{1+(\lambda\tau)^2},\\
     \alpha_{m,\parallel}^{(0)} =  & \frac{\varepsilon\tau}{\hbar}\left(\frac{1}{2}\frac{3+2(\lambda\tau/\hbar)^2}{1+(\lambda\tau/\hbar)^2}-\frac{2}{(4-\lambda/\varepsilon)^2}\right),
 \end{align}
-where one can immediately see the asymptotic behavior for large and small values of $\lambda\tau$:
+where one can immediately see the asymptotic behaviour for large and small values of $\lambda\tau$:
 \begin{align}
     \alpha_{m,zz}^{(0)}  & = \frac{\epsilon\tau}{\hbar}\begin{cases}
     1  +\mathcal{O}(\lambda/\varepsilon)  & \text{ for }\lambda\tau/\hbar\ll1\\
@@ -95,9 +95,9 @@ We plot the functions of $\alpha_{m,zz(\parallel)}^{(i)}$ for $i=0,1,2$ and $i\r
     \caption{The first three scattering contributions $\alpha_{m,zz}^{(i)}$, $i=0,1,2$ (green, dotted) and the fully vertex corrected $\alpha_{m,zz}^{(\infty)}$ (orange, dashed) as a function of $\lambda \tau$. }
     \label{fig:alpha_plot}
 \end{figure}
-We find that indeed in the limit $\lambda\tau\gg1$ becomes ultimately anisotropic where $\alpha_{m,zz}$ becomes vanishingly small. Moreover, we find a substantial drop of $\alpha_{m,\parallel}$ for increasing values of $\lambda\tau$, that can reach a difference of many orders of magnitude. 
+We find that indeed in the limit $\lambda\tau\gg1$ becomes ultimately anisotropic where $\alpha_{m,zz}$ becomes vanishly small. Moreover, we find a subtantial drop of $\alpha_{m,\parallel}$ for increasing values of $\lambda\tau$, that can reach a difference of many orders of magnitude. 
 
-We note that a large value for damping corresponds to an overdamped regime, which we will explain in details in the next section. The direct exchange parameter $\Delta$ can be included perturbatively in both overdamped and underdamped regimes. In the overdamped regime,  $\Delta$ merely introduces a cutoff whereas in the underdamped regime a small modification.
+We note that a large value for damping corresponds to an overdamped regime, which we will explain in details in the next section. The direct exchange paramater $\Delta$ can be included perturbatively in both overdamped and underdamp regimes. In the overdamped regime,  $\Delta$ merely introduces a cutoff whereas in the underdamped regime a small modification.
 \begin{align}
 \label{eq:alphaparallelzerodelta}
     \alpha_{m,zz}^{(\infty)}  & = \frac{\epsilon \tau}{\hbar}\, \frac{2}{(2-n_z^2)\lambda^2\tau^2+2\Delta^2/\varepsilon^2},\\

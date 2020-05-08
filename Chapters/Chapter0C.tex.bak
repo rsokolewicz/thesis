@@ -70,7 +70,7 @@ We find that the real part of the self-energy does renormalize the Fermi energy 
 \label{chap03:fig:diagrams}
 \end{figure}
 
-In order to evaluate linear response tensors in the leading order with respect to the metal parameter $\ep\tau \gg 1$ one also needs to sum up the ladder diagrams as shown in Fig.~\ref{chap03:fig:diagrams}b-c. Referring to Chapter~\ref{diagrammatics}, 
+In order to evaluate linear response tensors in the leading order with respect to the metal parameter $\ep\tau \gg 1$ one also needs to sum up the ladder diagrams as shown in Fig.~\ref{chap03:fig:diagrams}b-c. Refering to Chapter~\ref{diagrammatics}, 
 we first need to define the vertex corrected operator
 \be
 \label{chap03:chap3:eq:ladder}
@@ -156,7 +156,7 @@ tensors we are discussing.
 It is interesting to note that the irrelevance of the divergency in $B_\textrm{div}^\textrm{vc}$ operator extends to higher orders in $\bb{m}$, even though it becomes much harder to see. We touch on this problem in Appendix~\ref{chap03:sec:appd}. 
 
 \section{Finite magnetization}\label{chap03:sec:appd}
-The deviation from a collinear antiferromagnetic order can be accounted by considering a finite net magnetization term in the Hamiltonian perturbatively,
+The deviation from a collinear antiferromagnetic order can be accounted by considering a finite net magnetization term in the Hamiltonain perturbatively,
 \be
 H =H^\textrm{eff}+ U, \qquad U = -\Delta\,\bb{m}\cdot\bb{\sigma}.
 \e
