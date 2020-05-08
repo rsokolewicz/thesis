@@ -38,20 +38,20 @@ where we introduced the spin polarization density $\bb{s}^\text{A(B)} = \mathcal
 
 The equations of motion is given by $\partial_t \bb{S}_i = \{E,\bb{S}_i\}_p$, where $\{\cdots\}_p$ is the Poisson bracket. For angular momenta we simply have $\{\hslash \bb{S}_i,\hslash \bb{S}_j\}_p=\hslash \bb{S}_i\times\bb{S}_j$. As is common practice, the magnetization in the ferromagnet is expressed in terms of a unit vector $\bb{m} = -\bb{S}/|\bb{S}|$ and for an antiferromagnet we introduce the magnetization $\bb{m}$ and staggered magnetization (also called the N\'eel vector) $\bb{n}$ as
 \begin{align}
- 	\bb{m}&=-1/2(\bb{S}^\text{A}/|\bb{S}^\text{A}|+\bb{S}^\text{B}/|\bb{S}^\text{B}|)\\
-    \bb{n}&=-1/2(\bb{S}^\text{A}/|\bb{S}^\text{A}|-\bb{S}^\text{B}/|\bb{S}^\text{B}|).
+ 	\bb{m} & =-1/2(\bb{S}^\text{A}/|\bb{S}^\text{A}|+\bb{S}^\text{B}/|\bb{S}^\text{B}|)\\
+    \bb{n} & =-1/2(\bb{S}^\text{A}/|\bb{S}^\text{A}|-\bb{S}^\text{B}/|\bb{S}^\text{B}|).
 \end{align} 
 With these considerations we find the following equations of motion of magnetization for a ferromagnet
 \begin{align}
-	\hslash \partial_t \bb{m} &= \bb{m}\times\big(-\hslash\gamma_0\bb{H}_\text{ext}+Km_z+\Delta_\text{sd}\bb{s}\big)
+	\hslash \partial_t \bb{m}  & = \bb{m}\times\big(-\hslash\gamma_0\bb{H}_\text{ext}+Km_z+\Delta_\text{sd}\bb{s}\big)
 	\label{intro:eq:S1}
 \end{align}
 and the following for an antiferromagnet
 \begin{align}
-\hslash \partial_t \bb{n} =& -2J_\text{ex}\, \bb{n}\!\times\!\bb{m} \nonumber\\
-    & + K \big(\bb{m}\!\times\!\bb{n}_\perp+\bb{n}\times\bb{m}_\perp\big) 
+\hslash \partial_t \bb{n} = &  -2J_\text{ex}\, \bb{n}\!\times\!\bb{m} \nonumber\\
+     &  + K \big(\bb{m}\!\times\!\bb{n}_\perp+\bb{n}\times\bb{m}_\perp\big) 
 	+ \Delta_\text{sd} \big(\bb{m}\times\bb{s}^-+\bb{n}\times\bb{s}^+) -\hslash\gamma_0\bb{n}\times\bb{H}_\text{ext},\\
-\hslash \partial_t \bb{m} =&K  \big(\bb{n}\!\times\!\bb{n}_\perp+\bb{m}\times\bb{m}_\perp\big) 
+\hslash \partial_t \bb{m} = & K  \big(\bb{n}\!\times\!\bb{n}_\perp+\bb{m}\times\bb{m}_\perp\big) 
 	+ \Delta_\text{sd} \big(\bb{m}\times\bb{s}^++\bb{n}\times\bb{s}^-)-\hslash\gamma_0\bb{m}\times\bb{H}_\text{ext}
 	\label{eq:sd:neel}
 \end{align}
@@ -100,10 +100,10 @@ as first derived by Kittel \cite{PhysRev.82.565, PhysRev.85.329}. The original d
 Note that to first order the staggered and non-staggered magnetizations are still orthogonal to each-other: $\bb{n}\cdot\bb{m}=1+\mathcal{O}(\delta n^2+\delta m^2)$. Components such as $\delta n_x \delta m_y$ can be then disregarded and we assume $\bb{n}$ and $\bb{m}$ to be proportional to $\exp i \omega t$. A nice basis to work in is $\{{n}_+,{m}_+,{n}_-,{m}_- \}$, (where ${n}_\pm = \delta n_x\pm i \delta n_y$ and ${m}_\pm = \delta m_x\pm i \delta m_y$) so that one finds the following matrix equation:
 \begin{equation}
     \begin{pmatrix}
-    \omega_0 & -(J+K) & 0 & 0 \\
-    -K & \omega_0 & 0 & 0 \\
-    0 & 0 & -\omega_0 & J+K \\
-    0 & 0 & K & -\omega_0
+    \omega_0  &  -(J+K)  &  0  &  0 \\
+    -K  &  \omega_0  &  0  &  0 \\
+    0  &  0  &  -\omega_0  &  J+K \\
+    0  &  0  &  K  &  -\omega_0
     \end{pmatrix}
     \begin{pmatrix}
     \delta l_{+}\\
@@ -130,8 +130,8 @@ which remarkably exists even in absence of an external magnetic field. The const
 \end{equation}
 where the the density of states $\nu$ and the function $g(\varepsilon)$ are given by
 \begin{align}
-    \nu_\tau(\varepsilon) = & \frac{1}{\pi} \tr \int \frac{\mathrm{d}^2p}{(2\pi\hslash)^2}\,\im G^\text{R}_{\bb{p}}\\
-    g(\varepsilon) = & \log \big(1+\exp[\beta(\mu-\varepsilon)]\big).
+    \nu_\tau(\varepsilon) =  &  \frac{1}{\pi} \tr \int \frac{\mathrm{d}^2p}{(2\pi\hslash)^2}\,\im G^\text{R}_{\bb{p}}\\
+    g(\varepsilon) =  &  \log \big(1+\exp[\beta(\mu-\varepsilon)]\big).
     \label{eq:nu}
 \end{align}
 Here $\beta$ is the inverse temperature and $\mu$ is the chemical potential. By evaluating the integral and expanding around the energy minimum in powers of magnetization, one can obtain the anisotropy constant $K$. This will be done explicitly in Chapter~\ref{ch:baglay}.
@@ -178,7 +178,7 @@ For the second step in disorder averaging, we need to replace one of the vertex 
 By denoting $\hat{s}^{\text{vc}}$ as the vertex-corrected function of $\hat{s}$ and $\hat{s}^{(i)}$ as the function containing $i$ disorder-lines, the ladder approximation is given by:
 \begin{align}
     \hat{s}^\text{vc}
-      &=           
+       & =           
         \hat{s}+\hat{s}^{(1)}+\hat{s}^{(2)}+\cdots,
         \label{sd:eq:ladder}
 \end{align}

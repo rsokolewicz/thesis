@@ -49,8 +49,8 @@ We describe the coupled dynamics of the staggered and non-staggered magnetizatio
 % \beml
 % \label{chap03:basicEQ}
 % \begin{align}
-% \dot{\bb{n}}^\textrm{A} &= \bb{H}^\textrm{A}\times\bb{n}^\textrm{A}  + (J\mathcal{A}/\hslash)\,\bb{n}^\textrm{A}\times \bb{s}^\textrm{A},\\
-% \dot{\bb{n}}^\textrm{B}&= \bb{H}^\textrm{B}\times\bb{n}^\textrm{B} +(J\mathcal{A}/\hslash)\,\bb{n}^\textrm{B}\times \bb{s}^\textrm{B},
+% \dot{\bb{n}}^\textrm{A}  & = \bb{H}^\textrm{A}\times\bb{n}^\textrm{A}  + (J\mathcal{A}/\hslash)\,\bb{n}^\textrm{A}\times \bb{s}^\textrm{A},\\
+% \dot{\bb{n}}^\textrm{B} & = \bb{H}^\textrm{B}\times\bb{n}^\textrm{B} +(J\mathcal{A}/\hslash)\,\bb{n}^\textrm{B}\times \bb{s}^\textrm{B},
 % \end{align}
 % \eml
 % where dot stands for the time derivative, $\bb{s}^\textrm{X}$ is the spin density of conduction electrons on the sublattice $X$,
@@ -71,9 +71,9 @@ We describe the coupled dynamics of the staggered and non-staggered magnetizatio
 \label{chap03:AFMEOM}
 \begin{align}
 \label{chap03:ndot}
-\dot{\bb{n}} &= -\Omega\, \bb{n}\times\bb{m} +\bb{H}\times\bb{n}+\bb{n}\times\bb{s}^++\bb{m}\times\bb{s}^-,\\
+\dot{\bb{n}}  & = -\Omega\, \bb{n}\times\bb{m} +\bb{H}\times\bb{n}+\bb{n}\times\bb{s}^++\bb{m}\times\bb{s}^-,\\
 \label{chap03:mdot}
-\dot{\bb{m}} &= \bb{H}\times\bb{m}+\bb{m}\times\bb{s}^++\bb{n}\times\bb{s}^-,
+\dot{\bb{m}}  & = \bb{H}\times\bb{m}+\bb{m}\times\bb{s}^++\bb{n}\times\bb{s}^-,
 \end{align}
 \eml
 where $\Omega=2J_\textrm{ex}S/\hslash$ and $\bb{s}^{\pm}= J \mathcal{A}\,(\bb{s}^\textrm{A}\pm\bb{s}^\textrm{B})/2\hslash$. The effects arising from the anisotropy $K$ are dropped for the time being. 
@@ -109,8 +109,8 @@ Similarly, the response of $\delta\bb{s}^{\pm}$ to the time derivatives $\dot{\b
 \delta \bb{s}^{-}
 \epm=
 \bpm 
-\hat{\alpha}_m & \hat{\alpha}_{mn}\\
-\hat{\alpha}_{nm} & \hat{\alpha}_n
+\hat{\alpha}_m  &  \hat{\alpha}_{mn}\\
+\hat{\alpha}_{nm}  &  \hat{\alpha}_n
 \epm
 \bpm 
 \dot{\bb{m}}\\
@@ -133,8 +133,8 @@ Mixing tensors $\hat{\alpha}_{mn}$ and $\hat{\alpha}_{nm}$ must be odd in $\bb{m
 \label{chap03:gen}
 \begin{align}
 \label{chap03:even}
-\delta \bb{s}^{+} & = \alpha_m \dot{\bb{m}}  \!+\! \alpha'_m \bb{n}  \!\times\! (\bb{n} \!\times\! \dot{\bb{m}}) \!+\!\alpha_{mn}\bb{m}  \!\times\!  (\bb{n}  \!\times\!  \dot{\bb{n}}),\\
-\delta \bb{s}^{-} &= \alpha_n \dot{\bb{n}} \!+\! \alpha'_n \bb{m}  \!\times\! (\bb{m} \!\times\! \dot{\bb{n}}) + \alpha_{nm} \bb{n}\!\times\!(\bb{m}\!\times\! \dot{\bb{m}}),
+\delta \bb{s}^{+}  &  = \alpha_m \dot{\bb{m}}  \!+\! \alpha'_m \bb{n}  \!\times\! (\bb{n} \!\times\! \dot{\bb{m}}) \!+\!\alpha_{mn}\bb{m}  \!\times\!  (\bb{n}  \!\times\!  \dot{\bb{n}}),\\
+\delta \bb{s}^{-}  & = \alpha_n \dot{\bb{n}} \!+\! \alpha'_n \bb{m}  \!\times\! (\bb{m} \!\times\! \dot{\bb{n}}) + \alpha_{nm} \bb{n}\!\times\!(\bb{m}\!\times\! \dot{\bb{m}}),
 \label{chap03:staggered}
 \end{align}
 \eml
@@ -146,8 +146,8 @@ Substitution of Eqs.~(\ref{chap03:gen}) into Eqs.~(\ref{chap03:AFMEOM}) gives
 \label{chap03:AFMEOM2}
 \begin{align}
 \label{chap03:ndot2}
-&\dot{\bb{n}} = -\Omega\, \bb{n}\!\times\!\bb{m} +\bb{H}\!\times\!\bb{n}+\bar{\alpha}_m\,\bb{n}\!\times\!\dot{\bb{m}}+\alpha_n\,\bb{m}\!\times\! \dot{\bb{n}},\\
-&\dot{\bb{m}} =\bb{H}\times\bb{m}+\alpha_n\,\bb{n} \times \dot{\bb{n}}+\bar{\alpha}_m \bb{m} \times \dot{\bb{m}} +\gamma (\bb{n}\times\bb{m})(\bb{n}\cdot\dot{\bb{m}}) - \alpha_n'm^2\bb{n}\times\dot{\bb{n}},
+ & \dot{\bb{n}} = -\Omega\, \bb{n}\!\times\!\bb{m} +\bb{H}\!\times\!\bb{n}+\bar{\alpha}_m\,\bb{n}\!\times\!\dot{\bb{m}}+\alpha_n\,\bb{m}\!\times\! \dot{\bb{n}},\\
+ & \dot{\bb{m}} =\bb{H}\times\bb{m}+\alpha_n\,\bb{n} \times \dot{\bb{n}}+\bar{\alpha}_m \bb{m} \times \dot{\bb{m}} +\gamma (\bb{n}\times\bb{m})(\bb{n}\cdot\dot{\bb{m}}) - \alpha_n'm^2\bb{n}\times\dot{\bb{n}},
 \label{chap03:mdot2}
 \end{align}
 \eml
@@ -180,8 +180,8 @@ The spectrum of the model (\ref{chap03:eff}) with $V(\bb{r})=0$ consists of two 
 \label{chap03:spectrum}
 \begin{align}
 \label{chap03:spectrume}
-\epsilon^e_{\pm,\varsigma}(p)&=\sqrt{v^2p^2+\Delta_{\text{sd}}^2\pm \varsigma\lambda\Delta_{\text{sd}} n_z+\lambda^2/4} \mp \lambda/2,\\
-\epsilon^h_{\pm,\varsigma}(p)&=-\sqrt{v^2p^2+\Delta_{\text{sd}}^2\mp \varsigma\lambda\Delta_{\text{sd}} n_z+\lambda^2/4} \pm \lambda/2,
+\epsilon^e_{\pm,\varsigma}(p) & =\sqrt{v^2p^2+\Delta_{\text{sd}}^2\pm \varsigma\lambda\Delta_{\text{sd}} n_z+\lambda^2/4} \mp \lambda/2,\\
+\epsilon^h_{\pm,\varsigma}(p) & =-\sqrt{v^2p^2+\Delta_{\text{sd}}^2\mp \varsigma\lambda\Delta_{\text{sd}} n_z+\lambda^2/4} \pm \lambda/2,
 \end{align}
 \eml
 where $\varsigma=\pm$ is the valley index. All spectral branches are manifestly isotropic with respect to the direction of the electron momentum $\bb{p}$ irrespective of the N\'eel vector orientation (as far as $\bb{m}=0$). 
@@ -196,8 +196,8 @@ In particular, for $n_z=0$ we find the diagonal conductivity components
 \label{chap03:conductivity}
 \begin{align}
 \label{chap03:chap3:eq:long_cond}
-&\sigma_{xx}= \frac{4e^2}{h}\,\frac{\ep_F \tau}{\hslash}\,\frac{\ep_F^2-\Delta_{\text{sd}}^2}{\ep_F^2+3\Delta_{\text{sd}}^2},\\
-&\sigma_{yy}= \sigma_{xx}+\frac{4e^2}{h}\,\frac{\ep_F \tau}{\hslash}\, \frac{\ep_F^2}{\ep_F^2+\Delta_{\text{sd}}^2}
+ & \sigma_{xx}= \frac{4e^2}{h}\,\frac{\ep_F \tau}{\hslash}\,\frac{\ep_F^2-\Delta_{\text{sd}}^2}{\ep_F^2+3\Delta_{\text{sd}}^2},\\
+ & \sigma_{yy}= \sigma_{xx}+\frac{4e^2}{h}\,\frac{\ep_F \tau}{\hslash}\, \frac{\ep_F^2}{\ep_F^2+\Delta_{\text{sd}}^2}
 \frac{\lambda^2\Delta_{\text{sd}}^2}{\ep_F^4+\ep_F^2\Delta_{\text{sd}}^2+2\Delta_{\text{sd}}^4},
 \end{align}
 \eml
@@ -231,9 +231,9 @@ The behavior of the coefficients $a$, $b$ and $c$ as a function of $n_z$ is illu
 \beml
 \label{chap03:SOT}
 \begin{align}
-&a=a_0 \frac{1+3\delta^2}{1+2\bar{\lambda}^2\delta^2+\delta^4-2\delta^6},\\
-&b=2\, a\,\delta^2\,\frac{1-2\bar{\lambda}^2-4\delta^2+\delta^4}{1+2\delta^2-3\delta^4},\\
-&c=-2\, a\,\delta^2\,\frac{1+2\bar{\lambda}^2\delta^2-2\delta^2-3\delta^4-4\delta^6}{1+4\delta^2+5\delta^4+6\delta^6},
+ & a=a_0 \frac{1+3\delta^2}{1+2\bar{\lambda}^2\delta^2+\delta^4-2\delta^6},\\
+ & b=2\, a\,\delta^2\,\frac{1-2\bar{\lambda}^2-4\delta^2+\delta^4}{1+2\delta^2-3\delta^4},\\
+ & c=-2\, a\,\delta^2\,\frac{1+2\bar{\lambda}^2\delta^2-2\delta^2-3\delta^4-4\delta^6}{1+4\delta^2+5\delta^4+6\delta^6},
 \end{align}
 \eml
 where
@@ -290,8 +290,8 @@ The direct computation of the Gilbert damping tensors for $\lambda\gg \hslash/\t
 \beml
 \label{chap03:gilbert}
 \begin{align}
-&\delta\bb{s}^+= \alpha_m^\parallel\,\dot{\bb{m}}_\parallel + \gamma \bb{\Gamma}_{mm}+ \gamma\bb{\Gamma}_{mn},\\
-&\delta\bb{s}^-= \alpha_n^\perp\,\dot{\bb{n}}_\perp +\gamma \bb{\Gamma}_{nm}+\gamma \bb{\Gamma}_{nn},
+ & \delta\bb{s}^+= \alpha_m^\parallel\,\dot{\bb{m}}_\parallel + \gamma \bb{\Gamma}_{mm}+ \gamma\bb{\Gamma}_{mn},\\
+ & \delta\bb{s}^-= \alpha_n^\perp\,\dot{\bb{n}}_\perp +\gamma \bb{\Gamma}_{nm}+\gamma \bb{\Gamma}_{nn},
 \end{align}
 \eml
 where the terms $\Gamma_{ab}$ contain various vector forms. 
@@ -300,30 +300,30 @@ Far in the metal regime, $\ep_F\gg \lambda+\Delta_{\text{sd}}$, we find
 \beml
 \label{chap03:coeffGD}
 \begin{align}
-&\alpha_m^\parallel= 2\,\frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J^2 S}{\pi\hslash^2v^2}\; \lt[1-\frac{\Delta_{\text{sd}}^2}{\ep_F^2}(2+n^2_z) + \dots\rt],\\
-&\alpha_n^\perp = \frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J^2 S}{\pi\hslash^2v^2} \,\lt[\lt(\frac{\lambda}{\ep_F}\rt)^2+\dots\rt],\\
-&\gamma= 2\,\frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J^2 S}{\pi\hslash^2v^2}\,\lt[\lt(\frac{\Delta_{\text{sd}}}{\ep_\textrm{F}}\rt)^2+\dots\rt],
+ & \alpha_m^\parallel= 2\,\frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J^2 S}{\pi\hslash^2v^2}\; \lt[1-\frac{\Delta_{\text{sd}}^2}{\ep_F^2}(2+n^2_z) + \dots\rt],\\
+ & \alpha_n^\perp = \frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J^2 S}{\pi\hslash^2v^2} \,\lt[\lt(\frac{\lambda}{\ep_F}\rt)^2+\dots\rt],\\
+ & \gamma= 2\,\frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J^2 S}{\pi\hslash^2v^2}\,\lt[\lt(\frac{\Delta_{\text{sd}}}{\ep_\textrm{F}}\rt)^2+\dots\rt],
 \end{align}
 \eml
 while the vectors forms $\Gamma_{ab}$ can be written as
 \beml
 \begin{align}
-\bb{\Gamma}_{mm}=&\,
+\bb{\Gamma}_{mm}= & \,
 \bb{n}\!\times\!(\bb{n}\!\times\!\dot{\bb{m}}) + \bb{n}_\parallel\!\times\!(\bb{n}_\parallel\!\times\!\dot{\bb{m}}_\parallel)  
 - 2 \bb{n}_\parallel\!\times\!(\bb{n}_\parallel\!\times\!\dot{\bb{m}}_\perp),\\
-\bb{\Gamma}_{mn}=&\,
+\bb{\Gamma}_{mn}= & \,
 \bb{n}\!\times\!(\bb{m}_\parallel\!\times\!\dot{\bb{n}}_\perp) 
 - \bb{m}_\perp\!\times\!(\bb{n}_\parallel\!\times\!\dot{\bb{n}}_\perp)
 +\bb{n}_\perp\!\times\!(\bb{m}_\perp\!\times\!\dot{\bb{n}}_\parallel) \n\\
-&- \bb{n}_\parallel\!\times\!(\bb{m}_\parallel\!\times\!\dot{\bb{n}}_\parallel)
+ & - \bb{n}_\parallel\!\times\!(\bb{m}_\parallel\!\times\!\dot{\bb{n}}_\parallel)
 - 3\bb{m}_\perp\!\times\!(\bb{n}_\perp\!\times\!\dot{\bb{n}}_\parallel),\\
-\bb{\Gamma}_{nm}=&\,2\bb{n}_\parallel\!\times\!(\bb{m}_\parallel\!\times\!\dot{\bb{m}}_\perp)+ 
+\bb{\Gamma}_{nm}= & \,2\bb{n}_\parallel\!\times\!(\bb{m}_\parallel\!\times\!\dot{\bb{m}}_\perp)+ 
 2\bb{m}_\parallel\!\times\!(\bb{n}_\perp\!\times\!\dot{\bb{m}}_\parallel)
 -\bb{n}_\perp\!\times\!(\bb{m}_\perp\!\times\!\dot{\bb{m}})\n\\
-&+2 \bb{m}_\perp\!\times\!(\bb{n}\!\times\!\dot{\bb{m}})
+ & +2 \bb{m}_\perp\!\times\!(\bb{n}\!\times\!\dot{\bb{m}})
 + \bb{m}_\parallel\!\times\!(\bb{n}\!\times\!\dot{\bb{m}}_\perp) 
 - \bb{m}_\perp\!\times\!(\bb{n}_\perp\!\times\!\dot{\bb{m}}_\parallel),\\
-\bb{\Gamma}_{nn}=&\,-\bb{m}\times(\bb{n}\times\dot{\bb{n}}_\parallel).
+\bb{\Gamma}_{nn}= & \,-\bb{m}\times(\bb{n}\times\dot{\bb{n}}_\parallel).
 \end{align}
 \eml
 Thus, we see from Eqs.~(\ref{chap03:coeffGD}) that the coefficients $\alpha_n^{\perp}$ and $\gamma$ are vanishingly small in the metal regime. Moreover, in the limit $\ep_F\gg \Delta_{\text{sd}}$ the only non-vanishing contributions to Gilbert dampings are given by the first terms on the right-hand sides of Eqs.~(\ref{chap03:gilbert}) that are manifestly anisotropic.
@@ -333,8 +333,8 @@ Thus, we see from Eqs.~(\ref{chap03:coeffGD}) that the coefficients $\alpha_n^{\
 The onset of spin-orbit interactions therefore makes Gilbert dampings ultimately anisotropic, also in the deep metal regime. This is in contrast to conductivity and spin-orbit torques that are quickly becoming isotropic in the metal limit. 
 For $\ep_F\gg \lambda+\Delta_{\text{sd}}$, we find the well known Landau-Lifshitz-Gilbert equations
 \begin{align}
-&\dot{\bb{n}} = -\Omega\, \bb{n}\!\times\!\bb{m} +\bb{H}\!\times\!\bb{n}+\bar{\alpha}^\parallel_m\,\bb{n}\!\times\!\dot{\bb{m}}_\parallel+\alpha_n^\perp\,\bb{m}\!\times\! \dot{\bb{n}}_\perp,\n\\
-&\dot{\bb{m}} =\bb{H}\times\bb{m}+\alpha_n^\perp\,\bb{n} \times \dot{\bb{n}}_\perp
+ & \dot{\bb{n}} = -\Omega\, \bb{n}\!\times\!\bb{m} +\bb{H}\!\times\!\bb{n}+\bar{\alpha}^\parallel_m\,\bb{n}\!\times\!\dot{\bb{m}}_\parallel+\alpha_n^\perp\,\bb{m}\!\times\! \dot{\bb{n}}_\perp,\n\\
+ & \dot{\bb{m}} =\bb{H}\times\bb{m}+\alpha_n^\perp\,\bb{n} \times \dot{\bb{n}}_\perp
 +\bar{\alpha}_m^\parallel \bb{m} \times \dot{\bb{m}}_\parallel,
 \label{chap03:AFMEOM3}
 \end{align}
@@ -362,10 +362,10 @@ The states $\Psi_{\bb{p},s}$ are simply the eigenstates of the Hamiltonian $H_0 
 \be
 H_0 =
 \bpm
-0 & 0 & v(p_x \!-\!i p_y) & 0\\
-0 & 0 & -i \lambda & v(p_x\!-\!i p_y) \\
-v(p_x\!+\!i p_y) & i\lambda & 0 & 0\\
-0 & v(p_x\!+\!i p_y) & 0 & 0
+0  &  0  &  v(p_x \!-\!i p_y)  &  0\\
+0  &  0  &  -i \lambda  &  v(p_x\!-\!i p_y) \\
+v(p_x\!+\!i p_y)  &  i\lambda  &  0  &  0\\
+0  &  v(p_x\!+\!i p_y)  &  0  &  0
 \epm,
 \e
 that can be explicitly written as

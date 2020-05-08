@@ -107,17 +107,17 @@ The scattering states are labeled by (i) the eigenenergy $E$; (ii) the lead inde
 With the help of the scattering states one can readily formulate a scattering problem at a given energy $E$ that is solved by the wave-function matching at the lead-sample interface for each disorder realization. For example, a scattering problem that corresponds to populating an incoming channel $\Psi^{L,>}_{\alpha,E}$ results in the eigenstate that has the following form in the leads 
 \be
 \label{chap02:scP1}
-\Psi^L_{\alpha,E}(\bb{r})=\bc \Psi^{L,>}_{\alpha,E}(\bb{r})+\s_\beta r_{\beta\alpha} \Psi^{L,<}_{\beta,E}(\bb{r}),\quad &x<0,\\ \s_\beta t_{\beta\alpha} \Psi^{R,>}_{\beta,E}(\bb{r}),\qquad & x>L \ec, 
+\Psi^L_{\alpha,E}(\bb{r})=\bc \Psi^{L,>}_{\alpha,E}(\bb{r})+\s_\beta r_{\beta\alpha} \Psi^{L,<}_{\beta,E}(\bb{r}),\quad  & x<0,\\ \s_\beta t_{\beta\alpha} \Psi^{R,>}_{\beta,E}(\bb{r}),\qquad  &  x>L \ec, 
 \e
 where $t_{\beta\alpha}$ and $r_{\beta\alpha}$ denote the so-called transmission and reflection amplitudes, correspondingly. Similarly, the scattering problem that corresponds to populating a left-going state in the right lead, $\Psi^{R,<}_{\alpha,E}$, corresponds to the eigenstate
 \be
 \label{chap02:scP2}
-\Psi^R_{\alpha,E}(\bb{r})=\bc \s_\beta t'_{\beta\alpha} \Psi^{L,<}_{\beta,E}(\bb{r}),\quad &x<0,\\  \Psi^{R,<}_{\alpha,E}(\bb{r})+\s_\beta r'_{\beta\alpha} \Psi^{R,>}_{\beta,E}(\bb{r}),\qquad & x>L \ec.
+\Psi^R_{\alpha,E}(\bb{r})=\bc \s_\beta t'_{\beta\alpha} \Psi^{L,<}_{\beta,E}(\bb{r}),\quad  & x<0,\\  \Psi^{R,<}_{\alpha,E}(\bb{r})+\s_\beta r'_{\beta\alpha} \Psi^{R,>}_{\beta,E}(\bb{r}),\qquad  &  x>L \ec.
 \e
 The reflection and transmission amplitudes are organized into the scattering matrix 
 \be
 \label{chap02:scattering}
-S=\bpm \hat{r} & \hat{t}' \\ \hat{t} & \hat{r}' \epm
+S=\bpm \hat{r}  &  \hat{t}' \\ \hat{t}  &  \hat{r}' \epm
 \e
 that yields the unitarity constraint $S\h S=1$. The constraint is ensured by the normalization of the scattering states $\Psi^{\gtrless}_{\alpha,E}(\bb{r})$ to the unit probability current flux that is conserved for each energy $E$ (in the absence of non-elastic processes).
 
@@ -213,8 +213,8 @@ The problem of magnetization dynamics can be formulated with the help of a Heise
 % \beml
 % \label{chap02:EOMAFM}
 % \begin{align}
-% \dot{\bb{m}}^\textrm{A} &= \bb{H}^\textrm{A}\times \bb{m}^\textrm{A}+ (J\mathcal{A}/\hslash)\, \bb{m}^\textrm{A}\times \bb{s}^\textrm{A},\\
-% \dot{\bb{m}}^\textrm{B}&= \bb{H}^\textrm{B}\times \bb{m}^\textrm{B}+ (J\mathcal{A}/\hslash)\, \bb{m}^\textrm{B}\times \bb{s}^\textrm{B},
+% \dot{\bb{m}}^\textrm{A}  & = \bb{H}^\textrm{A}\times \bb{m}^\textrm{A}+ (J\mathcal{A}/\hslash)\, \bb{m}^\textrm{A}\times \bb{s}^\textrm{A},\\
+% \dot{\bb{m}}^\textrm{B} & = \bb{H}^\textrm{B}\times \bb{m}^\textrm{B}+ (J\mathcal{A}/\hslash)\, \bb{m}^\textrm{B}\times \bb{s}^\textrm{B},
 % \end{align}
 % \eml
 % where $|\bb{m}^\textrm{A,B}|=1$, and the notations $\bb{H}^\textrm{A,B}$ refer to the effective fields on the sublattices $A$ and $B$. 
@@ -228,8 +228,8 @@ The problem of magnetization dynamics can be formulated with the help of a Heise
 % For an ``isotropic'' antiferromagnet, one finds the effective field \cite{gomonay_spintronics_2014} $\bb{H}^\textrm{A}+\bb{H}^\textrm{B}= J_\textrm{ex}\bb{m}/\hslash+2\bb{H}$, where $\bb{H}$ is an external magnetic field in frequency units and $J_\textrm{ex}$ is a direct antiferromagnetic exchange energy that is one of the largest energies in the problem. In turn, the combination $\bb{H}^\textrm{A}-\bb{H}^\textrm{B}$ is proportional to magnetic anisotropy that we choose not to take into account as mentioned above.  
 The classical equations of motion on the staggered and non-staggered magnetizations, $\bb{n}$ and $\bb{m}$, were derived in Chapter~\ref{cd:sd:motion}. Excluding the anisotropy $K$, Eqs~(\ref{eq:sd:neel}) reads
 \begin{align}
-&\dot{\bb{n}} = -2\frac{J_\textrm{ex}}{\hslash} \bb{n}\times\bb{m} +\bb{H}\times\bb{n}+\frac{J\mathcal{A}}{\hslash}\lt(\bb{n}\times\bb{s}_++\bb{m}\times\bb{s}_-\rt),\n\\
-&\dot{\bb{m}} = \bb{H}\times\bb{m}+\frac{J\mathcal{A}}{\hslash}\lt(\bb{m}\times\bb{s}_++\bb{n}\times\bb{s}_-\rt),
+ & \dot{\bb{n}} = -2\frac{J_\textrm{ex}}{\hslash} \bb{n}\times\bb{m} +\bb{H}\times\bb{n}+\frac{J\mathcal{A}}{\hslash}\lt(\bb{n}\times\bb{s}_++\bb{m}\times\bb{s}_-\rt),\n\\
+ & \dot{\bb{m}} = \bb{H}\times\bb{m}+\frac{J\mathcal{A}}{\hslash}\lt(\bb{m}\times\bb{s}_++\bb{n}\times\bb{s}_-\rt),
 \label{chap02:AFMEOM}
 \end{align}
 where $\bb{s}_\pm=(\bb{s}_A\pm\bb{s}_B)/2$. The right-hand sides of Eqs.~(\ref{chap02:AFMEOM}) contain the quantities that can be called generalized torques. Here we are only interested in specific contributions to generalized torques that are induced by the chemical potential difference $\delta\mu=eV_\textrm{bias}$ between left and right leads. Such contributions define four spin-orbit torques  
@@ -353,13 +353,13 @@ Overall, the half-metal regime is characterized by the torques
 \beml
 \label{chap02:torque_T}
 \begin{align}
-\bb{T}^\ell_+=\eta \Big(\,&a_I\bb{n} \!\times\!\lt[\hat{\bb{z}}\!\times\!\bb{j}\rt] + 
+\bb{T}^\ell_+=\eta \Big(\, & a_I\bb{n} \!\times\!\lt[\hat{\bb{z}}\!\times\!\bb{j}\rt] + 
 a'_I(n_z^2)\, \bb{n}\!\times\!\lt[\bb{n}_\parallel\!\times\! \lt[\bb{n}_\parallel\!\times\! \lt[\hat{\bb{z}}\!\times\! \bb{j}\rt]\rt]\rt]\n\\
-&\hspace{3cm}+c(n_z^2)\, \bb{n}\!\times\!\lt[\bb{n}_\parallel\!\times\! \lt[\bb{n}_\perp\!\times\! \lt[\hat{\bb{z}}\!\times\! \bb{j}\rt]\rt]\rt]\Big),
+ & \hspace{3cm}+c(n_z^2)\, \bb{n}\!\times\!\lt[\bb{n}_\parallel\!\times\! \lt[\bb{n}_\perp\!\times\! \lt[\hat{\bb{z}}\!\times\! \bb{j}\rt]\rt]\rt]\Big),
 \label{chap02:torque_Tplus}\\
-\bb{T}^m_+=\eta \Big(\,&a_I\bb{m} \!\times\!\lt[\hat{\bb{z}}\!\times\!\bb{j}\rt] + 
+\bb{T}^m_+=\eta \Big(\, & a_I\bb{m} \!\times\!\lt[\hat{\bb{z}}\!\times\!\bb{j}\rt] + 
 a'_I(n_z^2)\, \bb{m}\!\times\!\lt[\bb{n}_\parallel\!\times\! \lt[\bb{n}_\parallel\!\times\! \lt[\hat{\bb{z}}\!\times\! \bb{j}\rt]\rt]\rt]\n\\
-&\hspace{3cm}+c(n_z^2)\, \bb{m}\!\times\!\lt[\bb{n}_\parallel\!\times\! \lt[\bb{n}_\perp\!\times\! \lt[\hat{\bb{z}}\!\times\! \bb{j}\rt]\rt]\rt]\Big),
+ & \hspace{3cm}+c(n_z^2)\, \bb{m}\!\times\!\lt[\bb{n}_\parallel\!\times\! \lt[\bb{n}_\perp\!\times\! \lt[\hat{\bb{z}}\!\times\! \bb{j}\rt]\rt]\rt]\Big),
 \label{chap02:torque_Tminus}
 \end{align}
 \eml
@@ -424,8 +424,8 @@ Indeed, for an ``isotropic'' antiferromagnet we find, in complete analogy with E
 \beml
 \label{chap02:AFMEOM2}
 \begin{align}
-&\dot{\bb{n}} = -2(J_\textrm{ex}/\hslash)\, \bb{n}\times\bb{m} +\bb{H}\times\bb{n}+\bb{T}^\textrm{A},\\
-&\dot{\bb{m}} = \bb{H}\times\bb{m}+\bb{T}^\textrm{A},
+ & \dot{\bb{n}} = -2(J_\textrm{ex}/\hslash)\, \bb{n}\times\bb{m} +\bb{H}\times\bb{n}+\bb{T}^\textrm{A},\\
+ & \dot{\bb{m}} = \bb{H}\times\bb{m}+\bb{T}^\textrm{A},
 \end{align}
 \eml
 which depend only on the spin-orbit torque $\bb{T}^\textrm{A}$. 
@@ -534,8 +534,8 @@ In order to model AFM magnetization dynamics we adopt the equations of motion (\
 \beml
 \label{EOMAFM10}
 \begin{align}
-\dot{\bb{n}}^\text{A} &= 2\frac{J_\text{ex}}{\hslash}\bb{n}^\text{B}\times \bb{n}^\text{A}+ \frac{J\mathcal{A}}{\hslash}\, \bb{n}^\text{A}\times \bb{s}^\text{A} +\alpha\, \bb{n}^\text{A}\times \dot{\bb{n}}^\text{A},\\
-\dot{\bb{n}}^\text{B}&= 2\frac{J_\text{ex}}{\hslash} \bb{n}^\text{A}\times \bb{n}^\text{B}+ \frac{J\mathcal{A}}{\hslash}\, \bb{n}^\text{B}\times \bb{s}^\text{B}+\alpha\, \bb{n}^\text{B}\times \dot{\bb{n}}^\text{B},
+\dot{\bb{n}}^\text{A}  & = 2\frac{J_\text{ex}}{\hslash}\bb{n}^\text{B}\times \bb{n}^\text{A}+ \frac{J\mathcal{A}}{\hslash}\, \bb{n}^\text{A}\times \bb{s}^\text{A} +\alpha\, \bb{n}^\text{A}\times \dot{\bb{n}}^\text{A},\\
+\dot{\bb{n}}^\text{B} & = 2\frac{J_\text{ex}}{\hslash} \bb{n}^\text{A}\times \bb{n}^\text{B}+ \frac{J\mathcal{A}}{\hslash}\, \bb{n}^\text{B}\times \bb{s}^\text{B}+\alpha\, \bb{n}^\text{B}\times \dot{\bb{n}}^\text{B},
 \end{align}
 \eml
 where we take $\alpha=0.005$ for the strength of the Gilbert damping.  

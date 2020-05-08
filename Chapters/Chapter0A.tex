@@ -36,9 +36,9 @@ In our calculation the terms of the order of $\alpha \ln p_\textrm{cutoff}/\ep$ 
 
 It is, then, easy to see that the vertex-corrected spin operator is readily obtained from the geometric series of powers of $\pi\alpha \hat{M}$, 
 \begin{align}
-\sigma_\alpha^\text{vc} &= 
+\sigma_\alpha^\text{vc}  & = 
 \sigma_\alpha+\pi\alpha \hat{M}_{\alpha\beta}\sigma_\beta+(\pi\alpha)^2 (\hat{M}^2)_{\alpha\beta}\sigma_\beta+\dots\nonumber\\
-&=\left[1-\pi\alpha \hat{M}\right]^{-1}_{\alpha\beta}\sigma_\beta,
+ & =\left[1-\pi\alpha \hat{M}\right]^{-1}_{\alpha\beta}\sigma_\beta,
 \end{align}
 where the summation of the repeating index $\beta=0,x,y,z$ is assumed. 
 
@@ -48,42 +48,42 @@ Thus, in the non-crossing approximation (illustrated in Fig.~\ref{fig:diagrams} 
 % \beml
 % \label{chap1:eq:M}
 % \begin{align}
-% M &=M_0+M_\omega+M_{\omega^2}+M_{q\omega}+M_{q^2},\\
-% M_0 &= 
+% M  & =M_0+M_\omega+M_{\omega^2}+M_{q\omega}+M_{q^2},\\
+% M_0  & = 
 % \frac{1}{\pi\alpha(\ep^2+\Delta_z^2)} 
 % \bpm
-% \ep^2& 0 & 0 & -\ep \Delta_z \\
-%  0 & (\ep ^2-\Delta_z^2)/2 & \pi\alpha \ep \Delta_z & 0 \\
-%  0 & -\pi \alpha \ep \Delta_z & (\ep ^2-\Delta_z^2)/2 & 0 \\
-% -\ep \Delta_z & 0 & 0 & \Delta_z^2 
+% \ep^2 &  0  &  0  &  -\ep \Delta_z \\
+%  0  &  (\ep ^2-\Delta_z^2)/2  &  \pi\alpha \ep \Delta_z  &  0 \\
+%  0  &  -\pi \alpha \ep \Delta_z  &  (\ep ^2-\Delta_z^2)/2  &  0 \\
+% -\ep \Delta_z  &  0  &  0  &  \Delta_z^2 
 % \epm,\\
-% M_\omega & =\frac{i\omega \ep}{\lt[\pi  \alpha  (\ep^2+\Delta_z^2)\rt]^2} 
+% M_\omega  &  =\frac{i\omega \ep}{\lt[\pi  \alpha  (\ep^2+\Delta_z^2)\rt]^2} 
 % \bpm
-% \ep^2 & 0 & 0 &-\ep\Delta_z\\
-% 0 & (\ep ^2-\Delta_z^2)/2 & \pi \alpha (\ep^2-\Delta_z^2)\Delta_z/2\ep& 0 \\
-%  0 &- \pi \alpha (\ep^2-\Delta_z^2)\Delta_z/2\ep& (\ep ^2-\Delta_z^2)/2  & 0 \\
-% -\ep\Delta_z& 0 & 0 & \Delta_z^2  
+% \ep^2  &  0  &  0  & -\ep\Delta_z\\
+% 0  &  (\ep ^2-\Delta_z^2)/2  &  \pi \alpha (\ep^2-\Delta_z^2)\Delta_z/2\ep &  0 \\
+%  0  & - \pi \alpha (\ep^2-\Delta_z^2)\Delta_z/2\ep &  (\ep ^2-\Delta_z^2)/2   &  0 \\
+% -\ep\Delta_z &  0  &  0  &  \Delta_z^2  
 % \epm,\\
-% M_{\omega^2} & =\frac{(i\omega \ep)^2}{\lt[\pi  \alpha  (\ep^2+\Delta_z^2)\rt]^3}
+% M_{\omega^2}  &  =\frac{(i\omega \ep)^2}{\lt[\pi  \alpha  (\ep^2+\Delta_z^2)\rt]^3}
 % \bpm
-% \ep^2 & 0 & 0 &-\ep\Delta_z\\
-% 0 & (\ep ^2-\Delta_z^2)/2 & \pi \alpha (\ep^2-\Delta_z^2)\Delta_z/2\ep& 0 \\
-%  0 & -\pi \alpha (\ep^2-\Delta_z^2)\Delta_z/2\ep& (\ep ^2-\Delta_z^2)/2  & 0 \\
-% -\ep\Delta_z& 0 & 0 & \Delta_z^2  
+% \ep^2  &  0  &  0  & -\ep\Delta_z\\
+% 0  &  (\ep ^2-\Delta_z^2)/2  &  \pi \alpha (\ep^2-\Delta_z^2)\Delta_z/2\ep &  0 \\
+%  0  &  -\pi \alpha (\ep^2-\Delta_z^2)\Delta_z/2\ep &  (\ep ^2-\Delta_z^2)/2   &  0 \\
+% -\ep\Delta_z &  0  &  0  &  \Delta_z^2  
 % \epm,\\
-% M_{q\omega} & =\frac{v(\ep^2-\Delta_z^2)}{\lt[\pi \alpha \left(\ep^2+\Delta_z^2\right)\rt]^2}\left(\frac{-i}{2}+ \frac{\ep\omega}{\lt[\pi\alpha(\ep^2+\Delta_z^2)\rt]}\right) 
+% M_{q\omega}  &  =\frac{v(\ep^2-\Delta_z^2)}{\lt[\pi \alpha \left(\ep^2+\Delta_z^2\right)\rt]^2}\left(\frac{-i}{2}+ \frac{\ep\omega}{\lt[\pi\alpha(\ep^2+\Delta_z^2)\rt]}\right) 
 % \bpm
-%  0 & \ep  q_x& \ep  q_y& 0 \\
-%  \ep  q_x & 0 & 0 & -\Delta_z q_x\\
-%  \ep  q_y & 0 & 0 & -\Delta_z q_y\\
-%  0 & -\Delta_z q_x & -\Delta_z q_y & 0 
+%  0  &  \ep  q_x &  \ep  q_y &  0 \\
+%  \ep  q_x  &  0  &  0  &  -\Delta_z q_x\\
+%  \ep  q_y  &  0  &  0  &  -\Delta_z q_y\\
+%  0  &  -\Delta_z q_x  &  -\Delta_z q_y  &  0 
 % \epm,\\
-% M_{q^2} & =\frac{v^2 (\ep^2-\Delta_z^2)}{2\lt[\pi\alpha(\ep^2+\Delta_z^2)\rt]^3} 
+% M_{q^2}  &  =\frac{v^2 (\ep^2-\Delta_z^2)}{2\lt[\pi\alpha(\ep^2+\Delta_z^2)\rt]^3} 
 % \bpm
-% \ep^2q^2& 0 & 0 & -\ep\Delta_z q^2 \\
-%  0 & -(\ep^2-\Delta_z^2) (3q_x^2-q_y^2)/4 & - (\ep^2-\Delta_z^2) q_xq_y/2 & 0 \\
-%  0 & - (\ep^2-\Delta_z^2) q_xq_y/2 & -(\ep^2-\Delta_z^2) (3q_y^2-q_x^2)/4 & 0 \\
-% -\ep \Delta_z q^2  & 0 & 0 & \Delta_z^2q^2
+% \ep^2q^2 &  0  &  0  &  -\ep\Delta_z q^2 \\
+%  0  &  -(\ep^2-\Delta_z^2) (3q_x^2-q_y^2)/4  &  - (\ep^2-\Delta_z^2) q_xq_y/2  &  0 \\
+%  0  &  - (\ep^2-\Delta_z^2) q_xq_y/2  &  -(\ep^2-\Delta_z^2) (3q_y^2-q_x^2)/4  &  0 \\
+% -\ep \Delta_z q^2   &  0  &  0  &  \Delta_z^2q^2
 % \epm,
 % \end{align}
 % \eml
@@ -93,7 +93,7 @@ Thus, in the non-crossing approximation (illustrated in Fig.~\ref{fig:diagrams} 
 %\begin{equation}
 %\hat{K}_{}=
 %  \begin{pmatrix}
-% \sigma_{xx} & \sigma_{xy} & Q_y \\ \sigma_{yx} & \sigma_{yy} & -Q_x \\ Q_y & -Q_x & \zeta
+% \sigma_{xx}  &  \sigma_{xy}  &  Q_y \\ \sigma_{yx}  &  \sigma_{yy}  &  -Q_x \\ Q_y  &  -Q_x  &  \zeta
 %  \end{pmatrix}.
 %\end{equation}
 Complete expressions for the components are cumbersome, therefore we proceed by first analyzing their denominator, which is proportional to $\det [1-\pi\alpha M]$
@@ -114,15 +114,15 @@ The components of the conductivity tensor $\hat{\sigma}$ at finite $\omega$ and 
 \beml
 \label{chap1:eq:sconductivity}
 \begin{align}
-  \sigma_{xx} &= \sigma_0+\frac{Dq^2}{i\omega-Dq^2}\left(\frac{q_y^2}{q^2} \sigma_0
+  \sigma_{xx}  & = \sigma_0+\frac{Dq^2}{i\omega-Dq^2}\left(\frac{q_y^2}{q^2} \sigma_0
   -i\omega \tau_\text{tr}\left(\frac{2}{\pi\alpha}\frac{\varepsilon^2+2\Delta_z^2}{\varepsilon^2+\Delta_z^2}+\frac{3}{\pi\alpha}\frac{q_{x}^2-q_{y}^2}{2q^2}\right)\right)\\
   %
-  \sigma_{yy} &=  \sigma_0+\frac{Dq^2}{i\omega-Dq^2}\left(\frac{q_x^2}{q^2} \sigma_0
+  \sigma_{yy}  & =  \sigma_0+\frac{Dq^2}{i\omega-Dq^2}\left(\frac{q_x^2}{q^2} \sigma_0
     -i\omega \tau_\text{tr}\left(\frac{2}{\pi\alpha}\frac{\varepsilon^2+2\Delta_z^2}{\varepsilon^2+\Delta_z^2}-\frac{3}{\pi\alpha}\frac{q_{x}^2-q_{y}^2}{2q^2}\right)\right)\\
     %
-    \sigma_{xy} &= \sigma_\textrm{H}+\frac{Dq^2}{i\omega-Dq^2}\left(-\frac{q_xq_y}{q^2} \sigma_0-i\omega\tau_\text{tr}\frac{3}{\pi\alpha}\frac{q_xq_y}{q^2}\right)\\
+    \sigma_{xy}  & = \sigma_\textrm{H}+\frac{Dq^2}{i\omega-Dq^2}\left(-\frac{q_xq_y}{q^2} \sigma_0-i\omega\tau_\text{tr}\frac{3}{\pi\alpha}\frac{q_xq_y}{q^2}\right)\\
     %
-  \sigma_{yx} &= -\sigma_\textrm{H}+\frac{Dq^2}{i\omega-Dq^2}\left(-\frac{q_xq_y}{q^2} \sigma_0-i\omega\tau_\text{tr}\frac{3}{\pi\alpha}\frac{q_xq_y}{q^2}\right),
+  \sigma_{yx}  & = -\sigma_\textrm{H}+\frac{Dq^2}{i\omega-Dq^2}\left(-\frac{q_xq_y}{q^2} \sigma_0-i\omega\tau_\text{tr}\frac{3}{\pi\alpha}\frac{q_xq_y}{q^2}\right),
 \end{align}
 \eml
 where $\sigma_0$ and $\sigma_\textrm{H}$ are given in Eq.~(\ref{cond}) of the main text. 
@@ -130,9 +130,9 @@ The remaining components of $\hat{K}$ are given by
 \beml
 \label{Qresult}
 \begin{align}
-&\bb{Q}=\frac{\Delta_z}{ v}\, \frac{i D \bb{q}}{i\omega-Dq^2}
+ & \bb{Q}=\frac{\Delta_z}{ v}\, \frac{i D \bb{q}}{i\omega-Dq^2}
 \lt(1+i\omega\tau_\text{tr}\frac{(\varepsilon^2+7\Delta_z^2)}{\varepsilon^2+\Delta_z^2}\rt),\\
-&\zeta=\frac{\Delta_z^2}{ \ep}\,\frac{1-i\omega\tau_\text{tr}(\varepsilon^2-5\Delta_z^2)/(\varepsilon^2-\Delta_z^2)}{i\omega-Dq^2+\omega^2\tau_\text{tr}(\varepsilon^2-5\Delta_z^2)/(\varepsilon^2-\Delta_z^2)}
+ & \zeta=\frac{\Delta_z^2}{ \ep}\,\frac{1-i\omega\tau_\text{tr}(\varepsilon^2-5\Delta_z^2)/(\varepsilon^2-\Delta_z^2)}{i\omega-Dq^2+\omega^2\tau_\text{tr}(\varepsilon^2-5\Delta_z^2)/(\varepsilon^2-\Delta_z^2)}
 ,
 \end{align}
 \eml
@@ -146,9 +146,9 @@ The leading contributions to Eq.~(\ref{Qresult}a) in the limit $\omega\tau_\text
 It is convenient to rotate the coordinate system such that the new $\hat{\bb{x}}$ axis lies along $\bb{q}$. Let us introduce a rotation matrix $U$ to transform the tensor $\hat{K}$,  
 \begin{equation}
     U = \begin{pmatrix}
-            q_x/q & -q_y/q & 0 \\
-            q_y/q & q_x/q &0 \\
-            0 & 0 & 1
+            q_x/q  &  -q_y/q  &  0 \\
+            q_y/q  &  q_x/q  & 0 \\
+            0  &  0  &  1
         \end{pmatrix},\hspace{1cm}
     \tilde{K} = U^\top \hat{K} U,
 \end{equation}
@@ -156,16 +156,16 @@ so that the new components of Eqs.~(\ref{chap1:eq:sconductivity}) become
 \beml
 \label{chap1:eq:sconductivity2}
 \begin{align}
-  \tilde{\sigma}_{xx} &= \sigma_0-\frac{Dq^2}{i\omega-Dq^2}i\omega \tau_\text{tr}\frac{7\varepsilon^2+11\Delta_z^2}{2\pi\alpha (\varepsilon^2+\Delta_z^2)}\\
-  \tilde{\sigma}_{yy} &= \sigma_0+\frac{Dq^2}{i\omega-Dq^2} \left(\sigma_0-i\omega \tau_\text{tr}\frac{\varepsilon^2+5\Delta_z^2}{2\pi\alpha(\varepsilon^2+\Delta_z^2)}\right)\\
-    \tilde{\sigma}_{yx} &= -\tilde{\sigma}_{xy}=\sigma_\textrm{H},
+  \tilde{\sigma}_{xx}  & = \sigma_0-\frac{Dq^2}{i\omega-Dq^2}i\omega \tau_\text{tr}\frac{7\varepsilon^2+11\Delta_z^2}{2\pi\alpha (\varepsilon^2+\Delta_z^2)}\\
+  \tilde{\sigma}_{yy}  & = \sigma_0+\frac{Dq^2}{i\omega-Dq^2} \left(\sigma_0-i\omega \tau_\text{tr}\frac{\varepsilon^2+5\Delta_z^2}{2\pi\alpha(\varepsilon^2+\Delta_z^2)}\right)\\
+    \tilde{\sigma}_{yx}  & = -\tilde{\sigma}_{xy}=\sigma_\textrm{H},
 \end{align}
 \eml
 and the rotated, $\tilde{K}$, tensor is conveniently written as
 \begin{equation}
-    \tilde{K} = \begin{pmatrix} \tilde{\sigma}_{xx}         & \sigma_\textrm{H} & 0 \\
-                                -\sigma_\textrm{H}  & \tilde{\sigma}_{yy}       & Q \\
-                                0                   & Q                 & \zeta
+    \tilde{K} = \begin{pmatrix} \tilde{\sigma}_{xx}          &  \sigma_\textrm{H}  &  0 \\
+                                -\sigma_\textrm{H}   &  \tilde{\sigma}_{yy}        &  Q \\
+                                0                    &  Q                  &  \zeta
                 \end{pmatrix}.
 \end{equation}
 
@@ -194,7 +194,7 @@ and the rotated, $\tilde{K}$, tensor is conveniently written as
 
 To illustrate the behavior of $\bb{m}(t)$ we consider $f=f_0\,\cos(\omega t)$ at a particular point $\bb{r}$. It is, also, convenient to let the field $\bb{H}_\mathrm{eff}$ to lie in the $\hat{\bb{x}}-\hat{\bb{z}}$-plane and rotate the coordinate system such that $\bb{H}_\mathrm{eff}$ lies along new z-direction. This is achieved by introducing the rotation matrix $\hat{R}$,  
 \begin{align}
-    \hat{R} = \begin{pmatrix} \cos\chi & 0 & -\sin \chi \\ 0 & 1 & 0 \\ \sin\chi & 0 & \cos\chi\end{pmatrix},
+    \hat{R} = \begin{pmatrix} \cos\chi  &  0  &  -\sin \chi \\ 0  &  1  &  0 \\ \sin\chi  &  0  &  \cos\chi\end{pmatrix},
 \end{align}
 where $\chi$ is the angle between $\hat{\bb{z}}$ and $\bb{H}_\mathrm{eff}$. Furthermore, introducing the frequency $\omega_0 = |\gamma\bb{H}_\mathrm{eff}|$ and the unit vector $\bar{\bb{h}}=(-\sin\chi,0,\cos\chi)^\top$, we can write the equation of motion in the rotated coordinate frame as
 \begin{multline}
@@ -220,8 +220,8 @@ where the vector $\hat{\bb{z}}$ is defined now as the unit vector along $\bb{H}_
 
 In the regime of $\alpha_\textrm{G}\ll f_0 \ll \ll \omega_0$ we can find the asymptotic behavior of $m_\textrm{H}$ at sufficiently small times. In order to do that it is convenient to represnt $\bb{m}$ in spherical coordinates: $\bb{m}=(\sin\theta\cos\phi,\sin\theta\sin\phi,\cos\theta)^\top$, where $\theta$ is the polar angle between $\bb{m}$ and $\hat{\bb{z}}$ and $\phi$ is the azimuth. In the limit $\alpha_\textrm{G}\rightarrow 0$ we find the equations of motion on $\theta$ and $\phi$:
 \begin{align}
-\partial_t \theta &= \sin \chi  \sin \phi  f(\bb{r},t) \big(\sin \chi  \sin \theta \cos \phi -\cos \chi  \cos \theta \big)\\
-\partial_t \phi &=\omega_0+f(r,t) 
+\partial_t \theta  & = \sin \chi  \sin \phi  f(\bb{r},t) \big(\sin \chi  \sin \theta \cos \phi -\cos \chi  \cos \theta \big)\\
+\partial_t \phi  & =\omega_0+f(r,t) 
   \cos\theta\big(\cos ^2\chi  \cos ^2\phi-\sin^2\phi -\frac{1}{2}\sin\chi(\cot\theta-\sin\theta) \big).
 \end{align}
 We take $f(\bb{r},t)=f_0\cos\omega t$ and assume that $f_0\ll\omega_0$, so that we find $\phi = \omega_0 t-\phi_0$. It is convenient to choose $\phi_0=\pi/2$ so that
