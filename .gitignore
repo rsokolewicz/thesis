@@ -24,6 +24,5 @@
 *.mtc1
 *.out
 *.synctex.gz
-*.pdf
 mythesis.pdf
 *bibtex_*
