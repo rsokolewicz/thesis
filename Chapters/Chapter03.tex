@@ -71,19 +71,19 @@ We describe the coupled dynamics of the staggered and non-staggered magnetizatio
 \label{chap03:AFMEOM}
 \begin{align}
 \label{chap03:ndot}
-\dot{\bb{n}}  & = -\Omega\, \bb{n}\times\bb{m} +\bb{H}\times\bb{n}+\bb{n}\times\bb{s}^++\bb{m}\times\bb{s}^-,\\
+\dot{\bb{n}}  & = -2J_\textrm{ex}S\, \bb{n}\times\bb{m} +\bb{H}\times\bb{n}+\bb{n}\times\bb{s}^++\bb{m}\times\bb{s}^-,\\
 \label{chap03:mdot}
 \dot{\bb{m}}  & = \bb{H}\times\bb{m}+\bb{m}\times\bb{s}^++\bb{n}\times\bb{s}^-,
 \end{align}
 \eml
-where $\Omega=2J_\textrm{ex}S/\hslash$ and $\bb{s}^{\pm}= J \mathcal{A}\,(\bb{s}^\textrm{A}\pm\bb{s}^\textrm{B})/2\hslash$. The effects arising from the anisotropy $K$ are dropped for the time being. 
+where $\bb{s}^{\pm}= J_\text{sd} \mathcal{A}\,(\bb{s}^\textrm{A}\pm\bb{s}^\textrm{B})/2\hslash$. The effects arising from the anisotropy $K$ are dropped for the time being. 
 
 The AFM Heisenberg model is coupled to an effective tight-binding model of conduction electrons (see Appendix~\ref{chap03:sec:appa}) by means of exchange interaction,
 \be
 \label{chap03:ex}
-H_\mathrm{sd}=-J \s_{i} \s_{\sigma\sigma'}\bb{S}_i\cdot \bb{\sigma}_{\sigma\sigma'}c^\dagger_{i\sigma}c\0_{i\sigma'},
+H_\mathrm{sd}=-J_\text{sd} \s_{i} \s_{\sigma\sigma'}\bb{S}_i\cdot \bb{\sigma}_{\sigma\sigma'}c^\dagger_{i\sigma}c\0_{i\sigma'},
 \e
-where $J$ stands for an $s$-$d$-like exchange energy that is the same on $A$ and $B$ sublattices, the operators $c\h_{i\sigma}$ ($c\0_{i\sigma}$) are the standard creation (annihilation) operators for an electron on the lattice site $i$ with the spin index $\sigma$, and the notation $\bb{\sigma}=(\sigma_x,\sigma_y,\sigma_z)$ represents the three-dimensional vector of Pauli matrices. 
+where $J_\text{sd}$ stands for an $s$-$d$-like exchange energy that is the same on $A$ and $B$ sublattices, the operators $c\h_{i\sigma}$ ($c\0_{i\sigma}$) are the standard creation (annihilation) operators for an electron on the lattice site $i$ with the spin index $\sigma$, and the notation $\bb{\sigma}=(\sigma_x,\sigma_y,\sigma_z)$ represents the three-dimensional vector of Pauli matrices. 
 
 The vector $\bb{s}^+$ is proportional to average polarization of conduction electrons, while the vector $\bb{s}^-$ is proportional to the staggered polarization. The quantities $\bb{s}^\pm=\bb{s}_0^\pm+\delta\bb{s}^\pm$ contain equilibrium contributions $\bb{s}_0^\pm$ that characterize various interactions induced by conduction electrons. These contributions do renormalize the parameters of the AFM Heisenberg model and are not the subject of the present Chapter. 
 
@@ -146,7 +146,7 @@ Substitution of Eqs.~(\ref{chap03:gen}) into Eqs.~(\ref{chap03:AFMEOM}) gives
 \label{chap03:AFMEOM2}
 \begin{align}
 \label{chap03:ndot2}
- & \dot{\bb{n}} = -\Omega\, \bb{n}\!\times\!\bb{m} +\bb{H}\!\times\!\bb{n}+\bar{\alpha}_m\,\bb{n}\!\times\!\dot{\bb{m}}+\alpha_n\,\bb{m}\!\times\! \dot{\bb{n}},\\
+ & \dot{\bb{n}} = -2J_\text{ex}S\, \bb{n}\!\times\!\bb{m} +\bb{H}\!\times\!\bb{n}+\bar{\alpha}_m\,\bb{n}\!\times\!\dot{\bb{m}}+\alpha_n\,\bb{m}\!\times\! \dot{\bb{n}},\\
  & \dot{\bb{m}} =\bb{H}\times\bb{m}+\alpha_n\,\bb{n} \times \dot{\bb{n}}+\bar{\alpha}_m \bb{m} \times \dot{\bb{m}} +\gamma (\bb{n}\times\bb{m})(\bb{n}\cdot\dot{\bb{m}}) - \alpha_n'm^2\bb{n}\times\dot{\bb{n}},
 \label{chap03:mdot2}
 \end{align}
@@ -165,7 +165,7 @@ The low energy model for conduction electrons responsible for the dispersion in 
 \label{chap03:eff}
 H^\textrm{eff}= v\, \bb{p}\cdot\bb{\Sigma}+\tfrac{1}{2}\lambda\lt[\bb{\sigma}\times\bb{\Sigma}\rt]_{\hat{z}} - \Delta_{\text{sd}}\,\bb{n}\cdot\bb{\sigma}\,\Sigma_z\Lambda_z + V(\bb{r}).
 \e
-Here $\bb{\Sigma}$, $\bb{\Lambda}$, and $\bb{\sigma}$ are the vectors of Pauli matrices in sublattice, valley and spin space, respectively, $v$ is the characteristic Fermi velocity, while $\lambda$ and $\Delta_{\text{sd}}=JS$ are the energy scales characterizing the strength of Rashba spin-orbit coupling and $s$-$d$-like exchange energy, correspondingly. 
+Here $\bb{\Sigma}$, $\bb{\Lambda}$, and $\bb{\sigma}$ are the vectors of Pauli matrices in sublattice, valley and spin space, respectively, $v$ is the characteristic Fermi velocity, while $\lambda$ and $\Delta_{\text{sd}}=J_\text{sd}S$ are the energy scales characterizing the strength of Rashba spin-orbit coupling and $s$-$d$-like exchange energy, correspondingly. 
 
 % The term $V(\bb{r})$ stands for a scalar Gaussian white-noise disorder potential, which is proportional to the unit matrix in sublattice, valley and spin space. The potential has a zero mean value $\la V(\bb{r}) \ra=0$ and is fully characterized by the pair correlator,
 % \be
@@ -238,12 +238,12 @@ The behavior of the coefficients $a$, $b$ and $c$ as a function of $n_z$ is illu
 \eml
 where
 \be
-a_0=\frac{\mathcal{A}J}{e\hslash v}\,\frac{\lambda}{\ep_F}, \qquad \bar{\lambda}=\frac{\lambda}{\ep_F},\qquad\delta=\frac{\Delta_{\text{sd}}}{\ep_F}.
+a_0=\frac{J_\text{sd}\mathcal{A}}{e\hslash v}\,\frac{\lambda}{\ep_F}, \qquad \bar{\lambda}=\frac{\lambda}{\ep_F},\qquad\delta=\frac{\Delta_{\text{sd}}}{\ep_F}.
 \e
 In the metal regime, $\ep_F\gg \lambda+\Delta_{\text{sd}}$, the results of Eqs.~(\ref{chap03:SOT}) are reduced to 
 \be
 \label{chap03:SOTlargeE}
-a=\frac{\mathcal{A}J}{e\hslash v}\,\frac{\lambda}{\ep_F}, \qquad b=-c=2\,\frac{\mathcal{A}J}{e\hslash v}\,\frac{\lambda}{\ep_F}
+a=\frac{J_\text{sd}\mathcal{A}}{e\hslash v}\,\frac{\lambda}{\ep_F}, \qquad b=-c=2\,\frac{J_\text{sd}\mathcal{A}}{e\hslash v}\,\frac{\lambda}{\ep_F}
 \lt(\frac{\Delta_{\text{sd}}}{\ep_F}\rt)^2.
 \e
 One can, therefore, see that the high harmonics terms (proportional to $b$ and $c$) become irrelevant in the metal regime.  
@@ -271,7 +271,7 @@ where $H^\textrm{eff}$ is given by Eq.~(\ref{chap03:eff}). The conductivity tens
 
 However, the direct computation of the staggered polarization response (in the linear order with respect to $\bb{m}$) gives rise to a finite result. In the limit of large Fermi energy $\ep_F\gg \lambda+\Delta_{\text{sd}}$, we find 
 \begin{multline}
-\delta\bb{s}^-= \frac{\mathcal{A}J}{e\hslash v}\,\frac{\lambda}{\ep_F}
+\delta\bb{s}^-= \frac{J_\text{sd}\mathcal{A}}{e\hslash v}\,\frac{\lambda}{\ep_F}
 \lt(\frac{\Delta_{\text{sd}}}{\ep_F}\rt)^2\,
 \Big[2\,\bb{n}_{\perp} \!\times\!(\bb{m}_{\perp} \!\times\! (\hat{\bb{z}}\!\times\!\bb{j}))
 \\
@@ -300,9 +300,9 @@ Far in the metal regime, $\ep_F\gg \lambda+\Delta_{\text{sd}}$, we find
 \beml
 \label{chap03:coeffGD}
 \begin{align}
- & \alpha_m^\parallel= 2\,\frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J^2 S}{\pi\hslash^2v^2}\; \lt[1-\frac{\Delta_{\text{sd}}^2}{\ep_F^2}(2+n^2_z) + \dots\rt],\\
- & \alpha_n^\perp = \frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J^2 S}{\pi\hslash^2v^2} \,\lt[\lt(\frac{\lambda}{\ep_F}\rt)^2+\dots\rt],\\
- & \gamma= 2\,\frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J^2 S}{\pi\hslash^2v^2}\,\lt[\lt(\frac{\Delta_{\text{sd}}}{\ep_\textrm{F}}\rt)^2+\dots\rt],
+ & \alpha_m^\parallel= 2\,\frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J_\text{sd}^2 S}{\pi\hslash^2v^2}\; \lt[1-\frac{\Delta_{\text{sd}}^2}{\ep_F^2}(2+n^2_z) + \dots\rt],\\
+ & \alpha_n^\perp = \frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J_\text{sd}^2 S}{\pi\hslash^2v^2} \,\lt[\lt(\frac{\lambda}{\ep_F}\rt)^2+\dots\rt],\\
+ & \gamma= 2\,\frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J_\text{sd}^2 S}{\pi\hslash^2v^2}\,\lt[\lt(\frac{\Delta_{\text{sd}}}{\ep_\textrm{F}}\rt)^2+\dots\rt],
 \end{align}
 \eml
 while the vectors forms $\Gamma_{ab}$ can be written as
@@ -333,7 +333,7 @@ Thus, we see from Eqs.~(\ref{chap03:coeffGD}) that the coefficients $\alpha_n^{\
 The onset of spin-orbit interactions therefore makes Gilbert dampings ultimately anisotropic, also in the deep metal regime. This is in contrast to conductivity and spin-orbit torques that are quickly becoming isotropic in the metal limit. 
 For $\ep_F\gg \lambda+\Delta_{\text{sd}}$, we find the well known Landau-Lifshitz-Gilbert equations
 \begin{align}
- & \dot{\bb{n}} = -\Omega\, \bb{n}\!\times\!\bb{m} +\bb{H}\!\times\!\bb{n}+\bar{\alpha}^\parallel_m\,\bb{n}\!\times\!\dot{\bb{m}}_\parallel+\alpha_n^\perp\,\bb{m}\!\times\! \dot{\bb{n}}_\perp,\n\\
+ & \dot{\bb{n}} = -2J_\text{ex}S\, \bb{n}\!\times\!\bb{m} +\bb{H}\!\times\!\bb{n}+\bar{\alpha}^\parallel_m\,\bb{n}\!\times\!\dot{\bb{m}}_\parallel+\alpha_n^\perp\,\bb{m}\!\times\! \dot{\bb{n}}_\perp,\n\\
  & \dot{\bb{m}} =\bb{H}\times\bb{m}+\alpha_n^\perp\,\bb{n} \times \dot{\bb{n}}_\perp
 +\bar{\alpha}_m^\parallel \bb{m} \times \dot{\bb{m}}_\parallel,
 \label{chap03:AFMEOM3}
