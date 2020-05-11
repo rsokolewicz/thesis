@@ -159,11 +159,11 @@ The perturbations, or forces, that we consider are (i) electric fields that driv
 As mentioned in the introduction of this Chapter we model the relaxation of both spin and orbital angular momentum of conduction electrons through the scattering of impurities. For convenience we choose a white-noise Gaussian disorder potential
 \begin{equation}
     \label{disorder}
-\la V(\bb{r})\ra =0,\quad \la V(\bb{r}) V(\bb{r}') \ra = \frac{\hbar}{\pi\nu\tau}\,\delta(\bb{r}-\bb{r}'),
+\la V(\bb{r})\ra =0,\quad \la V(\bb{r}) V(\bb{r}') \ra = \frac{\hslash}{\pi\nu\tau}\,\delta(\bb{r}-\bb{r}'),
 \end{equation}
 where the angular brackets $\langle\cdots\rangle$ stand for the averaging over an ensemble of disordered systems, $\nu$ stands for the total density of states at the Fermi level and $\tau$ is the mean scattering time of the conducting electrons. In this Thesis we use a dimensionless parameter $\alpha$
 \begin{equation}
-     2 \pi\alpha (\hslash v)^2 = \frac{\hbar}{\pi\nu\tau}
+     2 \pi\alpha (\hslash v)^2 = \frac{\hslash}{\pi\nu\tau}
 \end{equation}
 that parametrizes the amount of disorder in the system. In low concentration of impurities, which we refer to as the clean metal limit, we have $\alpha\rightarrow0$. 
 
@@ -172,7 +172,7 @@ In order to incorporate the effect of disorder, two important steps must be perf
 In order to replace the bare Green function with a disordered one, one needs to include a self-energy. This self-energy gives rise to the finite momentum-life-time of the electron and restores translational invariance.  In low concentration of impurities (i.e. $\alpha\rightarrow0$) and neglecting contributions from rare-scattering events (such as multiple scattering off the same impurity), one can use the Born approximation
 
 \begin{equation}
-\im \Sigma^\text{R(A)} = 2\pi\alpha \im \int \frac{\mathrm{d}\bb{p}}{(2\hbar\pi)^2}\,G^\text{0 R(A)}_{\vec{p},\varepsilon}.
+\im \Sigma^\text{R(A)} = 2\pi\alpha \im \int \frac{\mathrm{d}\bb{p}}{(2\hslash\pi)^2}\,G^\text{0 R(A)}_{\vec{p},\varepsilon}.
 \label{sd:eq:sigma}
 \end{equation}
 
@@ -182,7 +182,7 @@ By inserting the self energy into a bare Green function we get the disorder-aver
 \end{equation}
 The self-energy determines the poles of the Green's function in the complex energy plane and are equal to the roots of $\det[\varepsilon-H-\Sigma^\text{R(A)}]$. For a given momentum the real part of each pole correspond to a point on a different Fermi surface, while the imaginary part defines the decay of the momentum eigenstates. In other words, the imaginary part gives rise to a finite momentum lifetime. This can be seen by taking the Fourier-transform from energy domain to the time domain where the imaginary part of the pole leads to an exponential decay in time for the Retarded Green's function. To give an explicit example, take for example the Fourier transform with respect to energy of a Green's function belonging to a single particle and single orbital 
 \begin{equation}
-	G^\text{R}(t) = \int\!\frac{\mathrm{d}\varepsilon}{2\pi} \exp(-i \varepsilon t)\times\underbrace{\frac{1}{\varepsilon-\varepsilon_1+i\varepsilon_2}}_{G^\text{R}(\varepsilon)} = -i\Theta(t)\exp(-i\varepsilon_1t)\exp(-\varepsilon_2 t), 
+	G^\text{R}(t) = \int\!\frac{\mathrm{d}\varepsilon}{2\pi\hslash} \exp(-i \varepsilon t)\times\underbrace{\frac{1}{\varepsilon-\varepsilon_1+i\varepsilon_2}}_{G^\text{R}(\varepsilon)} = -i\Theta(t)\exp(-i\varepsilon_1t)\exp(-\varepsilon_2 t), 
 \end{equation}
 where $\Theta$ is the Heaviside step function and $\varepsilon_{1,2}$ are the real and imaginary parts of the the complex energy pole. The temporal Green function decays in time one a time scale set by $\varepsilon_2$. The momentum life-time is defined as $\tau = 1/2\varepsilon_2$ and is equal to the transport time in the Born approximation for isotropic scattering that we consider \cite{rammer_quantum_1986}. The transport-time reflects the time needed to randomize the direction of an electron due to impurity scatterings. Note that in Eq.~(\ref{sd:eq:sigma}) we generally do not explicitly consider the real part of the self-energy as the shift in spectrum can be absorbed into the definition of model parameters. For brevity, we use the same symbols for terms such as Fermi energy and $s$--$d$ energy before and after the Born approximation, but one needs to keep in mind that in the latter case they correspond to renormalized quantities. 
 
@@ -196,7 +196,7 @@ By denoting $\hat{s}^{\text{vc}}$ as the vertex-corrected function of $\hat{s}$ 
 \end{align}
 where $\hat{s}^{(i)}$ is given by:
 \begin{align}
-    \hat{\chi}^\text{i} = 2\pi\alpha\int\frac{\mathrm{d}^2\bb{p}}{(2\pi\hbar)^2} G_{\bb{p}}^\text{R}\hat{s}^{(i-1)}G_{\bb{p}}^\text{A}
+    \hat{\chi}^\text{i} = 2\pi\alpha\int\frac{\mathrm{d}^2\bb{p}}{(2\pi\hslash)^2} G_{\bb{p}}^\text{R}\hat{s}^{(i-1)}G_{\bb{p}}^\text{A}
     \label{eq:onedisorderline}
 \end{align}
 
