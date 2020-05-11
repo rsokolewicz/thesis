@@ -133,16 +133,16 @@ and four corresponding frequencies $\omega_{\eta',\eta''}$
 \end{align}
 which remarkably exists even in absence of an external magnetic field. The constant $K$ can be derived directly for a particular model from the Grand potential describing the conducting electrons. The Grand potential is given by
 \begin{equation}
-    \Omega = - \sum_{\varsigma=\pm}\frac{1}{\beta} \int \mathrm{d}\varepsilon\,g(\varepsilon) \nu_\tau(\varepsilon),
+    \Omega = - \sum_{\varsigma}\frac{1}{\beta} \int \mathrm{d}\varepsilon\,g(\varepsilon) \nu_\varsigma(\varepsilon),
     \label{b1}
 \end{equation}
-where the the density of states $\nu$ and the function $g(\varepsilon)$ are given by
+where the density of states $\nu_\varsigma$ and the function $g(\varepsilon)$ are given by
 \begin{align}
-    \nu_\tau(\varepsilon) =  &  \frac{1}{\pi} \tr \int \frac{\mathrm{d}^2p}{(2\pi\hslash)^2}\,\im G^\text{R}_{\bb{p}}\\
+    \nu_\varsigma(\varepsilon) =  &  \frac{1}{\pi} \tr \int \frac{\mathrm{d}^2p}{(2\pi\hslash)^2}\,\im G^\text{R}_{\varsigma,\bb{p}}\\
     g(\varepsilon) =  &  \log \big(1+\exp[\beta(\mu-\varepsilon)]\big).
     \label{eq:nu}
 \end{align}
-Here $\beta$ is the inverse temperature and $\mu$ is the chemical potential. By evaluating the integral and expanding around the energy minimum in powers of magnetization, one can obtain the anisotropy constant $K$. This will be done explicitly in Chapter~\ref{ch:baglay}.
+Here $\beta$ is the inverse temperature, $\mu$ is the chemical potential, and $\varsigma$ denotes the band index. By evaluating the integral and expanding around the energy minimum in powers of magnetization, one can obtain the anisotropy constant $K$. This will be done explicitly in Chapter~\ref{ch:baglay}.
 
 \section{Obtaining out-of-equilibrium spin-polarizations}\label{diagrammatics}
 The spin-polarizations of the conducting electrons that appear in the equations of motion for the ferromagnet Eq.~(\ref{intro:eq:S1}) and for the antiferromagnet Eqs.~(\ref{eq:sd:neel}) are obtained in linear response to current and time-derivatives of magnetizations. This method is used in Chapters~\ref{ch:diffusive},\ref{ch:baglay}, whereas in Chapter \ref{ch:summit} we develop a numerical method of obtaining spin-orbit torques using a scattering approach that will be explained there. 
@@ -156,19 +156,23 @@ with momentum $\bb{p}$, Fermi-velocity $v$, unit cell area $\mathcal{A}$, retard
 
 The perturbations, or forces, that we consider are (i) electric fields that drive electrons and (ii) changes in magnetization direction. By expressing the electric field in terms of current through the conductivity tensor (which is again obtained through a Kubo formula), we obtain the out-of-equilibrium spin-polarization produced by an electric current. This in turn defines the current-induced spin-orbit torque. The second response, describes how the electrons' spin respond to a change in the electronic spectrum (by varying the magnetization direction) and gives rise to spin-renormalizations and Gilbert damping. 
 
-As mentioned in the introduction of this Chapter we model the relaxation of both spin and orbital angular momentum of conduction electrons through the scattering of impurities. For convenience we choose a white-noise Gaussian disorder potential that is fully characterized by a single dimensionless parameter $\alpha\ll 1$,
-\be
-\label{disorder}
-\la V(\bb{r})\ra =0,\quad \la V(\bb{r}) V(\bb{r}') \ra = 2\pi \alpha\, (\hslash v)^2\,\delta(\bb{r}-\bb{r}'),
-\e
-where angular brackets stand for the averaging over an ensemble of disordered systems. 
+As mentioned in the introduction of this Chapter we model the relaxation of both spin and orbital angular momentum of conduction electrons through the scattering of impurities. For convenience we choose a white-noise Gaussian disorder potential
+\begin{equation}
+    \label{disorder}
+\la V(\bb{r})\ra =0,\quad \la V(\bb{r}) V(\bb{r}') \ra = \frac{\hbar}{\pi\rho\tau}\, (\hslash v)^2\,\delta(\bb{r}-\bb{r}'),
+\end{equation}
+where the angular brackets $\langle\cdots\rangle$ stand for the averaging over an ensemble of disordered systems, $\rho$ stands for the total density of states at the Fermi level and $\tau$ is the mean scattering time of the conducting electrons. In this Thesis we use a dimensionless parameter $\alpha$
+\begin{equation}
+     2 \pi\alpha (\hslash v)^2 = \frac{\hbar}{\pi\rho\tau}
+\end{equation}
+that parametrizes the amount of disorder in the system. In low concentration of impurities, which we refer to as the clean metal limit, we have $\alpha\rightarrow0$. 
 
 In order to incorporate the effect of disorder, two important steps must be performed. Firstly, we replace the clean Green functions in the linear response formula, with disordered ones. Secondly we replace one of the vertices with one that is corrected with disorder-averaging.
 
-In order to replace the bare Green function with a disordered one, one needs to include a self-energy. This self-energy gives rise to the finite momentum-life-time of the electron and restores translational invariance.  In low concentration of impurities (which we refer to as the clean metal limit, i.e. $\alpha\rightarrow0$) and neglecting contributions from rare-scattering events (such as multiple scattering off the same impurity), one can use the Born approximation
+In order to replace the bare Green function with a disordered one, one needs to include a self-energy. This self-energy gives rise to the finite momentum-life-time of the electron and restores translational invariance.  In low concentration of impurities (i.e. $\alpha\rightarrow0$) and neglecting contributions from rare-scattering events (such as multiple scattering off the same impurity), one can use the Born approximation
 
 \begin{equation}
-\im \Sigma^\text{R(A)} = 2\pi\alpha \im \int \frac{\mathrm{d}\bb{p}}{(2\pi)^2}\,G^\text{R(A)}_{\vec{p},\varepsilon}.
+\im \Sigma^\text{R(A)} = 2\pi\alpha \im \int \frac{\mathrm{d}\bb{p}}{(2\hbar\pi)^2}\,G^\text{0 R(A)}_{\vec{p},\varepsilon}.
 \label{sd:eq:sigma}
 \end{equation}
 
@@ -192,7 +196,7 @@ By denoting $\hat{s}^{\text{vc}}$ as the vertex-corrected function of $\hat{s}$ 
 \end{align}
 where $\hat{s}^{(i)}$ is given by:
 \begin{align}
-    \hat{\chi}^\text{i} = 2\pi\alpha_d\int\frac{\mathrm{d}^2\bb{p}}{(2\pi)^2} G_{\bb{p}}^\text{R}\hat{s}^{(i-1)}G_{\bb{p}}^\text{A}
+    \hat{\chi}^\text{i} = 2\pi\alpha\int\frac{\mathrm{d}^2\bb{p}}{(2\pi)^2} G_{\bb{p}}^\text{R}\hat{s}^{(i-1)}G_{\bb{p}}^\text{A}
     \label{eq:onedisorderline}
 \end{align}
 
@@ -214,8 +218,14 @@ By choosing the a basis that satisfies the normalization condition $\tr\bb{B}_i\
 \end{equation}
 We will see in the remaining chapters that for a Dirac ferromagnet, the operators that we consider only depend on spin-degrees of freedom and therefore the response-matrix has dimension $(2\times2)^2=4\times4$. The Dirac antiferromagnets, however have spin, sublattice and valley degrees of freedom, leading to response-matrices of dimension $(2^3\times2^3)^2=64\times64$. Inverting such a matrix analytically can be a daunting task, but can be simplified dramatically by choosing an appropriate basis and working in certain limits. 
 
-Note that the inversion of $1-\mathcal{F}$ can only be done if none of the eigenvalues of $\mathcal{F}$ is equal to $1$. It appears however that this is never the case, as the self energy expressed in the basis $\{\hat{B}_i\}$ is an eigen function of $\mathcal{F}$ with eigenvalue $1$
+Note that the inversion of $1-\mathcal{F}$ can only be performed if none of the eigenvalues of $\mathcal{F}$ is equal to $1$. It appears however that this is never the case, as the self energy expressed in the basis $\{\hat{B}_i\}$ is an eigen function of $\mathcal{F}$ with eigenvalue $1$
 \begin{equation}
 	2\pi\alpha\int\!\frac{\mathrm{d}\bb{p}}{(2\pi)^2} G^\text{R}_{\bb{p}}\Sigma^\text{R(A)}G^\text{A}_{\bb{p}} = \Sigma^\text{R(A)}.
 \end{equation}
-In spinless systems we find the same problem in the density-density response which is resolved by working with response functions with finite momentum and frequency. Such a non-local response corresponds to electron diffusion. In Chapter~\ref{ch:diffusive} we will see that for a Dirac ferromagnet this gives rise to a novel type of non-local torque that we call a diffusive spin-torque. In other systems that we studied it appears that the singular eigenvalue in $1-\mathcal{F}$ does not lead to any observable effect. For Rashba ferromagnets it was shown that the divergency appears in the spin-density only in the direction of magnetization. For spin-torque however this plays no role as divergency disappears as the torque is always perpendicular to both the magnetization and spin-density. For the Dirac antiferromagnet that we discuss in Chapter~\ref{ch:baglay} it again appears to play no role on the equations of motion on $\bb{n}$ and $\bb{m}$. It remains an open question what systems, apart from the Dirac ferromagnet, diffusion could play an important role. 
+By computing the response tensor at finite frequency $\omega$ and momentum $\bb{q}$, we find that each singularity found in $(1-\mathcal{F})^{-1}$ is proportional to the Diffuson $D(\omega,\bb{q})$ given by
+\begin{equation}
+    D(\omega,\bb{q}) = \frac{1}{-i\omega+D q^2},
+\end{equation}
+that has a diffusion pole at $\omega = -i D q^2$, where $D$ is the diffusion constant. Note that the Diffuson in general appears in the density-density response function and describes diffusion, i.e. Brownian motion \cite{rammer_quantum_1986}. The singularity that appears when the limits $\omega\rightarrow0$ and $\bb{q}\rightarrow\bb{0}$ are taken, however, plays no role in the dynamics of magnetizations in most cases. For a Rashba ferromagnet \cite{ivan?} for example, the singularity appears in the spin-density only in the direction of the magnetization and due to the vector product involved, does not contribute to any spin torque. In other words, none of the spin-torques have a singular dependency on $\omega$ and $\bb{q}$. However, as we will see in Chapter~\ref{ch:diffusive}, the $\omega\rightarrow0$ and $\bb{q}\rightarrow\bb{0}$ are non-trivial for a Dirac ferromagnet. There in fact, we do find a spin-torque that contains a diffusion pole. 
+
+For the Dirac antiferromagnet that is discussed in Chapter~\ref{ch:baglay}, we again find that the spin-densities contain diffusion poles, but they do not play a role on the equations of motion of the average and staggered magnetizations $\bb{m}$ and $\bb{n}$. It remains an open question what systems, apart from the Dirac ferromagnet, diffusion poles could play an important role. 
