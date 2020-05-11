@@ -7,10 +7,10 @@ The Hamiltonian describing the localized and conduction electrons is given by
 \begin{multline}
     \hat{H}
         = \sum_{\mathclap{\{i,j\}\in\text{n.n.}}}\,\Big(\frac{J_{\text{ex}}}{n}\hat{\bb{S}}_i\cdot\hat{\bb{S}}_j - \frac{K}{2n}\hat{\bb{S}}_{z,i}\cdot\hat{\bb{S}}_{z,j}-t_h \hat{c}_i^\dagger\hat{c}_j
-        \Big)\\-\sum_i \big(\mu\bb{H}_\text{ext}\cdot\hat{\bb{S}}_i-J_\text{sd}\hat{\bb{S}}_i\cdot\hat{c}_i^\dagger\bb{\sigma}\hat{c}_i\big)+H_\text{tb},
+        \Big)\\-\sum_i \big(\mu_s\bb{H}_\text{ext}\cdot\hat{\bb{S}}_i-J_\text{sd}\hat{\bb{S}}_i\cdot\hat{c}_i^\dagger\bb{\sigma}\hat{c}_i\big)+H_\text{tb},
     \label{intro:eq:Hm}%-\lambda i c_i^\dagger \bb{u}_{ij}\cdot\bb{\sigma}\hat{c}_j
 \end{multline}
-with the Heisenberg exchange energy $J_{\text{ex}}$, anisotropy constant $K$, $s$--$d$-like exchange energy $J_{\text{sd}}$, creation operators for conduction electrons and localized spins $\hat{c}^\dagger_l$ and $\hat{S}$ respectively, Pauli-matrices $\bb{\sigma}$, external magnetic field $\bb{H}_\text{ext}$, magnetic moment of localized electrons $\mu$ and a tight-binding Hamiltonian for conducting electrons $H_\text{tb}$.  The first sum is taken over nearest neighbor sites. Note that the constant $K$ is inserted here phenomenologically, but can be computed as done later in Chapter~\ref{ch:baglay} for a honeycomb antiferromagnet.
+with the Heisenberg exchange energy $J_{\text{ex}}$, anisotropy constant $K$, $s$--$d$-like exchange energy $J_{\text{sd}}$, creation operators for conduction electrons and localized spins $\hat{c}^\dagger_l$ and $\hat{S}$ respectively, Pauli-matrices $\bb{\sigma}$, external magnetic field $\bb{H}_\text{ext}$, magnetic moment of localized electrons $\mu_s$ and a tight-binding Hamiltonian for conducting electrons $H_\text{tb}$.  The first sum is taken over nearest neighbor sites. Note that the constant $K$ is inserted here phenomenologically, but can be computed as done later in Chapter~\ref{ch:baglay} for a honeycomb antiferromagnet.
 
 To describe the full dynamics of the system we assume that the expectation value of of the localized electrons' spins move on a much larger time-scale than the spin-polarization of the conducting electrons. This allows us to decouple the system in two parts. We first derive equations of motion for the localized spins in a classical, mean-field approach by using only the expectation value of conducting electrons spin-polarization. Second, the spin-polarization of the conducting electrons is computed microscopically using linear response theory in response to electric currents and time-derivative of magnetizations, where the localized spins enter as classical fields. 
 
@@ -21,7 +21,7 @@ We can obtain a mean-field form of the Hamiltonian Eq~(\ref{intro:eq:Hm}) by mak
 \end{equation}
 with $n \langle \bb{S}_j\rangle$ the effective field produced by the $n$ nearest neighbors felt by $\bb{S}_i$, where $\bb{S}_i$ is the classical expectation value of $\hat{\bb{S}}_i$.  When $J_\text{ex}<0$, the spins favor parallel alignment and the energy can be written as
 \begin{equation}
-    E = \sum_{i} \Big(\mu_0 \hat{\bb{S}}_i\cdot \bb{H}_{\text{ext}}
+    E = \sum_{i} \Big(\mu_s \hat{\bb{S}}_i\cdot \bb{H}_{\text{ext}}
     - \frac{K}{2}(\hat{S}_{z,i})^2
     -J_{\text{sd}}\mathcal{A}\big(\bb{S}_i\cdot\bb{s}\big)
         \Big)
@@ -50,18 +50,19 @@ The equations of motion is given by $\partial_t \bb{S}_i = \{E,\bb{S}_i\}_p$, wh
 \end{align} 
 With these considerations we find the following equations of motion of magnetization for a ferromagnet
 \begin{align}
-	\hslash \partial_t \bb{m}  & = \bb{m}\times\big(-\mu\,bb{H}_\text{ext}+KS \,\bb{m_z}+J_\text{sd}\mathcal{A}\,\bb{s}\big)
+	\hslash \partial_t \bb{m}  & = \bb{m}\times\big(-\mu_s\,\bb{H}_\text{ext}+KS \,\bb{m_z}+\Delta_\text{sd}\,\bb{s}\big)
 	\label{intro:eq:S1}
 \end{align}
 and the following for an antiferromagnet
 \begin{align}
 \hslash \partial_t \bb{n} = &  -2SJ_\text{ex}\, \bb{n}\!\times\!\bb{m} \nonumber\\
      &  + KS \big(\bb{m}\!\times\!\bb{n}_\perp+\bb{n}\times\bb{m}_\perp\big) 
-	+ \Delta_\text{sd} \big(\bb{m}\times\bb{s}^-+\bb{n}\times\bb{s}^+) -\hslash\gamma_0\bb{n}\times\bb{H}_\text{ext},\\
+	+ \Delta_\text{sd} \big(\bb{m}\times\bb{s}^-+\bb{n}\times\bb{s}^+) -\mu_s\bb{n}\times\bb{H}_\text{ext},\\
 \hslash \partial_t \bb{m} = & KS  \big(\bb{n}\!\times\!\bb{n}_\perp+\bb{m}\times\bb{m}_\perp\big) 
-	+ \Delta_\text{sd} \big(\bb{m}\times\bb{s}^++\bb{n}\times\bb{s}^-)-\hslash\gamma_0\bb{m}\times\bb{H}_\text{ext}
+	+ \Delta_\text{sd} \big(\bb{m}\times\bb{s}^++\bb{n}\times\bb{s}^-)-\mu_s\bb{m}\times\bb{H}_\text{ext}.
 	\label{eq:sd:neel}
 \end{align}
+Here we introduced the notation $\Delta_\text{sd} = J_\text{sd}\mathcal{A}$. In the remainder we will absorb $S$ into $J_\text{ex}$ and $K$ for brevity. 
 
 Note that the mean-field approximation in Eq.~(\ref{eq:meanfield}) is not necessary to obtain Eqs.~(\ref{intro:eq:S1}) \& (\ref{eq:sd:neel}). The same equations of motion can be obtained by first using Heisenberg's equations of motion $i \hslash\partial_t \hat{S}_\alpha = [H,\hat{S}_\alpha]$ (where $\alpha=x,y,z$) and the commutation relations for spin-operators $[\hat{S}_x, \hat{S}_y]=i\hat{S}_z$ on Eq~(\ref{intro:eq:Hm}), and then taking the classical limit $\hat{\bb{S}}\rightarrow \bb{S}$. 
 
@@ -98,7 +99,7 @@ In an antiferromagnet we are more interested in the dynamics of the staggered ma
 \section{Antiferromagnetic resonance}
 One of the characteristics of an antiferromagnet is that its antiferromagnetic resonance frequency (i.e. when subjected to an oscillating external magnetic field) is proportional to $\sqrt{K}$, as given by the formula:
 \begin{equation}
-    \omega = \gamma_0 H_\text{ext} \pm \sqrt{K(J+K)}
+    \omega = \gamma_0 H_\text{ext} \pm \sqrt{K(J_\text{ex}+K)}
 \end{equation}
 as first derived by Kittel \cite{PhysRev.82.565, PhysRev.85.329}. The original derivation made use of quadruple contributions to $H_\text{M}$, but for two dimensional systems, a Hamiltonian such as in Eq.~(\ref{intro:eq:Hm}) is sufficient as we will demonstrate. In this section we do not consider $\Delta_\text{sd}$. In order to find the resonant frequencies in the system that is subjected to an oscillating field in the $z$ direction: $\bb{H}_\text{ext} = H_0 \cos \omega t\,\hat{\bb{z}}$, we first linearize the equations of motion by expanding $\bb{n}$ close to $\hat{\bb{z}}$ and assume $\bb{m}$ to be small. To be more explicit
 \begin{equation}
@@ -107,9 +108,9 @@ as first derived by Kittel \cite{PhysRev.82.565, PhysRev.85.329}. The original d
 Note that to first order the staggered and non-staggered magnetizations are still orthogonal to each-other: $\bb{n}\cdot\bb{m}=1+\mathcal{O}(\delta n^2+\delta m^2)$. Components such as $\delta n_x \delta m_y$ can be then disregarded and we assume $\bb{n}$ and $\bb{m}$ to be proportional to $\exp i \omega t$. A nice basis to work in is $\{{n}_+,{m}_+,{n}_-,{m}_- \}$, (where ${n}_\pm = \delta n_x\pm i \delta n_y$ and ${m}_\pm = \delta m_x\pm i \delta m_y$) so that one finds the following matrix equation:
 \begin{equation}
     \begin{pmatrix}
-    \omega_0  &  -(J+K)  &  0  &  0 \\
+    \omega_0  &  -(J_\text{ex}+K)  &  0  &  0 \\
     -K  &  \omega_0  &  0  &  0 \\
-    0  &  0  &  -\omega_0  &  J+K \\
+    0  &  0  &  -\omega_0  &  J_\text{ex}+K \\
     0  &  0  &  K  &  -\omega_0
     \end{pmatrix}
     \begin{pmatrix}
@@ -128,11 +129,11 @@ Note that to first order the staggered and non-staggered magnetizations are stil
 \end{equation}
 and four corresponding frequencies $\omega_{\eta',\eta''}$  
 \begin{align}
-    \omega_{\eta',\eta''} = \eta' \gamma_0 H_\text{ext} +\eta'' \sqrt{K(J+K)}, \quad \eta',\eta''=\pm1
+    \omega_{\eta',\eta''} = \eta' \gamma_0 H_\text{ext} +\eta'' \sqrt{K(J_\text{ex}+K)}, \quad \eta',\eta''=\pm1
 \end{align}
 which remarkably exists even in absence of an external magnetic field. The constant $K$ can be derived directly for a particular model from the Grand potential describing the conducting electrons. The Grand potential is given by
 \begin{equation}
-    \Omega = - \sum_{\tau=\pm}\frac{1}{\beta} \int \mathrm{d}\varepsilon\,g(\varepsilon) \nu_\tau(\varepsilon),
+    \Omega = - \sum_{\varsigma=\pm}\frac{1}{\beta} \int \mathrm{d}\varepsilon\,g(\varepsilon) \nu_\tau(\varepsilon),
     \label{b1}
 \end{equation}
 where the the density of states $\nu$ and the function $g(\varepsilon)$ are given by
