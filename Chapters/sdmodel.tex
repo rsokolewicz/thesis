@@ -149,7 +149,7 @@ The spin-polarizations of the conducting electrons that appear in the equations 
 
 We can write the linear response of a spin-polarization $s_\alpha$ to a perturbation $H'$ as
 \begin{equation}
-	s_\alpha = v^2\mathcal{A}\int\!\frac{d^2\bb{p}}{(2\pi)^2}\tr \langle \hat{s}_\alpha G^\text{R}_{\bb{p}} \frac{\partial H'}{\partial t} G^\text{A}_{\bb{p}}\rangle,
+	s_\alpha = v^2\mathcal{A}\int\!\frac{d^2\bb{p}}{(2\pi\hslash)^2}\tr \langle \hat{s}_\alpha G^\text{R}_{\bb{p}} \frac{\partial H'}{\partial t} G^\text{A}_{\bb{p}}\rangle,
 \label{sd:eq:kubo2}
 \end{equation}
 with momentum $\bb{p}$, Fermi-velocity $v$, unit cell area $\mathcal{A}$, retarded (advanced) Green's functions $G^\text{R(A)}_{\bb{p}}$ and operator trace $\tr$. The angular brackets $\langle\dots\rangle$ denote averaging over disorder samples. Eq.~(\ref{sd:eq:kubo2}) is called the Kubo formula that we derive from a Keldysh framework in Appendix~\ref{app:kubo} and is often at the basis of linear response theory. It is in fact one expression of the more general fluctuation-dissipation theorem \cite{Kubo_1966}. This theorem equates the response of a system to an external force or perturbation to the fluctuations of the system in absence of that force or perturbation. In other words, the left hand side of Eq.~(sd:eq:kubo1) denotes an out-of-equilibrium quantity which is related to a correlator on the right hand side that is evaluated in equilibrium. 
@@ -196,7 +196,7 @@ By denoting $\hat{s}^{\text{vc}}$ as the vertex-corrected function of $\hat{s}$ 
 \end{align}
 where $\hat{s}^{(i)}$ is given by:
 \begin{align}
-    \hat{\chi}^\text{i} = 2\pi\alpha\int\frac{\mathrm{d}^2\bb{p}}{(2\pi)^2} G_{\bb{p}}^\text{R}\hat{s}^{(i-1)}G_{\bb{p}}^\text{A}
+    \hat{\chi}^\text{i} = 2\pi\alpha\int\frac{\mathrm{d}^2\bb{p}}{(2\pi\hbar)^2} G_{\bb{p}}^\text{R}\hat{s}^{(i-1)}G_{\bb{p}}^\text{A}
     \label{eq:onedisorderline}
 \end{align}
 
@@ -214,13 +214,13 @@ The infinite sum of Eq.~(\ref{sd:eq:ladder}) can actually be recast into a geome
 \end{equation}
 By choosing the a basis that satisfies the normalization condition $\tr\bb{B}_i\bb{B}_j=n\delta_{ij}$ we find that the response matrix $\mathcal{F}$ has the following form
 \begin{equation}
-	\mathcal{F}_{ij} = \frac{2\pi\alpha}{n} \int\!\frac{d^2\bb{p}}{(2\pi)^2}\tr \hat{B}_i G^\text{R}_{\bb{p}} \hat{B}_j G^\text{A}_{\bb{p}}.
+	\mathcal{F}_{ij} = \frac{2\pi\alpha}{n} \int\!\frac{d^2\bb{p}}{(2\pi\hslash)^2}\tr \hat{B}_i G^\text{R}_{\bb{p}} \hat{B}_j G^\text{A}_{\bb{p}}.
 \end{equation}
 We will see in the remaining chapters that for a Dirac ferromagnet, the operators that we consider only depend on spin-degrees of freedom and therefore the response-matrix has dimension $(2\times2)^2=4\times4$. The Dirac antiferromagnets, however have spin, sublattice and valley degrees of freedom, leading to response-matrices of dimension $(2^3\times2^3)^2=64\times64$. Inverting such a matrix analytically can be a daunting task, but can be simplified dramatically by choosing an appropriate basis and working in certain limits. 
 
 Note that the inversion of $1-\mathcal{F}$ can only be performed if none of the eigenvalues of $\mathcal{F}$ is equal to $1$. It appears however that this is never the case, as the self energy expressed in the basis $\{\hat{B}_i\}$ is an eigen function of $\mathcal{F}$ with eigenvalue $1$
 \begin{equation}
-	2\pi\alpha\int\!\frac{\mathrm{d}\bb{p}}{(2\pi)^2} G^\text{R}_{\bb{p}}\Sigma^\text{R(A)}G^\text{A}_{\bb{p}} = \Sigma^\text{R(A)}.
+	2\pi\alpha\int\!\frac{\mathrm{d}\bb{p}}{(2\pi\hslash)^2} G^\text{R}_{\bb{p}}\Sigma^\text{R(A)}G^\text{A}_{\bb{p}} = \Sigma^\text{R(A)}.
 \end{equation}
 
 By computing the response tensor at finite frequency $\omega$ and momentum $\bb{q}$, we find that each singularity found in $(1-\mathcal{F})^{-1}$ is proportional to the Diffuson $D_0(\omega,\bb{q})$ given by
