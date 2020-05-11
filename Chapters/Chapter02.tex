@@ -19,7 +19,7 @@ Our study of spin-orbit torques is based on the numerical computation of non-equ
 \centering
 \centerline{\includegraphics[width=\columnwidth]{{articles/sumit_paper/fig1.pdf}}}
 \caption{
-Left panel (a): a two-dimensional honeycomb lattice hosting anti-parallel localized magnetic moments $\bb{S}^\textrm{A}$ and $\bb{S}^\textrm{B}$ that induce opposite exchange potentials on A and B sublattice. The vector $\bb{d}_{ij}$ is directed from an A-site $i$ to one of the three nearest-neighbor B-sites $j$. Right panel (b): Fermi surfaces (strongly enlarged) in quasi-momentum space for the Fermi energy $E=0.3\,t_h$, couplings $\lambda = 0.05\,t_h$, $\Delta_\text{sd}=JS=0.1\,t_h$, and $\theta=\pi/2$. Solid (orange) and dashed (green) lines indicate $K$ and $K'$ valleys. 
+Left panel (a): a two-dimensional honeycomb lattice hosting anti-parallel localized magnetic moments $\bb{S}^\textrm{A}$ and $\bb{S}^\textrm{B}$ that induce opposite exchange potentials on A and B sublattice. The vector $\bb{d}_{ij}$ is directed from an A-site $i$ to one of the three nearest-neighbor B-sites $j$. Right panel (b): Fermi surfaces (strongly enlarged) in quasi-momentum space for the Fermi energy $E=0.3\,t_h$, couplings $\lambda = 0.05\,t_h$, $\Delta_\text{sd}=J_\text{sd}S=0.1\,t_h$, and $\theta=\pi/2$. Solid (orange) and dashed (green) lines indicate $K$ and $K'$ valleys. 
 }
 \label{chap02:fig:lattice}
 \end{figure}
@@ -213,8 +213,8 @@ The problem of magnetization dynamics can be formulated with the help of a Heise
 % \beml
 % \label{chap02:EOMAFM}
 % \begin{align}
-% \dot{\bb{m}}^\textrm{A}  & = \bb{H}^\textrm{A}\times \bb{m}^\textrm{A}+ (J\mathcal{A}/\hslash)\, \bb{m}^\textrm{A}\times \bb{s}^\textrm{A},\\
-% \dot{\bb{m}}^\textrm{B} & = \bb{H}^\textrm{B}\times \bb{m}^\textrm{B}+ (J\mathcal{A}/\hslash)\, \bb{m}^\textrm{B}\times \bb{s}^\textrm{B},
+% \dot{\bb{m}}^\textrm{A}  & = \bb{H}^\textrm{A}\times \bb{m}^\textrm{A}+ (J_\text{sd}\mathcal{A}/\hslash)\, \bb{m}^\textrm{A}\times \bb{s}^\textrm{A},\\
+% \dot{\bb{m}}^\textrm{B} & = \bb{H}^\textrm{B}\times \bb{m}^\textrm{B}+ (J_\text{sd}\mathcal{A}/\hslash)\, \bb{m}^\textrm{B}\times \bb{s}^\textrm{B},
 % \end{align}
 % \eml
 % where $|\bb{m}^\textrm{A,B}|=1$, and the notations $\bb{H}^\textrm{A,B}$ refer to the effective fields on the sublattices $A$ and $B$. 
@@ -228,15 +228,15 @@ The problem of magnetization dynamics can be formulated with the help of a Heise
 % For an ``isotropic'' antiferromagnet, one finds the effective field \cite{gomonay_spintronics_2014} $\bb{H}^\textrm{A}+\bb{H}^\textrm{B}= J_\textrm{ex}\bb{m}/\hslash+2\bb{H}$, where $\bb{H}$ is an external magnetic field in frequency units and $J_\textrm{ex}$ is a direct antiferromagnetic exchange energy that is one of the largest energies in the problem. In turn, the combination $\bb{H}^\textrm{A}-\bb{H}^\textrm{B}$ is proportional to magnetic anisotropy that we choose not to take into account as mentioned above.  
 The classical equations of motion on the staggered and non-staggered magnetizations, $\bb{n}$ and $\bb{m}$, were derived in Chapter~\ref{cd:sd:motion}. Excluding the anisotropy $K$, Eqs~(\ref{eq:sd:neel}) reads
 \begin{align}
- & \dot{\bb{n}} = -2\frac{J_\textrm{ex}}{\hslash} \bb{n}\times\bb{m} +\bb{H}\times\bb{n}+\frac{J\mathcal{A}}{\hslash}\lt(\bb{n}\times\bb{s}_++\bb{m}\times\bb{s}_-\rt),\n\\
- & \dot{\bb{m}} = \bb{H}\times\bb{m}+\frac{J\mathcal{A}}{\hslash}\lt(\bb{m}\times\bb{s}_++\bb{n}\times\bb{s}_-\rt),
+ & \dot{\bb{n}} = -2\frac{J_\textrm{ex}}{\hslash} \bb{n}\times\bb{m} +\bb{H}\times\bb{n}+\frac{J_\text{sd}\mathcal{A}}{\hslash}\lt(\bb{n}\times\bb{s}_++\bb{m}\times\bb{s}_-\rt),\n\\
+ & \dot{\bb{m}} = \bb{H}\times\bb{m}+\frac{J_\text{sd}\mathcal{A}}{\hslash}\lt(\bb{m}\times\bb{s}_++\bb{n}\times\bb{s}_-\rt),
 \label{chap02:AFMEOM}
 \end{align}
 where $\bb{s}_\pm=(\bb{s}_A\pm\bb{s}_B)/2$. The right-hand sides of Eqs.~(\ref{chap02:AFMEOM}) contain the quantities that can be called generalized torques. Here we are only interested in specific contributions to generalized torques that are induced by the chemical potential difference $\delta\mu=eV_\textrm{bias}$ between left and right leads. Such contributions define four spin-orbit torques  
 \be
 \label{chap02:SOT_def}
-\bb{T}^\ell_\pm=(J\mathcal{A}/\hslash)\bb{n}\times\delta\bb{s}_\pm, \quad 
-\bb{T}^m_\pm=(J\mathcal{A}/\hslash)\bb{m}\times\delta\bb{s}_\pm,
+\bb{T}^\ell_\pm=(J_\text{sd}\mathcal{A}/\hslash)\bb{n}\times\delta\bb{s}_\pm, \quad 
+\bb{T}^m_\pm=(J_\text{sd}\mathcal{A}/\hslash)\bb{m}\times\delta\bb{s}_\pm,
 \e
 where $\delta \bb{s}_\pm$ refers to the non-equilibrium spin density contribution that is proportional to $\delta\mu$. 
 
@@ -255,7 +255,7 @@ H^\textrm{eff}_0= v\, \bb{p}\cdot\bb{\Sigma}+\alpha_\textrm{R}\lt[\bb{\sigma}\ti
 \e
 where $\bb{\Sigma}$, $\bb{\Lambda}$, and $\bb{\sigma}$ are the vectors of Pauli matrices in sublattice, valley and spin space, respectively, and 
 \be
-v= \frac{3}{2} t_h a/\hslash, \qquad \alpha_\textrm{R}= \frac{3}{2} \lambda , \qquad \Delta_\text{sd}=JS.
+v= \frac{3}{2} t_h a/\hslash, \qquad \alpha_\textrm{R}= \frac{3}{2} \lambda , \qquad \Delta_\text{sd}=J_\text{sd}S.
 \e
 Even though the model of Eq.~(\ref{chap02:ham}) is characterized by the point group $C_\textrm{3v}$, the effective low-energy model of Eq.~(\ref{chap02:low}) has a higher symmetry 
 of the group $C_{\infty\textrm{v}}$. This is reflected by the fact that the Fermi-surfaces (for energies we are interested in) remain entirely isotropic irrespective of the N\'eel vector orientation as shown in Fig.~\ref{chap02:fig:lattice}. Moreover, the exact sublattice symmetry of the model, $\Lambda_x H^\textrm{eff}_0[-\bb{n}] \Lambda_x =H^\textrm{eff}_0[\bb{n}]$, ensures vanishing non-equilibrium staggered spin polarization $\delta \bb{s}_-=0$ irrespective of both the voltage bias and the N\'eel vector orientation. This property is indeed confirmed by the numerical analysis. 
@@ -330,7 +330,7 @@ Consequently, the spin orbit torques in the metal regime of the symmetric model 
 \bb{T}^\ell_+=a_I \eta\;\bb{n} \times\lt[\hat{\bb{z}}\times\bb{j}\rt],\quad
 \bb{T}^m_+=a_I \eta\;\bb{m} \!\times\!\lt[\hat{\bb{z}}\times\bb{j}\rt], 
 \e
-where $\eta=J\mathcal{A}\Delta_\text{sd}\lambda /evh t_h^2$. 
+where $\eta=J_\text{sd}\mathcal{A}\Delta_\text{sd}\lambda /evh t_h^2$. 
 
 This results of Eqs.~(\ref{chap02:s_SOT}), (\ref{chap02:metal_SOT}) are remarkably similar to those found analytically in the metal regime of a Rashba ferromagnet model with white-noise disorder \cite{ado_microscopic_2017,ado_anisotropy_2019}. The latter is also characterized by identically vanishing anti-damping spin-orbit torques and by a completely isotropic field-like torque of the same symmetry. Even though, analytical results have been obtained for a ferromagnet with a weak white-noise disorder, the same drastic simplification of the spin-orbit torque takes place for a symmetric honeycomb antiferromagnet with rather strong point-like disorder as demonstrated above. Such a simplification is, however, limited to the metal regime. 
  
@@ -363,7 +363,7 @@ a'_I(n_z^2)\, \bb{m}\!\times\!\lt[\bb{n}_\parallel\!\times\! \lt[\bb{n}_\paralle
 \label{chap02:torque_Tminus}
 \end{align}
 \eml
-where $\eta=J\mathcal{A}\Delta_\text{sd}\lambda /evh t_h^2$ is the same as in Eq.~(\ref{chap02:metal_SOT}). 
+where $\eta=J_\text{sd}\mathcal{A}\Delta_\text{sd}\lambda /evh t_h^2$ is the same as in Eq.~(\ref{chap02:metal_SOT}). 
 
 Note, that the function $a'_I(n_z^2)$ in Eq.~(\ref{chap02:torque_Tplus}) for $\bb{T}^\ell_+$ can be absorbed into the redefinition of the coefficients $a_I$ and $c$.  Indeed, with the help of a straightforward vector algebra one can re-write Eq.~(\ref{chap02:torque_Tplus}) as
 \be
@@ -405,7 +405,7 @@ H^\textrm{as}_0= v\, \bb{p}\cdot\bb{\Sigma}+\alpha_\textrm{R}\lt[\bb{\sigma}\tim
 that clearly lacks the sublattice symmetry. Interestingly, we observe from numerical simulations that the staggered non-equilibrium polarization $\delta \bb{s}_-$ is still vanishing in the metal regime, while it becomes finite in the half-metal regime. It has to be noted, however, that the separation to staggered and non-staggered polarization is largely irrelevant for the asymmetric model, since the latter is characterized by the only vector torque 
 \be
 \label{chap02:TA}
-\bb{T}^\textrm{A}= \frac{J\mathcal{A}}{\hslash} \bb{m}^\textrm{A}\times\delta\bb{s}^\textrm{A}= \frac{J\mathcal{A}}{\hslash} \lt(\bb{n}+\bb{m}\rt)\times\lt(\delta\bb{s}_++\delta\bb{s}_-\rt),
+\bb{T}^\textrm{A}= \frac{J_\text{sd}\mathcal{A}}{\hslash} \bb{m}^\textrm{A}\times\delta\bb{s}^\textrm{A}= \frac{J_\text{sd}\mathcal{A}}{\hslash} \lt(\bb{n}+\bb{m}\rt)\times\lt(\delta\bb{s}_++\delta\bb{s}_-\rt),
 \e
 that is defined exclusively by the spin density on the sublattice A. 
 
@@ -500,7 +500,7 @@ The spin orbit torque $\bb{T}^A$, which is obtained by substituting the result o
 +c(n_z^2)\,\bb{m}^\textrm{A}\times\lt[\bb{m}^\textrm{A}_\parallel\times \lt[\bb{m}^\textrm{A}_\perp\times \lt[\hat{\bb{z}}\times \bb{j}\rt]\rt]\rt]\Big),
 \label{chap02:TAresult}
 \end{multline}
-where we again introduce $\eta=J\mathcal{A}\Delta_\text{sd}\lambda /evh t_h^2$, $\bb{j}=\bb{I}/W$ and the dimensionless coefficients $a_I$, $b_\perp$, $b_\parallel$, and $c$ that all appear to be non-trivial functions of $n_z^2=\cos^2\theta$ as shown in Fig.~\ref{chap02:fig:result_as}. Note that the function $A'_I(n_z^2)$ in Eq.~(\ref{chap02:sA}) for spin density contributes to both $a_I$ and $c$ coefficients in Eq.~(\ref{chap02:TAresult}) in the direct analogy to Eqs.~(\ref{chap02:torque_Tplus_MOD}) and (\ref{chap02:renorm}). 
+where we again introduce $\eta=J_\text{sd}\mathcal{A}\Delta_\text{sd}\lambda /evh t_h^2$, $\bb{j}=\bb{I}/W$ and the dimensionless coefficients $a_I$, $b_\perp$, $b_\parallel$, and $c$ that all appear to be non-trivial functions of $n_z^2=\cos^2\theta$ as shown in Fig.~\ref{chap02:fig:result_as}. Note that the function $A'_I(n_z^2)$ in Eq.~(\ref{chap02:sA}) for spin density contributes to both $a_I$ and $c$ coefficients in Eq.~(\ref{chap02:TAresult}) in the direct analogy to Eqs.~(\ref{chap02:torque_Tplus_MOD}) and (\ref{chap02:renorm}). 
 
 Thus, the spin-orbit torque $\bb{T}^\textrm{A}$ is parameterized by $4$ dimensionless functions. These functions are shown in Fig.~\ref{chap02:fig:result_as} illustrating the main result of our numerical simulations for the asymmetric coupling model. In sharp contrast to the symmetric model we observe that the anti-damping torques are no longer vanishing. We also find that $b_\perp(n_z^2) \approx b_\parallel(n_z^2)$ in the half-metal regime. The major field-like torque $\bb{m}^\textrm{A}\times\lt[\hat{\bb{z}}\times\bb{j}\rt]$, which originates in the Edelstein effect, acquires a weak dependence on $\theta$ due to the impact of the coefficient $A'_I(n_z^2)$. 
 
@@ -534,8 +534,8 @@ In order to model AFM magnetization dynamics we adopt the equations of motion (\
 \beml
 \label{EOMAFM10}
 \begin{align}
-\dot{\bb{n}}^\text{A}  & = 2\frac{J_\text{ex}}{\hslash}\bb{n}^\text{B}\times \bb{n}^\text{A}+ \frac{J\mathcal{A}}{\hslash}\, \bb{n}^\text{A}\times \bb{s}^\text{A} +\alpha\, \bb{n}^\text{A}\times \dot{\bb{n}}^\text{A},\\
-\dot{\bb{n}}^\text{B} & = 2\frac{J_\text{ex}}{\hslash} \bb{n}^\text{A}\times \bb{n}^\text{B}+ \frac{J\mathcal{A}}{\hslash}\, \bb{n}^\text{B}\times \bb{s}^\text{B}+\alpha\, \bb{n}^\text{B}\times \dot{\bb{n}}^\text{B},
+\dot{\bb{n}}^\text{A}  & = 2\frac{J_\text{ex}}{\hslash}\bb{n}^\text{B}\times \bb{n}^\text{A}+ \frac{J_\text{sd}\mathcal{A}}{\hslash}\, \bb{n}^\text{A}\times \bb{s}^\text{A} +\alpha\, \bb{n}^\text{A}\times \dot{\bb{n}}^\text{A},\\
+\dot{\bb{n}}^\text{B} & = 2\frac{J_\text{ex}}{\hslash} \bb{n}^\text{A}\times \bb{n}^\text{B}+ \frac{J_\text{sd}\mathcal{A}}{\hslash}\, \bb{n}^\text{B}\times \bb{s}^\text{B}+\alpha\, \bb{n}^\text{B}\times \dot{\bb{n}}^\text{B},
 \end{align}
 \eml
 where we take $\alpha=0.005$ for the strength of the Gilbert damping.  
