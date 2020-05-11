@@ -159,11 +159,11 @@ The perturbations, or forces, that we consider are (i) electric fields that driv
 As mentioned in the introduction of this Chapter we model the relaxation of both spin and orbital angular momentum of conduction electrons through the scattering of impurities. For convenience we choose a white-noise Gaussian disorder potential
 \begin{equation}
     \label{disorder}
-\la V(\bb{r})\ra =0,\quad \la V(\bb{r}) V(\bb{r}') \ra = \frac{\hbar}{\pi\rho\tau}\, (\hslash v)^2\,\delta(\bb{r}-\bb{r}'),
+\la V(\bb{r})\ra =0,\quad \la V(\bb{r}) V(\bb{r}') \ra = \frac{\hbar}{\pi\nu\tau}\,\delta(\bb{r}-\bb{r}'),
 \end{equation}
-where the angular brackets $\langle\cdots\rangle$ stand for the averaging over an ensemble of disordered systems, $\rho$ stands for the total density of states at the Fermi level and $\tau$ is the mean scattering time of the conducting electrons. In this Thesis we use a dimensionless parameter $\alpha$
+where the angular brackets $\langle\cdots\rangle$ stand for the averaging over an ensemble of disordered systems, $\nu$ stands for the total density of states at the Fermi level and $\tau$ is the mean scattering time of the conducting electrons. In this Thesis we use a dimensionless parameter $\alpha$
 \begin{equation}
-     2 \pi\alpha (\hslash v)^2 = \frac{\hbar}{\pi\rho\tau}
+     2 \pi\alpha (\hslash v)^2 = \frac{\hbar}{\pi\nu\tau}
 \end{equation}
 that parametrizes the amount of disorder in the system. In low concentration of impurities, which we refer to as the clean metal limit, we have $\alpha\rightarrow0$. 
 
@@ -222,10 +222,11 @@ Note that the inversion of $1-\mathcal{F}$ can only be performed if none of the 
 \begin{equation}
 	2\pi\alpha\int\!\frac{\mathrm{d}\bb{p}}{(2\pi)^2} G^\text{R}_{\bb{p}}\Sigma^\text{R(A)}G^\text{A}_{\bb{p}} = \Sigma^\text{R(A)}.
 \end{equation}
-By computing the response tensor at finite frequency $\omega$ and momentum $\bb{q}$, we find that each singularity found in $(1-\mathcal{F})^{-1}$ is proportional to the Diffuson $D(\omega,\bb{q})$ given by
+
+By computing the response tensor at finite frequency $\omega$ and momentum $\bb{q}$, we find that each singularity found in $(1-\mathcal{F})^{-1}$ is proportional to the Diffuson $D_0(\omega,\bb{q})$ given by
 \begin{equation}
-    D(\omega,\bb{q}) = \frac{1}{-i\omega+D q^2},
+    D_0(\omega,\bb{q}) = \frac{1}{-i\omega+D q^2},
 \end{equation}
-that has a diffusion pole at $\omega = -i D q^2$, where $D$ is the diffusion constant. Note that the Diffuson in general appears in the density-density response function and describes diffusion, i.e. Brownian motion \cite{rammer_quantum_1986}. The singularity that appears when the limits $\omega\rightarrow0$ and $\bb{q}\rightarrow\bb{0}$ are taken, however, plays no role in the dynamics of magnetizations in most cases. For a Rashba ferromagnet \cite{ivan?} for example, the singularity appears in the spin-density only in the direction of the magnetization and due to the vector product involved, does not contribute to any spin torque. In other words, none of the spin-torques have a singular dependency on $\omega$ and $\bb{q}$. However, as we will see in Chapter~\ref{ch:diffusive}, the $\omega\rightarrow0$ and $\bb{q}\rightarrow\bb{0}$ are non-trivial for a Dirac ferromagnet. There in fact, we do find a spin-torque that contains a diffusion pole. 
+that has a diffusion pole at $\omega = -i D q^2$, where $D$ is the diffusion constant. Note that the Diffuson in general appears in the density-density response function and describes diffusion, i.e. Brownian motion \cite{rammer_quantum_1986}. The singularity that appears when the limits $\omega\rightarrow0$ and $\bb{q}\rightarrow\bb{0}$ are taken, however, plays no role in the dynamics of magnetizations in most cases. For a Rashba ferromagnet \cite{ado_microscopic_2017} for example, the singularity appears in the spin-density only in the direction of the magnetization and due to the vector product involved, does not contribute to any spin torque. In other words, none of the spin-torques have a singular dependency on $\omega$ and $\bb{q}$. However, as we will see in Chapter~\ref{ch:diffusive}, the $\omega\rightarrow0$ and $\bb{q}\rightarrow\bb{0}$ are non-trivial for a Dirac ferromagnet. There in fact, we do find a spin-torque that contains a diffusion pole and is therefore singular in the limits $\omega\rightarrow0$ and $\bb{q}\rightarrow\bb{0}$.
 
 For the Dirac antiferromagnet that is discussed in Chapter~\ref{ch:baglay}, we again find that the spin-densities contain diffusion poles, but they do not play a role on the equations of motion of the average and staggered magnetizations $\bb{m}$ and $\bb{n}$. It remains an open question what systems, apart from the Dirac ferromagnet, diffusion poles could play an important role. 
