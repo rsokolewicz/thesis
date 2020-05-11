@@ -1,24 +1,25 @@
 \chapter{The $s$--$d$-model}\label{ch:sdmodel}
 \section{Introduction}
-Our model consists of two parts. The first part are the conducting electrons whose Hamiltonian is given by a tight-binding model. These conducting electrons can scatter of impurities in the material leading to having a finite momentum life-time. At the same time the spin of the electrons are coupled to its momentum through spin-orbit interactions, making it possible to transfer this angular momentum to the crystal lattice. The second part is the (anti)ferromagnet which we describe using a Heisenberg model in a classical limit, meaning we replace the spin-operators with vectors. In order to transfer angular momentum between localized and conduction electrons, we therefore need to introduce a parameter that couples the spin and magnetic moment locally. This allows us to directly relate the relaxation of the momentum of conduction electrons to the relaxation of angular momentum of the localized electrons. This momentum relaxation is at the heart of quantum transport theory. This model has much in comparison with the $s$--$d$ model \cite{zener1951interaction,kasuya1956theory,yosida1957magnetic,sdmodel}, used for example in the Kondo effect \cite{10.1143/PTP.32.37}, where localized $d$ electrons are coupled to conduction $s$ electrons through exchange interaction. In the literature therefore our model is often called $s$--$d$, or $s$--$d$-like, and the parameter that couples the spins of localized and itinerant electrons is called an $s$--$d$-like exchange interaction. 
+Our model consists of two parts. The first part are the conducting electrons whose Hamiltonian is given by a tight-binding model. These conducting electrons can scatter of impurities in the material leading to having a finite momentum life-time. At the same time the spin of the electrons are coupled to its momentum through spin-orbit interactions, making it possible to transfer this angular momentum to the crystal lattice. The second part is the (anti)ferromagnet which we describe using a Heisenberg model in a classical limit, meaning we replace the spin-operators with vectors. In order to transfer angular momentum between localized and conduction electrons, we therefore need to introduce a parameter that couples the spin and magnetic moment locally. This allows us to directly relate the relaxation of the momentum of conduction electrons to the relaxation of angular momentum of the localized electrons. This momentum relaxation is at the heart of quantum transport theory. This model has much in comparison with the $s$--$d$ model \cite{zener1951interaction,kasuya1956theory,yosida1957magnetic,sdmodel}, used for example in the Kondo effect \cite{10.1143/PTP.32.37}, where localized $d$ electrons are coupled to conduction $s$ electrons through exchange interaction. In the literature therefore our model is often called $s$--$d$, or $s$--$d$-like, and the parameter that couples the spins of localized and itinerant electrons is called an $s$--$d$-like exchange interaction. A related model that is called the $t-J$ model is used in the context of high-temperature superconductivity \cite{anderson_resonating_1987, zhang_effective_1988}.
 
 \section{Classical equations of motion on magnetization}\label{cd:sd:motion}
 The Hamiltonian describing the localized and conduction electrons is given by
 \begin{multline}
     \hat{H}
         = \sum_{\mathclap{\{i,j\}\in\text{n.n.}}}\,\Big(\frac{J_{\text{ex}}}{n}\hat{\bb{S}}_i\cdot\hat{\bb{S}}_j - \frac{K}{2n}\hat{\bb{S}}_{z,i}\cdot\hat{\bb{S}}_{z,j}-t_h \hat{c}_i^\dagger\hat{c}_j
-        \Big)\\+\sum_i \big(\hslash\gamma_0\bb{H}_\text{ext}\cdot\hat{\bb{S}}_i-\Delta_\text{sd}\hat{\bb{S}}_i\cdot\hat{c}_i^\dagger\bb{\sigma}\hat{c}_i\big)+H_\text{tb},
+        \Big)\\-\sum_i \big(\mu\bb{H}_\text{ext}\cdot\hat{\bb{S}}_i-\Delta_\text{sd}\hat{\bb{S}}_i\cdot\hat{c}_i^\dagger\bb{\sigma}\hat{c}_i\big)+H_\text{tb},
     \label{intro:eq:Hm}%-\lambda i c_i^\dagger \bb{u}_{ij}\cdot\bb{\sigma}\hat{c}_j
 \end{multline}
-with the Heisenberg exchange energy $J_{\text{ex}}$, anisotropy constant $K$, $s$--$d$-like exchange energy $J_{\text{sd}}$, creation operators for conduction electrons and localized spins $\hat{c}^\dagger_l$ and $\hat{S}$ respectively, Pauli-matrices $\bb{\sigma}$, external magnetic field $\bb{H}_\text{ext}$, gyromagnetic ratio $\gamma_0=|\gamma_0|$ and a tight-binding Hamiltonian for conducting electrons $H_\text{tb}$.  The first sum is taken over nearest neighbor sites. Note that the constant $K$ is inserted here phenomenologically, but can be computed as done later in Chapter~\ref{ch:baglay} for a honeycomb antiferromagnet.
+with the Heisenberg exchange energy $J_{\text{ex}}$, anisotropy constant $K$, $s$--$d$-like exchange energy $J_{\text{sd}}$, creation operators for conduction electrons and localized spins $\hat{c}^\dagger_l$ and $\hat{S}$ respectively, Pauli-matrices $\bb{\sigma}$, external magnetic field $\bb{H}_\text{ext}$, magnetic moment $\mu$ and a tight-binding Hamiltonian for conducting electrons $H_\text{tb}$.  The first sum is taken over nearest neighbor sites. Note that the constant $K$ is inserted here phenomenologically, but can be computed as done later in Chapter~\ref{ch:baglay} for a honeycomb antiferromagnet.
 
 To describe the full dynamics of the system we assume that the expectation value of of the localized electrons' spins move on a much larger time-scale than the spin-polarization of the conducting electrons. This allows us to decouple the system in two parts. We first derive equations of motion for the localized spins in a classical, mean-field approach by using only the expectation value of conducting electrons spin-polarization. Second, the spin-polarization of the conducting electrons is computed microscopically using linear response theory in response to electric currents and time-derivative of magnetizations, where the localized spins enter as classical fields. 
 
 We can obtain a mean-field form of the Hamiltonian Eq~(\ref{intro:eq:Hm}) by making the replacement
 \begin{equation}
-    \sum_{\mathclap{\{ij\}\in\text{n.n.}}} \bb{S}_i\cdot\bb{S}_j\rightarrow n\langle\bb{S}_j\rangle\cdot\sum_i \bb{S}_i
+    \sum_{\mathclap{\{ij\}\in\text{n.n.}}} \hat{\bb{S}}_i\cdot\hat{\bb{S}}_j\rightarrow n\langle\bb{S}_j\rangle\cdot\sum_i \bb{S}_i
+    \label{eq:meanfield}
 \end{equation}
-with $n \langle \bb{S}_j\rangle$ the effective field produced by the $n$ nearest neighbors felt by $\bb{S}_i$. When $J_\text{ex}<0$, the spins favor parallel alignment and the energy can be written as
+with $n \langle \bb{S}_j\rangle$ the effective field produced by the $n$ nearest neighbors felt by $\bb{S}_i$, where $\bb{S}_i$ is the classical expectation value of $\hat{\bb{S}}_i$.  When $J_\text{ex}<0$, the spins favor parallel alignment and the energy can be written as
 \begin{equation}
     E = \sum_{i} \Big(\mu_0 \hat{\bb{S}}_i\cdot \bb{H}_{\text{ext}}
     - K(\hat{S}_{z,i})^2
@@ -26,7 +27,13 @@ with $n \langle \bb{S}_j\rangle$ the effective field produced by the $n$ nearest
         \Big)
         \label{intro:eq:E1}
 \end{equation}
-where we introduced the spin polarization density $\bb{s} = \mathcal{A}^{-1}\langle \hat{c}^\dagger \bb{\sigma}\hat{c}\rangle$ (with unit cell area $\mathcal{A}$). In the case when $J_\text{ex}>0$ the spins favor antiparallel alignment and the energy can be written as
+where we made the replacement
+\begin{align}
+    \hat{\bb{S}}_i\cdot\hat{c}_i^\dagger\bb{\sigma}\hat{c}_i \rightarrow \bb{S}_i\cdot\bb{s}, \quad \bb{s} = \mathcal{A}^{-1}\langle \hat{c}^\dagger \bb{\sigma}\hat{c}\rangle
+\end{align}
+introduced the spin polarization density $\bb{s} = \mathcal{A}^{-1}\langle \hat{c}^\dagger \bb{\sigma}\hat{c}\rangle$ (with unit cell area $\mathcal{A}$). Note that we are only allowed to replace the interaction term $\hat{\bb{S}}_i\cdot\hat{c}_i^\dagger\bb{\sigma}\hat{c}_i$
+
+In the case when $J_\text{ex}>0$ the spins favor antiparallel alignment and the energy can be written as
 \begin{equation}
     E = \sum_{i} \Big(J_{\text{ex}}\bb{S}^\text{A}_i\cdot\bb{S}^\text{B}_i 
     - K((\hat{S}_{z,i}^\text{A})^2+(\hat{S}_{z,i}^\text{B})^2)
@@ -56,7 +63,7 @@ and the following for an antiferromagnet
 	\label{eq:sd:neel}
 \end{align}
 
-The same equations of motion can be obtained by first using Heisenberg's equations of motion $i \hslash\partial_t \hat{S}_\alpha = [H,\hat{S}_\alpha]$ (where $\alpha=x,y,z$) and the commutation relations for spin-operators $[\hat{S}_x, \hat{S}_y]=i\hat{S}_z$ on Eq~(\ref{intro:eq:Hm}), and then taking the classical limit $\hat{\bb{S}}\rightarrow \bb{S}$. 
+Note that the mean-field approximation in Eq.~(\ref{eq:meanfield}) is not necessary to obtain Eqs.~(\ref{intro:eq:S1}) \& (\ref{eq:sd:neel}). The same equations of motion can be obtained by first using Heisenberg's equations of motion $i \hslash\partial_t \hat{S}_\alpha = [H,\hat{S}_\alpha]$ (where $\alpha=x,y,z$) and the commutation relations for spin-operators $[\hat{S}_x, \hat{S}_y]=i\hat{S}_z$ on Eq~(\ref{intro:eq:Hm}), and then taking the classical limit $\hat{\bb{S}}\rightarrow \bb{S}$. 
 
 Note that the minus in front of the definitions of $\bb{n}$ and $\bb{m}$ are there because the magnetic moment of electrons are directed in opposite direction of their spin angular moment. Furthermore, although we use the same notation $\bb{m}$ for the magnetization in a ferro and anti-ferromagnet, it is only a unit-vector in the former case and not the latter. 
 
