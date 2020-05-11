@@ -22,7 +22,7 @@ We can obtain a mean-field form of the Hamiltonian Eq~(\ref{intro:eq:Hm}) by mak
 with $n \langle \bb{S}_j\rangle$ the effective field produced by the $n$ nearest neighbors felt by $\bb{S}_i$, where $\bb{S}_i$ is the classical expectation value of $\hat{\bb{S}}_i$.  When $J_\text{ex}<0$, the spins favor parallel alignment and the energy can be written as
 \begin{equation}
     E = \sum_{i} \Big(\mu_0 \hat{\bb{S}}_i\cdot \bb{H}_{\text{ext}}
-    - K(\hat{S}_{z,i})^2
+    - \frac{K}{2}(\hat{S}_{z,i})^2
     -J_{\text{sd}}\mathcal{A}\big(\bb{S}_i\cdot\bb{s}\big)
         \Big)
         \label{intro:eq:E1}
@@ -36,8 +36,8 @@ with spin-density polarization $\bb{s}$ and unit cell area $\mathcal{A}$. This r
 In the case when $J_\text{ex}>0$ the spins favor antiparallel alignment and the energy can be written as
 \begin{equation}
     E = \sum_{i} \Big(J_{\text{ex}}\bb{S}^\text{A}_i\cdot\bb{S}^\text{B}_i 
-    - K((\hat{S}_{z,i}^\text{A})^2+(\hat{S}_{z,i}^\text{B})^2)
-    -J_{\text{sd}}\big(\bb{S}^\text{A}_i\cdot\bb{s}^\text{A}+\bb{S}^\text{B}_i\cdot\bb{s}^\text{B}\big)
+    - \frac{K}{2}((\hat{S}_{z,i}^\text{A})^2+(\hat{S}_{z,i}^\text{B})^2)
+    -J_{\text{sd}}\mathcal{A}\big(\bb{S}^\text{A}_i\cdot\bb{s}^\text{A}+\bb{S}^\text{B}_i\cdot\bb{s}^\text{B}\big)
         \Big)
         \label{intro:eq:E2}
 \end{equation}
@@ -45,20 +45,20 @@ where we introduced the spin polarization density $\bb{s}^\text{A(B)} = \mathcal
 
 The equations of motion is given by $\partial_t \bb{S}_i = \{E,\bb{S}_i\}_p$, where $\{\cdots\}_p$ is the Poisson bracket. For angular momenta we simply have $\{\hslash \bb{S}_i,\hslash \bb{S}_j\}_p=\hslash \bb{S}_i\times\bb{S}_j$. As is common practice, the magnetization in the ferromagnet is expressed in terms of a unit vector $\bb{m} = -\bb{S}/|\bb{S}|$ and for an antiferromagnet we introduce the magnetization $\bb{m}$ and staggered magnetization (also called the N\'eel vector) $\bb{n}$ as
 \begin{align}
- 	\bb{m} & =-1/2(\bb{S}^\text{A}/|\bb{S}^\text{A}|+\bb{S}^\text{B}/|\bb{S}^\text{B}|)\\
-    \bb{n} & =-1/2(\bb{S}^\text{A}/|\bb{S}^\text{A}|-\bb{S}^\text{B}/|\bb{S}^\text{B}|).
+ 	\bb{m} & =-1/2(\bb{S}^\text{A}+\bb{S}^\text{B})/|\bb{S}|\\
+    \bb{n} & =-1/2(\bb{S}^\text{A}-\bb{S}^\text{B})/|\bb{S}|.
 \end{align} 
 With these considerations we find the following equations of motion of magnetization for a ferromagnet
 \begin{align}
-	\hslash \partial_t \bb{m}  & = \bb{m}\times\big(-\hslash\gamma_0\bb{H}_\text{ext}+Km_z+\Delta_\text{sd}\bb{s}\big)
+	\hslash \partial_t \bb{m}  & = \bb{m}\times\big(-\mu\,bb{H}_\text{ext}+KS \,\bb{m_z}+J_\text{sd}\mathcal{A}\,\bb{s}\big)
 	\label{intro:eq:S1}
 \end{align}
 and the following for an antiferromagnet
 \begin{align}
-\hslash \partial_t \bb{n} = &  -2J_\text{ex}\, \bb{n}\!\times\!\bb{m} \nonumber\\
-     &  + K \big(\bb{m}\!\times\!\bb{n}_\perp+\bb{n}\times\bb{m}_\perp\big) 
+\hslash \partial_t \bb{n} = &  -2SJ_\text{ex}\, \bb{n}\!\times\!\bb{m} \nonumber\\
+     &  + KS \big(\bb{m}\!\times\!\bb{n}_\perp+\bb{n}\times\bb{m}_\perp\big) 
 	+ \Delta_\text{sd} \big(\bb{m}\times\bb{s}^-+\bb{n}\times\bb{s}^+) -\hslash\gamma_0\bb{n}\times\bb{H}_\text{ext},\\
-\hslash \partial_t \bb{m} = & K  \big(\bb{n}\!\times\!\bb{n}_\perp+\bb{m}\times\bb{m}_\perp\big) 
+\hslash \partial_t \bb{m} = & KS  \big(\bb{n}\!\times\!\bb{n}_\perp+\bb{m}\times\bb{m}_\perp\big) 
 	+ \Delta_\text{sd} \big(\bb{m}\times\bb{s}^++\bb{n}\times\bb{s}^-)-\hslash\gamma_0\bb{m}\times\bb{H}_\text{ext}
 	\label{eq:sd:neel}
 \end{align}
