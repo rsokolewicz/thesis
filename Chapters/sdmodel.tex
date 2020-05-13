@@ -7,10 +7,10 @@ The Hamiltonian describing the localized and conduction electrons is given by
 \begin{multline}
     \hat{H}
         = \sum_{\mathclap{\{i,j\}\in\text{n.n.}}}\,\Big(\frac{J_{\text{ex}}}{n}\hat{\bb{S}}_i\cdot\hat{\bb{S}}_j - \frac{K}{2n}\hat{\bb{S}}_{z,i}\cdot\hat{\bb{S}}_{z,j}-t_h \hat{c}_i^\dagger\hat{c}_j
-        \Big)\\-\sum_i \big(\mu_s\bb{H}_\text{ext}\cdot\hat{\bb{S}}_i-J_\text{sd}\hat{\bb{S}}_i\cdot\hat{c}_i^\dagger\bb{\sigma}\hat{c}_i\big)+H_\text{tb},
+        \Big)\\-\sum_i \big(\gamma\hbar\bb{H}_\text{ext}\cdot\hat{\bb{S}}_i-J_\text{sd}\hat{\bb{S}}_i\cdot\hat{c}_i^\dagger\bb{\sigma}\hat{c}_i\big)+H_\text{tb},
     \label{intro:eq:Hm}%-\lambda i c_i^\dagger \bb{u}_{ij}\cdot\bb{\sigma}\hat{c}_j
 \end{multline}
-with the Heisenberg exchange energy $J_{\text{ex}}$, anisotropy constant $K$, $s$--$d$-like exchange energy $J_{\text{sd}}$, creation operators for conduction electrons and localized spins $\hat{c}^\dagger_l$ and $\hat{S}$ respectively, Pauli-matrices $\bb{\sigma}$, external magnetic field $\bb{H}_\text{ext}$, total magnetic moment of localized electrons at site $i$ $\mu_s$ and a tight-binding Hamiltonian for conducting electrons $H_\text{tb}$.  The first sum is taken over nearest neighbor sites. Note that the constant $K$ is inserted here phenomenologically, but can be computed as done later in Chapter~\ref{ch:baglay} for a honeycomb antiferromagnet.
+with the Heisenberg exchange energy $J_{\text{ex}}$, anisotropy constant $K$, $s$--$d$-like exchange energy $J_{\text{sd}}$, creation operators for conduction electrons $\hat{c}^\dagger_l$, spin operators for localized spins $\hat{S}$, Pauli-matrices $\bb{\sigma}$, external magnetic field $\bb{H}_\text{ext}$, gyromagnetic ratio $\gamma$ of the localized electrons and a tight-binding Hamiltonian for conducting electrons $H_\text{tb}$.  The first sum is taken over nearest neighbor sites. Note that the constant $K$ is inserted here phenomenologically, but can be computed as done later in Chapter~\ref{ch:baglay} for a honeycomb antiferromagnet.
 
 To describe the full dynamics of the system we assume that the expectation value of of the localized electrons' spins move on a much larger time-scale than the spin-polarization of the conducting electrons. This allows us to decouple the system in two parts. We first derive equations of motion for the localized spins in a classical, mean-field approach by using only the expectation value of conducting electrons spin-polarization. Second, the spin-polarization of the conducting electrons is computed microscopically using linear response theory in response to electric currents and time-derivative of magnetizations, where the localized spins enter as classical fields. 
 
@@ -21,7 +21,7 @@ We can obtain a mean-field form of the Hamiltonian Eq~(\ref{intro:eq:Hm}) by mak
 \end{equation}
 with $n \langle \bb{S}_j\rangle$ the effective field produced by the $n$ nearest neighbors felt by $\bb{S}_i$, where $\bb{S}_i$ is the classical expectation value of $\hat{\bb{S}}_i$.  When $J_\text{ex}<0$, the spins favor parallel alignment and the energy can be written as
 \begin{equation}
-    E = \sum_{i} \Big(\mu_s \hat{\bb{S}}_i\cdot \bb{H}_{\text{ext}}
+    E = \sum_{i} \Big(\hbar\gamma \hat{\bb{S}}_i\cdot \bb{H}_{\text{ext}}
     - \frac{K}{2}(\hat{S}_{z,i})^2
     -J_{\text{sd}}\mathcal{A}\big(\bb{S}_i\cdot\bb{s}\big)
         \Big)
@@ -50,19 +50,19 @@ The equations of motion is given by $\partial_t \bb{S}_i = \{E,\bb{S}_i\}_p$, wh
 \end{align} 
 With these considerations we find the following equations of motion of magnetization for a ferromagnet
 \begin{align}
-	\hslash \partial_t \bb{m}  & = \bb{m}\times\big(-\mu_s\,\bb{H}_\text{ext}+KS \,\bb{m_z}+\Delta_\text{sd}\,\bb{s}\big)
+	\hslash \partial_t \bb{m}  & = \bb{m}\times\big(-\gamma\,\bb{H}_\text{ext}+KS \,\bb{m_z}+\Delta_\text{sd}\,\bb{s}\big)
 	\label{intro:eq:S1}
 \end{align}
 and the following for an antiferromagnet
 \begin{align}
 \hslash \partial_t \bb{n} = &  -2SJ_\text{ex}\, \bb{n}\!\times\!\bb{m} \nonumber\\
      &  + KS \big(\bb{m}\!\times\!\bb{n}_\perp+\bb{n}\times\bb{m}_\perp\big) 
-	+ \Delta_\text{sd} \big(\bb{m}\times\bb{s}^-+\bb{n}\times\bb{s}^+) -\mu_s\bb{n}\times\bb{H}_\text{ext},\\
+	+ \Delta_\text{sd} \big(\bb{m}\times\bb{s}^-+\bb{n}\times\bb{s}^+) -\gamma\bb{n}\times\bb{H}_\text{ext},\\
 \hslash \partial_t \bb{m} = & KS  \big(\bb{n}\!\times\!\bb{n}_\perp+\bb{m}\times\bb{m}_\perp\big) 
-	+ \Delta_\text{sd} \big(\bb{m}\times\bb{s}^++\bb{n}\times\bb{s}^-)-\mu_s\bb{m}\times\bb{H}_\text{ext}.
+	+ \Delta_\text{sd} \big(\bb{m}\times\bb{s}^++\bb{n}\times\bb{s}^-)-\gamma \bb{m}\times\bb{H}_\text{ext}.
 	\label{eq:sd:neel}
 \end{align}
-Here we introduced the notation $\Delta_\text{sd} = J_\text{sd}\mathcal{A}$. In the remainder we will absorb $S$ into $J_\text{ex}$ and $K$ for brevity. 
+Here we introduced the notation $\Delta_\text{sd} = J_\text{sd}\mathcal{A}$. 
 
 Note that the mean-field approximation in Eq.~(\ref{eq:meanfield}) is not necessary to obtain Eqs.~(\ref{intro:eq:S1}) \& (\ref{eq:sd:neel}). The same equations of motion can be obtained by first using Heisenberg's equations of motion $i \hslash\partial_t \hat{S}_\alpha = [H,\hat{S}_\alpha]$ (where $\alpha=x,y,z$) and the commutation relations for spin-operators $[\hat{S}_x, \hat{S}_y]=i\hat{S}_z$ on Eq~(\ref{intro:eq:Hm}), and then taking the classical limit $\hat{\bb{S}}\rightarrow \bb{S}$. 
 
