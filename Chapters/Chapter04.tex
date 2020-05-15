@@ -1,6 +1,20 @@
 %************************************************
 \chapter{Antiferromagnetic resonance in a Rashba honeycomb antiferromagnet} % $\mathbb{ZNR}$\
 %************************************************
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{gfx/alpha_full}
+    \caption{Fully vertex-corrected parallel and perpendicular Gilbert damping. In the limit $\lambda\tau\ll1$ we find the limiting behavior $(4)2(\Delta^2+\varepsilon^2)/2$ for $\alpha_{\perp(\parallel)}$. When $\lambda\tau\ll 1$ and $\lambda\tau\gg\Delta/\varepsilon$ we find a scaling behavior $\alpha_{\perp(\parallel)}=(1)2/\lambda^2\tau^2$. Note the use of log-scale on both vertical and horizontal axis. The plot is obtained using $\varepsilon\tau=50$ and $\Delta\tau=0.1$. }
+    \label{fig:alpha_plot}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{gfx/numerical_test}
+    \caption{The numerical evaluation only yields isotropic Gilbert damping when $\lambda\tau$ is set below numerical precision. The presented plot is independent of chosen values for $\varepsilon\tau$ and $\Delta\tau$ and only depends on the numerical precision $n$, where $n=32,64,96,128$ is the number of digits contained in each variable during computation (a 64 bit double float generally has about 16 digit precision). }
+    \label{fig:alpha_plot}
+\end{figure}
+
 \section{Introduction}
 In the absence of spin-orbit interaction the spin of a conducting electron is conserved. In other words, its spin-life-time is infinite. In a conducting ferromagnet this means that collisions of electrons off of impurities cannot produce a finite spin-polarization and therefore any spin-orbit torque is absent. Furthermore, any rotation of magnetization leaves the electronic spectrum of the conducting electrons unchanged, as such a rotation is identical to a unitary transformation. Gilbert damping then, defined as the response of the spin of conducting electrons to the time-derivative of magnetization, must also be identically zero. Ferromagnets have therefore rather trivial and boring dynamics. In a conducting antiferromagnet however, this is not the case. Here independent rotations of magnetizations on both sublattices do not leave the spectrum invariant, but only a simultaneous rotation of both magnetizations in both sublattices leave the spectrum invariant, which means that the angle between the two magnetization directions must be a conserved quantity. With such a conservation intact, it has the important consequence that the spin on each sublattice is no longer conserved locally and we are allowed to move angular momentum from one sublattice to the other.   
 
