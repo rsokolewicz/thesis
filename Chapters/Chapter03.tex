@@ -19,7 +19,7 @@ A conduction electron mechanism for Gilbert damping in collinear ferromagnet req
 \begin{figure}
 \centering
 \centerline{\includegraphics[width=\columnwidth]{{articles/misha_paper/fig1.pdf}}}
-\caption{A model of Rashba honeycomb antiferromagnet with two sublattices, $A$ and $B$, and on-site exchange interaction between localized moments and conduction electrons (see Eq.~\ref{chap03:ex}). The large blue arrow represents the N\'eel vector vector, $\bm{n}$, that is in general, characterized by non-vanishing in-plane, $\bm{n}_\parallel$, and perpendicular-to-the-plane, $\bm{n}_\perp$, components. We refer to a specific coordinate system with $\hat{\bm{x}}$ axis chosen to be in the direction of $\bm{n}_\parallel$. 
+\caption{A model of Rashba honeycomb antiferromagnet with two sublattices, $A$ and $B$, and on-site exchange interaction between localized moments and conduction electrons (see Eq.~\ref{chap03:ex}). The large blue arrow represents the N\'eel vector vector, $\bm{n}$, that is in general, characterized by non-vanishing in-plane, $\bm{n}_\para$, and perpendicular-to-the-plane, $\bm{n}_\perp$, components. We refer to a specific coordinate system with $\hat{\bm{x}}$ axis chosen to be in the direction of $\bm{n}_\para$. 
 }
 \label{chap03:fig:lattice}
 \end{figure}
@@ -187,10 +187,10 @@ The spectrum of the model (\ref{chap03:eff}) with $V(\bb{r})=0$ consists of two 
 where $\varsigma=\pm$ is the valley index. All spectral branches are manifestly isotropic with respect to the direction of the electron momentum $\bb{p}$ irrespective of the N\'eel vector orientation (as far as $\bb{m}=0$). 
 
 In order to limit the complexity of our microscopic analysis we restrict ourselves to the metallic regime that corresponds to the Fermi energy $\ep_F > \Delta_{\text{sd}}+\lambda$ above the minimum of the top electron branches, $\epsilon^e_{+,\varsigma}(p)$, as shown schematically in Fig.~\ref{chap03:fig:spectrum}. Note that the Fermi energy $\ep_F$ is counted in the model from the center of the AFM gap. 
-We also focus on the limit of weak disorder $\ep_F \tau/\hslash\gg 1$ where $\tau = \hslash/(\pi\alpha_\textrm{d}\ep_F)$ stands for the electron scattering time. Also, in order to describe spin-orbit induced anisotropy we find it convenient to decompose the N\'eel vector (as well as the magnetization vector) to the in-plane and perpendicular-to-the-plane components as $\bb{n}= \bb{n}_\parallel+\bb{n}_\perp$, where $\bb{n}_\perp=n_z\hat{\bb{z}}$. 
+We also focus on the limit of weak disorder $\ep_F \tau/\hslash\gg 1$ where $\tau = \hslash/(\pi\alpha_\textrm{d}\ep_F)$ stands for the electron scattering time. Also, in order to describe spin-orbit induced anisotropy we find it convenient to decompose the N\'eel vector (as well as the magnetization vector) to the in-plane and perpendicular-to-the-plane components as $\bb{n}= \bb{n}_\para+\bb{n}_\perp$, where $\bb{n}_\perp=n_z\hat{\bb{z}}$. 
 
 \section{Conductivity}\label{chap03:sec:cond}
-The electric conductivity in the metallic regime is dominated by electron diffusion. Despite the fact that the Fermi surface (line) is isotropic and does not depend on the direction of $\bb{n}_\parallel$, the conductivity appears to be weakly anisotropic with respect to in-plane rotations of the N\'eel vector due to the onset of spin-orbit interaction. 
+The electric conductivity in the metallic regime is dominated by electron diffusion. Despite the fact that the Fermi surface (line) is isotropic and does not depend on the direction of $\bb{n}_\para$, the conductivity appears to be weakly anisotropic with respect to in-plane rotations of the N\'eel vector due to the onset of spin-orbit interaction. 
 In particular, for $n_z=0$ we find the diagonal conductivity components
 \beml
 \label{chap03:conductivity}
@@ -201,7 +201,7 @@ In particular, for $n_z=0$ we find the diagonal conductivity components
 \frac{\lambda^2\Delta_{\text{sd}}^2}{\ep_F^4+\ep_F^2\Delta_{\text{sd}}^2+2\Delta_{\text{sd}}^4},
 \end{align}
 \eml
-where the principal axes correspond to choosing $\hat{\bm{x}}$ direction along $\bb{n}_\parallel$ (see Fig.~\ref{chap03:fig:lattice}). In the deep metal regime, and for a general direction of $\bb{n}$, this anisotropy is evidently small
+where the principal axes correspond to choosing $\hat{\bm{x}}$ direction along $\bb{n}_\para$ (see Fig.~\ref{chap03:fig:lattice}). In the deep metal regime, and for a general direction of $\bb{n}$, this anisotropy is evidently small
 \be
 \label{chap03:ani}
 \frac{\rho_{xx}-\rho_{yy}}{\rho_{xx}+\rho_{yy}}=\frac{\lambda^2\Delta_{\text{sd}}^2}{\ep_F^4}(1-n_z^2), \quad \ep_F\gg \lambda+\Delta_{\text{sd}},
@@ -219,8 +219,8 @@ As was already mentioned, the spin-orbit torques originate in the response of no
 A straightforward computation of such a response gives $\delta\bb{s}^-=0$ (see Appendixes~\ref{chap03:sec:appb} and \ref{chap03:sec:appc} for more detail) and 
 \begin{multline}
 \label{chap03:sp}
-\delta\bb{s}^+= a(n_z^2)\;\hat{\bb{z}}\times \bb{j} + b(n_z^2)\, \bb{n}_\parallel\times(\bb{n}_\parallel\times \lt(\hat{\bb{z}}\times \bb{j}\rt))\\
-+ c(n_z^2)\, \bb{n}_\parallel \times(\bb{n}_\perp\times \lt(\hat{\bb{z}}\times \bb{j}\rt)),
+\delta\bb{s}^+= a(n_z^2)\;\hat{\bb{z}}\times \bb{j} + b(n_z^2)\, \bb{n}_\para\times(\bb{n}_\para\times \lt(\hat{\bb{z}}\times \bb{j}\rt))\\
++ c(n_z^2)\, \bb{n}_\para \times(\bb{n}_\perp\times \lt(\hat{\bb{z}}\times \bb{j}\rt)),
 \end{multline}
 where the coefficients $a$, $b$ and $c$ do generally depend on $n_z^2=1-n_x^2-n_y^2$ and are shown in Fig.~\ref{chap03:fig:abc}. 
 It is appropriate to recall here that the computation of the responses from the model of Eq.~(\ref{chap03:eff}) refers to the case when $\bb{m}=0$. The symmetry form of Eq.~(\ref{chap03:sp}) in this case has been also established recently from numerical simulations \cite{sumit2019}.
@@ -275,7 +275,7 @@ However, the direct computation of the staggered polarization response (in the l
 \lt(\frac{\Delta_{\text{sd}}}{\ep_F}\rt)^2\,
 \Big[2\,\bb{n}_{\perp} \!\times\!(\bb{m}_{\perp} \!\times\! (\hat{\bb{z}}\!\times\!\bb{j}))
 \\
-+2\,\bb{m}_{\parallel} \!\times\!(\bb{n}_{\perp} \!\times\! (\hat{\bb{z}}\!\times\!\bb{j})) -3\,\bb{n}_{\parallel}\!\times\! (\bb{m}_{\perp}\! \times\! (\hat{\bb{z}}\!\times\!\bb{j}))\n \Big],
++2\,\bb{m}_{\para} \!\times\!(\bb{n}_{\perp} \!\times\! (\hat{\bb{z}}\!\times\!\bb{j})) -3\,\bb{n}_{\para}\!\times\! (\bb{m}_{\perp}\! \times\! (\hat{\bb{z}}\!\times\!\bb{j}))\n \Big],
 \label{chap03:stagg}
 \end{multline}
 where the overall strength of the effect is again of the order of the coefficients $b$ and $c$. This makes the effects of nonequilibrium staggered polarization (including the celebrated N\'eel spin-orbit torque) irrelevant in the metal regime. Indeed, staggered polarization can hardly be induced by electrons with wavelengths that strongly exceed the distance between $A$ and $B$ sublattices.  
@@ -290,7 +290,7 @@ The direct computation of the Gilbert damping tensors for $\lambda\gg \hslash/\t
 \beml
 \label{chap03:gilbert}
 \begin{align}
- & \delta\bb{s}^+= \alpha_m^\parallel\,\dot{\bb{m}}_\parallel + \gamma \bb{\Gamma}_{mm}+ \gamma\bb{\Gamma}_{mn},\\
+ & \delta\bb{s}^+= \alpha_m^\para\,\dot{\bb{m}}_\para + \gamma \bb{\Gamma}_{mm}+ \gamma\bb{\Gamma}_{mn},\\
  & \delta\bb{s}^-= \alpha_n^\perp\,\dot{\bb{n}}_\perp +\gamma \bb{\Gamma}_{nm}+\gamma \bb{\Gamma}_{nn},
 \end{align}
 \eml
@@ -300,7 +300,7 @@ Far in the metal regime, $\ep_F\gg \lambda+\Delta_{\text{sd}}$, we find
 \beml
 \label{chap03:coeffGD}
 \begin{align}
- & \alpha_m^\parallel= 2\,\frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J_\text{sd}^2 S}{\pi\hslash^2v^2}\; \lt[1-\frac{\Delta_{\text{sd}}^2}{\ep_F^2}(2+n^2_z) + \dots\rt],\\
+ & \alpha_m^\para= 2\,\frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J_\text{sd}^2 S}{\pi\hslash^2v^2}\; \lt[1-\frac{\Delta_{\text{sd}}^2}{\ep_F^2}(2+n^2_z) + \dots\rt],\\
  & \alpha_n^\perp = \frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J_\text{sd}^2 S}{\pi\hslash^2v^2} \,\lt[\lt(\frac{\lambda}{\ep_F}\rt)^2+\dots\rt],\\
  & \gamma= 2\,\frac{\ep_F\tau}{\hslash}\;\frac{\mathcal{A} J_\text{sd}^2 S}{\pi\hslash^2v^2}\,\lt[\lt(\frac{\Delta_{\text{sd}}}{\ep_\textrm{F}}\rt)^2+\dots\rt],
 \end{align}
@@ -309,21 +309,21 @@ while the vectors forms $\Gamma_{ab}$ can be written as
 \beml
 \begin{align}
 \bb{\Gamma}_{mm}= & \,
-\bb{n}\!\times\!(\bb{n}\!\times\!\dot{\bb{m}}) + \bb{n}_\parallel\!\times\!(\bb{n}_\parallel\!\times\!\dot{\bb{m}}_\parallel)  
-- 2 \bb{n}_\parallel\!\times\!(\bb{n}_\parallel\!\times\!\dot{\bb{m}}_\perp),\\
+\bb{n}\!\times\!(\bb{n}\!\times\!\dot{\bb{m}}) + \bb{n}_\para\!\times\!(\bb{n}_\para\!\times\!\dot{\bb{m}}_\para)  
+- 2 \bb{n}_\para\!\times\!(\bb{n}_\para\!\times\!\dot{\bb{m}}_\perp),\\
 \bb{\Gamma}_{mn}= & \,
-\bb{n}\!\times\!(\bb{m}_\parallel\!\times\!\dot{\bb{n}}_\perp) 
-- \bb{m}_\perp\!\times\!(\bb{n}_\parallel\!\times\!\dot{\bb{n}}_\perp)
-+\bb{n}_\perp\!\times\!(\bb{m}_\perp\!\times\!\dot{\bb{n}}_\parallel) \n\\
- & - \bb{n}_\parallel\!\times\!(\bb{m}_\parallel\!\times\!\dot{\bb{n}}_\parallel)
-- 3\bb{m}_\perp\!\times\!(\bb{n}_\perp\!\times\!\dot{\bb{n}}_\parallel),\\
-\bb{\Gamma}_{nm}= & \,2\bb{n}_\parallel\!\times\!(\bb{m}_\parallel\!\times\!\dot{\bb{m}}_\perp)+ 
-2\bb{m}_\parallel\!\times\!(\bb{n}_\perp\!\times\!\dot{\bb{m}}_\parallel)
+\bb{n}\!\times\!(\bb{m}_\para\!\times\!\dot{\bb{n}}_\perp) 
+- \bb{m}_\perp\!\times\!(\bb{n}_\para\!\times\!\dot{\bb{n}}_\perp)
++\bb{n}_\perp\!\times\!(\bb{m}_\perp\!\times\!\dot{\bb{n}}_\para) \n\\
+ & - \bb{n}_\para\!\times\!(\bb{m}_\para\!\times\!\dot{\bb{n}}_\para)
+- 3\bb{m}_\perp\!\times\!(\bb{n}_\perp\!\times\!\dot{\bb{n}}_\para),\\
+\bb{\Gamma}_{nm}= & \,2\bb{n}_\para\!\times\!(\bb{m}_\para\!\times\!\dot{\bb{m}}_\perp)+ 
+2\bb{m}_\para\!\times\!(\bb{n}_\perp\!\times\!\dot{\bb{m}}_\para)
 -\bb{n}_\perp\!\times\!(\bb{m}_\perp\!\times\!\dot{\bb{m}})\n\\
  & +2 \bb{m}_\perp\!\times\!(\bb{n}\!\times\!\dot{\bb{m}})
-+ \bb{m}_\parallel\!\times\!(\bb{n}\!\times\!\dot{\bb{m}}_\perp) 
-- \bb{m}_\perp\!\times\!(\bb{n}_\perp\!\times\!\dot{\bb{m}}_\parallel),\\
-\bb{\Gamma}_{nn}= & \,-\bb{m}\times(\bb{n}\times\dot{\bb{n}}_\parallel).
++ \bb{m}_\para\!\times\!(\bb{n}\!\times\!\dot{\bb{m}}_\perp) 
+- \bb{m}_\perp\!\times\!(\bb{n}_\perp\!\times\!\dot{\bb{m}}_\para),\\
+\bb{\Gamma}_{nn}= & \,-\bb{m}\times(\bb{n}\times\dot{\bb{n}}_\para).
 \end{align}
 \eml
 Thus, we see from Eqs.~(\ref{chap03:coeffGD}) that the coefficients $\alpha_n^{\perp}$ and $\gamma$ are vanishingly small in the metal regime. Moreover, in the limit $\ep_F\gg \Delta_{\text{sd}}$ the only non-vanishing contributions to Gilbert dampings are given by the first terms on the right-hand sides of Eqs.~(\ref{chap03:gilbert}) that are manifestly anisotropic.
@@ -333,9 +333,9 @@ Thus, we see from Eqs.~(\ref{chap03:coeffGD}) that the coefficients $\alpha_n^{\
 The onset of spin-orbit interactions therefore makes Gilbert dampings ultimately anisotropic, also in the deep metal regime. This is in contrast to conductivity and spin-orbit torques that are quickly becoming isotropic in the metal limit. 
 For $\ep_F\gg \lambda+\Delta_{\text{sd}}$, we find the well known Landau-Lifshitz-Gilbert equations
 \begin{align}
- & \dot{\bb{n}} = -2J_\text{ex}S\, \bb{n}\!\times\!\bb{m} +\bb{H}\!\times\!\bb{n}+\bar{\alpha}^\parallel_m\,\bb{n}\!\times\!\dot{\bb{m}}_\parallel+\alpha_n^\perp\,\bb{m}\!\times\! \dot{\bb{n}}_\perp,\n\\
+ & \dot{\bb{n}} = -2J_\text{ex}S\, \bb{n}\!\times\!\bb{m} +\bb{H}\!\times\!\bb{n}+\bar{\alpha}^\para_m\,\bb{n}\!\times\!\dot{\bb{m}}_\para+\alpha_n^\perp\,\bb{m}\!\times\! \dot{\bb{n}}_\perp,\n\\
  & \dot{\bb{m}} =\bb{H}\times\bb{m}+\alpha_n^\perp\,\bb{n} \times \dot{\bb{n}}_\perp
-+\bar{\alpha}_m^\parallel \bb{m} \times \dot{\bb{m}}_\parallel,
++\bar{\alpha}_m^\para \bb{m} \times \dot{\bb{m}}_\para,
 \label{chap03:AFMEOM3}
 \end{align}
 where we again omit terms that originate e.\,g. from magnetic anisotropy of the AFM. 
@@ -387,13 +387,13 @@ One can further show that for $\lambda=0$ the entire Gilbert damping tensor $\ha
 
 Very similar physics is also responsible for the anisotropy of the tensor $\hat{\alpha}_n$. It is worth noting that the same type of anisotropy is known to take place in the limit of large spin-orbit interaction in 2D Rashba ferromagnets \cite{ado_anisotropy_2019}. Spin-orbit induced anisotropy of Gilbert damping plays, however, a lesser role in 2D ferromagnets due to the much stricter constraint on the single magnetization vector.  A less restricted dynamics of $\bb{m}$ and $\bb{n}$ vectors make the Gilbert damping anisotropy play a bigger role in 2D AFMs. 
 
-Indeed, it can be directly seen from Eqs.~(\ref{chap03:AFMEOM3}) that a nonequilibrium state with  $\bb{m}=m \hat{\bb{z}}$ and $\bb{n}=\bb{n}_\parallel$ becomes undamped in the absence of external field $\bb{H}=0$. Such a state corresponds to the undamped N\'eel vector precession around $\hat{\bb{z}}$ axis with a frequency given by $J_\textrm{ex} m$. The state clearly survives in the presence of easy plane magnetic anisotropy in the AFM. We believe that such a phenomenon remains to be rather generic for a variety of 2D or layered AFM systems with strong spin-orbit coupling of Rashba type. 
+Indeed, it can be directly seen from Eqs.~(\ref{chap03:AFMEOM3}) that a nonequilibrium state with  $\bb{m}=m \hat{\bb{z}}$ and $\bb{n}=\bb{n}_\para$ becomes undamped in the absence of external field $\bb{H}=0$. Such a state corresponds to the undamped N\'eel vector precession around $\hat{\bb{z}}$ axis with a frequency given by $J_\textrm{ex} m$. The state clearly survives in the presence of easy plane magnetic anisotropy in the AFM. We believe that such a phenomenon remains to be rather generic for a variety of 2D or layered AFM systems with strong spin-orbit coupling of Rashba type. 
 
 \section{Conclusions}
 
 In this Chapter, we demonstrate that the presence of sufficiently strong spin-orbit coupling $\lambda\tau/\hslash \gg 1$ results in the ultimate anisotropy of the Gilbert damping tensor in the metal regime, $\ep_F\gg\Delta_{\text{sd}}+\lambda$.  One can trace the phenomenon to the spin-orbit induced splitting of Fermi surfaces that forbids scattering processes that are responsible for the relaxation of certain magnetization and N\'eel vector components. 
 
-We also demonstrate that a finite in-plane projection $\bb{n}_\parallel$ of the N\'eel vector is responsible for a weak anisotropy of conductivity and spin-orbit torques for Fermi energies approaching the band edge, $\ep_F \sim \Delta_{\text{sd}}+\lambda$. This anisotropy is, however, absent in the metallic regime. 
+We also demonstrate that a finite in-plane projection $\bb{n}_\para$ of the N\'eel vector is responsible for a weak anisotropy of conductivity and spin-orbit torques for Fermi energies approaching the band edge, $\ep_F \sim \Delta_{\text{sd}}+\lambda$. This anisotropy is, however, absent in the metallic regime. 
 
 Gilbert damping is, however, isotropic in the absence of spin-orbit interaction as it is required by symmetry considerations. Thus, we demonstrate that the onset of Rashba spin-orbit interaction in 2D or layered AFM systems leads to a giant anisotropy of Gilbert damping in the metallic regime. The physics of this phenomenon originates in spin-orbit induced splitting of the electron subbands that destroys a particular decay channel for magnetization and leads to undamped precession of the N\'eel vector. The phenomenon is based on the assumption that other Gilbert damping channels  (e.\,g. due to phonons) remain suppressed in the long magnon wavelength limit that we consider. The predicted giant Gilbert damping anisotropy may have a profound impact on the N\'eel vector dynamics in a variety of 2D and layered AFM materials. 
 
