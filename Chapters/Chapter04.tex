@@ -66,7 +66,7 @@ where in the large $\lambda\tau$ regime a term $\propto \dot{\bb{m}}_\perp$ did 
     \alpha_m^{\para,\perp} = \frac{\mathcal{A}J_\text{sd}^2S}{\pi\hbar^2v^2}\times\bar{\alpha}_m^{\para,\perp}  
 \end{equation}
 
-As mentioned throughout this Thesis, disorder averaging involves (i) replacing clean Green's functions with disorder-averaged Green's functions in the Born approximation and (ii) summing different diagrams in the (diffusive) ladder approximation (i.e. Figure~\ref{sd:fig:diagrams}b). Let us annotate the parallel-to-the-plane and perpendicular-to-the-plane Gilbert damping coefficients with a superscript $(i)$ that denotes that we summed over all diagrams with $\leq i$ disorder lines inserted. Physically, this corresponds to averaging over various disorder ensembles where the electron scatters a maximum of $i$ number of times. 
+As mentioned throughout this Thesis, disorder averaging involves (i) replacing clean Green's functions with disorder-averaged Green's functions in the Born approximation and (ii) summing different diagrams in the (diffusive) ladder approximation (i.e. Fig.~\ref{sd:fig:diagrams}b). Let us annotate the parallel-to-the-plane and perpendicular-to-the-plane Gilbert damping coefficients with a superscript $(i)$ that denotes that we summed over all diagrams with $\leq i$ disorder lines inserted. Physically, this corresponds to averaging over various disorder ensembles where the electron scatters a maximum of $i$ number of times. 
 
 Let us first consider first the "bare bubble" contribution which describes an electron entering and exiting the system without a single scattering event
 \begin{align}
@@ -107,7 +107,6 @@ In a truly diffusive system one should take the limit $i\rightarrow\infty$, in w
     \bar{\alpha}_{m}^{\perp}\equiv\bar{\alpha}_{m}^{\perp\,(\infty)}  & = \frac{\epsilon \tau}{\hbar}\, \frac{1}{\lambda^2\tau^2},\\
   \label{eq:alphaparallelzerodelta}  \bar{\alpha}_{m}^{\para}\equiv\bar{\alpha}_{m}^{\para\,(\infty)}  & = \frac{\varepsilon\tau}{\hbar}\,2\frac{1+\lambda^2\tau^2}{\lambda^2\tau^2}.
 \end{align}
-
 We plot the functions of $\bar{\alpha}_{m}^{\perp(\para)\,(i)}$ for $i=0,1,2$ and $i\rightarrow\infty$ in Fig.~\ref{fig:alpha_plot}. 
 \begin{figure}
     \centering
@@ -183,7 +182,7 @@ It is also important to note that the relaxation rate $1/\tau_s\sim 1/\tau$ that
 %%%
 %%%
 
-We plot the functions of $\bar{\alpha}_{m}^{\perp(\para)\,(i)}$ for $i=0,1,2$ and $i\rightarrow\infty$ in Fig.~\ref{fig:alpha_plot}. 
+%We plot the functions of $\bar{\alpha}_{m}^{\perp(\para)\,(i)}$ for $i=0,1,2$ and $i\rightarrow\infty$ in Fig.~\ref{fig:alpha_plot}. 
 % \begin{figure}
 %     \centering
 %     \includegraphics[width=0.75\linewidth]{gfx/Chapter04/alpha_plot2}
@@ -209,7 +208,7 @@ We plot the functions of $\bar{\alpha}_{m}^{\perp(\para)\,(i)}$ for $i=0,1,2$ an
 %     \label{fig:alpha3}
 % \end{figure}
 
-The reader might have noticed that in the limit $\lambda\tau\rightarrow0$ Eqs.~(\ref{eq:alphapara},\ref{eq:alphaperp}) remain anisotropic, in contradiction to the symmetry analysis presented in the previous Chapter. Indeed, a direct calculation with $\lambda\tau=0$ gives the isotropic damping $\bar{\alpha}_m^{\perp}=\bar{\alpha}_m^{\para}=(\varepsilon^2+\Delta^2)/\Delta^2$, suggesting a certain scale over which the anisotropy emerges. The numerical analysis illustrated in Figure~\ref{fig:num_test} however reveals that the scale does not depend on the values of $\Delta$ or $\varepsilon$, but rather on the numerical precision instead. This strongly suggests that the transition between isotropic to anisotropic damping occurs at exactly $\lambda=0$. 
+The reader might have noticed that in the limit $\lambda\tau\rightarrow0$ Eqs.~(\ref{eq:alphapara},\ref{eq:alphaperp}) remain anisotropic, in contradiction to the symmetry analysis presented in the previous Chapter. Indeed, a direct calculation with $\lambda\tau=0$ gives the isotropic damping $\bar{\alpha}_m^{\perp}=\bar{\alpha}_m^{\para}=(\varepsilon^2+\Delta^2)/\Delta^2$, suggesting a certain scale over which the anisotropy emerges. The numerical analysis illustrated in Fig.~\ref{fig:num_test} however reveals that the scale does not depend on the values of $\Delta$ or $\varepsilon$, but rather on the numerical precision instead. In other words, an isotropic Gilbert damping is obtained only when the spin-orbit strength is set below numerical precision. This strongly suggests that the transition between isotropic to anisotropic damping occurs at exactly $\lambda=0$. 
 
 However, we defined Gilbert damping as the spin-response to the time-derivative of a \emph{uniform} magnetization. In other words the response was computed in the long wavelength limit $q\rightarrow0$, which is exactly the scale we were looking for. We find therefore that taking the limit $q\rightarrow0$ first and then the limit $\lambda\rightarrow0$ leads to anisotropic Gilbert damping, whereas in the opposite order of limits we find isotropic Gilbert damping.  
 
@@ -224,9 +223,9 @@ However, we defined Gilbert damping as the spin-response to the time-derivative 
 % uniform modes
 %
 \section{Antiferromagnetic resonance}
-When subjecting an AFM to an oscillating magnetic field, the localized spins will exhibit a precession parallel to the magnetic field direction. By tuning the magnetic field's frequency to an internal harmonic frequency we can observe resonance. As shown first by Kittel and Keffer \cite{PhysRev.82.565, PhysRev.85.329} the resonance frequency is proportional to the square root of the product of anisotropy and exchange energy. The width of the resonance frequency however, as we show below, is linearly proportional to anisotropy and exchange damping. Although exchange damping remains finite, even large, at vanishingly small values of spin-orbit interaction, the anisotropy must vanish. Indeed, not only does spin-orbit connect the spin with the momentum of the electron, it also provides a connection between the crystal lattice and the magnetization direction  \cite{hellman_interface-induced_2017, dieny_perpendicular_2017}.
+When subjecting an AFM to an oscillating magnetic field, the localized spins will exhibit a precession parallel to the magnetic field direction. By tuning the magnetic field's frequency to an internal harmonic frequency we can observe resonance. As shown first by Kittel and Keffer \cite{PhysRev.82.565, PhysRev.85.329} the resonance frequency is proportional to the square root of the product of anisotropy and exchange energy. The width of the resonance frequency however, as we show below, is linearly proportional to anisotropy and exchange damping. Although exchange damping remains finite, even large, at vanishingly small values of spin-orbit interaction, the anisotropy can in general vanish. Note that only does spin-orbit connect the spin with the momentum of the electron, it also provides a connection between the crystal lattice and the magnetization direction  \cite{hellman_interface-induced_2017, dieny_perpendicular_2017}. We therefore model the magnetocrystalline anisotropy as emerging from the conducting electrons. 
 
-A direct calculation from the grand potential (see Appendix~\ref{app:D}), we find that the Rashba honeycomb lattice exhibits an out-of-plane and easy-axis anisotropy. Close to $\bb{n}=\bb{n}_\perp$ the magnetostatic anisotropy energy is given by
+A direct calculation from the grand potential (see Appendix~\ref{app:D}), we find that the Rashba honeycomb lattice exhibits an out-of-plane and easy-axis anisotropy. Close to $\bb{n}=\bb{n}_\perp$ the magnetocrystalline anisotropy energy is given by
 \begin{equation}
     E = -\frac{K}{2}n_z^2, \quad K= \frac{1}{2\pi\hbar^2v^2}\begin{cases}
     |\Delta^2\lambda|  &  \text{for } |\lambda/2\Delta| \geq 1 \\
@@ -305,7 +304,7 @@ After dropping $\alpha_n$ and neglecting terms $\mathcal{O}(K/J_\text{ex})$ we g
     %     &  \text{for } |\lambda/2\Delta| \leq 1 
     % \end{cases}
 \end{align}
-which is the main result of this Chapter. The reciprocals of $\sqrt{K}$ and $\bar{\alpha}_m^{\para}$ are plotted in Fig.~\ref{fig:max}. As one would expect, the quality factor vanishes in both limits $\lambda\rightarrow0$ and $\lambda\rightarrow\infty$. The formal limit corresponds to an overdamped regime and no resonance can be observed, the latter limit corresponds to a small and constant damping but the width $\delta\omega$ grows faster than $\omega_0$ as a function of $\lambda$, leading to a vanishing $Q$ as well. As mentioned above, the $Q$ has a maximum value when $\lambda\tau=1$. 
+which is the main result of this Chapter. The reciprocals of $\sqrt{K}$ and $\bar{\alpha}_m^{\para}$ are plotted in Fig.~\ref{fig:max}. As one would expect, the quality factor vanishes in both limits $\lambda\rightarrow0$ and $\lambda\rightarrow\infty$. The formal limit corresponds to an overdamped regime and no resonance can be observed, the latter limit corresponds to a small and constant damping but the width $\delta\omega$ grows faster than $\omega_0$ as a function of $\lambda$, leading to a vanishing $Q$ as well. As mentioned above, the quality factor $Q$ has a maximum value when $\lambda\tau=1$. 
 
 \begin{figure}
 \begin{subfigure}{.5\textwidth}
@@ -324,4 +323,7 @@ which is the main result of this Chapter. The reciprocals of $\sqrt{K}$ and $\ba
 \label{fig:max}
 \end{figure}
 
-In conclusion, we were able to 
+In conclusion, we calculated two components of the exchange Gilbert damping, $\alpha_m^\perp$ and $\alpha_m^\para$ corresponding to perpendicular-to-the-plane and parallel-to-the-plane damping, as a function of $\lambda\tau$. In the regime where $\lambda\tau\ll1$, we find that both the functional dependence of $\alpha_m^\para$ and $\alpha_m^\perp$ components and their relative anisotropy are fully described by Dyakonov-Perel relaxation. In the opposite regime, $\lambda\tau\gg1$, we find $\alpha_m^\para\propto \tau$ and is attributed to Dyakonov-Perel, rather than Elliot-Yafet. The $\alpha_m^\perp$ coefficient and its relative anisotropy with $\alpha_m^\para$  on the other hand cannot be explained by Dyakonov-Perel and is attributed to forbidden interband transitions that appear when the band-splitting is resolved. 
+
+The Dyakonov-Perel-like dependence of $\alpha_m^\para$ could be probed in an AFM resonance experiment. The anisotropy is modelled as originating from the conducting electrons, which is accurate for bulk magnets where large spin-orbit interactions lead to large magnetocrystalline anisotropy. It is important to note that some two-dimensional crystals  have relatively large magnetocrystalline anisotropy despite small spin-orbit couplings \cite{dieny_perpendicular_2017}. A large Rashba-type spin-orbit can be induced in our system however by placing our two-dimensional antiferromagnet on a heavy metal substrate. The magnetocrystalline anisotropy together with the parallel-to-the-plane Gilbert damping  leads to a widening of the antiferromagnetic resonance. The quality factor $Q$, defined as the ratio between the resonance frequency and the resonance frequency width, shows a peaked behavior around $\lambda\tau=1$. For smaller values of $\lambda\tau$ the quality factor decreases due to overdamping, while for larger values the anisotropy out competes the damping that leads to a decrease as well.
+
