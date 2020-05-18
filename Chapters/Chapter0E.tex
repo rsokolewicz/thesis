@@ -2,19 +2,19 @@
 \section{Calculation of the anisotropy constant $K$}
 The anisotropy constant is obtained from the grand potential energy $\Omega$ describing the conducting electrons. We express the grand potential density as
 \begin{equation}
-    \Omega = {\color{red} -} \sum_{\tau=\pm}\frac{1}{\beta} \int \mathrm{d}\varepsilon\,g(\varepsilon) \nu_\tau(\varepsilon),
-    \label{b1}
+    \Omega = { -} \sum_{\varsigma=\pm}\frac{1}{\beta} \int \mathrm{d}\varepsilon\,g(\varepsilon) \nu_\varsigma(\varepsilon),
+    \label{eq:b1}
 \end{equation}
 with
 \begin{align}
-    \nu_\tau(\varepsilon) = & \frac{1}{\pi} \tr_{\sigma,\Sigma} \int \frac{\mathrm{d}^2p}{(2\pi\hbar)^2}\,\im G^\text{R}_{\tau,\bb{p}}
-    \label{eq:nu}
+    \nu_\varsigma(\varepsilon) = & \frac{1}{\pi} \tr_{\sigma,\Sigma} \int \frac{\mathrm{d}^2p}{(2\pi\hbar)^2}\,\im G^\text{R}_{\varsigma,\bb{p}}
+    \label{eq:bnu}
 \end{align}
-where the trace runs over spin and sublattice indices $\tau=\pm$ denotes the valleys $\bb{K}$ and $\bb{K}'$,  $G^\text{R(A)}_{\tau,\bb{p}}$ are the clean retarded and advanced Green functions with momentum $\bb{p}$ (evaluated at zero disorder strength) in valley $\tau$, $\beta$ is the inverse temperature, and the function $g(\varepsilon)$ is given by
+where the trace runs over spin and sublattice indices $\varsigma=\pm$ denotes the valleys $\bb{K}$ and $\bb{K}'$,  $G^\text{R(A)}_{\varsigma,\bb{p}}$ are the clean retarded and advanced Green functions with momentum $\bb{p}$ (evaluated at zero disorder strength) in valley $\varsigma$, $\beta$ is the inverse temperature, and the function $g(\varepsilon)$ is given by
 \begin{equation}
     g(\varepsilon) = \log \big(1+\exp[\beta(\mu-\varepsilon)]\big).
 \end{equation}
-We place the chemical potential in the upper band and the energy integration can be restricted to positive energies as the bottom two bands are filled and can only lead to a constant shift in $\Omega$ that we disregard. The evaluation of Eq.~(\ref{eq:nu}) yields the following density of states
+We place the chemical potential in the upper band and the energy integration can be restricted to positive energies as the bottom two bands are filled and can only lead to a constant shift in $\Omega$ that we disregard. The evaluation of Eq.~(\ref{eq:bnu}) yields the following density of states
 \begin{align}
     \nu_\tau(\varepsilon) 
     = \frac{1}{2\pi \hbar^2 v^2}& \begin{cases}
@@ -22,29 +22,29 @@ We place the chemical potential in the upper band and the energy integration can
     \varepsilon/2 +\lambda/4 & \text{for } \varepsilon_2 < \varepsilon < \varepsilon_1\\
     \varepsilon & \text{for } \varepsilon > \varepsilon_1
     \end{cases}
-    \label{eq:nu}
+    % \label{eq:nu}
 \end{align} 
 where the energies $\varepsilon_{1,2}$ correspond to the extremal points top the bands (counted from above)
 \begin{align}
-    \varepsilon_1 & = \frac{1}{2}\big(+\lambda+\sqrt{4\Delta^2+\lambda^2-4\tau\Delta\lambda n_z} \big),    \label{eq:elimits1}\\
-    \varepsilon_2 & = \frac{1}{2}\big(-\lambda+\sqrt{4\Delta^2+\lambda^2+4\tau\Delta\lambda n_z} \big)
+    \varepsilon_{1,\varsigma} & = \frac{1}{2}\big(+\lambda+\sqrt{4\Delta^2+\lambda^2-4\varsigma\Delta\lambda n_z} \big),    \label{eq:elimits1}\\
+    \varepsilon_{2,\varsigma} & = \frac{1}{2}\big(-\lambda+\sqrt{4\Delta^2+\lambda^2+4\varsigma\Delta\lambda n_z} \big)
     \label{eq:elimits2}
 \end{align}
 
-In the limit of zero temperature we can approximate Eq.~(\ref{b1}) as
+In the limit of zero temperature we can approximate Eq.~(\ref{eq:b1}) as
 \begin{equation}
-    \Omega = {\color{red}-}\sum_{\tau=\pm}\frac{1}{\beta}\int_0^\infty \mathrm{d}\varepsilon\,(\mu-\varepsilon)\nu_\tau(\varepsilon)
+    \Omega = {-}\sum_{\varsigma=\pm}\frac{1}{\beta}\int_0^\infty \mathrm{d}\varepsilon\,(\mu-\varepsilon)\nu_\varsigma(\varepsilon)
     \label{eq:newomega}
 \end{equation}
-\begin{equation}
-    {\color{red}\Omega = - \sum_{\tau=\pm}\int_0^\mu \mathrm{d}\varepsilon\,(\mu-\varepsilon)\nu_\tau(\varepsilon)}
-    \label{eq:newomega}
-\end{equation}
-and by inserting Eq.~(\ref{eq:nu}) in above's equation we find, 
+and by inserting Eq.~(\ref{eq:bnu}) in above's equation we find, 
 \begin{multline}
-    {\color{red}-}\Omega = \sum_{\tau=\pm}\frac{1}{24\pi\hbar^2v^2}\big(4 \mu ^3+4 \epsilon_1^3-3 \epsilon_1^2 (\lambda +2 \mu )+6 \lambda  \mu  \epsilon_1\\+\epsilon_2^2 (3 \lambda +4 \epsilon_2)-6 \mu  \epsilon_2 (\lambda +\epsilon_2)\big)
+    \Omega = -\sum_{\varsigma=\pm}\frac{(\varepsilon_{1,\varsigma}-\mu)^2(4\varepsilon_{1,\varsigma}-3\lambda+2\mu)+(\varepsilon_{2,\varsigma}-\mu)^2(4\varepsilon_{2,\varsigma}+3\lambda+2\mu)}{24\pi\hbar^2v^2}
 \end{multline}
-A careful analysis shows that the minimal energy corresponds to $n_z=\pm1$ so that the conducting electrons prefer an easy-axis magnetic anisotropy. By inserting Eqs.~(\ref{eq:elimits1}, \ref{eq:elimits2}) and by expanding around $n_z=\pm1$ we obtain 
+A careful analysis shows that the minimal energy corresponds to $n_z=\pm1$ so that the conducting electrons prefer an easy-axis magnetic anisotropy. By inserting Eqs.~(\ref{eq:elimits1}, \ref{eq:elimits2}) into the above equation we find
+\begin{equation}
+	\Omega = -\frac{(4\Delta^2-4n_z \Delta\lambda+\lambda^2)^{2/3}+(4\Delta^2+4n_z \Delta\lambda+\lambda^2)^{2/3}-24\Delta\mu+8\mu^3}{24\pi\hbar^2v^2}
+\end{equation}
+and by expanding in powers of $n_z^2$ around $n_z=\pm1$ we obtain 
 \begin{equation}
     \Omega = -\frac{K}{2}n_z^2, \quad K= \frac{1}{2\pi\hbar^2v^2}\begin{cases}
     |\Delta^2\lambda| & \text{for } |\lambda/2\Delta| \geq 1 \\

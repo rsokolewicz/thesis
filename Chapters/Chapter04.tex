@@ -107,7 +107,7 @@ In a truly diffusive system one should take the limit $i\rightarrow\infty$, in w
     \bar{\alpha}_{m}^{\perp}\equiv\bar{\alpha}_{m}^{\perp\,(\infty)}  & = \frac{\epsilon \tau}{\hbar}\, \frac{1}{\lambda^2\tau^2},\\
   \label{eq:alphaparallelzerodelta}  \bar{\alpha}_{m}^{\para}\equiv\bar{\alpha}_{m}^{\para\,(\infty)}  & = \frac{\varepsilon\tau}{\hbar}\,2\frac{1+\lambda^2\tau^2}{\lambda^2\tau^2}.
 \end{align}
-We plot the functions of $\bar{\alpha}_{m}^{\perp(\para)\,(i)}$ for $i=0,1,2$ and $i\rightarrow\infty$ in Fig.~\ref{fig:alpha_plot}. 
+We plot the functions of $\bar{\alpha}_{m}^{\perp(\para)\,(i)}$ for $i=0,1,2$ and $i\rightarrow\infty$ in Fig.~\ref{fig:alpha_plot} and a numerical result with finite $\Delta$ in Fig.~\ref{fig:alpha_plot_full}. 
 \begin{figure}
     \centering
     \includegraphics[width=0.6\linewidth]{gfx/alpha_plot2}
@@ -144,7 +144,7 @@ We note that a large value for damping corresponds to an overdamped regime, whic
     \centering
     \includegraphics[width=0.6\linewidth]{gfx/alpha_full2}
     \caption{Fully vertex-corrected parallel and perpendicular Gilbert damping. In the limit $\lambda\tau\ll1$ we find the limiting behavior $(4)2(\Delta^2+\varepsilon^2)/3\Delta^2$ for $\bar{\alpha}_m^{\perp(\para)}$. When $\lambda\tau\ll 1$ and $\lambda\tau\gg\Delta/\varepsilon$ we find a scaling behavior $\bar{\alpha}_m^{\perp(\para)}=(1)2/\lambda^2\tau^2$. Note the use of log-scale on both vertical and horizontal axis. The plot is obtained using $\varepsilon\tau=50$ and $\Delta\tau=0.1$. }
-    \label{fig:alpha_plot}
+    \label{fig:alpha_plot_full}
 \end{figure}
 
 
@@ -158,27 +158,29 @@ Note that in Eqs.~(\ref{eq:alphapara},\ref{eq:alphaperp}) in the limits $\lambda
         	& \quad \text{for } \lambda\tau\gg 1.
     \end{cases}
 \end{equation}
-The second limit is what we referred to as the giant Gilbert damping anisotropy in the previous Chapter. The factor of two in the former limit is well known in the literature (e.g. \cite{DYAKONOV1986, aronov_spin_1983, averkiev_spin_2002, burkov_theory_2004}) that we explain further below. Note that this factor is absent in Eqs.~(\ref{eq:perpi},\ref{eq:parai}) and only appears in the diffusive limit. 
+The second limit is what we referred to as the giant Gilbert damping anisotropy in the previous Chapter. The factor of two in the former limit is well known in the literature (e.g. \cite{DYAKONOV1986, aronov_spin_1983, averkiev_spin_2002, burkov_theory_2004}) and was explained in Section~\ref{intro:gilbert}. Note that this factor is absent in Eqs.~(\ref{eq:perpi},\ref{eq:parai}) and only appears in the diffusive limit. 
 
 It is worth reminding the reader that we use a particular model to describe spin-relaxation. The relaxation is fully described by the combination of spin-orbit interaction and scattering of electrons of an impurity potential. A Rashba-type spin-orbit interaction is described as electrons moving through an asymmetric potential. In their own reference frame the electrons experience a momentum-dependent magnetic field that leads to the spin-splitting of the conduction band. 
 
 In the presence of a spin-orbit field, the spin of the electron will precess around the direction of that field with a certain frequency $\Omega_s$. We can then distinguish two cases: (i) $\Omega_s \tau < 1$ where between each scattering event the spin does not have enough time to deviate from its initial spin direction in a significant manner, and (ii) $\Omega_s\tau>1$ where the electron spin can precess freely between each collision. 
 
-Dyakonov and Perel \cite{dyakonov1972spin, DYAKONOV1986} used this simple picture to calculate the spin-relaxation in non-centrosymmetric semiconductors like GaAs (where spin-orbit interaction is of Dresselhaus-type)
+In Section~\ref{intro:gilbert} we showed that these two cases lead to the following spin-relaxation of conducting electrons
 \begin{equation}
 	1/\tau_s \sim \begin{cases}
     	\langle \Omega^2_s\tau\rangle & \quad\text{for  } \Omega_s\tau < 1\\
         1/\tau  &\quad \text{for  }  \Omega_s\tau>1,
     \end{cases}
-\end{equation}where $\langle\cdots\rangle$ denotes momentum averaging. Both cases can be understood as follows. In a time-scale set by $\Omega_s$ we find that in the first case the electron experiences many scattering events. Due to the random motion involved, the electrons experience as if moving through a randomly changing magnetic field and as such lose their spin-orientation in a diffusive manner. Each scattering event gives a contribution of $(\Omega_s\tau)^2$ to the total mean squared precession deviation, and the spin-life time may be defined as the time needed for the squared precession deviation to be of the order of unity, i.e. $1\tau_s\sim \Omega_s^2\tau$ \cite{dyakonov_spintronics_2004, dyakonov_spin_2017}. 
+\end{equation}
+where $\langle\cdots\rangle$ denotes momentum averaging. 
+% Both cases can be understood as follows. In a time-scale set by $\Omega_s$ we find that in the first case the electron experiences many scattering events. Due to the random motion involved, the electrons experience as if moving through a randomly changing magnetic field and as such lose their spin-orientation in a diffusive manner. Each scattering event gives a contribution of $(\Omega_s\tau)^2$ to the total mean squared precession deviation, and the spin-life time may be defined as the time needed for the squared precession deviation to be of the order of unity, i.e. $1\tau_s\sim \Omega_s^2\tau$ \cite{dyakonov_spintronics_2004, dyakonov_spin_2017}. 
 
-Because the electrons are confined in two-dimensions the random spin-orbit field is always directed in-plane, which leads to a decrease in the in-plane spin-relaxation rate by a factor of two compared to the out-of-plane spin-relaxation rate as demonstrated first in Ref. \cite{DYAKONOV1986} (see Refs. \cite{aronov_spin_1983, averkiev_spin_2002, burkov_theory_2004, dyakonov_spin_2017} as well).  The reason is that the perpendicular-to-the-plane component is influenced by two components of the randomly changing magnetic field, i.e. $x$ and $y$, whereas the parallel-to-the-plane components only by one component, i.e. $x$ is influenced by $y$ and vice-versa.  
+% Because the electrons are confined in two-dimensions the random spin-orbit field is always directed in-plane, which leads to a decrease in the in-plane spin-relaxation rate by a factor of two compared to the out-of-plane spin-relaxation rate as demonstrated first in Ref. \cite{DYAKONOV1986} (see Refs. \cite{aronov_spin_1983, averkiev_spin_2002, burkov_theory_2004, dyakonov_spin_2017} as well).  The reason is that the perpendicular-to-the-plane component is influenced by two components of the randomly changing magnetic field, i.e. $x$ and $y$, whereas the parallel-to-the-plane components only by one component, i.e. $x$ is influenced by $y$ and vice-versa.  
 
-In the second case on the other hand, the spin can freely rotate around the magnetic field between each collision and this orientation is only lost on the same time scale as momentum is lost, i.e. on the time scale of $\tau$ \cite{aronov_spin_1983, dyakonov_spintronics_2004}, leading to $1/\tau_s \sim 1/\tau$.
+% In the second case on the other hand, the spin can freely rotate around the magnetic field between each collision and this orientation is only lost on the same time scale as momentum is lost, i.e. on the time scale of $\tau$ \cite{aronov_spin_1983, dyakonov_spintronics_2004}, leading to $1/\tau_s \sim 1/\tau$.
 
 The mechanism leading to Dyakonov-Perel relaxation of the electron's spin can be generally understood quite classically \cite{dyakonov_spintronics_2004}. In the regime $\Omega_s \tau > 1$ we found however that $\bar{\alpha}_m^{\perp}$ does not follow Dyakonov-Perel and is a result of forbidden interband transitions. 
 
-It is also important to note that the relaxation rate $1/\tau_s\sim 1/\tau$ that we find for $\bar{\alpha}_m^{\para}$ in the regime $\Omega_s \tau > 1$ also appears in processes described by the Elliot-Yafet mechanism \cite{elliott_theory_1954, yafet_g_1963}, where, unlike in the Dyakonov-Perel case, spin-relaxation occurs \emph{during} collisions with impurities. This contribution was calculated in Ref. \cite{huertas-hernando_spin-orbit-mediated_2009} for intrinsic graphene with Rashba spin-orbit (but without the local exchange $\Delta$) showing $1/\tau_s \sim \lambda^2/\varepsilon^2 \times 1/\tau $ and has therefore a negligible contribution in the high-energy regime (i.e. $\varepsilon \gg \lambda + \Delta$) that we consider.
+The relaxation rate $1/\tau_s\sim 1/\tau$ that we find for $\bar{\alpha}_m^{\para}$ in the regime $\Omega_s \tau > 1$ also appears in processes described by the Elliot-Yafet mechanism \cite{elliott_theory_1954, yafet_g_1963}, where, unlike in the Dyakonov-Perel case, spin-relaxation occurs \emph{during} collisions with impurities. This contribution was calculated in Ref. \cite{huertas-hernando_spin-orbit-mediated_2009} for intrinsic graphene with Rashba spin-orbit (but without the local exchange $\Delta$) showing $1/\tau_s \sim \lambda^2/\varepsilon^2 \times 1/\tau $ and has therefore a negligible contribution in the high-energy regime (i.e. $\varepsilon \gg \lambda + \Delta$) that we consider.
 %%%
 %%%
 
@@ -210,7 +212,7 @@ It is also important to note that the relaxation rate $1/\tau_s\sim 1/\tau$ that
 
 The reader might have noticed that in the limit $\lambda\tau\rightarrow0$ Eqs.~(\ref{eq:alphapara},\ref{eq:alphaperp}) remain anisotropic, in contradiction to the symmetry analysis presented in the previous Chapter. Indeed, a direct calculation with $\lambda\tau=0$ gives the isotropic damping $\bar{\alpha}_m^{\perp}=\bar{\alpha}_m^{\para}=(\varepsilon^2+\Delta^2)/\Delta^2$, suggesting a certain scale over which the anisotropy emerges. The numerical analysis illustrated in Fig.~\ref{fig:num_test} however reveals that the scale does not depend on the values of $\Delta$ or $\varepsilon$, but rather on the numerical precision instead. In other words, an isotropic Gilbert damping is obtained only when the spin-orbit strength is set below numerical precision. This strongly suggests that the transition between isotropic to anisotropic damping occurs at exactly $\lambda=0$. 
 
-However, we defined Gilbert damping as the spin-response to the time-derivative of a \emph{uniform} magnetization. In other words the response was computed in the long wavelength limit $q\rightarrow0$, which is exactly the scale we were looking for. We find therefore that taking the limit $q\rightarrow0$ first and then the limit $\lambda\rightarrow0$ leads to anisotropic Gilbert damping, whereas in the opposite order of limits we find isotropic Gilbert damping.  
+However, we defined Gilbert damping as the spin-response to the time-derivative of a \emph{uniform} magnetization. In other words the response was computed in the long wavelength limit $q\rightarrow0$ (see e.g. Eq.~(\ref{chap1:eq:skuboB}) in Appendix~\ref{app:A}), which is exactly the scale we were looking for. We find therefore that taking the limit $q\rightarrow0$ first and then the limit $\lambda\rightarrow0$ leads to anisotropic Gilbert damping, whereas in the opposite order of limits we find isotropic Gilbert damping.  
 
 \begin{figure}
     \centering
