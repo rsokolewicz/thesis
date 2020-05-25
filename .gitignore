@@ -1,3 +1,4 @@
+
 *.zip
 *.aux
 *.glo
@@ -27,3 +28,4 @@
 *.synctex.gz
 mythesis.pdf
 *bibtex_*
+.DS_Store
