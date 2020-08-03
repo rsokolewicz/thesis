@@ -57,7 +57,7 @@ Finally, the $s$--$d$-like exchange interaction between localized magnetic momen
 \label{chap02:ex}
 H_\mathrm{sd}=-J \s_{i} \s_{\sigma\sigma'}\bb{S}_i\cdot \bb{\sigma}_{\sigma\sigma'}c^\dagger_{i\sigma}c\0_{i\sigma'},
 \e
-with the coupling strength $J$ taken here to be the same on $A$ and $B$ sublattices. The term (\ref{chap02:ex}) couples the tight-binding model for conduction electrons to a  classical Heisenberg model for localized angular momenta $\bb{S}_i$ with antiferromagnetic ground state. The localized momenta $\bb{S}_i$ are assumed to have large absolute value $|\bb{S}_i|=S\gg 1$. The characteristic $s$--$d$ exchange energy is given by $\Delta_\text{sd} = J S$.  For conductivity and non-equilibrium spin density computations we assume the single-domain antiferromagnetic order, that is characterized by the unit N\'eel vector $\bb{n} = (\bb{S}^\textrm{A}-\bb{S}^\textrm{B})/2S$. 
+with the coupling strength $J$ taken here to be the same on $A$ and $B$ sublattices. The term (\ref{chap02:ex}) couples the tight-binding model for conduction electrons to a  classical Heisenberg model for localized angular momenta $\bb{S}_i$ with antiferromagnetic ground state. The localized momenta $\bb{S}_i$ are assumed to have large absolute value $|\bb{S}_i|=S\gg 1$. The characteristic $s$--$d$ exchange energy is given by $\Delta_\text{sd} = J_\text{sd} S$.  For conductivity and non-equilibrium spin density computations we assume the single-domain antiferromagnetic order, that is characterized by the unit N\'eel vector $\bb{n} = (\bb{S}^\textrm{A}-\bb{S}^\textrm{B})/2S$. 
 
 Equal exchange couplings on both sublattices in Eq.~(\ref{chap02:ex}) and Rashba spin-orbit interaction of Eq.~(\ref{chap02:rashba}) ensure sublattice symmetry that greatly simplifies the results. In what follows we refer to the model as the symmetric model. At the end of the Chapter we also consider a more complex version of the model, where the sublattice symmetry is broken by a strong asymmetry of $s$--$d$ couplings on $A$ and $B$ sublattices.
  
@@ -240,7 +240,7 @@ where $\bb{s}_\pm=(\bb{s}_A\pm\bb{s}_B)/2$. The right-hand sides of Eqs.~(\ref{c
 \e
 where $\delta \bb{s}_\pm$ refers to the non-equilibrium spin density contribution that is proportional to $\delta\mu$. 
 
-Note that, generally, the average spin $\bb{s}_i$ has a non-local functional dependence on the time-dependent classical field $\bb{S}_j$ at preceding moments of time  and at different lattice sites $j\neq i$. The degree of non-locality is defined by relaxation processes. The quicker the relaxation the more local the functional dependence. In particular, non-dissipative contributions to spin-orbit torques (the so-called field-like contributions) are local in time on the time scales of the order of $s$--$d$ exchange  $\tau_\textrm{sd}=\hslash/\Delta_\text{sd}$, where $\Delta_\text{sd}=J S$. In contrast, the dissipative contributions (such as anti-damping torques) are defined by transport scattering time $\tau_\textrm{tr}$. The latter time scale may be both larger and smaller than $\tau_\textrm{sd}$ giving rise to different regimes of magnetization dynamics. For the sake of numerical analysis we consider, however, a situation when these two time scales are of the same order.
+Note that, generally, the average spin $\bb{s}_i$ has a non-local functional dependence on the time-dependent classical field $\bb{S}_j$ at preceding moments of time  and at different lattice sites $j\neq i$. The degree of non-locality is defined by relaxation processes. The quicker the relaxation the more local the functional dependence. In particular, non-dissipative contributions to spin-orbit torques (the so-called field-like contributions) are local in time on the time scales of the order of $s$--$d$ exchange  $\tau_\textrm{sd}=\hslash/\Delta_\text{sd}$, where $\Delta_\text{sd}=J_\text{sd} S$. In contrast, the dissipative contributions (such as anti-damping torques) are defined by transport scattering time $\tau_\textrm{tr}$. The latter time scale may be both larger and smaller than $\tau_\textrm{sd}$ giving rise to different regimes of magnetization dynamics. For the sake of numerical analysis we consider, however, a situation when these two time scales are of the same order.
 
 \section{Symmetry consideration} 
 
@@ -395,7 +395,7 @@ In order to compute non-equilibrium spin-densities we repeat the analysis of the
 
 The metal regime is characterized by two Fermi surfaces per valley, while the half-metal regime is characterized by a single Fermi surface per valley. The Fermi surfaces are illustrated in Fig.~\ref{chap02:fig:FSas} for $\theta=-\phi=\pi/4$, where $\theta$ and $\phi$ are now the polar and azimuthal angles of the unit vector $\bb{m}^\textrm{A}=(\cos\phi\sin\theta,\sin\phi\sin\theta,\cos\theta)^\top$, correspondingly. 
 
-For numerical simulations we choose $\Delta_\text{sd}= J S=0.1\,t_h$, $\lambda=0.05\,t_h$, and $V_\textrm{d}=0.5\,t_h$ as for the symmetric model. 
+For numerical simulations we choose $\Delta_\text{sd}= J_\text{sd} S=0.1\,t_h$, $\lambda=0.05\,t_h$, and $V_\textrm{d}=0.5\,t_h$ as for the symmetric model. 
 
 Similarly to Eq.~(\ref{chap02:low}) the low energy sector of the asymmetric model is represented by the following effective Hamiltonian
 \be

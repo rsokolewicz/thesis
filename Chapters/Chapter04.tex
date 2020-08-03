@@ -11,7 +11,7 @@ Parts of this Chapter are under preparation for submission to Physical Review Le
 
 % In this Chapter we investigate the role of Rashba spin orbit interaction on the exchange Gilbert damping in a honeycomb antiferromagnet. We find that when the band splitting due to spin orbit is much smaller than the disorder-induced level broadening, disorder averaging will lead to a titanically large value of exchange Gilbert damping, which reflects the fact that it requires many scattering events to randomize the spin of a conducting electron. In the opposite limit where the spin-split bands can indeed be resolved the damping becomes suppressed by many orders of magnitude. Furthermore the damping becomes ultimately anisotropic which was the topic of the previous Chapter. We report that in the antiferromagnetic resonance spectrum we can directly see the effect of the exchange damping. In the large damping regime the magnetic system becomes overdamped and no resonance can be observed. The resonance appears to get a maximum value when the spin-orbit coupling has a value equal to the inverse momentum life-time of conducting electrons. 
 
-% Before introducing our model system, let us briefly make a few general observations about conducting antiferromagnets. Consider two magnetization vectors $\bb{m}_\text{A}$ and $\bb{m}_\text{B}$ on two sublattices of a antiferromagnet and furthermore conducting electrons with spin-polarizations $\bb{s}_\text{A(B)}$. An exchange interaction $\Delta$ couples the spin degree of freedom with the magnetization on each sublattice locally, leading to the following equations of motion on magnetization vectors
+% Before introducing our model system, let us briefly make a few general observations about conducting antiferromagnets. Consider two magnetization vectors $\bb{m}_\text{A}$ and $\bb{m}_\text{B}$ on two sublattices of a antiferromagnet and furthermore conducting electrons with spin-polarizations $\bb{s}_\text{A(B)}$. An exchange interaction $\Delta_\text{sd}$ couples the spin degree of freedom with the magnetization on each sublattice locally, leading to the following equations of motion on magnetization vectors
 % \beml
 % \label{basicEQ}
 % \begin{align}
@@ -107,7 +107,7 @@ In a truly diffusive system one should take the limit $i\rightarrow\infty$, in w
     \bar{\alpha}_{m}^{\perp}\equiv\bar{\alpha}_{m}^{\perp\,(\infty)}  & = \frac{\epsilon \tau}{\hbar}\, \frac{1}{\lambda^2\tau^2},\\
   \label{eq:alphaparallelzerodelta}  \bar{\alpha}_{m}^{\para}\equiv\bar{\alpha}_{m}^{\para\,(\infty)}  & = \frac{\varepsilon\tau}{\hbar}\,2\frac{1+\lambda^2\tau^2}{\lambda^2\tau^2}.
 \end{align}
-We plot the functions of $\bar{\alpha}_{m}^{\perp(\para)\,(i)}$ for $i=0,1,2$ and $i\rightarrow\infty$ in Fig.~\ref{fig:alpha_plot} and a numerical result with finite $\Delta$ in Fig.~\ref{fig:alpha_plot_full}. 
+We plot the functions of $\bar{\alpha}_{m}^{\perp(\para)\,(i)}$ for $i=0,1,2$ and $i\rightarrow\infty$ in Fig.~\ref{fig:alpha_plot} and a numerical result with finite $\Delta_\text{sd}$ in Fig.~\ref{fig:alpha_plot_full}. 
 \begin{figure}
     \centering
     \includegraphics[width=0.6\linewidth]{gfx/alpha_plot2}
@@ -117,25 +117,25 @@ We plot the functions of $\bar{\alpha}_{m}^{\perp(\para)\,(i)}$ for $i=0,1,2$ an
 
 We find that indeed in the limit $\lambda\tau\gg1$ the exchange Gilbert damping becomes ultimately anisotropic where $\bar{\alpha}_{m}^{\perp}$ becomes vanishingly small, corresponding to the main result of the previous Chapter. Moreover, we find a substantial drop of $\bar{\alpha}_{m}^{\para}$ for increasing values of $\lambda\tau$, that can reach a difference of many orders of magnitude. 
 
-We note that a large value for damping corresponds to an overdamped regime, which we will explain in details in the next section. The direct exchange parameter $\Delta$ leads to a cut-off of the $1/(\lambda\tau)$ singularity in the limit $\lambda\tau\ll1$:
+We note that a large value for damping corresponds to an overdamped regime, which we will explain in details in the next section. The direct exchange parameter $\Delta_\text{sd}$ leads to a cut-off of the $1/(\lambda\tau)$ singularity in the limit $\lambda\tau\ll1$:
 
 \begin{align}
 \label{eq:alphapara}
     \bar{\alpha}_m^{\para} &= 
     {\varepsilon\tau}\,  \begin{cases}
-        \frac{4}{3}\frac{\varepsilon^2+\Delta^2}{\Delta^2}
-            &\quad \text{for } \lambda\tau        \ll \Delta/\varepsilon\\
+        \frac{4}{3}\frac{\varepsilon^2+\Delta_\text{sd}^2}{\Delta_\text{sd}^2}
+            &\quad \text{for } \lambda\tau        \ll \Delta_\text{sd}/\varepsilon\\
         2\frac{1+(\lambda\tau)^2}{(\lambda\tau)^2}
-            &\quad \text{for } \lambda\tau \gg \Delta/\varepsilon 
+            &\quad \text{for } \lambda\tau \gg \Delta_\text{sd}/\varepsilon 
     \end{cases}\\
     %
     \label{eq:alphaperp}
     \bar{\alpha}_m^{\perp} &= {\varepsilon\tau}\,
     \begin{cases}
-        \frac{2}{3}\frac{\varepsilon^2+\Delta^2}{\Delta^2}
-            \quad\quad &\text{for } \lambda\tau        \ll \Delta/\varepsilon\\
+        \frac{2}{3}\frac{\varepsilon^2+\Delta_\text{sd}^2}{\Delta_\text{sd}^2}
+            \quad\quad &\text{for } \lambda\tau        \ll \Delta_\text{sd}/\varepsilon\\
         \frac{1}{(\lambda\tau)^2}
-            \quad &\text{for } \lambda\tau \gg \Delta/\varepsilon 
+            \quad &\text{for } \lambda\tau \gg \Delta_\text{sd}/\varepsilon 
     \end{cases}
 \end{align}
 %%%
@@ -143,7 +143,7 @@ We note that a large value for damping corresponds to an overdamped regime, whic
 \begin{figure}
     \centering
     \includegraphics[width=0.6\linewidth]{gfx/alpha_full2}
-    \caption{Fully vertex-corrected parallel and perpendicular Gilbert damping. In the limit $\lambda\tau\ll1$ we find the limiting behavior $(4)2(\Delta^2+\varepsilon^2)/3\Delta^2$ for $\bar{\alpha}_m^{\perp(\para)}$. When $\lambda\tau\ll 1$ and $\lambda\tau\gg\Delta/\varepsilon$ we find a scaling behavior $\bar{\alpha}_m^{\perp(\para)}=(1)2/\lambda^2\tau^2$. Note the use of log-scale on both vertical and horizontal axis. The plot is obtained using $\varepsilon\tau=50$ and $\Delta\tau=0.1$. }
+    \caption{Fully vertex-corrected parallel and perpendicular Gilbert damping. In the limit $\lambda\tau\ll1$ we find the limiting behavior $(4)2(\Delta_\text{sd}^2+\varepsilon^2)/3\Delta_\text{sd}^2$ for $\bar{\alpha}_m^{\perp(\para)}$. When $\lambda\tau\ll 1$ and $\lambda\tau\gg\Delta_\text{sd}/\varepsilon$ we find a scaling behavior $\bar{\alpha}_m^{\perp(\para)}=(1)2/\lambda^2\tau^2$. Note the use of log-scale on both vertical and horizontal axis. The plot is obtained using $\varepsilon\tau=50$ and $\Delta_\text{sd}\tau=0.1$. }
     \label{fig:alpha_plot_full}
 \end{figure}
 
@@ -180,7 +180,7 @@ where $\langle\cdots\rangle$ denotes momentum averaging.
 
 The mechanism leading to Dyakonov-Perel relaxation of the electron's spin can be generally understood quite classically \cite{dyakonov_spintronics_2004}. In the regime $\Omega_s \tau > 1$ we found however that $\bar{\alpha}_m^{\perp}$ does not follow Dyakonov-Perel and is a result of forbidden interband transitions. 
 
-The relaxation rate $1/\tau_s\sim 1/\tau$ that we find for $\bar{\alpha}_m^{\para}$ in the regime $\Omega_s \tau > 1$ also appears in processes described by the Elliot-Yafet mechanism \cite{elliott_theory_1954, yafet_g_1963}, where, unlike in the Dyakonov-Perel case, spin-relaxation occurs \emph{during} collisions with impurities. This contribution was calculated in Ref. \cite{huertas-hernando_spin-orbit-mediated_2009} for intrinsic graphene with Rashba spin-orbit (but without the local exchange $\Delta$) showing $1/\tau_s \sim \lambda^2/\varepsilon^2 \times 1/\tau $ and has therefore a negligible contribution in the high-energy regime (i.e. $\varepsilon \gg \lambda + \Delta$) that we consider.
+The relaxation rate $1/\tau_s\sim 1/\tau$ that we find for $\bar{\alpha}_m^{\para}$ in the regime $\Omega_s \tau > 1$ also appears in processes described by the Elliot-Yafet mechanism \cite{elliott_theory_1954, yafet_g_1963}, where, unlike in the Dyakonov-Perel case, spin-relaxation occurs \emph{during} collisions with impurities. This contribution was calculated in Ref. \cite{huertas-hernando_spin-orbit-mediated_2009} for intrinsic graphene with Rashba spin-orbit (but without the local exchange $\Delta_\text{sd}$) showing $1/\tau_s \sim \lambda^2/\varepsilon^2 \times 1/\tau $ and has therefore a negligible contribution in the high-energy regime (i.e. $\varepsilon \gg \lambda + \Delta_\text{sd}$) that we consider.
 %%%
 %%%
 
@@ -195,29 +195,29 @@ The relaxation rate $1/\tau_s\sim 1/\tau$ that we find for $\bar{\alpha}_m^{\par
 
 % We note that a large value for damping corresponds to an overdamped regime, which we will explain in details in the next section. 
 
-% The direct exchange parameter $\Delta$ can be included perturbatively in both overdamped and underdamped regimes. In the overdamped regime,  $\Delta$ merely introduces a cutoff whereas in the underdamped regime a small modification.
+% The direct exchange parameter $\Delta_\text{sd}$ can be included perturbatively in both overdamped and underdamped regimes. In the overdamped regime,  $\Delta_\text{sd}$ merely introduces a cutoff whereas in the underdamped regime a small modification.
 % \begin{align}
 % \label{eq:alphaparallelzerodelta}
-%     \bar{\alpha}_{m,zz}^{(\infty)}  & = \frac{\epsilon \tau}{\hbar}\, \frac{2}{(2-n_z^2)\lambda^2\tau^2+2\Delta^2/\varepsilon^2},\\
-%     \bar{\alpha}_{m,\para}^{(\infty)}  & = \frac{\varepsilon\tau}{\hbar}\,\frac{2(1+\lambda^2\tau^2)}{(2-n_z^2)\lambda^2\tau^2+2\Delta^2/\varepsilon^2}.
+%     \bar{\alpha}_{m,zz}^{(\infty)}  & = \frac{\epsilon \tau}{\hbar}\, \frac{2}{(2-n_z^2)\lambda^2\tau^2+2\Delta_\text{sd}^2/\varepsilon^2},\\
+%     \bar{\alpha}_{m,\para}^{(\infty)}  & = \frac{\varepsilon\tau}{\hbar}\,\frac{2(1+\lambda^2\tau^2)}{(2-n_z^2)\lambda^2\tau^2+2\Delta_\text{sd}^2/\varepsilon^2}.
 % \end{align}
 % {\color{blue} Need to find correct coefficients for the underdamped regime ($\lambda\tau\gg1$)}
 % that we illustrate in Fig.~\ref{fig:alpha3}.
 % \begin{figure}
 %     \centering
 %     \includegraphics[width=0.75\linewidth]{gfx/Chapter04/alpha_plot1.pdf}
-%     \caption{Fully dressed damping components $\bar{\alpha}_{\para,\perp}$ as a function of $\lambda\tau$ for three values of $\Delta\tau$. Note the use of log-scale on both horizontal and vertical axes.}
+%     \caption{Fully dressed damping components $\bar{\alpha}_{\para,\perp}$ as a function of $\lambda\tau$ for three values of $\Delta_\text{sd}\tau$. Note the use of log-scale on both horizontal and vertical axes.}
 %     \label{fig:alpha3}
 % \end{figure}
 
-The reader might have noticed that in the limit $\lambda\tau\rightarrow0$ Eqs.~(\ref{eq:alphapara},\ref{eq:alphaperp}) remain anisotropic, in contradiction to the symmetry analysis presented in the previous Chapter. Indeed, a direct calculation with $\lambda\tau=0$ gives the isotropic damping $\bar{\alpha}_m^{\perp}=\bar{\alpha}_m^{\para}=(\varepsilon^2+\Delta^2)/\Delta^2$, suggesting a certain scale over which the anisotropy emerges. The numerical analysis illustrated in Fig.~\ref{fig:num_test} however reveals that the scale does not depend on the values of $\Delta$ or $\varepsilon$, but rather on the numerical precision instead. In other words, an isotropic Gilbert damping is obtained only when the spin-orbit strength is set below numerical precision. This strongly suggests that the transition between isotropic to anisotropic damping occurs at exactly $\lambda=0$. 
+The reader might have noticed that in the limit $\lambda\tau\rightarrow0$ Eqs.~(\ref{eq:alphapara},\ref{eq:alphaperp}) remain anisotropic, in contradiction to the symmetry analysis presented in the previous Chapter. Indeed, a direct calculation with $\lambda\tau=0$ gives the isotropic damping $\bar{\alpha}_m^{\perp}=\bar{\alpha}_m^{\para}=(\varepsilon^2+\Delta_\text{sd}^2)/\Delta_\text{sd}^2$, suggesting a certain scale over which the anisotropy emerges. The numerical analysis illustrated in Fig.~\ref{fig:num_test} however reveals that the scale does not depend on the values of $\Delta_\text{sd}$ or $\varepsilon$, but rather on the numerical precision instead. In other words, an isotropic Gilbert damping is obtained only when the spin-orbit strength is set below numerical precision. This strongly suggests that the transition between isotropic to anisotropic damping occurs at exactly $\lambda=0$. 
 
 However, we defined Gilbert damping as the spin-response to the time-derivative of a \emph{uniform} magnetization. In other words the response was computed in the long wavelength limit $q\rightarrow0$ (see e.g. Eq.~(\ref{chap1:eq:skuboB}) in Appendix~\ref{app:A}), which is exactly the scale we were looking for. We find therefore that taking the limit $q\rightarrow0$ first and then the limit $\lambda\rightarrow0$ leads to anisotropic Gilbert damping, whereas in the opposite order of limits we find isotropic Gilbert damping.  
 
 \begin{figure}
     \centering
     \includegraphics[width=0.6\linewidth]{gfx/numerical_test}
-    \caption{The numerical evaluation only yields isotropic Gilbert damping ($\bar{\alpha}_{\para}/\bar{\alpha}_{\perp}=1$) when $\lambda\tau$ is set below numerical precision. The presented plot is independent of chosen values for $\varepsilon\tau$ and $\Delta\tau$ and only depends on the numerical precision $n$, where $n=32,64,96,128$ is the number of digits contained in each variable during computation (for comparison: a 64 bit, double-precision float generally has about 16 digit precision). }
+    \caption{The numerical evaluation only yields isotropic Gilbert damping ($\bar{\alpha}_{\para}/\bar{\alpha}_{\perp}=1$) when $\lambda\tau$ is set below numerical precision. The presented plot is independent of chosen values for $\varepsilon\tau$ and $\Delta_\text{sd}\tau$ and only depends on the numerical precision $n$, where $n=32,64,96,128$ is the number of digits contained in each variable during computation (for comparison: a 64 bit, double-precision float generally has about 16 digit precision). }
     \label{fig:num_test}
 \end{figure}
 
@@ -230,17 +230,17 @@ When subjecting an AFM to an oscillating magnetic field, the localized spins wil
 A direct calculation from the grand potential (see Appendix~\ref{app:D}), we find that the Rashba honeycomb lattice exhibits an out-of-plane and easy-axis anisotropy. Close to $\bb{n}=\bb{n}_\perp$ the magnetocrystalline anisotropy energy is given by
 \begin{equation}
     E = -\frac{K}{2}n_z^2, \quad K= \frac{1}{2\pi\hbar^2v^2}\begin{cases}
-    |\Delta^2\lambda|  &  \text{for } |\lambda/2\Delta| \geq 1 \\
-    |\Delta\lambda^2|/2  &  \text{for } |\lambda/2\Delta| \leq 1
+    |\Delta_\text{sd}^2\lambda|  &  \text{for } |\lambda/2\Delta_\text{sd}| \geq 1 \\
+    |\Delta_\text{sd}\lambda^2|/2  &  \text{for } |\lambda/2\Delta_\text{sd}| \leq 1
     \end{cases}.
 \end{equation}
 \begin{figure}
     \centering
     \includegraphics[width=0.75\linewidth]{gfx/fig2_new.pdf}
-    \caption{Band-structure around the valley $\bb{K}$ for $n_z=1$. As seen in the right two panels, when $\Delta\geq2\lambda$ the two top bands touch leading to a different functional dependence of the anisotropy. The bands around the valley $\bb{K}'$ are the same but with opposite sign. In all calculations we consider a Fermi energy far above the gap as illustrated by the top dashed line.  }
+    \caption{Band-structure around the valley $\bb{K}$ for $n_z=1$. As seen in the right two panels, when $\Delta_\text{sd}\geq2\lambda$ the two top bands touch leading to a different functional dependence of the anisotropy. The bands around the valley $\bb{K}'$ are the same but with opposite sign. In all calculations we consider a Fermi energy far above the gap as illustrated by the top dashed line.  }
     \label{fig:bands}
 \end{figure}
-The transition from $|\lambda/2\Delta|\le1$ to $|\lambda/2\Delta|\ge1$ correspond to the touching of two of the bands as illustrated in Fig.~\ref{fig:bands}. The resonance frequencies and widths are obtained by including the effect of anisotropy in the equations of motion on $\bb{n}$ and $\bb{m}$
+The transition from $|\lambda/2\Delta_\text{sd}|\le1$ to $|\lambda/2\Delta_\text{sd}|\ge1$ correspond to the touching of two of the bands as illustrated in Fig.~\ref{fig:bands}. The resonance frequencies and widths are obtained by including the effect of anisotropy in the equations of motion on $\bb{n}$ and $\bb{m}$
 \beml
 \label{AFMEOM2}
 \begin{align}
@@ -276,34 +276,34 @@ To obtain the resonance frequency and width we follow a standard recipe of linea
 % \delta\omega \equiv \im \omega = \frac{K (\alpha_m - 2 \alpha_n) + \Omega \alpha_n }{2 +2 \alpha_n^2 - 2 \alpha_n \alpha_m}.
 % \e
 
-The quality factor $Q$ is defined by the ratio $Q=\omega_0/\delta\omega$ and can be maximized with respect to $\lambda$ when $\lambda\tau\sim1$. In the limit $\Delta/\varepsilon\rightarrow0$ it can be seen from Eq.~(\ref{eq:alphaparallelzerodelta}) that the maximum is achieved at exactly $\lambda\tau=1$ (see also Fig.~\ref{fig:max}). For small values of $\Delta/\varepsilon$ the maximum the shift is of the order of $\mathcal{O}\big(\Delta^2/\varepsilon^2\big)$ that we ignore below.
+The quality factor $Q$ is defined by the ratio $Q=\omega_0/\delta\omega$ and can be maximized with respect to $\lambda$ when $\lambda\tau\sim1$. In the limit $\Delta_\text{sd}/\varepsilon\rightarrow0$ it can be seen from Eq.~(\ref{eq:alphaparallelzerodelta}) that the maximum is achieved at exactly $\lambda\tau=1$ (see also Fig.~\ref{fig:max}). For small values of $\Delta_\text{sd}/\varepsilon$ the maximum the shift is of the order of $\mathcal{O}\big(\Delta_\text{sd}^2/\varepsilon^2\big)$ that we ignore below.
 
 After dropping $\alpha_n$ and neglecting terms $\mathcal{O}(K/J_\text{ex})$ we get the result
 % The in-plane damping that appears in the resonance frequency width can be minimized with respect to $\tau$ when $\lambda\tau/\hbar = 1$, which corresponds to \begin{equation}\bar{\alpha}_{m,||}^{(\infty)}=\frac{\varepsilon}{\lambda}\frac{3-(\lambda/\varepsilon)^2}{1-(\lambda/2\varepsilon)^2}, \end{equation}
 % the normalized resonance width  $\delta\omega/\omega$ is then given by
 \begin{align}
     Q &\simeq \frac{2\sqrt{2J_\text{ex}S}}{\sqrt{K}{\alpha}_m^{\para}}\nonumber\\
-    &=\frac{2\sqrt{J_\text{ex}S}\sqrt{\pi^3}\hbar^2v^3S}{\mathcal{A}}\frac{1}{\varepsilon\tau}\frac{\lambda^2\tau^2}{1+\lambda^2\tau^2/\hbar^2}\frac{1}{\Delta^2}
+    &=\frac{2\sqrt{J_\text{ex}S}\sqrt{\pi^3}\hbar^2v^3S}{\mathcal{A}}\frac{1}{\varepsilon\tau}\frac{\lambda^2\tau^2}{1+\lambda^2\tau^2/\hbar^2}\frac{1}{\Delta_\text{sd}^2}
     \begin{cases}
-        1/|\Delta\sqrt{\lambda}|
-        &  \text{for } |\lambda/2\Delta| \geq 1 \\
-        \sqrt{2}/|\sqrt{\Delta}\lambda|
-        &  \text{for } |\lambda/2\Delta| \leq 1 
+        1/|\Delta_\text{sd}\sqrt{\lambda}|
+        &  \text{for } |\lambda/2\Delta_\text{sd}| \geq 1 \\
+        \sqrt{2}/|\sqrt{\Delta_\text{sd}}\lambda|
+        &  \text{for } |\lambda/2\Delta_\text{sd}| \leq 1 
     \end{cases},
-    % &=\frac{\sqrt{2\pi}\hbar v}{2\varepsilon\tau\Delta}\,\frac{\lambda^2\tau^2}{1+\lambda^2\tau^2}\,
+    % &=\frac{\sqrt{2\pi}\hbar v}{2\varepsilon\tau\Delta_\text{sd}}\,\frac{\lambda^2\tau^2}{1+\lambda^2\tau^2}\,
     % \begin{cases}
-    %     1/|\Delta\sqrt{\lambda}|
-    %     &  \text{for } |\lambda/2\Delta| \geq 1 \\
-    %     \sqrt{2}/|\sqrt{\Delta}\lambda|
-    %     &  \text{for } |\lambda/2\Delta| \leq 1 
+    %     1/|\Delta_\text{sd}\sqrt{\lambda}|
+    %     &  \text{for } |\lambda/2\Delta_\text{sd}| \geq 1 \\
+    %     \sqrt{2}/|\sqrt{\Delta_\text{sd}}\lambda|
+    %     &  \text{for } |\lambda/2\Delta_\text{sd}| \leq 1 
     % \end{cases}\\
     % &\rightarrow
-    % \frac{\sqrt{2\pi}\hbar v}{2\varepsilon\Delta}
+    % \frac{\sqrt{2\pi}\hbar v}{2\varepsilon\Delta_\text{sd}}
     % \begin{cases}
-    %     |\sqrt{\lambda}/{\Delta}|
-    %     &  \text{for } |\lambda/2\Delta| \geq 1 \\
-    %     |\sqrt{2}/\sqrt{\Delta}|
-    %     &  \text{for } |\lambda/2\Delta| \leq 1 
+    %     |\sqrt{\lambda}/{\Delta_\text{sd}}|
+    %     &  \text{for } |\lambda/2\Delta_\text{sd}| \geq 1 \\
+    %     |\sqrt{2}/\sqrt{\Delta_\text{sd}}|
+    %     &  \text{for } |\lambda/2\Delta_\text{sd}| \leq 1 
     % \end{cases}
 \end{align}
 which is the main result of this Chapter. The reciprocals of $\sqrt{K}$ and $\bar{\alpha}_m^{\para}$ are plotted in Fig.~\ref{fig:max}. As one would expect, the quality factor vanishes in both limits $\lambda\rightarrow0$ and $\lambda\rightarrow\infty$. The formal limit corresponds to an overdamped regime and no resonance can be observed, the latter limit corresponds to a small and constant damping but the width $\delta\omega$ grows faster than $\omega_0$ as a function of $\lambda$, leading to a vanishing $Q$ as well. As mentioned above, the quality factor $Q$ has a maximum value when $\lambda\tau=1$. 
@@ -321,7 +321,7 @@ which is the main result of this Chapter. The reciprocals of $\sqrt{K}$ and $\ba
 %   \caption{A subfigure}
 %   \label{fig:sub2}
 \end{subfigure}
-\caption{(left) The reciprocal Gilbert damping coefficient $1/\bar{\alpha}_m^{\para}$ peaks at $\lambda\tau=1$ and increase in magnitude for larger values of $\lambda/\varepsilon$. (right) The reciprocal anisotropy constant $1/K$ decays as $1/\sqrt{\lambda}$ when $\lambda\geq2\Delta$ and as $1/{\lambda}$ when $\lambda\leq2\Delta$. Larger values of $\Delta/\varepsilon$ also decreases $1/K$ in magnitude. The round points emphasize the location of $\lambda=2\Delta$.}
+\caption{(left) The reciprocal Gilbert damping coefficient $1/\bar{\alpha}_m^{\para}$ peaks at $\lambda\tau=1$ and increase in magnitude for larger values of $\lambda/\varepsilon$. (right) The reciprocal anisotropy constant $1/K$ decays as $1/\sqrt{\lambda}$ when $\lambda\geq2\Delta_\text{sd}$ and as $1/{\lambda}$ when $\lambda\leq2\Delta_\text{sd}$. Larger values of $\Delta_\text{sd}/\varepsilon$ also decreases $1/K$ in magnitude. The round points emphasize the location of $\lambda=2\Delta_\text{sd}$.}
 \label{fig:max}
 \end{figure}
 
