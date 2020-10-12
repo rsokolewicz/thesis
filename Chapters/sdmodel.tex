@@ -8,11 +8,11 @@ Our model has much in comparison with the $s$--$d$ model \cite{vonsovsky1946exch
 The Hamiltonian describing the localized and conduction electrons is given by
 \begin{multline}
     \hat{H}
-        = \sum_{\mathclap{\{i,j\}\in\text{n.n.}}}\,\Big(\frac{J_{\text{ex}}}{n}\hat{\bb{S}}_i\cdot\hat{\bb{S}}_j - \frac{K}{2n}\hat{\bb{S}}_{z,i}\cdot\hat{\bb{S}}_{z,j}-t_h \hat{c}_i^\dagger\hat{c}_j
-        \Big)\\-\sum_i \big(\gamma\hbar\bb{H}_\text{ext}\cdot\hat{\bb{S}}_i-J_\text{sd}\hat{\bb{S}}_i\cdot\hat{c}_i^\dagger\bb{\sigma}\hat{c}_i\big)+H_\text{tb},
+        = \sum_{\mathclap{\{i,j\}\in\text{n.n.}}}\,\Big(\frac{J_{\text{ex}}}{n}\hat{\bb{S}}_i\cdot\hat{\bb{S}}_j - \frac{K}{2n}\left(\hat{{S}}_{z,i}\right)^2%\cdot\hat{\bb{S}}_{z,j}%-t_h \hat{c}_i^\dagger\hat{c}_j
+        \Big)-\sum_i \big(\gamma\hbar\bb{H}_\text{ext}\cdot\hat{\bb{S}}_i-J_\text{sd}\hat{\bb{S}}_i\cdot\hat{c}_i^\dagger\bb{\sigma}\hat{c}_i\big)+H_\text{tb},
     \label{intro:eq:Hm}%-\lambda i c_i^\dagger \bb{u}_{ij}\cdot\bb{\sigma}\hat{c}_j
 \end{multline}
-with the Heisenberg exchange energy $J_{\text{ex}}$, magnetocrystalline anisotropy constant $K$, $s$--$d$-like exchange energy $J_{\text{sd}}$, creation operators for conduction electrons $\hat{c}^\dagger_l$, spin operators for localized spins $\hat{S}$, Pauli-matrices $\bb{\sigma}$, external magnetic field $\bb{H}_\text{ext}$ and a tight-binding Hamiltonian for conducting electrons $H_\text{tb}$. The first sum is taken over nearest neighbor sites. The gyromagnetic ratio $\gamma$ of the localized electrons is defined as $\gamma=\mu_s/(\hbar S)$, with magnetic moment $\mu_s$. Note that the constant $K$ is inserted in aboves equation phenomenologically, but can be computed as done later in Chapter~\ref{ch:robert} for a honeycomb antiferromagnet.
+with the Heisenberg exchange energy $J_{\text{ex}}$, magnetocrystalline anisotropy constant $K$, $s$--$d$-like exchange energy $J_{\text{sd}}$, creation operators for conduction electrons $\hat{c}^\dagger_l$, spin operators for localized spins $\hat{\bb{S}}_i = (\hat{{S}}_{x,i}, \hat{{S}}_{y,i}, \hat{{S}}_{z,i})$, Pauli-matrices $\bb{\sigma}=(\sigma_x,\sigma_y,\sigma_z)$, external magnetic field $\bb{H}_\text{ext}$ and a tight-binding Hamiltonian for conducting electrons $H_\text{tb}$. The first sum is taken over nearest neighbor sites. The gyromagnetic ratio $\gamma$ of the localized electrons is defined as $\gamma=\mu_s/(\hbar S)$, with magnetic moment $\mu_s$. Note that the constant $K$ is inserted in the equation above phenomenologically, but can be computed as done later in Chapter~\ref{ch:robert} for a honeycomb antiferromagnet.
 
 To describe the full dynamics of the system we assume that the expectation value of of the localized electrons' spins move on a much larger time-scale than the spin-polarization of the conducting electrons. This allows us to decouple the system in two parts. We first derive equations of motion for the localized spins in a classical, mean-field approach by using only the expectation value of conducting electrons spin-polarization. Second, the spin-polarization of the conducting electrons is computed microscopically using linear response theory in response to electric currents and time-derivative of magnetizations, where the localized spins enter as classical fields. 
 
@@ -234,8 +234,8 @@ where $\hat{s}^{(i)}$ is given by:
 
 \begin{figure}
     \centering
-    \includegraphics{articles/misha_paper/app5.pdf}
-    \caption{Diagrammatic illustration. a) Born-approximation. b) Ladder-approximation. c) Disorder-averaged polarization bubble. d) Perturbative expansion of the disorder-averaged polarization bubble. }
+    \includegraphics{gfx/bubble1.pdf}
+    \caption{Diagrammatic illustration. a) Disorder-averaged polarization bubble. b) Ladder-approximation. }
     \label{sd:fig:diagrams}
 \end{figure}
 This vertex-correction is important as a single scattering event already modifies the spin-polarization. For example we will see in Chapter~\ref{ch:diffusive} that vertex-corrections lead to an unusual and novel torque that we call a diffusive spin-orbit torque. Another example is found in Chapter~\ref{ch:baglay} where disorder averaging can lead to an increase in Gilbert Damping by many orders of magnitude. 
