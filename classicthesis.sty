@@ -148,10 +148,15 @@
 \definecolor{CTcitation}{rgb}{0,0.5,0} % WebGreen
 \definecolor{CTurl}{named}{Maroon} % Maroon
 \definecolor{CTtitle}{named}{Maroon} % Maroon {cmyk}{0, 0.87, 0.68, 0.32}
+% \definecolor{ChapterTitleNumber}{HTML}{dd4d1e}
+\definecolor{ChapterTitleNumber}{HTML}{f57e2a}
+% \definecolor{ChapterTitleNumber}{HTML}{577d7b}
+% \definecolor{ChapterTitleNumber}{RGB}{8,48,107}
 \definecolor{CTlink}{named}{RoyalBlue} % RoyalBlue {cmyk}{1, 0.50, 0, 0}
 \definecolor{halfgray}{gray}{0.55} % chapter numbers will be semi transparent .5 .55 .6 .0
 \definecolor{webgreen}{rgb}{0,0.5,0}
 \definecolor{webbrown}{rgb}{0.6,0,0}
+
 
 % ********************************************************************
 % Font Stuff
@@ -382,9 +387,9 @@
     {\titlerule\vspace*{.9\baselineskip}\raggedright\spacedallcaps}[\normalsize\vspace*{.8\baselineskip}\titlerule]%
 }{% something like Bringhurst
 %TODO: Note that I have adapted the color of the chapter markers here.
-    \definecolor{coverBlue}{RGB}{8,48,107}
+    % \definecolor{coverBlue}{RGB}{8,48,107}
     \titleformat{\chapter}[display]%
-    {\relax}{\mbox{}\oldmarginpar{\vspace*{-3\baselineskip}\color{coverBlue}\chapterNumber\thechapter}}{0pt}%
+    {\relax}{\mbox{}\oldmarginpar{\vspace*{-3\baselineskip}\color{ChapterTitleNumber}\chapterNumber\thechapter}}{0pt}%
     {\raggedright\spacedallcaps}[\normalsize\vspace*{.8\baselineskip}\titlerule]%
 }
 % sections \FloatBarrier

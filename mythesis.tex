@@ -168,9 +168,11 @@
 % Backmatter
 %*******************************************************
 \appendix
+\addcontentsline{toc}{part}{\textsc{Appendices}}%
+
 \renewcommand{\thechapter}{\alph{chapter}}
 \cleardoublepage
-\part{Appendix}
+% \part{Appendix}
 \include{Chapters/kubo}
 \include{Chapters/Chapter0A}
 \include{Chapters/Chapter0C}
